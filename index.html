@@ -5,8 +5,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Gallery filter Vue JS</title>
-  
-  
+
+
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css'>
 
@@ -15,7 +15,7 @@
 <body>
 
   <div id="items">
-  
+
   <form class="bg-black p-5 text-center">
     <input type="text" class="p-2 bg-grey-darker w-1/4" placeholder="Search" v-model="search_filter" @keyup="updatePaginate">
     <button class="text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click.prevent="setStatus('')">All</button>
@@ -24,10 +24,10 @@
     <button class="text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click.prevent="setStatus('event')">Event</button>
     <button class="text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click.prevent="setStatus('kinetic')">Kinetic</button>
   </form>
-  
+
     <div class="flex flex-wrap lg:mx-32">
                 <a target="_blank" :href="item.url" class="lg:w-1/4 md:w-1/2 w-full p-5 text-black hover:text-grey-dark no-underline"
-                    v-for="item in items | filterBy search_filter in 'name' | filterBy status_filter in 'group'" 
+                    v-for="item in items | filterBy search_filter in 'name' | filterBy status_filter in 'group'"
                     v-show="setPaginate($index)">
 
                     <img class="border-2" :src="item.pic">
@@ -39,11 +39,11 @@
                   </div>
                 </a>
      </div>
-  
-</div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js'></script>
 
-  
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js'></script>
+
+
 
     <script src="js/vue-main.js"></script>
 
