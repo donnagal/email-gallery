@@ -8,7 +8,7 @@ new Vue({
      items: [
       { name: 'Template A MASTER, 2020-04',
         group: 'template',
-        url: ["emails/template/2020-04_master.html"],
+        url: ["/emails/templates/2020-04_master.html"],
         pic: ["images/master-template.jpg"],
       },
       { name: 'Template B Overlap header, 2020-04',
