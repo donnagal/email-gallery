@@ -6,12 +6,12 @@ new Vue({
   data: {
      current: 1,
      items: [
-      { name: 'Master Template, 2020-04',
+      { name: 'Template A MASTER, 2020-04',
         group: 'template',
-        url: ["https://m.marketing.cbussuper.com.au/nl/jsp/m.jsp?c=%40LeMtmhSBYd4EDmo6LgEodP42QBQFZUSt4GMe1%2BWRXuE%3D"],
+        url: ["emails/template/2020-04_master.html"],
         pic: ["images/master-template.jpg"],
       },
-      { name: 'Hero Overlap Template, 2020-04',
+      { name: 'Template B Overlap header, 2020-04',
         group: 'template',
         url: ["https://m.marketing.cbussuper.com.au/nl/jsp/m.jsp?c=@6ii8idCNGl9oxxUCx6YoyCgWpr0l8qYcHDV5j7mTvIo=&fbclid=IwAR23ZNOKa8_Uyu5mhGPIQg_W9dcy6dg5NlZGI5cGUwZ6S6gkMTbDulQOx3Q"],
         pic: ["images/hero-overlap.jpg"],
