@@ -1,6 +1,6 @@
 # Email Gallery
 
-The main page includes the gallery for easy visibility of emails builds.
+The main page includes the gallery for easy visibility of emails: https://email-gallery.netlify.app/
 This repo also includes email and landing page builds. 
 Responsive email templates are included for quick and easy set-ups. 
 
@@ -23,7 +23,7 @@ Not much going on here, just edit HTML files!
 
 
 ### Advanced Usage
-
+- Netlify deploys when pushing to the MASTER branch
 framework libraries used:
 - Tailwind CSS
 - Vue JS
