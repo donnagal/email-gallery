@@ -103,15 +103,6 @@ body{background-color:#E4E4E4}.mso .layout-has-border{border-top:1px solid #baba
     <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-full-width" style="background-color: #a38e3d;"><td class="layout__edges">&nbsp;</td><td style="width: 600px" class="w560"><![endif]-->
       <div class="column" style="text-align: left;color: #353638;font-size: 17px;line-height: 26px;font-family: calibri,arial,sans-serif;">
       
-          <!-- Member number -->
-          <div style="Margin-left: 20px;Margin-right: 20px;Margin-top:5px;">
-            <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
-              <p style="Margin-bottom: 0;font-style: normal;font-weight: bold;color: white;font-size: 17px;line-height: 26px;text-align: right;">
-                  Member number: <%=  recipient.mbrAccID %>
-              </p>
-            </div>
-          </div>
-
         <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
           <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" 
           alt="You're invited to the Retiree Information Forum" width="600" 
@@ -135,16 +126,27 @@ body{background-color:#E4E4E4}.mso .layout-has-border{border-top:1px solid #baba
       
         <!--[if (mso)|(IE)]><table style="border-collapse: collapse;table-layout: fixed;background-color:white;" role="presentation"><tbody><tr role="navigation"><td><![endif]-->
 
+            <!-- Member number -->
+            <div style="Margin-left: 20px;Margin-right: 20px;Margin-top:5px;">
+              <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
+                <p style="Margin-bottom: 0;font-style: normal;font-weight: bold;color: black;font-size: 17px;line-height: 26px;text-align: right;">
+                    Member number: <%=  recipient.mbrAccID %>
+                </p>
+              </div>
+            </div>
+
+          <!-- Inner spacer -->
+          <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 10px;">
+            <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
+          </div>
+
             <!-- Text -->
             <div style="Margin-left: 20px;Margin-right: 20px; Margin-top: 32px;">
               <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
               
-                <!-- heading -->
-                <h3 style="Margin-top: 0;Margin-bottom: 15px;font-style: normal;font-weight: bold;color: black;font-size: 24px;line-height: 32px;text-align: left;">
-                  Dear <%= recipient.firstName %>,
-                </h3>
-
                 <p style="Margin-bottom:0;text-align: left;color: #666;font-size: 17px;line-height: 26px;">
+                  Dear <%= recipient.firstName %>,
+                  <br/><br/>
                   What do the latest investment market trends mean for you in your retirement years?
               </p>
               </div>
@@ -165,21 +167,20 @@ body{background-color:#E4E4E4}.mso .layout-has-border{border-top:1px solid #baba
   <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 600px" class="w560"><![endif]-->
     <div class="column" style="text-align: left;color: #353638;font-size: 17px;line-height: 26px;font-family: calibri,arial,sans-serif;">
   
-                  <!-- Text -->
-                  <div style="Margin-left: 20px;Margin-right: 20px; Margin-top: 32px;">
-                    <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
-                      <p style="Margin-bottom: 20px;text-align: left;color: #666;">
-                      Join us and other Cbus Members to share some super useful insights over morning
-                      tea. Investing a little time now can help you continue to enjoy all the benefits of your
-                      Super Income Stream. 
-                      </p>
+          <!-- Text -->
+          <div style="Margin-left: 20px;Margin-right: 20px; Margin-top: 32px;">
+            <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
+              <p style="Margin-bottom: 20px;text-align: left;color: #666;">
+                Join us on a complimentary webinar to share some super useful. Investing a little time now can help you continue to enjoy all the benefits of your Super Income Stream.
+              </p>
 
-                       <!-- Inner spacer -->
-                      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 10px;">
-                        <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
-                      </div>
-                    </div>
-                </div>
+                <!-- Inner spacer -->
+              <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 10px;">
+                <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
+              </div>
+              
+            </div>
+        </div>
     </div>
   <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
   </div>
@@ -195,7 +196,7 @@ body{background-color:#E4E4E4}.mso .layout-has-border{border-top:1px solid #baba
       <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-bottom: 12px;">
       <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
         <img style="border: 0;display: block;height: auto;width: 100%;max-width: 65px;" alt="calendar icon." width="65" 
-        src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/6e778193f93b8073119fff1edbce001f.gif">
+        src="images/fa-icon-gold_calendar.png">
       </div>
 </div>
     
@@ -210,7 +211,8 @@ body{background-color:#E4E4E4}.mso .layout-has-border{border-top:1px solid #baba
           </h3>
             <p class="size-15" style="Margin-top: 5px;Margin-bottom: 0;font-size: 15px;line-height: 23px;" lang="x-size-15">
               <strong><span style="color:black">Online, via Zoom. </span><br></strong> 
-              <span style="color:#666666">10.45am start presentations
+              <span style="color:#666666">
+                10.45am start presentations<br/>
                 1.00pm  finish at latest
               </span>
            </p>
@@ -264,9 +266,9 @@ body{background-color:#E4E4E4}.mso .layout-has-border{border-top:1px solid #baba
     
       <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-bottom: 12px;">
       <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
-        <img style="border: 0;display: block;height: auto;width: 100%;max-width: 75px;" 
-        alt="seminar icon." width="75" 
-        src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/24241eb53ed82853d21a4b67d3d04af9.gif">
+        <img style="border: 0;display: block;height: auto;width: 100%;max-width: 65px;" 
+        alt="seminar icon." width="65" 
+        src="images/fa-icon-gold_user.png">
     </div>
 </div>
     
@@ -326,7 +328,7 @@ body{background-color:#E4E4E4}.mso .layout-has-border{border-top:1px solid #baba
     
       <!-- Inner spacer -->
       <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 10px;">
-        <div style="mso-line-height-rule: exactly;line-height: 40px;font-size: 1px;">&nbsp;</div>
+        <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
       </div>
     
   <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
@@ -336,15 +338,16 @@ body{background-color:#E4E4E4}.mso .layout-has-border{border-top:1px solid #baba
 <!-- ### END: 30/70 (Icon/Text) ### -->
 
 
+<!-- ## START: GOLD w' WHITE BLOCK ## -->
+<div style="background-color: #a38e3d;">
+  <div class="layout one-col stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+    <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: white;">
+    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-full-width" style="background-color: #a38e3d;"><td class="layout__edges">&nbsp;</td><td style="width: 600px" class="w560"><![endif]-->
+      <div class="column" style="text-align: left;color: #353638;font-size: 17px;line-height: 26px;font-family: Calibri,Carlito,PT Sans,Trebuchet MS,sans-serif;">
+      
+        <!--[if (mso)|(IE)]><table style="border-collapse: collapse;table-layout: fixed;background-color:white;" role="presentation"><tbody><tr role="navigation"><td><![endif]-->
 
-
-<!-- ### START TERMS BLOCK -->
-<div class="layout one-col fixed-width" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #E4E4E4;">
-  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #E4E4E4;"><td style="width: 600px" class="w560"><![endif]-->
-    <div class="column" style="text-align: left;color: #454545;font-size: 17px;line-height: 21px;font-family: calibri,arial,sans-serif;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);">
-  
-      <!-- Text -->
+      <!-- Terms Text -->
       <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 40px;">
         <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
                 <p class="size-11" style="Margin-top: 0;Margin-bottom: 20px;font-family: calibri,arial,sans-serif;font-size: 11px;line-height: 19px;" lang="x-size-11">
@@ -377,22 +380,40 @@ body{background-color:#E4E4E4}.mso .layout-has-border{border-top:1px solid #baba
                 </p>
             </div>
         </div>
-    
-        <!-- Inner spacer -->
-        <div style="Margin-left: 20px;Margin-right: 20px;">
-          <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
-        </div>
-      <!-- Inner spacer -->
-      <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
-        <div style="mso-line-height-rule: exactly;line-height: 1px;font-size: 1px;">&nbsp;</div>
+
+          <!-- Inner spacer -->
+          <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
+            <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
+          </div>
+
+        <!--[if (mso)|(IE)]></td></tr></tbody></table><![endif]-->
+
+      
       </div>
-  
+    <!--[if (mso)|(IE)]></td><td class="layout__edges">&nbsp;</td></tr></table><![endif]-->
     </div>
-  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
   </div>
 </div>
-<!-- ### END TERMS BLOCK -->
+<!-- ## END: GOLD w' WHITE BLOCK ## -->
 
-<div style="mso-line-height-rule: exactly;line-height: 40px;font-size: 40px;">&nbsp;</div>
+
+<!-- ## START: GOLD BLOCK ## -->
+<div style="background-color: #a38e3d;">
+  <div class="layout one-col stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+    <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;">
+    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-full-width" style="background-color: #a38e3d;"><td class="layout__edges">&nbsp;</td><td style="width: 600px" class="w560"><![endif]-->
+      <div class="column" style="text-align: left;color: #353638;font-size: 17px;line-height: 26px;font-family: Calibri,Carlito,PT Sans,Trebuchet MS,sans-serif;">
+
+          <!-- Inner spacer -->
+          <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
+            <div style="mso-line-height-rule: exactly;line-height: 120px;font-size: 1px;">&nbsp;</div>
+          </div>
+      
+      </div>
+    <!--[if (mso)|(IE)]></td><td class="layout__edges">&nbsp;</td></tr></table><![endif]-->
+    </div>
+  </div>
+</div>
+<!-- ## END: GOLD BLOCK ## -->
 
 </div></td></tr></tbody></table>
