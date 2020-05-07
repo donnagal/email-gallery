@@ -31,6 +31,13 @@ new Vue({
         url: ["https://email-gallery.netlify.app/emails/templates/2020-05-person-letter.html"],
         pic: ["images/template-newsletter.jpg"],
       },
+
+
+      { name: '[Member] Road to Recovery, 2020-05',
+          group: 'mbr',
+          url: ["https://email-gallery.netlify.app/emails/2020-05-mbr-road-to-recovery.html"],
+          pic: ["images/r2r.jpg"],
+        },
       { name: '[Member] Super Payment Checker Opt-out, 2020-05',
         group: 'mbr',
         url: ["https://email-gallery.netlify.app/emails/2020-04_mbr-super-payment-checker.html"],
@@ -42,9 +49,9 @@ new Vue({
         pic: ["images/event-2020-04.jpg"],
       },
       { name: '[Member] Important updates, COVID-19 Video, 2020-04',
-      group: 'mbr',
-      url: ["https://email-gallery.netlify.app/emails/2020-04-mbr_covid-video-update.html"],
-      pic: ["images/mbr-2020-04.jpg"],
+        group: 'mbr',
+        url: ["https://email-gallery.netlify.app/emails/2020-04-mbr_covid-video-update.html"],
+        pic: ["images/mbr-2020-04.jpg"],
     },
 
     ],
