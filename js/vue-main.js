@@ -42,7 +42,7 @@ new Vue({
       { name: '[Event] Retiree information forums Invite, 2020-05',
         group: 'event',
         url: ["https://email-gallery.netlify.app/emails/2020-5-event__invite-retirement.html"],
-        pic: ["images/event-2020-05"],
+        pic: ["images/event-2020-05.jpg"],
       },
       { name: '[Member] Super Payment Checker Opt-out, 2020-05',
         group: 'mbr',
