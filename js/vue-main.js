@@ -32,12 +32,18 @@ new Vue({
         pic: ["images/template-newsletter.jpg"],
       },
 
+      
 
       { name: '[Member] Road to Recovery, 2020-05',
           group: 'mbr',
           url: ["https://email-gallery.netlify.app/emails/2020-05-mbr-road-to-recovery.html"],
           pic: ["images/r2r.jpg"],
         },
+      { name: '[Event] Retiree information forums Invite, 2020-05',
+        group: 'event',
+        url: ["https://email-gallery.netlify.app/emails/2020-5-event__invite-retirement.html"],
+        pic: ["images/event-2020-05"],
+      },
       { name: '[Member] Super Payment Checker Opt-out, 2020-05',
         group: 'mbr',
         url: ["https://email-gallery.netlify.app/emails/2020-04_mbr-super-payment-checker.html"],
