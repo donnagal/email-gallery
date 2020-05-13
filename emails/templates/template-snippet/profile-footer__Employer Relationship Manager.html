@@ -51,7 +51,7 @@ var relManagers = {
    
    "Chris D'Astoli": {
      phone: '0448 066 247', 
-     email: 'chris.d'astoli@cbussuper.com.au',
+     email: 'chris.d \'astoli@cbussuper.com.au',
      title: 'Your Business Development Manager',
      image: 'https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/89397ab2ec331a4b37b1373e8483299d.jpg',
    },
@@ -86,10 +86,10 @@ var relManagers = {
    
    
   "Default": {
-     phone: '0400 222 000', 
-     email: 'Other@cbussuper.com.au',
-     title: 'Relationship Manager',
-     image: 'http://cbus-mkt-stage1-res.campaign.adobe.com/res/cbus_mkt_stage1/f2a19785ce9a3977b905e01c5c6dbbd8.jpg'
+     phone: '1300 362 784', 
+     email: '',
+     title: '',
+     image: ''
   }
 }
 
@@ -103,19 +103,145 @@ if(relManagers[recipient.accMgrName]){
 
 
 %> 
-<TABLE cellSpacing=0 cellPadding=0>
-<TBODY>
-<TR>
-<TD width=150><IMG alt="<%= recipient.accMgrName %>" src="<%= relMan.image %>" width=145> </TD>
-<TD width=30>&nbsp;</TD>
-<TD width=400>
-<P style="FONT-SIZE: 26px; MARGIN-BOTTOM: 0px; FONT-FAMILY: calibri,arial,sans-serif; COLOR: black"><%= recipient.accMgrName %> </P>
-<P style="FONT-SIZE: 18px; FONT-FAMILY: calibri,arial,sans-serif; MARGIN-TOP: 0px; COLOR: #8c8c8c"><%= relMan.title %> </P>
-<TABLE>
-<TBODY>
-<TR>
-<TD width=50><IMG src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/d4523823231a8b92b402e35b9c3f5059.png" width=30></TD>
-<TD style="FONT-SIZE: 18px; MARGIN-BOTTOM: 5px; FONT-FAMILY: calibri,arial,sans-serif; COLOR: #1c1c1c" width=350><%= relMan.email %> </TD></TR>
-<TR>
-<TD width=50><IMG src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/8dd5d72a4115935b10b6603c72cc209a.png" width=30></TD>
-<TD style="FONT-SIZE: 18px; MARGIN-BOTTOM: 5px; FONT-FAMILY: calibri,arial,sans-serif; COLOR: #1c1c1c" width=350><%= relMan.phone %> </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+
+
+
+
+
+
+
+
+   <!-- ### START: WHITE SECTION ### -->
+   <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+    <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
+    <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 600px" class="w560"><![endif]-->
+      <div class="column" style="text-align: left;color: #000;font-size: 17px;line-height: 26px;font-family: Calibri,Carlito,PT Sans,Trebuchet MS,sans-serif;">
+    
+
+        <!-- Contact Text -->
+        <div style="Margin-left: 20px;Margin-right: 20px; Margin-top: 32px;">
+          <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
+          
+            <p style="Margin-bottom: 20px;text-align: left;">
+              <%
+              if( relMan == relManagers['Default'] )
+              {
+                %>
+
+                 If you have any questions about your super, we’re here to help.  Give us a call on <strong><%= relMan.phone %></strong>.
+                 Take care,
+                 <br/><br/>
+                  Hamish Park <br/>
+                  Manager, Employer Relationships
+
+                <%
+              } else { 
+                %> 
+
+                  If you have any questions about your super, please get in touch with <strong><%= recipient.accMgrName %></strong>, your Employer Relationship Manager.
+                  <br/><br/>
+                  Take care,
+
+              <%
+               }
+            %>
+            </p>
+          </div>
+      </div>
+
+    
+      </div>
+    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+    </div>
+  </div>
+<!-- ### END: WHITE SECTION ### -->
+
+
+<%
+if( relMan == relManagers['Default'] )
+{
+  %> <%
+} else { 
+  %> 
+
+  <!-- ### START 30/70 COLUMN (profile) ### -->
+<div class="layout fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
+  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 200px" valign="top" class="w160"><![endif]-->
+    <div class="column narrow" style="text-align: left;color: #000;font-size: 17px;line-height: 26px;font-family: calibri,arial,sans-serif;Float: left;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);">
+  
+
+       <!-- Inner spacer -->
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
+        <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
+      </div>
+
+      <!-- Profile Image -->
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-bottom: 12px;">
+        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
+          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 145px;" width="145" 
+          alt="<%= recipient.accMgrName %>" src="<%= relMan.image %>" >
+        </div>
+      </div>
+    
+    </div>
+  <!--[if (mso)|(IE)]></td><td style="width: 400px" valign="top" class="w360"><![endif]-->
+    <div class="column wide" style="text-align: left;color: #000;font-size: 17px;line-height: 26px;font-family: calibri,arial,sans-serif;Float: left;max-width: 400px;min-width: 320px; width: 320px;width: calc(8000% - 47600px);">
+    
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;">
+      <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+        <p class="size-24" style="Margin-top: 20px;Margin-bottom: 0px;font-size: 20px;line-height: 28px;" lang="x-size-24">
+          <strong><span style="color:#000000"><%= recipient.accMgrName %></span></strong>
+        </p>
+        <p class="size-15" style="Margin-top: 0;Margin-bottom: 10px;font-size: 15px;line-height: 23px;" lang="x-size-15">
+          <span style="color:#666666"><%= relMan.title %></span>
+        </p>
+      </div>
+    </div>
+    
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
+        <table class="" style="border-collapse: collapse;table-layout: fixed;" role="presentation">
+          <tbody>
+            <tr role="navigation">
+              <td class="" style="padding: 4px;width: 19px;">
+                 <a class="hover" href="mailto:cbusenq@cbussuper.com.a">
+                   <img border="0" src="https://email-gallery.netlify.app/emails/images/i-email.png" width="19" alt="icon e-mail.">
+                  </a>
+              </td>
+              <td class="size-15" style="padding:4px;color:black;font-family:calibri,arial,sans-serif;">
+               <span style="color: blspanck;"><%= relMan.email %></a>
+              </td>
+            </tr>
+            <tr role="navigation">
+              <td class="" style="padding: 4px;width: 19px;">
+                <a class="hover" href="tel:<%= relMan.phone %>"> <img border="0" src="https://email-gallery.netlify.app/emails/images/i-phone.png" width="19" alt="icon call."></a>
+              </td>
+              <td class="size-15" style="padding:4px;color:black;font-family:calibri,arial,sans-serif;">
+                Call us on <a style="color: black;" href="tel:<%= relMan.phone %>"><%= relMan.phone %> </a><br> Mon to Fri from 8am to 8pm
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+
+      <!-- Inner spacer -->
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
+        <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
+      </div>
+    
+  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+  </div>
+</div>
+</div>
+<!-- ### END 30/70 COLUMN (profile) ### -->
+
+<%
+ }
+%>
+
+
+
+
+
+
+
