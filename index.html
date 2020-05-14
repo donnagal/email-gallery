@@ -8,22 +8,35 @@
 
 
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css'>
 
+  <style>
+    nav.link-1 .link-1,
+    nav.link-2 .link-2,
+    nav.link-3 .link-3,
+    nav.link-4 .link-4,
+    nav.link-5 .link-5 {
+        background-color:#38a89d;
+    }
+  </style>
 </head>
 
 <body>
 
   <div id="items">
+    <nav :class="active">
+      <form class="bg-black p-5 text-center">
+        <input type="text" class="p-2 bg-grey-darker w-1/4" placeholder="Search" v-model="search_filter" @keyup="updatePaginate">
+        <button class="link-1 text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click="selectItem('link-1')" @click.prevent="setStatus('')">All</button>
+        <button class="link-2 text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click="selectItem('link-2')" @click.prevent="setStatus('template')">Templates</button>
+        <button class="link-3 text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click="selectItem('link-3')" @click.prevent="setStatus('event')">Event</button>
+        <button class="link-4 text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click="selectItem('link-4')" @click.prevent="setStatus('mbr')">Member</button>
+        <button class="link-5 text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click="selectItem('link-5')" @click="selectItem('all')" @click.prevent="setStatus('employer')">Employer</button>
+      </form>
 
-  <form class="bg-black p-5 text-center">
-    <input type="text" class="p-2 bg-grey-darker w-1/4" placeholder="Search" v-model="search_filter" @keyup="updatePaginate">
-    <button class="text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click.prevent="setStatus('')">All</button>
-    <button class="text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click.prevent="setStatus('template')">Templates</button>
-    <button class="text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click.prevent="setStatus('event')">Event</button>
-    <button class="text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click.prevent="setStatus('mbr')">Member</button>
-    <button class="text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click.prevent="setStatus('employer')">Employer</button>
-  </form>
+    </nav>
+
+
 
     <div class="flex flex-wrap lg:mx-32">
                 <a target="_blank" :href="item.url" class="lg:w-1/4 md:w-1/2 w-full p-5 text-black hover:text-grey-dark no-underline"

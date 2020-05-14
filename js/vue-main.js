@@ -4,6 +4,7 @@ new Vue({
     this.paginate_total = this.items.length/this.paginate;
   },
   data: {
+    active: 'home',
      current: 1,
      items: [
       { name: '[Template A MASTER], 2020-04',
@@ -11,27 +12,6 @@ new Vue({
         url: ["https://email-gallery.netlify.app/emails/templates/2020-04_master.html"],
         pic: ["images/master-template.jpg"],
       },
-      { name: '[Template B Standrad], 2020-05',
-        group: 'template',
-        url: ["https://email-gallery.netlify.app/emails/templates/2020-05-standard.html"],
-        pic: ["images/templated-stnd.jpg"],
-      },
-      { name: '[Template C Overlap header], 2020-04',
-        group: 'template',
-        url: ["https://email-gallery.netlify.app/emails/templates/2020-04 -overlap-banner.html"],
-        pic: ["images/hero-overlap.jpg"],
-      },
-      { name: '[Template D Overlap Colour Block], 2020-04',
-        group: 'template',
-        url: ["https://email-gallery.netlify.app/emails/templates/2020-04_overlap-colours.html"],
-        pic: ["images/template-cb.jpg"],
-      },
-      { name: '[Template E Profile Letter], 2020-05',
-        group: 'template',
-        url: ["https://email-gallery.netlify.app/emails/templates/2020-05-person-letter.html"],
-        pic: ["images/template-newsletter.jpg"],
-      },
-
       { name: '[Member] TFN Rrcord Update, 2020-05',
       group: 'mbr',
       url: ["https://email-gallery.netlify.app/emails/2020-05-mbr_tfn-record.html"],
@@ -68,6 +48,29 @@ new Vue({
         pic: ["images/mbr-2020-04.jpg"],
     },
 
+
+
+  { name: '[Template B Standrad], 2020-05',
+    group: 'template',
+    url: ["https://email-gallery.netlify.app/emails/templates/2020-05-standard.html"],
+    pic: ["images/templated-stnd.jpg"],
+  },
+  { name: '[Template C Overlap header], 2020-04',
+    group: 'template',
+    url: ["https://email-gallery.netlify.app/emails/templates/2020-04 -overlap-banner.html"],
+    pic: ["images/hero-overlap.jpg"],
+  },
+  { name: '[Template D Overlap Colour Block], 2020-04',
+    group: 'template',
+    url: ["https://email-gallery.netlify.app/emails/templates/2020-04_overlap-colours.html"],
+    pic: ["images/template-cb.jpg"],
+  },
+  { name: '[Template E Profile Letter], 2020-05',
+    group: 'template',
+    url: ["https://email-gallery.netlify.app/emails/templates/2020-05-person-letter.html"],
+    pic: ["images/template-newsletter.jpg"],
+  },
+
     ],
     paginate: 1000,
     paginate_total: 0,
@@ -75,6 +78,9 @@ new Vue({
     status_filter: ''
   },
   methods: {
+    selectItem(item) {
+      this.active = item;
+    },
     setPaginate: function (i) {
       if (this.current == 1) {
         return i < this.paginate;
