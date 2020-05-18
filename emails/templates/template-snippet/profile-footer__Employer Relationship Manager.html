@@ -86,7 +86,7 @@ var relManagers = {
    
    
   "Default": {
-     phone: '1300 362 784', 
+     phone: '1300 361 784', 
      email: '',
      title: '',
      image: ''
@@ -99,7 +99,6 @@ if(relManagers[recipient.accMgrName]){
 } else { 
   relMan = relManagers['Default'];
 }
-
 
 
 %> 
@@ -127,7 +126,7 @@ if(relManagers[recipient.accMgrName]){
 
                  If you have any questions about your super, we’re here to help.  Give us a call on <strong><%= relMan.phone %></strong>.
                  <br/><br/>
-                 Take care,
+                 Yours sincerely,
                  <br/><br/>
                  Marianne Walker<br/>
                  Group Executive, Member and Employer Experience
@@ -174,16 +173,16 @@ if( relMan == relManagers['Default'] )
       </div>
 
     </div>
-  <!--[if (mso)|(IE)]></td><td style="width: 500px" valign="top" class="w360"><![endif]-->
+  <!--[if (mso)|(IE)]></td><td style="width: 482px" valign="top" class="w360"><![endif]-->
     <div class="column wide-90p" style="text-align: left;color: #000;font-size: 17px;line-height: 26px;font-family: calibri,arial,sans-serif;Float: left;max-width: 450px;min-width: 320px; width: 320px;width: calc(8000% - 47600px);">
     
       <!-- Text -->
       <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 0;Margin-bottom: 12px;">
         <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-          <p class="size-16" style="Margin-top: 0;Margin-bottom: 0;font-size: 16px;line-height: 19px;" lang="x-size-16">
+          <p class="size-16" style="Margin-top: 0;Margin-bottom: 0;font-size: 16px;line-height: 22px;" lang="x-size-16">
             <strong>Your <%= relMan.title %></strong>
           </p>
-          <p class="size-19" style="Margin-top: 0;Margin-bottom: 0px;font-size: 19px;line-height: 19px;" lang="x-size-19">
+          <p class="size-19" style="Margin-top: 0;Margin-bottom: 0px;font-size: 19px;line-height: 22px;" lang="x-size-19">
             <strong><span style="color:#1DA9C4"><%= recipient.accMgrName %></span></strong>
           </p>
           <p class="size-14" style="Margin-top: 0;Margin-bottom: 0;font-size: 14px;line-height: 23px;" lang="x-size-14">
