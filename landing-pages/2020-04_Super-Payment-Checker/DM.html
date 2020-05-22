@@ -84,26 +84,25 @@
 
   <div class="form-container">
     <div class="width-constraint">
-      <form name="page-form">
-        <h2 class="header">I want to opt-out</h2>
-        <p>If you want opt-out as described above, please click on the Yes field below.</p>
+        <form name="page-form">
+          <h2 class="header">I want to opt-out</h2>
+          <p>If you want opt-out as described above, please click on the Yes field below.</p>
+          <p></p>
           <div class="fields">
-          <div class="field"><label class="member-dob-label" for="mbrSPCDOBSubmittedForm">Date of Birth*:</label> <input name="mbrSPCDOBSubmittedForm" class="input" id="mbrSPCDOBSubmittedForm" required="" type="date" placeholder="dd/mm/yyyy" data-nl-ismandatory="true" />&nbsp; <br /><br /><br /><span class="nl-dce-selectionExclude" style="font-size: 17px;">*This must match the date of birth that we have on file for your election to be valid</span></div>
+          <div class="field" style="text-align: center;"><label class="member-id-label" for="memberID">Member number:</label> <input name="memberID" title="Member ID must be comprised only of numbers and not contain any whitespace" class="input" id="memberID" required="" type="text" pattern="^[0-9]*$" data-nl-ismandatory="true" /></div>
+          <div class="field" style="text-align: center;"><label class="member-dob-label" for="mbrDOBSubmittedForm">Date of birth*:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>&nbsp;<input name="mbrDOBSubmittedForm" class="input" id="mbrDOBSubmittedForm" required="" type="date" placeholder="dd/mm/yyyy" data-nl-ismandatory="true" /><br /><br /><br /><span class="nl-dce-selectionExclude" style="font-size: 17px;">*This must match the date of birth that we have on file for your election to be valid.</span></div>
           <div class="field field--radio">
             <div class="radio-option">
-              <input name="consent-given" class="radio-input" id="mbrSPCOptOutGiven-yes" required="" type="radio" value="Yes" data-nl-ismandatory="true" /> <label for="mbrSPCOptOutGiven-yes"><span class="header">Yes</span> - I want to opt-out</label>
-              <label for="mbrSPCOptOutGiven-yes"><br /></label>
-            </div>
-          <p><span class="nl-dce-selectionExclude" style="font-size: 12px; max-width: 400px;">I have completed this form truthfully and correctly to the best of my knowledge and understand that:</span></p>
-          <ul>
-            <li style="font-size: 12px;">Submitting this form to Cbus will mean that you do not want your details to be shown in Cbus’ Unpaid Super Services.</li>
-            <li style="font-size: 12px;">Your information will not appear in Cbus’ Unpaid Super Services and not be provided to the union delegates or other third parties upon request.</li>
-            <li style="font-size: 12px;">On site card checking will negate this opt out for the Super Payment Checker app. The opt out however will still be valid for Cbus’ other Unpaid Super Services.</li>
-          </ul>
+              <input name="consent-given" class="radio-input" id="@mbrSPCOptOutGiven-yes" required="" type="radio" value="Yes" data-nl-ismandatory="true" /> <label for="@mbrSPCOptOutGiven-yes"><span class="header">Yes</span> - I want to opt-out</label><label for="@mbrSPCOptOutGiven-yes"><br /></label></div>
+            <p><span class="nl-dce-selectionExclude" style="font-size: 12px; max-width: 400px;">I have completed this form truthfully and correctly to the best of my knowledge and understand that:</span></p>
+            <ul>
+              <li style="font-size: 12px;">Submitting this form to Cbus will mean that you do not want your details to be shown in Cbus’ Unpaid Super Services.</li>
+              <li style="font-size: 12px;">Your information will not appear in Cbus’ Unpaid Super Services and not be provided to the union delegates or other third parties upon request.</li>
+              <li style="font-size: 12px;">On site card checking will negate this opt out for the Super Payment Checker app. The opt out however will still be valid for Cbus’ other Unpaid Super Services.</li>
+            </ul>
           </div>
-          <button class="submit-button" id="input155539912261392" onclick="formSubmit()">Submit</button>
-          </div>
-        </form>
+          <button class="submit-button" id="input155539912261392" onclick="formSubmit()">Submit</button></div>
+          </form>
     </div>
   </div>
 </div>
