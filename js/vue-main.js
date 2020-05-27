@@ -82,6 +82,8 @@ new Vue({
         pic: ["images/template-newsletter.jpg"],
       },
 
+
+
     { name: '[Inspo], VicSuper 2020-05',
       group: 'external',
       url: ["images/inspo-01x2.jpg"],
@@ -91,6 +93,11 @@ new Vue({
       group: 'external',
       url: ["images/inspo-02x2.jpg"],
       pic: ["images/inspo-02.jpg"],
+    },
+    { name: '[Inspo], Current',
+      group: 'external',
+      url: ["https://files.reallygoodemails.com/emails/smiles-davis-your-account-statements-are-now-in-the-current-app-.png"],
+      pic: ["images/inspo-current.jpg"],
     },
     { name: '[Inspo], Chime',
       group: 'external',
