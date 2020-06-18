@@ -130,7 +130,16 @@ new Vue({
       },
 
 
-
+    { name: '[Inspo], HESTA 2020-06',
+      group: 'external',
+      url: ["images/inspo-hesta-01.jpg"],
+      pic: ["images/inspo-hesta-01-sm.jpg"],
+    },
+    { name: '[Inspo], HESTA 2020-06',
+      group: 'external',
+      url: ["images/inspo-hesta-02.jpg"],
+      pic: ["images/inspo-hesta-02-sm.jpg"],
+    },
     { name: '[Inspo], VicSuper 2020-05',
       group: 'external',
       url: ["images/inspo-01x2.jpg"],
