@@ -151,6 +151,16 @@ new Vue({
       },
 
 
+    { name: '[Inspo], VicSuper 2020-07',
+      group: 'external',
+      url: ["images/inspo-vicsuper-1.jpg"],
+      pic: ["images/inspo-vicsuper-1-sm.jpg"],
+    },
+    { name: '[Inspo], VicSuper 2020-07',
+      group: 'external',
+      url: ["images/inspo-vicsuper-2.jpg"],
+      pic: ["images/inspo-vicsuper-2-sm.jpg"],
+    },
     { name: '[Inspo], HESTA 2020-06',
       group: 'external',
       url: ["images/inspo-hesta-01.jpg"],
