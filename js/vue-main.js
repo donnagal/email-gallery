@@ -149,6 +149,11 @@ new Vue({
         url: ["https://email-gallery.netlify.app/emails/templates/2020-05-person-letter.html"],
         pic: ["images/template-newsletter.jpg"],
       },
+      { name: '[Template Video MP4 Embeded], 2020-07',
+      group: 'template',
+      url: ["https://email-gallery.netlify.app/emails/templates/2020-07-video.html"],
+      pic: ["images/template-video-embeded.gif"],
+    },
 
 
     { name: '[Inspo], VicSuper 2020-07',
