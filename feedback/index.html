@@ -10,12 +10,58 @@
   <link href="https://template-2020.netlify.app/vendor/tailwindcss/css/tailwind.min.css" rel="stylesheet" type="text/css">
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css'>
 
+  <style>
+    .c-forms-form { background-color: transparent !important;}
+    .cognito textarea {
+      border-top: 0!important;
+      border-right: 0!important;
+      border-bottom: 7px solid #4a5568 !important;
+      border-left: 0!important;
+    }
+    .cognito textarea:focus {
+      border-top: 0!important;
+      border-right: 0!important;
+      border-bottom: 7px solid black !important;
+      border-left: 0!important;
+      outline: none;
+    }
+  </style>
+
 </head>
 
 <body>
 
+  <div class="bg-black">
+    <div class="container mx-auto text-white">
 
-<div class="container mx-auto pt-24 text-gray-700 text-center">
+      <div class="p-5">
+        <h3 class="mark-bold text-4xl">Community ideas</h3>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="bg-gray-200 py-24">
+    <div class="container mx-auto text-gray-700">
+
+      <div class="p-5 text-center">
+        <h3 class="mark-bold text-4xl">Submit idea</h3>
+      </div>
+
+
+      <div class="flex items-center flex-wrap text-xs" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="600" data-aos-duration="500">
+          <div class="lg:w-full px-5">
+            <div class="cognito">
+              <script src="https://www.cognitoforms.com/s/bYLvPE4iR0WAeyPIFxi5eQ"></script>
+              <script>Cognito.load("forms", { id: "1" });</script>
+              </div>
+          </div>
+      </div>
+
+    </div>
+  </div>
+
+<div class="container mx-auto py-24 text-gray-700 text-center">
   
   <div class="p-5">
     <h3 class="mark-bold text-4xl">Top ideas</h3>
