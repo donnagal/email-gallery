@@ -12,6 +12,12 @@ new Vue({
         url: ["https://email-gallery.netlify.app/emails/templates/2020-04_master.html"],
         pic: ["images/master-template.jpg"],
       },
+
+      { name: '[Employer] Employer Portal Video Embed',
+      group: 'mbr',
+      url: ["https://email-gallery.netlify.app/emails/2020-07_emp_emplyer-portal/2020-07-go_live_ch"],
+      pic: ["images/2020-07_emp_emplyer-portal.jpg"],
+      },
       { name: '[Member] Retirement Support',
       group: 'mbr',
       url: ["https://email-gallery.netlify.app/emails/2020-07-retirement-support-2.html"],
