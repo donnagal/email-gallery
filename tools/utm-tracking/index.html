@@ -30,6 +30,9 @@
     -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 0);
     margin-bottom: 5px;
   }
+  small {
+    font-size: 11px;
+  }
   
    input[type="text"]:focus,
    textarea:focus,
@@ -75,9 +78,9 @@
 <h1>UTM email tracking</h1>
   <table width="600" border="0" cellspacing="0" cellpadding="0">
     <tr>
-      <td>medium<input type="text" placeholder="(utm_medium)"  ng-model="$medium" /></td>
-      <td>source<input type="text" placeholder="(utm_source)" ng-model="$source" /></td>
-      <td>campaign<input type="text" placeholder="(utm_campaign)" ng-model="$campaign" /></td>
+      <td>medium<input type="text" placeholder="edm"  ng-model="$medium" /><small>edm</small></td>
+      <td>source: <input type="text" placeholder="adobe_campaign" ng-model="$source" /><small>adobe_campaign</small></td>
+      <td>campaign<input type="text" placeholder="(utm_campaign)" ng-model="$campaign" /><small>(ie: mem-dr--2004na-tfnrem)</small></td>
     </tr>
   <table width="600" border="0" cellspacing="0" cellpadding="0">
     <tr>
@@ -89,7 +92,7 @@
 <hr />
 <!-- Row 1--> 
    <tr>
-      <td><input type="text" placeholder="eg; http://www.exapmlecom.au/" ng-model="$URL1" /></td>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL1" /></td>
       <td><input type="text" placeholder="(utm_content)" ng-model="$content1" /></td>
       <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 1" >{{ $URL1 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content1 }}</textarea></td>
     </tr>
@@ -98,7 +101,7 @@
 
 <!-- Row 2--> 
    <tr>
-      <td><input type="text" placeholder="eg; http://www.exapmlecom.au/" ng-model="$URL2" /></td>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL2" /></td>
       <td><input type="text" placeholder="(utm_content)" ng-model="$content2" /></td>
       <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 2" >{{ $URL2 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content2 }}</textarea></td>
     </tr>
@@ -106,7 +109,7 @@
 
 <!-- Row 3--> 
    <tr>
-      <td><input type="text" placeholder="eg; http://www.exapmlecom.au/" ng-model="$URL3" /></td>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL3" /></td>
       <td><input type="text" placeholder="(utm_content)" ng-model="$content3" /></td>
       <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 3" >{{ $URL3 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content3 }}</textarea></td>
     </tr>
@@ -114,7 +117,7 @@
 
 <!-- Row 4--> 
    <tr>
-      <td><input type="text" placeholder="eg; http://www.exapmlecom.au/" ng-model="$URL4" /></td>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL4" /></td>
       <td><input type="text" placeholder="(utm_content)" ng-model="$content4" /></td>
       <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 4" >{{ $URL4 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content4 }}</textarea></td>
     </tr>
@@ -123,7 +126,7 @@
 
 <!-- Row 5--> 
    <tr>
-      <td><input type="text" placeholder="eg; http://www.exapmlecom.au/" ng-model="$URL5" /></td>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL5" /></td>
       <td><input type="text" placeholder="(utm_content)" ng-model="$content5" /></td>
       <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 5" >{{ $URL5 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content5 }}</textarea></td>
     </tr>
@@ -131,7 +134,7 @@
 
 <!-- Row 6--> 
    <tr>
-      <td><input type="text" placeholder="eg; http://www.exapmlecom.au/" ng-model="$URL6" /></td>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL6" /></td>
       <td><input type="text" placeholder="(utm_content)" ng-model="$content6" /></td>
       <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 6" >{{ $URL6 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content6 }}</textarea></td>
     </tr>
@@ -139,7 +142,7 @@
 
 <!-- Row 7--> 
    <tr>
-      <td><input type="text" placeholder="eg; http://www.exapmlecom.au/" ng-model="$URL7" /></td>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL7" /></td>
       <td><input type="text" placeholder="(utm_content)" ng-model="$content7" /></td>
       <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 7" >{{ $URL7 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content7 }}</textarea></td>
     </tr>
@@ -147,7 +150,7 @@
 
 <!-- Row 8--> 
    <tr>
-      <td><input type="text" placeholder="eg; http://www.exapmlecom.au/" ng-model="$URL8" /></td>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL8" /></td>
       <td><input type="text" placeholder="(utm_content)" ng-model="$content8" /></td>
       <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 8" >{{ $URL8 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content8 }}</textarea></td>
     </tr>
@@ -155,7 +158,7 @@
 
 <!-- Row 9--> 
    <tr>
-      <td><input type="text" placeholder="eg; http://www.exapmlecom.au/" ng-model="$URL9" /></td>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL9" /></td>
       <td><input type="text" placeholder="(utm_content)" ng-model="$content9" /></td>
       <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 9" >{{ $URL9 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content9 }}</textarea></td>
     </tr>
@@ -164,7 +167,7 @@
 
 <!-- Row 10--> 
    <tr>
-      <td><input type="text" placeholder="eg; http://www.exapmlecom.au/" ng-model="$URL10" /></td>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL10" /></td>
       <td><input type="text" placeholder="(utm_content)" ng-model="$content10" /></td>
       <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 10" >{{ $URL10 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content10 }}</textarea></td>
     </tr>

@@ -81,7 +81,7 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
 
             <!-- pre-header text -->
             <div style="font-size:1px;color:#f6f7fb;line-height:1px;mso-line-height-rule:exactly;display:none;max-width:0px;max-height:0px;opacity:0;overflow:hidden;mso-hide:all;" >
-              Your statement is now ready for you <%= recipient.firstName %>.
+              <%= recipient.firstName %>, log in to see your annual statement 
            </div>
           <div>
 
@@ -110,14 +110,20 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
                     </div>
                   </div>
 
-                  <!-- heading -->
-                  <div style="Margin-left: 30px;Margin-right: 30px;Margin-top: 24px;">
-                    <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-                      <h1 style="Margin-top: 0;Margin-bottom: 20px;font-style: normal;font-weight: normal;color: #84225e;font-size: 36px;line-height: 43px;">
-                        <strong>Your annual statement<br/>is ready</strong>
-                        </h1>
-                    </div>
+                <!-- heading -->
+                <div style="Margin-left: 30px;Margin-right: 30px;Margin-top: 24px;">
+                  <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+                    <h2 style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #84225e;font-size: 28px;line-height: 36px;">
+                      <strong>Your annual statement is ready</strong>
+                    </h2>
                   </div>
+                </div>
+
+                  <!-- Inner spacer -->
+                  <div style="Margin-left: 30px;Margin-right: 30px;Margin-top: 8px;">
+                    <div style="mso-line-height-rule: exactly;line-height: 8px;font-size: 1px;">&nbsp;</div>
+                  </div>
+
 
                   <!-- Hero image -->
                   <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
@@ -133,7 +139,9 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
                       <p style="Margin-top: 0;Margin-bottom: 0;">
                         <strong>Hi <%= recipient.firstName %>,</strong>
                         <br><br>
-                        Thanks for being with Cbus. This year’s been tough, but we’re working hard to build a better future for all of us. See how your super’s been tracking and get the latest news.
+                        Thanks for being with Cbus. This year’s been tough, but we’re working hard to build a better future for all of us. 
+                        <br/><br/>
+                        See how your super’s been tracking and get the latest news.
                       </p>
                     </div>
                   </div>
@@ -164,7 +172,9 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
                 </h2>
                 <!-- text -->
                 <p style="Margin-top: 16px;Margin-bottom: 0;">
-                Looks like your details or postal address may be out of date, so we’ve posted your annual statement to your online account. Update your details 
+                Looks like your details or postal address may be out of date, so we’ve posted your annual statement to your online account.
+                <br/><br/>
+                Update your details 
                 <a class="hover" target="_blank" href="https://www.cbussuper.com.au/" style="color:#ee7623"><strong>online</strong></a> or get in touch and we’d be happy to help.
                 </p>
               </div>
