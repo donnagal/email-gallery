@@ -16,7 +16,6 @@ new Vue({
         url: ["https://email-gallery.netlify.app/emails/templates/2020-04_master.html"],
         pic: ["images/master-template.jpg"],
       },
-
       { name: '[Member] Road to Recovery Young Cohort, 2020-09',
       group: 'mbr',
       url: ["https://email-gallery.netlify.app/emails/2020-09-mbr_road-to-recovery--young-cohort"],
@@ -289,6 +288,7 @@ new Vue({
     search_filter: '',
     status_filter: ''
   },
+  
   methods: {
     selectItem(item) {
       this.active = item;
@@ -333,3 +333,20 @@ function getParameterByName(name, url) {
   if (!results[2]) return '';
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+
+
+$(".load").hide();
+setTimeout(function(){
+	$(".load").show();
+},3000);
+
+$(".loading").show();
+setTimeout(function(){
+	$(".loading").hide();
+},3000);
+
+
+// Hide nav on shared URL
+if (window.location.href.indexOf("search=") != -1) {
+  $("#nav").hide();
+  }
