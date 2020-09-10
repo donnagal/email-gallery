@@ -288,7 +288,9 @@ new Vue({
     search_filter: '',
     status_filter: ''
   },
-  
+  created: function () {
+    this.search_filter= getParameterByName('search');
+  },
   methods: {
     selectItem(item) {
       this.active = item;
