@@ -6,6 +6,10 @@ new Vue({
   data: {
     active: 'home',
      current: 1,
+     filterField: '',
+     entries: null,
+     show: false,
+     search_filter: '',
      items: [
       { name: '[Template A MASTER], 2020-04',
         group: 'template',
@@ -312,3 +316,20 @@ new Vue({
     }
   }
 });
+
+
+setTimeout(function(){
+  $("#myInput").focus();
+}, 2000);
+
+
+// Filter in URL
+function getParameterByName(name, url) {
+  if (!url) url = window.location.href;
+  name = name.replace(/[\[\]]/g, '\\$&');
+  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}

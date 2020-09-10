@@ -39,7 +39,16 @@
 
     </nav>
 
+    <button @click="show = !show" :aria-expanded="show ? 'true' : 'false'" class="w-full mt-2 bg-grey-darkest text-grey-dark font-bold py-2 px-4 inline-flex items-center">
+      <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+      <span>Share filter link</span>
+  </button>
 
+  <div class="bg-grey-darkest py-5 text-sm text-left pl-5" v-if="show">
+     <a class="text-blue" target="blank" >
+      https://email-gallery.netlify.app/?search={{ search_filter }}
+     </a>
+  </div>
 
     <div class="flex flex-wrap lg:mx-32">
                 <a target="_blank" :href="item.url" class="lg:w-1/4 md:w-1/2 w-full p-5 text-black hover:text-grey-dark no-underline"
