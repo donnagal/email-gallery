@@ -6,49 +6,108 @@
   <meta charset="UTF-8">
   <title>Email Gallery</title>
 
-
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
-  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.2/css/all.css'>
+  <link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
 
   <style>
+    body {
+      font-family: 'Ubuntu',sans-serif;
+    }
     nav.link-1 .link-1,
     nav.link-2 .link-2,
     nav.link-3 .link-3,
     nav.link-4 .link-4,
     nav.link-5 .link-5,
     nav.link-6 .link-6 {
-        background-color:#38a89d;
+        color:#3490dc;
+        font-weight: bold;
     }
+
+    .bg_black { background-color: black}
+
+nav a {
+  font-size: 20px;
+  color: #584E4A;
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+a:before, a:after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background-color: #75d44666;
+  z-index: -1;
+}
+a:before {
+  opacity: 0;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+a:after {
+  opacity: 0;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+a:hover:before, a:hover:after, a:focus:before, a:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+a:hover:before, a:focus:before {
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+a:hover:after, a:focus:after {
+  -webkit-transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
   </style>
 </head>
 
 <body>
 
   <div id="items">
+    
     <nav :class="active">
-      <form class="bg-black p-5 text-center">
-        <input id="myInput" type="text" class="p-2 bg-grey-darker w-1/4" placeholder="Search" v-model="search_filter" @keyup="updatePaginate">
-        <button class="link-1 text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click="selectItem('link-1')" @click.prevent="setStatus('')">All</button>
-        <button class="link-2 text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click="selectItem('link-2')" @click.prevent="setStatus('template')">Templates</button>
-        <button class="link-3 text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click="selectItem('link-3')" @click.prevent="setStatus('event')">Event</button>
-        <button class="link-4 text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click="selectItem('link-4')" @click.prevent="setStatus('mbr')">Member</button>
-        <button class="link-5 text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click="selectItem('link-5')" @click.prevent="setStatus('employer')">Employer</button>
-        <button class="link-6 text-white py-2 rounded px-10 font-bold bg-grey-darkest hover:bg-teal-dark" @click="selectItem('link-6')" @click.prevent="setStatus('external')">External Inspo</button>
-
+      <form class="p-5 text-center">
+        <div class="text-blue absolute pin-l ml-10 mt-3 text-xl"><i class="fas fa-search "></i></div>
+        <input id="myInput" type="text" class="pl-16 py-4 bg-grey-lighter w-full rounded-full shadow-inner shadow-inner focus:outline-none focus:bg-grey-lightest" placeholder="Search... SIS, Event..." v-model="search_filter" @keyup="updatePaginate" :aria-expanded="show ? 'true' : 'false'">
+        <button class="absolute pin-t pin-r text-3xl py-2 px-8 mt-5 mr-5 rounded-full text-white bg-blue hover:bg-red" @click="selectItem('link-1')" @click.prevent="setStatus('')"><i class="fas fa-times"></i></button>
       </form>
 
-    </nav>
+      <div class="w-full text-lg text-center py-5 filter-link font-bold">
+        <a class="link-1 px-10 cursor-pointer" @click="selectItem('link-1')" @click.prevent="setStatus('')">All</a>
+        <a class="link-2 px-10 cursor-pointer" @click="selectItem('link-2')" @click.prevent="setStatus('template')">Templates</a>
+        <a class="link-3 px-10 cursor-pointer" @click="selectItem('link-3')" @click.prevent="setStatus('event')">Event</a>
+        <a class="link-4 px-10 cursor-pointer" @click="selectItem('link-4')" @click.prevent="setStatus('mbr')">Member</a>
+        <a class="link-5 px-10 cursor-pointer" @click="selectItem('link-5')" @click.prevent="setStatus('employer')">Employer</a>
+        <a class="link-6 px-10 cursor-pointer" @click="selectItem('link-6')" @click.prevent="setStatus('external')">External Inspo</a>
+      </div>
 
-    <button @click="show = !show" :aria-expanded="show ? 'true' : 'false'" class="w-full mt-2 bg-grey-darkest text-grey-dark font-bold py-2 px-4 inline-flex items-center">
-      <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-      <span>Share filter link</span>
-  </button>
 
-  <div class="bg-grey-darkest py-5 text-sm text-left pl-5" v-if="show">
+  <!-- <div class="bg-grey-darkest py-5 text-sm text-left pl-5">
      <a class="text-blue" target="blank" >
       https://email-gallery.netlify.app/?search={{ search_filter }}
      </a>
-  </div>
+  </div> -->
 
     <div class="flex flex-wrap lg:mx-32">
                 <a target="_blank" :href="item.url" class="lg:w-1/4 md:w-1/2 w-full p-5 text-black hover:text-grey-dark no-underline"
