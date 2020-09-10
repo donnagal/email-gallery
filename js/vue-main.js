@@ -4,7 +4,7 @@ new Vue({
     this.paginate_total = this.items.length/this.paginate;
   },
   data: {
-    active: 'home',
+    active: 'link-1',
      current: 1,
      filterField: '',
      entries: null,

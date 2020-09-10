@@ -87,27 +87,40 @@ a:hover:after, a:focus:after {
   <div id="items">
     
     <nav :class="active">
-      <form class="p-5 text-center">
-        <div class="text-blue absolute pin-l ml-10 mt-3 text-xl"><i class="fas fa-search "></i></div>
-        <input id="myInput" type="text" class="pl-16 py-4 bg-grey-lighter w-full rounded-full shadow-inner shadow-inner focus:outline-none focus:bg-grey-lightest" placeholder="Search... SIS, Event..." v-model="search_filter" @keyup="updatePaginate" :aria-expanded="show ? 'true' : 'false'">
-        <button class="absolute pin-t pin-r text-3xl py-2 px-8 mt-5 mr-5 rounded-full text-white bg-blue hover:bg-red" @click="selectItem('link-1')" @click.prevent="setStatus('')"><i class="fas fa-times"></i></button>
+
+      <form autocomplete="off">
+        <div class="flex w-3/4 mx-auto mt-10 mb-5">
+          <div class="w-full text-center text-gray-700">
+            <input id="myInput" type="text" class="pl-16 py-4 bg-grey-lighter w-full rounded-full shadow-inner focus:outline-none focus:bg-grey-lightest" 
+            placeholder="Search emails... SIS, Event..." v-model="search_filter" @keyup="show = !show">
+            
+
+            <div class="mt-2 text-left">
+              <span @click="show = !show" class="ml-4"> <i class="fas fa-link"></i></span>
+              <p class="text-xs p-4 text-black flex-1 inline-block" v-if="show">
+                share filter link: <a class="text-xs text-grey-dark pl-3" target="blank" href="https://email-gallery.netlify.app/?search={{ search_filter }}" > https://email-gallery.netlify.app/?search={{ search_filter }}</a>
+              </p>
+            </div>
+
+          </div>
+          <div class="flex-1 -ml-20">
+            <button class="text-3xl py-2 px-8 rounded-full text-white bg-blue hover:bg-red focus:outline-none" @click="clear(i)"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+
       </form>
 
-      <div class="w-full text-lg text-center py-5 filter-link font-bold">
-        <a class="link-1 px-10 cursor-pointer" @click="selectItem('link-1')" @click.prevent="setStatus('')">All</a>
-        <a class="link-2 px-10 cursor-pointer" @click="selectItem('link-2')" @click.prevent="setStatus('template')">Templates</a>
-        <a class="link-3 px-10 cursor-pointer" @click="selectItem('link-3')" @click.prevent="setStatus('event')">Event</a>
-        <a class="link-4 px-10 cursor-pointer" @click="selectItem('link-4')" @click.prevent="setStatus('mbr')">Member</a>
-        <a class="link-5 px-10 cursor-pointer" @click="selectItem('link-5')" @click.prevent="setStatus('employer')">Employer</a>
-        <a class="link-6 px-10 cursor-pointer" @click="selectItem('link-6')" @click.prevent="setStatus('external')">External Inspo</a>
+      <div class="w-full text-lg text-center py-5 filter-link font-bold mb-8">
+        <a class="link-1 px-10 cursor-pointer text-grey" @click="selectItem('link-1')" @click.prevent="setStatus('')">All</a>
+        <a class="link-2 px-10 cursor-pointer text-grey" @click="selectItem('link-2')" @click.prevent="setStatus('template')">Templates</a>
+        <a class="link-3 px-10 cursor-pointer text-grey" @click="selectItem('link-3')" @click.prevent="setStatus('event')">Event</a>
+        <a class="link-4 px-10 cursor-pointer text-grey" @click="selectItem('link-4')" @click.prevent="setStatus('mbr')">Member</a>
+        <a class="link-5 px-10 cursor-pointer text-grey" @click="selectItem('link-5')" @click.prevent="setStatus('employer')">Employer</a>
+        <a class="link-6 px-10 cursor-pointer text-grey" @click="selectItem('link-6')" @click.prevent="setStatus('external')">External Inspo</a>
       </div>
+</nav>
 
 
-  <!-- <div class="bg-grey-darkest py-5 text-sm text-left pl-5">
-     <a class="text-blue" target="blank" >
-      https://email-gallery.netlify.app/?search={{ search_filter }}
-     </a>
-  </div> -->
 
     <div class="flex flex-wrap lg:mx-32">
                 <a target="_blank" :href="item.url" class="lg:w-1/4 md:w-1/2 w-full p-5 text-black hover:text-grey-dark no-underline"
