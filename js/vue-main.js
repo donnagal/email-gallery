@@ -43,7 +43,7 @@ new Vue({
       },
       { name: '[Event] Retiree information Reminder, 2020-08',
         group: 'event',
-        url: ["https://email-gallery.netlify.app/emails/2020-08-event__invite-retirement-qld-reminder.html"],
+        url: ["https://email-gallery.netlify.app/emails/2020-07-event__invite-retirement--nsw-reminder.html"],
         pic: ["images/2020-08-event__invite-retirement-qld-reminder.jpg"],
       },
       { name: '[Event] Retirement webinar reminder, 2020-08',
