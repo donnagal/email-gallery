@@ -33,7 +33,7 @@ nav a {
   text-decoration: none;
   padding-bottom: 8px;
 }
-.filter-link a:before, a:after {
+.filter-link a:before, .filter-link a:after {
   content: '';
   position: absolute;
   bottom: 8px;
@@ -61,18 +61,18 @@ nav a {
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.filter-link a:hover:before, a:hover:after, a:focus:before, a:focus:after {
+.filter-link a:hover:before, .filter-link a:hover:after, .filter-link a:focus:before, .filter-link a:focus:after {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-.filter-link a:hover:before, a:focus:before {
+.filter-link a:hover:before, .filter-link a:focus:before {
   -webkit-transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.filter-link a:hover:after, a:focus:after {
+.filter-link a:hover:after, .filter-link a:focus:after {
   -webkit-transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
@@ -92,7 +92,7 @@ nav a {
         <div class="flex w-3/4 mx-auto mt-10 mb-5">
           <div class="w-full text-center text-gray-700">
             <input id="myInput" type="text" class="pl-16 py-4 bg-grey-lighter w-full rounded-full shadow-inner focus:outline-none focus:bg-grey-lightest" 
-            placeholder="Search emails... SIS, Event..." v-model="search_filter" @keyup="show = !show">
+            placeholder="Search emails: SIS, Event, Statement..." v-model="search_filter" @keyup="show = !show">
             
 
             <div class="mt-2 text-left">
