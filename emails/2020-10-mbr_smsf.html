@@ -86,13 +86,12 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
           <!-- Text -->
           <div style="Margin-left: 20px;Margin-right: 20px;">
           <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-            <p class="size-18" style="Margin-top: 0;Margin-bottom: 20px;font-size: 17px;line-height: 26px;" lang="x-size-18">
-              <span style="color:#8d8d8d">Hi <%= recipient.firstName %>,</span>
-            </p>
             <h3 style="Margin-top: 0;Margin-bottom: 12px;font-style: normal;font-weight: normal;color: #000;font-size: 24px;line-height: 32px;text-align: left;">
               <strong>How do you know if a SMSF is right for you?</strong>
             </h3>
             <p class="size-16" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;text-align: left;" lang="x-size-16">
+             Hi <%= recipient.firstName %>,
+             <br/><br/>
               What is a Self Managed Super Fund (SMSF)? Regulated by the Australian Taxation Office (ATO), SMSFs offer an alternative to the super funds run by financial institutions, employers and industry funds like Cbus. SMSFs are typically family or one-member funds. They are established under Trust Law and require an independent auditor to be appointed each year to examine your funds financial statements and assess the funds compliance with super law.
             </p>
           </div>
@@ -181,16 +180,19 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
           <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;">
             <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
           </div>
-      
-          <!-- Heading -->
-          <div style="Margin-left: 20px;Margin-right: 20px;">
-            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-              <h3 style="Margin-top: 0;Margin-bottom: 32px;font-style: normal;font-weight: normal;color: #000;font-size: 24px;line-height: 32px;text-align: left;">
-                <strong>On average, SMSFs haven’t outperformed APRA regulated fund</strong>
-              </h3>
-            </div>
+
+
+        <!-- Text -->
+        <div style="Margin-left: 20px;Margin-right: 20px;">
+          <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+            <h3 style="Margin-top: 0;Margin-bottom: 12px;font-style: normal;font-weight: normal;color: #000;font-size: 24px;line-height: 32px;text-align: left;">
+              <strong>On average, SMSFs haven’t outperformed APRA regulated fund</strong>
+            </h3>
+            <p class="size-16" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;text-align: left;" lang="x-size-16">
+              The table below compares the average returns for SMSFs. On average APRA-regulated super funds like Cbus achieved higher returns. The returns you can expect from your SMSF are determined by your balance. If your balance is more than $500,000* it's possible you may get returns that are competitive with APRA-regulated funds.            </p>
           </div>
-          
+        </div>
+
           <!-- Image graph -->
           <div style="Margin-left: 20px;Margin-right: 20px;">
           <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 5px;" align="center">
@@ -204,170 +206,7 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
         </div>
 
         
-      
-
-<!-- TUT: https://www.emailonacid.com/blog/article/email-development/tutorial-how-to-code-an-interactive-greeting-card-email -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <!--[if !mso]><!-->
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!--<![endif]-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-
-  <style type="text/css">
-  @media (max-width: 3780px) {
-    .card_holder {
-      height:567px;
-    }
-    .card_container {
-      height:567px;
-    }
-    /* entire container, keeps perspective */
-    .flip-container {
-      -webkit-perspective: 1000px;
-      perspective: 1000px;
-      z-index: 10;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      width: 0px;
-    }
-    /* flip the pane when hovered */
-    .flip-container:hover .flipper {
-      transform: rotateY(-180deg);
-      -webkit-transform: rotateY(-180deg);
-      -ms-transform: rotateY(-180deg);
-    }
-
-    /* flip speed goes here */
-    .flipper, .inside {
-      transition: 2s;
-      transform-style: preserve-3d;
-      -webkit-transform-style: preserve-3d;
-      -ms-transform-style: preserve-3d;
-      position: relative;
-    }
-
-    /* hide back of pane during swap */
-    .front, .back {
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    /* front pane, placed above back */
-    .front {
-      z-index: 10;
-      width:500px;
-      height:567px;
-      padding:0px;
-      /* for firefox 31 */
-      transform: rotateX(0deg);
-    }
-
-    /* back, initially hidden pane */
-    .back {
-      z-index: 5;
-      width:500px;
-      height:567px;
-      padding:0px;
-      transform: rotateX(180deg);
-      -webkit-transform: rotateX(180deg);
-    }
-
-    .inside {
-      z-index: -1;
-      width:500px;
-      height:567px;
-      padding:0px;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      /* for firefox 31 */
-    }
-
-    .kinetic {
-      display:block !important;
-      max-height:none !important;
-      height:567px !important;
-      width:0px !important;
-      overflow:visible !important;
-    }
-    .fallback {
-      display:none !important;
-    }
-  }
-
-  .c-forms-form {
-    text-align: left;
-  }
-  .c-forms-form {
-    padding: 23px !important;
-  }
-  .cognito textarea, .c-forms-form input[type=text] {
-    margin: 5px 0  24px 0!important;
-  }
-  </style>
-  <!--<![endif]-->
-</head>
-<body style="Margin:0;padding:0;min-width:100%;background-color:#286bd6;">
-  <table class="card_holder" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing:0;max-width: 500px;margin:0 auto;">
-    <tr>
-      <td height="50">&nbsp;<!-- This just adds a little padding above the card so that you can see how it opens out --></td>
-    </tr>
-    <tr>
-      <td align="center">
-        <!-- START INTERACTIVE SECTION -->
-        <!--[if !mso]><!-->
-        <div class="card_container" style="position: relative;">
-          <div class="flip-container kinetic" style="mso-hide:all;display:none;max-height:0;overflow:hidden;text-align:center;width:100%;">
-            <div class="flipper">
-              <div class="front">
-                <img width="100%" src="img/card.jpg" style="max-width:500px;" />
-              </div>
-              <div class="back">
-                <img width="100%" src="https://www.emailonacid.com/images/blog_images/Emailology/2016/HolidayCard_InsideLeft.jpg" style="max-width:500px;" />
-              </div>
-
-            </div>
-            <div class="inside" style="height:567px; background-color: white;">
-              <div class="cognito">
-                <script src="https://www.cognitoforms.com/s/bYLvPE4iR0WAeyPIFxi5eQ"></script>
-                <script>Cognito.load("forms", { id: "3" });</script>
-                </div>
-              </div>
-          </div>
-
-        </div>
-
-        <!--<![endif]-->
-        <!-- END INTERACTIVE SECTION -->
-
-        <!-- START FALLBACK SECTION -->
-        <center>
-          <table border="0" width="100%" cellpadding="0" cellspacing="0" class="fallback" style="margin: 0 auto; padding: 0;">
-            <tr>
-              <td class="padding" style="margin: 0; padding: 0px;">
-                  <img src="https://www.emailonacid.com/images/blog_images/Emailology/2016/HolidayCard_Full.jpg" width="500" style="width:100%;max-width:500px;" />
-              </td>
-            </tr>
-          </table>
-        </center>
-        <!-- END FALLBACK SECTION -->
-
-      </td>
-    </tr>
-  </table>
-<!-- ======= end hero article ======= -->
-</body>
-</html>
-
-     <!-- Small text -->
+     <!-- Small text (2)-->
       <div style="Margin-left: 20px;Margin-right: 20px;">
           <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
             <p class="size-13" style="Margin-top: 0;Margin-bottom: 0;font-size: 13px;line-height: 21px;" lang="x-size-13">
@@ -376,12 +215,6 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
               href="https://www.ato.gov.au/About-ATO/Research-and-statistics/In-detail/Super-statistics/SMSF/Self-managed-super-funds--A-statistical-overview-2017-18/">
                 Self-managed super funds: a statistical overview 2017&#8211;18, Australian Taxation Office
               </a>
-            </p>
-            <p class="size-13" style="Margin-top: 20px;Margin-bottom: 20px;font-size: 13px;line-height: 21px;" lang="x-size-13">
-              <span style="color:#333">
-                The Table above compares the average returns for SMSFs. On average APRA-regulated super funds like Cbus achieved higher returns.
-                The returns you can expect from your SMSF are determined by your balance. If your balance is more than $500,000* it's possible you may get returns that are competitive with APRA-regulated funds.
-              </span>
             </p>
           </div>
         </div>
