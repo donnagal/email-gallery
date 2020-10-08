@@ -17,15 +17,30 @@
     textarea {
       width: 100%;
     }
+    .btn-print {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      font-size: 50px;
+      color: #2196F3;
+    }
 
-    @media print{@page {size: landscape}}
-
+    @media print{
+      @page {size: landscape}
+      .no-print, .no-print *{
+        display: none !important;
+        }
+    }
   </style>
 </head>
 
 <body class="bg-grey-lighter">
 
-  <header>
+  <button class="btn-print no-print" onclick="window.print()">
+    <i class="fas fa-file-download"></i>
+  </button>
+
+  <header class="no-print">
     
     <div class="bg-black mx-auto text-grey px-5">
       <div class="flex py-2">
@@ -53,20 +68,19 @@
     <div class="">
 
     <div class="mx-4 my-5 p-5 bg-grey-darkest">
-      <button onclick="window.print()">Print this page</button>
-      <p class="pb-3 text-white">Your Campaign</p>
+      <p class="pb-3 text-white no-print">Your Campaign</p>
       <div class="font-sans flex text-xs">
         <div class="w-full">
           <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="medium"  ng-model="$medium" />
-          <p class="pt-1 text-xs text-grey-dark">edm</p>
+          <p class="pt-1 text-xs text-grey-dark no-print">edm</p>
         </div>
         <div class="w-full mx-1">
           <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="source" ng-model="$source" />
-          <p class="pt-1 text-xs text-grey-dark">adobe_campaign</p>
+          <p class="pt-1 text-xs text-grey-dark no-print">adobe_campaign</p>
         </div>
         <div class="w-full">
         <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="campaign" ng-model="$campaign" />
-        <p class="pt-1 text-xs text-grey-dark">(ie: mem-dr--2004na-tfnrem)</p>
+        <p class="pt-1 text-xs text-grey-dark no-print">(ie: mem-dr--2004na-tfnrem)</p>
         </div>
       </div>
     </div>
@@ -84,7 +98,7 @@
         </div>
       </div>
 
-    <div id="content">
+    <div>
       <div class="bg-white px-3 py-2 flex text-xs font-sans mt-1 shadow">
         <div class="w-1/3">
           <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="https://www.cbussuper.com.au/" ng-model="$URL1" />
@@ -93,7 +107,7 @@
           <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content1" />
         </div>
         <div class="w-full">
-          <div name="tracking 1" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest" style="font-size: 10px; padding-bottom: .5rem;">
+          <div name="tracking 1" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
             {{ $URL1 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content1 }}
           </div>
         </div>
@@ -107,7 +121,7 @@
           <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content2" />
         </div>
         <div class="w-full">
-          <div name="tracking 2" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest" style="font-size: 10px; padding-bottom: .5rem;">
+          <div name="tracking 2" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
             {{ $URL2 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content2 }}
           </div>
         </div>
@@ -121,7 +135,7 @@
           <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content3" />
         </div>
         <div class="w-full">
-          <div name="tracking 3" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest" style="font-size: 10px; padding-bottom: .5rem;">
+          <div name="tracking 3" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
             {{ $URL3 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content3 }}
           </div>
         </div>
@@ -135,7 +149,7 @@
           <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content4" />
         </div>
         <div class="w-full">
-          <div name="tracking 4" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest" style="font-size: 10px; padding-bottom: .5rem;">
+          <div name="tracking 4" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
             {{ $URL4 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content4 }}
           </div>
         </div>
@@ -149,7 +163,7 @@
           <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content5" />
         </div>
         <div class="w-full">
-          <div name="tracking 5" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest" style="font-size: 10px; padding-bottom: .5rem;">
+          <div name="tracking 5" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
             {{ $URL5 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content5 }}
           </div>
         </div>
@@ -163,7 +177,7 @@
           <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content6" />
         </div>
         <div class="w-full">
-          <div name="tracking 6" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest" style="font-size: 10px; padding-bottom: .5rem;">
+          <div name="tracking 6" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
             {{ $URL6 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content6 }}
           </div>
         </div>
@@ -177,7 +191,7 @@
           <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content7" />
         </div>
         <div class="w-full">
-          <div name="tracking 7" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest" style="font-size: 10px; padding-bottom: .5rem;">
+          <div name="tracking 7" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
             {{ $URL7 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content7 }}
           </div>
         </div>
@@ -191,7 +205,7 @@
           <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content8" />
         </div>
         <div class="w-full">
-          <div name="tracking 8" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest" style="font-size: 10px; padding-bottom: .5rem;">
+          <div name="tracking 8" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
             {{ $URL8 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content8 }}
           </div>
         </div>
@@ -205,7 +219,7 @@
           <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content9" />
         </div>
         <div class="w-full">
-          <div name="tracking 9" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest" style="font-size: 10px; padding-bottom: .5rem;">
+          <div name="tracking 9" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
             {{ $URL9 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content9 }}
           </div>
         </div>
@@ -219,7 +233,7 @@
           <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content10" />
         </div>
         <div class="w-full">
-          <div name="tracking 10" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest" style="font-size: 10px; padding-bottom: .5rem;">
+          <div name="tracking 10" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
             {{ $URL10 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content10 }}
           </div>
         </div>
@@ -233,7 +247,7 @@
           <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content11" />
         </div>
         <div class="w-full">
-          <div name="tracking 11" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest" style="font-size: 10px; padding-bottom: .5rem;">
+          <div name="tracking 11" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
             {{ $URL11 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content11 }}
           </div>
         </div>
@@ -247,7 +261,7 @@
           <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content12" />
         </div>
         <div class="w-full">
-          <div name="tracking 12" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest" style="font-size: 10px; padding-bottom: .5rem;">
+          <div name="tracking 12" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
             {{ $URL12 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content12 }}
           </div>
         </div>
@@ -261,7 +275,7 @@
           <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content13" />
         </div>
         <div class="w-full">
-          <div name="tracking 13" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest" style="font-size: 10px; padding-bottom: .5rem;">
+          <div name="tracking 13" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
             {{ $URL13 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content13 }}
           </div>
         </div>
@@ -271,38 +285,12 @@
     </div>
   </div>
 </div>
-<div id="editor"></div>
-<button id="cmd">generate PDF</button>
-
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.min.js'></script>
 
   <script src="../../js/global.js"></script>
 
-  <script>
-
-$(function () {
-
-var specialElementHandlers = {
-    '#editor': function (element,renderer) {
-        return true;
-    }
-};
-$('#cmd').click(function () {
-    var doc = new jsPDF();
-    doc.fromHTML($('#content').html(), 15, 15, {
-        'width': 170,'elementHandlers': specialElementHandlers
-    });
-    doc.save('sample-file.pdf');
-});  
-});
-
-
-
-  </script>
 
 </body>
 
