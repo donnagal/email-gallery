@@ -69,6 +69,14 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
             </a>
           </div>
 
+          <!-- Member number -->
+          <div style="Margin-left: 20px;Margin-right: 20px;Margin-top:5px;">
+            <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
+              <p style="Margin-bottom: 0;font-style: normal;font-weight: bold;color: black;font-size: 17px;line-height: 26px;text-align: right;">
+                  Member number: <%=  recipient.mbrAccID %>
+              </p>
+            </div>
+          </div>
 
           <!-- spacer -->
           <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 10px;">
@@ -78,9 +86,6 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
           <!-- Text -->
           <div style="Margin-left: 20px;Margin-right: 20px;">
           <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-            <h2 style="Margin-top: 0;Margin-bottom: 32px;font-style: normal;font-weight: normal;color: #0a5490;font-size: 26px;line-height: 34px;text-align: left;">
-              <strong>How do you know if a Self Managed Super Fund is right for you?</strong>
-            </h2>
             <p class="size-16" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;text-align: left;" lang="x-size-16">
               Hi <%= recipient.firstName %>,
               <br/><br/>
@@ -130,20 +135,41 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
           </p>
 
           <ul style="Margin-top: 20px;Margin-bottom: 0;Margin-left: 24px;padding: 0;list-style-type: disc;">
-            <li style="Margin-top: 20px;Margin-bottom: 0;Margin-left: 0;">Do you have time?</li>
-            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0;">Do you have the knowledge and experience?</li>
-            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0;">Do you have enough super?</li>
-            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0;">Will you get a better result?</li>
-            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0;">Can you afford it?</li>
+            <li style="Margin-top: 20px;Margin-bottom: 0;Margin-left: 0; font-weight: bold;">Do you have time?</li>
+            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0; font-weight: bold;">Do you have the knowledge and experience?</li>
+            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0; font-weight: bold;">Do you have enough super?</li>
+            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0; font-weight: bold;">Will you get a better result?</li>
+            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0; font-weight: bold;">Can you afford it?</li>
           </ul>
-          
-            <p style="Margin-top: 20px;Margin-bottom: 20px;">
-              Get the Facts about SMSFs
-              <a class="hover" target="_blank" style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #15798d;" 
-                href="https://www.cbussuper.com.au/campaigns/smsf-get-the-facts?utm_medium=edm&utm_source=adobe_campaign&utm_campaign=mem-2020-10-smsf&utm_content=text-get-the-facts-here">
-                  here
-              </a>
-            </p>
+
+        <!-- inner spacer -->
+        <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;">
+          <div style="mso-line-height-rule: exactly;line-height: 12px;font-size: 1px;">&nbsp;</div>
+        </div>
+
+        <!-- Button -->
+        <table class="device-width" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="border-collapse: collapse;">
+          <tbody>
+          <tr>
+              <td valign="top" align="left">
+                <div class="btn" style="text-align:left;color: #ffffff;">
+                  <table cellpadding="0" cellspacing="0" align="left">
+                      <tbody><tr>
+                        <td width="10">
+                          &nbsp;
+                        </td>
+                          <td style="width: 200px;height: 45px;border-radius: 4px;background: #0f8045; font-family: calibri,arial,sans-serif; font-size: 18px;text-align:center;">
+                            <a target="_blank" href="https://www.cbussuper.com.au/campaigns/smsf-get-the-facts?utm_medium=edm&utm_source=adobe_campaign&utm_campaign=mem-2020-10-smsf&utm_content=text-get-the-facts-here" style="border-radius: 4px;text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0f8045; border-bottom: 10px solid #0f8045; border-right: 5px solid #0f8045;border-left: 5px solid #0f8045;">
+                              <strong style="font-family: calibri,arial,sans-serif;">Get the facts</strong> <span style="font-family: monospace;">&nbsp; ›</span>
+                            </a>
+                          </td>
+                      </tr>
+                  </tbody></table>
+              </div>
+              </td>
+            </tr>
+        </tbody>
+      </table>
 
         </div>
       </div>
@@ -251,28 +277,49 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
           </p>
 
           <ul style="Margin-top: 16px;Margin-bottom: 0;Margin-left: 24px;padding: 0;list-style-type: disc;">
-            <li style="Margin-top: 16px;Margin-bottom: 0;Margin-left: 0;">Our range of super products</li>
-            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0;">Choosing an investment option that’s right for you</li>
-            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0;">Contribution strategies including salary sacrifice and personal contributions</li>
-            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0;">Nominating beneficiaries</li>
-            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0;">Maximise your super for retirement</li>
-            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0;">Insurances available through Cbus</li>
+            <li style="Margin-top: 16px;Margin-bottom: 0;Margin-left: 0;font-weight: bold;">Our range of super products</li>
+            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0;font-weight: bold;">Choosing an investment option that’s right for you</li>
+            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0;font-weight: bold;">Contribution strategies including salary sacrifice and personal contributions</li>
+            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0;font-weight: bold;">Nominating beneficiaries</li>
+            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0;font-weight: bold;">Maximise your super for retirement</li>
+            <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0;font-weight: bold;">Insurances available through Cbus</li>
           </ul>
+
+         <!-- inner spacer -->
+        <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
+          <div style="mso-line-height-rule: exactly;line-height: 11px;font-size: 1px;">&nbsp;</div>
+        </div>
           
-            <p style="Margin-top: 20px;Margin-bottom: 20px;">
-              Find more information about Cbus’ Advice Service
-              <a class="hover" target="_blank" style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #15798d;" 
-                href="https://www.cbussuper.com.au/tools-resources/advice-services?utm_medium=edm&utm_source=adobe_campaign&utm_campaign=mem-2020-10-smsf&utm_content=text-find-out-more">
-                  here
-              </a>
-            </p>
+        <!-- Button -->
+        <table class="device-width" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="border-collapse: collapse;">
+          <tbody>
+          <tr>
+              <td valign="top" align="left">
+                <div class="btn" style="text-align:left;color: #ffffff;">
+                  <table cellpadding="0" cellspacing="0" align="left">
+                      <tbody><tr>
+                        <td width="10">
+                          &nbsp;
+                        </td>
+                          <td style="width: 200px;height: 45px;border-radius: 4px;background: #0f8045; font-family: calibri,arial,sans-serif; font-size: 18px;text-align:center;">
+                            <a target="_blank" href="https://www.cbussuper.com.au/tools-resources/advice-services?utm_medium=edm&utm_source=adobe_campaign&utm_campaign=mem-2020-10-smsf&utm_content=text-find-out-more" style="border-radius: 4px;text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0f8045; border-bottom: 10px solid #0f8045; border-right: 5px solid #0f8045;border-left: 5px solid #0f8045;">
+                              <strong style="font-family: calibri,arial,sans-serif;">Learn more</strong> <span style="font-family: monospace;">&nbsp; ›</span>
+                            </a>
+                          </td>
+                      </tr>
+                  </tbody></table>
+              </div>
+              </td>
+            </tr>
+        </tbody>
+      </table>
 
         </div>
       </div>
     
         <!-- inner spacer -->
-        <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
-          <div style="mso-line-height-rule: exactly;line-height: 11px;font-size: 1px;">&nbsp;</div>
+        <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 25px;">
+          <div style="mso-line-height-rule: exactly;line-height: 25px;font-size: 1px;">&nbsp;</div>
         </div>
 
                 <!-- CTA -->
@@ -309,6 +356,7 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
           Or call Cbus Advice Services on 
           <a class="hover" target="_blank" style="text-decoration: underline;color: #15798d;" 
           href="tel:1300 361 784"><strong style="color: #15798d;">1300 361 784</strong></a>
+          (Option 4)
         </p>
       </div>
 
@@ -348,7 +396,7 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
                       <a class="hover" href="tel:1300361784"> <img border="0" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/8c340e9840e2dee1c997b1224deda519.gif" width="45" alt="icon call."></a>
                     </td>
                     <td class="size-15" style="padding:20px 6px 0 30px;color:white;font-family:calibri,arial,sans-serif;">
-                      Call us on <a style="color: white;" href="tel:1300361784">1300 361 784</a><br/> Mon to Fri from 8am to 8pm
+                      Call us on <a style="color: white;" href="tel:1300361784">1300 361 784</a>  (Option 4)<br/> Mon to Fri from 8am to 8pm
                     </td>
                   </tr>
                   <tr role="navigation" >
@@ -470,6 +518,10 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
       <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 32px;">
         <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
           <p style="Margin-top: 0;Margin-bottom: 0;font-size: 12px;line-height: 16px;">
+            <a href="https://moneysmart.gov.au/how-super-works/self-managed-super-funds-smsf" style="color: #454545;font-size: 12px;line-height: 19px;">
+              *https://moneysmart.gov.au/how-super-works/self-managed-super-funds-smsf
+            <a>
+            <br><br>
             Trustee: United Super Pty Ltd ABN 46 006 261 623 AFSL 233792 Cbus ABN 75 493 363 262.
             <br><br>
             This email (including any attachments) contains information which is confidential and may be subject to legal privilege. If you are not the intended recipient you must not use, distribute or copy this email. If you have received this email in error, please notify the sender immediately and delete this email. Any views expressed in this email are not necessarily the views of Cbus.
@@ -477,11 +529,11 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
             This information is about Cbus. It doesn’t take into account your specific needs, so you should look at your own financial position, objectives and requirements before making any financial decisions. Read the relevant Cbus Product Disclosure Statement and related documents to decide whether Cbus is right for you.
             <br><br>
             Contact <strong>1300 361 784</strong> or visit 
-            <a class="hover size-12" target="_blank" style="color: #454545;font-size: 12px;font-weight: bold;line-height: 19px;" href="https://www.cbussuper.com.au?utm_medium=edm&amp;utm_source=adobe_campaign&amp;utm_campaign=email-2-Non-RIE&amp;utm_content=visit-cbus-text">
+            <a class="hover size-12" target="_blank" style="color: #454545;font-size: 12px;font-weight: bold;line-height: 19px;" href="https://www.cbussuper.com.au">
               cbussuper.com.au
             </a> for a copy.
             <br><br>
-            <a class="hover size-12" target="_blank" style="color: #454545;font-size: 12px;font-weight: bold;line-height: 19px;" href="https://www.cbussuper.com.au/about-us/privacy-statement?utm_medium=edm&amp;utm_source=adobe_campaign&amp;utm_campaign=email-2-Non-RIE&amp;utm_content=cbus-privacy-statement">
+            <a class="hover size-12" target="_blank" style="color: #454545;font-size: 12px;font-weight: bold;line-height: 19px;" href="https://www.cbussuper.com.au/about-us/privacy-statement">
               Cbus Privacy Statement | <%@ include view='UnsubscriptionLink'%>
             </a>
           </p>
