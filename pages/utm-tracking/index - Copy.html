@@ -1,0 +1,188 @@
+<style>  
+
+  body { 
+    background-color: #607d8b;
+    }
+
+  a { text-decoration:none}
+  td,p,h1{  font: 42px Reem, "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.84);
+  margin-top: -5px;
+  }
+  h1{font-size:60px}
+   input[type="text"],
+   textarea,
+   select {
+    width:300px;
+    padding: 6px 9px;
+    color: #A5A5A5;
+    background: rgba(0, 0, 0, 0.62);
+    border: 0px solid;
+    border-color: #FFF;
+    border-radius: 5px;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+    -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+    -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 0);
+    margin-bottom: 5px;
+  }
+  small {
+    font-size: 11px;
+  }
+  
+   input[type="text"]:focus,
+   textarea:focus,
+   select:focus {
+    background-color: #000;
+    color: #FFF;
+    outline: none;
+    position: relative;
+    z-index: 5;
+    border: 1px solid;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+  }
+  input.send{
+    background-color: rgba(56, 172, 209, 0.56);
+    height: 62px;
+    width: 266px;
+    font-family: sans-serif;
+    font-size: x-large;
+    border-bottom-right-radius: 12;
+    color: #FFF;
+    border-color: #0CF;}
+  input.send:hover{
+    background-color:#0794C3;
+  }
+
+  </style>
+  
+
+  
+    <body>
+
+    <figcaption class="info" style="position:absolute;top: 90px;; left:9%;">
+  <div ng-app> 
+  
+      <div> 
+      
+  <center>
+
+<h1>UTM email tracking</h1>
+  <table width="600" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>medium<input type="text" placeholder="edm"  ng-model="$medium" /><small>edm</small></td>
+      <td>source: <input type="text" placeholder="adobe_campaign" ng-model="$source" /><small>adobe_campaign</small></td>
+      <td>campaign<input type="text" placeholder="(utm_campaign)" ng-model="$campaign" /><small>(ie: mem-dr--2004na-tfnrem)</small></td>
+    </tr>
+  <table width="600" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>Target URL:</td>
+      <td>Content</td>
+      <td>Output</td>
+    </tr>
+<br/>
+<hr />
+<!-- Row 1--> 
+   <tr>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL1" /></td>
+      <td><input type="text" placeholder="(utm_content)" ng-model="$content1" /></td>
+      <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 1" >{{ $URL1 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content1 }}</textarea></td>
+    </tr>
+<!-- // Row 1--> 
+
+
+<!-- Row 2--> 
+   <tr>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL2" /></td>
+      <td><input type="text" placeholder="(utm_content)" ng-model="$content2" /></td>
+      <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 2" >{{ $URL2 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content2 }}</textarea></td>
+    </tr>
+<!-- // Row 2--> 
+
+<!-- Row 3--> 
+   <tr>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL3" /></td>
+      <td><input type="text" placeholder="(utm_content)" ng-model="$content3" /></td>
+      <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 3" >{{ $URL3 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content3 }}</textarea></td>
+    </tr>
+<!-- // Row 3--> 
+
+<!-- Row 4--> 
+   <tr>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL4" /></td>
+      <td><input type="text" placeholder="(utm_content)" ng-model="$content4" /></td>
+      <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 4" >{{ $URL4 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content4 }}</textarea></td>
+    </tr>
+<!-- // Row 4--> 
+
+
+<!-- Row 5--> 
+   <tr>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL5" /></td>
+      <td><input type="text" placeholder="(utm_content)" ng-model="$content5" /></td>
+      <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 5" >{{ $URL5 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content5 }}</textarea></td>
+    </tr>
+<!-- // Row 5--> 
+
+<!-- Row 6--> 
+   <tr>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL6" /></td>
+      <td><input type="text" placeholder="(utm_content)" ng-model="$content6" /></td>
+      <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 6" >{{ $URL6 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content6 }}</textarea></td>
+    </tr>
+<!-- // Row 6--> 
+
+<!-- Row 7--> 
+   <tr>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL7" /></td>
+      <td><input type="text" placeholder="(utm_content)" ng-model="$content7" /></td>
+      <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 7" >{{ $URL7 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content7 }}</textarea></td>
+    </tr>
+<!-- // Row 7--> 
+
+<!-- Row 8--> 
+   <tr>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL8" /></td>
+      <td><input type="text" placeholder="(utm_content)" ng-model="$content8" /></td>
+      <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 8" >{{ $URL8 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content8 }}</textarea></td>
+    </tr>
+<!-- // Row 8--> 
+
+<!-- Row 9--> 
+   <tr>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL9" /></td>
+      <td><input type="text" placeholder="(utm_content)" ng-model="$content9" /></td>
+      <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 9" >{{ $URL9 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content9 }}</textarea></td>
+    </tr>
+<!-- // Row 9--> 
+
+
+<!-- Row 10--> 
+   <tr>
+      <td><input type="text" placeholder="eg; https://www.cbussuper.com.au/" ng-model="$URL10" /></td>
+      <td><input type="text" placeholder="(utm_content)" ng-model="$content10" /></td>
+      <td><textarea style="width:900px; height: 28px; font-size:11px;" name="tracking 10" >{{ $URL10 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content10 }}</textarea></td>
+    </tr>
+<!-- // Row 10--> 
+
+</table>
+<br/>
+
+  
+
+</center>
+
+ </figcaption>
+</figure>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
+

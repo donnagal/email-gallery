@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Email Gallery</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
+  <link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
+
+  <style>
+    body {
+      font-family: 'Ubuntu',sans-serif;
+    }
+
+
+    nav.link-1 .link-1,
+    nav.link-2 .link-2,
+    nav.link-3 .link-3,
+    nav.link-4 .link-4,
+    nav.link-5 .link-5,
+    nav.link-6 .link-6 {
+        color:#3490dc;
+        font-weight: bold;
+    }
+
+    .bg_black { background-color: black}
+
+nav a {
+  font-size: 20px;
+  color: #584E4A;
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+.filter-link a:before, .filter-link a:after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background-color: #75d44666;
+  z-index: -1;
+}
+.filter-link a:before {
+  opacity: 0;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.filter-link a:after {
+  opacity: 0;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.filter-link a:hover:before, .filter-link a:hover:after, .filter-link a:focus:before, .filter-link a:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.filter-link a:hover:before, .filter-link a:focus:before {
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.filter-link a:hover:after, .filter-link a:focus:after {
+  -webkit-transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="bg-black mx-auto text-grey px-5">
+      <div class="flex py-2">
+        <div class="flex-1">
+          <h1 class="text-xl"><i class="menu-button fas fa-bars pr-10 cursor-pointer hover:text-white"></i> Email Report TBC</h1>
+        </div>
+      </div>
+    </div>
+    <div class="m-open bg-grey-lighter w-1/5 font-sans h-screen absolute t-0 z-20 pt-5 px-2">
+      <a href="/" class="text-black w-full py-2 px-3 no-underline block hover:bg-grey-lightest cursor-pointer">
+        Email galley
+      </a>
+      <a href="/pages/utm-tracking" class="text-black w-full py-2 px-3 no-underline block hover:bg-grey-lightest">
+        UTM Tracking tool
+      </a>
+      <a class="menu-button cursor-pointer text-black w-full py-2 px-3 no-underline block bg-grey-lightest">
+        Report
+      </a>
+    </div>
+  </header>
+
+
+
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  
+  <script src="../../js/global.js"></script>
+
+</body>
+
+</html>
