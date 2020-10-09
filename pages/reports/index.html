@@ -7,12 +7,18 @@
   <title>Email Gallery</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
   <link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
 
   <style>
     body {
       font-family: 'Ubuntu',sans-serif;
+    }
+
+    .font-1 {
+      font-family: 'Bebas Neue', cursive;
     }
 
 
@@ -80,7 +86,23 @@ nav a {
   transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
   transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
+    /* Themes */
+    a.bg-color:hover {
+      opacity: .75;
+    }
+    .purple .bg-color {
+      background: #72004D;
+    }
+    .purple .text-color {
+      color: #72004D;
+    }
+    .gold .bg-color {
+      background: #88721d;
+    }
+    .gold .text-color {
+      color: #a38e3d;
+    }
+    
   </style>
 </head>
 
@@ -146,18 +168,68 @@ nav a {
 
 
     <div class="flex flex-wrap lg:mx-32">
-                <a target="_blank" :href="item.url" class="lg:w-1/4 md:w-1/2 w-full p-5 text-black hover:text-grey-dark no-underline"
+                <div class="lg:w-1/3 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline" :class="[item.color]"
                     v-for="item in items | filterBy search_filter in 'name' | filterBy status_filter in 'group'"
                     v-show="setPaginate($index)">
 
-                    <img class="border-2" :src="item.pic">
-
-                    <div class="mt-1">
-                      <h3 class="text-sm font-nromal">
-                           {{ item.name }}
-                      </h3>
+                    <div class="bg-color text-white p-5 font-sans">
+                      <div class="flex items-center">
+                        <div class="w-1/4">
+                          <i class="text-2xl opacity-75 mt-2 fas fa-paper-plane"></i>
+                        </div>
+                        <div class="w-full">
+                          <p class="font-1 text-4xl -mb-2">{{ item.sent }} <i class="fas fa-users pr-2 text-lg opacity-75"></i></p>
+                        </div>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="w-1/4"></div>
+                        <div class="w-full">
+                          <h3 class="text-xs font-nromal pt-2 uppercase font-normal pb-2">{{ item.name }}</h3>
+                          <i class="text-xs opacity-75">{{ item.subject }}</i>
+                        </div>
+                      </div>
                   </div>
-                </a>
+
+                      <div class="bg-white text-black px-5 py-5 font-sans shadow">
+                        <div class="flex items-center">
+                          <div class="w-full">
+                            <p class="tracking-wide uppercase text-grey font-1">opens</p>
+                            <p class="font-1 text-3xl -mb-2">{{ item.opens }}</p>
+                          </div>
+                          <div class="w-1/4">
+                            <i class="text-3xl text-color mt-2 fas fa-envelope-open-text"></i>
+                          </div>
+                        </div>
+                    </div>
+
+                      <div class="bg-white text-black px-5 py-5 font-sans shadow">
+                        <div class="flex items-center">
+                          <div class="w-full">
+                            <p class="tracking-wide uppercase text-grey font-1">clicks</p>
+                            <p class="font-1 text-3xl -mb-2">{{ item.clicks }}</p>
+                          </div>
+                          <div class="w-1/4">
+                            <i class="text-3xl text-color mt-2 fas fa-mouse"></i>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="bg-white text-black px-5 py-5 font-sans shadow">
+                      <div class="flex items-center">
+                        <div class="w-full">
+                          <p class="tracking-wide uppercase text-grey font-1">
+                            <i class="fas fa-calendar-day"></i> 
+                            <span class="pl-2">{{ item.time }}</span>
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+
+                  <a class="block bg-color text-white p-3 font-sans shadow no-underline text-center" title="preview email" :href="item.url" target="_blank">
+                    <i class="fas fa-envelope-square opacity-75"></i>
+                  </a>
+
+
+                </div>
      </div>
 
 </div>
