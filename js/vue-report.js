@@ -24,7 +24,7 @@ new Vue({
             },
             { 
               name: '[Retirement Webinar Super in your 40s] 2020-09 SA (40-49yrs) - #12 Reminder',
-              color: 'purple',
+              color: 'green',
               group: 'event',
               sent: '5,305',
               opens: '1,713 - 32.29% ',
@@ -35,7 +35,7 @@ new Vue({
           },
           { 
               name: '[Retirement Webinar Super in your 40s] 2020-09 SA (40-49yrs) - #12 Invite',
-              color: 'purple',
+              color: 'green',
               group: 'event',
               sent: '5,335',
               opens: '2,131 - 39.94% ',
