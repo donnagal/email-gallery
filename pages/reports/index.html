@@ -86,6 +86,13 @@
     .gold .text-color {
       color: #a38e3d;
     }
+    .lagoon .bg-color {
+      background:#027180;
+    }
+    .lagoon .text-color {
+      color: #027180;
+    }
+
     
   </style>
 </head>
@@ -129,7 +136,7 @@
             <div class="mt-2 text-left">
               <span @click="show = !show" class="ml-4"> <i class="fas fa-link"></i></span>
               <p class="text-xs p-4 text-black flex-1 inline-block" v-if="show">
-                share filter link: <a class="text-xs text-grey-dark pl-3" target="blank" href="https://email-gallery.netlify.app/?search={{ search_filter }}" > https://email-gallery.netlify.app/?search={{ search_filter }}</a>
+                share filter link: <a class="text-xs text-grey-dark pl-3" target="blank" href="https://email-gallery.netlify.app/pages/reports/?search={{ search_filter }}" > https://email-gallery.netlify.app/?search={{ search_filter }}</a>
               </p>
             </div>
 
@@ -144,8 +151,8 @@
       <div class="filter-link  w-full text-lg text-center py-5 font-bold mb-8">
         <a class="link-1 px-10 cursor-pointer text-grey" @click="selectItem('link-1')" @click.prevent="setStatus('')">All</a>
         <a class="link-3 px-10 cursor-pointer text-grey" @click="selectItem('link-3')" @click.prevent="setStatus('event')">Event</a>
-        <a class="link-4 px-10 cursor-pointer text-grey" @click="selectItem('link-4')" @click.prevent="setStatus('mbr')">Member</a>
-        <a class="link-5 px-10 cursor-pointer text-grey" @click="selectItem('link-5')" @click.prevent="setStatus('employer')">Employer</a>
+        <a class="link-4 px-10 cursor-pointer text-grey" @click="selectItem('link-4')" @click.prevent="setStatus('brand')">Brand</a>
+        <!-- <a class="link-5 px-10 cursor-pointer text-grey" @click="selectItem('link-5')" @click.prevent="setStatus('employer')">Employer</a> -->
       </div>
 </nav>
 

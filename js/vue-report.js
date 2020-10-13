@@ -12,6 +12,28 @@ new Vue({
      search_filter: '',
      items: [
             { 
+              name: '[Brand] 2020-10 Super Brand Survey Core Data - Invite (A)',
+              color: 'lagoon',
+              group: 'brand',
+              sent: '7,432 (A)',
+              opens: '2,794 - 37.59%',
+              clicks: '263 - 3.54%',
+              subject: '<Name>, share your feedback for your chance to receive a gift card or voucher!',
+              time: '08/10/2020 THU 02:19PM',
+              url: ["https://email-gallery.netlify.app/emails/2020-10-mbr_super-brand-survey.html"],
+            },
+            { 
+              name: '[Brand] 2020-10 Super Brand Survey Core Data - Invite (B)',
+              color: 'lagoon',
+              group: 'brand',
+              sent: '7,450 (B)',
+              opens: '2,770 - 37.18%',
+              clicks: '249 - 3.34% ',
+              subject: '<Name>, tell us your opinion about super funds and win',
+              time: '08/10/2020 THU 02:19PM',
+              url: ["https://email-gallery.netlify.app/emails/2020-10-mbr_super-brand-survey.html"],
+            },
+            { 
               name: '[Retirement Webinar] 2020-10 SA (50-65yrs) - #13 Invite',
               color: 'purple',
               group: 'event',
