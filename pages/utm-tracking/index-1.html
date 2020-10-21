@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>UTM Tracking tool</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
+  <link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
+
+  <style>
+    body {
+      font-family: 'Ubuntu',sans-serif;
+    }
+    textarea {
+      width: 100%;
+    }
+    .btn-print {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      font-size: 50px;
+      color: #2196F3;
+    }
+
+    @media print{
+      @page {size: landscape}
+      .no-print, .no-print *{
+        display: none !important;
+        }
+    }
+
+    /* form */
+    .cognito address {
+      font-size: 10px;
+      background: #f6fbff;
+      padding: 0 5px;
+    }
+
+    [data-field="YourCampaign"] {
+      background-color: #d2dfeb;
+      margin-bottom: 9px !important;
+    }
+
+    .cognito .c-forms-form input[type=checkbox] {
+      display: none;
+    }
+
+    [data-field="Link1"], [data-field="Link2"], [data-field="Link2"], [data-field="Link3"]  {
+      background-color: white;
+      margin-bottom: 9px !important;
+    }
+
+    [data-field="Link1"] .c-choice-option label, [data-field="Link2"] .c-choice-option label, [data-field="Link2"] .c-choice-option label, [data-field="Link3"] .c-choice-option label  {
+      background-color: black;
+      color: white;
+      padding: 10px 100px !important;
+    }
+
+
+  </style>
+</head>
+
+<body class="bg-grey-lighter">
+
+  <button class="btn-print no-print" onclick="window.print()">
+    <i class="fas fa-file-download"></i>
+  </button>
+
+  <header class="no-print">
+    
+    <div class="bg-black mx-auto text-grey px-5">
+      <div class="flex py-2">
+        <div class="flex-1">
+          <h1 class="text-xl"><i class="menu-button fas fa-bars pr-10 cursor-pointer hover:text-white"></i>UTM Tracking tool</h1>
+        </div>
+      </div>
+    </div>
+    <div class="m-open bg-grey-lighter w-1/5 font-sans h-screen absolute t-0 z-20 pt-5 px-2">
+      <a href="/" class="text-black w-full py-2 px-3 no-underline block hover:bg-grey-lightest cursor-pointer">
+        Email galley
+      </a>
+      <a class="menu-button cursor-pointer  text-black w-full py-2 px-3 no-underline block bg-grey-lightest">
+        UTM Tracking tool
+      </a>
+      <a href="/pages/reports" class="text-black w-full py-2 px-3 no-underline block hover:bg-grey-lightest">
+        Report
+      </a>
+    </div>
+  </header>
+
+
+  <div class="ng-app mx-auto">
+
+    <div class="container mx-auto">
+      <div class="cognito">
+        <script src="https://www.cognitoforms.com/s/bYLvPE4iR0WAeyPIFxi5eQ"></script>
+        <script>Cognito.load("forms", { id: "5" });</script>
+      </div>
+    </div>
+
+
+
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  <script src="../../js/global.js"></script>
+
+</body>
+
+</html>
