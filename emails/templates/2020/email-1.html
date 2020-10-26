@@ -79,14 +79,16 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
       
       <!-- Image banner -->
       <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
-          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" alt="Creating jobs for our members." width="600" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/8c4b8f16784bdd8078ae2240f682b05f.jpg">
+          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" 
+          alt="Creating jobs for our members." width="600" 
+          src="https://email-gallery.netlify.app/emails/images/header-placeholder.jpg">
       </div>
 
     <!-- Member number -->
     <div style="Margin-left: 20px;Margin-right: 20px;Margin-top:5px;">
         <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
           <p style="Margin-bottom: 0;font-style: normal;font-weight: bold;color: black;font-size: 16px;line-height: 22px;text-align: right;">
-              Member number: &lt;%=  recipient.mbrAccID %&gt;
+            Member number: <%=  recipient.mbrAccID %>
           </p>
         </div>
     </div>
@@ -95,7 +97,7 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
       <div style="Margin-left: 20px;Margin-right: 20px; Margin-top: 36px;">
         <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
           <p style="Margin-bottom: 20px;text-align: left;">
-           <strong style="color: #0a5490;">Hi &lt;%= recipient.firstName %&gt;,</strong>
+           <strong style="color: #0a5490;">Hi <%= recipient.firstName %>,</strong>
           </p>
           <p style="Margin-bottom: 20px;text-align: left;">
             Victoria being under Stage 4 restrictions is having a significant impact on the Building &amp; Construction Industry.

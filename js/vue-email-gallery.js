@@ -11,12 +11,6 @@ new Vue({
      show: false,
      search_filter: '',
      items: [
-      { name: '[Template A MASTER], 2020-04',
-        group: 'template',
-        url: ["https://email-gallery.netlify.app/emails/templates/2020-04_master.html"],
-        pic: ["images/master-template.jpg"],
-      },
-
       { name: '[Employer] Employer Portal Outbound, 2020-10',
       group: 'employer',
       url: ["https://email-gallery.netlify.app/emails/2020-10-emp_outbound-pa"],
@@ -189,9 +183,9 @@ new Vue({
         pic: ["images/mbr-2020-04.jpg"],
     },
 
-      { name: '[Template Event], 2020-06',
-      group: 'template, event',
-      url: ["https://email-gallery.netlify.app/emails/templates/2020-06-event.html"],
+      { name: '[Template], 2020-10',
+      group: 'template',
+      url: ["https://email-gallery.netlify.app/emails/templates/2020/email-1.html"],
       pic: ["images/template-event.jpg"],
       },
       { name: '[Template Standrad], 2020-05',
