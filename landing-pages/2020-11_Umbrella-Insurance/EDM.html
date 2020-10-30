@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Changes to your Insurance</title>
+    <link rel="stylesheet"
+    href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/5dc299fa6c740bd027c78c9c1c649a93.css">
+    <script>
+        console.log('version 10')
+    </script>
+    <script type="text/javascript">// <![CDATA[
+        function formSubmit() {
+            var consent = "";
+            // have to get values from radio buttons manually for IE
+            var radios = document.getElementsByName("consent-given")
+            for (var i = 0; i < radios.length; i++) {
+                var consentRadio = radios[i]
+                if (consentRadio.checked) {
+                    consent = consentRadio.value
+                }
+            }
+            var dob = document.forms["page-form"]["mbrPMIFDOBSubmittedForm"].value
+            var IEDatePattern = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}/;
+            if (!!consent && !!dob) {
+
+                var normalisedDOB = dob 
+                if (IEDatePattern.test(dob)) {
+                    var dobParts = dob.split('/');
+                    var day = dobParts[0]
+                    var month = dobParts[1]
+                    var year = dobParts[2]
+
+                    normalisedDOB = year + '-' + month + '-' + day
+                }
+
+                document.controller.setValue('/ctx/visitor/consent', consent, 'consent-given')
+                document.controller.setValue('/ctx/visitor/dobGiven', normalisedDOB, 'mbrPMIFDOBSubmittedForm')
+
+                document.controller.submit('next')
+            }
+        }
+    // ]]>
+    </script>
+     <script>
+          var digitalData = digitalData || {};
+          digitalData = {"page":{"pageInfo":{"pageName":"ACM: EDM PMIF Landing","brand":"Cbus"},"category":{}}}
+          digitalData.page.pageInfo.pageUrl = window.location.href;
+          digitalData.page.pageInfo.domain = window.location.hostname;
+    </script>
+    <script type="text/javascript" src="//assets.adobedtm.com/launch-ENd8db634a912b4764b21552a1fca7014a.min.js" async></script>
+</head>
+
+<body style="" class="" LINK="#FFFFFF" VLINK="#FFFFFF">
+<div class="app-container">
+<div class="image-container">
+<div class="banner-bg" style="background-image: url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/e0c6919288eeb649872efdeb7f79167d.jpg');"></div>
+<div class="header-container">
+<h1 contenteditable="true"><span> Important </span> <br /> <span> message about </span> <br /> <span> your insurance </span></h1>
+</div>
+</div>
+<div class="green-block"></div>
+<div class="content-container">
+<div class="intro__container">
+<h2 class="header">Your automatic insurance cover may&nbsp;be impacted&nbsp;if you don't act</h2>
+</div>
+<div class="info-container" style="text-align: left;">
+<p>The Government has changed the laws that apply to automatic insurance in super, which is the death and disability cover that most members receive when they join Cbus.</p>
+<p>From 1 April 2020, you generally won&rsquo;t be eligible for automatic cover until your account balance reaches $6,000 and you are 25 years of age &ndash; unless you make this election or are covered under the dangerous occupation exemption which applies to Industry Manual Workers.</p>
+<h2 style="text-align: left;">Who should use this online form?</h2>
+<strong>Use this online form if you're in:</strong>
+<ul>
+<ul>
+<li style="font-size: 16px;"><strong>Industry Super (electech, non-manual or professional only)</strong></li>
+<li style="font-size: 16px;"><strong>Sole Trader Super</strong>, or</li>
+<li style="font-size: 16px;"><strong>Corporate Super</strong> <br />and you want access to automatic cover now regardless of your account balance or age. <br /><br /></li>
+</ul>
+</ul>
+<strong>Don't use this online form if you're in:</strong>
+<ul>
+<ul>
+<li style="font-size: 16px;"><strong>Industry Super (manual):</strong> You'll still get any automatic cover you're eligible for, regardless of your account balance or age, under a dangerous occupation exemption.</li>
+<li style="font-size: 16px;"><strong>Personal Super:</strong> If you&rsquo;d like cover, you need to&nbsp;<a id="a15856132496955" href="https://www.cbussuper.com.au/content/dam/cbus/files/forms-publications/insurance/Insurance-Handbook-Personal-Super.pdf" target="_blank" data-nl-type="externalLink"><span style="color: #0000ff;">apply</span></a> for it.</li>
+</ul>
+</ul>
+<p>Once you tell us you want cover, it will generally start from:</p>
+<ul>
+<li>If you're an Industry or Corporate Super member: when we receive an on-time compulsory super payment from your employer, or</li>
+<li>If you're a Sole Trader Super member: when we accept your completed form (as long as you have at least $250 in your account within 31 days from the date we receive it).</li>
+</ul>
+<p>See your&nbsp;<a id="a158561960200369" href="https://www.cbussuper.com.au/super/my-insurance-options" target="_blank" data-nl-type="externalLink"><span style="color: #0000ff;">insurance guide</span></a> for more details, including when your cover may start later or be limited.<br /><br /><br />You can use this online form to tell us that you want automatic insurance cover by making the election below. This will allow it to start as soon as you&rsquo;re eligible regardless of your account balance or age. <br /><br />If you're an Industry or Corporate Super member and you make your election more than six months after you join your first Cbus employer, your cover will be limited. This means that for 24 months you&rsquo;ll only be covered for injuries or illnesses that first occur after your cover starts. After 24 months, you&rsquo;ll get full cover, providing you can do your normal job without being restricted by injury or illness for ten days in a row.</p>
+<h2 style="text-align: left;">Want to keep your cover, even when life changes?</h2>
+<p>Any cover you get will stop if your account doesn&rsquo;t receive a contribution or roll in for 16 months (unless it stops for another reason under the Policy). Alongside telling us below that you want automatic cover, you can also complete our <a style="color: #0000ff;" href="http://t.marketing.cbussuper.com.au/webApp/dm_consent_cap" target="_blank">online form</a> to tell us you want to keep your cover &ndash; even if you stop work or change jobs.</p>
+</div>
+<div class="form-container">
+<div class="width-constraint"><form name="page-form">
+<h2 class="header">I want&nbsp;Cbus insurance</h2>
+<p>If you want insurance as described above, please click on the <strong>Yes</strong> field below and then the 'Elect' button.</p>
+<p></p>
+<div class="fields">
+<div class="field"><label class="member-dob-label" for="mbrPMIFDOBSubmittedForm">Date of Birth*:</label> <input name="mbrPMIFDOBSubmittedForm" class="input" id="mbrPMIFDOBSubmittedForm" required="" type="date" placeholder="dd/mm/yyyy" data-nl-ismandatory="true" />&nbsp; <br /><br /><br /><span class="nl-dce-selectionExclude" style="font-size: 17px;">*This must match the date of birth that we have on file for your election to be valid</span></div>
+<div class="field field--radio">
+<div class="radio-option"><input name="consent-given" class="radio-input" id="mbrInsuranceConsentGiven-yes" required="" type="radio" value="Yes" data-nl-ismandatory="true" /> <label for="mbrInsuranceConsentGiven-yes"><span class="header">Yes</span> - I want insurance</label><label for="mbrInsuranceConsentGiven-yes"><br /></label></div>
+<p><span class="nl-dce-selectionExclude" style="font-size: 12px; max-width: 400px;">I have completed this form truthfully and correctly to the best of my knowledge and understand that:</span></p>
+<ul>
+<li style="font-size: 12px;">Submitting this form to Cbus will mean that I want to have automatic insurance cover now (regardless of my age or account balance).</li>
+<li style="font-size: 12px;">Insurance costs will be deducted from my super account and I understand that this will have an impact on my retirement savings.</li>
+<li style="font-size: 12px;">This instruction will apply to the Cbus death, total and permanent disablement and income protection cover I may receive. Commencement and type of insurance cover is subject to meeting eligibility requirements and in some cases may be limited.&nbsp; Please read the relevant <a id="a158562026212757" href="https://www.cbussuper.com.au/tools-resources/forms-and-publications" target="_blank" data-nl-type="externalLink">Insurance&nbsp;Guide</a> for your Membership.</li>
+<li style="font-size: 12px;">There are other situations where my cover will stop as detailed in the relevant&nbsp;<a id="a157379358424795" href="https://www.cbussuper.com.au/tools-resources/forms-and-publications" target="_blank" data-nl-type="externalLink">Insurance Guide</a> for my super membership.</li>
+<li style="font-size: 12px;">I can choose to cancel some or all of my cover at any time by&nbsp;<a id="a157379369329325" href="https://www.cbussuper.com.au/support/member-account-log-in" target="_blank" data-nl-type="externalLink">logging into my account</a> or by completing the <a id="a157379362826059" href="https://www.cbussuper.com.au/tools-resources/forms-and-publications" target="_blank" data-nl-type="externalLink">relevant form</a> .</li>
+<li style="font-size: 12px;">The information collected above will be used solely for the purpose of updating your superannuation account with your election and will be handled in accordance with Cbus' Privacy Policy.</li>
+</ul>
+</div>
+<button class="submit-button" id="input155539912261392" onclick="formSubmit()">Elect</button></div>
+</form></div>
+</div>
+</div>
+<div class="contact-container">
+<div class="contact__content">
+<p class="contact__header">We&rsquo;re here to help.</p>
+<p class="contact__subtitle">If you have any questions or would like to discuss your options further, we can help get your super sorted.</p>
+<div class="contact__method"><img class="nlui-widget contact__image" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/1a254af4f81c59cb96d4213b1615588d.png" unselectable="on" />
+<p class="contact__text">Call <strong>1300 361 784</strong> Mon to Fri from 8am to 8pm AEDT/AEST</p>
+</div>
+<div class="contact__method"><img class="nlui-widget contact__image" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/2ca56699b7c1ab62f227da5b6a40310f.png" border="0" unselectable="on" />
+<p class="contact__text">Drop us a line at: <strong>cbusenq@cbussuper.com.au</strong></p>
+</div>
+<div class="contact__method"><img class="nlui-widget contact__image" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/49053d7d82289323fe419ca9513bdc2f.png" border="0" unselectable="on" />
+<p class="contact__text">Visit <a class="link" href="https://www.cbussuper.com.au">cbussuper.com.au</a></p>
+</div>
+<p class="contact__subtitle" style="font-size: 15px;">ASIC Money Smart can also provide information about the benefits and risks of insurance as well as the broader impacts of paying for more death and disability insurance cover than you might need. Visit the&nbsp;<a id="a157377485367633" href="https://www.moneysmart.gov.au/superannuation-and-retirement/how-super-works/insurance-through-super" target="_blank" data-nl-type="externalLink">MoneySmart</a> website for more information.</p>
+</div>
+</div>
+<footer>
+<div class="footer-layout">
+<div class="width-constraint"><img class="nlui-widget full-width" alt="Cbus awards" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/464eef34c120c3d3649686a9e550dd20.png" unselectable="on" /></div>
+<p>Cbus&rsquo; Trustee: United Super Pty Ltd ABN 46 006 261 623 AFSL 233792 Cbus ABN 75 493 363 262.</p>
+<p>This information is about Cbus. It doesn&rsquo;t take into account your specific needs, so you should look at your own financial position, objectives and requirements before making any financial decisions. Read the relevant Cbus Product Disclosure Statement and related documents to decide whether Cbus is right for you.</p>
+<p>Contact us on <strong>1300 361 784</strong> or visit <a class="link" href="https://www.cbussuper.com.au">www.cbussuper.com.au</a> for a copy.</p>
+</div>
+</footer></div>
+</body>
+
+</html>
