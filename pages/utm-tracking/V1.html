@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>UTM Tracking tool</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
+  <link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
+
+  <style>
+    body {
+      font-family: 'Ubuntu',sans-serif;
+    }
+    textarea {
+      width: 100%;
+    }
+    .btn-print {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      font-size: 50px;
+      color: #2196F3;
+    }
+
+    @media print{
+      @page {size: landscape}
+      .no-print, .no-print *{
+        display: none !important;
+        }
+    }
+  </style>
+</head>
+
+<body class="bg-grey-lighter">
+
+  <button class="btn-print no-print" onclick="window.print()">
+    <i class="fas fa-file-download"></i>
+  </button>
+
+  <header class="no-print">
+    
+    <div class="bg-black mx-auto text-grey px-5">
+      <div class="flex py-2">
+        <div class="flex-1">
+          <h1 class="text-xl"><i class="menu-button fas fa-bars pr-10 cursor-pointer hover:text-white"></i>UTM Tracking tool</h1>
+        </div>
+      </div>
+    </div>
+    <div class="m-open bg-grey-lighter w-1/5 font-sans h-screen absolute t-0 z-20 pt-5 px-2">
+      <a href="/" class="text-black w-full py-2 px-3 no-underline block hover:bg-grey-lightest cursor-pointer">
+        Email galley
+      </a>
+      <a class="menu-button cursor-pointer  text-black w-full py-2 px-3 no-underline block bg-grey-lightest">
+        UTM Tracking tool
+      </a>
+      <a href="/pages/reports" class="text-black w-full py-2 px-3 no-underline block hover:bg-grey-lightest">
+        Report
+      </a>
+    </div>
+  </header>
+
+
+  <div class="ng-app mx-auto">
+
+    <div class="">
+
+    <div class="mx-4 my-5 p-5 bg-grey-darkest">
+      <p class="pb-3 text-white no-print">Your Campaign</p>
+      <div class="font-sans flex text-xs">
+        <div class="w-full">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="medium"  ng-model="$medium" />
+          <p class="pt-1 text-xs text-grey-dark no-print">edm</p>
+        </div>
+        <div class="w-full mx-1">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="source" ng-model="$source" />
+          <p class="pt-1 text-xs text-grey-dark no-print">adobe_campaign</p>
+        </div>
+        <div class="w-full">
+        <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="campaign" ng-model="$campaign" />
+        <p class="pt-1 text-xs text-grey-dark no-print">(ie: 2020-10_mbr-super-payment-checker)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-4 pb-24">
+      <div class="flex pb-3">
+        <div class="w-1/3">
+          <p>URL</p>
+        </div>
+        <div class="w-1/4 mx-1">
+          <p>utm_content</p>
+        </div>
+        <div class="w-full">
+         <p>Output</p>
+        </div>
+      </div>
+
+    <div>
+      <div class="bg-white px-3 py-2 flex text-xs font-sans mt-1 shadow">
+        <div class="w-1/3">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="https://www.cbussuper.com.au/" ng-model="$URL1" />
+        </div>
+        <div class="w-1/4 mx-1">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content1" />
+        </div>
+        <div class="w-full">
+          <div name="tracking 1" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
+            {{ $URL1 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content1 }}
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white px-3 py-2 flex text-xs font-sans mt-1 shadow">
+        <div class="w-1/3">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="https://www.cbussuper.com.au/" ng-model="$URL2" />
+        </div>
+        <div class="w-1/4 mx-1">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content2" />
+        </div>
+        <div class="w-full">
+          <div name="tracking 2" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
+            {{ $URL2 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content2 }}
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white px-3 py-2 flex text-xs font-sans mt-1 shadow">
+        <div class="w-1/3">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="https://www.cbussuper.com.au/" ng-model="$URL3" />
+        </div>
+        <div class="w-1/4 mx-1">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content3" />
+        </div>
+        <div class="w-full">
+          <div name="tracking 3" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
+            {{ $URL3 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content3 }}
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white px-3 py-2 flex text-xs font-sans mt-1 shadow">
+        <div class="w-1/3">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="https://www.cbussuper.com.au/" ng-model="$URL4" />
+        </div>
+        <div class="w-1/4 mx-1">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content4" />
+        </div>
+        <div class="w-full">
+          <div name="tracking 4" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
+            {{ $URL4 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content4 }}
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white px-3 py-2 flex text-xs font-sans mt-1 shadow">
+        <div class="w-1/3">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="https://www.cbussuper.com.au/" ng-model="$URL5" />
+        </div>
+        <div class="w-1/4 mx-1">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content5" />
+        </div>
+        <div class="w-full">
+          <div name="tracking 5" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
+            {{ $URL5 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content5 }}
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white px-3 py-2 flex text-xs font-sans mt-1 shadow">
+        <div class="w-1/3">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="https://www.cbussuper.com.au/" ng-model="$URL6" />
+        </div>
+        <div class="w-1/4 mx-1">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content6" />
+        </div>
+        <div class="w-full">
+          <div name="tracking 6" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
+            {{ $URL6 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content6 }}
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white px-3 py-2 flex text-xs font-sans mt-1 shadow">
+        <div class="w-1/3">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="https://www.cbussuper.com.au/" ng-model="$URL7" />
+        </div>
+        <div class="w-1/4 mx-1">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content7" />
+        </div>
+        <div class="w-full">
+          <div name="tracking 7" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
+            {{ $URL7 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content7 }}
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white px-3 py-2 flex text-xs font-sans mt-1 shadow">
+        <div class="w-1/3">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="https://www.cbussuper.com.au/" ng-model="$URL8" />
+        </div>
+        <div class="w-1/4 mx-1">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content8" />
+        </div>
+        <div class="w-full">
+          <div name="tracking 8" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
+            {{ $URL8 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content8 }}
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white px-3 py-2 flex text-xs font-sans mt-1 shadow">
+        <div class="w-1/3">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="https://www.cbussuper.com.au/" ng-model="$URL9" />
+        </div>
+        <div class="w-1/4 mx-1">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content9" />
+        </div>
+        <div class="w-full">
+          <div name="tracking 9" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
+            {{ $URL9 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content9 }}
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white px-3 py-2 flex text-xs font-sans mt-1 shadow">
+        <div class="w-1/3">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="https://www.cbussuper.com.au/" ng-model="$URL10" />
+        </div>
+        <div class="w-1/4 mx-1">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content10" />
+        </div>
+        <div class="w-full">
+          <div name="tracking 10" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
+            {{ $URL10 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content10 }}
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white px-3 py-2 flex text-xs font-sans mt-1 shadow">
+        <div class="w-1/3">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="https://www.cbussuper.com.au/" ng-model="$URL11" />
+        </div>
+        <div class="w-1/4 mx-1">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content11" />
+        </div>
+        <div class="w-full">
+          <div name="tracking 11" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
+            {{ $URL11 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content11 }}
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white px-3 py-2 flex text-xs font-sans mt-1 shadow">
+        <div class="w-1/3">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="https://www.cbussuper.com.au/" ng-model="$URL12" />
+        </div>
+        <div class="w-1/4 mx-1">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content12" />
+        </div>
+        <div class="w-full">
+          <div name="tracking 12" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
+            {{ $URL12 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content12 }}
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white px-3 py-2 flex text-xs font-sans mt-1 shadow">
+        <div class="w-1/3">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="https://www.cbussuper.com.au/" ng-model="$URL13" />
+        </div>
+        <div class="w-1/4 mx-1">
+          <input class="py-2 px-3 bg-grey-lighter w-full shadow-inner focus:outline-none focus:bg-grey-lightest" type="text" placeholder="hero-banner" ng-model="$content13" />
+        </div>
+        <div class="w-full">
+          <div name="tracking 13" class="py-2 px-3 bg-yellow-lightest w-full shadow-inner focus:outline-none focus:bg-grey-lightest">
+            {{ $URL13 }}?utm_medium={{ $medium }}&utm_source={{ $source }}&utm_campaign={{ $campaign }}&utm_content={{ $content13 }}
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  <script src="../../js/global.js"></script>
+
+</body>
+
+</html>
