@@ -13,6 +13,7 @@
   <style>
     body {
       font-family: 'Ubuntu',sans-serif;
+      overflow-x: hidden;
     }
     /* form */
     .cognito h3 {
@@ -54,17 +55,51 @@
     text-transform: uppercase;
     }
 
-    /* entries */
-    .iframe-container {
-      height: 400px;
-      width: 100%;
-      overflow: hidden;
-      position: absolute;
+    /*tool tips */
+    [data-field="Audience"] .c-helptext p {
+      position: relative;
+      top: -53px;
+      left: 63px;
     }
-    .iframe-container iframe {
-      margin-top: -148px;
-
+    [data-field="Source"] .c-helptext p {
+      position: relative;
+      top: -280px;
+      left: 55px;
     }
+    [data-field="Medium"] .c-helptext p {
+      position: relative;
+      top: -280px;
+      left: 67px;
+    }
+    [data-field="Utmcontent"] .c-helptext p {
+      position: relative;
+      top: -52px;
+      left: 97px;
+    }
+    .c-helptext a {
+      position: relative;
+      display: inline-block;
+      background: #dadada;
+      border-radius: 90px;
+      padding: 3px 7px;
+      color: #949494 !important;
+      text-decoration: none !important;
+      width: 20px;
+      height: 20px;
+      font-weight: bold !important;
+  }
+  .c-helptext a[title]:hover:after {
+    background: #673ab7c7;
+    content: attr(title);
+    color: white;
+    position: absolute;
+    top: -100%;
+    left: 19px;
+    width: 200px;
+    padding: 5px 10px;
+    font-size: 9px;
+    border-radius: 8px;
+  }
 
   </style>
 </head>
@@ -111,9 +146,9 @@
 
     <div class="mx-auto lg:px-10 lg:pt-10  lg:pb-24">
       <div class="cognito">
-        <script src="https://www.cognitoforms.com/s/bYLvPE4iR0WAeyPIFxi5eQ"></script>
-        <script>Cognito.load("forms", { id: "7" });</script>
-      </div>
+        <script src="https://www.cognitoforms.com/s/1K83Vkhd1Ea7ioafKkP8Sw"></script>
+        <script>Cognito.load("forms", { id: "1" });</script>
+        </div>
     </div>
 
 
