@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Email Report</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
+  <link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
+
+  <link rel="stylesheet" href="../../css/nav-filter.css">
+  <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+
+  <style>
+    body {
+      font-family: 'Ubuntu',sans-serif;
+    }
+    .font-1 {
+      font-family: 'Bebas Neue', cursive;
+    }
+
+    /* Themes */
+    a.bg-color:hover {
+      opacity: .75;
+    }
+    .purple .bg-color {
+      background: #72004D;
+    }
+    .purple .text-color {
+      color: #72004D;
+    }
+    .green .bg-color {
+      background:#0f8045;
+    }
+    .green .text-color {
+      color:#0f8045;
+    }
+    .gold .bg-color {
+      background: #88721d;
+    }
+    .gold .text-color {
+      color: #a38e3d;
+    }
+    .lagoon .bg-color {
+      background:#027180;
+    }
+    .lagoon .text-color {
+      color: #027180;
+    }
+    .green-02 .bg-color {
+      background:#4e9e47;
+    }
+    .green-02 .text-color {
+      color: #4e9e47;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="bg-black mx-auto text-grey px-5">
+      <div class="flex py-2">
+        <div class="flex-1">
+          <h1 class="text-xl"><i class="menu-button fas fa-bars pr-10 cursor-pointer hover:text-white"></i> Cbus email reports</h1>
+        </div>
+      </div>
+    </div>
+    <div class="m-open bg-grey-lighter w-1/5 font-sans h-screen absolute t-0 z-20 pt-5 px-2">
+      <a href="/" class="text-black w-full py-2 px-3 no-underline block hover:bg-grey-lightest">
+        Email galley
+      </a>
+      <a href="/pages/utm-tracking" class="text-black w-full py-2 px-3 no-underline block hover:bg-grey-lightest">
+        UTM Tracking tool
+      </a>
+      <a class="menu-button cursor-pointer text-black w-full py-2 px-3 no-underline block bg-grey-lightest">
+        Report
+      </a>
+    </div>
+  </header>
+
+
+<div id="items">
+
+  <div class="container mx-auto mt-10">
+  <table>
+    <tr>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('name')">
+        <i class="text-3xl text-color mt-2 fas fa-sort-alpha-up"></i>
+        <p class="font-sans font-normal text-xs">name</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('group')">
+        <i class="text-3xl text-color mt-2 fas fa-user-tag"></i>
+        <p class="font-sans font-normal text-xs">group</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('opens')"> 
+        <i class="text-3xl text-color mt-2 fas fa-envelope-open-text"></i>
+        <p class="font-sans font-normal text-xs">opens</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('clicks')">
+        <i class="text-3xl text-color mt-2 fas fa-mouse"></i>
+        <p class="font-sans font-normal text-xs">ctr</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('sent')">
+        <i class="text-3xl text-color mt-2 fas fa-paper-plane"></i>
+        <p class="font-sans font-normal text-xs">audience</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r">
+        <i class="text-3xl text-color mt-2 far fa-dot-circle"></i>
+        <p class="font-sans font-normal text-xs">top click</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r">
+        <i class="text-3xl text-color mt-2 fas fa-user-slash"></i>
+        <p class="font-sans font-normal text-xs">unsubscribe</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light">
+        <a href="/global" class="no-underline text-grey-dark block py-2 px-8">
+          <i class="text-3xl text-color mt-2 fas fa-globe-asia"></i>
+          <p class="font-sans font-normal text-xs">global stats</p>
+        </a>
+        </th>
+      </a>
+    </tr>
+  </table>
+
+
+
+<div class="container mx-auto">
+  <div class="flex flex-wrap">
+    <div v-repeat="item : items | orderBy sortKey desc" class="{{item.color}} lg:w-1/4 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline">
+
+      <div class="bg-color text-white p-5 font-sans">
+        <div class="flex items-center">
+          <div class="w-full">
+            <p class="font-1 text-4xl -mb-2">{{ item.sent }} <i class="fas fa-paper-plane pr-2 text-lg opacity-75"></i><small class="font-sans text-xs font-nromal">{{ item.small }}</small></p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="w-full">
+            <h3 class="text-xs font-nromal pt-2 uppercase pb-2">{{ item.group }} | {{ item.name }}</h3>
+            <i class="text-xs opacity-75">{{ item.subject }}</i>
+          </div>
+        </div>
+      </div>
+      
+        <div class="bg-white text-black px-5 py-5 font-sans shadow">
+          <div class="flex items-center">
+            <div class="w-full">
+              <p class="tracking-wide uppercase text-grey font-1">opens</p>
+              <p class="font-1 text-3xl -mb-2">{{ item.opens }}</p>
+            </div>
+            <div class="w-1/4">
+              <i class="text-3xl text-color mt-2 fas fa-envelope-open-text"></i>
+            </div>
+          </div>
+      </div>
+      
+        <div class="bg-white text-black px-5 py-5 font-sans shadow">
+          <div class="flex items-center">
+            <div class="w-full">
+              <p class="tracking-wide uppercase text-grey font-1">clicks</p>
+              <p class="font-1 text-3xl -mb-2">{{ item.clicks }}</p>
+            </div>
+            <div class="w-1/4">
+              <i class="text-3xl text-color mt-2 fas fa-mouse"></i>
+            </div>
+          </div>
+      </div>
+      <div class="bg-white text-black px-5 py-5 font-sans shadow">
+        <div class="flex items-center">
+          <div class="w-full">
+            <p class="tracking-wide uppercase text-grey font-1">
+              <i class="fas fa-calendar-day"></i> 
+              <span class="pl-2">{{ item.time }}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <a class="block bg-color text-white p-3 font-sans shadow no-underline text-center" title="preview email" :href="item.url" target="_blank">
+      <i class="fas fa-envelope-square opacity-75"></i>
+      </a>
+      
+      
+      </div>
+  </div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="../../js/global.js"></script>
+  <script src="../../js/vue-v10.js"></script>
+  <script src="../../js/vue-report-2.js"></script>
+
+
+
+</body>
+
+</html>
