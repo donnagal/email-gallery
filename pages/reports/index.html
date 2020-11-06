@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Email Gallery</title>
+  <title>Email Report</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -19,50 +19,9 @@
     body {
       font-family: 'Ubuntu',sans-serif;
     }
-
     .font-1 {
       font-family: 'Bebas Neue', cursive;
     }
-
-    .swiper-container {
-      height: 130px;
-    }
-
-    .swiper-slide {
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-
-    .swiper-button-prev {
-      color: black; 
-    }
-
-    .swiper-button-next {
-     color: black; 
-    }
-    .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-  }
-    .swiper-pagination-bullet-active {
-      width: 12px;
-      height: 12px;
-      border: 2px solid black;
-      position: relative;
-      top: 3px;
-      background: transparent;
-  }
 
     /* Themes */
     a.bg-color:hover {
@@ -99,9 +58,6 @@
       color: #4e9e47;
     }
 
-    
-
-    
   </style>
 </head>
 
@@ -129,209 +85,127 @@
   </header>
 
 
+<div id="items">
 
-  <div id="items">
-    
-    <nav :class="active">
+  <div class="container mx-auto mt-10">
+  <table>
+    <tr>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('name')">
+        <i class="text-3xl text-color mt-2 fas fa-sort-alpha-up"></i>
+        <p class="font-sans font-normal text-xs">name</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('group')">
+        <i class="text-3xl text-color mt-2 fas fa-user-tag"></i>
+        <p class="font-sans font-normal text-xs">group</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('opens')"> 
+        <i class="text-3xl text-color mt-2 fas fa-envelope-open-text"></i>
+        <p class="font-sans font-normal text-xs">opens</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('clicks')">
+        <i class="text-3xl text-color mt-2 fas fa-mouse"></i>
+        <p class="font-sans font-normal text-xs">ctr</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('sent')">
+        <i class="text-3xl text-color mt-2 fas fa-paper-plane"></i>
+        <p class="font-sans font-normal text-xs">audience</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r">
+        <i class="text-3xl text-color mt-2 far fa-dot-circle"></i>
+        <p class="font-sans font-normal text-xs">top click</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r">
+        <i class="text-3xl text-color mt-2 fas fa-user-slash"></i>
+        <p class="font-sans font-normal text-xs">unsubscribe</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light">
+        <a href="/global" class="no-underline text-grey-dark block py-2 px-8">
+          <i class="text-3xl text-color mt-2 fas fa-globe-asia"></i>
+          <p class="font-sans font-normal text-xs">global stats</p>
+        </a>
+        </th>
+      </a>
+    </tr>
+  </table>
 
-      <form autocomplete="off">
-        <div class="flex w-3/4 mx-auto mt-10 mb-5">
-          <div class="w-full text-center text-gray-700">
-            <input id="myInput" type="text" class="pl-16 py-4 bg-grey-lighter w-full rounded-full shadow-inner focus:outline-none focus:bg-grey-lightest" 
-            placeholder="Search emails: SIS, Event, Statement..." v-model="search_filter" @keyup="show = !show">
-            
-
-            <div class="mt-2 text-left">
-              <span @click="show = !show" class="ml-4"> <i class="fas fa-link"></i></span>
-              <p class="text-xs p-4 text-black flex-1 inline-block" v-if="show">
-                share filter link: <a class="text-xs text-grey-dark pl-3" target="blank" href="https://email-gallery.netlify.app/pages/reports/?search={{ search_filter }}" > https://email-gallery.netlify.app/?search={{ search_filter }}</a>
-              </p>
-            </div>
-
-          </div>
-          <div class="flex-1 -ml-20">
-            <button class="text-3xl py-2 px-8 rounded-full text-white bg-blue hover:bg-red focus:outline-none" @click="clear(i)"><i class="fas fa-times"></i></button>
-          </div>
-        </div>
-
-      </form>
-
-      <div class="filter-link  w-full text-lg text-center py-5 font-bold mb-8">
-        <a class="link-1 px-10 cursor-pointer text-grey" @click="selectItem('link-1')" @click.prevent="setStatus('')">All</a>
-        <a class="link-3 px-10 cursor-pointer text-grey" @click="selectItem('link-3')" @click.prevent="setStatus('event')">Event</a>
-        <a class="link-4 px-10 cursor-pointer text-grey" @click="selectItem('link-4')" @click.prevent="setStatus('brand')">Brand</a>
-        <a class="link-4 px-10 cursor-pointer text-grey" @click="selectItem('link-5')" @click.prevent="setStatus('mbr')">Member</a>
-        <!-- <a class="link-5 px-10 cursor-pointer text-grey" @click="selectItem('link-5')" @click.prevent="setStatus('employer')">Employer</a> -->
-      </div>
-</nav>
 
 
-      <div class="container mx-auto">
-        <!-- Swiper -->
-        <div class="swiper-container w-1/4">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="flex text-center">
-                <div class="flex-1 lg:px-4 px-2">
-                  <p class="tracking-wide uppercase text-grey font-1">valid email members</p>
-                  <p class="font-1 text-3xl"> 567,004 </p><i class="fas fa-users pr-2 opacity-75 text-2xl"></i>
-                </div>
-              </div>
-            </div>
-              <div class="swiper-slide">
-                <div class="flex text-center">
-                  <div class="flex-1 lg:px-4">
-                    <p class="tracking-wide uppercase text-grey font-1">female members</p>
-                    <p class="font-1 text-3xl"> 55.4K </p><i class="fas fa-female pr-2 opacity-75 text-2xl"></i>
-                  </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="flex text-center">
-                <div class="flex-1 lg:px-4 px-2">
-                  <p class="tracking-wide uppercase text-grey font-1">male members</p>
-                  <p class="font-1 text-3xl"> 511.5K </p><i class="fas fa-male pr-2 opacity-75 text-2xl"></i>
-                </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="flex text-center">
-              <div class="flex-1 lg:px-4 px-2">
-                <p class="tracking-wide uppercase text-grey font-1">Most used</p> 
-                <p class="font-1 text-3xl">#1 Mobile </p><i class="fas fa-mobile-alt pr-2 opacity-75 text-2xl"></i>
-              </div>
+<div class="container mx-auto">
+  <div class="flex flex-wrap">
+    <div v-repeat="item : items | orderBy sortKey desc" class="{{item.color}} lg:w-1/4 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline">
+
+      <div class="bg-color text-white p-5 font-sans">
+        <div class="flex items-center">
+          <div class="w-full">
+            <p class="font-1 text-4xl -mb-2">{{ item.sent }} <i class="fas fa-paper-plane pr-2 text-lg opacity-75"></i><small class="font-sans text-xs font-nromal">{{ item.small }}</small></p>
           </div>
         </div>
-          <div class="swiper-slide">
-            <div class="flex text-center">
-              <div class="flex-1 lg:px-4 px-2">
-                <p class="tracking-wide uppercase text-grey font-1">Most used Browser</p>
-                <p class="font-1 text-3xl">#1 GMAIL </p><i class="fab fa-chrome pr-2 opacity-75 text-2xl"></i>
-              </div>
+        <div class="flex items-center">
+          <div class="w-full">
+            <h3 class="text-xs font-nromal pt-2 uppercase pb-2">{{ item.group }} | {{ item.name }}</h3>
+            <i class="text-xs opacity-75">{{ item.subject }}</i>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="flex text-center">
-            <div class="flex-1 lg:px-4 px-2">
-              <p class="tracking-wide uppercase text-grey font-1">Most used Browser</p>
-              <p class="font-1 text-3xl">#2 OUTLOOK </p><i class="fab fa-windows pr-2 opacity-75 text-2xl"></i>
-            </div>
         </div>
       </div>
-       </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination swiper-pagination-white"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next swiper-button-white"></div>
-        <div class="swiper-button-prev swiper-button-white"></div>
+      
+        <div class="bg-white text-black px-5 py-5 font-sans shadow">
+          <div class="flex items-center">
+            <div class="w-full">
+              <p class="tracking-wide uppercase text-grey font-1">opens</p>
+              <p class="font-1 text-3xl -mb-2">{{ item.opens }}</p>
+            </div>
+            <div class="w-1/4">
+              <i class="text-3xl text-color mt-2 fas fa-envelope-open-text"></i>
+            </div>
+          </div>
+      </div>
+      
+        <div class="bg-white text-black px-5 py-5 font-sans shadow">
+          <div class="flex items-center">
+            <div class="w-full">
+              <p class="tracking-wide uppercase text-grey font-1">clicks</p>
+              <p class="font-1 text-3xl -mb-2">{{ item.clicks }}</p>
+            </div>
+            <div class="w-1/4">
+              <i class="text-3xl text-color mt-2 fas fa-mouse"></i>
+            </div>
+          </div>
+      </div>
+      <div class="bg-white text-black px-5 py-5 font-sans shadow">
+        <div class="flex items-center">
+          <div class="w-full">
+            <p class="tracking-wide uppercase text-grey font-1">
+              <i class="fas fa-calendar-day"></i> 
+              <span class="pl-2">{{ item.time }}</span>
+            </p>
+          </div>
         </div>
+      </div>
+      
+      <a class="block bg-color text-white p-3 font-sans shadow no-underline text-center" title="preview email" :href="item.url" target="_blank">
+      <i class="fas fa-envelope-square opacity-75"></i>
+      </a>
+      
+      
+      </div>
   </div>
 
+</div>
 
 
-  <div class="container mx-auto pt-18"> 
-    <div class="w-full">
-      <p class="tracking-wide uppercase text-black font-1 pb-1">OCT 28 2020</p>
-      <div class="shadow w-full bg-grey-light flex">
-        <div class="bg-teal text-sm leading-none py-1 text-center text-white" style="width: 75%">586,683 - 75%</div>
-        <div class="bg-blue text-sm leading-none py-1 text-center text-white" style="width: 25%">189,604 - 25%</div>
-      </div>
-    <div>
-      
-      <div class="flex mt-5">
-        <span class="bg-teal h-4 w-4 block"></span> <small class="pl-2">Can be contacted by email</small>
-        <span class="bg-blue h-4 w-4 block ml-5"></span> <small class="pl-2">No longer contacted by email</small>
-      </div>
-  <div>
 
-    <div class="container mx-auto pt-24">
-      <div class="flex flex-wrap">
-                <div class="lg:w-1/3 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline" :class="[item.color]"
-                    v-for="item in items | filterBy search_filter in 'name' | filterBy status_filter in 'group'"
-                    v-show="setPaginate($index)">
-
-                    <div class="bg-color text-white p-5 font-sans">
-                      <div class="flex items-center">
-                        <div class="w-full">
-                          <p class="font-1 text-4xl -mb-2">{{ item.sent }} <i class="fas fa-users pr-2 text-lg opacity-75"></i><small class="font-sans text-xs font-nromal">{{ item.small }}</small></p>
-                        </div>
-                      </div>
-                      <div class="flex items-center">
-                        <div class="w-full">
-                          <h3 class="text-xs font-nromal pt-2 uppercase pb-2">{{ item.name }}</h3>
-                          <i class="text-xs opacity-75">{{ item.subject }}</i>
-                        </div>
-                      </div>
-                  </div>
-
-                      <div class="bg-white text-black px-5 py-5 font-sans shadow">
-                        <div class="flex items-center">
-                          <div class="w-full">
-                            <p class="tracking-wide uppercase text-grey font-1">opens</p>
-                            <p class="font-1 text-3xl -mb-2">{{ item.opens }}</p>
-                          </div>
-                          <div class="w-1/4">
-                            <i class="text-3xl text-color mt-2 fas fa-envelope-open-text"></i>
-                          </div>
-                        </div>
-                    </div>
-
-                      <div class="bg-white text-black px-5 py-5 font-sans shadow">
-                        <div class="flex items-center">
-                          <div class="w-full">
-                            <p class="tracking-wide uppercase text-grey font-1">clicks</p>
-                            <p class="font-1 text-3xl -mb-2">{{ item.clicks }}</p>
-                          </div>
-                          <div class="w-1/4">
-                            <i class="text-3xl text-color mt-2 fas fa-mouse"></i>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="bg-white text-black px-5 py-5 font-sans shadow">
-                      <div class="flex items-center">
-                        <div class="w-full">
-                          <p class="tracking-wide uppercase text-grey font-1">
-                            <i class="fas fa-calendar-day"></i> 
-                            <span class="pl-2">{{ item.time }}</span>
-                          </p>
-                        </div>
-                      </div>
-                  </div>
-
-                  <a class="block bg-color text-white p-3 font-sans shadow no-underline text-center" title="preview email" :href="item.url" target="_blank">
-                    <i class="fas fa-envelope-square opacity-75"></i>
-                  </a>
-
-
-                </div>
-            </div>
-     </div>
 
 </div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js'></script>
+
+
+
+
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-
-  <script src="../../js//swiper-bundle.min.js"></script>
   <script src="../../js/global.js"></script>
-  <script src="../../js/vue-report.js"></script>
+  <script src="../../js/vue-v10.js"></script>
+  <script src="../../js/vue-report-2.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-  var swiper = new Swiper('.swiper-container', {
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });  
-  </script>
+
 
 </body>
 
