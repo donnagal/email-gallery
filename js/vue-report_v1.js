@@ -12,7 +12,7 @@ new Vue({
      search_filter: '',
      items: [
             { 
-              name: '[Member] Statement reminder-email-1-RIE',
+              name: 'Statement reminder-email-1-RIE',
               color: 'green-02',
               group: 'mbr',
               sent: '51,218',
@@ -24,7 +24,7 @@ new Vue({
               url: ["https://litmus.com/pub/3bf0cf7"],
             },
             { 
-              name: '[Member] Statement reminder-email-2-Non-RIE-01',
+              name: 'Statement reminder-email-2-Non-RIE-01',
               color: 'green-02',
               group: 'mbr',
               sent: '20,683',
@@ -36,7 +36,7 @@ new Vue({
               url: ["https://litmus.com/pub/05ac995"],
             },
             { 
-              name: '[Member] Statement reminder-email-2-Non-RIE-02',
+              name: 'Statement reminder-email-2-Non-RIE-02',
               color: 'green-02',
               group: 'mbr',
               sent: '1,392',
@@ -48,7 +48,7 @@ new Vue({
               url: ["https://litmus.com/pub/db9ca64"],
             },
             { 
-              name: '[Member] Statement reminder-email-2-Non-RIE-03',
+              name: 'Statement reminder-email-2-Non-RIE-03',
               color: 'green-02',
               group: 'mbr',
               sent: '875',
@@ -60,7 +60,7 @@ new Vue({
               url: ["https://litmus.com/pub/ddd9318"],
             },
             { 
-              name: '[Member] Statement reminder-email-2-Non-RIE-04',
+              name: 'Statement reminder-email-2-Non-RIE-04',
               color: 'green-02',
               group: 'mbr',
               sent: '7,114',
@@ -72,7 +72,7 @@ new Vue({
               url: ["https://litmus.com/pub/927a9d7"],
             },
             { 
-              name: '[Member] Statement Email-2-Non-RIE-04',
+              name: 'Statement Email-2-Non-RIE-04',
               color: 'green-02',
               group: 'mbr',
               sent: '27,426',
@@ -84,7 +84,7 @@ new Vue({
               url: ["https://litmus.com/pub/d754515"],
             },
             { 
-              name: '[Member] Statement Email-2-Non-RIE-03',
+              name: 'Statement Email-2-Non-RIE-03',
               color: 'green-02',
               group: 'mbr',
               sent: '9,580',
@@ -96,7 +96,7 @@ new Vue({
               url: ["https://litmus.com/pub/2ff6672"],
             },
             { 
-              name: '[Member] Statement Email-2-Non-RIE-02 ',
+              name: 'Statement Email-2-Non-RIE-02 ',
               color: 'green-02',
               group: 'mbr',
               sent: '11,676',
@@ -108,7 +108,7 @@ new Vue({
               url: ["https://litmus.com/pub/7c6156f"],
             },
             { 
-              name: '[Member] Statement Email-2-Non-RIE-01 - Wave 2',
+              name: 'Statement Email-2-Non-RIE-01 - Wave 2',
               color: 'green-02',
               group: 'mbr',
               sent: '56,020',
@@ -120,7 +120,7 @@ new Vue({
               url: ["https://litmus.com/pub/cb722aa"],
             },
             { 
-              name: '[Member] Statement Email-2-Non-RIE-01 - Wave 1',
+              name: 'Statement Email-2-Non-RIE-01 - Wave 1',
               color: 'green-02',
               group: 'mbr',
               sent: '37,774',
@@ -132,7 +132,7 @@ new Vue({
               url: ["https://litmus.com/pub/cb722aa"],
             },
             { 
-              name: '[Member] Statement video snapshots email-1-RIE wave 6',
+              name: 'Statement video snapshots email-1-RIE wave 6',
               color: 'green-02',
               group: 'mbr',
               sent: '15,817',
@@ -144,7 +144,7 @@ new Vue({
               url: ["https://litmus.com/pub/d38d1a1"],
             },
             { 
-              name: '[Member] Statement video snapshots email-1-RIE wave 5',
+              name: 'Statement video snapshots email-1-RIE wave 5',
               color: 'green-02',
               group: 'mbr',
               sent: '54,182',
@@ -156,7 +156,7 @@ new Vue({
               url: ["https://litmus.com/pub/d38d1a1"],
             },
             { 
-              name: '[Member] Statement video snapshots email-1-RIE wave 4',
+              name: 'Statement video snapshots email-1-RIE wave 4',
               color: 'green-02',
               group: 'mbr',
               sent: '54,308',
@@ -168,7 +168,7 @@ new Vue({
               url: ["https://litmus.com/pub/d38d1a1"],
             },
             { 
-              name: '[Member] Statement video snapshots email-1-RIE wave 3',
+              name: 'Statement video snapshots email-1-RIE wave 3',
               color: 'green-02',
               group: 'mbr',
               sent: '54,241',
@@ -180,7 +180,7 @@ new Vue({
               url: ["https://litmus.com/pub/d38d1a1"],
             },
             { 
-              name: '[Member] Statement video snapshots email-1-RIE wave 2',
+              name: 'Statement video snapshots email-1-RIE wave 2',
               color: 'green-02',
               group: 'mbr',
               sent: '54,236',
@@ -192,7 +192,7 @@ new Vue({
               url: ["https://litmus.com/pub/d38d1a1"],
             },
             { 
-              name: '[Member] Statement video snapshots email-1-RIE subject line A',
+              name: 'Statement video snapshots email-1-RIE subject line A',
               color: 'green-02',
               group: 'mbr',
               sent: '18,077 (A)',
@@ -204,7 +204,7 @@ new Vue({
               url: ["https://litmus.com/pub/d38d1a1"],
             },
             { 
-              name: '[Member] Statement video snapshots email-1-RIE subject line B',
+              name: 'Statement video snapshots email-1-RIE subject line B',
               color: 'green-02',
               group: 'mbr',
               sent: '18,103 (B)',
@@ -216,7 +216,7 @@ new Vue({
               url: ["https://litmus.com/pub/d38d1a1"],
             },
             { 
-              name: '[Member] Statement video snapshots email-1-RIE subject line C',
+              name: 'Statement video snapshots email-1-RIE subject line C',
               color: 'green-02',
               group: 'mbr',
               sent: '18,055 (C)',
@@ -228,7 +228,7 @@ new Vue({
               url: ["https://litmus.com/pub/d38d1a1"],
             },
             { 
-              name: '[Member] Statements Super - Invalid address:  email-3-annual-statement-01',
+              name: 'Statements Super - Invalid address:  email-3-annual-statement-01',
               color: 'green-02',
               group: 'mbr',
               sent: '4,461',
@@ -240,7 +240,7 @@ new Vue({
               url: ["https://litmus.com/checklist/public/3ef2fb2"],
             },
             { 
-              name: '[Member] Statements Super - Invalid address:  email-3-annual-statement-02 ',
+              name: 'Statements Super - Invalid address:  email-3-annual-statement-02 ',
               color: 'green-02',
               group: 'mbr',
               sent: '6,897',
@@ -252,7 +252,7 @@ new Vue({
               url: ["https://litmus.com/checklist/public/3ef2fb2"],
             },
             { 
-              name: '[Member] Statements Super - Invalid address: email-3-annual-statement-03 ',
+              name: 'Statements Super - Invalid address: email-3-annual-statement-03 ',
               color: 'green-02',
               group: 'mbr',
               sent: '1,867',
@@ -264,7 +264,7 @@ new Vue({
               url: ["https://litmus.com/checklist/public/3ef2fb2"],
             },
             { 
-              name: '[Member] Statements Super - Under 30: email-3-annual-statement-01',
+              name: 'Statements Super - Under 30: email-3-annual-statement-01',
               color: 'green-02',
               group: 'mbr',
               sent: '79,002',
@@ -276,7 +276,7 @@ new Vue({
               url: ["https://litmus.com/checklist/public/3ef2fb2"],
             },
             { 
-              name: '[Member] Statements Super - 30 to 49: ',
+              name: 'Statements Super - 30 to 49: ',
               color: 'green-02',
               group: 'mbr',
               sent: '115,507',
@@ -288,7 +288,7 @@ new Vue({
               url: ["https://litmus.com/pub/e58c06d"],
             },
             { 
-              name: '[Member] Statements Super - 50+: email-3-annual-statement-03',
+              name: 'Statements Super - 50+: email-3-annual-statement-03',
               color: 'green-02',
               group: 'mbr',
               sent: '51,089',
@@ -300,7 +300,7 @@ new Vue({
               url: ["https://litmus.com/pub/4cf61ec"],
             },
             { 
-              name: '[Member] Statements annual-statement-sis',
+              name: 'Statements annual-statement-sis',
               color: 'green-02',
               group: 'mbr',
               sent: '5,100',
@@ -312,7 +312,7 @@ new Vue({
               url: ["https://litmus.com/pub/04b525c"],
             },
             { 
-              name: '[Member] Statements annual-statement-sis (no-address)',
+              name: 'Statements annual-statement-sis (no-address)',
               color: 'green-02',
               group: 'mbr',
               sent: '14',
@@ -324,7 +324,7 @@ new Vue({
               url: ["https://litmus.com/pub/41c8c82"],
             },
             { 
-              name: '[Member] Statements AMB Invite',
+              name: 'Statements AMB Invite',
               color: 'green-02',
               group: 'mbr',
               sent: '1,268',
@@ -336,7 +336,7 @@ new Vue({
               url: ["https://litmus.com/pub/aac0e81"],
             },
             { 
-              name: '[Member] Statements AMB Invite SIS',
+              name: 'Statements AMB Invite SIS',
               color: 'green-02',
               group: 'mbr',
               sent: '33',
@@ -349,7 +349,7 @@ new Vue({
             },
 
             { 
-              name: '[Brand] 2020-10 Super Brand Survey Core Data - Invite (A)',
+              name: '2020-10 Super Brand Survey Core Data - Invite (A)',
               color: 'lagoon',
               group: 'brand',
               sent: '7,432 (A)',
@@ -360,7 +360,7 @@ new Vue({
               url: ["https://email-gallery.netlify.app/emails/2020-10-mbr_super-brand-survey.html"],
             },
             { 
-              name: '[Brand] 2020-10 Super Brand Survey Core Data - Invite (B)',
+              name: '2020-10 Super Brand Survey Core Data - Invite (B)',
               color: 'lagoon',
               group: 'brand',
               sent: '7,450 (B)',

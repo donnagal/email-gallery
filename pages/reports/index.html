@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Email Report</title>
+  <title>Email Report by Campaign</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -131,6 +131,7 @@
 
 
 <div class="container mx-auto">
+  <h2 class="px-5 pt-5">Email Campaigns</h2>
   <div class="flex flex-wrap">
     <div v-repeat="item : items | orderBy sortKey desc" class="{{item.color}} lg:w-1/4 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline">
 
@@ -142,7 +143,7 @@
         </div>
         <div class="flex items-center">
           <div class="w-full">
-            <h3 class="text-xs font-nromal pt-2 uppercase pb-2">{{ item.group }} | {{ item.name }}</h3>
+            <h3 class="text-xs font-nromal pt-2 uppercase pb-2">[{{ item.group }}] {{ item.name }}</h3>
             <i class="text-xs opacity-75">{{ item.subject }}</i>
           </div>
         </div>
@@ -203,7 +204,7 @@
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src="../../js/global.js"></script>
   <script src="../../js/vue-v10.js"></script>
-  <script src="../../js/vue-report-2.js"></script>
+  <script src="../../js/vue-report-email-campaign.js"></script>
 
 
 

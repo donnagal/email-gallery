@@ -6,7 +6,7 @@ var study = new Vue({
 
     items: [
       { 
-        name: '[Member] Statement reminder-email-1-RIE',
+        name: 'Statement reminder-email-1-RIE',
         color: 'green-02',
         group: 'mbr',
         sent: 51218,
@@ -18,7 +18,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/3bf0cf7"],
       },
       { 
-        name: '[Member] Statement reminder-email-2-Non-RIE-01',
+        name: 'Statement reminder-email-2-Non-RIE-01',
         color: 'green-02',
         group: 'mbr',
         sent: 20683,
@@ -30,7 +30,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/05ac995"],
       },
       { 
-        name: '[Member] Statement reminder-email-2-Non-RIE-02',
+        name: 'Statement reminder-email-2-Non-RIE-02',
         color: 'green-02',
         group: 'mbr',
         sent: 1392,
@@ -42,7 +42,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/db9ca64"],
       },
       { 
-        name: '[Member] Statement reminder-email-2-Non-RIE-03',
+        name: 'Statement reminder-email-2-Non-RIE-03',
         color: 'green-02',
         group: 'mbr',
         sent: 875,
@@ -54,7 +54,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/ddd9318"],
       },
       { 
-        name: '[Member] Statement reminder-email-2-Non-RIE-04',
+        name: 'Statement reminder-email-2-Non-RIE-04',
         color: 'green-02',
         group: 'mbr',
         sent: 7114,
@@ -66,7 +66,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/927a9d7"],
       },
       { 
-        name: '[Member] Statement Email-2-Non-RIE-04',
+        name: 'Statement Email-2-Non-RIE-04',
         color: 'green-02',
         group: 'mbr',
         sent: 27426,
@@ -78,7 +78,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/d754515"],
       },
       { 
-        name: '[Member] Statement Email-2-Non-RIE-03',
+        name: 'Statement Email-2-Non-RIE-03',
         color: 'green-02',
         group: 'mbr',
         sent: 9580,
@@ -90,7 +90,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/2ff6672"],
       },
       { 
-        name: '[Member] Statement Email-2-Non-RIE-02 ',
+        name: 'Statement Email-2-Non-RIE-02 ',
         color: 'green-02',
         group: 'mbr',
         sent: 11676,
@@ -102,7 +102,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/7c6156f"],
       },
       { 
-        name: '[Member] Statement Email-2-Non-RIE-01 - Wave 2',
+        name: 'Statement Email-2-Non-RIE-01 - Wave 2',
         color: 'green-02',
         group: 'mbr',
         sent: 56020,
@@ -114,7 +114,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/cb722aa"],
       },
       { 
-        name: '[Member] Statement Email-2-Non-RIE-01 - Wave 1',
+        name: 'Statement Email-2-Non-RIE-01 - Wave 1',
         color: 'green-02',
         group: 'mbr',
         sent: 37774,
@@ -126,7 +126,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/cb722aa"],
       },
       { 
-        name: '[Member] Statement video snapshots email-1-RIE wave 6',
+        name: 'Statement video snapshots email-1-RIE wave 6',
         color: 'green-02',
         group: 'mbr',
         sent: 15817,
@@ -138,7 +138,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/d38d1a1"],
       },
       { 
-        name: '[Member] Statement video snapshots email-1-RIE wave 5',
+        name: 'Statement video snapshots email-1-RIE wave 5',
         color: 'green-02',
         group: 'mbr',
         sent: 54182,
@@ -150,7 +150,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/d38d1a1"],
       },
       { 
-        name: '[Member] Statement video snapshots email-1-RIE wave 4',
+        name: 'Statement video snapshots email-1-RIE wave 4',
         color: 'green-02',
         group: 'mbr',
         sent: 54308,
@@ -162,7 +162,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/d38d1a1"],
       },
       { 
-        name: '[Member] Statement video snapshots email-1-RIE wave 3',
+        name: 'Statement video snapshots email-1-RIE wave 3',
         color: 'green-02',
         group: 'mbr',
         sent: 54241,
@@ -174,7 +174,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/d38d1a1"],
       },
       { 
-        name: '[Member] Statement video snapshots email-1-RIE wave 2',
+        name: 'Statement video snapshots email-1-RIE wave 2',
         color: 'green-02',
         group: 'mbr',
         sent: 54236,
@@ -186,7 +186,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/d38d1a1"],
       },
       { 
-        name: '[Member] Statement video snapshots email-1-RIE subject line A',
+        name: 'Statement video snapshots email-1-RIE subject line A',
         color: 'green-02',
         group: 'mbr',
         sent: '18077 (A)',
@@ -198,7 +198,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/d38d1a1"],
       },
       { 
-        name: '[Member] Statement video snapshots email-1-RIE subject line B',
+        name: 'Statement video snapshots email-1-RIE subject line B',
         color: 'green-02',
         group: 'mbr',
         sent: '18103 (B)',
@@ -210,7 +210,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/d38d1a1"],
       },
       { 
-        name: '[Member] Statement video snapshots email-1-RIE subject line C',
+        name: 'Statement video snapshots email-1-RIE subject line C',
         color: 'green-02',
         group: 'mbr',
         sent: '18055 (C)',
@@ -222,7 +222,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/d38d1a1"],
       },
       { 
-        name: '[Member] Statements Super - Invalid address:  email-3-annual-statement-01',
+        name: 'Statements Super - Invalid address:  email-3-annual-statement-01',
         color: 'green-02',
         group: 'mbr',
         sent: '4461',
@@ -234,7 +234,7 @@ var study = new Vue({
         url: ["https://litmus.com/checklist/public/3ef2fb2"],
       },
       { 
-        name: '[Member] Statements Super - Invalid address:  email-3-annual-statement-02 ',
+        name: 'Statements Super - Invalid address:  email-3-annual-statement-02 ',
         color: 'green-02',
         group: 'mbr',
         sent: '6897',
@@ -246,7 +246,7 @@ var study = new Vue({
         url: ["https://litmus.com/checklist/public/3ef2fb2"],
       },
       { 
-        name: '[Member] Statements Super - Invalid address: email-3-annual-statement-03 ',
+        name: 'Statements Super - Invalid address: email-3-annual-statement-03 ',
         color: 'green-02',
         group: 'mbr',
         sent: '1867',
@@ -258,7 +258,7 @@ var study = new Vue({
         url: ["https://litmus.com/checklist/public/3ef2fb2"],
       },
       { 
-        name: '[Member] Statements Super - Under 30: email-3-annual-statement-01',
+        name: 'Statements Super - Under 30: email-3-annual-statement-01',
         color: 'green-02',
         group: 'mbr',
         sent: '79002',
@@ -270,7 +270,7 @@ var study = new Vue({
         url: ["https://litmus.com/checklist/public/3ef2fb2"],
       },
       { 
-        name: '[Member] Statements Super - 30 to 49: ',
+        name: 'Statements Super - 30 to 49: ',
         color: 'green-02',
         group: 'mbr',
         sent: '115507',
@@ -282,7 +282,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/e58c06d"],
       },
       { 
-        name: '[Member] Statements Super - 50+: email-3-annual-statement-03',
+        name: 'Statements Super - 50+: email-3-annual-statement-03',
         color: 'green-02',
         group: 'mbr',
         sent: '51089',
@@ -294,7 +294,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/4cf61ec"],
       },
       { 
-        name: '[Member] Statements annual-statement-sis',
+        name: 'Statements annual-statement-sis',
         color: 'green-02',
         group: 'mbr',
         sent: '5100',
@@ -306,7 +306,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/04b525c"],
       },
       { 
-        name: '[Member] Statements annual-statement-sis (no-address)',
+        name: 'Statements annual-statement-sis (no-address)',
         color: 'green-02',
         group: 'mbr',
         sent: '14',
@@ -318,7 +318,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/41c8c82"],
       },
       { 
-        name: '[Member] Statements AMB Invite',
+        name: 'Statements AMB Invite',
         color: 'green-02',
         group: 'mbr',
         sent: '1268',
@@ -330,7 +330,7 @@ var study = new Vue({
         url: ["https://litmus.com/pub/aac0e81"],
       },
       { 
-        name: '[Member] Statements AMB Invite SIS',
+        name: 'Statements AMB Invite SIS',
         color: 'green-02',
         group: 'mbr',
         sent: '33',
