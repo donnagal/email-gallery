@@ -110,19 +110,26 @@
         <i class="text-3xl text-color mt-2 fas fa-paper-plane"></i>
         <p class="font-sans font-normal text-xs">audience</p>
       </th>
-      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r">
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('topclick')">
         <i class="text-3xl text-color mt-2 far fa-dot-circle"></i>
         <p class="font-sans font-normal text-xs">top click</p>
       </th>
-      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r">
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('unsub')">
         <i class="text-3xl text-color mt-2 fas fa-user-slash"></i>
         <p class="font-sans font-normal text-xs">unsubscribe</p>
       </th>
-      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light">
-        <a href="/pages/reports/global" class="no-underline text-grey-dark block py-2 px-8">
-          <i class="text-3xl text-color mt-2 fas fa-globe-asia"></i>
-          <p class="font-sans font-normal text-xs">global stats</p>
-        </a>
+      <th class="cursor-pointer text-grey-dark bg-grey-lightest hover:bg-grey-light w-1/4  pl-20">
+        <div class="flex">
+          <div class="flex">
+            <a href="/pages/reports/global" class="no-underline text-grey-dark block py-2 px-8">
+              <i class="text-3xl text-color mt-2 fas fa-globe-asia"></i>
+              <p class="font-sans font-normal text-xs">global stats</p>
+            </a>
+          </div>
+          <div class="flex pt-4">
+            <i class="text-3xl text-color mt-2 fas fa-arrow-right"></i>
+          </div>
+        </div>
         </th>
       </a>
     </tr>
@@ -161,7 +168,7 @@
           </div>
       </div>
       
-        <div class="bg-white text-black px-5 py-5 font-sans shadow">
+      <div class="bg-white text-black px-5 py-5 font-sans shadow">
           <div class="flex items-center">
             <div class="w-full">
               <p class="tracking-wide uppercase text-grey font-1">clicks</p>
@@ -172,6 +179,33 @@
             </div>
           </div>
       </div>
+
+      <div class="bg-white text-black px-5 py-5 font-sans shadow">
+        <div class="flex items-center">
+          <div class="w-full">
+            <p class="tracking-wide uppercase text-grey font-1">top click</p>
+            <p class="font-1 text-3xl -mb-2">{{ item.topclick }}%</p>
+            <p class="font-normal text-xs pt-1">{{item.topclicktext }}</p>
+          </div>
+          <div class="w-1/4">
+            <i class="text-3xl text-color mt-2 far fa-dot-circle"></i>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="bg-white text-black px-5 py-5 font-sans shadow">
+        <div class="flex items-center">
+          <div class="w-full">
+            <p class="tracking-wide uppercase text-grey font-1">unsubscribe</p>
+            <p class="font-1 text-3xl -mb-2">{{ item.unsub }}</p>
+          </div>
+          <div class="w-1/4">
+            <i class="text-3xl text-color mt-2 fas fa-user-slash"></i>
+          </div>
+        </div>
+      </div>
+
       <div class="bg-white text-black px-5 py-5 font-sans shadow">
         <div class="flex items-center">
           <div class="w-full">
@@ -183,8 +217,8 @@
         </div>
       </div>
       
-      <a class="block bg-color text-white p-3 font-sans shadow no-underline text-center" title="preview email" :href="item.url" target="_blank">
-      <i class="fas fa-envelope-square opacity-75"></i>
+      <a href="{{item.url}}" target="_blank" class="block bg-color text-white p-3 font-sans shadow no-underline text-center" title="preview email">
+        <i class="fas fa-envelope-square opacity-75 pr-1"></i> preview email
       </a>
       
       
