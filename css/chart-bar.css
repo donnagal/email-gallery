@@ -1,0 +1,181 @@
+.skills {
+  width: 80%;
+  max-width: 960px;
+  height: 540px;
+  margin: auto;
+  position: relative;
+}
+
+.lines {
+  height: 100%;
+  position: relative;
+}
+
+.line {
+  height: inherit;
+  width: 2px;
+  position: absolute;
+  background: rgba(238, 238, 238, 0.6);
+}
+.line.l--0 {
+  left: 0;
+}
+.line.l--25 {
+  left: 25%;
+}
+.line.l--50 {
+  left: 50%;
+}
+.line.l--75 {
+  left: 75%;
+}
+.line.l--100 {
+  left: calc(100% - 1px);
+}
+
+.line__label {
+  display: block;
+  width: 100px;
+  text-align: center;
+  position: absolute;
+  bottom: -20px;
+  right: -50px;
+}
+.line__label.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.charts {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.chart:not(:first-child) {
+  margin-top: 10px;
+}
+
+.chart__title {
+  display: block;
+  margin: 0 0 10px;
+  font-weight: bold;
+  opacity: 0;
+  animation: 1s anim-lightspeed-in ease forwards;
+}
+.chart--prod .chart__title {
+  animation-delay: 3.3s;
+}
+.chart--design .chart__title {
+  animation-delay: 4.5s;
+}
+
+.chart--horiz {
+  overflow: hidden;
+}
+
+.chart__bar {
+  height: 30px;
+  margin-bottom: 10px;
+  background: linear-gradient(to left, #F44336, #E91E63);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  opacity: 0;
+  animation: 1s anim-lightspeed-in ease forwards;
+}
+.chart--dev .chart__bar:nth-of-type(13) {
+  animation-delay: 3.1s;
+}
+.chart--dev .chart__bar:nth-of-type(12) {
+  animation-delay: 2.9s;
+}
+.chart--dev .chart__bar:nth-of-type(11) {
+  animation-delay: 2.7s;
+}
+.chart--dev .chart__bar:nth-of-type(10) {
+  animation-delay: 2.5s;
+}
+.chart--dev .chart__bar:nth-of-type(9) {
+  animation-delay: 2.3s;
+}
+.chart--dev .chart__bar:nth-of-type(8) {
+  animation-delay: 2.1s;
+}
+.chart--dev .chart__bar:nth-of-type(7) {
+  animation-delay: 1.9s;
+}
+.chart--dev .chart__bar:nth-of-type(6) {
+  animation-delay: 1.7s;
+}
+.chart--dev .chart__bar:nth-of-type(5) {
+  animation-delay: 1.5s;
+}
+.chart--dev .chart__bar:nth-of-type(4) {
+  animation-delay: 1.3s;
+}
+.chart--dev .chart__bar:nth-of-type(3) {
+  animation-delay: 1.1s;
+}
+.chart--dev .chart__bar:nth-of-type(2) {
+  animation-delay: 0.9s;
+}
+.chart--dev .chart__bar:nth-of-type(1) {
+  animation-delay: 0.7s;
+}
+.chart--prod .chart__bar:nth-of-type(2) {
+  animation-delay: 4.2s;
+}
+.chart--prod .chart__bar:nth-of-type(1) {
+  animation-delay: 4s;
+}
+.chart--design .chart__bar:nth-of-type(4) {
+  animation-delay: 5.8s;
+}
+.chart--design .chart__bar:nth-of-type(3) {
+  animation-delay: 5.6s;
+}
+.chart--design .chart__bar:nth-of-type(2) {
+  animation-delay: 5.4s;
+}
+.chart--design .chart__bar:nth-of-type(1) {
+  animation-delay: 5.2s;
+}
+
+.chart__label {
+  padding-left: 10px;
+  line-height: 30px;
+  color: white;
+}
+
+@keyframes anim-lightspeed-in {
+  0% {
+    transform: translateX(-200%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.chart__bar::before {
+    position: absolute;
+    color: #b8c2cc;
+    left: -27px;
+    font-size: 10px;
+  }
+  .chart__bar:nth-child(1)::before { content: "DEC"; }
+  .chart__bar:nth-child(2)::before { content: "NOV"; }
+  .chart__bar:nth-child(3)::before { content: "OCT"; }
+  .chart__bar:nth-child(4)::before { content: "SEP"; }
+  .chart__bar:nth-child(5)::before { content: "AUG"; }
+  .chart__bar:nth-child(6)::before { content: "JUL"; }
+  .chart__bar:nth-child(7)::before { content: "JUN"; }
+  .chart__bar:nth-child(8)::before { content: "MAY"; }
+  .chart__bar:nth-child(9)::before { content: "APR"; }
+  .chart__bar:nth-child(10)::before { content: "MAR"; }
+  .chart__bar:nth-child(11)::before { content: "FEB"; }
+  .chart__bar:nth-child(12)::before { content: "JAN"; }
