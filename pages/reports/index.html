@@ -58,7 +58,27 @@
       color: #4e9e47;
     }
 
+    /* filter */
+    .oct .oct {
+        display: none;
+    }
+
   </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $(".bnt-oct").click(function(){
+      $("#items").toggleClass("oct");
+      $("#items").removeClass("nov");
+    });
+    $(".bnt-nov").click(function(){
+      $("#items").toggleClass("nov");
+      $("#items").removeClass("oct");
+    });
+  });
+  </script>
+
 </head>
 
 <body>
@@ -67,7 +87,7 @@
     <div class="bg-black mx-auto text-grey px-5">
       <div class="flex py-2">
         <div class="flex-1">
-          <h1 class="text-xl"><i class="menu-button fas fa-bars pr-10 cursor-pointer hover:text-white"></i>Cbus email reports</h1>
+          <h1 class="text-xl"><i class="menu-button fas fa-bars pr-10 cursor-pointer hover:text-white"></i> Cbus email reports</h1>
         </div>
       </div>
     </div>
@@ -85,19 +105,9 @@
   </header>
 
 
-  <div class="mx-auto lg:px-10 lg:pt-10">
 
-    <div class="flex border-b">
-      <div class="-mb-px mr-1">
-        <a class="text-center block border border-blue-dark rounded py-2 px-4 bg-black hover:bg-blue-700 text-white no-underline" href="/pages/reports/">NOV</a>
-      </div>
-      <div class="mr-1">
-        <a class="text-center block border border-black rounded hover:border-gray-light text-black hover:bg-gray-light py-2 px-4 no-underline" href="/pages/reports/oct">OCT</a>
-      </div>
-    </div>
-
-</div>
-
+<button class="bnt-oct">oct</button>
+<button class="bnt-nov">nov</button>
 
 <div id="items">
 
@@ -152,9 +162,9 @@
 
 
 <div class="container mx-auto">
-  <h2 class="px-5 pt-5">NOV: Email Campaigns</h2>
+  <h2 class="px-5 pt-5">Email Campaigns</h2>
   <div class="flex flex-wrap">
-    <div v-repeat="item : items | orderBy sortKey desc" class="{{item.color}} lg:w-1/4 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline">
+    <div v-repeat="item : items | orderBy sortKey desc" class="{{item.filter}} {{item.color}} lg:w-1/4 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline">
 
       <div class="bg-color text-white p-5 font-sans">
         <div class="flex items-center">
@@ -167,7 +177,7 @@
         <div class="flex items-center">
           <div class="w-full">
             <h3 class="text-xs font-nromal pt-2 uppercase pb-2">
-              <small>[{{ item.group }}]</small> 
+              <small>[{{ item.filter }}] [{{ item.group }}]</small> 
               <br/>
               {{ item.name }}
             </h3>
