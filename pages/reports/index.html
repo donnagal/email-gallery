@@ -151,6 +151,10 @@
           <i class="text-3xl text-color mt-2 fas fa-sort-alpha-up"></i>
           <p class="font-sans font-normal text-xs">name</p>
         </th>
+        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('peroid')">
+          <i class="text-3xl text-color mt-2 fas fa-calendar-day"></i>
+          <p class="font-sans font-normal text-xs">date</p>
+        </th>
         <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('group')">
           <i class="text-3xl text-color mt-2 fas fa-user-tag"></i>
           <p class="font-sans font-normal text-xs">group</p>
