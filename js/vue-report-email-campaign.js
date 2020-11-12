@@ -274,7 +274,7 @@ var study = new Vue({
         filter: 'oct-2020',
         peroid: 2020+10+16,
         time: '16/10/2020 | 11:00:00 AM',
-        url: ["xx"],
+        url: ["https://email-gallery.netlify.app/emails/2020-10-event_webinar-retirement-multi-event-13.html"],
         unsub: 0,
       },
       { 
@@ -290,7 +290,7 @@ var study = new Vue({
         filter: 'oct-2020',
         peroid: 2020+10+16,
         time: '16/10/2020 | 11:09:00 AM',
-        url: ["xx"],
+        url: ["https://litmus.com/pub/ddd9318"],
         unsub: 0,
       },
       { 
@@ -306,7 +306,7 @@ var study = new Vue({
         filter: 'oct-2020',
         peroid: 2020+10+16,
         time: '16/10/2020 | 11:09:00 AM',
-        url: ["xx"],
+        url: ["https://litmus.com/pub/db9ca64"],
         unsub: 0,
       },
       { 
@@ -386,7 +386,7 @@ var study = new Vue({
         filter: 'oct-2020',
         peroid: 2020+10+26,
         time: '26/10/2020 | 2:50:00 PM',
-        url: ["xx"],
+        url: ["2020-11-White-collar-webinar-invite.html"],
         unsub: 11,
       },
       { 
@@ -418,12 +418,9 @@ var study = new Vue({
         filter: 'oct-2020',
         peroid: 2020+10+29,
         time: '29/10/2020 | 11:57:00 AM',
-        url: ["xx"],
+        url: ["https://email-gallery.netlify.app/emails/2020-10-November-Retirement-Webinar-Series-Initial-Invite.html"],
         unsub: 29,
       },
-
-
-
 
     { 
         name: '[Pre-Retirement Webinar] 2020-09 QLD (43-53yrs) - #10 Reminder',
