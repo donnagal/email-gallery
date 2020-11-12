@@ -145,48 +145,49 @@
 <div id="items" class="oct-2020">
 
   <div class="container mx-auto mt-10">
-  <table>
-    <tr>
-      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('name')">
-        <i class="text-3xl text-color mt-2 fas fa-sort-alpha-up"></i>
-        <p class="font-sans font-normal text-xs">name</p>
-      </th>
-      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('peroid')">
-        <i class="text-3xl text-color mt-2 fas fa-user-tag"></i>
-        <p class="font-sans font-normal text-xs">date</p>
-      </th>
-      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('opens')"> 
-        <i class="text-3xl text-color mt-2 fas fa-envelope-open-text"></i>
-        <p class="font-sans font-normal text-xs">opens</p>
-      </th>
-      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('clickrate')">
-        <i class="text-3xl text-color mt-2 fas fa-mouse"></i>
-        <p class="font-sans font-normal text-xs">ctr</p>
-      </th>
-      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('sent')">
-        <i class="text-3xl text-color mt-2 fas fa-paper-plane"></i>
-        <p class="font-sans font-normal text-xs">audience</p>
-      </th>
-      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('unsub')">
-        <i class="text-3xl text-color mt-2 fas fa-user-slash"></i>
-        <p class="font-sans font-normal text-xs">unsubscribe</p>
-      </th>
-      <th class="cursor-pointer text-grey-dark bg-grey-lightest hover:bg-grey-light w-1/4  pl-20">
-        <div class="flex">
-          <div class="flex">
-            <a href="/pages/reports/global" class="no-underline text-grey-dark block py-2 px-8">
-              <i class="text-3xl text-color mt-2 fas fa-globe-asia"></i>
-              <p class="font-sans font-normal text-xs">global stats</p>
-            </a>
-          </div>
-          <div class="flex pt-4">
-            <i class="text-3xl text-color mt-2 fas fa-arrow-right"></i>
-          </div>
-        </div>
+    <table>
+      <tr>
+        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('name')">
+          <i class="text-3xl text-color mt-2 fas fa-sort-alpha-up"></i>
+          <p class="font-sans font-normal text-xs">name</p>
         </th>
-      </a>
-    </tr>
-  </table>
+        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('group')">
+          <i class="text-3xl text-color mt-2 fas fa-user-tag"></i>
+          <p class="font-sans font-normal text-xs">group</p>
+        </th>
+        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('opens')"> 
+          <i class="text-3xl text-color mt-2 fas fa-envelope-open-text"></i>
+          <p class="font-sans font-normal text-xs">opens</p>
+        </th>
+        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('clicks')">
+          <i class="text-3xl text-color mt-2 fas fa-mouse"></i>
+          <p class="font-sans font-normal text-xs">ctr</p>
+        </th>
+        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('sent')">
+          <i class="text-3xl text-color mt-2 fas fa-paper-plane"></i>
+          <p class="font-sans font-normal text-xs">audience</p>
+        </th>
+        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('unsub')">
+          <i class="text-3xl text-color mt-2 fas fa-user-slash"></i>
+          <p class="font-sans font-normal text-xs">unsubscribe</p>
+        </th>
+        <th class="cursor-pointer text-grey-dark bg-grey-lightest hover:bg-grey-light w-1/4  pl-20">
+          <div class="flex">
+            <div class="flex">
+              <a href="/pages/reports/global" class="no-underline text-grey-dark block py-2 px-8">
+                <i class="text-3xl text-color mt-2 fas fa-globe-asia"></i>
+                <p class="font-sans font-normal text-xs">global stats</p>
+              </a>
+            </div>
+            <div class="flex pt-4">
+              <i class="text-3xl text-color mt-2 fas fa-arrow-right"></i>
+            </div>
+          </div>
+          </th>
+        </a>
+      </tr>
+    </table>
+
 
 
 
