@@ -147,6 +147,14 @@
   <div class="container mx-auto mt-10">
     <table>
       <tr>
+        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('group')">
+          <i class="text-3xl text-color mt-2 fas fa-user-tag"></i>
+          <p class="font-sans font-normal text-xs">group</p>
+        </th>
+        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('sent')">
+          <i class="text-3xl text-color mt-2 fas fa-paper-plane"></i>
+          <p class="font-sans font-normal text-xs">audience</p>
+        </th>
         <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('name')">
           <i class="text-3xl text-color mt-2 fas fa-sort-alpha-up"></i>
           <p class="font-sans font-normal text-xs">name</p>
@@ -155,10 +163,6 @@
           <i class="text-3xl text-color mt-2 fas fa-calendar-day"></i>
           <p class="font-sans font-normal text-xs">date</p>
         </th>
-        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('group')">
-          <i class="text-3xl text-color mt-2 fas fa-user-tag"></i>
-          <p class="font-sans font-normal text-xs">group</p>
-        </th>
         <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('opens')"> 
           <i class="text-3xl text-color mt-2 fas fa-envelope-open-text"></i>
           <p class="font-sans font-normal text-xs">opens</p>
@@ -166,10 +170,6 @@
         <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('clicks')">
           <i class="text-3xl text-color mt-2 fas fa-mouse"></i>
           <p class="font-sans font-normal text-xs">ctr</p>
-        </th>
-        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('sent')">
-          <i class="text-3xl text-color mt-2 fas fa-paper-plane"></i>
-          <p class="font-sans font-normal text-xs">audience</p>
         </th>
         <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('unsub')">
           <i class="text-3xl text-color mt-2 fas fa-user-slash"></i>
@@ -204,7 +204,7 @@
         <div class="flex items-center">
           <div class="w-full">
 
-            <p class="text-xxs uppercase text-color bg-white font-bold py-1 px-2 rounded-full inline">{{ item.group }}</p>
+            <p class="text-xxs uppercase text-color bg-white font-bold py-1 px-2 rounded-full inline">{{ item.group }} <i class="text-color mt-2 fas fa-tag"></i></p>
 
             <p class="font-1 text-4xl -mb-2 pt-3">
               {{ item.sent }} <i class="fas fa-paper-plane pr-2 text-lg opacity-75"></i>
