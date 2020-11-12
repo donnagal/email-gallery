@@ -57,13 +57,24 @@
     .green-02 .text-color {
       color: #4e9e47;
     }
+    .blue-light .bg-color {
+      background:#2196F3;
+    }
+    .blue-light .text-color {
+      color:#2196F3;
+    }
+
+    .text-xxs {
+      font-size: 10px;
+    }
 
     /* filter */
-    .oct .nov {
-        display: none;
-    }
-    .nov .oct {
-        display: none;
+    .filter { display: none; }
+      .oct-2020 .oct-2020, .nov-2020 .nov-2020 { display: block;}
+
+    #nav button.active {
+      background-color: black;
+      color: white;
     }
 
   </style>
@@ -72,14 +83,24 @@
   <script>
   $(document).ready(function(){
     $(".bnt-oct").click(function(){
-      $("#items").toggleClass("oct");
-      $("#items").removeClass("nov");
+      $("#items").toggleClass("oct-2020");
+      $("#items").removeClass("nov-2020");
     });
     $(".bnt-nov").click(function(){
-      $("#items").toggleClass("nov");
-      $("#items").removeClass("oct");
+      $("#items").toggleClass("nov-2020");
+      $("#items").removeClass("oct-2020");
     });
   });
+
+  
+    $(function() { 
+        $('#nav').on('click','button', function ( e ) {
+            e.preventDefault();
+            $(this).parents('#nav').find('.active').removeClass('active').end().end().addClass('active');
+            $(activeTab).show();
+        });
+    });
+
   </script>
 
 </head>
@@ -108,11 +129,20 @@
   </header>
 
 
+<div class="mx-auto lg:px-10 lg:pt-10">
 
-<button class="bnt-oct">oct</button>
-<button class="bnt-nov">nov</button>
+  <div id="nav" class="flex border-b">
+    <div class="-mb-px mr-1">
+      <button class="bnt-oct text-center block border border-black rounded hover:border-gray-light text-black hover:bg-gray-light py-2 px-4 no-underline active">OCT</button>
+    </div>
+    <div class="mr-1">
+      <button class="bnt-nov text-center block border border-black rounded hover:border-gray-light text-black hover:bg-gray-light py-2 px-4 no-underline ">NOV</a>
+    </div>
+  </div>
 
-<div id="items">
+</div>
+
+<div id="items" class="oct-2020">
 
   <div class="container mx-auto mt-10">
   <table>
@@ -136,10 +166,6 @@
       <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('sent')">
         <i class="text-3xl text-color mt-2 fas fa-paper-plane"></i>
         <p class="font-sans font-normal text-xs">audience</p>
-      </th>
-      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('topclick')">
-        <i class="text-3xl text-color mt-2 far fa-dot-circle"></i>
-        <p class="font-sans font-normal text-xs">top click</p>
       </th>
       <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('unsub')">
         <i class="text-3xl text-color mt-2 fas fa-user-slash"></i>
@@ -167,23 +193,22 @@
 <div class="container mx-auto">
   <h2 class="px-5 pt-5">Email Campaigns</h2>
   <div class="flex flex-wrap">
-    <div v-repeat="item : items | orderBy sortKey desc" class="{{item.filter}} {{item.color}} lg:w-1/4 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline">
+    <div v-repeat="item : items | orderBy sortKey desc" class="filter {{item.filter}} {{item.color}} lg:w-1/4 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline">
 
-      <div class="bg-color text-white p-5 font-sans">
+      <div class="bg-color text-white px-5 pt-3 pb-5 font-sans">
         <div class="flex items-center">
           <div class="w-full">
-            <p class="font-1 text-4xl -mb-2">
-              {{ item.sent }} <i class="fas fa-paper-plane pr-2 text-lg opacity-75"></i><small class="font-sans text-xs font-nromal">{{ item.small }}</small>
+
+            <p class="text-xxs uppercase text-color bg-white font-bold py-1 px-2 rounded-full inline">{{ item.group }}</p>
+
+            <p class="font-1 text-4xl -mb-2 pt-3">
+              {{ item.sent }} <i class="fas fa-paper-plane pr-2 text-lg opacity-75"></i>
             </p>
           </div>
         </div>
         <div class="flex items-center">
           <div class="w-full">
-            <h3 class="text-xs font-nromal pt-2 uppercase pb-2">
-              <small>[{{ item.filter }}] [{{ item.group }}]</small> 
-              <br/>
-              {{ item.name }}
-            </h3>
+            <p class="py-3 text-xxs">{{ item.name }}</p>
             <i class="text-xs opacity-75">{{ item.subject }}</i>
           </div>
         </div>
@@ -224,26 +249,13 @@
           </div>
       </div>
 
-      <div class="bg-white text-black px-5 py-5 font-sans shadow">
-        <div class="flex items-center">
-          <div class="w-full">
-            <p class="tracking-wide uppercase text-grey font-1">top click</p>
-            <p class="font-1 text-3xl -mb-2">{{ item.topclick }}%</p>
-            <p class="font-normal text-xs pt-1">{{item.topclicktext }}</p>
-          </div>
-          <div class="w-1/4">
-            <i class="text-3xl text-color mt-2 far fa-dot-circle"></i>
-          </div>
-        </div>
-      </div>
-
       
       <div class="bg-white text-black px-5 py-5 font-sans shadow">
         <div class="flex items-center">
           <div class="w-full">
             <p class="tracking-wide uppercase text-grey font-1">unsubscribe</p>
             <p class="font-1 text-3xl -mb-2">
-              <!-- {{ item.unsub }}% --> TBA
+              {{ item.unsub }}%
             </p>
           </div>
           <div class="w-1/4">
@@ -253,9 +265,9 @@
       </div>
 
       
-      <a href="{{item.url}}" target="_blank" class="block bg-color text-white p-3 font-sans shadow no-underline text-center" title="preview email">
+      <!-- <a href="{{item.url}}" target="_blank" class="block bg-color text-white p-3 font-sans shadow no-underline text-center" title="preview email">
         <i class="fas fa-envelope-square opacity-75 pr-1"></i> preview email
-      </a>
+      </a> -->
       
       
       </div>
