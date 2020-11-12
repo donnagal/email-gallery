@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Email Report by Campaign</title>
+  <title>Email Report Dashboard</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -68,14 +68,24 @@
       font-size: 10px;
     }
 
+    .line-active, #nav button {
+      position: relative;
+      text-decoration: none;
+    }
+
+    .line-active::after, #nav button:hover::after {
+      content: "";
+      position: absolute;
+      left: 34%;
+      right: 34%;
+      bottom: -9px;
+      border: 1px solid #F44336;
+    }
+
     /* filter */
     .filter { display: none; }
       .oct-2020 .oct-2020, .nov-2020 .nov-2020 { display: block;}
 
-    #nav button.active {
-      background-color: black;
-      color: white;
-    }
 
   </style>
 
@@ -96,7 +106,7 @@
     $(function() { 
         $('#nav').on('click','button', function ( e ) {
             e.preventDefault();
-            $(this).parents('#nav').find('.active').removeClass('active').end().end().addClass('active');
+            $(this).parents('#nav').find('.line-active').removeClass('line-active').end().end().addClass('line-active');
             $(activeTab).show();
         });
     });
@@ -111,7 +121,7 @@
     <div class="bg-black mx-auto text-grey px-5">
       <div class="flex py-2">
         <div class="flex-1">
-          <h1 class="text-xl"><i class="menu-button fas fa-bars pr-10 cursor-pointer hover:text-white"></i> Cbus email reports</h1>
+          <h1 class="text-xl"><i class="menu-button fas fa-bars pr-10 cursor-pointer hover:text-white"></i>Dashboard: Campaigns Report</h1>
         </div>
       </div>
     </div>
@@ -123,80 +133,88 @@
         UTM Tracking tool
       </a>
       <a class="menu-button cursor-pointer text-black w-full py-2 px-3 no-underline block bg-grey-lightest">
-        Report
+        Email Report Dashboard
       </a>
     </div>
   </header>
 
 
-<div class="mx-auto lg:px-10 lg:pt-10">
-
-  <div id="nav" class="flex border-b">
-    <div class="-mb-px mr-1">
-      <button class="bnt-oct text-center block border border-black rounded hover:border-gray-light text-black hover:bg-gray-light py-2 px-4 no-underline active">OCT</button>
-    </div>
-    <!-- <div class="mr-1">
-      <button class="bnt-nov text-center block border border-black rounded hover:border-gray-light text-black hover:bg-gray-light py-2 px-4 no-underline ">NOV</a>
-    </div> -->
-  </div>
-
-</div>
 
 <div id="items" class="oct-2020">
 
-  <div class="container mx-auto mt-10">
-    <table>
-      <tr>
-        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('group')">
-          <i class="text-3xl text-color mt-2 fas fa-user-tag"></i>
-          <p class="font-sans font-normal text-xs">group</p>
-        </th>
-        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('sent')">
-          <i class="text-3xl text-color mt-2 fas fa-paper-plane"></i>
-          <p class="font-sans font-normal text-xs">audience</p>
-        </th>
-        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('name')">
-          <i class="text-3xl text-color mt-2 fas fa-sort-alpha-up"></i>
-          <p class="font-sans font-normal text-xs">name</p>
-        </th>
-        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('peroid')">
-          <i class="text-3xl text-color mt-2 fas fa-calendar-day"></i>
-          <p class="font-sans font-normal text-xs">date</p>
-        </th>
-        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('opens')"> 
-          <i class="text-3xl text-color mt-2 fas fa-envelope-open-text"></i>
-          <p class="font-sans font-normal text-xs">opens</p>
-        </th>
-        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('clicks')">
-          <i class="text-3xl text-color mt-2 fas fa-mouse"></i>
-          <p class="font-sans font-normal text-xs">ctr</p>
-        </th>
-        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('unsub')">
-          <i class="text-3xl text-color mt-2 fas fa-user-slash"></i>
-          <p class="font-sans font-normal text-xs">unsubscribe</p>
-        </th>
-        <th class="cursor-pointer text-grey-dark bg-grey-lightest hover:bg-grey-light w-1/4  pl-20">
-          <div class="flex">
-            <div class="flex">
-              <a href="/pages/reports/global" class="no-underline text-grey-dark block py-2 px-8">
-                <i class="text-3xl text-color mt-2 fas fa-globe-asia"></i>
-                <p class="font-sans font-normal text-xs">global stats</p>
-              </a>
-            </div>
-            <div class="flex pt-4">
-              <i class="text-3xl text-color mt-2 fas fa-arrow-right"></i>
-            </div>
-          </div>
-          </th>
-        </a>
-      </tr>
-    </table>
+<div class="container mx-auto mt-10">
 
+
+<div class="mx-auto">
+
+<div class="w-full">
+  <div class="flex border-b">
+    <div class="-mb-px mr-1">
+      <button class="text-center block border border-blue-dark rounded py-2 px-4 bg-black hover:bg-blue-700 text-white no-underline">
+        Campaigns Report
+      </button>
+    </div>
+    <div class="mr-1">
+      <a href="https://email-gallery.netlify.app/pages/reports/global" class="text-center block border border-black rounded hover:border-gray-light text-black hover:bg-gray-light py-2 px-4 no-underline ">
+        Global Report
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flex mt-5">
+  <table class="w-full">
+    <tr>
+      <th class="w-24 rounded-tl-full rounded-l-full cursor-pointer text-grey-lightest bg-grey-darkest py-2 px-8 border-r">
+        <p class="font-sans font-normal text-xs">filter by:</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('group')">
+        <i class="text-3xl text-color mt-2 fas fa-user-tag"></i>
+        <p class="font-sans font-normal text-xs">group</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('sent')">
+        <i class="text-3xl text-color mt-2 fas fa-paper-plane"></i>
+        <p class="font-sans font-normal text-xs">audience</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('name')">
+        <i class="text-3xl text-color mt-2 fas fa-sort-alpha-up"></i>
+        <p class="font-sans font-normal text-xs">name</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('peroid')">
+        <i class="text-3xl text-color mt-2 fas fa-calendar-day"></i>
+        <p class="font-sans font-normal text-xs">date</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('opens')"> 
+        <i class="text-3xl text-color mt-2 fas fa-envelope-open-text"></i>
+        <p class="font-sans font-normal text-xs">opens</p>
+      </th>
+      <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('clicks')">
+        <i class="text-3xl text-color mt-2 fas fa-mouse"></i>
+        <p class="font-sans font-normal text-xs">ctr</p>
+      </th>
+      <th class="rounded-tr-full rounded-r-full cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8" v-on="click: orderBy('unsub')">
+        <i class="text-3xl text-color mt-2 fas fa-user-slash"></i>
+        <p class="font-sans font-normal text-xs">unsubscribe</p>
+      </th>
+      </a>
+    </tr>
+  </table>
+</div>
+</div>
+
+
+<div id="nav" class="w-full mb-5">
+  <div class="text-center">
+    <button class="bnt-oct px-5 pt-5 focus:outline-none line-active">OCT</button>
+    <button class="bnt-nov px-5 pt-5 text-grey-dark focus:outline-none">NOV</button>
+  </div>
+</div>
 
 
 
 <div class="container mx-auto">
-  <h2 class="px-5 pt-5">Email Campaigns</h2>
+
   <div class="flex flex-wrap">
     <div v-repeat="item : items | orderBy sortKey desc" class="filter {{item.filter}} {{item.color}} lg:w-1/4 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline">
 
@@ -234,7 +252,7 @@
           <div class="flex items-center">
             <div class="w-full">
               <p class="tracking-wide uppercase text-grey font-1">opens</p>
-              <p class="font-1 text-3xl -mb-2">{{ item.opens }} - {{ item.openrate }}%</p>
+              <p class="font-1 text-3xl -mb-2"><span class="pr-3"> ({{ item.opens }}) </span> {{ item.openrate }}%</p>
             </div>
             <div class="w-1/4">
               <i class="text-3xl text-color mt-2 fas fa-envelope-open-text"></i>
@@ -246,7 +264,7 @@
           <div class="flex items-center">
             <div class="w-full">
               <p class="tracking-wide uppercase text-grey font-1">clicks</p>
-              <p class="font-1 text-3xl -mb-2">{{ item.clicks }} - {{item.clickrate}}%</p>
+              <p class="font-1 text-3xl -mb-2"><span class="pr-3"> ({{ item.clicks }}) </span> {{ item.clickrate }}%</p>
             </div>
             <div class="w-1/4">
               <i class="text-3xl text-color mt-2 fas fa-mouse"></i>
