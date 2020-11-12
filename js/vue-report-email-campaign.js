@@ -130,7 +130,7 @@ var study = new Vue({
         filter: 'oct-2020',
         peroid: 2020+10+06+10,
         time: '6/10/2020 | 10:01:00 AM',
-        url: ["xx"],
+        url: ["https://email-gallery.netlify.app/emails/2020-10-event_webinar-retirement-multi-event-13.html"],
         unsub: 0,
       },
       { 
@@ -162,7 +162,7 @@ var study = new Vue({
         filter: 'oct-2020',
         peroid: 2020+10+07,
         time: '7/10/2020 | 12:28:00 PM',
-        url: ["xx"],
+        url: ["https://email-gallery.netlify.app/emails/Retirement webinar reminder 40-49.html"],
         unsub: 5,
       },
       { 
@@ -210,7 +210,7 @@ var study = new Vue({
         filter: 'oct-2020',
         peroid: 2020+10+13+9,
         time: '13/10/2020 | 9:26:00 AM',
-        url: ["xx"],
+        url: ["https://email-gallery.netlify.app/emails/2020-10_mbr-super-payment-checker.html"],
         unsub: 0,
       },
       { 
@@ -242,7 +242,7 @@ var study = new Vue({
         filter: 'oct-2020',
         peroid: 2020+10+14,
         time: '14/10/2020 | 12:30:00 PM',
-        url: ["xx"],
+        url: ["https://email-gallery.netlify.app/emails/2020-11-event-white-collar-16-30.html"],
         unsub: 6,
       },
       { 
@@ -262,7 +262,7 @@ var study = new Vue({
         unsub: 12,
       },
       { 
-        name: 'Retirement Multi invite (event 13)',
+        name: 'Retirement Multi Reminder (event 13)',
         color: 'purple',
         group: 'Webinar',
         sent: 6052,
@@ -274,7 +274,7 @@ var study = new Vue({
         filter: 'oct-2020',
         peroid: 2020+10+16,
         time: '16/10/2020 | 11:00:00 AM',
-        url: ["https://email-gallery.netlify.app/emails/2020-10-event_webinar-retirement-multi-event-13.html"],
+        url: ["https://email-gallery.netlify.app/emails/2020-10-event_webinar-retirement-multi-event-13-reminder.html"],
         unsub: 0,
       },
       { 
