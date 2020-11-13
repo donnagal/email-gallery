@@ -20,6 +20,7 @@ var study = new Vue({
         time: '01/10/2020 | 10:00',
         url: ["https://email-gallery.netlify.app/emails/2020-08-statements/amb-invite.html"],
         unsub: 0,
+        id: 'DM12440',
       },
       { 
         name: 'Statements - AMB Invite',
@@ -36,6 +37,7 @@ var study = new Vue({
         time: '01/10/2020 | 10:00',
         url: ["https://email-gallery.netlify.app/emails/2020-08-statements/amb-invite.html"],
         unsub: 0,
+        id: 'DM12436',
       },
       { 
         name: 'Retirement Super in your 40s - invite',
@@ -52,6 +54,7 @@ var study = new Vue({
         time: '1/10/2020 | 11:19:00 AM',
         url: ["https://email-gallery.netlify.app/emails/Retirement Webinar 40-49.html"],
         unsub: 2,
+        id: 'DM12733',
       },
       { 
         name: 'Statements - seg-1 (no-address)',
@@ -68,6 +71,7 @@ var study = new Vue({
         time: '2/10/2020 | 10:00:00 AM',
         url: ["https://litmus.com/checklist/public/3ef2fb2"],
         unsub: 0,
+        id: 'DM12414',
       },
       { 
         name: 'Statements - seg-2 (no-address)',
@@ -84,6 +88,7 @@ var study = new Vue({
         time: '2/10/2020 | 12:01:00 PM',
         url: ["https://litmus.com/checklist/public/3ef2fb2"],
         unsub: 0,
+        id: 'DM12418',
       },
       { 
         name: 'Statements - seg-3 (no-address)',
@@ -100,6 +105,7 @@ var study = new Vue({
         time: '2/10/2020 | 3:01:00 PM',
         url: ["https://litmus.com/checklist/public/3ef2fb2"],
         unsub: 0,
+        id: 'DM12422',
       },
       { 
         name: 'Campaigns Young Cohort',
@@ -116,6 +122,7 @@ var study = new Vue({
         time: '6/10/2020 | 9:35:00 AM',
         url: ["https://email-gallery.netlify.app/emails/2020-09-mbr_road-to-recovery--young-cohort"],
         unsub: 218,
+        id: 'DM12729',
       },
       { 
         name: 'Retirement Multi invite (event 13)',
@@ -132,6 +139,7 @@ var study = new Vue({
         time: '6/10/2020 | 10:01:00 AM',
         url: ["https://email-gallery.netlify.app/emails/2020-10-event_webinar-retirement-multi-event-13.html"],
         unsub: 0,
+        id: 'DM12750',
       },
       { 
         name: 'Campaigns Abandoned cart',
@@ -148,6 +156,7 @@ var study = new Vue({
         time: '6/10/2020 | 3:16:00 PM',
         url: ["https://email-gallery.netlify.app/emails/2020-08_abandon%20cart"],
         unsub: 0,
+        id: 'DM12785',
       },
       { 
         name: 'Retirement Super in your 40s - Reminder',
@@ -164,6 +173,7 @@ var study = new Vue({
         time: '7/10/2020 | 12:28:00 PM',
         url: ["https://email-gallery.netlify.app/emails/Retirement webinar reminder 40-49.html"],
         unsub: 5,
+        id: 'DM12857',
       },
       { 
         name: 'Super brand survey - Subject line A',
@@ -180,6 +190,7 @@ var study = new Vue({
         time: '8/10/2020 | 2:19:00 PM',
         url: ["https://email-gallery.netlify.app/emails/2020-10-mbr_super-brand-survey.html"],
         unsub: 6,
+        id: 'DM12825',
       },
       { 
         name: 'Super brand survey - Subject line B',
@@ -196,6 +207,7 @@ var study = new Vue({
         time: '8/10/2020 | 2:19:00 PM',
         url: ["https://email-gallery.netlify.app/emails/2020-10-mbr_super-brand-survey.html"],
         unsub: 9,
+        id: 'DM12824',
       },
       { 
         name: 'Campaigns SPC - Monthly to new members',
@@ -212,6 +224,7 @@ var study = new Vue({
         time: '13/10/2020 | 9:26:00 AM',
         url: ["https://email-gallery.netlify.app/emails/2020-10_mbr-super-payment-checker.html"],
         unsub: 0,
+        id: 'DM12954',
       },
       { 
         name: 'Campaign Abandoned cart',
@@ -228,6 +241,7 @@ var study = new Vue({
         time: '13/10/2020 | 3:01:00 PM',
         url: ["https://email-gallery.netlify.app/emails/2020-08_abandon%20cart"],
         unsub: 3,
+        id: 'DM12987',
       },
       { 
         name: 'White Collar',
@@ -244,6 +258,7 @@ var study = new Vue({
         time: '14/10/2020 | 12:30:00 PM',
         url: ["https://email-gallery.netlify.app/emails/2020-11-event-white-collar-16-30.html"],
         unsub: 6,
+        id: 'DM12684',
       },
       { 
         name: 'Super brand survey - Reminder',
@@ -260,6 +275,7 @@ var study = new Vue({
         time: '15/10/2020 | 10:27:00 AM',
         url: ["https://email-gallery.netlify.app/emails/2020-10-mbr_super-brand-survey.html"],
         unsub: 12,
+        id: 'DM12998',
       },
       { 
         name: 'Retirement Multi Reminder (event 13)',
@@ -276,6 +292,7 @@ var study = new Vue({
         time: '16/10/2020 | 11:00:00 AM',
         url: ["https://email-gallery.netlify.app/emails/2020-10-event_webinar-retirement-multi-event-13-reminder.html"],
         unsub: 0,
+        id: 'DM12962',
       },
       { 
         name: 'Statements - Video Non RIE - Reminder',
@@ -292,6 +309,7 @@ var study = new Vue({
         time: '16/10/2020 | 11:09:00 AM',
         url: ["https://litmus.com/pub/ddd9318"],
         unsub: 0,
+        id: 'DM12942',
       },
       { 
         name: 'Statements - Video Non RIE seg-2 - Reminder',
@@ -308,6 +326,7 @@ var study = new Vue({
         time: '16/10/2020 | 11:09:00 AM',
         url: ["https://litmus.com/pub/db9ca64"],
         unsub: 0,
+        id: 'DM12937',
       },
       { 
         name: 'Statements - Video Non RIE seg-4 - Reminder',
@@ -324,6 +343,7 @@ var study = new Vue({
         time: '16/10/2020 | 11:09:00 AM',
         url: ["https://litmus.com/pub/927a9d7"],
         unsub: 0,
+        id: 'DM12947',
       },
       { 
         name: 'Statements - Video RIE seg-4 - Reminder',
@@ -340,6 +360,7 @@ var study = new Vue({
         time: '16/10/2020 | 11:09:00 AM',
         url: ["https://litmus.com/pub/927a9d7"],
         unsub: 0,
+        id: 'DM12927',
       },
       { 
         name: 'Statements - Video Non RIE seg-1 - Reminder',
@@ -356,6 +377,7 @@ var study = new Vue({
         time: '16/10/2020 | 11:09:00 AM',
         url: ["https://litmus.com/pub/927a9d7"],
         unsub: 0,
+        id: 'DM12932',
       },
       { 
         name: 'Campaign Abandoned cart',
@@ -372,6 +394,7 @@ var study = new Vue({
         time: '20/10/2020 | 3:07:00 PM',
         url: ["https://email-gallery.netlify.app/emails/2020-08_abandon%20cart"],
         unsub: 4,
+        id: 'DM13027',
       },
       { 
         name: 'White Collar',
@@ -388,6 +411,7 @@ var study = new Vue({
         time: '26/10/2020 | 2:50:00 PM',
         url: ["2020-11-White-collar-webinar-invite.html"],
         unsub: 11,
+        id: 'DM13099',
       },
       { 
         name: 'Campaign Abandoned cart',
@@ -404,6 +428,7 @@ var study = new Vue({
         time: '27/10/2020 | 4:24:00 PM',
         url: ["https://email-gallery.netlify.app/emails/2020-08_abandon%20cart"],
         unsub: 2,
+        id: 'DM13115',
       },
       { 
         name: 'Retirement Multi invite (event 14)',
@@ -420,6 +445,7 @@ var study = new Vue({
         time: '29/10/2020 | 11:57:00 AM',
         url: ["https://email-gallery.netlify.app/emails/2020-10-November-Retirement-Webinar-Series-Initial-Invite.html"],
         unsub: 29,
+        id: 'DM13162',
       },
 
     { 

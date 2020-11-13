@@ -222,8 +222,18 @@
         <div class="flex items-center">
           <div class="w-full">
 
-            <p class="text-xxs uppercase text-color bg-white font-bold py-1 px-2 rounded-full inline">{{ item.group }} <i class="text-color mt-2 fas fa-tag"></i></p>
+            <div class="flex">
+              <div class="w-1/2">
+                <p class="text-xxs uppercase text-color bg-white font-bold py-1 px-2 rounded-full inline">
+                  {{ item.group }} <i class="text-color mt-2 fas fa-tag"></i>
+                </p>
+              </div>
+              <div class="w-1/2">
+                  <p class="text-xxs text-center mb-3 text-right py-1 px-2 ">{{ item.id }}</p>
+                </div>       
+              </div>
 
+            
             <p class="font-1 text-4xl -mb-2 pt-3">
               {{ item.sent }} <i class="fas fa-paper-plane pr-2 text-lg opacity-75"></i>
             </p>
