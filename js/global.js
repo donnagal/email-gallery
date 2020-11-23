@@ -11,8 +11,3 @@
     })
   });
 
-  $(document).on('click', '.nav-li', function(event) { 
-    event.preventDefault(); 
-    $(".slide-toggle").click(); 
-    
-});

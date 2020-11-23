@@ -1,4 +1,15 @@
-.bg_black { background-color: black}
+body {
+  font-family: 'Ubuntu',sans-serif;
+}
+.font-1 {
+  font-family: 'Bebas Neue', cursive;
+}
+.bg_black { 
+  background-color: black;
+}
+.text-xxs {
+  font-size: 10px;
+}
 
 nav .slide-toggle {
   position: absolute;
@@ -26,7 +37,7 @@ nav.open .nav-overlay {
   width: 100%;
   height: 100vh;
   left: 0;
-  z-index: 0;
+  z-index: 2;
 }
 
 nav .menu {
@@ -35,6 +46,7 @@ nav .menu {
   display: none;
   z-index: 1;
   position: relative;
+  z-index: 3;
 }
 
 nav .menu-inner {
@@ -137,6 +149,10 @@ nav.animate-add.active {
 }
 
 /* submenu */
+#submenu {
+  position: relative;
+  z-index: 1;
+}
 #submenu .line-active, #submenu button {
       position: relative;
       text-decoration: none;
@@ -152,4 +168,45 @@ nav.animate-add.active {
       right: 34%;
       bottom: -9px;
       border: 1px solid #F44336;
+}
+
+/* Themes */
+a.bg-color:hover {
+  opacity: .75;
+}
+.purple .bg-color {
+  background: #72004D;
+}
+.purple .text-color {
+  color: #72004D;
+}
+.green .bg-color {
+  background:#0f8045;
+}
+.green .text-color {
+  color:#0f8045;
+}
+.gold .bg-color {
+  background: #88721d;
+}
+.gold .text-color {
+  color: #a38e3d;
+}
+.lagoon .bg-color {
+  background:#027180;
+}
+.lagoon .text-color {
+  color: #027180;
+}
+.green-02 .bg-color {
+  background:#4e9e47;
+}
+.green-02 .text-color {
+  color: #4e9e47;
+}
+.blue-light .bg-color {
+  background:#0075d2;
+}
+.blue-light .text-color {
+  color:#0075d2;
 }
