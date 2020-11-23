@@ -170,6 +170,17 @@ nav.animate-add.active {
       border: 1px solid #F44336;
 }
 
+/* results page entries */
+  .iframe-container {
+    height: 100vh;
+    width: 96%;
+    overflow: hidden;
+    position: absolute;
+  }
+  .iframe-container iframe {
+    margin-top: -148px;
+  }
+
 /* Themes */
 a.bg-color:hover {
   opacity: .75;
