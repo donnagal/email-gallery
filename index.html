@@ -21,32 +21,46 @@
 <body>
 
   <header>
-    <div class="bg-black mx-auto text-grey px-5">
+    <div class="bg-black mx-auto text-grey px-5 text-center">
       <div class="flex py-2">
         <div class="flex-1">
-          <h1 class="text-xl"><i class="menu-button fas fa-bars pr-10 cursor-pointer hover:text-white"></i> Cbus email gallery</h1>
+          <h1 class="text-xl">Cbus email gallery</h1>
         </div>
       </div>
     </div>
-    <div class="m-open bg-grey-lighter w-1/5 font-sans h-screen absolute t-0 z-20 pt-5 px-2">
-      <a class="menu-button cursor-pointer text-black w-full py-2 px-3 no-underline block bg-grey-lightest">
-        Email galley
-      </a>
-      <a href="/pages/utm-tracking" class="text-black w-full py-2 px-3 no-underline block hover:bg-grey-lightest">
-        UTM Tracking tool
-      </a>
-      <a href="/pages/reports" class="text-black w-full py-2 px-3 no-underline block hover:bg-grey-lightest">
-        Email Report Dashboard
-      </a>
-    </div>
   </header>
 
-
+<div id="nav">
+  <nav class="animate-add z-100">
+    <div class="nav-overlay"></div>
+    <button type="button" class="slide-toggle">
+        <div class="menu-wrapper">
+            <div class="hamburger-menu"></div>	  
+        </div>
+    </button>
+    <div class="menu z-100">
+        <div class="menu-inner">
+            <div class="bg-grey-darkest h-screen p-8 font-bold">
+                <ul class="list-reset text-xl mt-32">
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a class="text-teal-lighter hover:text-white no-underline">Email galley</a>
+                    </li>
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="/pages/utm-tracking" class="text-teal-lighter hover:text-white no-underline">UTM Tracking tool</a>
+                    </li>
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="/pages/reports" class="text-teal-lighter hover:text-white no-underline">Email Report Dashboard</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+     </div>
+  </nav>
+</div>
 
   <div id="items">
     
     <nav :class="active">
-
       <form autocomplete="off">
         <div class="flex w-3/4 mx-auto mt-10 mb-5">
           <div class="w-full text-center text-gray-700">
@@ -66,17 +80,18 @@
             <button class="text-3xl py-2 px-8 rounded-full text-white bg-blue hover:bg-red focus:outline-none" @click="clear(i)"><i class="fas fa-times"></i></button>
           </div>
         </div>
-
       </form>
 
-      <div class="filter-link  w-full text-lg text-center py-5 font-bold mb-8">
-        <a class="link-1 px-10 cursor-pointer text-grey" @click="selectItem('link-1')" @click.prevent="setStatus('')">All</a>
-        <a class="link-2 px-10 cursor-pointer text-grey" @click="selectItem('link-2')" @click.prevent="setStatus('template')">Templates</a>
-        <a class="link-3 px-10 cursor-pointer text-grey" @click="selectItem('link-3')" @click.prevent="setStatus('event')">Event</a>
-        <a class="link-4 px-10 cursor-pointer text-grey" @click="selectItem('link-4')" @click.prevent="setStatus('mbr')">Member</a>
-        <a class="link-5 px-10 cursor-pointer text-grey" @click="selectItem('link-5')" @click.prevent="setStatus('employer')">Employer</a>
-        <a class="link-6 px-10 cursor-pointer text-grey" @click="selectItem('link-6')" @click.prevent="setStatus('external')">External Inspo</a>
-      </div>
+      <div id="submenu" class="w-full mb-5">
+        <div class="text-center">
+          <button class="px-5 pt-5 text-grey-dark focus:outline-none line-active" @click="selectItem('link-1')" @click.prevent="setStatus('')">All</button>
+          <button class="px-5 pt-5 text-grey-dark focus:outline-none" @click="selectItem('link-2')" @click.prevent="setStatus('template')">Templates</button>
+          <button class="px-5 pt-5 text-grey-dark focus:outline-none" @click="selectItem('link-3')" @click.prevent="setStatus('event')">Event</button>
+          <button class="px-5 pt-5 text-grey-dark focus:outline-none" @click="selectItem('link-4')" @click.prevent="setStatus('mbr')">Member</button>
+          <button class="px-5 pt-5 text-grey-dark focus:outline-none" @click="selectItem('link-5')" @click.prevent="setStatus('employer')">Employer</button>
+          <button class="px-5 pt-5 text-grey-dark focus:outline-none" @click="selectItem('link-6')" @click.prevent="setStatus('external')">External Inspo</button>
+        </div>
+    </div>
 </nav>
 
 
@@ -103,7 +118,16 @@
   <script src="js/global.js"></script>
   <script src="js/vue-email-gallery.js"></script>
 
+  <script>
+    $(function() { 
+        $('#submenu').on('click','button', function ( e ) {
+            e.preventDefault();
+            $(this).parents('#submenu').find('.line-active').removeClass('line-active').end().end().addClass('line-active');
+            $(activeTab).show();
+        });
+    });
 
+  </script>
 
 </body>
 
