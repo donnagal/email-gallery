@@ -8,7 +8,7 @@ var study = new Vue({
       { 
         name: 'Retirement Super in your 40s Reminder (#17)',
         color: 'purple',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 37427,
         opens: 11947,
         openrate: 32,
@@ -26,7 +26,7 @@ var study = new Vue({
       { 
         name: 'White Collar Invite',
         color: 'blue-light',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 7587,
         opens: 2465,
         openrate: 32,
@@ -44,7 +44,7 @@ var study = new Vue({
       { 
         name: 'FYOB rolled in over 50',
         color: 'green-02',
-        group: 'Member',
+        group: 'member',
         sent: 988,
         opens: 632,
         openrate: 64,
@@ -62,7 +62,7 @@ var study = new Vue({
       { 
         name: 'FYOB rolled in under 50',
         color: 'green-02',
-        group: 'Member',
+        group: 'member',
         sent: 3967,
         opens: 2100,
         openrate:53,
@@ -80,7 +80,7 @@ var study = new Vue({
       { 
         name: 'FYOB - not rolled in',
         color: 'green-02',
-        group: 'Member',
+        group: 'member',
         sent: 11817,
         opens: 5565,
         openrate:47,
@@ -98,7 +98,7 @@ var study = new Vue({
       { 
         name: 'Retirement Super in your 40s (#17)',
         color: 'purple',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 37678,
         opens: 14719,
         openrate:39,
@@ -116,7 +116,7 @@ var study = new Vue({
       { 
         name: 'Campaigns Abandoned cart',
         color: 'green-02',
-        group: 'Member',
+        group: 'member',
         sent: 172,
         opens: 112,
         openrate:65,
@@ -134,7 +134,7 @@ var study = new Vue({
       { 
         name: 'Retirement Multi Reminder (#16)',
         color: 'purple',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 36135,
         opens: 14498,
         openrate:40,
@@ -152,7 +152,7 @@ var study = new Vue({
       { 
         name: 'Campaigns Abandoned cart',
         color: 'green-02',
-        group: 'Member',
+        group: 'member',
         sent: 190,
         opens: 121,
         openrate:64,
@@ -170,7 +170,7 @@ var study = new Vue({
       { 
         name: 'Retirement Super in your 40s (#15) - reminder',
         color: 'purple',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 36458,
         opens: 13739,
         openrate:38,
@@ -188,7 +188,7 @@ var study = new Vue({
       { 
         name: 'Retirement Multi Invite (#16)',
         color: 'purple',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 31742,
         opens: 14969,
         openrate:47,
@@ -206,7 +206,7 @@ var study = new Vue({
       { 
         name: 'Retirement Super in your 40s (#15) - invite',
         color: 'purple',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 18420,
         opens: 7798,
         openrate:42,
@@ -224,7 +224,7 @@ var study = new Vue({
       { 
         name: 'Campaigns Abandoned cart',
         color: 'green-02',
-        group: 'Member',
+        group: 'member',
         sent: 157,
         opens: 97,
         openrate:60,
@@ -242,7 +242,7 @@ var study = new Vue({
       { 
         name: 'Retirement Super in your 40s - invite',
         color: 'purple',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 18375,
         opens: 8090,
         openrate:44,
@@ -260,7 +260,7 @@ var study = new Vue({
       { 
         name: 'Campaigns SPC - Monthly to new members',
         color: 'green-02',
-        group: 'Member',
+        group: 'member',
         sent: 4238,
         opens: 2484,
         openrate: 59,
@@ -278,7 +278,7 @@ var study = new Vue({
       { 
         name: 'White Collar (A/B 7pm)',
         color: 'blue-light',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 1351,
         opens: 600,
         openrate:44,
@@ -296,7 +296,7 @@ var study = new Vue({
       { 
         name: 'White Collar (A/B 4pm)',
         color: 'blue-light',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 1344,
         opens: 597,
         openrate:44,
@@ -314,7 +314,7 @@ var study = new Vue({
       { 
         name: 'Campaigns Abandoned cart',
         color: 'green-02',
-        group: 'Member',
+        group: 'member',
         sent: 151,
         opens: 105,
         openrate:70,
@@ -332,7 +332,7 @@ var study = new Vue({
       { 
         name: 'Retirement Multi Reminder (#14)',
         color: 'purple',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 31745,
         opens: 14682,
         openrate:46,
@@ -386,7 +386,7 @@ var study = new Vue({
       { 
         name: 'Retirement Super in your 40s - invite',
         color: 'purple',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 5335,
         opens: 2186,
         openrate: 41,
@@ -476,7 +476,7 @@ var study = new Vue({
       { 
         name: 'Retirement Multi invite (#13)',
         color: 'purple',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 6082,
         opens: 3007,
         openrate: 49,
@@ -494,7 +494,7 @@ var study = new Vue({
       { 
         name: 'Campaigns Abandoned cart',
         color: 'green-02',
-        group: 'Member',
+        group: 'member',
         sent: 138,
         opens: 87,
         openrate: 63,
@@ -512,7 +512,7 @@ var study = new Vue({
       { 
         name: 'Retirement Super in your 40s - Reminder',
         color: 'purple',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 5305,
         opens: 1854,
         openrate: 35,
@@ -566,7 +566,7 @@ var study = new Vue({
       { 
         name: 'Campaigns SPC - Monthly to new members',
         color: 'green-02',
-        group: 'Member',
+        group: 'member',
         sent: 4158,
         opens: 2489,
         openrate: 60,
@@ -584,7 +584,7 @@ var study = new Vue({
       { 
         name: 'Campaign Abandoned cart',
         color: 'green-02',
-        group: 'Member',
+        group: 'member',
         sent: 159,
         opens: 108,
         openrate: 68,
@@ -602,7 +602,7 @@ var study = new Vue({
       { 
         name: 'White Collar',
         color: 'blue-light',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 2965,
         opens: 1294,
         openrate: 44,
@@ -638,7 +638,7 @@ var study = new Vue({
       { 
         name: 'Retirement Multi Reminder (#13)',
         color: 'purple',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 6052,
         opens: 2543,
         openrate: 42,
@@ -746,7 +746,7 @@ var study = new Vue({
       { 
         name: 'Campaign Abandoned cart',
         color: 'green-02',
-        group: 'Member',
+        group: 'member',
         sent: 180,
         opens: 112,
         openrate: 18,
@@ -764,7 +764,7 @@ var study = new Vue({
       { 
         name: 'White Collar',
         color: 'blue-light',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 2740,
         opens: 944,
         openrate: 1,
@@ -782,7 +782,7 @@ var study = new Vue({
       { 
         name: 'Campaign Abandoned cart',
         color: 'green-02',
-        group: 'Member',
+        group: 'member',
         sent: 169,
         opens: 105,
         openrate: 62,
@@ -800,7 +800,7 @@ var study = new Vue({
       { 
         name: 'Retirement Multi invite (#14)',
         color: 'purple',
-        group: 'Webinar',
+        group: 'webinar',
         sent: 33442,
         opens: 16953,
         openrate: 51,
@@ -839,11 +839,27 @@ var study = new Vue({
 });
 
 
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#search").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
+//  JQUERY SEARCH FILTER - Credits: //codepen.io/alexerlandsson/pen/ZbyRoO
+// --------------------------
+// 1) Add [data-search] to search input
+// 2) Add [data-filter-item] to the items that should be filtered
+// 3) Add [data-filter-name="SEARCH TERM"] to the filter-items (lowercase)
+
+
+$('[data-search]').on('keyup', function () {
+	var searchVal = $(this).val();
+	var filterItems = $('[data-filter-item]');
+
+	if (searchVal != '') {
+		filterItems.addClass('hidden');
+		$('[data-filter-item][data-filter-name*="' + searchVal + '"]').removeClass('hidden');
+	} else {
+		filterItems.removeClass('hidden');
+	}
 });
+
+
+
+
+
+

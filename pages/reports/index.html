@@ -16,8 +16,9 @@
 
   <style>
     /* filter */
-    .filter { display: none; }
+    .filter  { display: none; }
     .all .filter, .oct-2020 .oct-2020, .nov-2020 .nov-2020, .dec-2020 .dec-2020 { display: block; }
+    .hidden { display: none !important; }
   </style>
 
 </head>
@@ -29,6 +30,9 @@
       <div class="flex py-2">
         <div class="flex-1">
           <h1 class="text-xl">Dashboard: Campaign Report</h1>
+        </div>
+        <div class="">
+          <input class="pl-5 py-1 bg-grey-lighter  w-full rounded-full focus:outline-none focus:bg-grey-lightest" type="text" placeholder="Search" data-search>
         </div>
       </div>
     </div>
@@ -60,6 +64,7 @@
         </div>
      </div>
   </nav>
+  
 </div>
 
 
@@ -86,7 +91,7 @@
   </div>
 </div>
 
-<input id="myInput" type="text" placeholder="Search..">
+
 
 <div class="flex mt-5">
   <table class="w-full">
@@ -141,15 +146,18 @@
 <div class="container mx-auto">
 
   <div class="flex flex-wrap">
-    <div v-repeat="item : items | orderBy sortKey desc" class="filter {{item.filter}} {{item.color}} lg:w-1/4 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline">
+    <div v-repeat="item : items | orderBy sortKey desc" 
+    data-filter-item data-filter-name="{{ item.group }} {{ item.name }}" 
+    class="filter {{item.filter}} {{item.color}} lg:w-1/4 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline">
 
-      <div id="search" class="bg-color text-white px-5 pt-3 pb-5 font-sans">
+      <div >
+      <div class="bg-color text-white px-5 pt-3 pb-5 font-sans">
         <div class="flex items-center">
           <div class="w-full">
 
             <div class="flex">
               <div class="w-1/2">
-                <p class="text-xxs uppercase text-color bg-white font-bold py-1 px-2 rounded-full inline">
+                <p class="serach-item text-xxs uppercase text-color bg-white font-bold py-1 px-2 rounded-full inline">
                   {{ item.group }} <i class="text-color mt-2 fas fa-tag"></i>
                 </p>
               </div>
@@ -229,6 +237,7 @@
       </div>
   </div>
 
+</div>
 </div>
 
 
