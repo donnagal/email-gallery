@@ -530,7 +530,7 @@ var study = new Vue({
       { 
         name: 'Super brand survey - Subject line A',
         color: 'lagoon',
-        group: 'Brand',
+        group: 'brand',
         sent: 7432,
         opens: 2932,
         openrate: 39,
@@ -548,7 +548,7 @@ var study = new Vue({
       { 
         name: 'Super brand survey - Subject line B',
         color: 'lagoon',
-        group: 'Brand',
+        group: 'brand',
         sent: 7450,
         opens: 2915,
         openrate: 39,
@@ -620,7 +620,7 @@ var study = new Vue({
       { 
         name: 'Super brand survey - Reminder',
         color: 'lagoon',
-        group: 'Brand',
+        group: 'brand',
         sent: 14744,
         opens: 5144,
         openrate: 35,
@@ -656,7 +656,7 @@ var study = new Vue({
       { 
         name: 'Statements - Video Non RIE - Reminder',
         color: 'green-02',
-        group: 'Comms',
+        group: 'comms',
         sent: 875,
         opens: 168,
         openrate: 19,
@@ -674,7 +674,7 @@ var study = new Vue({
       { 
         name: 'Statements - Video Non RIE seg-2 - Reminder',
         color: 'green-02',
-        group: 'Comms',
+        group: 'comms',
         sent: 1392,
         opens: 237,
         openrate: 17,
@@ -692,7 +692,7 @@ var study = new Vue({
       { 
         name: 'Statements - Video Non RIE seg-4 - Reminder',
         color: 'green-02',
-        group: 'Comms',
+        group: 'comms',
         sent: 7114,
         opens: 987,
         openrate: 14,
@@ -710,7 +710,7 @@ var study = new Vue({
       { 
         name: 'Statements - Video RIE seg-4 - Reminder',
         color: 'green-02',
-        group: 'Comms',
+        group: 'comms',
         sent: 51218,
         opens: 987,
         openrate: 14,
@@ -728,7 +728,7 @@ var study = new Vue({
       { 
         name: 'Statements - Video Non RIE seg-1 - Reminder',
         color: 'green-02',
-        group: 'Comms',
+        group: 'comms',
         sent: 20683,
         opens: 2607,
         openrate: 13,
