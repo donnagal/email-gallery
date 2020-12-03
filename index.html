@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Email Gallery</title>
-  <link href="/images/favion.png" rel="icon" type="image/x-icon" />
+  <link href="images/favion.png" rel="icon" type="image/x-icon" />
 
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
@@ -20,6 +20,9 @@
       <div class="flex py-2">
         <div class="flex-1">
           <h1 class="text-xl">Cbus email gallery</h1>
+        </div>
+        <div class="">
+          <input class="pl-5 py-1 bg-grey-lighter  w-full rounded-full focus:outline-none focus:bg-grey-lightest" type="text" placeholder="Search" data-search>
         </div>
       </div>
     </div>
@@ -53,66 +56,109 @@
   </nav>
 </div>
 
+
+
+
+
   <div id="items">
-    
-    <nav :class="active">
-      <form autocomplete="off">
-        <div class="flex w-3/4 mx-auto mt-10 mb-5">
-          <div class="w-full text-center text-gray-700">
-            <input id="myInput" type="text" class="pl-16 py-4 bg-grey-lighter w-full rounded-full shadow-inner focus:outline-none focus:bg-grey-lightest" 
-            placeholder="Search emails: SIS, Event, Statement..." v-model="search_filter" @keyup="show = !show">
-            
 
-            <div class="mt-2 text-left">
-              <span @click="show = !show" class="ml-4"> <i class="fas fa-link"></i></span>
-              <p class="text-xs p-4 text-black flex-1 inline-block" v-if="show">
-                share filter link: <a class="text-xs text-grey-dark pl-3" target="blank" href="https://email-gallery.netlify.app/?search={{ search_filter }}" > https://email-gallery.netlify.app/?search={{ search_filter }}</a>
-              </p>
-            </div>
+    <div class="container mx-auto">
 
-          </div>
-          <div class="flex-1 -ml-20">
-            <button class="text-3xl py-2 px-8 rounded-full text-white bg-blue hover:bg-red focus:outline-none" @click="clear(i)"><i class="fas fa-times"></i></button>
-          </div>
-        </div>
-      </form>
+      <div class="flex mt-5">
+        <table class="w-full">
+          <tr>
+            <th class="w-24 rounded-tl-full rounded-l-full cursor-pointer text-grey-lightest bg-grey-darkest py-2 px-8 border-r">
+              <p class="font-sans font-normal text-xs">sort by:</p>
+            </th>
+            <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('group')">
+              <i class="text-3xl text-color mt-2 fas fa-user-tag"></i>
+              <p class="font-sans font-normal text-xs">group</p>
+            </th>
+            <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('name')">
+              <i class="text-3xl text-color mt-2 fas fa-sort-alpha-up"></i>
+              <p class="font-sans font-normal text-xs">name</p>
+            </th>
+            <th class="rounded-tr-full rounded-r-full cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8" v-on="click: orderBy('peroid')">
+              <i class="text-3xl text-color mt-2 fas fa-calendar-day"></i>
+              <p class="font-sans font-normal text-xs">date</p>
+            </th>
+            </a>
+          </tr>
+        </table>
+      </div>
 
-      <div id="submenu" class="w-full mb-5">
+      <div class="w-full mt-5">
         <div class="text-center">
-          <button class="px-5 pt-5 text-grey-dark focus:outline-none line-active" @click="selectItem('link-1')" @click.prevent="setStatus('')">All</button>
-          <button class="px-5 pt-5 text-grey-dark focus:outline-none" @click="selectItem('link-2')" @click.prevent="setStatus('template')">Templates</button>
-          <button class="px-5 pt-5 text-grey-dark focus:outline-none" @click="selectItem('link-3')" @click.prevent="setStatus('event')">Event</button>
-          <button class="px-5 pt-5 text-grey-dark focus:outline-none" @click="selectItem('link-4')" @click.prevent="setStatus('mbr')">Member</button>
-          <button class="px-5 pt-5 text-grey-dark focus:outline-none" @click="selectItem('link-5')" @click.prevent="setStatus('employer')">Employer</button>
-          <button class="px-5 pt-5 text-grey-dark focus:outline-none" @click="selectItem('link-6')" @click.prevent="setStatus('external')">External Inspo</button>
+          <button class="btn-brand text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
+            Brand <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
+          </button>
+          <button class="btn-comms text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
+            Comms <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
+          </button>
+          <button class="btn-member text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
+            Member <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
+          </button>
+          <button class="btn-webinar text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
+            Webinar <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
+          </button>
+          <button class="btn-template text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
+            Template <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
+          </button>
         </div>
-    </div>
-</nav>
+      </div>
 
 
 
-    <div class="flex flex-wrap lg:mx-32">
-                <a target="_blank" :href="item.url" class="lg:w-1/4 md:w-1/2 w-full p-5 text-black hover:text-grey-dark no-underline"
-                    v-for="item in items | filterBy search_filter in 'name' | filterBy status_filter in 'group'"
-                    v-show="setPaginate($index)">
-
-                    <img class="border-2" :src="item.pic">
-
-                    <div class="mt-1">
-                      <h3 class="text-sm font-nromal">
-                           {{ item.name }}
-                      </h3>
-                  </div>
-                </a>
-     </div>
-
-</div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js'></script>
-  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <div class="flex flex-wrap">
+      <div v-repeat="item : items | orderBy sortKey desc" 
+        data-filter-item data-filter-name="{{ item.group }} {{ item.name }}" 
+        class="card-{{ item.group }} {{item.filter}} {{item.color}} lg:w-1/4 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline">
   
-  <script src="js/global.js"></script>
-  <script src="js/vue-email-gallery.js"></script>
-  <script src="js/submenu.js"></script>
+      <a class="hover no-underline" target="_blank" href="{{item.url}}">
+        <div class="bg-color text-white px-5 pt-3 pb-5 font-sans">
+          <div class="flex items-center">
+            <div class="w-full">
+  
+              <div class="flex">
+                <div class="w-1/2">
+                  <p class="serach-item text-xxs uppercase text-color bg-white font-bold py-1 px-2 rounded-full inline">
+                    {{ item.group }} <i class="text-color mt-2 fas fa-tag"></i>
+                  </p>
+                </div> 
+                <div class="w-1/2">
+                  <p class="text-xxs text-center mb-3 text-right py-1 px-2 opacity-75">
+                    <i class="fas fa-calendar-day pr-1"></i>  {{ item.time }}
+                  </p>
+                </div> 
+
+                </div>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="w-full">
+              <p class="pt-3 pb-2">{{ item.name }}</p>
+              <span class="text-xs">{{ item.subject }}</span>
+            </div>
+          </div>
+        </div>
+        
+          <img class="border-2" src="https://image.thum.io/get/maxAge/12/width/700/{{item.url}}">
+
+      </a>
+    </div>
+  
+  </div>
+
+
+  </div>
+</div>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="js/global.js"></script>
+<script src="js/vue-v10.js"></script>
+<script src="js/vue-report-email-campaign.js"></script>
+<script src="js/filter-group.js"></script>
+
+
 </body>
 
 </html>
