@@ -13,8 +13,6 @@
 
   <link rel="stylesheet" href="../../css/global.css">
   <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
-
-
 </head>
 
 <body>
@@ -129,16 +127,16 @@
 
 <div class="w-full mt-5">
   <div class="text-center">
-    <button class="btn-brand text-xxs uppercase text-white bg-black hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
+    <button class="btn-brand text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
       Brand <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
     </button>
-    <button class="btn-comms text-xxs uppercase text-white bg-black hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
+    <button class="btn-comms text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
       Comms <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
     </button>
-    <button class="btn-member text-xxs uppercase text-white bg-black hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
+    <button class="btn-member text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
       Member <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
     </button>
-    <button class="btn-webinar text-xxs uppercase text-white bg-black hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
+    <button class="btn-webinar text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
       Webinar <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
     </button>
   </div>
@@ -265,6 +263,9 @@
 
   <script>
     $(function() { 
+
+        $(".card-template").remove();
+
         $(".bnt-all").click(function(){
           $("#items").removeClass();
           $("#items").addClass("all")

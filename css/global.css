@@ -7,6 +7,7 @@ body {
 .bg_black { 
   background-color: black;
 }
+
 .text-xxs {
   font-size: 10px;
 }
@@ -187,6 +188,12 @@ nav.animate-add.active {
 /* Themes */
 a.bg-color:hover {
   opacity: .75;
+}
+.black .bg-color {
+  background: #1a1a1a;
+}
+.black .text-color {
+  color: #1a1a1a;
 }
 .purple .bg-color {
   background: #72004D;
