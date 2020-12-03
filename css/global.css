@@ -10,7 +10,10 @@ body {
 .text-xxs {
   font-size: 10px;
 }
-
+.hover:hover {
+  opacity: .7;
+  transition: opacity 0.2s ease-in;
+}
 nav .slide-toggle {
   position: absolute;
   top: 10px;
@@ -221,3 +224,8 @@ a.bg-color:hover {
 .blue-light .text-color {
   color:#0075d2;
 }
+
+/* filter */
+.filter { display: none; }
+.all .filter, .oct-2020 .oct-2020, .nov-2020 .nov-2020, .dec-2020 .dec-2020 { display: block; }
+.hidden { display: none !important; }

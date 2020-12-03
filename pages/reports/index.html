@@ -14,12 +14,6 @@
   <link rel="stylesheet" href="../../css/global.css">
   <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
 
-  <style>
-    /* filter */
-    .filter  { display: none; }
-    .all .filter, .oct-2020 .oct-2020, .nov-2020 .nov-2020, .dec-2020 .dec-2020 { display: block; }
-    .hidden { display: none !important; }
-  </style>
 
 </head>
 
@@ -97,7 +91,7 @@
   <table class="w-full">
     <tr>
       <th class="w-24 rounded-tl-full rounded-l-full cursor-pointer text-grey-lightest bg-grey-darkest py-2 px-8 border-r">
-        <p class="font-sans font-normal text-xs">filter by:</p>
+        <p class="font-sans font-normal text-xs">sort by:</p>
       </th>
       <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('group')">
         <i class="text-3xl text-color mt-2 fas fa-user-tag"></i>
@@ -133,6 +127,23 @@
 </div>
 </div>
 
+<div class="w-full mt-5">
+  <div class="text-center">
+    <button class="btn-brand text-xxs uppercase text-white bg-black hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
+      Brand <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
+    </button>
+    <button class="btn-comms text-xxs uppercase text-white bg-black hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
+      Comms <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
+    </button>
+    <button class="btn-member text-xxs uppercase text-white bg-black hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
+      Member <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
+    </button>
+    <button class="btn-webinar text-xxs uppercase text-white bg-black hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
+      Webinar <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
+    </button>
+  </div>
+</div>
+
 
 <div id="submenu" class="w-full mb-5">
   <div class="text-center">
@@ -148,7 +159,7 @@
   <div class="flex flex-wrap">
     <div v-repeat="item : items | orderBy sortKey desc" 
     data-filter-item data-filter-name="{{ item.group }} {{ item.name }}" 
-    class="filter {{item.filter}} {{item.color}} lg:w-1/4 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline">
+    class="card-{{ item.group }} filter {{item.filter}} {{item.color}} lg:w-1/4 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline">
 
       <div >
       <div class="bg-color text-white px-5 pt-3 pb-5 font-sans">
@@ -250,6 +261,7 @@
   <script src="../../js/vue-v10.js"></script>
   <script src="../../js/vue-report-email-campaign.js"></script>
   <script src="../../js/submenu.js"></script>
+  <script src="../../js/filter-group.js"></script>
 
   <script>
     $(function() { 
