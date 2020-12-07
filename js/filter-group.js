@@ -13,6 +13,13 @@ $(function() {
     $(".btn-comms .fa-times-circle").toggleClass('hidden');
     $(".btn-comms .fa-check-circle").toggleClass('hidden');
   });
+  $(".btn-employer").click(function(){
+    $(".card-employer").toggleClass('hidden');
+    $(this).toggleClass('bg-red');
+    $(this).toggleClass('bg-green');
+    $(".btn-employer .fa-times-circle").toggleClass('hidden');
+    $(".btn-employer .fa-check-circle").toggleClass('hidden');
+  });
   $(".btn-member").click(function(){
     $(".card-member").toggleClass('hidden');
     $(this).toggleClass('bg-red');

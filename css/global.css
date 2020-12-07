@@ -225,13 +225,18 @@ a.bg-color:hover {
 .green-02 .text-color {
   color: #4e9e47;
 }
+.blue .bg-color {
+  background:#0a5491;
+}
+.blue .text-color {
+  color:#0a5491;
+}
 .blue-light .bg-color {
   background:#0075d2;
 }
 .blue-light .text-color {
   color:#0075d2;
 }
-
 /* filter */
 .filter { display: none; }
 .all .filter, .oct-2020 .oct-2020, .nov-2020 .nov-2020, .dec-2020 .dec-2020 { display: block; }
