@@ -1,8 +1,11 @@
-body {
-  font-family: 'Ubuntu',sans-serif;
+@font-face {
+  font-family: 'bebas';
+  src: url('../fonts/BebasNeue-Regular.ttf'); /* IE9 Compat Modes */
+  src: url('../fonts/BebasNeue-Regular.ttf')  format('truetype'); 
 }
+
 .font-1 {
-  font-family: 'Bebas Neue', Arial Black;
+  font-family: 'bebas', Arial Black;
 }
 .bg_black { 
   background-color: black;
