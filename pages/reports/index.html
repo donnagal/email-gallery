@@ -159,7 +159,7 @@
 
   <div class="flex flex-wrap">
     <div v-repeat="item : items | orderBy sortKey desc" 
-    data-filter-item data-filter-name="{{ item.group }} {{ item.name }}" 
+    data-filter-item data-filter-name="{{ item.group }} {{ item.name }} {{item.sent}} {{ item.id }}" 
     class="card-{{ item.group }} filter {{item.filter}} {{item.color}} lg:w-1/4 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline">
 
       <div >
