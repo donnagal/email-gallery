@@ -41,4 +41,11 @@ $(function() {
     $(".btn-template .fa-times-circle").toggleClass('hidden');
     $(".btn-template .fa-check-circle").toggleClass('hidden');
   });
+  $(".btn-inspo").click(function(){
+    $(".card-inspo").toggleClass('hidden');
+    $(this).toggleClass('bg-red');
+    $(this).toggleClass('bg-green');
+    $(".btn-inspo .fa-times-circle").toggleClass('hidden');
+    $(".btn-inspo .fa-check-circle").toggleClass('hidden');
+  });
 });
