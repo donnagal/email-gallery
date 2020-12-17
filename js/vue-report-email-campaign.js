@@ -1,7 +1,8 @@
 var study = new Vue({
 	el: '#items',
 	data: {
-		items: [{
+		items: [
+			{
 				name: 'Retirement Super in your 40s Reminder (#17)',
 				color: 'purple',
 				group: 'webinar',
