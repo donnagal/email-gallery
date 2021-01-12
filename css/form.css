@@ -76,14 +76,14 @@ text-transform: uppercase;
   z-index: 1;
 }
 .c-helptext a[title]:hover:after {
-background: #000000ad;
-content: attr(title);
-color: white;
-position: absolute;
-top: -100%;
-left: 19px;
-width: 200px;
-padding: 10px 10px;
-font-size: 9px;
-border-radius: 8px;
+  background: #000000ad;
+  content: attr(title);
+  color: white;
+  position: absolute;
+  top: -100%;
+  left: 19px;
+  width: 200px;
+  padding: 10px 10px;
+  font-size: 9px;
+  border-radius: 8px;
 }
