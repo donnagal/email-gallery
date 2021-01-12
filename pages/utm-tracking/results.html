@@ -5,54 +5,54 @@
 <head>
   <meta charset="UTF-8">
   <title>UTM Tracking tool</title>
+  <link href="../../images/favion.png" rel="icon" type="image/x-icon" />
 
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
   <link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
-
-  <style>
-    body {
-      font-family: 'Ubuntu',sans-serif;
-    }
-    /* entries */
-    .iframe-container {
-      height: 100vh;
-      width: 96%;
-      overflow: hidden;
-      position: absolute;
-    }
-    .iframe-container iframe {
-      margin-top: -148px;
-    }
-
-  </style>
+  <link rel="stylesheet" href="../../css/global.css">
 </head> 
 
 <body class="bg-grey-lighter">
 
-
-
   <header>
-    
-    <div class="bg-black mx-auto text-grey px-5">
+    <div class="bg-black mx-auto text-white px-5 text-center">
       <div class="flex py-2">
         <div class="flex-1">
-          <h1 class="text-xl"><i class="menu-button fas fa-bars pr-10 cursor-pointer hover:text-white"></i>UTM Tracking tool</h1>
+          <h1 class="text-xl">UTM Tracking Tool</h1>
         </div>
       </div>
     </div>
-    <div class="m-open bg-grey-lighter w-1/5 font-sans h-screen absolute t-0 z-20 pt-5 px-2">
-      <a href="/" class="text-black w-full py-2 px-3 no-underline block hover:bg-grey-lightest cursor-pointer">
-        Email galley
-      </a>
-      <a class="menu-button cursor-pointer  text-black w-full py-2 px-3 no-underline block bg-grey-lightest">
-        UTM Tracking tool
-      </a>
-      <a href="/pages/reports" class="text-black w-full py-2 px-3 no-underline block hover:bg-grey-lightest">
-        Email Report Dashboard
-      </a>
-    </div>
   </header>
+
+<div id="nav">
+  <nav class="animate-add z-100">
+    <div class="nav-overlay"></div>
+    <button type="button" class="slide-toggle">
+        <div class="menu-wrapper">
+            <div class="hamburger-menu"></div>	  
+        </div>
+    </button>
+    <div class="menu z-100">
+        <div class="menu-inner">
+            <div class="bg-grey-darkest h-screen p-8 font-bold">
+                <ul class="list-reset text-xl mt-32">
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/" class="text-teal-lighter hover:text-white no-underline">Email galley</a>
+                    </li>
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/pages/utm-tracking" class="text-teal-lighter hover:text-white no-underline">UTM Tracking tool</a>
+                    </li>
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/pages/reports/" class="text-teal-lighter hover:text-white no-underline">Email Report Dashboard</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+     </div>
+  </nav>
+</div>
+
 
   <div class="ng-app ">
 

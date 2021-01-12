@@ -1,9 +1,13 @@
-$(document).ready(function(){
+//nav
+  $(document).ready(function(){
 
-  $(".m-open").hide();
-
-  $(".menu-button").click(function(){
-    $(".m-open").slideToggle();
+    $(".slide-toggle").click(function(){
+      $(this).toggleClass('active');
+      $(".menu").animate({
+        width: "toggle"
+      });
+      $('nav').toggleClass('open');
+      $('.hamburger-menu').toggleClass('animate');
+    })
   });
 
-});

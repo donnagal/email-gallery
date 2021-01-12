@@ -5,6 +5,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Email Report Dashboard: Global</title>
+  <link href="../../images/favion.png" rel="icon" type="image/x-icon" />
+
 
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -12,19 +14,13 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
   <link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
 
-  <link rel="stylesheet" href="../../css/nav-filter.css">
+  <link rel="stylesheet" href="../../css/global.css">
   <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
   <link rel="stylesheet" href="../../css/chart-donut.css">
   <link rel="stylesheet" href="../../css/chart-bar.css">
 
 
   <style>
-    body {
-      font-family: 'Ubuntu',sans-serif;
-    }
-    .font-1 {
-      font-family: 'Bebas Neue', cursive;
-    }
     .swiper-chart {
       padding-bottom: 70px;
     }
@@ -43,25 +39,42 @@
 <body class="bg-grey-lighter">
 
   <header>
-    <div class="bg-black mx-auto text-grey px-5">
+    <div class="bg-black mx-auto text-white px-5 text-center">
       <div class="flex py-2">
         <div class="flex-1">
-          <h1 class="text-xl"><i class="menu-button fas fa-bars pr-10 cursor-pointer hover:text-white"></i>Dashboard: Global Report</h1>
+          <h1 class="text-xl">Dashboard: Global Report</h1>
         </div>
       </div>
     </div>
-    <div class="m-open bg-grey-lighter w-1/5 font-sans h-screen absolute t-0 z-20 pt-5 px-2">
-      <a href="/" class="text-black w-full py-2 px-3 no-underline block hover:bg-grey-lightest">
-        Email galley
-      </a>
-      <a href="/pages/utm-tracking" class="text-black w-full py-2 px-3 no-underline block hover:bg-grey-lightest">
-        UTM Tracking tool
-      </a>
-      <a class="menu-button cursor-pointer text-black w-full py-2 px-3 no-underline block bg-grey-lightest">
-        Email Report Dashboard
-      </a>
-    </div>
   </header>
+
+<div id="nav">
+  <nav class="animate-add z-100">
+    <div class="nav-overlay"></div>
+    <button type="button" class="slide-toggle">
+        <div class="menu-wrapper">
+            <div class="hamburger-menu"></div>	  
+        </div>
+    </button>
+    <div class="menu z-100">
+        <div class="menu-inner">
+            <div class="bg-grey-darkest h-screen p-8 font-bold">
+                <ul class="list-reset text-xl mt-32">
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/" class="text-teal-lighter hover:text-white no-underline">Email galley</a>
+                    </li>
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/pages/utm-tracking" class="text-teal-lighter hover:text-white no-underline">UTM Tracking tool</a>
+                    </li>
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/pages/reports/" class="text-teal-lighter hover:text-white no-underline">Email Report Dashboard</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+     </div>
+  </nav>
+</div>
 
 
 <div id="items">
@@ -71,7 +84,7 @@
     <div class="w-full">
       <div class="flex border-b">
         <div class="-mb-px mr-1">
-          <a href="https://email-gallery.netlify.app/pages/reports" class="text-center block border border-black rounded hover:border-gray-light text-black hover:bg-gray-light py-2 px-4 no-underline ">
+          <a href="https://email-gallery.netlify.app/pages/reports" class="text-center block border border-black rounded hover:border-grey-light text-black hover:bg-grey-dark py-2 px-4 no-underline ">
             Campaign Report
           </a>
         </div>
@@ -162,8 +175,8 @@
                   NOV
                 </div>
                 <p>
-                  <span class="text-green"><i class="fas fa-check-circle"></i> 579,886</span>
-                  <span class="text-grey text-r"><i class="fas fa-times-circle"></i> 180,940</span>
+                  <span class="text-green"><i class="fas fa-check-circle"></i> 581,765</span>
+                  <span class="text-grey text-r"><i class="fas fa-times-circle"></i> 180,594</span>
                 </p> 
               </div>
             </div>
@@ -247,61 +260,73 @@
         <div class="chart chart--dev">
           <span class="chart__title">2020</span>
           <ul class="chart--horiz">
-            <li class="chart__bar" style="width: 52%; display: none;">
+           <!-- dec -->
+            <li class="chart__bar" style="width: 52%; display:none">
               <span class="chart__label">
-                00 <small>(Pending - 000)</small>
+                333 <small>(1,708)</small>
               </span>
             </li> 
+            <!-- nov -->
             <li class="chart__bar" style="width: 52%;">
               <span class="chart__label">
-                57 <small>(Pending - 1,636)</small>
+                129 <small>(1,708)</small>
               </span>
             </li> 
+            <!-- oct -->
             <li class="chart__bar" style="width: 44%;">
               <span class="chart__label">
                204 <small>(1,579)</small>
               </span>
             </li>
+            <!-- Sep -->
             <li class="chart__bar" style="width: 25%;">
               <span class="chart__label">
                 57  <small>(1,375)</small>
               </span>
             </li>
+            <!-- Aug -->
             <li class="chart__bar" style="width: 24%;">
               <span class="chart__label">
                 57 <small>(1,318)</small>
               </span>
             </li>
+            <!-- Jul -->
             <li class="chart__bar" style="width: 23%;">
               <span class="chart__label">
                 118 <small>(1,261)</small>
               </span>
             </li>
+            <!-- Jun -->
             <li class="chart__bar" style="width: 22%;">
               <span class="chart__label">
                 125 <small>(1,136)</small>
               </span>
             </li>
+            <!-- May -->
             <li class="chart__bar" style="width: 21%;">
               <span class="chart__label">
                 19 <small>(1,117)</small>
               </span>
             </li>
+            <!-- Apr -->
             <li class="chart__bar" style="width: 20%;">
               <span class="chart__label">
                 4 <small>(1,113)</small>
               </span>
             </li>
+            <!-- Mar -->
             <li class="chart__bar" style="width: 19%;">
               <span class="chart__label">
                 18 <small>(1,095)</small>
               </span>
             </li>
+            <!-- Feb -->
             <li class="chart__bar" style="width: 16%;">
               <span class="chart__label">
                 4 <small>(1,091)</small>
               </span>
             </li>
+            <!-- Jan -->
             <li class="chart__bar" style="width: 15%;">
               <span class="chart__label">
                7 <small>(1,084)</small>
