@@ -113,9 +113,9 @@
         </div>
       </div>
 
+    </div>
 
-
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap lg:mx-32">
       <div v-repeat="item : items | orderBy sortKey desc" 
         data-filter-item data-filter-name="{{ item.group }} {{ item.name }} {{item.sent}} {{ item.id }}" 
         class="card-{{ item.group }} {{item.filter}} {{item.color}} lg:w-1/4 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline">
@@ -156,7 +156,7 @@
   </div>
 
 
-  </div>
+ 
 </div>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src="js/global.js"></script>
