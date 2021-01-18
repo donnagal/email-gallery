@@ -111,8 +111,8 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
           </div>
               
           <!-- inner spacer -->
-          <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
-            <div style="mso-line-height-rule: exactly;line-height: 12px;font-size: 1px;">&nbsp;</div>
+          <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 5px;">
+            <div style="mso-line-height-rule: exactly;line-height: 5px;font-size: 1px;">&nbsp;</div>
           </div>
 
       
@@ -131,11 +131,11 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
 
           
         <!-- Text -->
-        <div style="Margin-left: 20px;Margin-right: 20px; Margin-top: 32px;">
+        <div style="Margin-left: 20px;Margin-right: 20px; Margin-top: 24px;">
           <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
 
             <p style="Margin-bottom: 20px;text-align: left;">
-              <strong>A lot has happened since <Employer Name> joined:</strong>                  
+              <strong>A lot has happened since <%= recipient.emprRegBusName %> joined:</strong>                  
             </p>
 
             <ul style="Margin-top: 16px;Margin-bottom: 20px;Margin-left: 32px;padding: 0;list-style-type: disc;">
@@ -144,9 +144,6 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
               </li>
               <li style="Margin-top: 0;Margin-bottom: 8px;Margin-left: 0;">
                 We’ve achieved strong long-term returns for our members, delivering 7.13%<sup>^</sup> over the last 5 years, and outperforming the industry average* over the last 10 years.  
-              </li>
-              <li style="Margin-top: 0;Margin-bottom: 8px;Margin-left: 0;">
-                Insurance and beneficiaries
               </li>
               <li style="Margin-top: 0;Margin-bottom: 8px;Margin-left: 0;">
                 We’ve continued to provide <a class="hover" target="_blank" style="color: #0a5490;" href="https://www.cbussuper.com.au/super/my-insurance-options?utm_medium=edm&utm_source=adobe-campaign&utm_campaign=ETC_tier4&utm_content=link">insurance cover</a> that’s tailored for workers in the building and construction industry, paying out over 95% of all claims made<sup>#</sup>. 
@@ -410,23 +407,26 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
       <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 32px;">
         <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
           <p style="Margin-top: 0;Margin-bottom: 0;font-size: 12px;line-height: 19px;">
+            This email has been sent to: <%=recipient.email%>. Employer number: <%=recipient.emprRef%>.
+            <br><br>
             Cbus Trustee: United Super Pty Ltd ABN 46 006 261 623 AFSL 233792 Cbus ABN 75 493 363 262.
             <br><br>
             <sup>1</sup>Cbus Property Pty Ltd is a wholly-owned subsidiary of United Super Pty Ltd and has responsibility for the development and management of Cbus’ direct property investments. 
+            <br><br>
             <sup>^</sup>Since inception to 30 June 2020, for the Cbus Growth (Cbus MySuper) option based on the crediting rate. Cbus’ crediting rate is based on returns minus investment fees, taxes, and until 31 January 2020, the percentage-based administration fee. Excludes fees and costs that are deducted directly from the member account. Past performance is not a reliable indicator of future performance.
             <br/><br/>
             *The 10 year average annual return to 30 June 2020 for the Growth (Cbus MySuper) option return is 8.54% p.a. compared to the average balanced fund return (Median Fund) return of 7.43% p.a. from the SuperRatings FCRS SR50 Balanced (60-76) Index for June 2020. SuperRatings is a rating agency that collects information from super funds to enable performance comparisons - visit www.superratings.com.au
             <br><br>
-            <sup>#</sup>Average claims acceptance rates in the 5 years to 30 September 2010.  are these dates correct
+            <sup>#</sup>Average claims acceptance rates in the 5 years to 30 September 2010.
             <br/><br/>
-            This email (including any attachments) contains information which is confidential and may be subject to legal privilege. If you are not the intended recipient you must not use, distribute or copy this email. If you have received this email in error, please notify the sender immediately and delete this email. Any views expressed in this email are not necessarily the views of Cbus.
+            This information is about Cbus. It doesn't take into account your specific needs, so you should look at your own business needs, objectives and requirements before making any financial decisions.
             <br><br>
-            This information is about Cbus. It doesn’t take into account your specific needs, so you should look at your own financial position, objectives and requirements before making any financial decisions. Read the relevant Cbus Product Disclosure Statement and related documents to decide whether Cbus is right for you.
+            Read the <a class="hover size-12" style="color: #454545;font-size: 12px;font-weight: bold;line-height: 19px;" target="_blank" href="https://www.cbussuper.com.au/content/dam/cbus/files/forms-publications/general-information/Employer-Handbook.pdf">Cbus Employer Handbook</a>, relevant Product Disclosure Statement (PDS) and other documents to decide whether Cbus 
+            is right for you. Call <a style="color: #454545;font-size: 12px;font-weight: bold;line-height: 19px;" href="tel:1300361784"><strong>1300 361 784</strong> </a>or email <strong><a class="hover size-12" style="color: #454545;font-size: 12px;font-weight: bold;line-height: 19px;" href="mailto:cbusenq@cbussuper.com.au">cbusenq@cbussuper.com.au</a> 
+            </strong>or visit <a class="hover size-12" style="color: #454545;font-size: 12px;font-weight: bold;line-height: 19px;" href="https://www.cbussuper.com.au" target="_blank"><strong>www.cbussuper.com.au</strong> 
+            </a>for a copy.
             <br><br>
-            Contact <strong>1300 361 784</strong> or visit 
-            <a class="hover size-12" target="_blank" style="color: #454545;font-size: 12px;font-weight: bold;line-height: 19px;" href="https://www.cbussuper.com.au">
-              cbussuper.com.au
-            </a> for a copy.
+            This e-mail (including any attachments) contains information which is confidential and may be subject to legal privilege. If you are not the intended recipient you must not use, distribute or copy this e-mail. If you have received this e-mail in error please notify the sender immediately and delete this email.
             <br><br>
             <a class="hover size-12" target="_blank" style="color: #454545;font-size: 12px;font-weight: bold;line-height: 19px;" href="https://www.cbussuper.com.au/about-us/privacy-statement">
               Cbus Privacy Statement | <%@ include view='UnsubscriptionLink'%>
