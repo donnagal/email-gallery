@@ -73,15 +73,6 @@
                 <div class="column" style="text-align: left;color: #666;font-size: 15px;line-height: 22px;font-family: Verdana, Calibri,Carlito,PT Sans,Trebuchet MS,sans-serif;">
               
 
-                  <!-- Hero image -->
-                  <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
-                    <a target="_blank" class="hover" title="watch video" href="https://www.cbussuper.com.au/manage-account/super/login">
-                      <img style="border: 0;display: block;height: auto;width: 100%;max-width: 650px;" 
-                      alt="Stay up to date with Cbus." width="650" 
-                      src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/314e3c91ac2e5c2671a2733c0872f08c.jpg">
-                    </a>
-                  </div>
-
                   <!-- member number -->
                   <div style="Margin-left: 30px;Margin-right: 30px;Margin-top: 24px;Margin-bottom: 24px;">
                     <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
@@ -91,15 +82,13 @@
                     </div>
                   </div>
 
-                  <!-- text -->
-                  <div style="Margin-left: 30px;Margin-right: 30px;Margin-top: 20px;Margin-bottom: 24px;">
-                    <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-                      <p style="Margin-top: 0;Margin-bottom: 0;">
-                        <strong>Hi <%= recipient.firstName %>,</strong>
-                        <br><br>
-                        Your super summary is ready – check out how your super balance is tracking and get the latest Cbus News.
-                      </p>
-                    </div>
+                  <!-- Hero image -->
+                  <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
+                    <a target="_blank" class="hover" title="watch video" href="https://www.cbussuper.com.au/manage-account/super/login">
+                      <img style="border: 0;display: block;height: auto;width: 100%;max-width: 650px;" 
+                      alt="Stay up to date with Cbus." width="650" 
+                      src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/314e3c91ac2e5c2671a2733c0872f08c.jpg">
+                    </a>
                   </div>
 
                 <!-- Inner spacer -->
@@ -107,33 +96,6 @@
                   <div style="mso-line-height-rule: exactly;line-height: 8px;font-size: 1px;">&nbsp;</div>
                 </div>
 
-                <!-- Inner colour block -->
-                <div style="Margin-left: 20px; Margin-right: 20px;">
-                  <table class="mso-inner" style="border-collapse: collapse;table-layout: fixed;background-color:#f1f9ff;" role="presentation">
-                    <tbody>
-                      <tr role="navigation">
-                        <td style="padding-left: 15px; width: 45px;">
-                         <img border="0" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/3a467a7c28e2591739f9b0e24bbc1da2.png" width="45" alt="icon information.">
-                        </td>
-                        <td style="padding:15px;color:#0a5490;font-family: calibri,arial,sans-serif;font-size:15px;">
-                          <!-- heading + text -->
-                          <h2 style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #0a5490;font-size: 28px;line-height: 36px;">
-                            <strong>We’re missing something!</strong>
-                          </h2>
-                          <p style="Margin:0;">
-                            Looks like your details or postal address may be out of date, so we’ve posted your annual statement to your online account. Update your details 
-                            <a class="hover" target="_blank" href="https://www.cbussuper.com.au/#" style="color:#0a5490"><strong>online</strong></a> or get in touch and we’d be happy to help.                          </p>
-                        </td>
-                         <!--[if (mso)|(IE)]><td width="20" style="background-color: white;color: white;"><p style="Margin:0;">--- </p></td><![endif]-->  
-                      </tr>
-                    </tbody>
-                  </table>
-                 </div>
-
-                <!-- Inner spacer -->
-                <div style="Margin-left: 30px;Margin-right: 30px;Margin-top: 8px;">
-                  <div style="mso-line-height-rule: exactly;line-height: 8px;font-size: 1px;">&nbsp;</div>
-                </div>
               
                 </div>
               <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
@@ -158,6 +120,9 @@
       <!-- heading -->
       <div style="Margin-left: 20px;Margin-right: 20px;">
         <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+          <p style="Margin-top: 0;Margin-bottom: 10px;font-style: normal;font-weight: normal;color: #ffe0ff;font-size: 17px;line-height: 26px;">
+            <strong>Hi <%= recipient.firstName %>,</strong>
+           </p>
           <h2 class="size-26" style="Margin-top: 0;Margin-bottom: 16px;font-style: normal;font-weight: normal;color: white;font-size: 22px;line-height: 31px;" lang="x-size-26">
             <strong>The latest edition of Cbus News is now available online.</strong>
           </h2>
@@ -213,6 +178,52 @@
   </div>
 </div>
 <!-- END NEWS BLOCK -->
+
+ <!-- ### START FULL WIDTH BLOCK ### -->
+    <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 650px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+    <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
+    <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 650px" class="w560"><![endif]-->
+      <div class="column" style="text-align: left;color: #666;font-size: 15px;line-height: 22px;font-family: Verdana, Calibri,Carlito,PT Sans,Trebuchet MS,sans-serif;">
+    
+
+      <!-- Inner spacer -->
+      <div style="Margin-left: 30px;Margin-right: 30px;Margin-top: 8px;">
+        <div style="mso-line-height-rule: exactly;line-height: 8px;font-size: 1px;">&nbsp;</div>
+      </div>
+
+      <!-- Inner colour block -->
+      <div style="Margin-left: 20px; Margin-right: 20px;">
+        <table class="mso-inner" style="border-collapse: collapse;table-layout: fixed;background-color:#f1f9ff;" role="presentation">
+          <tbody>
+            <tr role="navigation">
+              <td style="padding-left: 15px; width: 45px;">
+                <img border="0" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/3a467a7c28e2591739f9b0e24bbc1da2.png" width="45" alt="icon information.">
+              </td>
+              <td style="padding:15px;color:#0a5490;font-family: calibri,arial,sans-serif;font-size:15px;">
+                <!-- heading + text -->
+                <h2 style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #0a5490;font-size: 28px;line-height: 36px;">
+                  <strong>We’re missing something!</strong>
+                </h2>
+                <p style="Margin:0;">
+                  Looks like your details or postal address may be out of date, so we’ve posted your annual statement to your online account. Update your details 
+                  <a class="hover" target="_blank" href="https://www.cbussuper.com.au/#" style="color:#0a5490"><strong>online</strong></a> or get in touch and we’d be happy to help.                          </p>
+              </td>
+                <!--[if (mso)|(IE)]><td width="20" style="background-color: white;color: white;"><p style="Margin:0;">--- </p></td><![endif]-->  
+            </tr>
+          </tbody>
+        </table>
+        </div>
+
+      <!-- Inner spacer -->
+      <div style="Margin-left: 30px;Margin-right: 30px;Margin-top: 8px;">
+        <div style="mso-line-height-rule: exactly;line-height: 8px;font-size: 1px;">&nbsp;</div>
+      </div>
+    
+      </div>
+    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+    </div>
+  </div>
+<!-- ### END FULL WIDTH BLOCK ### -->
 
     <!-- ### START INNER WHITE SPACE ### -->
     <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 650px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
