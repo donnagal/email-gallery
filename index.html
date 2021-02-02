@@ -59,108 +59,102 @@
 
 
 
+<div id="app" class="all">
 
-  <div id="items">
-
-    <div class="container mx-auto">
-
-      <div class="flex mt-5">
-        <table class="w-full">
-          <tr>
-            <th class="w-24 rounded-tl-full rounded-l-full cursor-pointer text-grey-lightest bg-grey-darkest py-2 px-8 border-r">
-              <p class="font-sans font-normal text-xs">sort by:</p>
-            </th>
-            <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('group')">
-              <i class="text-3xl text-color mt-2 fas fa-user-tag"></i>
-              <p class="font-sans font-normal text-xs">group</p>
-            </th>
-            <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" v-on="click: orderBy('name')">
-              <i class="text-3xl text-color mt-2 fas fa-sort-alpha-up"></i>
-              <p class="font-sans font-normal text-xs">name</p>
-            </th>
-            <th class="rounded-tr-full rounded-r-full cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8" v-on="click: orderBy('peroid')">
-              <i class="text-3xl text-color mt-2 fas fa-calendar-day"></i>
-              <p class="font-sans font-normal text-xs">date</p>
-            </th>
-            </a>
-          </tr>
-        </table>
-      </div>
-
-      <div class="w-full mt-5">
-        <div class="text-center">
-          <button class="btn-brand text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
-            Brand <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
-          </button>
-          <button class="btn-comms text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
-            Comms <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
-          </button>
-          <button class="btn-employer text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
-            Employer <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
-          </button>
-          <button class="btn-member text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
-            Member <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
-          </button>
-          <button class="btn-webinar text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
-            Webinar <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
-          </button>
-          <button class="btn-template text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
-            Template <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
-          </button>
-          <button class="btn-inspo text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
-            Inspo <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
-          </button>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="flex flex-wrap lg:mx-32">
-      <div v-repeat="item : items | orderBy sortKey desc" 
-        data-filter-item data-filter-name="{{ item.group }} {{ item.name }} {{item.sent}} {{ item.id }}" 
-        class="card-{{ item.group }} {{item.filter}} {{item.color}} lg:w-1/4 md:w-1/2 w-full p-5 hover:text-grey-dark no-underline">
+  <div class="container mx-auto mt-10">
   
-      <a class="hover no-underline" target="_blank" href="{{item.url}}">
+  
+  <div class="mx-auto">
+  
+
+  <div class="flex my-5">
+    <table class="w-full">
+      <tr>
+        <th class="w-24 rounded-tl-full rounded-l-full cursor-pointer text-grey-lightest bg-grey-darkest py-2 px-8 border-r">
+          <p class="font-sans font-normal text-xs">sort by:</p>
+        </th>
+        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" @click="sortRow('group')">
+          <i class="text-3xl text-color mt-2 fas fa-user-tag"></i>
+          <p class="font-sans font-normal text-xs">group</p>
+        </th>
+        <th class="cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8 border-r" @click="sortRow('name')">
+          <i class="text-3xl text-color mt-2 fas fa-sort-alpha-up"></i>
+          <p class="font-sans font-normal text-xs">name</p>
+        </th>
+        <th class="rounded-tr-full rounded-r-full cursor-pointer text-grey-dark bg-grey-lighter hover:bg-grey-light py-2 px-8" @click="sortRow('unsub')">
+          <i class="text-3xl text-color mt-2 fas fa-calendar-day"></i>
+          <p class="font-sans font-normal text-xs">date</p>
+        </th>
+      </tr>
+    </table>
+  </div>
+  
+  
+  </div>
+  
+  
+  
+  
+  <div class="container mx-auto">
+  
+    <div class="flex flex-wrap">
+      <div v-for="item in sortedData" v-bind:class="['card-' + item.group + ' ' + item.color]" 
+                                      class="lg:w-1/4 md:w-1/2 w-full p-2 hover:text-grey-dark no-underline ">
+  
+      <div>
+      <a class="hover no-underline" :href="item.url">
         <div class="bg-color text-white px-5 pt-3 pb-5 font-sans">
           <div class="flex items-center">
             <div class="w-full">
-  
               <div class="flex">
                 <div class="w-1/2">
                   <p class="serach-item text-xxs uppercase text-color bg-white font-bold py-1 px-2 rounded-full inline">
                     {{ item.group }} <i class="text-color mt-2 fas fa-tag"></i>
                   </p>
-                </div> 
+                </div>
                 <div class="w-1/2">
-                  <p class="text-xxs text-center mb-3 text-right py-1 px-2 opacity-75">
-                    <i class="fas fa-calendar-day pr-1"></i>  {{ item.time }}
-                  </p>
-                </div> 
-
+                    <p class="text-xxs text-center mb-3 text-right py-1 px-2 ">{{ item.id }}</p>
+                  </div>       
                 </div>
             </div>
           </div>
           <div class="flex items-center">
             <div class="w-full">
-              <p class="pt-3 pb-2">{{ item.name }}</p>
-              <span class="text-xs">{{ item.subject }}</span>
+              <p class="pt-3 pb-5 h-10">{{ item.name }}</p>
             </div>
           </div>
         </div>
+  
+        <img class="border-2" v-bind:src="'https://image.thum.io/get/maxAge/12/width/300/' + item.url" /> 
         
-          <img class="border-2" src="https://image.thum.io/get/maxAge/12/width/700/{{item.url}}">
+        <div class="bg-white text-black px-5 py-5 font-sans shadow">
+          <div class="flex items-center">
+            <div class="w-full">
+              <p class="tracking-wide uppercase text-black font-1">
+                <i class="fas fa-calendar-day"></i> 
+                <span class="pl-2">{{ item.time }}</span>
+              </p>
+            </div>
+          </div>
+        </div>
 
-      </a>
+
+        </a>
+        
+        </div>
     </div>
   
   </div>
-
-
- 
-</div>
+  </div>
+  
+  
+  
+  
+  </div>
+  
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src="js/global.js"></script>
-<script src="js/vue-v10.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.6/vue.min.js"></script>
 <script src="js/vue-report-email-campaign.js"></script>
 <script src="js/filter-group.js"></script>
 
