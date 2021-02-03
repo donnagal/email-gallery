@@ -242,5 +242,5 @@ a.bg-color:hover {
 }
 /* filter */
 .filter { display: none; }
-.all .filter, .oct-2020 .oct-2020, .nov-2020 .nov-2020, .dec-2020 .dec-2020, .jan-2021 .jan-2021 { display: block; }
+.all .filter, .oct-2020, .nov-2020 .nov-2020, .dec-2020 .dec-2020, .jan-2021 .jan-2021 { display: block; }
 .hidden { display: none !important; }

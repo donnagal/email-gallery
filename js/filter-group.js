@@ -48,4 +48,38 @@ $(function() {
     $(".btn-inspo .fa-times-circle").toggleClass('hidden');
     $(".btn-inspo .fa-check-circle").toggleClass('hidden');
   });
+
+  //submenu date
+  $(".dropdown-menu").hide();
+
+  $(".dropdown").click(function(){
+    $(".dropdown-menu").toggle();
+  });
+
+  $('#submenu').on('click','button', function ( e ) {
+    e.preventDefault();
+    $(this).parents('#submenu').find('.line-active').removeClass('line-active').end().end().addClass('line-active');
+    $(activeTab).show();
+});
+
+    $(".bnt-all").click(function(){
+      $(".card").show();
+    });
+    $(".bnt-oct").click(function(){
+      $(".card").hide();
+      $(".oct-2020").show();
+    });
+    $(".bnt-nov").click(function(){
+      $(".card").hide();
+      $(".nov-2020").show();
+    });
+    $(".bnt-dec").click(function(){
+      $(".card").hide();
+      $(".dec-2020").show();
+    });
+    $(".bnt-21-jan").click(function(){
+      $(".card").hide();
+      $(".jan-2021").show();
+    });
+
 });
