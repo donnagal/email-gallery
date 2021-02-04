@@ -104,7 +104,7 @@
       <div v-for="item in sortedData" v-bind:class="['card-' + item.group + ' ' + item.color]" 
                                       class="lg:w-1/5 md:w-1/2 w-full p-2 hover:text-grey-dark no-underline ">
   
-      <a class="no-underline hover" :href="{{item.url}}" target="_blank">
+      <a class="no-underline hover" :href="item.url" target="_blank">
         <div class="hover border border-4 border-grey shadow-lg">
           <div class="bg-color text-white px-5 pt-3 pb-5 font-sans">
             <div class="flex items-center">
