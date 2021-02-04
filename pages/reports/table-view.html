@@ -87,7 +87,6 @@
   </div>
 </div>
 
-
 <div class="w-full mt-5 flex items-center bg-white p-3">
 
 
@@ -142,8 +141,8 @@
 
   <div class="w-1/6 text-right">
     <span class="text-xs font-medium tracking-wider text-grey-dark">View:</span>
-    <a href="#" class="p-3 text-grey hover:text-grey-dark font-semibold" title="Grid"><i class="fas fa-th"></i></a>
-    <a href="/pages/reports/table-view.html" class="p-3 text-grey hover:text-grey-dark font-semibold" title="Table"><i class="fas fa-table"></i></a>
+    <a href="/index.html" class="p-3 text-grey hover:text-grey-dark font-semibold" title="Grid"><i class="fas fa-th"></i></a>
+    <a href="#" class="p-3 text-grey hover:text-grey-dark font-semibold" title="Table"><i class="fas fa-table"></i></a>
   </div>
 
 </div>
@@ -151,102 +150,92 @@
 </div>
 
 
-
-
-<div class="container mx-auto">
-
-  <div class="flex flex-wrap">
-    <div v-for="item in sortedData" v-bind:class="['card-' + item.group + ' ' + item.color + ' ' + item.filter]" 
-                                    class="card lg:w-1/4 md:w-1/2 w-full p-2 hover:text-grey-dark no-underline ">
-
-      <div >
-      <div class="bg-color text-white px-5 pt-3 pb-5 font-sans">
-        <div class="flex items-center">
-          <div class="w-full">
-            <div class="flex">
-              <div class="w-1/2">
-                <p class="serach-item text-xxs uppercase text-color bg-white font-bold py-1 px-2 rounded-full inline">
-                  {{ item.group }} <i class="text-color mt-2 fas fa-tag"></i>
-                </p>
+<div class="overflow-hidden border-b border-grey-lighter rounded-md shadow-md my-5">
+  <table class="min-w-full overflow-x-scroll divide-y divide-grey-lighter">
+    <thead class="bg-grey-light border border-grey">
+      <tr>
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortRow('group')">
+          Group
+        </th>
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortRow('period')">
+          Date
+        </th>
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortRow('name')">
+          Name
+        </th>
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortRow('sent')">
+          Audience size
+        </th>
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortRow('openrate')">
+          Opens
+        </th>
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortRow('clickrate')">
+          Clicks
+        </th>
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortRow('unsubrate')">
+          Unsubs
+        </th>
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortRow('unsubrate')">
+          ..
+        </th>
+      </tr>
+    </thead>
+    <tbody class="bg-white">
+      <template v-for="item in sortedData">
+        <tr class="card hover:bg-grey-lightest hover:shadow-lg border-b border-grey-light"  
+        :class="['card-' + item.group + ' ' + item.color + ' ' + item.filter]">
+          <td class="px-6 py-4 whitespace-nowrap">
+            <span class="text-xs font-medium tracking-wider uppercase">
+              {{ item.group }}
+            </span>
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap">
+            <div class="text-xs font-medium tracking-wider text-grey-dark">{{ item.time }}</div>
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-grey-darkest">{{ item.name }}</div>
+              <div class="text-sm text-grey-dark pt-1">{{ item.subject }}</div>
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap">
+            <div class="text-sm">{{ item.sent }}</div>
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap">
+            <div class="text-grey-darkest">{{ item.openrate }}%</div>
+            <div class="text-sm text-grey-dark">{{ item.opens }}</div>
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap">
+            <div class="text-grey-darkest">{{ item.clickrate }}%</div>
+            <div class="text-sm text-grey-dark">{{ item.clicks }}</div>
+          </td>
+          <td class="px-6 py-4 whitespace-nowrap">
+            <div class="flex items-center">
+              <div class="ml-4">
+                <div class="text-grey-darkest">{{ item.unsubrate }}%</div>
+                <div class="text-sm text-grey-dark">{{ item.unsub }}</div>
               </div>
-              <div class="w-1/2">
-                  <p class="text-xxs text-center mb-3 text-right py-1 px-2 ">{{ item.id }}</p>
-                </div>       
+            </div>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="flex items-center">
+                <div class="ml-3">
+                  <a class="text-sm text-indigo hover:text-indigo-dark font-semibold" :href="item.url" target="_blank">Preview</a>
+                </div>
               </div>
+            </td>
+          </td>
+        </tr>
+      </template>
+      
 
-            
-            <p class="font-1 text-4xl -mb-2 pt-3">
-              {{ item.sent }} <i class="fas fa-paper-plane pr-2 text-lg opacity-75"></i>
-            </p>
-          </div>
-        </div>
-        <div class="flex items-center">
-          <div class="w-full h-24">
-            <p class="pt-3 pb-5">{{ item.name }}</p>
-            <p class="text-xs">{{ item.subject }}</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="bg-white text-black px-5 py-5 font-sans shadow">
-        <div class="flex items-center">
-          <div class="w-full">
-            <p class="tracking-wide uppercase text-black font-1">
-              <i class="fas fa-calendar-day"></i> 
-              <span class="pl-1">{{ item.filter }}</span>
-              <p class="pl-6 text-xxs">{{ item.time }}</p>
-            </p>
-          </div>
-        </div>
-      </div>
 
-        <div class="bg-white text-black px-5 py-5 font-sans shadow">
-          <div class="flex items-center">
-            <div class="w-full">
-              <p class="tracking-wide uppercase text-grey font-1">opens</p>
-              <p class="font-1 text-3xl -mb-2"><span class="pr-3"> ({{ item.opens }}) </span> {{ item.openrate }}%</p>
-            </div>
-            <div class="w-1/4">
-              <i class="text-3xl text-color mt-2 fas fa-envelope-open-text"></i>
-            </div>
-          </div>
-      </div>
-      
-      <div class="bg-white text-black px-5 py-5 font-sans shadow">
-          <div class="flex items-center">
-            <div class="w-full">
-              <p class="tracking-wide uppercase text-grey font-1">clicks</p>
-              <p class="font-1 text-3xl -mb-2"><span class="pr-3"> ({{ item.clicks }}) </span> {{ item.clickrate }}%</p>
-            </div>
-            <div class="w-1/4">
-              <i class="text-3xl text-color mt-2 fas fa-mouse"></i>
-            </div>
-          </div>
-      </div>
+      </tbody>
+  </table>
+</div>
 
-      
-      <div class="bg-white text-black px-5 py-5 font-sans shadow">
-        <div class="flex items-center">
-          <div class="w-full">
-            <p class="tracking-wide uppercase text-grey font-1">unsubscribe</p>
-            <p class="font-1 text-3xl -mb-2"><span class="pr-3"> ({{ item.unsub }}) </span> {{ item.unsubrate }}%</p>
-          </div>
-          <div class="w-1/4">
-            <i class="text-3xl text-color mt-2 fas fa-user-slash"></i>
-          </div>
-        </div>
-      </div>
-
-      
-      <a :href="item.url" target="_blank" class="block bg-color text-white p-3 font-sans shadow no-underline text-center" title="preview email">
-        <i class="fas fa-envelope-square opacity-75 pr-1"></i> preview email
-      </a>
-      
-      
-      </div>
-  </div>
 
 </div>
+
+
+
 </div>
 
 

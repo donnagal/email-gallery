@@ -48,12 +48,21 @@ $(function() {
     $(".btn-inspo .fa-times-circle").toggleClass('hidden');
     $(".btn-inspo .fa-check-circle").toggleClass('hidden');
   });
+  
 
-  //submenu date
   $(".dropdown-menu").hide();
 
   $(".dropdown").click(function(){
     $(".dropdown-menu").toggle();
+    $(".dropdown-menu-date").hide();
+  });
+
+  //submenu date
+  $(".dropdown-menu-date").hide();
+
+  $(".dropdown-date").click(function(){
+    $(".dropdown-menu-date").toggle();
+    $(".dropdown-menu").hide();
   });
 
   $('#submenu').on('click','button', function ( e ) {
