@@ -78,7 +78,7 @@
   overflow: hidden;
 }
 
-.chart__bar {
+.skills .chart__bar {
   height: 30px;
   margin-bottom: 10px;
   background: linear-gradient(to left, #F44336, #E91E63);
@@ -167,15 +167,44 @@
     left: -27px;
     font-size: 10px;
   }
-  .chart__bar:nth-child(1)::before { content: "DEC"; }
-  .chart__bar:nth-child(2)::before { content: "NOV"; }
-  .chart__bar:nth-child(3)::before { content: "OCT"; }
-  .chart__bar:nth-child(4)::before { content: "SEP"; }
-  .chart__bar:nth-child(5)::before { content: "AUG"; }
-  .chart__bar:nth-child(6)::before { content: "JUL"; }
-  .chart__bar:nth-child(7)::before { content: "JUN"; }
-  .chart__bar:nth-child(8)::before { content: "MAY"; }
-  .chart__bar:nth-child(9)::before { content: "APR"; }
-  .chart__bar:nth-child(10)::before { content: "MAR"; }
-  .chart__bar:nth-child(11)::before { content: "FEB"; }
-  .chart__bar:nth-child(12)::before { content: "JAN"; }
+  .skills .chart__bar:nth-child(1)::before { content: "DEC"; }
+ .skills .chart__bar:nth-child(2)::before { content: "NOV"; }
+ .skills .chart__bar:nth-child(3)::before { content: "OCT"; }
+ .skills .chart__bar:nth-child(4)::before { content: "SEP"; }
+ .skills .chart__bar:nth-child(5)::before { content: "AUG"; }
+ .skills .chart__bar:nth-child(6)::before { content: "JUL"; }
+ .skills .chart__bar:nth-child(7)::before { content: "JUN"; }
+ .skills .chart__bar:nth-child(8)::before { content: "MAY"; }
+ .skills .chart__bar:nth-child(9)::before { content: "APR"; }
+ .skills .chart__bar:nth-child(10)::before { content: "MAR"; }
+ .skills .chart__bar:nth-child(11)::before { content: "FEB"; }
+ .skills .chart__bar:nth-child(12)::before { content: "JAN"; }
+
+ .emails {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  z-index: -1;
+}
+
+ .emails .chart__bar {
+  height: 30px;
+  margin-bottom: 10px;
+  background: linear-gradient(to left, #4cb8c4, #3cd3ad);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  opacity: 0;
+  animation: 1s anim-lightspeed-in ease forwards;
+}
+.emails .chart-text {
+  position: relative;
+  left: 79px;
+  top: 7px;
+  display: inline-block;
+  width: 75px;
+}
+.email-info {
+  position: relative;
+  right: 21px;
+  top: -93px;
+}

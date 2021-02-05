@@ -14,12 +14,14 @@
 
   <link rel="stylesheet" href="../../css/global.css">
   <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../css/chart-bar.css">
 
   <style>
     .card-template, .card-inspo {
       display: none;
     }
   </style>
+
 </head>
 
 <body class="bg-grey-lighter">
@@ -87,7 +89,6 @@
   </div>
 </div>
 
-
 <div class="w-full mt-5 flex items-center bg-white p-3">
 
 
@@ -101,7 +102,7 @@
       <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('sent')"><i class="text-sm text-color mt-2 fas fa-paper-plane"></i> | Audience size</a></li>
       <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('name')"><i class="text-sm text-color mt-2 fas fa-sort-alpha-up"></i> | Name</a></li>
       <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('period')"><i class="text-sm text-color mt-2 fas fa-calendar-day"></i> | Date</a></li>
-      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('opens')"><i class="text-sm text-color mt-2 fas fa-envelope-open-text"></i> | Opens</a></li>
+      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('openrate')"><i class="text-sm text-color mt-2 fas fa-envelope-open-text"></i> | Opens</a></li>
       <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('clickrate')"><i class="text-sm text-color mt-2 fas fa-mouse"></i> | Click rate</a></li>
       <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('unsub')"><i class="text-sm text-color mt-2 fas fa-user-slash"></i> | Unsubscribes</a></li>
     </ul>
@@ -142,112 +143,60 @@
 
   <div class="w-1/6 text-right">
     <span class="text-xs font-medium tracking-wider text-grey-dark">View:</span>
-    <a href="#" class="p-3 text-grey-darkest font-semibold" title="Grid"><i class="fas fa-th"></i></a>
+    <a href="/pages/reports/index.html" class="p-3 text-grey hover:text-grey-dark font-semibold" title="Grid"><i class="fas fa-th"></i></a>
     <a href="/pages/reports/table-view.html" class="p-3 text-grey hover:text-grey-dark font-semibold" title="Table"><i class="fas fa-table"></i></a>
-    <a href="/pages/reports/chart-view.html" class="p-3 text-grey hover:text-grey-dark font-semibold" title="Chart"><i class="fas fa-chart-bar"></i></a>
+    <a href="#" class="p-3 text-grey-darkest font-semibold font-semibold" title="Chart"><i class="fas fa-chart-bar"></i></a>
   </div>
 
 </div>
 
 </div>
 
+<section>
+  <div class="emails">
+    <div class="charts">
+      <div class="chart chart--dev">
+        <ul class="chart--horiz list-reset bg-white my-1 p-3" v-for="item in sortedData" 
+        :class="['card-' + item.group + ' ' + item.color + ' ' + item.filter]">
+         
+          <span class="text-xs font-medium tracking-wider text-grey-dark">Opens</span>
+          <li class="chart__bar text-right" :style="{ width: item.openrate + '%' }">
+            <span class="chart-text">
+              <strong>{{ item.openrate }}%</strong> <small>{{ item.opens }}</small>
+            </span>
+          </li>
 
+          <span class="text-xs font-medium tracking-wider text-grey-dark">Clicks</span>
+          <li class="chart__bar text-right" :style="{ width: item.clickrate + '%' }">
+            <span class="chart-text">
+              <strong>{{ item.clickrate }}%</strong> <small>{{ item.clicks }}</small>
+            </span>
+          </li>
 
+        <div class="absolute pin-r">
+          <div class="email-info text-right">
+            <div class="text-grey-darkest text-sm">{{ item.name }}</div>
+            <div class="text-xxs text-grey-dark pt-1">{{ item.subject }}</div>
+            <div class="text-xxs"><i class="text-sm text-color mt-2 fas fa-paper-plane"></i> {{ item.sent }}</div>
+            <div class="mt-3">
+              <a class="bg-color rounded-full font-bold text-white p-2 px-5 hover:bg-blue-dark text-xs no-underline" :href="item.url" target="_blank">Preview</a>
+            </div> 
 
-<div class="container mx-auto">
-
-  <div class="flex flex-wrap">
-    <div v-for="item in sortedData" v-bind:class="['card-' + item.group + ' ' + item.color + ' ' + item.filter]" 
-                                    class="card lg:w-1/4 md:w-1/2 w-full p-2 hover:text-grey-dark no-underline ">
-
-      <div >
-      <div class="bg-color text-white px-5 pt-3 pb-5 font-sans">
-        <div class="flex items-center">
-          <div class="w-full">
-            <div class="flex">
-              <div class="w-1/2">
-                <p class="serach-item text-xxs uppercase text-color bg-white font-bold py-1 px-2 rounded-full inline">
-                  {{ item.group }} <i class="text-color mt-2 fas fa-tag"></i>
-                </p>
-              </div>
-              <div class="w-1/2">
-                  <p class="text-xxs text-center mb-3 text-right py-1 px-2 ">{{ item.id }}</p>
-                </div>       
-              </div>
-
-            
-            <p class="font-1 text-4xl -mb-2 pt-3">
-              {{ item.sent }} <i class="fas fa-paper-plane pr-2 text-lg opacity-75"></i>
-            </p>
-          </div>
-        </div>
-        <div class="flex items-center">
-          <div class="w-full h-24">
-            <p class="pt-3 pb-5">{{ item.name }}</p>
-            <p class="text-xs">{{ item.subject }}</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="bg-white text-black px-5 py-5 font-sans shadow">
-        <div class="flex items-center">
-          <div class="w-full">
-            <p class="tracking-wide uppercase text-black font-1">
-              <i class="fas fa-calendar-day"></i> 
-              <span class="pl-1">{{ item.filter }}</span>
-              <p class="pl-6 text-xxs">{{ item.time }}</p>
-            </p>
-          </div>
-        </div>
-      </div>
-
-        <div class="bg-white text-black px-5 py-5 font-sans shadow">
-          <div class="flex items-center">
-            <div class="w-full">
-              <p class="tracking-wide uppercase text-grey font-1">opens</p>
-              <p class="font-1 text-3xl -mb-2"><span class="pr-3"> ({{ item.opens }}) </span> {{ item.openrate }}%</p>
             </div>
-            <div class="w-1/4">
-              <i class="text-3xl text-color mt-2 fas fa-envelope-open-text"></i>
-            </div>
-          </div>
-      </div>
-      
-      <div class="bg-white text-black px-5 py-5 font-sans shadow">
-          <div class="flex items-center">
-            <div class="w-full">
-              <p class="tracking-wide uppercase text-grey font-1">clicks</p>
-              <p class="font-1 text-3xl -mb-2"><span class="pr-3"> ({{ item.clicks }}) </span> {{ item.clickrate }}%</p>
-            </div>
-            <div class="w-1/4">
-              <i class="text-3xl text-color mt-2 fas fa-mouse"></i>
-            </div>
-          </div>
-      </div>
-
-      
-      <div class="bg-white text-black px-5 py-5 font-sans shadow">
-        <div class="flex items-center">
-          <div class="w-full">
-            <p class="tracking-wide uppercase text-grey font-1">unsubscribe</p>
-            <p class="font-1 text-3xl -mb-2"><span class="pr-3"> ({{ item.unsub }}) </span> {{ item.unsubrate }}%</p>
-          </div>
-          <div class="w-1/4">
-            <i class="text-3xl text-color mt-2 fas fa-user-slash"></i>
-          </div>
         </div>
-      </div>
 
-      
-      <a :href="item.url" target="_blank" class="block bg-color text-white p-3 font-sans shadow no-underline text-center" title="preview email">
-        <i class="fas fa-envelope-square opacity-75 pr-1"></i> preview email
-      </a>
-      
-      
+        </ul>
+
       </div>
+    </div>
   </div>
+</section>
+
 
 </div>
+
+
+
 </div>
 
 
