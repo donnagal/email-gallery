@@ -156,7 +156,7 @@
   <div class="emails">
     <div class="charts">
       <div class="chart chart--dev">
-        <ul class="chart--horiz list-reset bg-white my-1 p-3" v-for="item in sortedData" 
+        <ul class="chart--horiz list-reset bg-white my-1 p-3 card" v-for="item in sortedData" 
         :class="['card-' + item.group + ' ' + item.color + ' ' + item.filter]">
          
           <span class="text-xs font-medium tracking-wider text-grey-dark">Opens</span>
@@ -175,8 +175,9 @@
 
         <div class="absolute pin-r">
           <div class="email-info text-right">
+            <div class="text-xxs uppercase text-grey"> {{ item.filter }}</div>
             <div class="text-grey-darkest text-sm">{{ item.name }}</div>
-            <div class="text-xxs text-grey-dark pt-1">{{ item.subject }}</div>
+            <div class="text-grey-darkest text-xxs pt-1">{{ item.subject }}</div>
             <div class="text-xxs"><i class="text-sm text-color mt-2 fas fa-paper-plane"></i> {{ item.sent }}</div>
             <div class="mt-3">
               <a class="bg-color rounded-full font-bold text-white p-2 px-5 hover:bg-blue-dark text-xs no-underline" :href="item.url" target="_blank">Preview</a>
