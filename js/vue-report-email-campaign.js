@@ -45,7 +45,7 @@ var app = new Vue({
 				opens: 672,
 				openrate: 25,
 				clicks: 9,
-				clickrate: 0,
+				clickrate: 1,
 				subject: 'Together, we’re building a better future',
 				filter: 'feb-2021',
 				peroid: 2021 + 02 + 11,
