@@ -90,5 +90,9 @@ $(function() {
       $(".card").hide();
       $(".jan-2021").show();
     });
+    $(".bnt-21-feb").click(function(){
+      $(".card").hide();
+      $(".feb-2021").show();
+    });
 
 });
