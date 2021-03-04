@@ -200,13 +200,26 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
                                         </a>
                                       </td>
                                     </tr>
-                                    <tr role="navigation" style="border-bottom: 1px solid #dfdfdf;">
-                                      <td bgcolor="white" width="" align="center" valign="top" class="" style="width:100%;">
-                                        <a href="https://www.cbussuper.com.au/">
-                                          Link 1
-                                      </a>
-                                    </td>
-                                  </tr>
+
+                                    <% if ( recipient.emprRef== "" ) { %> 
+                                      <tr role="navigation" style="border-bottom: 1px solid #dfdfdf;">
+                                        <td bgcolor="white" width="" align="center" valign="top" class="" style="width:100%;">
+                                          <a href="https://www.cbussuper.com.au/manage-account/super/login">
+                                            Member Login Online
+                                        </a>
+                                      </td>
+                                    </tr> 
+                                    <% } else { %> 
+                                      <tr role="navigation" style="border-bottom: 1px solid #dfdfdf;">
+                                        <td bgcolor="white" width="" align="center" valign="top" class="" style="width:100%;">
+                                          <a href="https://www.cbussuper.com.au/manage-account/employer/login">
+                                            Employer Login Online
+                                        </a>
+                                      </td>
+                                    </tr>
+                                    <% } %> 
+
+
                                   <tr role="navigation" style="border-bottom: 1px solid #dfdfdf;">
                                     <td bgcolor="white" width="" align="center" valign="top" class="" style="width:100%;">
                                       <a href="tel:1300 361 784">
