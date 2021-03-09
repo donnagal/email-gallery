@@ -22,8 +22,8 @@ var app = new Vue({
 			},
 			items: [{
 				name: 'Retail Super Exits',
-				color: 'green-02',
-				group: 'comms',
+				color: 'green',
+				group: 'member',
 				sent: 3658,
 				opens: 1302,
 				openrate: 36,
@@ -39,8 +39,8 @@ var app = new Vue({
 				id: 'DM14456',
 			}, {
 				name: 'Australian Super Exits',
-				color: 'green-02',
-				group: 'comms',
+				color: 'green',
+				group: 'member',
 				sent: 2714,
 				opens: 672,
 				openrate: 25,
@@ -57,7 +57,7 @@ var app = new Vue({
 			}, {
 				name: 'Data-Capture-Seg-6 (SIS)',
 				color: 'purple',
-				group: 'comms',
+				group: 'member',
 				sent: 271,
 				opens: 199,
 				openrate: 73,
@@ -74,7 +74,7 @@ var app = new Vue({
 			}, {
 				name: 'Data-Capture-Seg-5 (accum)',
 				color: 'green-02',
-				group: 'comms',
+				group: 'member',
 				sent: 23544,
 				opens: 12001,
 				openrate: 51,
@@ -91,7 +91,7 @@ var app = new Vue({
 			}, {
 				name: 'Automated Member Contribution Notifications',
 				color: 'green-02',
-				group: 'comms',
+				group: 'member',
 				sent: 64557,
 				opens: 36408,
 				openrate: 56,
