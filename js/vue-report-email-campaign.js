@@ -2193,6 +2193,33 @@ var app = new Vue({
 				name: 'Statement, 2020-10',
 				group: 'template',
 				url: ["https://email-gallery.netlify.app/emails/templates/2020/statement-1"],
+			}, 
+			// Inspo
+			{
+				name: 'Bulb Energy report 2020-12',
+				color: 'black',
+				group: 'inspo',
+				url: ["https://files.reallygoodemails.com/emails/your-2019-green-impact-report-.png"],
+			}, {
+				name: 'Heroku activity report 2020-12',
+				color: 'black',
+				group: 'inspo',
+				url: ["https://files.reallygoodemails.com/emails/your-heroku-activity-report.png"],
+			}, {				
+				name: 'Honey 2020-12',
+				color: 'black',
+				group: 'inspo',
+				url: ["https://files.reallygoodemails.com/emails/before-we-completely-block-out-2020.png"],
+			}, {
+				name: 'Lyft report 2020-12',
+				color: 'black',
+				group: 'inspo',
+				url: ["https://files.reallygoodemails.com/emails/your-2017-with-lyft.png"],
+			}, {
+				name: 'Uplers [Ebook] Survey report 2020-12',
+				color: 'black',
+				group: 'inspo',
+				url: ["https://files.reallygoodemails.com/emails/ebook-survey-report-on-impact-of-current-crisis-on-agencies.png"],
 			}, {
 				name: 'Marketo Engage 2020-12',
 				color: 'black',
