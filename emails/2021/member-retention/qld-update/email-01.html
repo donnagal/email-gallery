@@ -43,6 +43,20 @@
      }
      .link-black { color: black;}
    .cta-shadow {  box-shadow: 3px 4px 8px 0px rgba(0, 0, 0, 0.22); }
+
+   /* menu */ 
+   input, .hide, .content, input:checked ~ .show { display:none; } input:checked ~ .hide, input:checked ~ .content { display:block; } 
+   .mobile-nav-toggle-holder { position: relative;
+    transition: .5s ease-in-out;
+    width: 32px;
+    height: 43px;
+    left: 16px;
+    top: 7px;
+    cursor: pointer; } 
+   .mobile-nav-toggle-holder span.text { position: absolute; top: 30px; left: 0; color: #1e1e1e; }
+    .mobile-nav-toggle-holder span.bar { display: block; border-radius: 8px; background-color: white; width: 75%; height: 2px; transition: all .25s ease-in-out; position: absolute; margin: 7px 0 0 5px; } .mobile-nav-toggle-holder span.bar:nth-child(1) { top: 0px; -webkit-transform-origin: left center; -moz-transform-origin: left center; -o-transform-origin: left center; transform-origin: left center; } .mobile-nav-toggle-holder span.bar:nth-child(2) { top: 6px; -webkit-transform-origin: left center; -moz-transform-origin: left center; -o-transform-origin: left center; transform-origin: left center; } .mobile-nav-toggle-holder span.bar:nth-child(3) { top: 12px; -webkit-transform-origin: left center; -moz-transform-origin: left center; -o-transform-origin: left center; transform-origin: left center; } .mobile-nav-toggle-holder.open span.bar:nth-child(1) { -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); top: -2px; left: 3px; } .mobile-nav-toggle-holder.open span.bar:nth-child(2) { width: 0%; opacity: 0; } .mobile-nav-toggle-holder.open span.bar:nth-child(3) { -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); top: 15px; left: 3px; } .menu a { display: block; color: black; padding: 15px 5px; text-decoration: none;}
+    /* Show on Device  */ 
+    @media only screen and (max-width: 480px){ .ns-hide { display: block !important; } }
 </style>
 
 
@@ -64,6 +78,79 @@
       <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 20px;">&nbsp;</div>
 
       <span class="link-black"><%@ include view='MirrorPage' %> </span>
+
+
+      <!-- ### START MENU ### -->
+       <!--[if !mso]><!-- -->
+       <div class="ns-hide" style="display: none;">
+        <div class="layout one-col fixed-width" style="overflow:hidden;Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+          <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #005daa;">
+            <div class="column" style="padding-top: 5px;text-align: left;color: black;font-size: 16px;line-height: 22px;font-family: Arial, Helvetica, sans-serif;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);">
+            
+  
+              <table style="border-collapse: collapse;table-layout: fixed;" role="presentation">
+                <tbody>
+                  <tr role="navigation">
+                      <td bgcolor="#005daa" width="" align="left" valign="top" style="width:100%;font-family: Arial, Helvetica, sans-serif;font-size:17px;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;-line-height-rule:exactly;text-align:left;vertical-align:top;">
+                        <label>
+                          <input type="checkbox">
+                          <div class="show">
+                          <div class="mobile-nav-toggle-holder">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                          </div>
+                        </div>
+                  
+                          <div class="hide">
+                            <div class="mobile-nav-toggle-holder open">
+                              <span class="bar"></span>
+                              <span class="bar"></span>
+                              <span class="bar"></span>
+                            </div>
+                          </div>
+                          <label class="content">
+                            <table class="menu" style="width:100%;border-collapse: collapse;table-layout: fixed;" role="presentation">
+                              <tbody>
+                                <tr role="navigation" style="border-top: 1px solid #dfdfdf;border-bottom: 1px solid #dfdfdf;">
+                                    <td bgcolor="white" width="" align="center" valign="top" class="" style="width:100%;">
+                                      <a href="https://www.cbussuper.com.au/">
+                                        Cbus website
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr role="navigation" style="border-bottom: 1px solid #dfdfdf;">
+                                    <td bgcolor="white" width="" align="center" valign="top" class="" style="width:100%;">
+                                      <a href="https://www.cbussuper.com.au/manage-account/super/login">
+                                        Member Login Online
+                                    </a>
+                                  </td>
+                                </tr> 
+                              <tr role="navigation" style="border-bottom: 1px solid #dfdfdf;">
+                                <td bgcolor="#4cda64" width="" align="center" valign="top" class="" style="width:100%;color: white;">
+                                  <a href="tel:1300 361 784">
+                                    Call
+                                </a>
+                              </td>
+                            </tr>
+                              </tbody>
+                            </table>
+                            
+                          </label>
+                        </label>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+  
+            </div>
+          </div>
+        </div>
+       </div>
+   <!--<![endif]-->
+   <!--[if mso]>&nbsp;<![endif]-->
+<!-- ### END MENU ### -->
+
 
 <!-- ### START INTRO BLOCK ### -->
       <div class="layout one-col fixed-width" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
