@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - VUE sort table </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app"> 
+  <table>
+    <tr>
+      <th class="sort_th" @click="sortBy('name')"><b>name</b></th>
+      <th class="sort_th" @click="sortBy('email')"><b>username/email</b></th>
+      <th>address</th>
+      <th class="sort_th" @click="sortBy('phone')"><b>phone</b></th>
+      <th class="sort_th" @click="sortBy('website')"><b>website</b></th>
+      <th>company</th>
+    </tr>
+    <tr v-for="userData in users">
+      <td>{{userData.name}}</td>
+      <td><small>{{userData.username}}<br/>{{userData.email}}</small></td>
+      <td>
+        <dl class="dl" v-for="(val,key) in userData.address">
+          <dt>{{key}}</dt>
+          <dd>: {{val}}</dd>
+        </dl>
+      </td>
+      <td>{{userData.phone}}</td>
+      <td> <a href="#">{{userData.website}}</a></td>
+      <td>
+        <dl class="dl" v-for="(val,key) in userData.company">
+          <dt>{{key}}</dt>
+          <dd>: {{val}}</dd>
+        </dl>
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- partial -->
+  <script src='https://unpkg.com/vue/dist/vue.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

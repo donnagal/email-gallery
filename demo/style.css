@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 1em;
+  font-family: sans-serif;
+  color: #444;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 0.3em 0.5em;
+  border: 1px solid #ddd;
+}
+.dl dt {
+  float: left;
+  color: #999;
+}
+.sort_th {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.sort_th b {
+  text-decoration: underline;
+}
+.sort_th:after {
+  content: ' ⇳';
+  color: #59b27d;
+}
+button {
+  border: 0;
+  cursor: pointer;
+  background: #6495ed;
+  color: #fff;
+  padding: 0.7em 1em;
+  font: inherit;
+  margin: 1em;
+}
+button:hover {
+  background: #78a9ff;
+}
+button:active {
+  background: #5a8be3;
+}
