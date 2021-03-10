@@ -2196,27 +2196,27 @@ var app = new Vue({
 			}, 
 			// Inspo
 			{
-				name: 'Bulb Energy report 2020-12',
+				name: 'Bulb Energy report 2021',
 				color: 'black',
 				group: 'inspo',
 				url: ["https://files.reallygoodemails.com/emails/your-2019-green-impact-report-.png"],
 			}, {
-				name: 'Heroku activity report 2020-12',
+				name: 'Heroku activity report 2021',
 				color: 'black',
 				group: 'inspo',
 				url: ["https://files.reallygoodemails.com/emails/your-heroku-activity-report.png"],
 			}, {				
-				name: 'Honey 2020-12',
+				name: 'Honey 2021',
 				color: 'black',
 				group: 'inspo',
 				url: ["https://files.reallygoodemails.com/emails/before-we-completely-block-out-2020.png"],
 			}, {
-				name: 'Lyft report 2020-12',
+				name: 'Lyft report 2021',
 				color: 'black',
 				group: 'inspo',
 				url: ["https://files.reallygoodemails.com/emails/your-2017-with-lyft.png"],
 			}, {
-				name: 'Uplers [Ebook] Survey report 2020-12',
+				name: 'Uplers [Ebook] Survey report 2021',
 				color: 'black',
 				group: 'inspo',
 				url: ["https://files.reallygoodemails.com/emails/ebook-survey-report-on-impact-of-current-crisis-on-agencies.png"],
