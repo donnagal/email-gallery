@@ -7,27 +7,14 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
+
 <div id="app"> 
   <table>
     <tr>
-      <th><b>Group</b></th>
-      <th><b>Audience size</b></th>
       <th class="sort_th" @click="sortBy('name')">Name</th>
-      <th><b>Date</b></th>
-      <th><b>Opens</b></th>
-      <th>Click rate</th>
-      <th>Unsubscribes</th>
     </tr>
-    <tr v-for="datalistData in datalists">
-      <td>{{datalistData.group}}</td>
-      <td>{{datalistData.send}}</td>
-      <!-- <td>
-        <dl class="dl" v-for="(val,key) in datalistData.company">
-          <dt>{{key}}</dt>
-          <dd>: {{val}}</dd>
-        </dl>
-      </td> -->
+    <tr v-for="userData in users">
+      <td>{{userData.name}} </td>
     </tr>
   </table>
 </div>

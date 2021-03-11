@@ -1,7 +1,7 @@
 const vm = new Vue({
   el: "#app",
   data: {
-    datalist: [],
+    users: [],
     
     sortKey: null,
     reverse: false,
@@ -9,7 +9,7 @@ const vm = new Vue({
   computed: {},
   methods: {
     sortBy(sortKey) {
-      this.datalist.sort( (a, b) => {
+      this.users.sort( (a, b) => {
         //  numeric sort
         if(typeof a[sortKey] === 'number'){
           return a[sortKey] - b[sortKey];
@@ -20,13 +20,13 @@ const vm = new Vue({
         return A < B ? -1 : A > B ?  1 : 0;
       });
       this.reverse = (this.sortKey === sortKey) ? !this.reverse : false;
-      if(this.reverse) this.datalist.reverse();
+      if(this.reverse) this.users.reverse();
       this.sortKey = sortKey;
     }
   },
   mounted() {
     fetch("https://donnagal.github.io/email-gallery/demo/data/datalist.json")
       .then(resp => resp.json())
-      .then(json => (this.datalist = json));
+      .then(json => (this.users = json));
   }
 });
