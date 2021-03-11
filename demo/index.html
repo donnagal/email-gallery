@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - VUE sort table </title>
+  <title>VUE sort table </title>
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
 
 </head>
@@ -11,30 +11,23 @@
 <div id="app"> 
   <table>
     <tr>
-      <th class="sort_th" @click="sortBy('name')"><b>name</b></th>
-      <th class="sort_th" @click="sortBy('email')"><b>username/email</b></th>
-      <th>address</th>
-      <th class="sort_th" @click="sortBy('phone')"><b>phone</b></th>
-      <th class="sort_th" @click="sortBy('website')"><b>website</b></th>
-      <th>company</th>
+      <th><b>Group</b></th>
+      <th><b>Audience size</b></th>
+      <th class="sort_th" @click="sortBy('name')">Name</th>
+      <th><b>Date</b></th>
+      <th><b>Opens</b></th>
+      <th>Click rate</th>
+      <th>Unsubscribes</th>
     </tr>
-    <tr v-for="userData in users">
-      <td>{{userData.name}}</td>
-      <td><small>{{userData.username}}<br/>{{userData.email}}</small></td>
-      <td>
-        <dl class="dl" v-for="(val,key) in userData.address">
+    <tr v-for="datalistData in datalists">
+      <td>{{datalistData.group}}</td>
+      <td>{{datalistData.send}}</td>
+      <!-- <td>
+        <dl class="dl" v-for="(val,key) in datalistData.company">
           <dt>{{key}}</dt>
           <dd>: {{val}}</dd>
         </dl>
-      </td>
-      <td>{{userData.phone}}</td>
-      <td> <a href="#">{{userData.website}}</a></td>
-      <td>
-        <dl class="dl" v-for="(val,key) in userData.company">
-          <dt>{{key}}</dt>
-          <dd>: {{val}}</dd>
-        </dl>
-      </td>
+      </td> -->
     </tr>
   </table>
 </div>
