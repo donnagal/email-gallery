@@ -87,11 +87,27 @@
   </div>
 </div>
 
-<div class="w-full mt-5 flex listDatas-center bg-white p-3">
+<div class="w-full mt-5 flex items-center bg-white p-3">
 
+
+  <div class="dropdown inline-block relative z-10">
+    <button class="bg-grey-light text-grey-darker font-semibold py-4 px-8 rounded inline-flex items-center">
+      <span class="mr-1">Order by</span>
+      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+    </button>
+    <ul class="dropdown-menu absolute pt-1 list-reset">
+      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('group')"><i class="text-sm text-color mt-2 fas fa-user-tag"></i> | Group</a></li>
+      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('sent')"><i class="text-sm text-color mt-2 fas fa-paper-plane"></i> | Audience size</a></li>
+      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('name')"><i class="text-sm text-color mt-2 fas fa-sort-alpha-up"></i> | Name</a></li>
+      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('period')"><i class="text-sm text-color mt-2 fas fa-calendar-day"></i> | Date</a></li>
+      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('openrate')"><i class="text-sm text-color mt-2 fas fa-envelope-open-text"></i> | Opens</a></li>
+      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('clickrate')"><i class="text-sm text-color mt-2 fas fa-mouse"></i> | Click rate</a></li>
+      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('unsub')"><i class="text-sm text-color mt-2 fas fa-user-slash"></i> | Unsubscribes</a></li>
+    </ul>
+  </div>
 
   <div class="dropdown-date inline-block relative z-10 ml-5">
-    <button class="bg-grey-light text-grey-darker font-semibold py-4 px-8 rounded inline-flex listDatas-center">
+    <button class="bg-grey-light text-grey-darker font-semibold py-4 px-8 rounded inline-flex items-center">
       <span class="mr-1">Date</span>
       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
     </button>
@@ -140,70 +156,70 @@
   <table class="min-w-full overflow-x-scroll divide-y divide-grey-lighter">
     <thead class="bg-grey-light border border-grey">
       <tr>
-        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortBy('group')">
-          <span class="flex"><i class="fas fa-sort"></i> Group</span>
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortRow('group')">
+          Group
         </th>
-        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortBy('time')">
-          <i class="fas fa-sort"></i> Date
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortRow('period')">
+          Date
         </th>
-        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer"  @click="sortBy('name')">
-          <i class="fas fa-sort"></i>Name
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortRow('name')">
+          Name
         </th>
-        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortBy('sent')">
-          <span class="flex"><i class="fas fa-sort"></i>Audience size</span>
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortRow('sent')">
+          Audience size
         </th>
-        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortBy('openrate')">
-          <span class="flex"><i class="fas fa-sort"></i>Opens</span>
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortRow('openrate')">
+          Opens
         </th>
-        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortBy('clickrate')">
-          <span class="flex"><i class="fas fa-sort"></i> Clicks</span>
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortRow('clickrate')">
+          Clicks
         </th>
-        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortBy('unsubrate')">
-          <i class="fas fa-sort"></i>Unsubs
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortRow('unsubrate')">
+          Unsubs
         </th>
-        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortBy('unsubrate')">
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortRow('unsubrate')">
           ..
         </th>
       </tr>
     </thead>
     <tbody class="bg-white">
-      <template v-for="listData in lists">
+      <template v-for="item in sortedData">
         <tr class="card hover:bg-grey-lightest hover:shadow-lg border-b border-grey-light"  
-        :class="['card-' + listData.group + ' ' + listData.color + ' ' + listData.filter]">
+        :class="['card-' + item.group + ' ' + item.color + ' ' + item.filter]">
           <td class="px-6 py-4 whitespace-nowrap">
             <span class="text-xs font-medium tracking-wider uppercase">
-              {{ listData.group }}
+              {{ item.group }}
             </span>
           </td>
           <td class="px-6 py-4 whitespace-nowrap">
-            <div class="text-xs font-medium tracking-wider text-grey-dark">{{ listData.time }}</div>
+            <div class="text-xs font-medium tracking-wider text-grey-dark">{{ item.time }}</div>
           </td>
           <td class="px-6 py-4 whitespace-nowrap">
-              <div class="text-grey-darkest">{{listData.name}}</div>
-              <div class="text-sm text-grey-dark pt-1">{{ listData.subject }}</div>
+              <div class="text-grey-darkest">{{ item.name }}</div>
+              <div class="text-sm text-grey-dark pt-1">{{ item.subject }}</div>
           </td>
           <td class="px-6 py-4 whitespace-nowrap">
-            <div class="text-sm">{{ listData.sent }}</div>
+            <div class="text-sm">{{ item.sent }}</div>
           </td>
           <td class="px-6 py-4 whitespace-nowrap">
-            <div class="text-grey-darkest">{{ listData.openrate }}</div>
-            <div class="text-sm text-grey-dark">{{ listData.opens }}</div>
+            <div class="text-grey-darkest">{{ item.openrate }}%</div>
+            <div class="text-sm text-grey-dark">{{ item.opens }}</div>
           </td>
           <td class="px-6 py-4 whitespace-nowrap">
-            <div class="text-grey-darkest">{{ listData.clickrate }}</div>
-            <div class="text-sm text-grey-dark">{{ listData.clicks }}</div>
+            <div class="text-grey-darkest">{{ item.clickrate }}%</div>
+            <div class="text-sm text-grey-dark">{{ item.clicks }}</div>
           </td>
           <td class="px-6 py-4 whitespace-nowrap">
-            <div class="flex listDatas-center">
+            <div class="flex items-center">
               <div class="ml-4">
-                <div class="text-grey-darkest">{{ listData.unsubrate }}%</div>
-                <div class="text-sm text-grey-dark">{{ listData.unsub }}</div>
+                <div class="text-grey-darkest">{{ item.unsubrate }}%</div>
+                <div class="text-sm text-grey-dark">{{ item.unsub }}</div>
               </div>
             </div>
             <td class="px-6 py-4 whitespace-nowrap">
-              <div class="flex listDatas-center">
+              <div class="flex items-center">
                 <div class="ml-3">
-                  <a class="text-sm text-indigo hover:text-indigo-dark font-semibold" :href="listData.url" target="_blank">Preview</a>
+                  <a class="text-sm text-indigo hover:text-indigo-dark font-semibold" :href="item.url" target="_blank">Preview</a>
                 </div>
               </div>
             </td>
@@ -231,9 +247,8 @@
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src="../../js/filter-group.js"></script>
   <script src="../../js/global.js"></script>
-  <script src='https://unpkg.com/vue/dist/vue.js'></script>
-  <script  src="./script.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.6/vue.min.js"></script>
+  <script src="../../js/vue-report-email-campaign.js"></script>
 
 
 </body>

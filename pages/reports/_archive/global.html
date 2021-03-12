@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Email Report Dashboard: Global</title>
+  <link href="../../images/favion.png" rel="icon" type="image/x-icon" />
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
+  <link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
+
+  <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../css/chart-donut.css">
+  <link rel="stylesheet" href="../../css/chart-bar.css">
+
+
+  <style>
+    .swiper-chart {
+      padding-bottom: 70px;
+    }
+    .text-green {
+      color: #3cd3ad;
+    }
+    .bg-green {
+      background-color: #3cd3ad;
+    }
+    .bg-red {
+      background-color: #E91E63;
+    }
+</style>
+</head>
+
+<body class="bg-grey-lighter">
+
+  <header>
+    <div class="bg-black mx-auto text-white px-5 text-center">
+      <div class="flex py-2">
+        <div class="flex-1">
+          <h1 class="text-xl">Dashboard: Global Report</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<div id="nav">
+  <nav class="animate-add z-100">
+    <div class="nav-overlay"></div>
+    <button type="button" class="slide-toggle">
+        <div class="menu-wrapper">
+            <div class="hamburger-menu"></div>	  
+        </div>
+    </button>
+    <div class="menu z-100">
+        <div class="menu-inner">
+            <div class="bg-grey-darkest h-screen p-8 font-bold">
+                <ul class="list-reset text-xl mt-32">
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/" class="text-teal-lighter hover:text-white no-underline">Email galley</a>
+                    </li>
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/pages/utm-tracking" class="text-teal-lighter hover:text-white no-underline">UTM Tracking tool</a>
+                    </li>
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/pages/reports/" class="text-teal-lighter hover:text-white no-underline">Email Report Dashboard</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+     </div>
+  </nav>
+</div>
+
+
+<div id="items">
+
+  <div class="container mx-auto mt-10">
+
+    <div class="w-full">
+      <div class="flex border-b">
+        <div class="-mb-px mr-1">
+          <a href="https://email-gallery.netlify.app/pages/reports" class="text-center block border border-black rounded hover:border-grey-light text-black hover:bg-grey-dark py-2 px-4 no-underline ">
+            Campaign Report
+          </a>
+        </div>
+        <div class="mr-1">
+          <button class="text-center block border border-blue-dark rounded py-2 px-4 bg-black hover:bg-blue-700 text-white no-underline">
+            Global Report
+          </button>
+        </div>
+      </div>
+    </div>
+
+  <section>
+    <div class="bg-white container mx-auto mt-10 mb-10 p-5">
+      <h2 class="pb-5">Email Stats</h2>
+      <div class="flex">
+        <div class="lg:w-1/5">
+          <div class="flex text-center">
+            <div class="flex-1 lg:px-4">
+              <p class="tracking-wide uppercase text-grey font-1">female members</p>
+              <p class="font-1 text-3xl"> 55.4K </p><i class="fas fa-female pr-2 opacity-75 text-2xl"></i>
+            </div>
+            </div>
+        </div>
+        <div class="lg:w-1/5">
+          <div class="flex text-center">
+            <div class="flex-1 lg:px-4 px-2">
+              <p class="tracking-wide uppercase text-grey font-1">male members</p>
+              <p class="font-1 text-3xl"> 511.5K </p><i class="fas fa-male pr-2 opacity-75 text-2xl"></i>
+            </div>
+        </div>
+      </div>
+      <div class="lg:w-1/5">
+        <div class="flex text-center">
+          <div class="flex-1 lg:px-4 px-2">
+            <p class="tracking-wide uppercase text-grey font-1">Most used</p> 
+            <p class="font-1 text-3xl">#1 Mobile </p><i class="fas fa-mobile-alt pr-2 opacity-75 text-2xl"></i>
+          </div>
+      </div>
+    </div>
+      <div class="lg:w-1/5">
+        <div class="flex text-center">
+          <div class="flex-1 lg:px-4 px-2">
+            <p class="tracking-wide uppercase text-grey font-1">Most used Browser</p>
+            <p class="font-1 text-3xl">#1 GMAIL </p><i class="fab fa-chrome pr-2 opacity-75 text-2xl"></i>
+          </div>
+      </div>
+    </div>
+    <div class="lg:w-1/5">
+      <div class="flex text-center">
+        <div class="flex-1 lg:px-4 px-2">
+          <p class="tracking-wide uppercase text-grey font-1">Most used Browser</p>
+          <p class="font-1 text-3xl">#2 OUTLOOK </p><i class="fab fa-windows pr-2 opacity-75 text-2xl"></i>
+        </div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </section>
+
+<section>
+  <div class="bg-white container mx-auto mt-10 p-5">
+    <h2 class="pb-5">Reachable by email</h2>
+
+    <div class="flex mb-5">
+      <span class="bg-green h-4 w-4 block"></span> <small class="pl-2">Reachable by email</small>
+      <span class="bg-grey h-4 w-4 block ml-5"></span> <small class="pl-2">Unreachable by email</small>
+    </div>
+
+      <!-- Swiper -->
+        <div id="email-unsub" class="swiper-chart swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-slide">
+                <div class="w-full">
+                  <div class="semi-donut margin" style="--percentage : 75; --fill: #9e9e9e ;">
+                    N/A<br/>
+                    FEB
+                  </div>
+                  <p>
+                    <span class="text-green"><i class="fas fa-check-circle"></i> N/A</span>
+                    <span class="text-grey text-r"><i class="fas fa-times-circle"></i> N/A</span>
+                  </p> 
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide">
+                <p class="text-grey">2021</p>
+                <div class="w-full">
+                  <div class="semi-donut margin" style="--percentage : 76; --fill: #3cd3ad ;">
+                    76%<br/>
+                    JAN
+                  </div>
+                  <p>
+                    <span class="text-green"><i class="fas fa-check-circle"></i> 770,920</span>
+                    <span class="text-grey text-r"><i class="fas fa-times-circle"></i> 585,001</span>
+                  </p> 
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide">
+                <div class="w-full">
+                  <p class="text-grey">2020</p>
+                  <div class="semi-donut margin" style="--percentage : 76; --fill: #3cd3ad ;">
+                    76%<br/>
+                    DEC
+                  </div>
+                  <p>
+                    <span class="text-green"><i class="fas fa-check-circle"></i> 767,107</span>
+                    <span class="text-grey text-r"><i class="fas fa-times-circle"></i> 585,484</span>
+                  </p> 
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-full">
+                <div class="semi-donut margin" style="--percentage : 76; --fill: #3cd3ad ;">
+                  76%<br/>
+                  NOV
+                </div>
+                <p>
+                  <span class="text-green"><i class="fas fa-check-circle"></i> 581,765</span>
+                  <span class="text-grey text-r"><i class="fas fa-times-circle"></i> 180,594</span>
+                </p> 
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-full">
+                <div class="semi-donut margin" style="--percentage : 75; --fill: #3cd3ad ;">
+                  75%<br/>
+                  OCT
+                </div>
+                <p>
+                  <span class="text-green"><i class="fas fa-check-circle"></i> 586,683</span>
+                  <span class="text-grey text-r"><i class="fas fa-times-circle"></i> 189,604</span>
+                </p> 
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+  </div>
+</section>
+
+
+<!-- 2021 -->
+<section class="mb-10">
+  <div class="bg-white container mx-auto mt-10 p-5">
+    <h2 class="pb-5">2021 SMS Global: Opt Out Rate</h2>
+
+    <div class="flex mb-5">
+      <span class="bg-red h-4 w-4 block"></span> <small class="pl-2">Opt Outs</small>
+    </div>
+
+    <div class="skills">
+      
+      <ul class="lines pb-5">
+        <li class="line l--0">
+          <span class="line__label title">
+            0
+          </span>
+        </li>
+        <li class="line l--25">
+          <span class="line__label title">
+            20
+          </span>
+        </li>
+        <li class="line l--50">
+          <span class="line__label title">
+            50
+          </span>
+        </li>
+        <li class="line l--75">
+          <span class="line__label title">
+            100
+          </span>
+        </li>
+        <li class="line l--100">
+          <span class="line__label title">
+            200+
+          </span>
+        </li>
+      </ul>
+      
+      <div class="charts">
+        <div class="chart chart--dev">
+          <span class="chart__title">2021</span>
+          <ul class="chart--horiz">
+           <!-- dec -->
+            <li class="chart__bar" style="width: 8%;display: none;">
+              <span class="chart__label">
+                0 <small>(00)</small>
+              </span>
+            </li> 
+            <!-- nov -->
+            <li class="chart__bar" style="width: 8%;display: none;">
+              <span class="chart__label">
+                0 <small>(00)</small>
+              </span>
+            </li> 
+            <!-- oct -->
+            <li class="chart__bar" style="width: 8%;display: none;">
+              <span class="chart__label">
+                0 <small>(00)</small>
+              </span>
+            </li>
+            <!-- Sep -->
+            <li class="chart__bar" style="width: 8%;display: none;">
+              <span class="chart__label">
+                0 <small>(00)</small>
+              </span>
+            </li>
+            <!-- Aug -->
+            <li class="chart__bar" style="width: 8%;display: none;">
+              <span class="chart__label">
+                0 <small>(00)</small>
+              </span>
+            </li>
+            <!-- Jul -->
+            <li class="chart__bar" style="width: 8%;display: none;">
+              <span class="chart__label">
+                0 <small>(00)</small>
+              </span>
+            </li>
+            <!-- Jun -->
+            <li class="chart__bar" style="width: 8%;display: none;">
+              <span class="chart__label">
+                0 <small>(00)</small>
+              </span>
+            </li>
+            <!-- May -->
+            <li class="chart__bar" style="width: 8%;display: none;">
+              <span class="chart__label">
+                0 <small>(00)</small>
+              </span>
+            </li>
+            <!-- Apr -->
+            <li class="chart__bar" style="width: 8%;display: none;">
+              <span class="chart__label">
+                0 <small>(00)</small>
+              </span>
+            </li>
+            <!-- Mar -->
+            <li class="chart__bar" style="width: 8%;display: none;">
+              <span class="chart__label">
+                0 <small>(00)</small>
+              </span>
+            </li>
+            <!-- Feb -->
+            <li class="chart__bar" style="width: 8%;display: none;">
+              <span class="chart__label">
+                0 <small>(00)</small>
+              </span>
+            </li>
+            <!-- Jan -->
+            <li class="chart__bar" style="width: 100%;">
+              <span class="chart__label">
+               837 <small>(1,921)</small>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2020 -->
+<section class="mb-10">
+  <div class="bg-white container mx-auto mt-10 p-5">
+    <h2 class="pb-5">2020 SMS Global: Opt Out Rate</h2>
+
+    <div class="flex mb-5">
+      <span class="bg-red h-4 w-4 block"></span> <small class="pl-2">Opt Outs</small>
+    </div>
+
+    <div class="skills">
+      
+      <ul class="lines pb-5">
+        <li class="line l--0">
+          <span class="line__label title">
+            0
+          </span>
+        </li>
+        <li class="line l--25">
+          <span class="line__label title">
+            20
+          </span>
+        </li>
+        <li class="line l--50">
+          <span class="line__label title">
+            50
+          </span>
+        </li>
+        <li class="line l--75">
+          <span class="line__label title">
+            100
+          </span>
+        </li>
+        <li class="line l--100">
+          <span class="line__label title">
+            200+
+          </span>
+        </li>
+      </ul>
+      
+      <div class="charts">
+        <div class="chart chart--dev">
+          <span class="chart__title">2020</span>
+          <ul class="chart--horiz">
+           <!-- dec -->
+            <li class="chart__bar" style="width: 8%;">
+              <span class="chart__label">
+                6 <small>(1,714)</small>
+              </span>
+            </li> 
+            <!-- nov -->
+            <li class="chart__bar" style="width: 82%;">
+              <span class="chart__label">
+                129 <small>(1,708)</small>
+              </span>
+            </li> 
+            <!-- oct -->
+            <li class="chart__bar" style="width: 100%;">
+              <span class="chart__label">
+               204 <small>(1,579)</small>
+              </span>
+            </li>
+            <!-- Sep -->
+            <li class="chart__bar" style="width: 60%;">
+              <span class="chart__label">
+                57  <small>(1,375)</small>
+              </span>
+            </li>
+            <!-- Aug -->
+            <li class="chart__bar" style="width: 60%;">
+              <span class="chart__label">
+                57 <small>(1,318)</small>
+              </span>
+            </li>
+            <!-- Jul -->
+            <li class="chart__bar" style="width: 75%;">
+              <span class="chart__label">
+                118 <small>(1,261)</small>
+              </span>
+            </li>
+            <!-- Jun -->
+            <li class="chart__bar" style="width: 78%;">
+              <span class="chart__label">
+                125 <small>(1,136)</small>
+              </span>
+            </li>
+            <!-- May -->
+            <li class="chart__bar" style="width: 21%;">
+              <span class="chart__label">
+                19 <small>(1,117)</small>
+              </span>
+            </li>
+            <!-- Apr -->
+            <li class="chart__bar" style="width: 8%;">
+              <span class="chart__label">
+                4 <small>(1,113)</small>
+              </span>
+            </li>
+            <!-- Mar -->
+            <li class="chart__bar" style="width: 20%;">
+              <span class="chart__label">
+                18 <small>(1,095)</small>
+              </span>
+            </li>
+            <!-- Feb -->
+            <li class="chart__bar" style="width: 8%;">
+              <span class="chart__label">
+                4 <small>(1,091)</small>
+              </span>
+            </li>
+            <!-- Jan -->
+            <li class="chart__bar" style="width: 10%;">
+              <span class="chart__label">
+               7 <small>(1,084)</small>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="bg-white container mx-auto mt-10 mb-10 p-5">
+    <h2 class="pb-5">Health checks</h2>
+    <p>
+      <a target="_blank" href="https://www.senderscore.org/report/?lookup=66.235.130.62&authenticated=true" class="bg-blue rounded-full font-bold text-white px-4 py-3 hover:bg-blue-dark mr-6 no-underline">
+        Sender Score
+        <svg xmlns="http://www.w3.org/2000/svg" class="inline ml-2 w-6 stroke-current text-white stroke-2" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+    </a>
+    </p>
+  </div>
+</section>
+
+</div>
+
+
+
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  <script src="../../js/global.js"></script>
+  <script src="../../js/vue-report-gloab-stats.js"></script>
+  <script src="../../js//swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('#email-unsub', {
+        slidesPerView: 3,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+
+
+</body>
+
+</html>
