@@ -63,7 +63,7 @@
   
   <div class="mx-auto">
   
-    <div class="w-full mt-5 flex items-center bg-white pt-5">
+    <div class="w-full mt-5 flex listDatas-center bg-white pt-5">
     
       <div class="w-full text-center pl-24">
         <button class="btn-brand text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
@@ -101,33 +101,33 @@
   <div class="container mx-auto bg-white px-5 py-3">
   
     <div class="flex flex-wrap">
-      <div v-for="item in sortedData" v-bind:class="['card-' + item.group + ' ' + item.color]" 
+      <div v-for="listData in lists" v-bind:class="['card-' + listData.group + ' ' + listData.color + ' ' + listData.gallery]" 
                                       class="lg:w-1/5 md:w-1/2 w-full p-2 hover:text-grey-dark no-underline ">
   
-      <a class="no-underline hover" :href="item.url" target="_blank">
+      <a class="no-underline hover" :href="listData.url" target="_blank">
         <div class="hover border border-4 border-grey shadow-lg">
           <div class="bg-color text-white px-5 pt-3 pb-5 font-sans">
-            <div class="flex items-center">
+            <div class="flex listDatas-center">
               <div class="w-full">
                 <div class="flex">
                   <div class="w-1/2">
-                    <p class="serach-item text-xxs uppercase text-color bg-white font-bold py-1 px-2 rounded-full inline">
-                      {{ item.group }} <i class="text-color mt-2 fas fa-tag"></i>
+                    <p class="serach-listData text-xxs uppercase text-color bg-white font-bold py-1 px-2 rounded-full inline">
+                      {{ listData.group }} <i class="text-color mt-2 fas fa-tag"></i>
                     </p>
                   </div>
                   <div class="w-1/2">
-                      <p class="text-xxs text-center mb-3 text-right py-1 px-2 uppercase">{{ item.filter }}</p>
+                      <p class="text-xxs text-center mb-3 text-right py-1 px-2 uppercase">{{ listData.filter }}</p>
                     </div>       
                   </div>
               </div>
             </div>
-            <div class="flex items-center">
+            <div class="flex listDatas-center">
               <div class="w-full">
-                <p class="pt-3 pb-3 h-8 text-xs">{{ item.name }}</p>
+                <p class="pt-3 pb-3 h-8 text-xs">{{ listData.name }}</p>
               </div>
             </div>
           </div>
-          <img class="" v-bind:src="'https://image.thum.io/get/maxAge/12/width/300/' + item.url" /> 
+          <img class="" v-bind:src="'https://image.thum.io/get/maxAge/12/width/300/' + listData.url" /> 
       </div>
       </a>
 
@@ -142,11 +142,13 @@
   
   </div>
 
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src="js/filter-group.js"></script>
-<script src="js/global.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.6/vue.min.js"></script>
-<script src="js/vue-report-email-campaign.js"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="/js/filter-group.js"></script>
+<script src="/js/global.js"></script>
+<script src='https://unpkg.com/vue/dist/vue.js'></script>
+<script  src="pages/reports/script.js"></script>
+
+
 
 
 </body>

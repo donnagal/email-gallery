@@ -76,23 +76,23 @@ $(function() {
     });
     $(".bnt-oct").click(function(){
       $(".card").hide();
-      $(".oct-2020").show();
+      $(".Oct-20").show();
     });
     $(".bnt-nov").click(function(){
       $(".card").hide();
-      $(".nov-2020").show();
+      $(".Nov-20").show();
     });
     $(".bnt-dec").click(function(){
       $(".card").hide();
-      $(".dec-2020").show();
+      $(".Dec-20").show();
     });
     $(".bnt-21-jan").click(function(){
       $(".card").hide();
-      $(".jan-2021").show();
+      $(".Jan-21").show();
     });
     $(".bnt-21-feb").click(function(){
       $(".card").hide();
-      $(".feb-2021").show();
+      $(".Feb-21").show();
     });
 
 });
