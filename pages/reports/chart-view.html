@@ -89,11 +89,11 @@
   </div>
 </div>
 
-<div class="w-full mt-5 flex items-center bg-white p-3">
+<div class="w-full mt-5 flex listDatas-center bg-white p-3">
 
 
   <div class="dropdown inline-block relative z-10">
-    <button class="bg-grey-light text-grey-darker font-semibold py-4 px-8 rounded inline-flex items-center">
+    <button class="bg-grey-light text-grey-darker font-semibold py-4 px-8 rounded inline-flex listDatas-center">
       <span class="mr-1">Order by</span>
       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
     </button>
@@ -109,7 +109,7 @@
   </div>
 
   <div class="dropdown-date inline-block relative z-10 ml-5">
-    <button class="bg-grey-light text-grey-darker font-semibold py-4 px-8 rounded inline-flex items-center">
+    <button class="bg-grey-light text-grey-darker font-semibold py-4 px-8 rounded inline-flex listDatas-center">
       <span class="mr-1">Date</span>
       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
     </button>
@@ -157,31 +157,31 @@
   <div class="emails">
     <div class="charts">
       <div class="chart chart--dev">
-        <ul class="chart--horiz list-reset bg-white my-1 p-3 card" v-for="item in sortedData" 
-        :class="['card-' + item.group + ' ' + item.color + ' ' + item.filter]">
+        <ul class="chart--horiz list-reset bg-white my-1 p-3 card" v-for="listData in lists" 
+        :class="['card-' + listData.group + ' ' + listData.color + ' ' + listData.filter]">
          
           <span class="text-xs font-medium tracking-wider text-grey-dark">Opens</span>
-          <li class="chart__bar text-right" :style="{ width: item.openrate + '%' }">
+          <li class="chart__bar text-right" :style="{ width: listData.openrate + '%' }">
             <span class="chart-text">
-              <strong>{{ item.openrate }}%</strong> <small>{{ item.opens }}</small>
+              <strong>{{ listData.openrate }}%</strong> <small>{{ listData.opens }}</small>
             </span>
           </li>
 
           <span class="text-xs font-medium tracking-wider text-grey-dark">Clicks</span>
-          <li class="chart__bar text-right" :style="{ width: item.clickrate + '%' }">
+          <li class="chart__bar text-right" :style="{ width: listData.clickrate + '%' }">
             <span class="chart-text">
-              <strong>{{ item.clickrate }}%</strong> <small>{{ item.clicks }}</small>
+              <strong>{{ listData.clickrate }}%</strong> <small>{{ listData.clicks }}</small>
             </span>
           </li>
 
         <div class="absolute pin-r">
           <div class="email-info text-right">
-            <div class="text-xxs uppercase text-grey"> {{ item.filter }}</div>
-            <div class="text-grey-darkest text-sm">{{ item.name }}</div>
-            <div class="text-grey-darkest text-xxs pt-1">{{ item.subject }}</div>
-            <div class="text-xxs"><i class="text-sm text-color mt-2 fas fa-paper-plane"></i> {{ item.sent }}</div>
+            <div class="text-xxs uppercase text-grey"> {{ listData.filter }}</div>
+            <div class="text-grey-darkest text-sm">{{ listData.name }}</div>
+            <div class="text-grey-darkest text-xxs pt-1">{{ listData.subject }}</div>
+            <div class="text-xxs"><i class="text-sm text-color mt-2 fas fa-paper-plane"></i> {{ listData.sent }}</div>
             <div class="mt-3">
-              <a class="bg-color rounded-full font-bold text-white p-2 px-5 hover:bg-blue-dark text-xs no-underline" :href="item.url" target="_blank">Preview</a>
+              <a class="bg-color rounded-full font-bold text-white p-2 px-5 hover:bg-blue-dark text-xs no-underline" :href="listData.url" target="_blank">Preview</a>
             </div> 
 
             </div>
@@ -205,11 +205,11 @@
 
 
 </div>
-  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-  <script src="../../js/filter-group.js"></script>
-  <script src="../../js/global.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.6/vue.min.js"></script>
-  <script src="../../js/vue-report-email-campaign.js"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="../../js/filter-group.js"></script>
+<script src="../../js/global.js"></script>
+<script src='https://unpkg.com/vue/dist/vue.js'></script>
+<script  src="./script.js"></script>
 
 
 </body>
