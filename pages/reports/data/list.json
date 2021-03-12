@@ -96,7 +96,7 @@
     "url": "https://chromeoutlookcom.capture.litmuscdn.com/977a572e-8a34-4442-a977-082489aaf70b/results/chromeoutlookcom-vertical-allowed-1366.png",
     "color": "green-02",
     "group": "member",
-    "gallery": "hide",
+    "gallery": "",
     "time": "N/A"
   },
   {
@@ -116,7 +116,7 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10_mbr-super-payment-checker.html",
     "color": "green",
     "group": "member",
-    "gallery": "hide",
+    "gallery": "",
     "time": "10:00:18 AM"
   },
   {
@@ -156,7 +156,7 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png",
     "color": "green",
     "group": "member",
-    "gallery": "hide",
+    "gallery": "",
     "time": "12:46:51 PM"
   },
   {
@@ -216,7 +216,7 @@
     "url": "https://ol2016.capture.litmuscdn.com/0d0d4e7e-d24d-4859-a456-60dfe12fb7b5/results/ol2016-vertical-allowed-1366.png",
     "color": "green",
     "group": "member",
-    "gallery": "hide",
+    "gallery": "",
     "time": "9:30:24 AM"
   },
   {
@@ -236,7 +236,7 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart",
     "color": "green",
     "group": "member",
-    "gallery": "hide",
+    "gallery": "",
     "time": "2:00:11 PM"
   },
   {
@@ -496,7 +496,7 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12-event-white-collar-invite",
     "color": "blue-light",
     "group": "webinar",
-    "gallery": "hide",
+    "gallery": "",
     "time": "3:04:10 PM"
   },
   {
@@ -796,7 +796,7 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12-member-fee-cap.html",
     "color": "green-02",
     "group": "comms",
-    "gallery": "hide",
+    "gallery": "",
     "time": "1:29:01 PM"
   },
   {
@@ -1156,7 +1156,7 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/event-single",
     "color": "purple",
     "group": "webinar",
-    "gallery": "hide",
+    "gallery": "",
     "time": "8:55:27 AM"
   },
   {
@@ -1236,7 +1236,7 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-11-event-white-collar-16-30.html",
     "color": "blue-light",
     "group": "webinar",
-    "gallery": "hide",
+    "gallery": "",
     "time": "7:00:32 PM"
   },
   {
@@ -1396,7 +1396,7 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-outbound-assistance.html",
     "color": "blue",
     "group": "employer",
-    "gallery": "hide",
+    "gallery": "",
     "time": "1:04:39 PM"
   },
   {
@@ -1536,7 +1536,7 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-mbr_smsf.html",
     "color": "green",
     "group": "member",
-    "gallery": "hide",
+    "gallery": "",
     "time": "11:11:28 AM"
   },
   {
@@ -1616,7 +1616,7 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/amb-invite.html",
     "color": "green-02",
     "group": "comms",
-    "gallery": "hide",
+    "gallery": "",
     "time": "10:00:00 AM"
   },
   {
@@ -1636,7 +1636,7 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/amb-invite.html",
     "color": "green-02",
     "group": "comms",
-    "gallery": "hide",
+    "gallery": "",
     "time": "10:00:00 AM"
   },
   {
@@ -1676,7 +1676,7 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-outbound-assistance.html",
     "color": "blue",
     "group": "employer",
-    "gallery": "hide",
+    "gallery": "",
     "time": "12:56:00 PM"
   },
   {
@@ -2036,7 +2036,7 @@
     "url": "https://windows10mail.capture.litmuscdn.com/80fcf5c3-2313-4ee3-8191-e624ff6caf6a/results/windows10mail-vertical-allowed-1366.png",
     "color": "green-02",
     "group": "comms",
-    "gallery": "hide",
+    "gallery": "",
     "time": "10:00:00 AM"
   },
   {
@@ -2056,7 +2056,7 @@
     "url": "https://windows10mail.capture.litmuscdn.com/80fcf5c3-2313-4ee3-8191-e624ff6caf6a/results/windows10mail-vertical-allowed-1366.png",
     "color": "green-02",
     "group": "comms",
-    "gallery": "hide",
+    "gallery": "",
     "time": "12:01:00 PM"
   },
   {
@@ -2076,7 +2076,7 @@
     "url": "https://windows10mail.capture.litmuscdn.com/80fcf5c3-2313-4ee3-8191-e624ff6caf6a/results/windows10mail-vertical-allowed-1366.png",
     "color": "green-02",
     "group": "comms",
-    "gallery": "hide",
+    "gallery": "",
     "time": "3:01:00 PM"
   },
   {
@@ -2176,7 +2176,7 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-mbr_super-brand-survey.html",
     "color": "lagoon",
     "group": "brand",
-    "gallery": "hide",
+    "gallery": "",
     "time": "2:19:00 PM"
   },
   {
@@ -2195,7 +2195,7 @@
     "filter": "Oct-20",
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-mbr_super-brand-survey.html",
     "color": "lagoon",
-    "group": "brand",
+    "group": "",
     "gallery": "hide",
     "time": "2:19:00 PM"
   },
@@ -2275,7 +2275,7 @@
     "filter": "Oct-20",
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-mbr_super-brand-survey.html",
     "color": "lagoon",
-    "group": "brand",
+    "group": "",
     "gallery": "hide",
     "time": "10:27:00 AM"
   },
