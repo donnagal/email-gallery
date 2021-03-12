@@ -25,7 +25,7 @@ const vm = new Vue({
     }
   },
   mounted() {
-    fetch("https://donnagal.github.io/email-gallery/demo/data/list.json")
+    fetch("https://donnagal.github.io/email-gallery/pages/reports/data/list.json")
       .then(resp => resp.json())
       .then(json => (this.lists = json));
   }

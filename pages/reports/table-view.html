@@ -143,7 +143,7 @@
         <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortBy('group')">
           <span class="flex"><i class="fas fa-sort"></i> Group</span>
         </th>
-        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortBy('time')">
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer" @click="sortBy('date')">
           <i class="fas fa-sort"></i> Date
         </th>
         <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer"  @click="sortBy('name')">
@@ -176,6 +176,7 @@
             </span>
           </td>
           <td class="px-6 py-4 whitespace-nowrap">
+            <div class="text-grey-darkest">{{ listData.date }}</div>
             <div class="text-xs font-medium tracking-wider text-grey-dark">{{ listData.time }}</div>
           </td>
           <td class="px-6 py-4 whitespace-nowrap">
@@ -196,7 +197,7 @@
           <td class="px-6 py-4 whitespace-nowrap">
             <div class="flex listDatas-center">
               <div class="ml-4">
-                <div class="text-grey-darkest">{{ listData.unsubrate }}%</div>
+                <div class="text-grey-darkest">{{ listData.unsubrate }}</div>
                 <div class="text-sm text-grey-dark">{{ listData.unsub }}</div>
               </div>
             </div>
