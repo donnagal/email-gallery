@@ -20,6 +20,7 @@
       -webkit-box-pack: center;
               justify-content: center;
       box-sizing: border-box;
+      zoom: .8;
     }
     .semi-donut:after {
       content: '';
@@ -211,6 +212,6 @@
     
     .text-r {
       position: relative;
-        left: 173px;
+        left: 130px;
     }
     

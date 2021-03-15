@@ -1,128 +1,128 @@
 [
   {
     "date": "Jan-20",
-    "unreachable-email": "N/A",
-    "reachable-email": "N/A",
-    "reachable-avg": "N/A",
-    "reachable-rate": "N/A",
-    "SMS-Opt-Outs": 7,
-    "SMS-Opt-Outs-Tot": "1,084"
+    "unreachableEmail": "N/A",
+    "reachableEmail": "N/A",
+    "reachableAvg": "N/A",
+    "reachableRate": "N/A",
+    "smsOuts": 7,
+    "smsOutsTot": "1,084"
   },
   {
     "date": "Feb-20",
-    "unreachable-email": "N/A",
-    "reachable-email": "N/A",
-    "reachable-avg": "N/A",
-    "reachable-rate": "N/A",
-    "SMS-Opt-Outs": 4,
-    "SMS-Opt-Outs-Tot": "1,091"
+    "unreachableEmail": "N/A",
+    "reachableEmail": "N/A",
+    "reachableAvg": "N/A",
+    "reachableRate": "N/A",
+    "smsOuts": 4,
+    "smsOutsTot": "1,091"
   },
   {
     "date": "Mar-20",
-    "unreachable-email": "N/A",
-    "reachable-email": "N/A",
-    "reachable-avg": "N/A",
-    "reachable-rate": "N/A",
-    "SMS-Opt-Outs": 18,
-    "SMS-Opt-Outs-Tot": "1,095"
+    "unreachableEmail": "N/A",
+    "reachableEmail": "N/A",
+    "reachableAvg": "N/A",
+    "reachableRate": "N/A",
+    "smsOuts": 18,
+    "smsOutsTot": "1,095"
   },
   {
     "date": "Apr-20",
-    "unreachable-email": "N/A",
-    "reachable-email": "N/A",
-    "reachable-avg": "N/A",
-    "reachable-rate": "N/A",
-    "SMS-Opt-Outs": 4,
-    "SMS-Opt-Outs-Tot": "1,113"
+    "unreachableEmail": "N/A",
+    "reachableEmail": "N/A",
+    "reachableAvg": "N/A",
+    "reachableRate": "N/A",
+    "smsOuts": 4,
+    "smsOutsTot": "1,113"
   },
   {
     "date": "May-20",
-    "unreachable-email": "N/A",
-    "reachable-email": "N/A",
-    "reachable-avg": "N/A",
-    "reachable-rate": "N/A",
-    "SMS-Opt-Outs": 19,
-    "SMS-Opt-Outs-Tot": "1,117"
+    "unreachableEmail": "N/A",
+    "reachableEmail": "N/A",
+    "reachableAvg": "N/A",
+    "reachableRate": "N/A",
+    "smsOuts": 19,
+    "smsOutsTot": "1,117"
   },
   {
     "date": "Jun-20",
-    "unreachable-email": "N/A",
-    "reachable-email": "N/A",
-    "reachable-avg": "N/A",
-    "reachable-rate": "N/A",
-    "SMS-Opt-Outs": 125,
-    "SMS-Opt-Outs-Tot": "1,136"
+    "unreachableEmail": "N/A",
+    "reachableEmail": "N/A",
+    "reachableAvg": "N/A",
+    "reachableRate": "N/A",
+    "smsOuts": 125,
+    "smsOutsTot": "1,136"
   },
   {
     "date": "Jul-20",
-    "unreachable-email": "N/A",
-    "reachable-email": "N/A",
-    "reachable-avg": "N/A",
-    "reachable-rate": "N/A",
-    "SMS-Opt-Outs": 118,
-    "SMS-Opt-Outs-Tot": "1,261"
+    "unreachableEmail": "N/A",
+    "reachableEmail": "N/A",
+    "reachableAvg": "N/A",
+    "reachableRate": "N/A",
+    "smsOuts": 118,
+    "smsOutsTot": "1,261"
   },
   {
     "date": "Aug-20",
-    "unreachable-email": "N/A",
-    "reachable-email": "N/A",
-    "reachable-avg": "N/A",
-    "reachable-rate": "N/A",
-    "SMS-Opt-Outs": 57,
-    "SMS-Opt-Outs-Tot": "1,318"
+    "unreachableEmail": "N/A",
+    "reachableEmail": "N/A",
+    "reachableAvg": "N/A",
+    "reachableRate": "N/A",
+    "smsOuts": 57,
+    "smsOutsTot": "1,318"
   },
   {
     "date": "Sep-20",
-    "unreachable-email": "N/A",
-    "reachable-email": "N/A",
-    "reachable-avg": "N/A",
-    "reachable-rate": "N/A",
-    "SMS-Opt-Outs": 57,
-    "SMS-Opt-Outs-Tot": "1,375"
+    "unreachableEmail": "N/A",
+    "reachableEmail": "N/A",
+    "reachableAvg": "N/A",
+    "reachableRate": "N/A",
+    "smsOuts": 57,
+    "smsOutsTot": "1,375"
   },
   {
     "date": "Oct-20",
-    "unreachable-email": "189,604",
-    "reachable-email": "586,683",
-    "reachable-avg": 31,
-    "reachable-rate": 69,
-    "SMS-Opt-Outs": 204,
-    "SMS-Opt-Outs-Tot": "1,579"
+    "unreachableEmail": "189,604",
+    "reachableEmail": "586,683",
+    "reachableAvg": 31,
+    "reachableRate": 69,
+    "smsOuts": 204,
+    "smsOutsTot": "1,579"
   },
   {
     "date": "Nov-20",
-    "unreachable-email": "180,594",
-    "reachable-email": "581,765",
-    "reachable-avg": 32,
-    "reachable-rate": 68,
-    "SMS-Opt-Outs": 129,
-    "SMS-Opt-Outs-Tot": "1,708"
+    "unreachableEmail": "180,594",
+    "reachableEmail": "581,765",
+    "reachableAvg": 32,
+    "reachableRate": 68,
+    "smsOuts": 129,
+    "smsOutsTot": "1,708"
   },
   {
     "date": "Dec-20",
-    "unreachable-email": "585,484",
-    "reachable-email": "767,107",
-    "reachable-avg": 13,
-    "reachable-rate": 87,
-    "SMS-Opt-Outs": 6,
-    "SMS-Opt-Outs-Tot": "1,714"
+    "unreachableEmail": "585,484",
+    "reachableEmail": "767,107",
+    "reachableAvg": 13,
+    "reachableRate": 87,
+    "smsOuts": 6,
+    "smsOutsTot": "1,714"
   },
   {
     "date": "Jan-21",
-    "unreachable-email": "150,594",
-    "reachable-email": "481,765",
-    "reachable-avg": 31,
-    "reachable-rate": 69,
-    "SMS-Opt-Outs": 837,
-    "SMS-Opt-Outs-Tot": "1,921"
+    "unreachableEmail": "150,594",
+    "reachableEmail": "481,765",
+    "reachableAvg": 31,
+    "reachableRate": 69,
+    "smsOuts": 837,
+    "smsOutsTot": "1,921"
   },
   {
     "date": "Feb-21",
-    "unreachable-email": "181,347",
-    "reachable-email": "595,943",
-    "reachable-avg": 30,
-    "reachable-rate": 70,
-    "SMS-Opt-Outs": 51,
-    "SMS-Opt-Outs-Tot": "1,972"
+    "unreachableEmail": "181,347",
+    "reachableEmail": "595,943",
+    "reachableAvg": 30,
+    "reachableRate": 70,
+    "smsOuts": 51,
+    "smsOutsTot": "1,972"
   }
 ]
