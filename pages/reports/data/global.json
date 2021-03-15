@@ -8,7 +8,8 @@
     "reachableAvg": 30,
     "reachableRate": 70,
     "smsOuts": 51,
-    "smsOutsTot": 51
+    "smsOutsTot": 1972,
+    "smsAvg": 3
   },
   {
     "year": 2021,
@@ -19,62 +20,68 @@
     "reachableAvg": 31,
     "reachableRate": 69,
     "smsOuts": 837,
-    "smsOutsTot": "1,921"
+    "smsOutsTot": 1921,
+    "smsAvg": 44
   },
   {
     "year": 2020,
-    "month": "Feb",
+    "month": "Dec",
     "filter": "Dec-20",
     "unreachableEmail": 585484,
     "reachableEmail": 767107,
     "reachableAvg": 13,
     "reachableRate": 87,
     "smsOuts": 6,
-    "smsOutsTot": "1,927"
+    "smsOutsTot": 1927,
+    "smsAvg": 1
   },
   {
     "year": 2020,
-    "month": "Mar",
+    "month": "Nov",
     "filter": "Nov-20",
     "unreachableEmail": 180594,
     "reachableEmail": 581765,
     "reachableAvg": 32,
     "reachableRate": 68,
     "smsOuts": 129,
-    "smsOutsTot": "1,708"
+    "smsOutsTot": 1708,
+    "smsAvg": 8
   },
   {
     "year": 2020,
-    "month": "Apr",
+    "month": "Oct",
     "filter": "Oct-20",
     "unreachableEmail": 189604,
     "reachableEmail": 586683,
     "reachableAvg": 31,
     "reachableRate": 69,
     "smsOuts": 204,
-    "smsOutsTot": "1,579"
+    "smsOutsTot": 1579,
+    "smsAvg": 13
   },
   {
     "year": 2020,
-    "month": "May",
+    "month": "Sep",
     "filter": "Sep-20",
     "unreachableEmail": "none",
     "reachableEmail": "none",
     "reachableAvg": "none",
     "reachableRate": "none",
     "smsOuts": 57,
-    "smsOutsTot": "1,375"
+    "smsOutsTot": 1375,
+    "smsAvg": 4
   },
   {
     "year": 2020,
-    "month": "Jun",
+    "month": "Aug",
     "filter": "Aug-20",
     "unreachableEmail": "none",
     "reachableEmail": "none",
     "reachableAvg": "none",
     "reachableRate": "none",
     "smsOuts": 57,
-    "smsOutsTot": "1,318"
+    "smsOutsTot": 1318,
+    "smsAvg": 4
   },
   {
     "year": 2020,
@@ -85,62 +92,68 @@
     "reachableAvg": "none",
     "reachableRate": "none",
     "smsOuts": 118,
-    "smsOutsTot": "1,261"
+    "smsOutsTot": 1261,
+    "smsAvg": 9
   },
   {
     "year": 2020,
-    "month": "Aug",
+    "month": "Jun",
     "filter": "Jun-20",
     "unreachableEmail": "none",
     "reachableEmail": "none",
     "reachableAvg": "none",
     "reachableRate": "none",
     "smsOuts": 125,
-    "smsOutsTot": "1,136"
+    "smsOutsTot": 1136,
+    "smsAvg": 11
   },
   {
     "year": 2020,
-    "month": "Sep",
+    "month": "May",
     "filter": "May-20",
     "unreachableEmail": "none",
     "reachableEmail": "none",
     "reachableAvg": "none",
     "reachableRate": "none",
     "smsOuts": 19,
-    "smsOutsTot": "1,117"
+    "smsOutsTot": 1117,
+    "smsAvg": 2
   },
   {
     "year": 2020,
-    "month": "Oct",
+    "month": "Apr",
     "filter": "Apr-20",
     "unreachableEmail": "none",
     "reachableEmail": "none",
     "reachableAvg": "none",
     "reachableRate": "none",
     "smsOuts": 4,
-    "smsOutsTot": "1,113"
+    "smsOutsTot": 1113,
+    "smsAvg": 0
   },
   {
     "year": 2020,
-    "month": "Nov",
+    "month": "Mar",
     "filter": "Mar-20",
     "unreachableEmail": "none",
     "reachableEmail": "none",
     "reachableAvg": "none",
     "reachableRate": "none",
     "smsOuts": 18,
-    "smsOutsTot": "1,095"
+    "smsOutsTot": 1095,
+    "smsAvg": 2
   },
   {
     "year": 2020,
-    "month": "Dec",
+    "month": "Feb",
     "filter": "Feb-20",
     "unreachableEmail": "none",
     "reachableEmail": "none",
     "reachableAvg": "none",
     "reachableRate": "none",
     "smsOuts": 4,
-    "smsOutsTot": "1,091"
+    "smsOutsTot": 1091,
+    "smsAvg": 1
   },
   {
     "year": 2020,
@@ -151,6 +164,7 @@
     "reachableAvg": "none",
     "reachableRate": "none",
     "smsOuts": 7,
-    "smsOutsTot": "1,084"
+    "smsOutsTot": 1084,
+    "smsAvg": 1
   }
 ]
