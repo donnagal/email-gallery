@@ -1,0 +1,138 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Email Report Dashboard</title>
+  <link href="../../images/favion.png" rel="icon" type="image/x-icon" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
+  <link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
+
+  <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+
+  <style>
+    .card-template, .card-inspo {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="bg-grey-lighter">
+
+  <header>
+    <div class="bg-black mx-auto text-white px-5 text-center">
+      <div class="flex py-2">
+        <div class="flex-1">
+          <h1 class="text-xl">Dashboard: Campaign Report</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<div id="nav">
+  <nav class="animate-add z-100">
+    <div class="nav-overlay"></div>
+    <button type="button" class="slide-toggle">
+        <div class="menu-wrapper">
+            <div class="hamburger-menu"></div>	  
+        </div>
+    </button>
+    <div class="menu z-100">
+        <div class="menu-inner">
+            <div class="bg-grey-darkest h-screen p-8 font-bold">
+                <ul class="list-reset text-xl mt-32">
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/" class="text-teal-lighter hover:text-white no-underline">Email galley</a>
+                    </li>
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/pages/utm-tracking" class="text-teal-lighter hover:text-white no-underline">UTM Tracking tool</a>
+                    </li>
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/pages/reports/" class="text-teal-lighter hover:text-white no-underline">Email Report Dashboard</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+     </div>
+  </nav>
+  
+</div>
+
+
+
+<div id="app" class="all">
+
+<div class="container mx-auto mt-10">
+
+
+<div class="mx-auto">
+
+
+
+<div class="w-full mt-5 flex listDatas-center bg-white p-3">
+
+
+  <div class="w-1/6 text-right">
+    <span class="text-xs font-medium tracking-wider text-grey-dark">View:</span>
+    <a href="/pages/reports/index.html" class="p-3 text-grey hover:text-grey-dark font-semibold" title="Grid"><i class="fas fa-th"></i></a>
+    <a href="#" class="p-3 text-grey-darkest font-semibold font-semibold" title="Table"><i class="fas fa-table"></i></a>
+    <a href="https://email-gallery.netlify.app/pages/reports/chart-view" class="p-3 text-grey hover:text-grey-dark font-semibold" title="Chart"><i class="fas fa-chart-bar"></i></a>
+  </div>
+
+</div>
+
+</div>
+
+
+<div class="overflow-hidden border-b border-grey-lighter rounded-md shadow-md my-5">
+  <table class="min-w-full overflow-x-scroll divide-y divide-grey-lighter">
+    <thead class="bg-grey-light border border-grey">
+      <tr>
+        <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-grey-darkest uppercase cursor-pointer"  @click="sortBy('name')">
+          <i class="fas fa-sort"></i>Name
+        </th>
+      </tr>
+    </thead>
+    <tbody class="bg-white">
+      <template v-for="listData in lists">
+        <tr class="card hover:bg-grey-lightest hover:shadow-lg border-b border-grey-light"  
+        :class="['card-' + listData.group + ' ' + listData.color + ' ' + listData.filter]">
+          <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-grey-darkest">{{listData.name}}</div>
+          </td>
+        </tr>
+      </template>
+      
+
+
+      </tbody>
+  </table>
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+</div>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="../../js/filter-group.js"></script>
+  <script src="../../js/global.js"></script>
+  <script src='https://unpkg.com/vue/dist/vue.js'></script>
+  <script  src="./global-report.js"></script>
+
+
+
+</body>
+
+</html>
