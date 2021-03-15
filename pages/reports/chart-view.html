@@ -98,13 +98,13 @@
       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
     </button>
     <ul class="dropdown-menu absolute pt-1 list-reset">
-      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('group')"><i class="text-sm text-color mt-2 fas fa-user-tag"></i> | Group</a></li>
-      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('sent')"><i class="text-sm text-color mt-2 fas fa-paper-plane"></i> | Audience size</a></li>
-      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('name')"><i class="text-sm text-color mt-2 fas fa-sort-alpha-up"></i> | Name</a></li>
-      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('period')"><i class="text-sm text-color mt-2 fas fa-calendar-day"></i> | Date</a></li>
-      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('openrate')"><i class="text-sm text-color mt-2 fas fa-envelope-open-text"></i> | Opens</a></li>
-      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('clickrate')"><i class="text-sm text-color mt-2 fas fa-mouse"></i> | Click rate</a></li>
-      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortRow('unsub')"><i class="text-sm text-color mt-2 fas fa-user-slash"></i> | Unsubscribes</a></li>
+      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('group')"><i class="text-sm text-color mt-2 fas fa-user-tag"></i> | Group</a></li>
+      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('sent')"><i class="text-sm text-color mt-2 fas fa-paper-plane"></i> | Audience size</a></li>
+      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('name')"><i class="text-sm text-color mt-2 fas fa-sort-alpha-up"></i> | Name</a></li>
+      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('period')"><i class="text-sm text-color mt-2 fas fa-calendar-day"></i> | Date</a></li>
+      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('openrate')"><i class="text-sm text-color mt-2 fas fa-envelope-open-text"></i> | Opens</a></li>
+      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('clickrate')"><i class="text-sm text-color mt-2 fas fa-mouse"></i> | Click rate</a></li>
+      <li class=""><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('unsub')"><i class="text-sm text-color mt-2 fas fa-user-slash"></i> | Unsubscribes</a></li>
     </ul>
   </div>
 
