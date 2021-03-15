@@ -33,6 +33,7 @@
     .bg-red {
       background-color: #E91E63;
     }
+    .none { display: none;}
 </style>
 </head>
 <body class="bg-grey-lighter">
@@ -89,7 +90,7 @@
   <div class="flex flex-wrap">
     <div v-for="listData in lists" class="card lg:w-1/3 md:w-1/2 w-full p-2">
 
-      <div>
+      <div :class="[listData.unreachableEmail]">
       <div class="px-5 pt-3 pb-5 font-sans">
         <div class="flex items-center">
           <div class="w-full">
