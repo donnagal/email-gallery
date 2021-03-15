@@ -34,6 +34,9 @@
       background-color: #E91E63;
     }
     .none { display: none;}
+
+    .total { display: none;}
+    .active .total { display: block;}
 </style>
 </head>
 <body class="bg-grey-lighter">
@@ -128,26 +131,24 @@
     </div>
   </section>
 
-  <section>
-    <h2 class="pb-5">SMS opt-outs</h2>
+  <section class="mb-24">
+    <h2 class="px-5">SMS opt-outs</h2>
     <div class="emails">
       <div class="charts">
         <div class="chart chart--dev">
-          <ul class="chart--horiz list-reset bg-white p-2 mb-1" v-for="listData in lists">
-           
+          <ul class="chart--horiz list-reset bg-white p-2 pl-3 mb-1" v-for="listData in lists">
+            <div :class="[listData.current]">
+              <div class="text-grey-darkest text-3xl total">
+                <small class="text-xs text-grey-dark">Total:</small>
+                <p class="pb-8">{{ listData.smsOutsTot }}</p>
+              </div>
+              </div>
             <span class="text-xs font-medium tracking-wider text-grey-dark">{{ listData.year }} {{ listData.month }}</span>
             <li class="red-bar chart__bar text-right" :style="{ width: listData.smsAvg+ '%' }">
               <span class="chart-text">
                 <strong><i class="text-red fas fa-user-minus"></i> {{ listData.smsOuts}}</strong>
               </span>
             </li>
-  
-  
-          <div class="absolute pin-r">
-            <div class="">
-              <div class="text-grey-darkest -mt-4 pr-5"><p class="total">{{ listData.smsOutsTot }}</p></div>
-              </div>
-          </div>
   
           </ul>
   
