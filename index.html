@@ -102,32 +102,24 @@
   
     <div class="flex flex-wrap">
       <div v-for="listData in lists" v-bind:class="['card-' + listData.group + ' ' + listData.color + ' ' + listData.gallery]" 
-                                      class="lg:w-1/5 md:w-1/2 w-full p-2 hover:text-grey-dark no-underline ">
+                                      class="lg:w-1/4 md:w-1/2 w-full p-2 no-underline ">
   
-      <a class="no-underline hover" :href="listData.url" target="_blank">
-        <div class="hover border border-4 border-grey shadow-lg">
-          <div class="bg-color text-white px-5 pt-3 pb-5 font-sans">
-            <div class="flex listDatas-center">
-              <div class="w-full">
-                <div class="flex">
-                  <div class="w-1/2">
-                    <p class="serach-listData text-xxs uppercase text-color bg-white font-bold py-1 px-2 rounded-full inline">
-                      {{ listData.group }} <i class="text-color mt-2 fas fa-tag"></i>
-                    </p>
+      <a class="no-underline" :href="listData.url" target="_blank">
+        <div class="border border-4 border-grey shadow-lg">
+          
+          <div class="flex flex-wrap">
+            <div class="bg-color">
+                <div class="w-auto flex-grow flex flex-col justify-center text-white bg-cover bg-top relative overlay overlay-hover" style="height: 300px;width: 271px;" 
+                      :style="{ 'background-image': 'url(' + 'https://image.thum.io/get/maxAge/12/width/300/' + listData.url + ')' }">
+                  <div class="hover-show z-10 w-auto flex-grow flex flex-col text-center " style="background: #000000cf;">
+                      <h3 class="font-medium p-5 pt-24 text-white text-2xl">
+                        {{ listData.name }}
+                      </h3>
+                      <small class="text-xxs text-grey-dark">{{ listData.id }}</small>
                   </div>
-                  <div class="w-1/2">
-                      <p class="text-xxs text-center mb-3 text-right py-1 px-2 uppercase">{{ listData.filter }}</p>
-                    </div>       
-                  </div>
-              </div>
-            </div>
-            <div class="flex listDatas-center">
-              <div class="w-full">
-                <p class="pt-3 pb-3 h-8 text-xs">{{ listData.name }}</p>
-              </div>
+                </div>
             </div>
           </div>
-          <img class="" v-bind:src="'https://image.thum.io/get/maxAge/12/width/300/' + listData.url" /> 
       </div>
       </a>
 
@@ -142,12 +134,11 @@
   
   </div>
 
-  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src="js/filter-group.js"></script>
 <script src="js/global.js"></script>
 <script src='https://unpkg.com/vue/dist/vue.js'></script>
 <script  src="pages/reports/script.js"></script>
-
 
 
 

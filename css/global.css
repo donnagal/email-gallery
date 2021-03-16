@@ -240,6 +240,9 @@ a.bg-color:hover {
 .blue-light .text-color {
   color:#0075d2;
 }
+.hover-show { opacity: 0; }
+.hover-show:hover { opacity: 1; }
+
 /* filter */
 .filter { display: none; }
 .all .filter, .oct-2020, .nov-2020 .nov-2020, .dec-2020 .dec-2020, .jan-2021 .jan-2021 { display: block; display: revert;}
