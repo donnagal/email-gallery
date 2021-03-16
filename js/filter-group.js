@@ -58,6 +58,12 @@ $(function() {
   });
 
   //submenu date
+  $(".dropdown-date").hide();
+  $(".order a").click(function(){
+    $(".date-disbaled").toggle();
+    $(".dropdown-date").toggle();
+  });
+
   $(".dropdown-menu-date").hide();
 
   $(".dropdown-date").click(function(){

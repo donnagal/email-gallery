@@ -85,19 +85,23 @@
         Global Report
       </a>
     </div>
+    <div class="-mb-px mr-1">
+      <a target="_blank" href="https://www.senderscore.org/report/?lookup=66.235.130.62&authenticated=true" class="text-center block border border-black rounded hover:border-grey-light text-black hover:bg-grey-dark py-2 px-4 no-underline ">
+        Sender Score
+      </a>
+    </div>
   </div>
 </div>
 
 
+<!-- White submenu -->
 <div class="w-full mt-5 flex items-center bg-white p-3">
-
-
   <div class="dropdown inline-block relative z-10">
     <button class="bg-grey-light text-grey-darker font-semibold py-4 px-8 rounded inline-flex items-center">
       <span class="mr-1">Order by</span>
       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
     </button>
-    <ul class="dropdown-menu absolute pt-1 list-reset">
+    <ul class="order dropdown-menu absolute pt-1 list-reset">
       <li><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('group')"><i class="text-sm text-color mt-2 fas fa-user-tag"></i> | Group</a></li>
       <li><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('sent')"><i class="text-sm text-color mt-2 fas fa-paper-plane"></i> | Audience size</a></li>
       <li><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('name')"><i class="text-sm text-color mt-2 fas fa-sort-alpha-up"></i> | Name</a></li>
@@ -108,21 +112,27 @@
     </ul>
   </div>
 
-  <div class="dropdown-date inline-block relative z-10 ml-5">
-    <button class="bg-grey-light text-grey-darker font-semibold py-4 px-8 rounded inline-flex items-center">
-      <span class="mr-1">Date</span>
-      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
-    </button>
-    <ul class="dropdown-menu-date absolute pt-1 list-reset">
-      <li class="bnt-all"><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer">All</a></li>
-      <li class="bnt-21-feb"><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer">February</a></li>
-      <li class="bnt-21-jan"><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer">January</a></li>
-      <li class="bnt-dec"><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer">Dec</a></li>
-      <li class="bnt-nov"><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer">Nov</a></li>
-      <li class="bnt-oct"><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer">Oct</a></li>
-    </ul>
-  </div>
+    <div class="date">
+      <span class="date-disbaled bg-grey-lighter text-grey-dark font-semibold py-4 px-8 rounded inline-flex items-center ml-5">
+        <span class="mr-1">Date</span>
+        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+      </span>
 
+      <div class="dropdown-date inline-block relative z-10 ml-5">
+        <button class="bg-grey-light text-grey-darker font-semibold py-4 px-8 rounded inline-flex items-center">
+          <span class="mr-1">Date</span>
+          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+        </button>
+        <ul class="dropdown-menu-date absolute pt-1 list-reset">
+          <li class="bnt-all"><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer">All</a></li>
+          <li class="bnt-21-feb"><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer">February</a></li>
+          <li class="bnt-21-jan"><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer">January</a></li>
+          <li class="bnt-dec"><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer">Dec</a></li>
+          <li class="bnt-nov"><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer">Nov</a></li>
+          <li class="bnt-oct"><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer">Oct</a></li>
+        </ul>
+      </div>
+    </div>
 
   <div class="w-1/2 text-center pl-24">
     <button class="btn-brand text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 rounded-full inline focus:outline-none">
@@ -150,6 +160,7 @@
   </div>
 
 </div>
+<!-- End: White submenu -->
 
 </div>
 
