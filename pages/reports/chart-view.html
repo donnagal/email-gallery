@@ -159,7 +159,7 @@
       <div class="chart chart--dev">
         <ul class="chart--horiz list-reset bg-white my-1 p-3 card" v-for="listData in lists" 
         :class="['card-' + listData.group + ' ' + listData.color + ' ' + listData.filter]">
-         
+        <h4>{{ listData.name }}</h4>
           <span class="text-xs font-medium tracking-wider text-grey-dark">Opens</span>
           <li class="chart__bar text-right" :style="{ width: listData.openrate + '%' }">
             <span class="chart-text">
@@ -177,7 +177,6 @@
         <div class="absolute pin-r">
           <div class="email-info text-right">
             <div class="text-xxs uppercase text-grey"> {{ listData.filter }}</div>
-            <div class="text-grey-darkest text-sm">{{ listData.name }}</div>
             <div class="text-grey-darkest text-xxs pt-1">{{ listData.subject }}</div>
             <div class="text-xxs"><i class="text-sm text-color mt-2 fas fa-paper-plane"></i> {{ listData.sent }}</div>
             <div class="mt-3">
