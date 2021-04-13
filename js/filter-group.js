@@ -100,5 +100,41 @@ $(function() {
       $(".card").hide();
       $(".Feb-21").show();
     });
+    $(".bnt-21-mar").click(function(){
+      $(".card").hide();
+      $(".Mar-21").show();
+    });
+    $(".bnt-21-apr").click(function(){
+      $(".card").hide();
+      $(".Apr-21").show();
+    });
+    $(".bnt-21-may").click(function(){
+      $(".card").hide();
+      $(".May-21").show();
+    });
+    $(".bnt-21-jun").click(function(){
+      $(".card").hide();
+      $(".Jun-21").show();
+    });
+    $(".bnt-21-aug").click(function(){
+      $(".card").hide();
+      $(".Aug-21").show();
+    });
+    $(".bnt-21-sep").click(function(){
+      $(".card").hide();
+      $(".Sep-21").show();
+    });
+    $(".bnt-21-oct").click(function(){
+      $(".card").hide();
+      $(".Oct-21").show();
+    });
+    $(".bnt-21-nov").click(function(){
+      $(".card").hide();
+      $(".Nov-21").show();
+    });
+    $(".bnt-21-dec").click(function(){
+      $(".card").hide();
+      $(".Dec-21").show();
+    });
 
 });
