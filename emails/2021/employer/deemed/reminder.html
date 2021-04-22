@@ -101,7 +101,7 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
             <div style="Margin-left: 20px;Margin-right: 20px; Margin-top: 32px;">
               <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
                 <p style="Margin-bottom: 20px;text-align: left;">
-                  Hi <%= recipient.firstName %>,
+                  <% if ( recipient.firstName == "" ) { %>Hi there,<%} else {%> Hi <%=recipient.firstName %>,<%}%>
                   <br/><br/>
                   At Cbus, we’re committed to helping you keep your business super simple.
                 </p>

@@ -102,7 +102,7 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
               <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
 
                 <p style="Margin-bottom: 20px;text-align: left;">
-                  Hi <%= recipient.firstName %>,
+                  <% if ( recipient.firstName == "" ) { %>Hi there,<%} else {%> Hi <%=recipient.firstName %>,<%}%>
                   <br/><br/>
                   Managing employee super and staying up to date with changes to business super obligations can be tricky.
                   <br/><br/>
