@@ -100,7 +100,7 @@ body{background-color:#e3e5e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
               <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
 
                 <p style="Margin-bottom: 20px;text-align: left;">
-                  Hi <%= recipient.firstName %>,
+                  <% if ( recipient.firstName == "" ) { %>Hi there,<%} else {%> Hi <%=recipient.firstName %>,<%}%>
                   <br/><br/>
                   It’s hard to believe that it’s already been 20 years since <%= recipient.emprRegBusName %> joined Cbus.
                   <br/><br/>
