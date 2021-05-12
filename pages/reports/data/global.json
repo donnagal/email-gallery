@@ -1,6 +1,19 @@
 [
   {
     "year": 2021,
+    "month": "April",
+    "filter": "Apr-21",
+    "unreachableEmail": "185,635",
+    "reachableEmail": "580,172",
+    "reachableAvg": 32,
+    "reachableRate": 68,
+    "smsOuts": 106,
+    "smsOutsTot": "2,084",
+    "smsAvg": 5,
+    "current": "active"
+  },
+  {
+    "year": 2021,
     "month": "March",
     "filter": "Mar-21",
     "unreachableEmail": "180,399",
@@ -10,7 +23,7 @@
     "smsOuts": 99,
     "smsOutsTot": "2,020",
     "smsAvg": 5,
-    "current": "active"
+    "current": ""
   },
   {
     "year": 2021,
