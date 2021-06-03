@@ -158,7 +158,7 @@
     "openrate": 11,
     "clicks": 7,
     "clickrate": 0,
-    "subject": "<% if ( recipient.firstName == \"\" ) { %>Hi there,<%} else {%> <%=recipient.firstName %>,<%}%> we can help you with your business super",
+    "subject": "<Name>, we can help you with your business super",
     "date": "2021/05/04",
     "unsub": 46,
     "unsubrate": 0.1,
@@ -3358,7 +3358,7 @@
     "filter": "Feb-21",
     "color": "green",
     "group": "member",
-    "gallery": "",
+    "gallery": "hide",
     "time": "4:30:46 PM",
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/retail-super-exits/email-1"
   },
