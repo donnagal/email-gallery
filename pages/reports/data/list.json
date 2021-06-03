@@ -185,7 +185,7 @@
     "filter": "May-21",
     "color": "green",
     "group": "webinar",
-    "gallery": "",
+    "gallery": "hide",
     "time": "8:31:12 PM",
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-1/invite"
   },
@@ -223,7 +223,7 @@
     "filter": "May-21",
     "color": "green",
     "group": "webinar",
-    "gallery": "",
+    "gallery": "hide",
     "time": "8:01:02 PM",
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/may/invite"
   },
@@ -679,7 +679,7 @@
     "filter": "May-21",
     "color": "green",
     "group": "member",
-    "gallery": "",
+    "gallery": "hide",
     "time": "11:39:35 AM",
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/insurance-campaign/1.html"
   },
@@ -698,7 +698,7 @@
     "filter": "May-21",
     "color": "green",
     "group": "member",
-    "gallery": "",
+    "gallery": "hide",
     "time": "10:52:56 AM",
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/insurance-campaign/4.html"
   },
@@ -774,7 +774,7 @@
     "filter": "May-21",
     "color": "purple",
     "group": "member",
-    "gallery": "",
+    "gallery": "hide",
     "time": "11:04:31 AM",
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-may/2"
   },
@@ -1916,7 +1916,7 @@
     "group": "webinar",
     "gallery": "",
     "time": "5:01:01 PM",
-    "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/super-women/serries-1/white-collar-mar-super-women"
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/super-women/serries-1/white-collar-mar-super-women"
   },
   {
     "name": "Women and Super Webinar Invite 1 (B)",
@@ -3244,7 +3244,7 @@
     "filter": "Feb-21",
     "color": "green",
     "group": "member",
-    "gallery": "",
+    "gallery": "hide",
     "time": "4:38:39 PM",
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/feb-2/invite"
   },
@@ -4517,7 +4517,7 @@
     "filter": "Nov-20",
     "color": "purple",
     "group": "webinar",
-    "gallery": "",
+    "gallery": "hide",
     "time": "3:30:55 PM",
     "url": "https://email-gallery.netlify.app/emails/2020/2020-11-event_webinar-retirement-multi-event-16-reminder.html"
   },
@@ -4821,7 +4821,7 @@
     "filter": "Nov-20",
     "color": "blue",
     "group": "employer",
-    "gallery": "",
+    "gallery": "hide",
     "time": "1:04:39 PM",
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-outbound-assistance.html"
   },
