@@ -3,6 +3,7 @@
   src: url('../fonts/BebasNeue-Regular.ttf'); /* IE9 Compat Modes */
   src: url('../fonts/BebasNeue-Regular.ttf')  format('truetype'); 
 }
+.arial {font-family: arial;}
 
 .font-1 {
   font-family: 'bebas', Arial Black;
@@ -188,10 +189,32 @@ nav.animate-add.active {
     margin-top: -148px;
   }
 
+  .line-height { line-height: 1.5;}
+  .img-icon {
+    position: absolute;
+    margin-left: 70px;
+    margin-top: -10px;
+    width: 38px;
+    padding: 3px;
+  }
+  .img-email-sm {
+    height: 90px;
+    width: 60px;
+    position: absolute;
+    margin-left: 208px;
+    margin-top: -10px;
+    padding: 3px;
+  }
+
 /* Themes */
 a.bg-color:hover {
   opacity: .75;
 }
+.bg-blue-md { background-color: #396aff; }
+
+.purple-1 { color: #30357c;}
+.purple-2 { color: #5e76a2;}
+
 .black .bg-color {
   background: #1a1a1a;
 }

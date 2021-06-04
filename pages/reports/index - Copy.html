@@ -95,31 +95,31 @@
 
 
 <!-- White submenu -->
-<div class="w-full mt-5 flex items-center bg-white p-3 rounded-lg">
+<div class="w-full mt-5 flex items-center bg-white p-3">
   <div class="dropdown inline-block relative z-10">
-    <button class="border text-grey-darker font-semibold py-4 px-8 rounded-lg inline-flex items-center">
+    <button class="bg-grey-light text-grey-darker font-semibold py-4 px-8 rounded inline-flex items-center">
       <span class="mr-1">Order by</span>
       <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
     </button>
-    <ul class="order dropdown-menu absolute pt-1 list-reset border shadow-lg">
-      <li><a class="bg-white border-b hover:bg-grey text-grey-darkest py-4 px-4 text-sm block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('group')"><i class="text-sm text-color mt-2 fas fa-user-tag"></i> | Group</a></li>
-      <li><a class="bg-white border-b hover:bg-grey text-grey-darkest py-4 px-4 text-sm block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('sent')"><i class="text-sm text-color mt-2 fas fa-paper-plane"></i> | Audience size</a></li>
-      <li><a class="bg-white border-b hover:bg-grey text-grey-darkest py-4 px-4 text-sm block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('name')"><i class="text-sm text-color mt-2 fas fa-sort-alpha-up"></i> | Name</a></li>
-      <li><a class="bg-white border-b hover:bg-grey text-grey-darkest py-4 px-4 text-sm block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('period')"><i class="text-sm text-color mt-2 fas fa-calendar-day"></i> | Date</a></li>
-      <li><a class="bg-white border-b hover:bg-grey text-grey-darkest py-4 px-4 text-sm block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('openrate')"><i class="text-sm text-color mt-2 fas fa-envelope-open-text"></i> | Opens</a></li>
-      <li><a class="bg-white border-b hover:bg-grey text-grey-darkest py-4 px-4 text-sm block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('clickrate')"><i class="text-sm text-color mt-2 fas fa-mouse"></i> | Click rate</a></li>
-      <li><a class="bg-white border-b hover:bg-grey text-grey-darkest py-4 px-4 text-sm block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('unsub')"><i class="text-sm text-color mt-2 fas fa-user-slash"></i> | Unsubscribes</a></li>
+    <ul class="order dropdown-menu absolute pt-1 list-reset">
+      <li><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('group')"><i class="text-sm text-color mt-2 fas fa-user-tag"></i> | Group</a></li>
+      <li><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('sent')"><i class="text-sm text-color mt-2 fas fa-paper-plane"></i> | Audience size</a></li>
+      <li><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('name')"><i class="text-sm text-color mt-2 fas fa-sort-alpha-up"></i> | Name</a></li>
+      <li><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('period')"><i class="text-sm text-color mt-2 fas fa-calendar-day"></i> | Date</a></li>
+      <li><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('openrate')"><i class="text-sm text-color mt-2 fas fa-envelope-open-text"></i> | Opens</a></li>
+      <li><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('clickrate')"><i class="text-sm text-color mt-2 fas fa-mouse"></i> | Click rate</a></li>
+      <li><a class="bg-grey-light hover:bg-grey text-grey-darkest py-4 px-8 block whitespace-no-wrap no-underline cursor-pointer" @click="sortBy('unsub')"><i class="text-sm text-color mt-2 fas fa-user-slash"></i> | Unsubscribes</a></li>
     </ul>
   </div>
 
     <div class="date">
-      <span class="date-disbaled border rounded-lg text-grey font-semibold py-4 px-8 rounded inline-flex items-center ml-5">
+      <span class="date-disbaled bg-grey-lighter text-grey-dark font-semibold py-4 px-8 rounded inline-flex items-center ml-5">
         <span class="mr-1">Date</span>
         <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
       </span>
 
       <div class="dropdown-date inline-block relative z-10 ml-5">
-        <button class="rounded-lg bg-blue-md text-white border-purple font-semibold py-4 px-8 rounded inline-flex items-center">
+        <button class="bg-grey-light text-grey-darker font-semibold py-4 px-8 rounded inline-flex items-center">
           <span class="mr-1">Date</span>
           <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
         </button>
@@ -201,66 +201,93 @@
 
 <div class="container mx-auto">
 
-  <div class="flex flex-wrap arial">
+  <div class="flex flex-wrap">
     <div v-for="listData in lists" v-bind:class="['card-' + listData.group + ' ' + listData.color + ' ' + listData.filter]" 
-                                    class="card lg:w-1/4 md:w-1/2 w-full p-2  no-underline ">
+                                    class="card lg:w-1/4 md:w-1/2 w-full p-2 hover:text-grey-dark no-underline ">
 
-    <div class="text-sm px-1 pt-5 pb-1 purple-1"> 
-      <span class="font-bold">{{ listData.date }}</span> | {{ listData.time }}
-    </div>
-
- <div class="bg-white purple-1 rounded shadow px-2 py-5">
-        
-    <div class="flex">
-          <div class="text-right">
-            <a class="hover" :href="listData.url" target="_blank">
-              <div class="img-email-sm bg-cover bg-grey-light bg-top border shadow"
-                :style="{ 'background-image': 'url(' + 'https://image.thum.io/get/maxAge/12/width/70/' + listData.url + ')' }">
-              </div>
-             </a>
-          </div>       
-          </div>
-        <div class="flex items-center pb-4">
+      <div >
+      <div class="bg-color text-white px-5 pt-3 pb-5 font-sans">
+        <div class="flex items-center">
           <div class="w-full">
-            <p class="pb-5 text-xl font-bold pr-16 h-24" style="line-height: 25px;">{{ listData.name }}</p>
-            <p class="pb-2 text-sm"><strong>subject line:</strong></p>
-            <p class="text-sm purple-2 line-height h-10">{{ listData.subject }}</p>
+            <div class="flex">
+              <div class="w-1/2">
+                <p class="serach-item text-xxs uppercase text-color bg-white font-bold py-1 px-2 rounded-full inline">
+                  {{ listData.group }} <i class="text-color mt-2 fas fa-tag"></i>
+                </p>
+              </div>
+              <div class="w-1/2">
+                  <p class="text-xxs text-center mb-3 text-right py-1 px-2 ">{{ listData.id }}</p>
+                </div>       
+              </div>
+
+            
+            <p class="font-1 text-4xl -mb-2 pt-3">
+              {{ listData.sent }} <i class="fas fa-paper-plane pr-2 text-lg opacity-75"></i>
+            </p>
           </div>
         </div>
+        <div class="flex items-center">
+          <div class="w-full h-24">
+            <p class="pt-3 pb-5">{{ listData.name }}</p>
+            <p class="text-xs">{{ listData.subject }}</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-white text-black px-5 py-5 font-sans shadow">
+        <div class="flex items-center">
+          <div class="w-full">
+            <p class="tracking-wide uppercase text-black font-1">
+              <i class="fas fa-calendar-day"></i> 
+              <span class="pl-1">{{ listData.filter }}</span>
+              <p class="pl-6 text-xxs">{{ listData.time }}</p>
+            </p>
+          </div>
+        </div>
+      </div>
 
-
-      <div class="bg-white purple-1 px-2">
+        <div class="bg-white text-black px-5 py-5 font-sans shadow">
           <div class="flex items-center">
-            <div class="w-1/2 shadow mr-1 border rounded pt-3 px-2">
-              <img class="img-icon" src="../../images/email.png" />
-              <p class="text-2xl pt-2"><strong>{{ listData.sent }}</strong></p>
-              <p class="text-sm purple-2 py-2">delivered</p>
+            <div class="w-full">
+              <p class="tracking-wide uppercase text-grey font-1">opens</p>
+              <p class="font-1 text-3xl -mb-2"><span class="pr-3"> ({{ listData.opens }}) </span> {{ listData.openrate }}%</p>
             </div>
-            <div class="w-1/2 shadow ml-1 border rounded pt-3 px-2">
-              <img class="img-icon" src="../../images/unsub.png" />
-              <p class="text-3xl"><strong>{{ listData.unsubrate }}%</strong></p>
-              <p class="text-sm purple-2 py-2">{{ listData.unsub  }} unsubscribe</p>
+            <div class="w-1/4">
+              <i class="text-3xl text-color mt-2 fas fa-envelope-open-text"></i>
             </div>
           </div>
       </div>
-      <div class="bg-white purple-1 px-2 pt-2">
-        <div class="flex items-center">
-          <div class="w-1/2 shadow mr-1 border rounded pt-3 px-2">
-            <img class="img-icon" src="../../images/opens.png" />
-            <p class="text-3xl"><strong>{{ listData.openrate }}%</strong></p>
-            <p class="text-sm purple-2 py-2">{{ listData.opens }} opens</p>
+      
+      <div class="bg-white text-black px-5 py-5 font-sans shadow">
+          <div class="flex items-center">
+            <div class="w-full">
+              <p class="tracking-wide uppercase text-grey font-1">clicks</p>
+              <p class="font-1 text-3xl -mb-2"><span class="pr-3"> ({{ listData.clicks }}) </span> {{ listData.clickrate }}%</p>
+            </div>
+            <div class="w-1/4">
+              <i class="text-3xl text-color mt-2 fas fa-mouse"></i>
+            </div>
           </div>
-          <div class="w-1/2 shadow ml-1 border rounded pt-3 px-2">
-            <img class="img-icon" src="../../images/clicks.png" />
-            <p class="text-3xl"><strong>{{ listData.clickrate }}%</strong></p>
-            <p class="text-sm purple-2 py-2">{{ listData.clicks }} clicks</p>
+      </div>
+
+      
+      <div class="bg-white text-black px-5 py-5 font-sans shadow">
+        <div class="flex items-center">
+          <div class="w-full">
+            <p class="tracking-wide uppercase text-grey font-1">unsubscribe</p>
+            <p class="font-1 text-3xl -mb-2"><span class="pr-3"> ({{ listData.unsub }}) </span> {{ listData.unsubrate }}%</p>
+          </div>
+          <div class="w-1/4">
+            <i class="text-3xl text-color mt-2 fas fa-user-slash"></i>
           </div>
         </div>
-    </div>
+      </div>
 
-        <p class="serach-item text-xs uppercase pt-5 text-center purple-2">
-          <strong>{{ listData.group }} </strong>| <span class="text-xs purple-2">{{ listData.id }}</span>
-        </p>
+      
+      <a :href="listData.url" target="_blank" class="block bg-color text-white p-3 font-sans shadow no-underline text-center" title="preview email">
+        <i class="fas fa-envelope-square opacity-75 pr-1"></i> preview email
+      </a>
+      
       
       </div>
   </div>
