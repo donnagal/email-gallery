@@ -16,27 +16,9 @@
 
   <link rel="stylesheet" href="../../css/global.css">
   <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="../../css/chart-donut.css">
-  <link rel="stylesheet" href="../../css/chart-bar.css">
-
 
   <style>
-    .swiper-chart {
-      padding-bottom: 70px;
-    }
-    .text-green {
-      color: #3cd3ad;
-    }
-    .bg-green {
-      background-color: #3cd3ad;
-    }
-    .bg-red {
-      background-color: #E91E63;
-    }
-    .none { display: none;}
 
-    .total { display: none;}
-    .active .total { display: block;}
 </style>
 </head>
 <body class="bg-grey-lighter">
@@ -166,10 +148,25 @@
       </div>
       <div class="bg-white rounded-lg lg:w-1/2 p-5 ml-2">
         <h2 class="pb-5">SMS opt-outs</h2>
-       <iframe 
-          src="https://email-gallery.netlify.app/pages/reports/sms/" 
-          height="280" width="560" scrolling="no">
-        </iframe>
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <iframe 
+              src="https://email-gallery.netlify.app/pages/reports/sms/" 
+              height="280" width="560" scrolling="no">
+            </iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe 
+              src="https://email-gallery.netlify.app/pages/reports/sms/2020" 
+              height="280" width="560" scrolling="no">
+            </iframe>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </div>
 
@@ -196,13 +193,24 @@
 </div>
 
 
-
-
 </div>
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src="../../js/filter-group.js"></script>
   <script src="../../js/global.js"></script>
-
+  <script src="../../js/swiper-bundle.min.js"></script>
+   
+  <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 
 </html>
