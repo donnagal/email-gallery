@@ -154,21 +154,74 @@
       </div>
     </div>
   </section>
-
-  <section>
-    <div class="flex">
-      <div class="bg-white rounded-lg lg:w-1/3">
-        <iframe src="../sms">
+  
+  <section class="bg-white">
+    <div class="p-5">
+      <h2 class="pb-5">Reachable by email</h2>
+      <div class="flex mb-5">
+        <span class="bg-green h-4 w-4 block"></span> <small class="pl-2">Reachable by email</small>
+        <span class="bg-grey h-4 w-4 block ml-5"></span> <small class="pl-2">Unreachable by email</small>
       </div>
-      <div class="bg-white rounded-lg lg:w-1/3 mx-2">
-        xx
-      </div>
-      <div class="bg-white rounded-lg lg:w-1/3">
-        xx
-      </div>
+    </div>
+  
+    <div class="flex flex-wrap">
+     <div v-for="listData in lists" class="card lg:w-1/3 md:w-1/2 w-full p-2">
+  
+      <div :class="[listData.unreachableEmail] + ' ' + [listData.current]">
+        <div class="px-5 pt-3 pb-5 font-sans">
+          <div class="flex items-center">
+            <div class="w-full">
+              <div class="flex">
+                <small class="text-grey ">{{ listData.year }} {{ listData.month }}</small>
+                <div class="w-1/2">
+                    <div class="w-full">
+                      <div class="semi-donut margin" style=" --fill: #3cd3ad;" 
+                                                    :style="{ '--percentage': listData.reachableRate }">
+                        {{ listData.reachableRate }}%
+                      </div>
+                      <p>
+                        <span class="text-green"><i class="fas fa-check-circle"></i> {{ listData.reachableEmail }}</span>
+                        <span class="text-grey text-r"><i class="fas fa-times-circle"></i> {{ listData.unreachableEmail }}</span>
+                      </p> 
+                    </div>
+                </div>      
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+  
+    </div>
+    
+  
     </div>
   </section>
 
+  <section class="bg-white my-5">
+    <h2 class="px-5 pt-5">SMS opt-outs</h2>
+    <div class="emails">
+      <div class="charts">
+        <div class="chart chart--dev">
+          <ul class="chart--horiz list-reset bg-white p-1 pl-3 mb-1" v-for="listData in lists">
+            <div :class="[listData.current]">
+              <div class="text-grey-darkest text-3xl total">
+                <small class="text-xs text-grey-dark">Total:</small>
+                <p class="pb-8">{{ listData.smsOutsTot }}</p>
+              </div>
+              </div>
+            <span class="text-xs font-medium tracking-wider text-grey-dark">{{ listData.year }} {{ listData.month }}</span>
+            <li class="red-bar chart__bar text-right" :style="{ width: listData.smsAvg+ '%' }">
+              <span class="chart-text">
+                <strong><i class="text-red fas fa-user-minus"></i> {{ listData.smsOuts}}</strong>
+              </span>
+            </li>
+  
+          </ul>
+  
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 </div>
@@ -186,6 +239,10 @@
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src="../../js/filter-group.js"></script>
   <script src="../../js/global.js"></script>
+  <script src='https://unpkg.com/vue/dist/vue.js'></script>
+  <script  src="./global-report.js"></script>
+
+
 
 </body>
 
