@@ -148,7 +148,7 @@
       </div>
       <div class="bg-white rounded-lg lg:w-1/2 p-5 ml-2">
         <h2 class="pb-5">SMS opt-outs</h2>
-        <div class="swiper-container mySwiper">
+        <div class="swiper-container smsSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <iframe 
@@ -170,13 +170,28 @@
       </div>
     </div>
 
-    <div class="flex my-5">
+    <div class="flex mt-2 mb-8">
       <div class="bg-white rounded-lg lg:w-1/2 p-5">
         <h2 class="pb-5">Sent email campaigns</h2>
-        <iframe 
-          src="https://email-gallery.netlify.app/pages/reports/sent-emails" 
-          height="280" width="560" scrolling="no">
-        </iframe>
+        <div class="swiper-container smsSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <iframe 
+              src="https://email-gallery.netlify.app/pages/reports/sent-emails" 
+              height="280" width="560" scrolling="no">
+            </iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe 
+              src="https://email-gallery.netlify.app/pages/reports/sent-emails/2020" 
+              height="280" width="560" scrolling="no">
+            </iframe>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </div>
 
@@ -201,7 +216,7 @@
    
   <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".smsSwiper", {
         pagination: {
           el: ".swiper-pagination",
         },
