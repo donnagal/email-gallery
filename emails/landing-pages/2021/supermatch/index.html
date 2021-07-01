@@ -99,6 +99,114 @@
 				opacity: 1
 			}
 		}
+		/* forms */
+		
+.ab-form {
+  /* checkbox end */
+}
+.ab-form .ab-form-list {
+  list-style: none;
+}
+.ab-form .ab-form-list__item:nth-of-type(n + 2) {
+  margin-top: 10px;
+}
+.ab-form .ab-checkbox,
+.ab-form .ab-radio {
+  position: absolute;
+  opacity: 0;
+  /* label end */
+  /* &:disabled + label::before {
+  	box-shadow: none;
+  	background: #ddd;
+  } */
+}
+.ab-form .ab-checkbox + label,
+.ab-form .ab-radio + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  user-select: none;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #212121;
+  transition: color 0.15s ease;
+}
+.ab-form .ab-checkbox + label::before,
+.ab-form .ab-radio + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #dddd;
+  transition: background 0.2s ease, box-shadow 0.2s ease, border 0.1s ease-in;
+}
+.ab-form .ab-checkbox:hover + label::before,
+.ab-form .ab-radio:hover + label::before {
+  background: #f5f5f5;
+  box-shadow: 0 0 0 3px rgba(117, 121, 231, 0.4);
+}
+.ab-form .ab-checkbox:hover + label,
+.ab-form .ab-radio:hover + label {
+  color: black;
+}
+.ab-form .ab-checkbox + label {
+  padding-left: 30px;
+}
+.ab-form .ab-checkbox + label::before {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.ab-form .ab-checkbox + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAvklEQVRIS+2U0Q3CMAwFzxuwCYwAEzECdAM2ghHoJmxgZJRIUWgTh9C/9Du9q59fKmz8yMZ8hqCa8IjoE5Gq7oCziEx5Zt0RBfgdOACTiFxTSZcgg8/AUURefxF44Cb6aQIvvChQVcvylo/cAl8VBPgFeAKnKGmFlwRWuwewj5KwuNiWxYUuXevVHYSvTSX2vlXRDa8uOZPY+SZ4VZDcUpvEnq+e1/52rpqGScgbVYO7JvBASmdcE/RIhqCa3ht9IVAZxGa2wAAAAABJRU5ErkJggg==");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border-radius: 2px;
+  transition: transform 0.1s ease-in;
+}
+.ab-form .ab-checkbox:checked + label::before {
+  border-color: #7579e7;
+  background: #7579e7;
+}
+.ab-form .ab-checkbox:checked + label::after {
+  transform: translateY(-50%) scale(1);
+  transition: transform 0.2s ease-out;
+  opacity: 1;
+}
+.ab-form .ab-radio {
+  /* label end */
+}
+.ab-form .ab-radio + label {
+  padding-left: 32px;
+}
+.ab-form .ab-radio + label::before {
+  width: 22px;
+  height: 22px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border-width: 0;
+  border-style: solid;
+  border-color: #7579e7;
+}
+.ab-form .ab-radio:checked + label::before {
+  background: #ffffff;
+  border-color: #7579e7;
+  border-width: 7px;
+  transition: background 0.2s ease, border 0.3s ease-out;
+}
   </style>
 </head>
 <body>
@@ -141,18 +249,13 @@
 				<% } %> 
 			</p>
 			<p class="text-center pt-5 text-brand-gray font-400 text-xl">
-				<form>
+				<form class="ab-form">
 					<input id="mbrSuperMatchCallBackDate" type="checkbox" checked="checked" value="true" data-nl-xpath="@mbrSuperMatchCallBackDate" data-nl-uncheckedvalue="false" data-nl-label="mbrSuperMatchCallBackDate" data-nl-ismandatory="true" data-nl-bindto="xpath" />
 					<br/>
+					<input type="checkbox" name="genre" class="ab-checkbox" id="Horror" checked>
+					<label for="Horror">Horror</label>
+
 					<button class="cta-dark lg:w-auto w-full"  id="a156575514329242" href="#" data-nl-type="action" data-nl-transition="next" data-nl-action="next">Request Callback</button>
-				
-					<div class="flex mt-6">
-						<label class="flex items-center">
-						  <input type="checkbox" class="form-checkbox">
-						  <span class="ml-2">I agree to the <span class="underline">privacy policy</span></span>
-						</label>
-					  </div>
-				
 				</form>
 			</p>
 			<div class="mx-auto pt-8 lg:w-2/4">
@@ -164,6 +267,31 @@
 		  </div>
 		</div>
 	 </div>
+</div>
+
+
+<div class="container py-6">
+	<div class="columns">
+		<div class="column is-10">
+
+			<form class="ab-form">
+				<div>
+					<h3 class="title mb-4">What Genre?</h3>
+
+					<ul class="ab-form-list">
+
+						<li class="ab-form-list__item">
+							<input type="checkbox" name="genre" class="ab-checkbox" id="Horror" checked>
+							<label for="Horror">Horror</label>
+						</li>
+
+					</ul>
+				</div>
+				
+			</form>
+
+		</div>
+	</div>
 </div>
 
 <div class="bg-brand-blue">
