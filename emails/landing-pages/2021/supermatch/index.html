@@ -7,7 +7,6 @@
   <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
   <link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
   <!-- tailwindcss --><link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/8ee28de705b5ab88527f77f76b51fc77.css" rel="stylesheet">
-<!-- tailwindcss forms --><link href="https://raw.githubusercontent.com/mozilla/gecko-dev/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css" rel="stylesheet">
   <style>
 		.font-normal {
 			font-family: "Effra", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -49,12 +48,20 @@
 			border-radius: 8px;
 			color: white;
 			font-family: 'Effra Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
-			padding: 12px 50px;
+			padding: 8px 50px;
 		}
 		.cta-dark:hover {
 			position: relative;
 			top: -2px;
 			box-shadow: 0 5px 0 0 #8d8d8d, 0 2px 4px 0 #8d8d8d;
+		}
+		.badge-teal {
+			background: #e0f7fb;
+			color: #21abc5;
+			border: solid 2px #21abc5;
+			border-radius: 10px;
+			line-height: 2.1;
+			padding: 2px 6px
 		}
 		.overlap-under {
 			z-index: -1;
@@ -100,113 +107,102 @@
 			}
 		}
 		/* forms */
-		
-.ab-form {
-  /* checkbox end */
-}
-.ab-form .ab-form-list {
-  list-style: none;
-}
-.ab-form .ab-form-list__item:nth-of-type(n + 2) {
-  margin-top: 10px;
-}
-.ab-form .ab-checkbox,
-.ab-form .ab-radio {
-  position: absolute;
-  opacity: 0;
-  /* label end */
-  /* &:disabled + label::before {
-  	box-shadow: none;
-  	background: #ddd;
-  } */
-}
-.ab-form .ab-checkbox + label,
-.ab-form .ab-radio + label {
-  position: relative;
-  cursor: pointer;
-  padding: 0;
-  user-select: none;
-  font-size: 0.875rem;
-  text-transform: capitalize;
-  font-weight: 600;
-  color: #212121;
-  transition: color 0.15s ease;
-}
-.ab-form .ab-checkbox + label::before,
-.ab-form .ab-radio + label::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #dddd;
-  transition: background 0.2s ease, box-shadow 0.2s ease, border 0.1s ease-in;
-}
-.ab-form .ab-checkbox:hover + label::before,
-.ab-form .ab-radio:hover + label::before {
-  background: #f5f5f5;
-  box-shadow: 0 0 0 3px rgba(117, 121, 231, 0.4);
-}
-.ab-form .ab-checkbox:hover + label,
-.ab-form .ab-radio:hover + label {
-  color: black;
-}
-.ab-form .ab-checkbox + label {
-  padding-left: 30px;
-}
-.ab-form .ab-checkbox + label::before {
-  width: 20px;
-  height: 20px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}
-.ab-form .ab-checkbox + label::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%) scale(0);
-  width: 20px;
-  height: 20px;
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAvklEQVRIS+2U0Q3CMAwFzxuwCYwAEzECdAM2ghHoJmxgZJRIUWgTh9C/9Du9q59fKmz8yMZ8hqCa8IjoE5Gq7oCziEx5Zt0RBfgdOACTiFxTSZcgg8/AUURefxF44Cb6aQIvvChQVcvylo/cAl8VBPgFeAKnKGmFlwRWuwewj5KwuNiWxYUuXevVHYSvTSX2vlXRDa8uOZPY+SZ4VZDcUpvEnq+e1/52rpqGScgbVYO7JvBASmdcE/RIhqCa3ht9IVAZxGa2wAAAAABJRU5ErkJggg==");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 20px;
-  border-radius: 2px;
-  transition: transform 0.1s ease-in;
-}
-.ab-form .ab-checkbox:checked + label::before {
-  border-color: #7579e7;
-  background: #7579e7;
-}
-.ab-form .ab-checkbox:checked + label::after {
-  transform: translateY(-50%) scale(1);
-  transition: transform 0.2s ease-out;
-  opacity: 1;
-}
-.ab-form .ab-radio {
-  /* label end */
-}
-.ab-form .ab-radio + label {
-  padding-left: 32px;
-}
-.ab-form .ab-radio + label::before {
-  width: 22px;
-  height: 22px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border-width: 0;
-  border-style: solid;
-  border-color: #7579e7;
-}
-.ab-form .ab-radio:checked + label::before {
-  background: #ffffff;
-  border-color: #7579e7;
-  border-width: 7px;
-  transition: background 0.2s ease, border 0.3s ease-out;
-}
+		.cb-form .cb-form-list {
+		list-style: none;
+		}
+		.cb-form .cb-form-list__item:nth-of-type(n + 2) {
+		margin-top: 10px;
+		}
+		.cb-form .cb-checkbox,
+		.cb-form .cb-radio {
+		position: absolute;
+		opacity: 0;
+		}
+		.cb-form .cb-checkbox + label,
+		.cb-form .cb-radio + label {
+		position: relative;
+		cursor: pointer;
+		padding: 0;
+		user-select: none;
+		text-transform: capitalize;
+		font-weight: 600;
+		transition: color 0.15s ease;
+		}
+		.cb-form .cb-checkbox + label::before,
+		.cb-form .cb-radio + label::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		background: #dddd;
+		transition: background 0.2s ease, box-shadow 0.2s ease, border 0.1s ease-in;
+		}
+		.cb-form .cb-checkbox:hover + label::before,
+		.cb-form .cb-radio:hover + label::before {
+		background: #f5f5f5;
+		box-shadow: 0 0 0 3px rgba(117, 199, 231, 0.4);
+		}
+		.cb-form .cb-checkbox:hover + label,
+		.cb-form .cb-radio:hover + label {
+		color: black;
+		}
+		.cb-form .cb-checkbox:checked + label {
+		color: #1da9c4;
+		}
+		.cb-form .cb-checkbox + label {
+		padding-left: 30px;
+		}
+		.cb-form .cb-checkbox + label::before {
+		width: 20px;
+		height: 20px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		}
+		.cb-form .cb-checkbox + label::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%) scale(0);
+		width: 20px;
+		height: 20px;
+		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAvklEQVRIS+2U0Q3CMAwFzxuwCYwAEzECdAM2ghHoJmxgZJRIUWgTh9C/9Du9q59fKmz8yMZ8hqCa8IjoE5Gq7oCziEx5Zt0RBfgdOACTiFxTSZcgg8/AUURefxF44Cb6aQIvvChQVcvylo/cAl8VBPgFeAKnKGmFlwRWuwewj5KwuNiWxYUuXevVHYSvTSX2vlXRDa8uOZPY+SZ4VZDcUpvEnq+e1/52rpqGScgbVYO7JvBASmdcE/RIhqCa3ht9IVAZxGa2wAAAAABJRU5ErkJggg==");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 20px;
+		border-radius: 2px;
+		transition: transform 0.1s ease-in;
+		}
+		.cb-form .cb-checkbox:checked + label::before {
+		border-color: #1da9c4;
+		background: #1da9c4;
+		}
+		.cb-form .cb-checkbox:checked + label::after {
+		transform: translateY(-50%) scale(1);
+		transition: transform 0.2s ease-out;
+		opacity: 1;
+		}
+		.cb-form .cb-radio + label {
+		padding-left: 32px;
+		}
+		.cb-form .cb-radio + label::before {
+		width: 22px;
+		height: 22px;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+		border-width: 0;
+		border-style: solid;
+		border-color: #1da9c4;
+		}
+		.cb-form .cb-radio:checked + label::before {
+		background: #ffffff;
+		border-color: #1da9c4;
+		border-width: 7px;
+		transition: background 0.2s ease, border 0.3s ease-out;
+		}
   </style>
 </head>
 <body>
@@ -235,27 +231,28 @@
 		  <div class="w-full p-10 bg-white rounded-md text-center">
 			<h2 class="text-3xl font-heavy pb-3">Keeping track of your super</h2>
 			<p class="mx-auto lg:w-2/4 text-brand-gray font-400 text-xl">
-				Cbus can help you search for lost super over the phone. 
-				If you want to do this, click the 'Request Callback' button below and a Cbus consultant will call you back tomorrow on your phone number
+				Cbus can help you search for lost super over the phone. If you want to do this, click the 'Yes' button below and a Cbus consultant will call you back tomorrow on your phone number
 
 				<% if (recipient.mobilePhone== "" || recipient.phone== "" ) {%>
 					<!-- Has eitrher a Phone or Mobile only -->
-					<strong><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[Mobile]</span></strong>
-					<strong><span class="nl-dce-field" id="span162509825182771" data-nl-expr="[recipient/@phone]">[Phone]</span></strong>. 
+					<strong class="badge-teal"><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[Mobile]</span></strong>
+					<strong class="badge-teal"><span class="nl-dce-field" id="span162509825182771" data-nl-expr="[recipient/@phone]">[Phone]</span></strong>. 
 				 <% } else { %> 
 					<!-- Has Phone AND Mobile  -->
-					<strong><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[Mobile]</span></strong> or
-					<strong><span class="nl-dce-field" id="span162509825182771" data-nl-expr="[recipient/@phone]">[Phone]</span></strong>. 
+					<span class="lg:hidden"><br/></span>
+					<strong class="badge-teal"><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[Mobile]</span></strong> or
+					<strong class="badge-teal"><span class="nl-dce-field" id="span162509825182771" data-nl-expr="[recipient/@phone]">[Phone]</span></strong>. 
 				<% } %> 
 			</p>
 			<p class="text-center pt-5 text-brand-gray font-400 text-xl">
-				<form class="ab-form">
-					<input id="mbrSuperMatchCallBackDate" type="checkbox" checked="checked" value="true" data-nl-xpath="@mbrSuperMatchCallBackDate" data-nl-uncheckedvalue="false" data-nl-label="mbrSuperMatchCallBackDate" data-nl-ismandatory="true" data-nl-bindto="xpath" />
-					<br/>
-					<input type="checkbox" name="genre" class="ab-checkbox" id="Horror" checked>
-					<label for="Horror">Horror</label>
-
-					<button class="cta-dark lg:w-auto w-full"  id="a156575514329242" href="#" data-nl-type="action" data-nl-transition="next" data-nl-action="next">Request Callback</button>
+				<form class="cb-form">
+					<p class="py-5">
+						<input id="mbrSuperMatchCallBackDate" class="cb-checkbox" type="checkbox" checked="checked" value="true" data-nl-xpath="@mbrSuperMatchCallBackDate" data-nl-uncheckedvalue="false" data-nl-label="mbrSuperMatchCallBackDate" data-nl-ismandatory="true" data-nl-bindto="xpath" />
+						<label for="mbrSuperMatchCallBackDate" class="text-lg font-normal">Yes, Request Callback</label>
+					</p>
+					<button class="cta-dark lg:w-auto w-full"  id="a156575514329242" href="#" data-nl-type="action" data-nl-transition="next" data-nl-action="next">
+						Submit
+					</button>
 				</form>
 			</p>
 			<div class="mx-auto pt-8 lg:w-2/4">
@@ -269,30 +266,6 @@
 	 </div>
 </div>
 
-
-<div class="container py-6">
-	<div class="columns">
-		<div class="column is-10">
-
-			<form class="ab-form">
-				<div>
-					<h3 class="title mb-4">What Genre?</h3>
-
-					<ul class="ab-form-list">
-
-						<li class="ab-form-list__item">
-							<input type="checkbox" name="genre" class="ab-checkbox" id="Horror" checked>
-							<label for="Horror">Horror</label>
-						</li>
-
-					</ul>
-				</div>
-				
-			</form>
-
-		</div>
-	</div>
-</div>
 
 <div class="bg-brand-blue">
 	<div class="container mx-auto">
@@ -311,7 +284,7 @@
 			<div class="font-light font-400">
 				<div class="flex flex-wrap content-start">
 					<div class="pr-3"><img src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/1a254af4f81c59cb96d4213b1615588d.png"></div>
-					<div>Call <strong>1300 361 784</strong> Mon to Fri from 8am to 8pm AEDT/AEST</span></div>
+					<div>Call <strong>1300 361 784</strong> <span class="lg:hidden"><br/></span> Mon to Fri from 8am to 8pm AEDT/AEST</span></div>
 				</div>
 				<div class="flex flex-wrap content-start py-4">
 					<div class="pr-3 pt-1"><img src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/2ca56699b7c1ab62f227da5b6a40310f.png"></div>

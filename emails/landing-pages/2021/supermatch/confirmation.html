@@ -55,6 +55,14 @@
 			top: -2px;
 			box-shadow: 0 5px 0 0 #8d8d8d, 0 2px 4px 0 #8d8d8d;
 		}
+		.badge-teal {
+			background: #e0f7fb;
+			color: #21abc5;
+			border: solid 2px #21abc5;
+			border-radius: 10px;
+			line-height: 2.1;
+			padding: 2px 6px
+		}
 		.overlap-under {
 			z-index: -1;
 			position: relative;
@@ -124,21 +132,23 @@
 		</p>
 		<div class="flex">
 		  <div class="w-full p-10 bg-white rounded-md text-center">
-			<h2 class="text-3xl font-heavy pb-3">Thanks <span class="nl-dce-field" id="span162503907091159" data-nl-expr="[recipient/@firstName]">[First name]</span></h2>
+			<h2 class="text-3xl font-heavy pb-3">Thanks <span class="nl-dce-field" id="span162503907091159" data-nl-expr="[recipient/@firstName]">[First name]</span>!</h2>
 			<p class="mx-auto lg:w-2/4 text-brand-gray font-400 text-xl">
 				Thanks for submitting. A Cbus consultant will call in the next business day. Please have some ID handy so we can verify you before we search for your lost super.
 				<br/><br/>
 				A Cbus consultant will call you back tomorrow on your phone number
 
+
 				<% if (recipient.mobilePhone== "" || recipient.phone== "" ) {%>
 					<!-- Has eitrher a Phone or Mobile only -->
-					<strong><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[Mobile]</span></strong>
-					<strong><span class="nl-dce-field" id="span162509825182771" data-nl-expr="[recipient/@phone]">[Phone]</span></strong>. 
+					<strong class="badge-teal"><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[Mobile]</span></strong>
+					<strong class="badge-teal"><span class="nl-dce-field" id="span162509825182771" data-nl-expr="[recipient/@phone]">[Phone]</span></strong>. 
 				 <% } else { %> 
 					<!-- Has Phone AND Mobile  -->
-					<strong><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[Mobile]</span></strong> or
-					<strong><span class="nl-dce-field" id="span162509825182771" data-nl-expr="[recipient/@phone]">[Phone]</span></strong>. 
-				<% } %> 
+					<span class="lg:hidden"><br/></span>
+					<strong class="badge-teal"><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[Mobile]</span></strong> or
+					<strong class="badge-teal"><span class="nl-dce-field" id="span162509825182771" data-nl-expr="[recipient/@phone]">[Phone]</span></strong>. 
+				<% } %>
 			</p>
 			<div class="mx-auto pt-8 lg:w-2/4">
 				<h4 class="text-2xl font-heavy pb-3">Need to update your phone number?</h4>
@@ -168,7 +178,7 @@
 			<div class="font-light font-400">
 				<div class="flex flex-wrap content-start">
 					<div class="pr-3"><img src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/1a254af4f81c59cb96d4213b1615588d.png"></div>
-					<div>Call <strong>1300 361 784</strong> Mon to Fri from 8am to 8pm AEDT/AEST</span></div>
+					<div>Call <strong>1300 361 784</strong> <span class="lg:hidden"><br/></span> Mon to Fri from 8am to 8pm AEDT/AEST</span></div>
 				</div>
 				<div class="flex flex-wrap content-start py-4">
 					<div class="pr-3 pt-1"><img src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/2ca56699b7c1ab62f227da5b6a40310f.png"></div>
