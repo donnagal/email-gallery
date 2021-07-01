@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cbus Super: Callback Request - for lost super </title>
+  <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
+  <link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
+  <!-- tailwindcss --><link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/8ee28de705b5ab88527f77f76b51fc77.css" rel="stylesheet">
+  <style>
+		.font-normal {
+			font-family: "Effra", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		.font-heavy {
+			font-family: 'Effra Heavy', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		.font-light {
+			font-family: 'Effra Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		.font-medium {
+			font-family: 'Effra Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		.font-400 {
+			font-weight: 400;
+		}
+		.text-brand-gray {
+			color: #666;
+		}
+		.bg-gradient {
+			background: rgb(162, 162, 162);
+			background: linear-gradient(100deg, rgba(162, 162, 162, 1) 0%, rgba(162, 162, 162, 1) 0%, rgba(255, 255, 255, 0) 100%);
+		}
+		.bg-brand-dark {
+			background-color: #333;
+		}
+		.bg-brand-green {
+			background-color: #008a44;
+		}
+		.bg-brand-blue {
+			background-color: #00508c;
+		}
+		.h-screen-50 {
+			height: 50vh;
+		}
+		.cta-dark {
+			background-color: #333;
+			box-shadow: 0 3px 0 0 #8d8d8d;
+			border-radius: 8px;
+			color: white;
+			font-family: 'Effra Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			padding: 12px 50px;
+		}
+		.cta-dark:hover {
+			position: relative;
+			top: -2px;
+			box-shadow: 0 5px 0 0 #8d8d8d, 0 2px 4px 0 #8d8d8d;
+		}
+		.overlap-under {
+			z-index: -1;
+			position: relative;
+		}
+		a:hover {
+			opacity: .7;
+			transition: all .2s;
+		}
+		.fadeup {
+			animation-name: fadeUp;
+			-webkit-animation-name: fadeUp;
+			animation-duration: 1s;
+			-webkit-animation-duration: 1s;
+			animation-timing-function: ease;
+			-webkit-animation-timing-function: ease;
+			visibility: visible!important
+		}
+		@keyframes fadeUp {
+			0% {
+				transform: translateY(15%);
+				opacity: 0
+			}
+			40% {
+				opacity: 0
+			}
+			100% {
+				transform: translateY(0);
+				opacity: 1
+			}
+		}
+		@-webkit-keyframes fadeUp {
+			0% {
+				-webkit-transform: translateY(15%);
+				opacity: 0
+			}
+			40% {
+				opacity: 0
+			}
+			100% {
+				-webkit-transform: translateY(0);
+				opacity: 1
+			}
+		}
+  </style>
+</head>
+<body>
+
+<div class="bg-no-repeat bg-right bg-auto h-96" style="background-image: 
+	url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/f31907e0521e21b2332e3eef590bcc3c.jpg')">
+    
+	<div class="bg-gradient flex content-center lg:pt-0 flex-wrap h-96">
+		<div class="container mx-auto px-10 lg:px-0">
+			<div class="lg:w-1/4 text-white">
+				<h1 class="fadeup font-heavy mb-8 mark-bold text-6xl text-5xl leading-none">
+					Callback Request for lost super
+				</h1>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<div class="container mx-auto -mt-8">
+	<div class="rounded-t-xl overflow-hidden bg-brand-green lg:p-8 p-3">
+		<p class="w-full px-5 pb-5 text-white text-2xl text-right">
+			<strong>Member number:</strong> <span class="nl-dce-field" data-nl-expr="[recipient/@mbrAccID]">[Member ID]</span>
+		</p>
+		<div class="flex">
+		  <div class="w-full p-10 bg-white rounded-md text-center">
+			<h2 class="text-3xl font-heavy pb-3">Thanks <span class="nl-dce-field" id="span162503907091159" data-nl-expr="[recipient/@firstName]">[First name]</span></h2>
+			<p class="mx-auto lg:w-2/4 text-brand-gray font-400 text-xl">
+				Thanks for submitting. A Cbus consultant will call in the next business day. Please have some ID handy so we can verify you before we search for your lost super.
+				<br/><br/>
+				A Cbus consultant will call you back tomorrow on your phone number
+
+				<% if (recipient.mobilePhone== "" || recipient.phone== "" ) {%>
+					<!-- Has eitrher a Phone or Mobile only -->
+					<strong><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[Mobile]</span></strong>
+					<strong><span class="nl-dce-field" id="span162509825182771" data-nl-expr="[recipient/@phone]">[Phone]</span></strong>. 
+				 <% } else { %> 
+					<!-- Has Phone AND Mobile  -->
+					<strong><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[Mobile]</span></strong> or
+					<strong><span class="nl-dce-field" id="span162509825182771" data-nl-expr="[recipient/@phone]">[Phone]</span></strong>. 
+				<% } %> 
+			</p>
+			<div class="mx-auto pt-8 lg:w-2/4">
+				<h4 class="text-2xl font-heavy pb-3">Need to update your phone number?</h4>
+				<p class="text-brand-gray font-400 text-xl">
+					Call <strong>1300 361 784</strong> Mon to Fri from 8am to 8pm AEDT/AEST.
+				</p>
+			</div>
+		  </div>
+		</div>
+	 </div>
+</div>
+
+<div class="bg-brand-blue">
+	<div class="container mx-auto">
+		<div class="rounded-b-xl overflow-hidden bg-brand-green p-3"></div>
+	</div>
+</div>
+
+<div class="bg-brand-blue">
+	<div class="container mx-auto">
+		<div class="flex">
+			<div class="mx-auto lg:w-2/4 lg:p-10 p-5 rounded-md text-white">
+			<h4 class="text-2xl font-heavy pb-3">We’re here to help</h4>
+			<p class="font-400 pb-5">
+				If you have any questions or would like to discuss your options further, we can help get your super sorted. 
+			</p>
+			<div class="font-light font-400">
+				<div class="flex flex-wrap content-start">
+					<div class="pr-3"><img src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/1a254af4f81c59cb96d4213b1615588d.png"></div>
+					<div>Call <strong>1300 361 784</strong> Mon to Fri from 8am to 8pm AEDT/AEST</span></div>
+				</div>
+				<div class="flex flex-wrap content-start py-4">
+					<div class="pr-3 pt-1"><img src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/2ca56699b7c1ab62f227da5b6a40310f.png"></div>
+					<div>Drop us a line at: cbusenq@cbussuper.com.au</div>
+				</div>
+				<div class="flex flex-wrap content-start">
+					<div class="pr-3 pt-1"><img src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/49053d7d82289323fe419ca9513bdc2f.png"></div>
+					<div>Visit <a class="font-bold underline hover" target="_blank" href="https://www.cbussuper.com.au/">cbussuper.com.au</a></div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="p-10">
+	<div class="container mx-auto">
+		<div class="mx-auto lg:w-2/4">
+			<p class="text-sm text-gray-500">
+				Cbus’ Trustee: United Super Pty Ltd ABN 46 006 261 623 AFSL 233792 Cbus ABN 75 493 363 262.
+				<br/><br/>
+				This information is about Cbus. It doesn’t take into account your specific needs, so you should look at your own financial position, objectives and requirements before making any financial decisions. Read the relevant Cbus Product Disclosure Statement and related documents to decide whether Cbus is right for you.
+				<br/><br/>
+				Contact us on 1300 361 784 or visit www.cbussuper.com.au for a copy.
+			</p>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

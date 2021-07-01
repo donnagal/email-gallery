@@ -1,0 +1,68 @@
+var recipient=ctx.recipient
+var consent = ctx.visitor.consent
+var dobGiven = ctx.visitor.dobGiven
+
+try {
+
+  if (!consent || !dobGiven) {
+    throw new Error("Invalid form values received")
+  }
+
+  var firstTime = (recipient.@mbrInsuranceConsentGiven == 0)
+    
+  if (firstTime) {
+
+    logInfo("=== Register Consent EDM: dobGiven = " + dobGiven)
+    logInfo("=== Register Consent EDM: recipient bday = " + recipient.@birthDate)
+
+    var sameDOB = (recipient.@birthDate == dobGiven)
+    var numTimesAttempted = Number(recipient.@mbrDOBAttemptCount)
+    var attemptsRemaining = (numTimesAttempted < 3)
+    
+    if (attemptsRemaining && sameDOB) {
+      var tzoffset = (new Date()).getTimezoneOffset() * 60000;
+      var localISOTime = (new Date(Date.now() - tzoffset)).toISOString()
+
+      // date in format YYYY-MM-DD
+      var currentDateStr = localISOTime.split('T')[0]
+          
+      // time in format HH:MM:SS
+      var currentTimeStr = localISOTime.split('T')[1].split('.')[0]
+      
+      recipient.@mbrInsuranceConsentGiven = consent
+      recipient.@mbrDOBSubmittedForm = dobGiven
+      recipient.@mbrDateConsentGiven = currentDateStr
+      recipient.@mbrTimeConsentGiven = currentTimeStr
+      recipient.@mbrMannerInsuranceElection = "Online"
+      recipient.@xtkschema = "nms:recipient"
+      recipient.@_operation = "update"
+      recipient.@_key = "@id"
+      xtk.session.Write(recipient)
+    } else {
+      var updatedTimesAttempted = numTimesAttempted + 1
+
+      if (numTimesAttempted < 3) {
+        recipient.@mbrDOBAttemptCount = updatedTimesAttempted
+        recipient.@xtkschema = "nms:recipient"
+        recipient.@_operation = "update"
+        recipient.@_key = "@id"
+        xtk.session.Write(recipient)
+      }
+
+      ctx.vars.lockout = 0
+      if (updatedTimesAttempted > 2) {
+        ctx.vars.lockout = 1
+      }
+        
+      ctx.vars.attemptsRemaining = 3 - updatedTimesAttempted
+      ctx.vars.dobMismatchError = 1
+    }
+  } else {
+    ctx.vars.firstTimeError = 1
+    logInfo("Recipient has already completed form")
+  }
+} catch (e) {
+  ctx.vars.genericError = 1
+  logInfo(e)
+}
+
