@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Cbus Super: Callback Request - for lost super </title>
   <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
+  
   <link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
   <!-- tailwindcss --><link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/8ee28de705b5ab88527f77f76b51fc77.css" rel="stylesheet">
   <style>
@@ -42,26 +43,35 @@
 		.h-screen-50 {
 			height: 50vh;
 		}
+		.cta-light {
+			background-color: white;
+			box-shadow: 0 3px 0 0 #8d8d8d;
+			border-radius: 8px;
+			border: solid 1px #8d8d8d;
+			color: #333;
+			font-family: 'Effra Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			padding: 8px 50px;
+		}
 		.cta-dark {
 			background-color: #333;
 			box-shadow: 0 3px 0 0 #8d8d8d;
 			border-radius: 8px;
 			color: white;
 			font-family: 'Effra Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
-			padding: 12px 50px;
+			padding: 8px 50px;
 		}
-		.cta-dark:hover {
+		.cta-dark:hover, .cta-light:hover {
 			position: relative;
 			top: -2px;
 			box-shadow: 0 5px 0 0 #8d8d8d, 0 2px 4px 0 #8d8d8d;
 		}
 		.badge-teal {
 			background: #e0f7fb;
-			color: #21abc5;
-			border: solid 2px #21abc5;
 			border-radius: 10px;
+			color: #21abc5;
+			display: inline-block;
 			line-height: 2.1;
-			padding: 2px 6px
+			padding: 0 9px;
 		}
 		.overlap-under {
 			z-index: -1;
@@ -109,13 +119,12 @@
   </style>
 </head>
 <body>
-
 <div class="bg-no-repeat bg-right bg-auto h-96" style="background-image: 
 	url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/f31907e0521e21b2332e3eef590bcc3c.jpg')">
     
 	<div class="bg-gradient flex content-center lg:pt-0 flex-wrap h-96">
 		<div class="container mx-auto px-10 lg:px-0">
-			<div class="lg:w-1/4 text-white">
+			<div class="lg:w-1/4 text-white md:mx-8">
 				<h1 class="fadeup font-heavy mb-8 mark-bold text-6xl text-5xl leading-none">
 					Callback Request for lost super
 				</h1>
@@ -125,6 +134,7 @@
 	
 </div>
 
+
 <div class="container mx-auto -mt-8">
 	<div class="rounded-t-xl overflow-hidden bg-brand-green lg:p-8 p-3">
 		<p class="w-full px-5 pb-5 text-white text-2xl text-right">
@@ -132,34 +142,18 @@
 		</p>
 		<div class="flex">
 		  <div class="w-full p-10 bg-white rounded-md text-center">
-			<h2 class="text-3xl font-heavy pb-3">Thanks <span class="nl-dce-field" id="span162503907091159" data-nl-expr="[recipient/@firstName]">[First name]</span>!</h2>
+			<h2 class="text-3xl font-heavy pb-3">Thanks <%= recipient.firstName %>!</h2>
 			<p class="mx-auto lg:w-2/4 text-brand-gray font-400 text-xl">
-				Thanks for submitting. A Cbus consultant will call in the next business day. Please have some ID handy so we can verify you before we search for your lost super.
-				<br/><br/>
-				A Cbus consultant will call you back tomorrow on your phone number
-
-
-				<% if (recipient.mobilePhone== "" || recipient.phone== "" ) {%>
-					<!-- Has eitrher a Phone or Mobile only -->
-					<strong class="badge-teal"><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[Mobile]</span></strong>
-					<strong class="badge-teal"><span class="nl-dce-field" id="span162509825182771" data-nl-expr="[recipient/@phone]">[Phone]</span></strong>. 
-				 <% } else { %> 
-					<!-- Has Phone AND Mobile  -->
-					<span class="lg:hidden"><br/></span>
-					<strong class="badge-teal"><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[Mobile]</span></strong> or
-					<strong class="badge-teal"><span class="nl-dce-field" id="span162509825182771" data-nl-expr="[recipient/@phone]">[Phone]</span></strong>. 
-				<% } %>
+				Your request has been submitted. A Cbus consultant will call you the next business day. Please have your ID on hand when we call, as we’ll need to verify your identify before we can search for your lost or unclaimed super.
 			</p>
-			<div class="mx-auto pt-8 lg:w-2/4">
-				<h4 class="text-2xl font-heavy pb-3">Need to update your phone number?</h4>
-				<p class="text-brand-gray font-400 text-xl">
-					Call <strong>1300 361 784</strong> Mon to Fri from 8am to 8pm AEDT/AEST.
-				</p>
-			</div>
 		  </div>
+	</div>
+
 		</div>
+
 	 </div>
 </div>
+
 
 <div class="bg-brand-blue">
 	<div class="container mx-auto">
@@ -207,8 +201,6 @@
 		</div>
 	</div>
 </div>
-
-
 
 </body>
 </html>
