@@ -242,24 +242,10 @@
 		<div id="confirm" class="flex">
 		  <div class="w-full p-10 bg-white rounded-md text-center">
 			<h2 class="text-3xl font-heavy pb-3">Keeping track of your super</h2>
-			<p class="mx-auto lg:w-2/4 text-brand-gray font-400 text-xl">
-				
-				Before we call you, let’s check we have the right mobile number for you. Is your mobile number 
-
-				<% if (recipient.mobilePhone== "" && recipient.phone== "" ) {%>
-				<!-- Has either a Phone or Mobile only -->
-					<div class="">
-						<strong class="badge-teal"><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[Mobile]</span></strong>
-						<strong class="badge-teal"><span class="nl-dce-field" id="span162509825182771" data-nl-expr="[recipient/@phone]"></span>[Phone]</strong>?
-					</div>
-				 <% } else { %> 
-				<!-- Has Phone AND Mobile  -->
-					<div>
-						<span class="lg:hidden"><br/></span>
-						<strong class="badge-teal"><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[Mobile]</span></strong> or
-						<strong class="badge-teal"><span class="nl-dce-field" id="span162509825182771" data-nl-expr="[recipient/@phone]">[Phone]</span></strong>? 
-					</div>
-				<% } %> 
+			<p class="mx-auto lg:w-2/3 text-brand-gray font-400 text-xl">
+				Before we call you, let’s check we have the right mobile number for you.<br/>
+				Is your mobile number 
+				<strong class="badge-teal mt-3"><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">0404 000 000</span></strong>?
 			</p>
 			<p class="text-center pt-5 text-brand-gray font-400 text-xl">
 				<form class="cb-form">
@@ -282,12 +268,12 @@
 		<div id="show" class="flex">
 			<div class="w-full p-10 bg-white rounded-md text-center">
 				<h2 class="text-3xl font-heavy pb-3">Looks like you’ll have to call us!</h2>
-				  <p class="mx-auto lg:w-2/5  text-brand-gray font-400 text-xl">
+				  <p class="mx-auto lg:w-2/3  text-brand-gray font-400 text-xl">
 					The good news is that you can do two things at once, update your mobile number and at the same time, ask us to check if you have lost or unclaimed super. 
 					<br/><br/>
-					Call <a class="font-bold" target="_blank" 
-					href="tel:1300 361 784">1300 361 784</a>  Mon to Fri from 8am to 8pm AEDT/AEST to speak to a Cbus consultant.
+					Call <a class="font-bold" target="_blank" href="tel:1300 361 784">1300 361 784</a>
 				  </p>
+				  <p class="text-brand-gray font-400 text-xl pt-2">Mon to Fri from 8am to 8pm AEDT/AEST to speak to a Cbus consultant.</p>
 			  </div>
 			</div>
 		</div>
@@ -305,7 +291,7 @@
 <div class="bg-brand-blue">
 	<div class="container mx-auto">
 		<div class="flex">
-			<div class="mx-auto lg:w-2/4 lg:p-10 p-5 rounded-md text-white">
+			<div class="mx-auto lg:w-2/3 lg:p-10 p-5 rounded-md text-white">
 			<h4 class="text-2xl font-heavy pb-3">We’re here to help</h4>
 			<p class="font-400 pb-5">
 				If you have any questions or would like to discuss your options further, we can help get your super sorted. 
@@ -331,7 +317,7 @@
 
 <div class="p-10">
 	<div class="container mx-auto">
-		<div class="mx-auto lg:w-2/4">
+		<div class="mx-auto lg:w-2/3">
 			<p class="text-sm text-gray-500">
 				Cbus’ Trustee: United Super Pty Ltd ABN 46 006 261 623 AFSL 233792 Cbus ABN 75 493 363 262.
 				<br/><br/>
