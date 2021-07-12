@@ -26,8 +26,8 @@ var config = {
         labels: ["0", "JAN", "FEB", "MAR", "APR", "MAY", "JUNE", "JULY", "AUG", "SEP", "OCT", "NOV", "DEC"],
         datasets: [
           {
-              label: 'SMS',
-              data: [-100, 69, 70, 70, 68, 68],
+              label: 'Unsubs',
+              data: [-100, 69, 70, 70, 68, 68, 68],
               fill: false,
               borderColor: 'rgba(255, 255, 255, 0.2)',
               borderWidth: 2,

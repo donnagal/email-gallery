@@ -27,7 +27,7 @@ var config = {
         datasets: [
           {
               label: 'SMS',
-              data: [0, 837, 51, 99, 106, 99],
+              data: [0, 837, 51, 99, 106, 99, 570],
               fill: false,
               borderColor: 'rgba(255, 255, 255, 0.2)',
               borderWidth: 2,
