@@ -244,8 +244,8 @@
 			<h2 class="text-3xl font-heavy pb-3">Keeping track of your super</h2>
 			<p class="mx-auto lg:w-2/3 text-brand-gray font-400 text-xl">
 				Before we call you, let’s check we have the right mobile number for you.<br/>
-				Is your mobile number 
-				<strong class="badge-teal mt-3"><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">0404 000 000</span></strong>?
+				Is this your mobile number ending with
+				<strong class="number badge-teal mt-3"><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[mobilePhone]</span></strong>?
 			</p>
 			<p class="text-center pt-5 text-brand-gray font-400 text-xl">
 				<form class="cb-form">
@@ -338,6 +338,9 @@
 			$("#show").show();
 			$("#confirm").hide();
  		 });
+
+		txt = $.trim($('.number').text());
+		$('.number').text( "### ### " + txt.substring (7, txt.length + 3));
 
 	});
 </script>
