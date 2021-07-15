@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Cbus Super: Webinars </title>
   <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
   <link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
@@ -72,9 +72,11 @@
 			line-height: 2.1;
 			padding: 0 9px;
 		}
-		.overlap-under {
-			z-index: -1;
-			position: relative;
+		.past {
+			background: linear-gradient(to top right, #fff calc(50% - 1px), #d1d5db, #fff calc(50% + 1px) );
+			color: #d1d5db;
+			cursor: pointer;
+			pointer-events: none;
 		}
 		a:hover {
 			opacity: .7;
@@ -152,25 +154,25 @@
   <div class="px-2 mb-4">
 	<div class="flex flex-wrap justify-center -mx-2">
 	  
-	<div class="m-2 text-gray-600 text-sm leading-5 p-4 border border-gray-300 rounded-md">
+	<div class="date m-2 text-gray-600 text-sm leading-5 p-4 border border-gray-300 rounded-md" data-date="2021-08-06">
 		<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz60e2bd675931f482/regform?evuid=zzzz60e2bd67581d2864">
 			<strong class="text-lg">6 August </strong> <br/> 12pm - 12:30pm AEST
 		</a>
 	</div>
 
-	<div class="m-2 text-gray-600 text-sm leading-5 p-4 border border-gray-300 rounded-md">
+	<div class="date m-2 text-gray-600 text-sm leading-5 p-4 border border-gray-300 rounded-md" data-date="2021-08-10">
 		<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz60e2c329da9a4086/regform?evuid=zzzz60e2c32952dc4668">
 			<strong class="text-lg">10 August </strong> <br/> 12pm - 12:30pm AEST
 		</a>
 	</div>
 
-	<div class="m-2 text-gray-600 text-sm leading-5 p-4 border border-gray-300 rounded-md">
+	<div class="date m-2 text-gray-600 text-sm leading-5 p-4 border border-gray-300 rounded-md" data-date="2021-08-20">
 		<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz60e2c32a61594594/regform?evuid=zzzz60e2c329dbe9a727">
 			<strong class="text-lg">20 August </strong> <br/> 12pm - 12:30pm AEST
 		</a>
 	</div>
 
-	<div class="m-2 text-gray-600 text-sm leading-5 p-4 border border-gray-300 rounded-md">
+	<div class="date m-2 text-gray-600 text-sm leading-5 p-4 border border-gray-300 rounded-md" data-date="2021-08-24">
 		<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz60e2c32acdd71598/regform?evuid=zzzz60e2c32a62a5f103">
 			<strong class="text-lg">24 August </strong> <br/> 12pm - 12:30pm AEST
 		</a>
@@ -223,6 +225,32 @@
 	</div>
 </div>
 
+<form class="hidden">
+	<a href="#" data-nl-type="action" data-nl-action="next">Tell me more</a>
+</form>
+
+<script>
+
+$(function() {
+    var currentDate = Date.parse((new Date()).toLocaleDateString());
+
+    $(".date").each(function() {
+        var specifiedDate = $(this).data('date');
+        var date = Date.parse(specifiedDate);
+        
+        if (!isNaN(date) && date == currentDate) {
+            $(this).addClass('today');
+        }
+        else if(!isNaN(date) && currentDate - date > 0) {
+            $(this).addClass('past');
+        }
+        else {
+            $(this).addClass('future');
+        }
+    });
+});
+
+</script>
 
 </body>
 </html>
