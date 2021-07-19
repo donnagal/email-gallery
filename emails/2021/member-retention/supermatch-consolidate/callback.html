@@ -126,10 +126,10 @@
                     <p style="Margin-bottom: 10px;text-align: left;color: #666;">
                       Hi <%= recipient.firstName %>,<br/><br/>
                      <strong>
-                      Could you have lost or unclaimed super? If you’ve changed jobs or moved to a new house, your old super fund(s) may have lost touch with you. As a result, they may have transferred your super to the Australian Taxation Office (ATO).
+                      Could you have lost or unclaimed super? If you’ve changed jobs or moved to a new house, your old super fund may have lost touch with you. As a result, they may have transferred your super to the Australian Taxation Office (ATO).
                      </strong>
                       <br/><br/>
-                      Cbus can help you check if you have lost or unclaimed super sitting with the ATO. It’s over the phone and you don’t have fill out any paperwork, we’ll do all that for you. Simply click on the link below to request a call from a Cbus consultant.           
+                      Cbus can help you check if you have lost or unclaimed super sitting with the ATO. It’s over the phone and you don’t have to fill out any paperwork, we’ll do all that for you. Simply click on the link below to request a call from a Cbus consultant.           
                   </p>
                   </div>
               </div>
@@ -248,9 +248,8 @@
               
               <!-- text -->
               <p style="Margin-bottom: 20px;text-align: left;color: #666;font-size: 14px;line-height: 22px;font-family: montserrat, Verdana, arial;font-weight:500;">
-                Alternatively, if you know the details of your other super fund(s) i.e. fund name and member number, you can do it yourself through 
+                Alternatively, if you know the details of your other super fund i.e. fund name and member number, you can do it yourself through 
                 <a class="hover" target="_blank" style="color: #0a5490; font-weight: bold;"  href="https://www.cbussuper.com.au/portals/super-account/consolidate-my-super.super?utm_source=adobe-campaign&utm_medium=edm&utm_campaign=supermatch&utm_content=cta">your online account</a>.
-                Once you have logged in, click on <strong>Consolidate my super</strong> located under 'Popular Tasks'. 
               </p>
               
               </div>
@@ -292,7 +291,7 @@
           </h2>
           <!-- text -->
           <p style="Margin-bottom: 5px;text-align: left;color: #ffffff;">
-            If you have any questions about super or your account, we can help you answer them.             
+            If you have any questions about super or your account, we can help.             
           </p>
 
           <!-- Inner spacer -->
@@ -308,8 +307,8 @@
                   <img role="presentation" alt="" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/1a254af4f81c59cb96d4213b1615588d.png">
                 </td>
                 <td style="font-family: montserrat, Verdana, arial;color: white;">
-                  Call us on <a style="color: white; font-weight: bold;" href="tel:1300361784">1300 361 784</a> Monday to 
-                  Friday from 8am to 8pm AEST/AEDT<br>
+                  Call us on <a style="color: white; font-weight: bold;" href="tel:1300361784">1300 361 784</a> 
+                  <br/>Monday to Friday from 8am to 8pm AEST/AEDT<br>
                 </td>
               </tr>
               <tr>
@@ -438,7 +437,10 @@
                 href="https://www.cbussuper.com.au/content/dam/cbus/files/forms-publications/general-information/Joint-Financial-Services-Guide.pdf">Financial services guide</a>.
             </p>
             <p class="size-11" style="Margin-top: 0;Margin-bottom: 20px;" lang="x-size-11">
-               <%@ include view='UnsubscriptionLink'%>
+              <a class="hover" target="_blank" style="color: #b1b1b1; font-weight: bold;" 
+                href="<%@ include option='NmsServer_URL' %>/webApp/edm_unsub?id=<%=escapeUrl(recipient.cryptedId)%>" _label="Opt-out link" _type="optout">
+                Unsubscribe
+              </a>
             </p>
           </div>
       </div>
