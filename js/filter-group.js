@@ -27,12 +27,26 @@ $(function() {
     $(".btn-member .fa-times-circle").toggleClass('hidden');
     $(".btn-member .fa-check-circle").toggleClass('hidden');
   });
+  $(".btn-notifaction").click(function(){
+    $(".card-notifaction").toggleClass('hidden');
+    $(this).toggleClass('bg-red');
+    $(this).toggleClass('bg-green');
+    $(".btn-notifaction .fa-times-circle").toggleClass('hidden');
+    $(".btn-notifaction .fa-check-circle").toggleClass('hidden');
+  });
   $(".btn-webinar").click(function(){
     $(".card-webinar").toggleClass('hidden');
     $(this).toggleClass('bg-red');
     $(this).toggleClass('bg-green');
     $(".btn-webinar .fa-times-circle").toggleClass('hidden');
     $(".btn-webinar .fa-check-circle").toggleClass('hidden');
+  });
+  $(".btn-gle").click(function(){
+    $(".card-gle").toggleClass('hidden');
+    $(this).toggleClass('bg-red');
+    $(this).toggleClass('bg-green');
+    $(".btn-gle .fa-times-circle").toggleClass('hidden');
+    $(".btn-gle .fa-check-circle").toggleClass('hidden');
   });
   $(".btn-template").click(function(){
     $(".card-template").toggleClass('hidden');
