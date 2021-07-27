@@ -27,12 +27,12 @@ $(function() {
     $(".btn-member .fa-times-circle").toggleClass('hidden');
     $(".btn-member .fa-check-circle").toggleClass('hidden');
   });
-  $(".btn-notifaction").click(function(){
-    $(".card-notifaction").toggleClass('hidden');
+  $(".btn-notification").click(function(){
+    $(".card-notification").toggleClass('hidden');
     $(this).toggleClass('bg-red');
     $(this).toggleClass('bg-green');
-    $(".btn-notifaction .fa-times-circle").toggleClass('hidden');
-    $(".btn-notifaction .fa-check-circle").toggleClass('hidden');
+    $(".btn-notification .fa-times-circle").toggleClass('hidden');
+    $(".btn-notification .fa-check-circle").toggleClass('hidden');
   });
   $(".btn-webinar").click(function(){
     $(".card-webinar").toggleClass('hidden');
