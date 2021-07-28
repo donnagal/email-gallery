@@ -95,7 +95,7 @@
     "filter": "Jun-21",
     "color": "purple",
     "group": "webinar",
-    "gallery": "",
+    "gallery": "hide",
     "time": "4:00:32 PM",
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/rif-june/reminder"
   },
@@ -6918,5 +6918,25 @@
     "gallery": "",
     "time": "",
     "url": "https://files.reallygoodemails.com/emails/matthew-your-november-skymiles-statement-is-here.png"
+  },
+  {
+    "Label": "",
+    "name": "dinnerly win back",
+    "sent": 0,
+    "opens": 0,
+    "openrate": 0,
+    "clicks": 0,
+    "clickrate": 0,
+    "subject": "",
+    "date": 0,
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "",
+    "filter": "",
+    "color": "black",
+    "group": "inspo",
+    "gallery": "",
+    "time": "",
+    "url": "https://assets.mailcharts.com/emails/3402bb1c-85fb-d34d-306a-454979adb6d7/desktop.png"
   }
 ]
