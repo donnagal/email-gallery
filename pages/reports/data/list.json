@@ -1,6 +1,5 @@
 [
   {
-    "Label": "Member Contribution Notification Email - 31/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 6172,
     "opens": 3348,
@@ -20,7 +19,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "Member Contribution Notification Email - 30/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 7456,
     "opens": 3879,
@@ -40,7 +38,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "20210729 Cbus Learn Invite batch 1",
     "name": "Cbus Learn Invite batch 1",
     "sent": 15980,
     "opens": 7000,
@@ -60,7 +57,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-1/invite"
   },
   {
-    "Label": "20210729 Other Webinar Reminder 2",
     "name": "Other Webinar Reminder 2",
     "sent": 14679,
     "opens": 6555,
@@ -80,7 +76,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/july/reminder-2"
   },
   {
-    "Label": "Member Contribution Notification Email - 29/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 8043,
     "opens": 4297,
@@ -100,7 +95,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "Member Contribution Notification Email - 28/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 6682,
     "opens": 3611,
@@ -120,7 +114,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "20210727 Other Webinar Invite",
     "name": "Other Webinar Invite",
     "sent": 773,
     "opens": 491,
@@ -140,7 +133,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-cbus-learn-2/invite"
   },
   {
-    "Label": "2021-JUL -  FYOB 4 month Consolidate Super  - [56+]",
     "name": "FYOB 4 month Consolidate Super  - [56+]",
     "sent": 104,
     "opens": 53,
@@ -160,7 +152,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-cbus-learn-2/invite"
   },
   {
-    "Label": "2021-JUL -  FYOB 4 month Consolidate Super  - [40-55yrs]",
     "name": "",
     "sent": 228,
     "opens": 114,
@@ -180,7 +171,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/july/invite"
   },
   {
-    "Label": "2021-JUL -  FYOB 4 month Consolidate Super  - [25-39yrs]",
     "name": "FYOB 4 month Consolidate Super  - [25-39yrs]",
     "sent": 523,
     "opens": 246,
@@ -200,7 +190,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/4-month/56+"
   },
   {
-    "Label": "2021-JUL -  FYOB 4 month Consolidate Super  - [Under 25]",
     "name": "FYOB 4 month Consolidate Super  - [Under 25]",
     "sent": 903,
     "opens": 339,
@@ -220,7 +209,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/4-month/under-25"
   },
   {
-    "Label": "20210727 Abandon Cart FINAL",
     "name": "Abandon Cart",
     "sent": 259,
     "opens": 170,
@@ -240,7 +228,6 @@
     "url": "https://tinyurl.com/abandon-cart-email"
   },
   {
-    "Label": "Member Contribution Notification Email - 27/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 71,
     "opens": 40,
@@ -260,7 +247,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "20210727 Supermatch cleanup edm MAR - JULY 2020 consenters",
     "name": "Supermatch callback",
     "sent": 4980,
     "opens": 1995,
@@ -280,7 +266,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback"
   },
   {
-    "Label": "20210727 Umbrella Insurance GLE reminder - 15 months eDM",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 532,
     "opens": 204,
@@ -300,7 +285,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "20210726 Supermatch cleanup edm AUG20 consenters",
     "name": "Supermatch callback",
     "sent": 756,
     "opens": 326,
@@ -320,7 +304,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback"
   },
   {
-    "Label": "20210726 Supermatch cleanup edm OCT20 consenters",
     "name": "Supermatch callback",
     "sent": 1346,
     "opens": 600,
@@ -340,7 +323,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback"
   },
   {
-    "Label": "20210726 Supermatch cleanup edm SEPT20 consenters",
     "name": "Supermatch callback",
     "sent": 1064,
     "opens": 440,
@@ -360,7 +342,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback"
   },
   {
-    "Label": "20210726 Supermatch cleanup edm NOV20 consenters",
     "name": "Supermatch callback",
     "sent": 1455,
     "opens": 623,
@@ -380,7 +361,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback"
   },
   {
-    "Label": "20210726 Retirement Webinar Reminder 2 batch 2",
     "name": "Retirement Webinar Reminder 2 batch 2",
     "sent": 14663,
     "opens": 6406,
@@ -400,7 +380,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-2/reminder-2"
   },
   {
-    "Label": "Member Contribution Notification Email - 25/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 8493,
     "opens": 4757,
@@ -420,7 +399,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "Member Contribution Notification Email - 24/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 10076,
     "opens": 5440,
@@ -440,7 +418,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "20210723 Claiming Tax Deduction",
     "name": "Claiming a Tax dedution",
     "sent": 18369,
     "opens": 12369,
@@ -460,7 +437,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/claiming-tax-deduction/"
   },
   {
-    "Label": "20210723 Claiming Tax Deduction [67+]",
     "name": "Claiming a Tax dedution",
     "sent": 399,
     "opens": 287,
@@ -480,7 +456,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/claiming-tax-deduction/"
   },
   {
-    "Label": "Member Contribution Notification Email - 23/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 7678,
     "opens": 4102,
@@ -500,7 +475,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "20210723 Claiming Tax Deduction [67+]",
     "name": "Claiming a Tax dedution",
     "sent": 8569,
     "opens": 5700,
@@ -520,7 +494,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/claiming-tax-deduction/"
   },
   {
-    "Label": "20210723 Claiming Tax Deduction",
     "name": "Claiming a Tax dedution",
     "sent": 794,
     "opens": 578,
@@ -540,7 +513,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/claiming-tax-deduction/"
   },
   {
-    "Label": "20210723 Supermatch cleanup edm JAN21 and DEC20 consenters",
     "name": "Supermatch callback",
     "sent": 3067,
     "opens": 1388,
@@ -560,7 +532,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback"
   },
   {
-    "Label": "20210722 Supermatch cleanup edm FEB21 consenters",
     "name": "Supermatch callback",
     "sent": 2152,
     "opens": 981,
@@ -580,7 +551,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback"
   },
   {
-    "Label": "Member Contribution Notification Email - 22/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 8464,
     "opens": 4494,
@@ -600,7 +570,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "20210721 Supermatch cleanup edm MAR consenters",
     "name": "Supermatch callback",
     "sent": 1949,
     "opens": 838,
@@ -620,7 +589,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback"
   },
   {
-    "Label": "20210721 Supermatch cleanup edm APR MAY consenters wave 1",
     "name": "Supermatch callback",
     "sent": 3660,
     "opens": 1594,
@@ -640,7 +608,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback"
   },
   {
-    "Label": "Member Contribution Notification Email - 21/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 7202,
     "opens": 3799,
@@ -660,7 +627,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "20210721 Beneficiaries eDM Final",
     "name": "Beneficiaries (monthly)",
     "sent": 4190,
     "opens": 2058,
@@ -680,7 +646,6 @@
     "url": "https://ol2016.capture.litmuscdn.com/0d0d4e7e-d24d-4859-a456-60dfe12fb7b5/results/ol2016-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210720 Abandon Cart FINAL",
     "name": "Abandon Cart",
     "sent": 241,
     "opens": 157,
@@ -700,7 +665,6 @@
     "url": "https://tinyurl.com/abandon-cart-email"
   },
   {
-    "Label": "20210721 - EOFY performance eDM Day 4",
     "name": "EOFY performance eDM Day 4",
     "sent": 149544,
     "opens": 64754,
@@ -720,7 +684,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/eofy-performance/"
   },
   {
-    "Label": "20210720 Supermatch cleanup edm Jun consenters wave 2 Subject C",
     "name": "Supermatch callback",
     "sent": 648,
     "opens": 337,
@@ -740,7 +703,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback"
   },
   {
-    "Label": "20210720 Supermatch cleanup edm Jun consenters wave 2 Subject B",
     "name": "Supermatch callback",
     "sent": 649,
     "opens": 291,
@@ -760,7 +722,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback"
   },
   {
-    "Label": "20210720 Supermatch cleanup edm Jun consenters wave 2 Subject A",
     "name": "Supermatch callback",
     "sent": 639,
     "opens": 296,
@@ -780,7 +741,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback"
   },
   {
-    "Label": "20210720 Supermatch cleanup edm Jun consenters wave 1 Subject C",
     "name": "Supermatch callback",
     "sent": 199,
     "opens": 99,
@@ -800,7 +760,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback"
   },
   {
-    "Label": "20210720 Supermatch cleanup edm Jun consenters wave 1 Subject B",
     "name": "Supermatch callback",
     "sent": 198,
     "opens": 94,
@@ -820,7 +779,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback"
   },
   {
-    "Label": "20210720 Supermatch cleanup edm Jun consenters wave 1 Subject A",
     "name": "Supermatch callback",
     "sent": 200,
     "opens": 80,
@@ -840,7 +798,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback"
   },
   {
-    "Label": "Member Contribution Notification Email - 20/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 10478,
     "opens": 5686,
@@ -860,7 +817,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "20210720 Umbrella Insurance GLE reminder - 15 months eDM",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 334,
     "opens": 160,
@@ -880,7 +836,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "20210720 Cbus Learn Reminder batch 2",
     "name": "Cbus Learn Reminder batch 2",
     "sent": 11809,
     "opens": 5228,
@@ -900,7 +855,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-cbus-learn-2/reminder"
   },
   {
-    "Label": "20210720 - EOFY performance eDM Day 3",
     "name": "EOFY performance eDM Day 3",
     "sent": 122481,
     "opens": 53110,
@@ -920,7 +874,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/eofy-performance/"
   },
   {
-    "Label": "20210719 Retirement Webinar Reminder 1 batch 2",
     "name": "Retirement Webinar Reminder 1 batch 2",
     "sent": 14545,
     "opens": 6350,
@@ -940,7 +893,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-2/reminder-1"
   },
   {
-    "Label": "20210719 - EOFY performance eDM Day 2",
     "name": "EOFY performance eDM Day 2",
     "sent": 96197,
     "opens": 43403,
@@ -960,7 +912,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/eofy-performance/"
   },
   {
-    "Label": "Member Contribution Notification Email - 17/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 10452,
     "opens": 5874,
@@ -980,7 +931,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "Member Contribution Notification Email - 16/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 7136,
     "opens": 3851,
@@ -1000,7 +950,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "20210716 - EOFY performance eDM Day 1",
     "name": "EOFY performance eDM Day 1",
     "sent": 189683,
     "opens": 80507,
@@ -1020,7 +969,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/eofy-performance/"
   },
   {
-    "Label": "20210714 Cbus Learn Invite batch 2",
     "name": "Cbus Learn Invite batch 2",
     "sent": 11845,
     "opens": 5445,
@@ -1040,7 +988,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-cbus-learn-2/invite"
   },
   {
-    "Label": "20210714 SPC Email monthly to new members July",
     "name": "SPC Monthly Send (July)",
     "sent": 5374,
     "opens": 3543,
@@ -1060,7 +1007,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10_mbr-super-payment-checker.html"
   },
   {
-    "Label": "20210714 Abandon Cart FINAL",
     "name": "Abandon Cart",
     "sent": 238,
     "opens": 160,
@@ -1080,7 +1026,6 @@
     "url": "https://tinyurl.com/abandon-cart-email"
   },
   {
-    "Label": "20210714 Retirement Webinar Reminder 2 batch 1",
     "name": "Retirement Webinar Reminder 2 batch 1",
     "sent": 14600,
     "opens": 6516,
@@ -1100,7 +1045,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-1/reminder-2"
   },
   {
-    "Label": "Member Contribution Notification Email - 14/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 8495,
     "opens": 4612,
@@ -1120,7 +1064,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "20210713 Retirement Webinar Invite batch 2",
     "name": "Retirement Webinar Invite batch 2",
     "sent": 14694,
     "opens": 7213,
@@ -1140,7 +1083,6 @@
     "url": ""
   },
   {
-    "Label": "Member Contribution Notification Email - 13/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 85,
     "opens": 48,
@@ -1160,7 +1102,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "Copy of 20210713 Umbrella Insurance GLE reminder - 12 months eDM (b)",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months",
     "sent": 1138,
     "opens": 499,
@@ -1180,7 +1121,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "Copy of 20210713 Umbrella Insurance GLE reminder - 12 months eDM (a)",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months",
     "sent": 1136,
     "opens": 539,
@@ -1200,7 +1140,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "Copy of 20210713 Umbrella Insurance GLE reminder - 9 months eDM (b)",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months",
     "sent": 1676,
     "opens": 857,
@@ -1220,7 +1159,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "Copy of 20210713 Umbrella Insurance GLE reminder - 9 months eDM (a)",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months",
     "sent": 1668,
     "opens": 853,
@@ -1240,7 +1178,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "20210713 Umbrella Insurance GLE reminder - 15 months eDM",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months",
     "sent": 292,
     "opens": 151,
@@ -1260,7 +1197,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "Member Contribution Notification Email - 11/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 8125,
     "opens": 4353,
@@ -1280,7 +1216,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "Member Contribution Notification Email - 10/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 14872,
     "opens": 8028,
@@ -1300,7 +1235,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "Member Contribution Notification Email - 09/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 11384,
     "opens": 5984,
@@ -1320,7 +1254,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "Member Contribution Notification Email - 08/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 10554,
     "opens": 5428,
@@ -1340,7 +1273,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "20210708 Other Webinar Reminder 1",
     "name": "Other Webinar Reminder 1",
     "sent": 14710,
     "opens": 6913,
@@ -1360,7 +1292,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/july/reminder"
   },
   {
-    "Label": "20210707 Retirement Webinar Reminder 1 batch 1",
     "name": "Retirement Webinar Reminder 1 batch 1",
     "sent": 14605,
     "opens": 6264,
@@ -1380,7 +1311,6 @@
     "url": ""
   },
   {
-    "Label": "Member Contribution Notification Email - 07/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 12125,
     "opens": 6457,
@@ -1400,7 +1330,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "20210706 Cbus Learn Reminder batch 1",
     "name": "Cbus Learn Reminder batch 1",
     "sent": 11810,
     "opens": 5497,
@@ -1420,7 +1349,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-cbus-learn/reminder"
   },
   {
-    "Label": "20210706 Abandon Cart FINAL",
     "name": "Abandon Cart",
     "sent": 258,
     "opens": 176,
@@ -1440,7 +1368,6 @@
     "url": "https://tinyurl.com/abandon-cart-email"
   },
   {
-    "Label": "Member Contribution Notification Email - 06/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 83,
     "opens": 55,
@@ -1460,7 +1387,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "20210706 Umbrella Insurance GLE reminder - 15 months eDM",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 267,
     "opens": 132,
@@ -1480,7 +1406,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "Member Contribution Notification Email - 04/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 14150,
     "opens": 7762,
@@ -1500,7 +1425,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "Member Contribution Notification Email - 03/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 21664,
     "opens": 11489,
@@ -1520,7 +1444,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "Member Contribution Notification Email - 02/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 14960,
     "opens": 7843,
@@ -1540,7 +1463,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "20210701 Retirement Webinar Invite batch 1",
     "name": "Retirement Webinar Invite batch 1",
     "sent": 14784,
     "opens": 7201,
@@ -1560,7 +1482,6 @@
     "url": ""
   },
   {
-    "Label": "Member Contribution Notification Email - 01/07/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 1,
     "opens": 0,
@@ -1580,7 +1501,1241 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "Member Contribution Notification Email - 01/07/21",
+    "name": "Consolidate my super",
+    "sent": 66056,
+    "opens": 27664,
+    "openrate": 42,
+    "clicks": 1096,
+    "clickrate": 2,
+    "subject": "<Name>, bringing your super together is as easy as 1, 2, 3 \\u001a",
+    "date": "4/06/2021",
+    "unsub": 50,
+    "unsubrate": 0.1,
+    "id": "DM16801",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "member",
+    "gallery": "hide",
+    "time": "4:51:52 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/"
+  },
+  {
+    "name": "Cbus Learn Invite",
+    "sent": 11917,
+    "opens": 5644,
+    "openrate": 47,
+    "clicks": 183,
+    "clickrate": 2,
+    "subject": "[Webinar] Super contributions",
+    "date": "30/06/2021",
+    "unsub": 16,
+    "unsubrate": 0.1,
+    "id": "DM17261",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "hide",
+    "time": "8:01:32 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-cbus-learn/invite"
+  },
+  {
+    "name": "Umbrella Insurance GLE Reminder - 15 months",
+    "sent": 215,
+    "opens": 91,
+    "openrate": 43,
+    "clicks": 19,
+    "clickrate": 9,
+    "subject": "<Name> - Your insurance cover is about to be cancelled",
+    "date": "29/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM17177",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "gle",
+    "gallery": "hide",
+    "time": "12:45:22 PM",
+    "url": "https://tinyurl.com/e-umbrella-insurance"
+  },
+  {
+    "name": "202103 Abandon Cart",
+    "sent": 258,
+    "opens": 164,
+    "openrate": 64,
+    "clicks": 38,
+    "clickrate": 15,
+    "subject": "<Name>, good news - we've saved your application.",
+    "date": "29/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM17180",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "member",
+    "gallery": "hide",
+    "time": "4:00:11 PM",
+    "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
+  },
+  {
+    "name": "RIF Reminder",
+    "sent": 8069,
+    "opens": 4247,
+    "openrate": 53,
+    "clicks": 222,
+    "clickrate": 3,
+    "subject": "1 day left to register for your exclusive member webinar",
+    "date": "28/06/2021",
+    "unsub": 17,
+    "unsubrate": 0.1,
+    "id": "DM17170",
+    "filter": "Jun-21",
+    "color": "purple",
+    "group": "webinar",
+    "gallery": "hide",
+    "time": "4:00:32 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/rif-june/reminder"
+  },
+  {
+    "name": "Other Webinar Reminder 2",
+    "sent": 7007,
+    "opens": 3543,
+    "openrate": 51,
+    "clicks": 146,
+    "clickrate": 2,
+    "subject": "<Name>,  last chance to register.",
+    "date": "28/06/2021",
+    "unsub": 10,
+    "unsubrate": 0.1,
+    "id": "DM17071",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "hide",
+    "time": "6:06:30 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/june/reminder-2"
+  },
+  {
+    "name": "Other Webinar Invite",
+    "sent": 14741,
+    "opens": 6117,
+    "openrate": 42,
+    "clicks": 150,
+    "clickrate": 1,
+    "subject": "<Name>, Learn how your super can work better for you",
+    "date": "29/06/2021",
+    "unsub": 7,
+    "unsubrate": 0.1,
+    "id": "DM17233",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "",
+    "time": "1:56:43 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/june/invite"
+  },
+  {
+    "name": "Retirement Webinars Reminder 2 June (Batch 2)",
+    "sent": 14574,
+    "opens": 6377,
+    "openrate": 44,
+    "clicks": 158,
+    "clickrate": 1,
+    "subject": "<Name> there’s 1 day left to reserve your spot",
+    "date": "23/06/2021",
+    "unsub": 39,
+    "unsubrate": 0.1,
+    "id": "DM17046",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "hide",
+    "time": "4:01:06 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-2/reminder-2"
+  },
+  {
+    "name": "Umbrella Insurance GLE Reminder - 15 months",
+    "sent": 272,
+    "opens": 138,
+    "openrate": 51,
+    "clicks": 39,
+    "clickrate": 14,
+    "subject": "<Name> - Your insurance cover is about to be cancelled",
+    "date": "22/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM17048",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "gle",
+    "gallery": "hide",
+    "time": "12:45:22 PM",
+    "url": "https://tinyurl.com/e-umbrella-insurance"
+  },
+  {
+    "name": "RIF Reminder Invite",
+    "sent": 8228,
+    "opens": 5000,
+    "openrate": 61,
+    "clicks": 461,
+    "clickrate": 6,
+    "subject": "You’re invited to attend an exclusive member webinar",
+    "date": "22/06/2021",
+    "unsub": 10,
+    "unsubrate": 0.1,
+    "id": "DM17108",
+    "filter": "Jun-21",
+    "color": "purple",
+    "group": "webinar",
+    "gallery": "",
+    "time": "8:01:03 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/rif-june/invite"
+  },
+  {
+    "name": "Cbus Learn - June reminder - Batch 2",
+    "sent": 6889,
+    "opens": 3289,
+    "openrate": 48,
+    "clicks": 158,
+    "clickrate": 2,
+    "subject": "<Name>, there’s still time to register",
+    "date": "22/06/2021",
+    "unsub": 13,
+    "unsubrate": 0.1,
+    "id": "DM17076",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "hide",
+    "time": "10:04:12 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-cbus-learn-2/reminder"
+  },
+  {
+    "name": "Beneficiaries (monthly)",
+    "sent": 4894,
+    "opens": 2269,
+    "openrate": 46,
+    "clicks": 480,
+    "clickrate": 10,
+    "subject": "<Name>, it's time to update your beneficiaries",
+    "date": "22/06/2021",
+    "unsub": 13,
+    "unsubrate": 0.1,
+    "id": "DM17078",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "member",
+    "gallery": "hide",
+    "time": "12:00:33 PM",
+    "url": "https://tinyurl.com/beneficiaries-monthly-email"
+  },
+  {
+    "name": "Abandon Cart",
+    "sent": 224,
+    "opens": 134,
+    "openrate": 60,
+    "clicks": 33,
+    "clickrate": 15,
+    "subject": "<Name>, good news - we've saved your application.",
+    "date": "22/06/2021",
+    "unsub": 2,
+    "unsubrate": 1,
+    "id": "DM17051",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "member",
+    "gallery": "hide",
+    "time": "5:20:10 PM",
+    "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
+  },
+  {
+    "name": "SIS Late Payments",
+    "sent": 14,
+    "opens": 7,
+    "openrate": 58,
+    "clicks": 0,
+    "clickrate": 0,
+    "subject": "We’re sorry, your 1 July payment may be a day late",
+    "date": "18/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16972",
+    "filter": "Jun-21",
+    "color": "purple",
+    "group": "member",
+    "gallery": "",
+    "time": "12:00:18 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/comms/sis-late-payment/"
+  },
+  {
+    "name": "Retirement Webinars Reminder-1 (Batch 2)",
+    "sent": 14550,
+    "opens": 6271,
+    "openrate": 43,
+    "clicks": 185,
+    "clickrate": 1,
+    "subject": "<Name>, spots are filling fast. Register now.",
+    "date": "17/06/2021",
+    "unsub": 30,
+    "unsubrate": 0.1,
+    "id": "DM17040",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "hide",
+    "time": "3:32:35 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-1/invite"
+  },
+  {
+    "name": "Other Webinar Reminder 1",
+    "sent": 6703,
+    "opens": 2898,
+    "openrate": 43,
+    "clicks": 90,
+    "clickrate": 1,
+    "subject": "You’re invited to attend our education webinars",
+    "date": "17/06/2021",
+    "unsub": 16,
+    "unsubrate": 0.1,
+    "id": "DM16998",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "hide",
+    "time": "8:00:36 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/june/reminder"
+  },
+  {
+    "name": "Cbus Learn retirement invite [Batch 2]",
+    "sent": 6977,
+    "opens": 3447,
+    "openrate": 49,
+    "clicks": 200,
+    "clickrate": 3,
+    "subject": "Thinking about retirement?",
+    "date": "16/06/2021",
+    "unsub": 9,
+    "unsubrate": 0.1,
+    "id": "DM16989",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "hide",
+    "time": "8:00:37 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-cbus-learn/reminder"
+  },
+  {
+    "name": "Umbrella Insurance GLE Reminder - 9&12 months",
+    "sent": 3420,
+    "opens": 1573,
+    "openrate": 46,
+    "clicks": 308,
+    "clickrate": 9,
+    "subject": "Your insurance may stop if you don't act",
+    "date": "15/06/2021",
+    "unsub": 1,
+    "unsubrate": 0.1,
+    "id": "DM16968",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "gle",
+    "gallery": "hide",
+    "time": "12:45:46 PM",
+    "url": "https://tinyurl.com/e-umbrella-insurance"
+  },
+  {
+    "name": "Umbrella Insurance GLE Reminder - 9&12 months",
+    "sent": 3413,
+    "opens": 1612,
+    "openrate": 47,
+    "clicks": 296,
+    "clickrate": 9,
+    "subject": "<Name> - Your insurance may stop if you don’t act",
+    "date": "15/06/2021",
+    "unsub": 6,
+    "unsubrate": 0.1,
+    "id": "DM16969",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "gle",
+    "gallery": "hide",
+    "time": "12:45:41 PM",
+    "url": "https://tinyurl.com/e-umbrella-insurance"
+  },
+  {
+    "name": "Umbrella Insurance GLE Reminder - 15 months",
+    "sent": 322,
+    "opens": 161,
+    "openrate": 50,
+    "clicks": 38,
+    "clickrate": 12,
+    "subject": "<Name> - Your insurance cover is about to be cancelled",
+    "date": "15/06/2021",
+    "unsub": 1,
+    "unsubrate": 0.1,
+    "id": "DM16940",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "gle",
+    "gallery": "hide",
+    "time": "12:45:25 PM",
+    "url": "https://tinyurl.com/e-umbrella-insurance"
+  },
+  {
+    "name": "Umbrella Insurance GLE Reminder - 9&12 months",
+    "sent": 855,
+    "opens": 387,
+    "openrate": 45,
+    "clicks": 63,
+    "clickrate": 7,
+    "subject": "Your insurance may stop if you don't act",
+    "date": "15/06/2021",
+    "unsub": 4,
+    "unsubrate": 0.1,
+    "id": "DM16970",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "gle",
+    "gallery": "hide",
+    "time": "12:45:52 PM",
+    "url": "https://tinyurl.com/e-umbrella-insurance"
+  },
+  {
+    "name": "Umbrella Insurance GLE Reminder - 9&12 months",
+    "sent": 858,
+    "opens": 382,
+    "openrate": 45,
+    "clicks": 62,
+    "clickrate": 7,
+    "subject": "<Name> - Your insurance may stop if you don’t act",
+    "date": "15/06/2021",
+    "unsub": 5,
+    "unsubrate": 1,
+    "id": "DM16971",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "gle",
+    "gallery": "hide",
+    "time": "12:45:49 PM",
+    "url": "https://tinyurl.com/e-umbrella-insurance"
+  },
+  {
+    "name": "Retirement Webinars Reminder 2",
+    "sent": 14513,
+    "opens": 6092,
+    "openrate": 42,
+    "clicks": 155,
+    "clickrate": 1,
+    "subject": "<Name> there’s still time to reserve your spot",
+    "date": "15/06/2021",
+    "unsub": 43,
+    "unsubrate": 0.1,
+    "id": "DM16674",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "hide",
+    "time": "12:00:39 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-1/reminder-2"
+  },
+  {
+    "name": "Abandon Cart",
+    "sent": 219,
+    "opens": 150,
+    "openrate": 69,
+    "clicks": 47,
+    "clickrate": 22,
+    "subject": "<Name>, good news - we've saved your application.",
+    "date": "15/06/2021",
+    "unsub": 3,
+    "unsubrate": 1,
+    "id": "DM16943",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "member",
+    "gallery": "hide",
+    "time": "4:00:11 PM",
+    "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
+  },
+  {
+    "name": "Women in Super Reminder",
+    "sent": 126,
+    "opens": 64,
+    "openrate": 52,
+    "clicks": 8,
+    "clickrate": 7,
+    "subject": "Registrations are still open for our Women and Super webinar",
+    "date": "10/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16890",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "",
+    "time": "2:30:23 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/super-women/may/invite"
+  },
+  {
+    "name": "Retirement invite (Batch 2)",
+    "sent": 14746,
+    "opens": 6985,
+    "openrate": 47,
+    "clicks": 296,
+    "clickrate": 2,
+    "subject": "<Name>, thinking about retirement?",
+    "date": "10/06/2021",
+    "unsub": 19,
+    "unsubrate": 0.1,
+    "id": "DM16906",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "hide",
+    "time": "8:00:36 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-2/invite"
+  },
+  {
+    "name": "Abandon Cart",
+    "sent": 200,
+    "opens": 125,
+    "openrate": 63,
+    "clicks": 37,
+    "clickrate": 19,
+    "subject": "<Name>, good news - we've saved your application.",
+    "date": "9/06/2021",
+    "unsub": 2,
+    "unsubrate": 1,
+    "id": "DM16604",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "member",
+    "gallery": "hide",
+    "time": "4:00:12 PM",
+    "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
+  },
+  {
+    "name": "Umbrella Insurance GLE Reminder - 15 months",
+    "sent": 140,
+    "opens": 70,
+    "openrate": 50,
+    "clicks": 10,
+    "clickrate": 7,
+    "subject": "<Name> - Your insurance cover is about to be cancelled",
+    "date": "8/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16767",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "gle",
+    "gallery": "hide",
+    "time": "12:45:22 PM",
+    "url": "https://tinyurl.com/e-umbrella-insurance"
+  },
+  {
+    "name": "SPC Monthly Send (June)",
+    "sent": 6113,
+    "opens": 3819,
+    "openrate": 63,
+    "clicks": 252,
+    "clickrate": 4,
+    "subject": "Unpaid Super Services - Member Data Opt Out Notice",
+    "date": "8/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16692",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "member",
+    "gallery": "hide",
+    "time": "1:43:22 PM",
+    "url": "https://email-gallery.netlify.app/emails/2020/2020-10_mbr-super-payment-checker"
+  },
+  {
+    "name": "SIS Late Payments",
+    "sent": 1081,
+    "opens": 787,
+    "openrate": 73,
+    "clicks": 26,
+    "clickrate": 2,
+    "subject": "We’re sorry, your 1 July payment may be a day late",
+    "date": "8/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16765",
+    "filter": "Jun-21",
+    "color": "purple",
+    "group": "member",
+    "gallery": "hide",
+    "time": "12:00:21 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/comms/sis-late-payment/"
+  },
+  {
+    "name": "Cbus Learn - Reminder",
+    "sent": 6940,
+    "opens": 3294,
+    "openrate": 47,
+    "clicks": 164,
+    "clickrate": 2,
+    "subject": "<Name>, there’s still time to register",
+    "date": "8/06/2021",
+    "unsub": 11,
+    "unsubrate": 0.1,
+    "id": "DM16860",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "hide",
+    "time": "4:00:30 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-cbus-learn/reminder"
+  },
+  {
+    "name": "Retirement Reminder June",
+    "sent": 14549,
+    "opens": 6407,
+    "openrate": 44,
+    "clicks": 211,
+    "clickrate": 1,
+    "subject": "<Name>, spots are filling fast. Register now.",
+    "date": "7/06/2021",
+    "unsub": 39,
+    "unsubrate": 0.1,
+    "id": "DM16670",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "hide",
+    "time": "8:00:39 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-1/reminder-2"
+  },
+  {
+    "name": "Women in Super Invite",
+    "sent": 139,
+    "opens": 83,
+    "openrate": 61,
+    "clicks": 16,
+    "clickrate": 12,
+    "subject": "It’s time to take control of your future",
+    "date": "4/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16788",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "hide",
+    "time": "4:59:33 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/super-women/may/invite"
+  },
+  {
+    "name": "Other Webinar Invite",
+    "sent": 7268,
+    "opens": 3397,
+    "openrate": 47,
+    "clicks": 140,
+    "clickrate": 2,
+    "subject": "You’re invited to attend our education webinars",
+    "date": "3/06/2021",
+    "unsub": 24,
+    "unsubrate": 0.1,
+    "id": "DM16683",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "hide",
+    "time": "8:00:34 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/june/invite"
+  },
+  {
+    "name": "Cbus Learn - Invite",
+    "sent": 7097,
+    "opens": 3277,
+    "openrate": 46,
+    "clicks": 244,
+    "clickrate": 3,
+    "subject": "Thinking about retirement?",
+    "date": "2/06/2021",
+    "unsub": 11,
+    "unsubrate": 0.1,
+    "id": "DM16727",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "hide",
+    "time": "8:01:21 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-cbus-learn/invite"
+  },
+  {
+    "name": "Umbrella Insurance GLE Reminder - 15 months",
+    "sent": 232,
+    "opens": 109,
+    "openrate": 47,
+    "clicks": 14,
+    "clickrate": 6,
+    "subject": "<Name> - Your insurance cover is about to be cancelled",
+    "date": "1/06/2021",
+    "unsub": 2,
+    "unsubrate": 1,
+    "id": "DM16577",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "gle",
+    "gallery": "hide",
+    "time": "12:45:24 PM",
+    "url": "https://tinyurl.com/e-umbrella-insurance"
+  },
+  {
+    "name": "Retirement Webinars Invite",
+    "sent": 14781,
+    "opens": 6962,
+    "openrate": 47,
+    "clicks": 305,
+    "clickrate": 2,
+    "subject": "<Name>, thinking about retirement?",
+    "date": "1/06/2021",
+    "unsub": 33,
+    "unsubrate": 0.1,
+    "id": "DM16550",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "webinar",
+    "gallery": "hide",
+    "time": "8:01:33 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-1/invite"
+  },
+  {
+    "name": "Kick Starter Reminder",
+    "sent": 263,
+    "opens": 170,
+    "openrate": 65,
+    "clicks": 31,
+    "clickrate": 12,
+    "subject": "Do you do you still need to make a payment?",
+    "date": "10/06/2021",
+    "unsub": 2,
+    "unsubrate": 1,
+    "id": "DM15967",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "employer",
+    "gallery": "hide",
+    "time": "1:31:03 PM",
+    "url": "https://bit.ly/3vYjWHk"
+  },
+  {
+    "name": "Kick Starter Initial",
+    "sent": 358,
+    "opens": 229,
+    "openrate": 64,
+    "clicks": 48,
+    "clickrate": 13,
+    "subject": "Do you do you still need to make a payment?",
+    "date": "10/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM15966",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "employer",
+    "gallery": "hide",
+    "time": "1:31:03 PM",
+    "url": "https://tinyurl.com/kickstarter-reminder"
+  },
+  {
+    "name": "EOFY TFN (B)",
+    "sent": 566,
+    "opens": 285,
+    "openrate": 50,
+    "clicks": 52,
+    "clickrate": 9,
+    "subject": "Important notice about your account",
+    "date": "8/06/2021",
+    "unsub": 5,
+    "unsubrate": 1,
+    "id": "DM16841",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "member",
+    "gallery": "",
+    "time": "1:33:06 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/member-retention/tfn-notice/v2"
+  },
+  {
+    "name": "EOFY TFN (A)",
+    "sent": 567,
+    "opens": 310,
+    "openrate": 55,
+    "clicks": 65,
+    "clickrate": 11,
+    "subject": "We do not have a record of your Tax File Number (TFN).",
+    "date": "8/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16837",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "member",
+    "gallery": "hide",
+    "time": "1:32:54 PM",
+    "url": "https://email-gallery.netlify.app/emails/2021/member-retention/tfn-notice/"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 6940,
+    "opens": 3823,
+    "openrate": 55,
+    "clicks": 1178,
+    "clickrate": 17,
+    "subject": "You have a new super contribution",
+    "date": "30/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM17282",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:54:01 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 50,
+    "opens": 31,
+    "openrate": 62,
+    "clicks": 7,
+    "clickrate": 14,
+    "subject": "You have a new super contribution",
+    "date": "29/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM17246",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:52:39 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 8027,
+    "opens": 4266,
+    "openrate": 53,
+    "clicks": 1338,
+    "clickrate": 17,
+    "subject": "You have a new super contribution",
+    "date": "27/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM17219",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:53:52 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 7815,
+    "opens": 4186,
+    "openrate": 54,
+    "clicks": 1332,
+    "clickrate": 17,
+    "subject": "You have a new super contribution",
+    "date": "26/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM17195",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:53:38 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 7594,
+    "opens": 4012,
+    "openrate": 53,
+    "clicks": 1206,
+    "clickrate": 16,
+    "subject": "You have a new super contribution",
+    "date": "26/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM17207",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "2:24:51 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 10343,
+    "opens": 5398,
+    "openrate": 52,
+    "clicks": 1574,
+    "clickrate": 15,
+    "subject": "You have a new super contribution",
+    "date": "24/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM17162",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:54:02 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 12357,
+    "opens": 6586,
+    "openrate": 53,
+    "clicks": 1928,
+    "clickrate": 16,
+    "subject": "You have a new super contribution",
+    "date": "23/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM17140",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:54:29 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 111,
+    "opens": 67,
+    "openrate": 60,
+    "clicks": 21,
+    "clickrate": 19,
+    "subject": "You have a new super contribution",
+    "date": "22/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM17120",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:52:43 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 9225,
+    "opens": 4949,
+    "openrate": 54,
+    "clicks": 1427,
+    "clickrate": 15,
+    "subject": "You have a new super contribution",
+    "date": "20/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM17103",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:53:56 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 14672,
+    "opens": 7581,
+    "openrate": 52,
+    "clicks": 2141,
+    "clickrate": 15,
+    "subject": "You have a new super contribution",
+    "date": "18/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM17062",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:54:00 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 9144,
+    "opens": 4645,
+    "openrate": 51,
+    "clicks": 1298,
+    "clickrate": 14,
+    "subject": "You have a new super contribution",
+    "date": "17/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM17036",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:53:28 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 10670,
+    "opens": 5880,
+    "openrate": 55,
+    "clicks": 1668,
+    "clickrate": 16,
+    "subject": "You have a new super contribution",
+    "date": "16/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM17014",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:53:54 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 13001,
+    "opens": 6783,
+    "openrate": 52,
+    "clicks": 1892,
+    "clickrate": 15,
+    "subject": "You have a new super contribution",
+    "date": "13/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16966",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:54:09 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 8936,
+    "opens": 4564,
+    "openrate": 51,
+    "clicks": 1319,
+    "clickrate": 15,
+    "subject": "You have a new super contribution",
+    "date": "12/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16954",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:53:27 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 9921,
+    "opens": 4964,
+    "openrate": 50,
+    "clicks": 1287,
+    "clickrate": 13,
+    "subject": "You have a new super contribution",
+    "date": "11/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16927",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:53:25 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 17370,
+    "opens": 8998,
+    "openrate": 52,
+    "clicks": 2508,
+    "clickrate": 14,
+    "subject": "You have a new super contribution",
+    "date": "10/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16902",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:53:57 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 12388,
+    "opens": 6537,
+    "openrate": 53,
+    "clicks": 1774,
+    "clickrate": 14,
+    "subject": "You have a new super contribution",
+    "date": "9/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16880",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:53:34 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 135,
+    "opens": 72,
+    "openrate": 53,
+    "clicks": 19,
+    "clickrate": 14,
+    "subject": "You have a new super contribution",
+    "date": "8/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16855",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:52:40 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 10989,
+    "opens": 5901,
+    "openrate": 54,
+    "clicks": 1628,
+    "clickrate": 15,
+    "subject": "You have a new super contribution",
+    "date": "7/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16829",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:53:34 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 11726,
+    "opens": 6095,
+    "openrate": 52,
+    "clicks": 1748,
+    "clickrate": 15,
+    "subject": "You have a new super contribution",
+    "date": "5/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16813",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:53:31 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 11357,
+    "opens": 5851,
+    "openrate": 52,
+    "clicks": 1582,
+    "clickrate": 14,
+    "subject": "You have a new super contribution",
+    "date": "4/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16780",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:53:28 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 9594,
+    "opens": 4847,
+    "openrate": 51,
+    "clicks": 1282,
+    "clickrate": 13,
+    "subject": "You have a new super contribution",
+    "date": "4/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16796",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "2:24:04 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 192,
+    "opens": 104,
+    "openrate": 54,
+    "clicks": 29,
+    "clickrate": 15,
+    "subject": "You have a new super contribution",
+    "date": "2/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16707",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "1:42:55 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
+    "name": "Automated Member Contribution Notifications",
+    "sent": 12374,
+    "opens": 6418,
+    "openrate": 52,
+    "clicks": 1767,
+    "clickrate": 14,
+    "subject": "You have a new super contribution",
+    "date": "2/06/2021",
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "DM16723",
+    "filter": "Jun-21",
+    "color": "green",
+    "group": "notification",
+    "gallery": "hide",
+    "time": "2:24:30 PM",
+    "url": "https://tinyurl.com/contribution-notifications"
+  },
+  {
     "name": "Automated Member Contribution Notifications",
     "sent": 6551,
     "opens": 3557,
@@ -1600,7 +2755,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Invite (Cbus Learn) Batch 2",
     "sent": 14121,
     "opens": 6973,
@@ -1620,7 +2774,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-cbus-learn-2/invite"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars May Reminder 2",
     "sent": 3764,
     "opens": 1489,
@@ -1640,7 +2793,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-1/reminder-2"
   },
   {
-    "Label": "",
     "name": "SIS May (Seg5)",
     "sent": 39595,
     "opens": 18078,
@@ -1660,7 +2812,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-may/4"
   },
   {
-    "Label": "",
     "name": "Webinar (Other)| Reminder",
     "sent": 35544,
     "opens": 18808,
@@ -1680,7 +2831,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/may/reminder"
   },
   {
-    "Label": "",
     "name": "Abandon Cart",
     "sent": 222,
     "opens": 143,
@@ -1700,7 +2850,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-cbus-learn/reminder"
   },
   {
-    "Label": "",
     "name": "202105 QLD Brand campaign",
     "sent": 30185,
     "opens": 10246,
@@ -1720,7 +2869,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-2/invite"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars May - Invite B2",
     "sent": 3842,
     "opens": 1705,
@@ -1740,7 +2888,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months",
     "sent": 1516,
     "opens": 663,
@@ -1760,7 +2907,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months",
     "sent": 1517,
     "opens": 633,
@@ -1780,7 +2926,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 263,
     "opens": 106,
@@ -1800,7 +2945,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months",
     "sent": 1969,
     "opens": 1067,
@@ -1820,7 +2964,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months",
     "sent": 1982,
     "opens": 995,
@@ -1840,7 +2983,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "",
     "name": "Beneficiaries (monthly)",
     "sent": 4316,
     "opens": 2086,
@@ -1860,7 +3002,6 @@
     "url": "https://tinyurl.com/beneficiaries-monthly-email"
   },
   {
-    "Label": "",
     "name": "Cbus Learn - May Reminder Batch 2",
     "sent": 13898,
     "opens": 6163,
@@ -1880,7 +3021,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-cbus-learn-2/reminder.html"
   },
   {
-    "Label": "",
     "name": "Retirement-reminder-1 (batch 2)",
     "sent": 3795,
     "opens": 1593,
@@ -1900,7 +3040,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-2/reminder.html"
   },
   {
-    "Label": "",
     "name": "Abandon Cart",
     "sent": 245,
     "opens": 169,
@@ -1920,7 +3059,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "",
     "name": "EOFY Dates",
     "sent": 61591,
     "opens": 25719,
@@ -1940,7 +3078,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/employer/eofy/"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 281,
     "opens": 122,
@@ -1960,7 +3097,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "",
     "name": "EOFY Dates (Correction)",
     "sent": 61506,
     "opens": 24662,
@@ -1980,7 +3116,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/employer/eofy/correction"
   },
   {
-    "Label": "",
     "name": "Spanner under 30 no insurance",
     "sent": 22108,
     "opens": 6887,
@@ -2000,7 +3135,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/insurance-campaign/3.html"
   },
   {
-    "Label": "",
     "name": "Spanner under 30 w insurance",
     "sent": 129079,
     "opens": 36086,
@@ -2020,7 +3154,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/insurance-campaign/1.html"
   },
   {
-    "Label": "",
     "name": "Spanner over 30 no insurance",
     "sent": 27008,
     "opens": 9674,
@@ -2040,7 +3173,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/insurance-campaign/4.html"
   },
   {
-    "Label": "",
     "name": "Spanner with insurance over 30",
     "sent": 256939,
     "opens": 93390,
@@ -2060,7 +3192,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/insurance-campaign/2.html"
   },
   {
-    "Label": "",
     "name": "Consolidation MAY",
     "sent": 10037,
     "opens": 5922,
@@ -2080,7 +3211,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/"
   },
   {
-    "Label": "",
     "name": "SIS MAY Seg 1",
     "sent": 1896,
     "opens": 1254,
@@ -2100,7 +3230,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-may/1"
   },
   {
-    "Label": "",
     "name": "SIS MAY Seg 2",
     "sent": 728,
     "opens": 321,
@@ -2120,7 +3249,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-may/2"
   },
   {
-    "Label": "",
     "name": "SIS MAY Seg 2 (Wave 2)",
     "sent": 497,
     "opens": 231,
@@ -2140,7 +3268,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-may/2"
   },
   {
-    "Label": "",
     "name": "SIS MAY Seg 3 (day 1)",
     "sent": 3061,
     "opens": 1734,
@@ -2160,7 +3287,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-may/2"
   },
   {
-    "Label": "",
     "name": "SIS MAY Seg 3 (day 2)",
     "sent": 3066,
     "opens": 1784,
@@ -2180,7 +3306,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-may/2"
   },
   {
-    "Label": "",
     "name": "SIS MAY Seg 4",
     "sent": 7484,
     "opens": 3778,
@@ -2200,7 +3325,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-may/3"
   },
   {
-    "Label": "",
     "name": "Webinar Budget Invite all other states",
     "sent": 80027,
     "opens": 48529,
@@ -2220,7 +3344,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/may-budget/"
   },
   {
-    "Label": "",
     "name": "Webinar Budget Invite WA",
     "sent": 12968,
     "opens": 8106,
@@ -2240,7 +3363,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/may-budget/"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 10210,
     "opens": 5724,
@@ -2260,7 +3382,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 13758,
     "opens": 7633,
@@ -2280,7 +3401,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 917,
     "opens": 536,
@@ -2300,7 +3420,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 15130,
     "opens": 8140,
@@ -2320,7 +3439,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 14830,
     "opens": 7763,
@@ -2340,7 +3458,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 10706,
     "opens": 5578,
@@ -2360,7 +3477,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 12925,
     "opens": 6785,
@@ -2380,7 +3496,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 15440,
     "opens": 8381,
@@ -2400,7 +3515,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 74,
     "opens": 45,
@@ -2420,7 +3534,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 14033,
     "opens": 7802,
@@ -2440,7 +3553,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 13040,
     "opens": 7002,
@@ -2460,7 +3572,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 10607,
     "opens": 5607,
@@ -2480,7 +3591,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 9545,
     "opens": 5176,
@@ -2500,7 +3610,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 8965,
     "opens": 4899,
@@ -2520,7 +3629,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 249,
     "opens": 148,
@@ -2540,7 +3648,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 15197,
     "opens": 8084,
@@ -2560,7 +3667,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 6965,
     "opens": 3554,
@@ -2580,7 +3686,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 8882,
     "opens": 4474,
@@ -2600,7 +3705,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 7542,
     "opens": 3857,
@@ -2620,7 +3724,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 7817,
     "opens": 4240,
@@ -2640,7 +3743,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 36,
     "opens": 16,
@@ -2660,7 +3762,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 7538,
     "opens": 3908,
@@ -2680,7 +3781,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 6270,
     "opens": 3241,
@@ -2700,7 +3800,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 5295,
     "opens": 2616,
@@ -2720,7 +3819,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 5386,
     "opens": 2716,
@@ -2740,7 +3838,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 4051,
     "opens": 2060,
@@ -2760,7 +3857,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "20210330 Abandon Cart FINAL",
     "name": "Abandoned cart",
     "sent": 169,
     "opens": 100,
@@ -2780,7 +3876,6 @@
     "url": "https://tinyurl.com/abandon-cart-email"
   },
   {
-    "Label": "20210330 RBA Cash Rate eDM",
     "name": "RBA Cash Rate",
     "sent": 8998,
     "opens": 4509,
@@ -2800,7 +3895,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/rba-cash-rate"
   },
   {
-    "Label": "20210330-retirement-invite-april",
     "name": "Retirement Webinars April Invite",
     "sent": 8419,
     "opens": 3871,
@@ -2820,7 +3914,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/april/invite"
   },
   {
-    "Label": "20210330 Umbrella Insurance GLE reminder - 15 months eDM",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 186,
     "opens": 86,
@@ -2840,7 +3933,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "FYOB - not rolled in",
     "name": "FYOB - not rolled in",
     "sent": 8797,
     "opens": 3948,
@@ -2860,7 +3952,6 @@
     "url": "https://tinyurl.com/fyob-roll-over"
   },
   {
-    "Label": "FYOB rolled in over 50",
     "name": "FYOB rolled in over 50",
     "sent": 480,
     "opens": 309,
@@ -2880,7 +3971,6 @@
     "url": "https://tinyurl.com/fyob-roll-over"
   },
   {
-    "Label": "FYOB rolled in under 50",
     "name": "FYOB rolled in under 50",
     "sent": 2184,
     "opens": 1143,
@@ -2900,7 +3990,6 @@
     "url": "https://tinyurl.com/fyob-roll-over"
   },
   {
-    "Label": "Member Contribution Notification Email - 31/03/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 694,
     "opens": 362,
@@ -2920,7 +4009,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "Member Contribution Notification Email - 31/03/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 8494,
     "opens": 4570,
@@ -2940,7 +4028,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "Member Contribution Notifications - Delivery Workflow - Alert Template",
     "name": "Automated Member Contribution Notifications",
     "sent": 20,
     "opens": 8,
@@ -2960,7 +4047,6 @@
     "url": "https://tinyurl.com/contribution-notifications"
   },
   {
-    "Label": "",
     "name": "Supermatch Consolidate FYOB",
     "sent": 0,
     "opens": 0,
@@ -2980,7 +4066,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/"
   },
   {
-    "Label": "20210223 White Collar Webinar Invite 1",
     "name": "White Collar Webinars Invite",
     "sent": 19078,
     "opens": 8814,
@@ -3000,7 +4085,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/white-collar-feb-1"
   },
   {
-    "Label": "2021-02 Win Back eDM",
     "name": "Super Exits Win Back",
     "sent": 5082,
     "opens": 2336,
@@ -3020,7 +4104,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/win-back/email-1"
   },
   {
-    "Label": "20210224 Super Summaries - Email 4 [SIS] (Has Address)",
     "name": "Super Summaries - Email 4 [SIS] (Has Address)",
     "sent": 5370,
     "opens": 3429,
@@ -3040,7 +4123,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-summaries/email-4-sis"
   },
   {
-    "Label": "20210216 Umbrella Insurance GLE reminder - 9 months eDM (b)",
     "name": "Umbrella Insurance GLE Reminder - 9 months",
     "sent": 2348,
     "opens": 1014,
@@ -3060,7 +4142,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210209 Umbrella Insurance GLE reminder - 15 months eDM (v.2)",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 242,
     "opens": 93,
@@ -3080,7 +4161,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210223 Abandon Cart FINAL",
     "name": "Abandon Cart A/B",
     "sent": 215,
     "opens": 143,
@@ -3100,7 +4180,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "2020 Contribution KickStarter - Initial EDM",
     "name": "Automated Member Contribution Notifications",
     "sent": 1046,
     "opens": 637,
@@ -3120,7 +4199,6 @@
     "url": "https://chromeoutlookcom.capture.litmuscdn.com/977a572e-8a34-4442-a977-082489aaf70b/results/chromeoutlookcom-vertical-allowed-1366.png"
   },
   {
-    "Label": "2021-02-11 Australian Super Exits",
     "name": "Australian Super Exits",
     "sent": 2714,
     "opens": 739,
@@ -3140,7 +4218,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/australian-super-exits/email-1"
   },
   {
-    "Label": "2021-02-12-retirement-reminder-2-follow-up",
     "name": "Retirement Webinars February",
     "sent": 11114,
     "opens": 4619,
@@ -3160,7 +4237,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/feb/reminder-1.html"
   },
   {
-    "Label": "20210217 Beneficiaries eDM Final",
     "name": "Beneficiaries (monthly)",
     "sent": 3411,
     "opens": 1700,
@@ -3180,7 +4256,6 @@
     "url": "https://ol2016.capture.litmuscdn.com/0d0d4e7e-d24d-4859-a456-60dfe12fb7b5/results/ol2016-vertical-allowed-1366.png"
   },
   {
-    "Label": "Member Contribution Notification Email - 04/02/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 13583,
     "opens": 7770,
@@ -3200,7 +4275,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "20210202 Abandon Cart FINAL",
     "name": "Abandon Cart A/B",
     "sent": 182,
     "opens": 122,
@@ -3220,7 +4294,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "20210209 Abandon Cart FINAL",
     "name": "Abandon Cart A/B",
     "sent": 239,
     "opens": 155,
@@ -3240,7 +4313,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "Member Contribution Notification Email - 02/02/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 21,
     "opens": 16,
@@ -3260,7 +4332,6 @@
     "url": "https://chromeoutlookcom.capture.litmuscdn.com/977a572e-8a34-4442-a977-082489aaf70b/results/chromeoutlookcom-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210216 Umbrella Insurance GLE reminder - 12 months eDM (a)",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months (A)",
     "sent": 1298,
     "opens": 541,
@@ -3280,7 +4351,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210224 Super Summaries - Email 4 [SIS]",
     "name": "Super Summaries - Email 4 [SIS]",
     "sent": 22,
     "opens": 4,
@@ -3300,7 +4370,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-summaries/email-4-sis"
   },
   {
-    "Label": "20210202 Data-Capture-Seg-6 (SIS)",
     "name": "Member Data Capture - Seg-6 (SIS)",
     "sent": 271,
     "opens": 201,
@@ -3320,7 +4389,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12_mbr-data-capture__seg6-autosis_subjecta"
   },
   {
-    "Label": "Member Contribution Notification Email - 04/02/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 16684,
     "opens": 8083,
@@ -3340,7 +4408,6 @@
     "url": "https://chromeoutlookcom.capture.litmuscdn.com/977a572e-8a34-4442-a977-082489aaf70b/results/chromeoutlookcom-vertical-allowed-1366.png"
   },
   {
-    "Label": "Member Contribution Notification Email - 02/02/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 273,
     "opens": 96,
@@ -3360,7 +4427,6 @@
     "url": "https://chromeoutlookcom.capture.litmuscdn.com/977a572e-8a34-4442-a977-082489aaf70b/results/chromeoutlookcom-vertical-allowed-1366.png"
   },
   {
-    "Label": "Member Contribution Notification Email - 04/02/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 16681,
     "opens": 8046,
@@ -3380,7 +4446,6 @@
     "url": "https://chromeoutlookcom.capture.litmuscdn.com/977a572e-8a34-4442-a977-082489aaf70b/results/chromeoutlookcom-vertical-allowed-1366.png"
   },
   {
-    "Label": "2021-02-09 SPC Email monthly to new members",
     "name": "SPC Monthly Send (February)",
     "sent": 3954,
     "opens": 2468,
@@ -3400,7 +4465,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10_mbr-super-payment-checker.html"
   },
   {
-    "Label": "2021-02-retirement-invite",
     "name": "Retirement Webinars Invite February",
     "sent": 11445,
     "opens": 5315,
@@ -3420,7 +4484,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/feb-2/invite"
   },
   {
-    "Label": "20210202 Umbrella Insurance GLE reminder - 15 months eDM (v.2)",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 830,
     "opens": 335,
@@ -3440,7 +4503,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210209 White Collar Member Webinar Invite 1",
     "name": "White Collar Member Webinar Invite",
     "sent": 14887,
     "opens": 5929,
@@ -3460,7 +4522,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/white-collar-feb-1"
   },
   {
-    "Label": "Member Contribution Notification Email - 04/02/21",
     "name": "Automated Member Contribution Notifications",
     "sent": 16681,
     "opens": 8431,
@@ -3480,7 +4541,6 @@
     "url": "https://chromeoutlookcom.capture.litmuscdn.com/977a572e-8a34-4442-a977-082489aaf70b/results/chromeoutlookcom-vertical-allowed-1366.png"
   },
   {
-    "Label": "2021-02-retirement-reminder-1",
     "name": "Retirement Webinars Reminder February",
     "sent": 11383,
     "opens": 4325,
@@ -3500,7 +4560,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/feb/reminder-1"
   },
   {
-    "Label": "20210217 White Collar Webinar Invite 2",
     "name": "White Collar Invite Webinars [2]",
     "sent": 14555,
     "opens": 5914,
@@ -3520,7 +4579,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/white-collar-feb-2"
   },
   {
-    "Label": "2021-02-11 Retail Super Exits",
     "name": "Retail Exits",
     "sent": 3658,
     "opens": 1396,
@@ -3540,7 +4598,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/retail-super-exits/email-1"
   },
   {
-    "Label": "20210211 Retirement Webinar Invite 1",
     "name": "Retirement Webinars Invite  February",
     "sent": 14164,
     "opens": 6624,
@@ -3560,7 +4617,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/feb-2/invite"
   },
   {
-    "Label": "20210216 Umbrella Insurance GLE reminder - 12 months eDM (b)",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months (B)",
     "sent": 1295,
     "opens": 502,
@@ -3580,7 +4636,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210216 Abandon Cart FINAL",
     "name": "Abandon Cart A/B",
     "sent": 217,
     "opens": 153,
@@ -3600,7 +4655,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "20210225 Super Summaries - Email 2 [Working members] (Has Address)",
     "name": "Super Summaries - Email 2 [Working members] (Has Address)",
     "sent": 123466,
     "opens": 61820,
@@ -3620,7 +4674,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-summaries/email-2"
   },
   {
-    "Label": "20210222 Super Summaries - email-1 [Starting out] (Has address)",
     "name": "Super Summaries - email-1 [Starting out] (Has address)",
     "sent": 82463,
     "opens": 33887,
@@ -3640,7 +4693,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-summaries/email-1"
   },
   {
-    "Label": "20210226 White Collar Webinar Reminder 1",
     "name": "White Collar Webinar Reminder 1",
     "sent": 18949,
     "opens": 8864,
@@ -3660,7 +4712,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/white-collar-feb-1"
   },
   {
-    "Label": "20210223 Umbrella Insurance GLE reminder - 15 months eDM (v.2)",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 594,
     "opens": 243,
@@ -3680,7 +4731,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210216 Umbrella Insurance GLE reminder - 15 months eDM (v.2)",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 294,
     "opens": 121,
@@ -3700,7 +4750,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210216 Umbrella Insurance GLE reminder - 9 months eDM (a)",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months (A)",
     "sent": 2345,
     "opens": 1171,
@@ -3720,7 +4769,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210215 Feb Retirement Webinar Invite 2",
     "name": "Retirement Webinars Invite February",
     "sent": 14085,
     "opens": 6340,
@@ -3740,7 +4788,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/feb/reminder-1.html"
   },
   {
-    "Label": "20210202 Data-Capture-Seg-5 (accum)",
     "name": "Member Data Capture - Seg-5 (accum)",
     "sent": 23544,
     "opens": 12317,
@@ -3760,7 +4807,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12_mbr-data-capture__seg5-catchaccum"
   },
   {
-    "Label": "20210222 Retirement Webinar Reminder 2",
     "name": "Retirement Webinar Reminder 2",
     "sent": 14037,
     "opens": 5511,
@@ -3780,7 +4826,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/feb/reminder-1"
   },
   {
-    "Label": "",
     "name": "Campaigns SPC - Monthly to new members",
     "sent": 4824,
     "opens": 2976,
@@ -3800,7 +4845,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10_mbr-super-payment-checker.html"
   },
   {
-    "Label": "",
     "name": "White Collar Invite",
     "sent": 3444,
     "opens": 1493,
@@ -3820,7 +4864,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/white-collar-january-email-2.html"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 406,
     "opens": 145,
@@ -3840,7 +4883,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "White Collar Invite",
     "sent": 3458,
     "opens": 1617,
@@ -3860,7 +4902,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/white-collar-january-email-1.html"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 202,
     "opens": 93,
@@ -3880,7 +4921,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Beneficiaries (monthly)",
     "sent": 4161,
     "opens": 2007,
@@ -3900,7 +4940,6 @@
     "url": "https://ol2016.capture.litmuscdn.com/0d0d4e7e-d24d-4859-a456-60dfe12fb7b5/results/ol2016-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Campaigns Abandoned cart",
     "sent": 201,
     "opens": 124,
@@ -3920,7 +4959,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 9 months (B)",
     "sent": 1121,
     "opens": 534,
@@ -3940,7 +4978,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 9 months (A)",
     "sent": 1124,
     "opens": 584,
@@ -3960,7 +4997,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 186,
     "opens": 76,
@@ -3980,7 +5016,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months (B)",
     "sent": 566,
     "opens": 220,
@@ -4000,7 +5035,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months (A)",
     "sent": 572,
     "opens": 262,
@@ -4020,7 +5054,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 1508,
     "opens": 625,
@@ -4040,7 +5073,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Member notifications introduction",
     "sent": 316061,
     "opens": 136213,
@@ -4060,7 +5092,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/0f1e437f-aad7-4c15-a946-a1c3b6dbfbec/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Campaigns Abandoned cart",
     "sent": 192,
     "opens": 122,
@@ -4080,7 +5111,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "",
     "name": "Beneficiaries (monthly)",
     "sent": 5089,
     "opens": 2648,
@@ -4100,7 +5130,6 @@
     "url": "https://ol2016.capture.litmuscdn.com/0d0d4e7e-d24d-4859-a456-60dfe12fb7b5/results/ol2016-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 1161,
     "opens": 409,
@@ -4120,7 +5149,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Campaigns Abandoned cart (A/B)",
     "sent": 187,
     "opens": 129,
@@ -4140,7 +5168,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "",
     "name": "Member notifications introduction",
     "sent": 289862,
     "opens": 119183,
@@ -4160,7 +5187,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/0f1e437f-aad7-4c15-a946-a1c3b6dbfbec/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "White Collar Invite",
     "sent": 7572,
     "opens": 2995,
@@ -4180,7 +5206,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12-event-white-collar-invite"
   },
   {
-    "Label": "",
     "name": "Campaigns SPC - Monthly to new members",
     "sent": 5786,
     "opens": 3463,
@@ -4200,7 +5225,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10_mbr-super-payment-checker.html"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 167,
     "opens": 63,
@@ -4220,7 +5244,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Campaigns Abandoned cart (A/B)",
     "sent": 189,
     "opens": 120,
@@ -4240,7 +5263,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "",
     "name": "Campaigns Abandoned cart (A/B)",
     "sent": 189,
     "opens": 120,
@@ -4260,7 +5282,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 141,
     "opens": 57,
@@ -4280,7 +5301,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months",
     "sent": 1020,
     "opens": 414,
@@ -4300,7 +5320,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months",
     "sent": 1022,
     "opens": 367,
@@ -4320,7 +5339,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 9 months",
     "sent": 955,
     "opens": 479,
@@ -4340,7 +5358,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 9 months",
     "sent": 959,
     "opens": 475,
@@ -4360,7 +5377,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Campaigns Abandoned cart (A/B)",
     "sent": 187,
     "opens": 114,
@@ -4380,7 +5396,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "",
     "name": "Ascot Wealth Management",
     "sent": 32,
     "opens": 18,
@@ -4400,7 +5415,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12-ascot-wealth.html"
   },
   {
-    "Label": "",
     "name": "FYOB - not rolled in",
     "sent": 2017,
     "opens": 881,
@@ -4420,7 +5434,6 @@
     "url": "https://outlookcom.capture.litmuscdn.com/21d85269-9f92-4179-8f52-9865d9969329/results/outlookcom-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "FYOB rolled in under 50",
     "sent": 543,
     "opens": 294,
@@ -4440,7 +5453,6 @@
     "url": "https://outlookcom.capture.litmuscdn.com/21d85269-9f92-4179-8f52-9865d9969329/results/outlookcom-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "FYOB rolled in over 50",
     "sent": 125,
     "opens": 78,
@@ -4460,7 +5472,6 @@
     "url": "https://outlookcom.capture.litmuscdn.com/21d85269-9f92-4179-8f52-9865d9969329/results/outlookcom-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Fee Cap Refund Error",
     "sent": 653,
     "opens": 299,
@@ -4480,7 +5491,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12-member-fee-cap.html"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 348,
     "opens": 130,
@@ -4500,7 +5510,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Tenure - 5 Years",
     "sent": 1059,
     "opens": 475,
@@ -4520,7 +5529,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/3d143e9d-8ca7-4a82-9e2a-bd01a3d7887c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Tenure - 10 Years",
     "sent": 740,
     "opens": 251,
@@ -4540,7 +5548,6 @@
     "url": "https://ol2019.capture.litmuscdn.com/c1902f8b-6cd5-4e56-812b-5c43c1bf144e/results/ol2019-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Tenure - 20 Years",
     "sent": 100,
     "opens": 34,
@@ -4560,7 +5567,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/71dfb22f-502f-4f79-bc76-467ec5c49c85/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Tenure - 30 Years",
     "sent": 25,
     "opens": 6,
@@ -4580,7 +5586,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/77a59e07-36ea-4be1-be46-91f41dbb79b1/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Automated Member Contribution Notifications",
     "sent": 4436,
     "opens": 2313,
@@ -4600,7 +5605,6 @@
     "url": "https://chromeoutlookcom.capture.litmuscdn.com/977a572e-8a34-4442-a977-082489aaf70b/results/chromeoutlookcom-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Retirement Super in your 40s Reminder (#17)",
     "sent": 37427,
     "opens": 11947,
@@ -4620,7 +5624,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12-event_webinar-40s-reminder.html"
   },
   {
-    "Label": "",
     "name": "White Collar Invite",
     "sent": 7587,
     "opens": 2465,
@@ -4640,7 +5643,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12-event-white-collar-invite"
   },
   {
-    "Label": "",
     "name": "FYOB rolled in over 50",
     "sent": 988,
     "opens": 632,
@@ -4660,7 +5662,6 @@
     "url": "https://outlookcom.capture.litmuscdn.com/21d85269-9f92-4179-8f52-9865d9969329/results/outlookcom-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "FYOB rolled in under 50",
     "sent": 3967,
     "opens": 2100,
@@ -4680,7 +5681,6 @@
     "url": "https://outlookcom.capture.litmuscdn.com/21d85269-9f92-4179-8f52-9865d9969329/results/outlookcom-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "FYOB - not rolled in",
     "sent": 11817,
     "opens": 5565,
@@ -4700,7 +5700,6 @@
     "url": "https://m.marketing.cbussuper.com.au/nl/jsp/m.jsp?c=%40g2PtkB4xXoAMYrCpE%2FtqiyfAXDie7mmMq0US7ih5PcA%3D"
   },
   {
-    "Label": "",
     "name": "Retirement Super in your 40s (#17)",
     "sent": 37678,
     "opens": 14719,
@@ -4720,7 +5719,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12-event_webinar-40s-invite.html"
   },
   {
-    "Label": "",
     "name": "Campaigns Abandoned cart",
     "sent": 172,
     "opens": 112,
@@ -4740,7 +5738,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "",
     "name": "Retirement Multi Reminder (#16)",
     "sent": 36135,
     "opens": 14498,
@@ -4760,7 +5757,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-11-event_webinar-retirement-multi-event-16-reminder.html"
   },
   {
-    "Label": "",
     "name": "Campaigns Abandoned cart",
     "sent": 190,
     "opens": 121,
@@ -4780,7 +5776,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "",
     "name": "Retirement Super in your 40s (#15) - reminder",
     "sent": 36458,
     "opens": 13739,
@@ -4800,7 +5795,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-11-event-15-reminder.html"
   },
   {
-    "Label": "",
     "name": "Retirement Multi Invite (#16)",
     "sent": 31742,
     "opens": 14969,
@@ -4820,7 +5814,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-11-event_webinar-retirement-multi-event-16"
   },
   {
-    "Label": "",
     "name": "Retirement Super in your 40s (#15) - invite",
     "sent": 18420,
     "opens": 7798,
@@ -4840,7 +5833,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/event-single"
   },
   {
-    "Label": "",
     "name": "Campaigns Abandoned cart",
     "sent": 157,
     "opens": 97,
@@ -4860,7 +5852,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "",
     "name": "Retirement Super in your 40s - invite",
     "sent": 18375,
     "opens": 8090,
@@ -4880,7 +5871,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/event-single"
   },
   {
-    "Label": "",
     "name": "Campaigns SPC - Monthly to new members",
     "sent": 4238,
     "opens": 2484,
@@ -4900,7 +5890,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10_mbr-super-payment-checker.html"
   },
   {
-    "Label": "",
     "name": "White Collar (A/B 7pm)",
     "sent": 1351,
     "opens": 600,
@@ -4920,7 +5909,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-11-event-white-collar-16-30.html"
   },
   {
-    "Label": "",
     "name": "White Collar (A/B 4pm)",
     "sent": 1344,
     "opens": 597,
@@ -4940,7 +5928,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-11-event-white-collar-16-30.html"
   },
   {
-    "Label": "",
     "name": "Campaigns Abandoned cart",
     "sent": 151,
     "opens": 105,
@@ -4960,7 +5947,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "",
     "name": "Retirement Multi Reminder (#14)",
     "sent": 31745,
     "opens": 14682,
@@ -4980,7 +5966,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-11-event_webinar-retirement-event-14-reminder"
   },
   {
-    "Label": "",
     "name": "FYOB rolled in over 50",
     "sent": 955,
     "opens": 600,
@@ -5000,7 +5985,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/47fd6004-284c-414c-be29-ea3e56355aa9/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "FYOB rolled in under 50",
     "sent": 3967,
     "opens": 5347,
@@ -5020,7 +6004,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/524b640b-bf6a-4a26-bd89-164c95d3e594/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "FYOB - not rolled in",
     "sent": 11576,
     "opens": 5347,
@@ -5040,7 +6023,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/996af028-c7a7-49ef-aee0-6a3a90a4f442/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 206,
     "opens": 92,
@@ -5060,7 +6042,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Outbound Assistance - Post deadline",
     "sent": 2036,
     "opens": 1070,
@@ -5080,7 +6061,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-outbound-assistance.html"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 203,
     "opens": 95,
@@ -5100,7 +6080,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 1516,
     "opens": 568,
@@ -5120,7 +6099,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 1519,
     "opens": 595,
@@ -5140,7 +6118,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 2000,
     "opens": 980,
@@ -5160,7 +6137,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 2004,
     "opens": 1015,
@@ -5180,7 +6156,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 178,
     "opens": 75,
@@ -5200,7 +6175,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "SMSF - Get the Facts Campaign",
     "sent": 8292,
     "opens": 3603,
@@ -5220,7 +6194,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-mbr_smsf.html"
   },
   {
-    "Label": "",
     "name": "SMSF - Get the Facts Campaign (bigpond emails)",
     "sent": 1261,
     "opens": 533,
@@ -5240,7 +6213,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-mbr_smsf.html"
   },
   {
-    "Label": "",
     "name": "Beneficiaries (monthly)",
     "sent": 3765,
     "opens": 1977,
@@ -5260,7 +6232,6 @@
     "url": "https://ol2016.capture.litmuscdn.com/0d0d4e7e-d24d-4859-a456-60dfe12fb7b5/results/ol2016-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 230,
     "opens": 100,
@@ -5280,7 +6251,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Statements - AMB Invite",
     "sent": 1268,
     "opens": 763,
@@ -5300,7 +6270,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/amb-invite.html"
   },
   {
-    "Label": "",
     "name": "Statements - AMB Invite SIS",
     "sent": 33,
     "opens": 24,
@@ -5320,7 +6289,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/amb-invite.html"
   },
   {
-    "Label": "",
     "name": "Retirement Super in your 40s - invite",
     "sent": 5335,
     "opens": 2186,
@@ -5340,7 +6308,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/retirement%20webinar%2040-49"
   },
   {
-    "Label": "",
     "name": "Outbound Portal assistance (No activation sent)",
     "sent": 3567,
     "opens": 1794,
@@ -5360,7 +6327,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-outbound-assistance.html"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 208,
     "opens": 88,
@@ -5380,7 +6346,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Outbound Portal assistance (No activation sent)",
     "sent": 2604,
     "opens": 1539,
@@ -5400,7 +6365,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-outbound-assistance.html"
   },
   {
-    "Label": "",
     "name": "Outbound Portal assistance (No activation sent)",
     "sent": 3508,
     "opens": 1982,
@@ -5420,7 +6384,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-outbound-assistance.html"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 217,
     "opens": 110,
@@ -5440,7 +6403,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Outbound Portal assistance (No activation sent)",
     "sent": 199,
     "opens": 99,
@@ -5460,7 +6422,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-outbound-assistance.html"
   },
   {
-    "Label": "",
     "name": "Outbound Portal assistance (not logged in)",
     "sent": 235,
     "opens": 108,
@@ -5480,7 +6441,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-outbound-assistance.html"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 15 months",
     "sent": 243,
     "opens": 112,
@@ -5500,7 +6460,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months",
     "sent": 1416,
     "opens": 548,
@@ -5520,7 +6479,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months",
     "sent": 1411,
     "opens": 572,
@@ -5540,7 +6498,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months",
     "sent": 1032,
     "opens": 513,
@@ -5560,7 +6517,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Umbrella Insurance GLE Reminder - 9&12 months",
     "sent": 1034,
     "opens": 530,
@@ -5580,7 +6536,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/7b5acede-3cb0-4c67-87c6-ac0db6319a3c/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Beneficiaries (monthly)",
     "sent": 4606,
     "opens": 2403,
@@ -5600,7 +6555,6 @@
     "url": "https://ol2016.capture.litmuscdn.com/0d0d4e7e-d24d-4859-a456-60dfe12fb7b5/results/ol2016-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Outbound Portal assistance (logged in)",
     "sent": 230,
     "opens": 134,
@@ -5620,7 +6574,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-outbound-assistance.html"
   },
   {
-    "Label": "",
     "name": "Outbound Portal assistance (not logged in)",
     "sent": 79,
     "opens": 49,
@@ -5640,7 +6593,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-outbound-assistance.html"
   },
   {
-    "Label": "",
     "name": "Outbound Portal assistance (logged in)",
     "sent": 422,
     "opens": 239,
@@ -5660,7 +6612,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-outbound-assistance.html"
   },
   {
-    "Label": "",
     "name": "Outbound Portal assistance (not logged in)",
     "sent": 449,
     "opens": 202,
@@ -5680,7 +6631,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-outbound-assistance.html"
   },
   {
-    "Label": "",
     "name": "Outbound Portal assistance",
     "sent": 519,
     "opens": 307,
@@ -5700,7 +6650,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-outbound-assistance.html"
   },
   {
-    "Label": "",
     "name": "Statements - seg-1 (no-address)",
     "sent": 4461,
     "opens": 1227,
@@ -5720,7 +6669,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/80fcf5c3-2313-4ee3-8191-e624ff6caf6a/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Statements - seg-2 (no-address)",
     "sent": 6897,
     "opens": 2273,
@@ -5740,7 +6688,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/80fcf5c3-2313-4ee3-8191-e624ff6caf6a/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Statements - seg-3 (no-address)",
     "sent": 1867,
     "opens": 752,
@@ -5760,7 +6707,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/80fcf5c3-2313-4ee3-8191-e624ff6caf6a/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Campaigns Young Cohort",
     "sent": 152308,
     "opens": 44693,
@@ -5780,7 +6726,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-09-mbr_road-to-recovery--young-cohort"
   },
   {
-    "Label": "",
     "name": "Retirement Multi invite (#13)",
     "sent": 6082,
     "opens": 3007,
@@ -5800,7 +6745,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-event_webinar-retirement-multi-event-13.html"
   },
   {
-    "Label": "",
     "name": "Campaigns Abandoned cart",
     "sent": 138,
     "opens": 87,
@@ -5820,7 +6764,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "",
     "name": "Retirement Super in your 40s - Reminder",
     "sent": 5305,
     "opens": 1854,
@@ -5840,7 +6783,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/retirement%20webinar%20reminder%2040-49"
   },
   {
-    "Label": "",
     "name": "Super brand survey - Subject line A",
     "sent": 7432,
     "opens": 2932,
@@ -5860,7 +6802,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-mbr_super-brand-survey.html"
   },
   {
-    "Label": "",
     "name": "Super brand survey - Subject line B",
     "sent": 7450,
     "opens": 2915,
@@ -5880,7 +6821,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-mbr_super-brand-survey.html"
   },
   {
-    "Label": "",
     "name": "Campaigns SPC - Monthly to new members",
     "sent": 4158,
     "opens": 2489,
@@ -5900,7 +6840,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10_mbr-super-payment-checker.html"
   },
   {
-    "Label": "",
     "name": "Campaign Abandoned cart",
     "sent": 159,
     "opens": 108,
@@ -5920,7 +6859,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "",
     "name": "White Collar",
     "sent": 2965,
     "opens": 1294,
@@ -5940,7 +6878,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-11-event-white-collar-16-30.html"
   },
   {
-    "Label": "",
     "name": "Super brand survey - Reminder",
     "sent": 14744,
     "opens": 5144,
@@ -5960,7 +6897,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-mbr_super-brand-survey.html"
   },
   {
-    "Label": "",
     "name": "Retirement Multi Reminder (#13)",
     "sent": 6052,
     "opens": 2543,
@@ -5980,7 +6916,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-event_webinar-retirement-multi-event-13-reminder.html"
   },
   {
-    "Label": "",
     "name": "Statements - Video Non RIE - Reminder",
     "sent": 875,
     "opens": 168,
@@ -6000,7 +6935,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/fbb296cb-66ea-4258-8d69-b193f53ae6d0/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Statements - Video Non RIE seg-2 - Reminder",
     "sent": 1392,
     "opens": 237,
@@ -6020,7 +6954,6 @@
     "url": "https://ol2019.capture.litmuscdn.com/49b403d7-51ef-41fd-b193-f82b0ddb0034/results/ol2019-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Statements - Video Non RIE seg-4 - Reminder",
     "sent": 7114,
     "opens": 987,
@@ -6040,7 +6973,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/41ec53be-1a3e-42d8-a080-dab9c1dc4822/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Statements - Video RIE seg-4 - Reminder",
     "sent": 51218,
     "opens": 987,
@@ -6060,7 +6992,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/41ec53be-1a3e-42d8-a080-dab9c1dc4822/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Statements - Video Non RIE seg-1 - Reminder",
     "sent": 20683,
     "opens": 2607,
@@ -6080,7 +7011,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/41ec53be-1a3e-42d8-a080-dab9c1dc4822/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Campaign Abandoned cart",
     "sent": 180,
     "opens": 112,
@@ -6100,7 +7030,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "",
     "name": "White Collar",
     "sent": 2740,
     "opens": 944,
@@ -6120,7 +7049,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-09-White-collar-webinar-reminder-02-10-2020.html"
   },
   {
-    "Label": "",
     "name": "Campaign Abandoned cart",
     "sent": 169,
     "opens": 105,
@@ -6140,7 +7068,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08_abandon%20cart"
   },
   {
-    "Label": "",
     "name": "Retirement Multi invite (#14)",
     "sent": 33442,
     "opens": 16953,
@@ -6160,7 +7087,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-November-Retirement-Webinar-Series-Initial-Invite.html"
   },
   {
-    "Label": "",
     "name": "Standrad, 2020-10",
     "sent": 0,
     "opens": 0,
@@ -6180,7 +7106,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/email-1.html"
   },
   {
-    "Label": "",
     "name": "Important updates, 2020-10",
     "sent": 0,
     "opens": 0,
@@ -6200,7 +7125,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/email-2.html"
   },
   {
-    "Label": "",
     "name": "Event, 2020-10",
     "sent": 0,
     "opens": 0,
@@ -6220,7 +7144,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/event"
   },
   {
-    "Label": "",
     "name": "Event Single, 2020-10",
     "sent": 0,
     "opens": 0,
@@ -6240,7 +7163,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/event-single"
   },
   {
-    "Label": "",
     "name": "Event RIF, 2020-10",
     "sent": 0,
     "opens": 0,
@@ -6260,7 +7182,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/event-rif.html"
   },
   {
-    "Label": "",
     "name": "Event White Collar, 2020-10",
     "sent": 0,
     "opens": 0,
@@ -6280,7 +7201,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/event-white-collar"
   },
   {
-    "Label": "",
     "name": "SIS, 2020-10",
     "sent": 0,
     "opens": 0,
@@ -6300,7 +7220,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/sis"
   },
   {
-    "Label": "",
     "name": "Employer 1, 2020-10",
     "sent": 0,
     "opens": 0,
@@ -6320,7 +7239,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/employer-1.html"
   },
   {
-    "Label": "",
     "name": "Employer 2, 2020-10",
     "sent": 0,
     "opens": 0,
@@ -6340,7 +7258,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/employer-2.html"
   },
   {
-    "Label": "",
     "name": "Employer 3, 2020-10",
     "sent": 0,
     "opens": 0,
@@ -6360,7 +7277,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/employer-3.html"
   },
   {
-    "Label": "",
     "name": "Employer 4, 2020-10",
     "sent": 0,
     "opens": 0,
@@ -6380,7 +7296,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/employer-4.html"
   },
   {
-    "Label": "",
     "name": "Employer 5, 2020-10",
     "sent": 0,
     "opens": 0,
@@ -6400,7 +7315,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/employer-5.html"
   },
   {
-    "Label": "",
     "name": "Statement, 2020-10",
     "sent": 0,
     "opens": 0,
@@ -6420,7 +7334,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/statement-1"
   },
   {
-    "Label": "",
     "name": "Bulb Energy report 2021",
     "sent": 0,
     "opens": 0,
@@ -6440,7 +7353,6 @@
     "url": "https://files.reallygoodemails.com/emails/your-2019-green-impact-report-.png"
   },
   {
-    "Label": "",
     "name": "Heroku activity report 2021",
     "sent": 0,
     "opens": 0,
@@ -6460,7 +7372,6 @@
     "url": "https://files.reallygoodemails.com/emails/your-heroku-activity-report.png"
   },
   {
-    "Label": "",
     "name": "Honey 2021",
     "sent": 0,
     "opens": 0,
@@ -6480,7 +7391,6 @@
     "url": "https://files.reallygoodemails.com/emails/before-we-completely-block-out-2020.png"
   },
   {
-    "Label": "",
     "name": "Lyft report 2021",
     "sent": 0,
     "opens": 0,
@@ -6500,7 +7410,6 @@
     "url": "https://files.reallygoodemails.com/emails/your-2017-with-lyft.png"
   },
   {
-    "Label": "",
     "name": "Uplers [Ebook] Survey report 2021",
     "sent": 0,
     "opens": 0,
@@ -6520,7 +7429,6 @@
     "url": "https://files.reallygoodemails.com/emails/ebook-survey-report-on-impact-of-current-crisis-on-agencies.png"
   },
   {
-    "Label": "",
     "name": "Marketo Engage 2020-12",
     "sent": 0,
     "opens": 0,
@@ -6540,7 +7448,6 @@
     "url": "https://protect-au.mimecast.com/s/GqJIC1WLVViM2103U1C4ze?domain=engage.marketo.com"
   },
   {
-    "Label": "",
     "name": "VicSuper 2020-09",
     "sent": 0,
     "opens": 0,
@@ -6560,7 +7467,6 @@
     "url": "https://email-gallery.netlify.app/images/inspo-vicsuper-3.jpg"
   },
   {
-    "Label": "",
     "name": "VicSuper 2020-07",
     "sent": 0,
     "opens": 0,
@@ -6580,7 +7486,6 @@
     "url": "https://email-gallery.netlify.app/images/inspo-vicsuper-1.jpg"
   },
   {
-    "Label": "",
     "name": "VicSuper 2020-07",
     "sent": 0,
     "opens": 0,
@@ -6600,7 +7505,6 @@
     "url": "https://email-gallery.netlify.app/images/inspo-vicsuper-2.jpg"
   },
   {
-    "Label": "",
     "name": "HESTA 2020-06",
     "sent": 0,
     "opens": 0,
@@ -6620,7 +7524,6 @@
     "url": "https://email-gallery.netlify.app/images/inspo-hesta-01.jpg"
   },
   {
-    "Label": "",
     "name": "HESTA 2020-06",
     "sent": 0,
     "opens": 0,
@@ -6640,7 +7543,6 @@
     "url": "https://email-gallery.netlify.app/images/inspo-hesta-02.jpg"
   },
   {
-    "Label": "",
     "name": "VicSuper 2020-05",
     "sent": 0,
     "opens": 0,
@@ -6660,7 +7562,6 @@
     "url": "https://email-gallery.netlify.app/images/inspo-01x2.jpg"
   },
   {
-    "Label": "",
     "name": "VicSuper 2020-02",
     "sent": 0,
     "opens": 0,
@@ -6680,7 +7581,6 @@
     "url": "https://email-gallery.netlify.app/images/inspo-02x2.jpg"
   },
   {
-    "Label": "",
     "name": "Current",
     "sent": 0,
     "opens": 0,
@@ -6700,7 +7600,6 @@
     "url": "https://files.reallygoodemails.com/emails/smiles-davis-your-account-statements-are-now-in-the-current-app-.png"
   },
   {
-    "Label": "",
     "name": "Chime",
     "sent": 0,
     "opens": 0,
@@ -6720,7 +7619,6 @@
     "url": "https://reallygoodemails.com/emails/its-kinda-like-the-first-day-of-summer-vacation/"
   },
   {
-    "Label": "",
     "name": "Blinkist",
     "sent": 0,
     "opens": 0,
@@ -6740,7 +7638,6 @@
     "url": "https://reallygoodemails.com/emails/top-3-blinkist-titles-that-everyones-loving/"
   },
   {
-    "Label": "",
     "name": "Hotele",
     "sent": 0,
     "opens": 0,
@@ -6760,7 +7657,6 @@
     "url": "https://files.reallygoodemails.com/emails/salvemos-a-los-hoteles-independientes-a-travs-de-esta-iniciativa.png"
   },
   {
-    "Label": "",
     "name": "Shopify in LA",
     "sent": 0,
     "opens": 0,
@@ -6780,7 +7676,6 @@
     "url": "https://files.reallygoodemails.com/emails/get-in-person-support-at-shopify-in-la.png"
   },
   {
-    "Label": "",
     "name": "Google Science Fair",
     "sent": 0,
     "opens": 0,
@@ -6800,7 +7695,6 @@
     "url": "https://files.reallygoodemails.com/emails/it-s-not-too-late-google-science-fair-is-still-taking-ideas.png"
   },
   {
-    "Label": "",
     "name": "Frontiers by Slack",
     "sent": 0,
     "opens": 0,
@@ -6820,7 +7714,6 @@
     "url": "https://files.reallygoodemails.com/emails/youre-invited-frontiers-by-slack-our-best-and-first-ever-conference.png"
   },
   {
-    "Label": "",
     "name": "Uber 100",
     "sent": 0,
     "opens": 0,
@@ -6840,7 +7733,6 @@
     "url": "https://files.reallygoodemails.com/emails/you-re-in-the-big-leagues-tien-100-deliveries-made.png"
   },
   {
-    "Label": "",
     "name": "Uber $2 Rides",
     "sent": 0,
     "opens": 0,
@@ -6860,7 +7752,6 @@
     "url": "https://files.reallygoodemails.com/emails/2-rides-are-going-fast.png"
   },
   {
-    "Label": "",
     "name": "MailerLite - What you want to learn?",
     "sent": 0,
     "opens": 0,
@@ -6880,7 +7771,6 @@
     "url": "https://files.reallygoodemails.com/emails/your-invite-to-yourstack-.png"
   },
   {
-    "Label": "",
     "name": "Our Livestream is Starting!",
     "sent": 0,
     "opens": 0,
@@ -6900,7 +7790,6 @@
     "url": "https://files.reallygoodemails.com/emails/our-livestream-is-starting.png"
   },
   {
-    "Label": "",
     "name": "SkyMiles Statement Is Here",
     "sent": 0,
     "opens": 0,
@@ -6920,7 +7809,6 @@
     "url": "https://files.reallygoodemails.com/emails/matthew-your-november-skymiles-statement-is-here.png"
   },
   {
-    "Label": "",
     "name": "dinnerly win back",
     "sent": 0,
     "opens": 0,

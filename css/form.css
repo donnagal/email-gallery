@@ -58,22 +58,22 @@ text-transform: uppercase;
 /*tool tips */
 [data-field="Content"] .c-helptext p {
       position: relative;
-      top: -53px;
+      top: -62px;
       left: 64px;
     }
     [data-field="Source"] .c-helptext p {
       position: relative;
-      top: -53px;
+      top: -62px;
       left: 58px;
     }
     [data-field="Medium"] .c-helptext p {
       position: relative;
-      top: -53px;
+      top: -62px;
       left: 67px;
     }
     [data-field="Audience"] .c-helptext p {
       position: relative;
-      top: -53px;
+      top: -62px;
       left: 65px;
     }
 
