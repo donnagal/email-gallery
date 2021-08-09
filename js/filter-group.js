@@ -130,6 +130,10 @@ $(function() {
       $(".card").hide();
       $(".Jun-21").show();
     });
+    $(".bnt-21-jul").click(function(){
+      $(".card").hide();
+      $(".Jul-21").show();
+    });
     $(".bnt-21-aug").click(function(){
       $(".card").hide();
       $(".Aug-21").show();
