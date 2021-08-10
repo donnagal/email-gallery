@@ -1,52 +1,45 @@
 $(function() { 
   $(".btn-brand").click(function(){
-    $(".card-brand").toggleClass('hidden');
+    $(".card-bnd").toggleClass('hidden');
     $(this).toggleClass('bg-red');
     $(this).toggleClass('bg-green');
     $(".btn-brand .fa-times-circle").toggleClass('hidden');
     $(".btn-brand .fa-check-circle").toggleClass('hidden');
   });
   $(".btn-comms").click(function(){
-    $(".card-comms").toggleClass('hidden');
+    $(".card-com").toggleClass('hidden');
     $(this).toggleClass('bg-red');
     $(this).toggleClass('bg-green');
     $(".btn-comms .fa-times-circle").toggleClass('hidden');
     $(".btn-comms .fa-check-circle").toggleClass('hidden');
   });
   $(".btn-employer").click(function(){
-    $(".card-employer").toggleClass('hidden');
+    $(".card-emp").toggleClass('hidden');
     $(this).toggleClass('bg-red');
     $(this).toggleClass('bg-green');
     $(".btn-employer .fa-times-circle").toggleClass('hidden');
     $(".btn-employer .fa-check-circle").toggleClass('hidden');
   });
-  $(".btn-member").click(function(){
-    $(".card-member").toggleClass('hidden');
+  $(".btn-marketing").click(function(){
+    $(".card-mar").toggleClass('hidden');
     $(this).toggleClass('bg-red');
     $(this).toggleClass('bg-green');
-    $(".btn-member .fa-times-circle").toggleClass('hidden');
-    $(".btn-member .fa-check-circle").toggleClass('hidden');
+    $(".btn-marketing .fa-times-circle").toggleClass('hidden');
+    $(".btn-marketing .fa-check-circle").toggleClass('hidden');
   });
-  $(".btn-notification").click(function(){
-    $(".card-notification").toggleClass('hidden');
+  $(".btn-tech").click(function(){
+    $(".card-tec").toggleClass('hidden');
     $(this).toggleClass('bg-red');
     $(this).toggleClass('bg-green');
-    $(".btn-notification .fa-times-circle").toggleClass('hidden');
-    $(".btn-notification .fa-check-circle").toggleClass('hidden');
+    $(".btn-tech .fa-times-circle").toggleClass('hidden');
+    $(".btn-tech .fa-check-circle").toggleClass('hidden');
   });
   $(".btn-webinar").click(function(){
-    $(".card-webinar").toggleClass('hidden');
+    $(".card-web").toggleClass('hidden');
     $(this).toggleClass('bg-red');
     $(this).toggleClass('bg-green');
     $(".btn-webinar .fa-times-circle").toggleClass('hidden');
     $(".btn-webinar .fa-check-circle").toggleClass('hidden');
-  });
-  $(".btn-gle").click(function(){
-    $(".card-gle").toggleClass('hidden');
-    $(this).toggleClass('bg-red');
-    $(this).toggleClass('bg-green');
-    $(".btn-gle .fa-times-circle").toggleClass('hidden');
-    $(".btn-gle .fa-check-circle").toggleClass('hidden');
   });
   $(".btn-template").click(function(){
     $(".card-template").toggleClass('hidden');
