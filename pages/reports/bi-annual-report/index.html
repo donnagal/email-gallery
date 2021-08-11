@@ -10,8 +10,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
-  <link rel="stylesheet" href="../../../css/css/global.css">
-  <link rel="stylesheet" href="../../../css/css/swiper-bundle.min.css">
+
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
@@ -30,8 +29,12 @@
 		}
 
 		@media (max-width: 1600px){
-			.md-heading  { font-size: 3.5rem; }
+			.md-heading  { font-size: 5rem;  }
 		}
+		@media (max-width: 576px) {
+			.sm-zoom  { zoom: 2.7;}
+		}
+
 		.bg-gradient {
 			background: linear-gradient(-45deg, #5555FF, #9787FF, #FF55B8, #FF8787);
 			background-size: 400% 400%;
@@ -92,17 +95,17 @@
 
 		<div class="h-screen bg-gradient">
 			<div class="h-screen flex flex-wrap content-center">
-			  <div class="container mx-auto px-10 lg:px-0">
+			  <div class="container mx-auto lg:px-0">
 				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
 					<div class="flex justify-center">
 						<img src="img/heading-text.png" />
 					</div>
 					<div class="text-center">
-						<p class="my-5 pb-5 lg:text-xl">
+						<p class="my-5 pb-5 lg:text-xl text-4xl">
 							January 1, 2021 - July 30, 2021.<br/> 
 							Cbus Email marketing report.
 						</p>
-						<a href="#volumes" class="bg-white font-bold text-black uppercase text-sm px-6 py-4 hover:opacity-75 no-underline">
+						<a href="#volumes" class="lg:inline block bg-white font-bold text-black lg:text-sm text-4xl uppercase lg:p-4 p-10 hover:opacity-75 no-underline">
 							Get started
 						</a>
 					</div>
@@ -124,7 +127,7 @@
 						</p>
 					</div>
 					
-					<div class="pt-8">
+					<div class="pt-8 sm-zoom">
 						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="1200" data-aos-duration="800">
 							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:88%;"></div>
 							<p class="px-3"><strong class="text-xl">37%</strong><br/>914,482 Tec</p>
@@ -159,7 +162,7 @@
 
 			
 		  <div id="campaigns" class="h-screen bg-gradient-3">
-			<div class="flex lg:content-center flex-wrap h-screen">
+			<div class="flex content-center flex-wrap h-screen">
 			  <div class="container mx-auto">
 				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
 					<div id="counters_2" class="flex justify-center">
@@ -170,7 +173,7 @@
 							Email campaigns has been sent.
 						</p>
 					</div>
-					<div class="flex justify-center">
+					<div class="flex justify-center sm-zoom ">
 						<div class="w-auto p-10">
 							<div class="flex flex-wrap p-3">
 								<div class="text-right p-2"><p>#1<br/>Tec</p></div>
@@ -209,7 +212,7 @@
 		  </div>
 
 		  <div id="opens" class="h-screen bg-gradient">
-			<div class="flex lg:content-center flex-wrap h-screen">
+			<div class="flex content-center flex-wrap h-screen">
 			  <div class="container mx-auto">
 				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="300" data-aos-duration="600">
 					
@@ -219,7 +222,7 @@
 								<h2 class="counter" data-TargetNum="44" data-Speed="1500"></h2>%
 							</div>
 							<div class="text-center">
-								<p class="lg:text-xl">
+								<p class="text-xl sm-zoom ">
 									Open rate on Cbus emails.
 								</p>
 							</div>
@@ -229,14 +232,14 @@
 								<h2 class="counter" data-TargetNum="25" data-Speed="2000"></h2>%
 							</div>
 							<div class="text-center opacity-50">
-								<p class="lg:text-xl">
+								<p class="text-xl sm-zoom ">
 									Open rate by benchmark suvery.
 								</p>
 							</div>
 						</div>
 					</div>
 
-					<div class="flex justify-center">
+					<div class="flex justify-center sm-zoom ">
 						<div class="w-auto p-10">
 							<div class="flex flex-wrap p-3">
 								<div class="text-right p-2"><p>#1<br/>Tec</p></div>
@@ -284,9 +287,9 @@
 						</div>
 					</div>
 
-					<div class="pt-5 flex justify-center">
-						<div class="w-auto p-10">
-							<div class="flex flex-wrap pt-10">
+					<div class="pt-5 lg:flex justify-center">
+						<div class="w-auto lg:p-10">
+							<div class="flex flex-wrap pt-10 ">
 								<div>
 									<p class="text pb-3 text-black opacity-50 font-bold">Tec</p>
 									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
@@ -320,7 +323,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="w-auto p-10">
+						<div class="w-auto lg:p-10">
 							<div class="flex flex-wrap pt-10">
 								<div>
 									<p class="text pb-3 text-black opacity-50 font-bold">Mar</p>
@@ -362,7 +365,7 @@
 		  </div>
 
 		  <div id="clicks" class="h-screen bg-gradient-3">
-			<div class="flex lg:content-center flex-wrap h-screen">
+			<div class="flex content-center flex-wrap h-screen">
 			  <div class="container mx-auto">
 				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="300" data-aos-duration="600">
 					
@@ -389,7 +392,7 @@
 						</div>
 					</div>
 
-					<div class="flex justify-center">
+					<div class="flex justify-center sm-zoom">
 						<div class="w-auto p-10">
 							<div class="flex flex-wrap p-3">
 								<div class="text-right p-2"><p>#1<br/>Tec</p></div>
@@ -432,8 +435,8 @@
 			<div class="h-screen text-white flex flex-wrap content-center ">
 			  <div class="mx-auto container">
 					
-				<div class="flex">
-					<div class="w-1/2">
+				<div class="lg:flex">
+					<div class="lg:w-1/2 pb-5">
 						<h2 class="heading-4 pb-8">Top Open Times</h2>
 						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="1200" data-aos-duration="800">
 							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:88%;"></div>
@@ -453,7 +456,7 @@
 						</div>
 					</div>
 					
-					<div class="w-1/2 pl-5 text-black opacity-50">
+					<div class="lg:w-1/2 lg:pl-5 text-black opacity-50">
 						<h2 class="heading-4 pb-8">Top Send Times</h2>
 						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="1200" data-aos-duration="800">
 							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-black" style="width:88%;"></div>
