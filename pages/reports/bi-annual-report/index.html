@@ -24,14 +24,28 @@
 		}
 		.heading  {font-size: 10rem; }
 		.heading-4  {font-size: 3rem; }
-		      
+		  
+		@media (min-width: 1600px){
+			.text  { font-size: 1.5rem; }
+		}
+
 		@media (max-width: 1600px){
-				.heading  {font-size: 6rem; }
+			.md-heading  { font-size: 3.5rem; }
 		}
 		.bg-gradient {
-		background: linear-gradient(-45deg, #5555FF, #9787FF, #FF55B8, #FF8787);
-		background-size: 400% 400%;
-		animation: bg 20s infinite;
+			background: linear-gradient(-45deg, #5555FF, #9787FF, #FF55B8, #FF8787);
+			background-size: 400% 400%;
+			animation: bg 20s infinite;
+		}
+		.bg-gradient-2 {
+			background: linear-gradient(-45deg, #331a70, #5555FF, #3185a9, #30c8cc);
+			background-size: 400% 400%;
+			animation: bg 20s infinite;
+		}
+		.bg-gradient-3 {
+			background: linear-gradient(-45deg, #ff6733, #ff904b, #fda656, #FF8787);
+			background-size: 400% 400%;
+			animation: bg 20s infinite;
 		}
 		@keyframes bg
 		{
@@ -60,7 +74,8 @@
 			60% {
 				transform: translateY(-15px);
 			}
-			}
+		}
+
 </style>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF495ZKW9K"></script>
@@ -76,7 +91,7 @@
 	<body id="counter">
 
 		<div class="h-screen bg-gradient">
-			<div class="flex lg:content-center pt-24 lg:pt-0 flex-wrap h-screen">
+			<div class="h-screen flex flex-wrap content-center">
 			  <div class="container mx-auto px-10 lg:px-0">
 				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
 					<div class="flex justify-center">
@@ -96,25 +111,44 @@
 			</div>
 		  </div>
 
-		  <div id="volumes" class="h-screen bg-gradient">
-			<div class="flex lg:content-center flex-wrap h-screen">
-			  <div class="container mx-auto">
-				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
-					<div id="counters_1" class="flex justify-center">
+		  <div id="volumes" class="h-screen bg-gradient-2">
+			<div class="h-screen flex flex-wrap content-center">
+			  <div class="mx-auto">
+				  <div class="text-white">
+					<div id="counters_1" class="">
 						<h2 class="heading counter" data-TargetNum="11000" data-Speed="2000"></h2>
 					</div>
-					<div class="text-center pl-24">
+					<div class="text-center">
 						<p class="lg:text-xl">
 							Volume of emails has been sent.
 						</p>
 					</div>
-					<div class="pt-5">
-						<span class="flex relative my-2" style="left: -75%;width: 2000px;" data-aos="fade-right" data-aos-delay="200" data-aos-duration="600"><img class="rounded-full" src="img/bar.png" style="height:55px"><p class="px-3"><strong class="text-xl">15%</strong><br/>398 Tech</p></span>
-						<span class="flex relative my-2" style="left: -90%;width: 2000px;" data-aos="fade-right" data-aos-delay="400" data-aos-duration="600"><img class="rounded-full" src="img/bar.png" style="height:55px"><p class="px-3"><strong class="text-xl">15%</strong><br/>398 Tech</p></span>
-						<span class="flex relative my-2" style="left: -90%;width: 2000px;" data-aos="fade-right" data-aos-delay="600" data-aos-duration="600"><img class="rounded-full" src="img/bar.png" style="height:55px"><p class="px-3"><strong class="text-xl">15%</strong><br/>398 Tech</p></span>
-						<span class="flex relative my-2" style="left: -100%;width: 2000px;" data-aos="fade-right" data-aos-delay="800" data-aos-duration="600"><img class="rounded-full" src="img/bar.png" style="height:55px"><p class="px-3"><strong class="text-xl">15%</strong><br/>398 Tech</p></span>
-						<span class="flex relative my-2" style="left: -110%;width: 2000px;" data-aos="fade-right" data-aos-delay="900" data-aos-duration="600"><img class="rounded-full" src="img/bar.png" style="height:55px"><p class="px-3"><strong class="text-xl">15%</strong><br/>398 Tech</p></span>
-						<span class="flex relative my-2" style="left: -120%;width: 2000px;" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="600"><img class="rounded-full" src="img/bar.png" style="height:55px"><p class="px-3"><strong class="text-xl">15%</strong><br/>398 Tech</p></span>
+					
+					<div class="pt-8 w-full">
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+							<div class="-ml-10 overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:90%;"></div>
+							<p class="px-3"><strong class="text-xl">15%</strong><br/>398 Tech</p>
+						</div>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
+							<div class="-ml-10 overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:80%;"></div>
+							<p class="px-3"><strong class="text-xl">15%</strong><br/>398 Tech</p>
+						</div>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="600" data-aos-duration="800">
+							<div class="-ml-10 overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:70%;"></div>
+							<p class="px-3"><strong class="text-xl">15%</strong><br/>398 Tech</p>
+						</div>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="800" data-aos-duration="800">
+							<div class="-ml-10 overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:60%;"></div>
+							<p class="px-3"><strong class="text-xl">15%</strong><br/>398 Tech</p>
+						</div>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="800">
+							<div class="-ml-10 overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:50%;"></div>
+							<p class="px-3"><strong class="text-xl">15%</strong><br/>398 Tech</p>
+						</div>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="1100" data-aos-duration="800">
+							<div class="-ml-10 overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:40%;"></div>
+							<p class="px-3"><strong class="text-xl">15%</strong><br/>398 Tech</p>
+						</div>
 					</div>
 				  </div>
 			  </div>
@@ -125,7 +159,7 @@
 		  </div>
 
 			
-		  <div id="campaigns" class="h-screen bg-gradient">
+		  <div id="campaigns" class="h-screen bg-gradient-3">
 			<div class="flex lg:content-center flex-wrap h-screen">
 			  <div class="container mx-auto">
 				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
@@ -137,7 +171,7 @@
 							Emails campaigns has been sent.
 						</p>
 					</div>
-					<div class="pt-5 flex justify-center">
+					<div class="flex justify-center">
 						<div class="w-auto p-10">
 							<div class="flex flex-wrap p-3">
 								<div class="text-right p-2"><p>#1<br/>Tech</p></div>
@@ -171,29 +205,65 @@
 			  </div>
 			</div>
 			<div class="bounce w-full text-center text-4xl -mt-8">
-				<a href="#campaigns"><i class="fas fa-chevron-down"></i></a>
+				<a href="#opens"><i class="fas fa-chevron-down"></i></a>
 			</div>
 		  </div>
 
-		  <div id="3" class="h-screen bg-gradient">
-			<div class="flex lg:content-center flex-wrap h-screen" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
+		  <div id="opens" class="h-screen bg-gradient">
+			<div class="flex lg:content-center flex-wrap h-screen">
 			  <div class="container mx-auto">
-				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
-					<div class="flex justify-center">
-						<h2 class="heading counter-value" data-count="500">100</h2>
+				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="300" data-aos-duration="600">
+					
+					<div id="counters_3" class="flex justify-center">
+						<div class="w-auto" data-aos="fade-right" data-aos-delay="500" data-aos-duration="600">
+							<div class="flex justify-center heading md-heading font-bold">
+								<h2 class="counter" data-TargetNum="44" data-Speed="1500"></h2>%
+							</div>
+							<div class="text-center">
+								<p class="lg:text-xl">
+									Open rate on Cbus emails.
+								</p>
+							</div>
+						</div>
+						<div class="w-auto pt-20 text-black" data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+							<div class="flex justify-center heading md-heading font-bold opacity-50 ">
+								<h2 class="counter" data-TargetNum="34" data-Speed="2000"></h2>%
+							</div>
+							<div class="text-center opacity-50">
+								<p class="lg:text-xl">
+									Open rate by benchmark suvery.
+								</p>
+							</div>
+						</div>
 					</div>
-					<div class="text-center">
-						<p class="lg:text-xl">
-							Emails 3
-						</p>
-					</div>
+
 					<div class="pt-5 flex justify-center">
 						<div class="w-auto p-10">
-							<div id="counters_1">
-								<div class="counter" data-TargetNum="98765" data-Speed="7000"></div>
-								<div class="counter" data-TargetNum="7" data-Speed="7000"
-								data-Direction="reverse" data-Easing="linear"></div>
-								<div class="counter" data-TargetNum="80333" data-Speed="9000">0</div>
+							<div class="flex flex-wrap p-3">
+								<div class="text-right p-2"><p>#1<br/>Tech</p></div>
+								<div><h4 class="heading-4" data-aos="flip-down" data-aos-delay="200" data-aos-duration="600">77</h4></div>
+							</div>
+							<div class="flex flex-wrap p-3">
+								<div class="text-right p-2"><p>#1<br/>Tech</p></div>
+								<div><h4 class="heading-4"  data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">77</h4></div>
+							</div>
+							<div class="flex flex-wrap p-3">
+								<div class="text-right p-2"><p>#1<br/>Tech</p></div>
+								<div><h4 class="heading-4"  data-aos="flip-down" data-aos-delay="600" data-aos-duration="600">77</h4></div>
+							</div>
+						</div>
+						<div class="w-auto p-10">
+							<div class="flex flex-wrap p-3">
+								<div class="text-right p-2"><p>#1<br/>Tech</p></div>
+								<div><h4 class="heading-4"  data-aos="flip-down" data-aos-delay="700" data-aos-duration="600">77</h4></div>
+							</div>
+							<div class="flex flex-wrap p-3">
+								<div class="text-right p-2"><p>#1<br/>Tech</p></div>
+								<div><h4 class="heading-4"  data-aos="flip-down" data-aos-delay="800" data-aos-duration="600">77</h4></div>
+							</div>
+							<div class="flex flex-wrap p-3">
+								<div class="text-right p-2"><p>#1<br/>Tech</p></div>
+								<div><h4 class="heading-4"  data-aos="flip-down" data-aos-delay="900" data-aos-duration="600">77</h4></div>
 							</div>
 						</div>
 					</div>
@@ -201,9 +271,280 @@
 			  </div>
 			</div>
 			<div class="bounce w-full text-center text-4xl -mt-8">
-				<a href="#campaigns"><i class="fas fa-chevron-down"></i></a>
+				<a href="#subjectlines"><i class="fas fa-chevron-down"></i></a>
 			</div>
 		  </div>
+
+		  <div id="subjectlines" class="h-screen bg-gradient-2">
+			<div class="h-screen flex flex-wrap content-center">
+			  <div class="mx-auto">
+				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="300" data-aos-duration="600">
+					<div class="flex justify-center">
+						<div class="flex justify-center font-bold">
+							<h2 class="heading-4">Top Subject lines</h2>
+						</div>
+					</div>
+
+					<div class="pt-5 flex justify-center">
+						<div class="w-auto p-10">
+							<div class="flex flex-wrap pt-10">
+								<div class="text pr-3 text-black opacity-50 font-bold">
+									<p>Tech</p>
+								</div>
+								<div>
+									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#1</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#2</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+								</div>
+							</div>
+							<div class="flex flex-wrap pt-10">
+								<div class="text pr-3 text-black opacity-50 font-bold">
+									<p>Tech</p>
+								</div>
+								<div>
+									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#1</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#2</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+								</div>
+							</div>
+							<div class="flex flex-wrap pt-10">
+								<div class="text pr-3 text-black opacity-50 font-bold">
+									<p>Tech</p>
+								</div>
+								<div>
+									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#1</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#2</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="w-auto p-10">
+							<div class="flex flex-wrap pt-10">
+								<div class="text pr-3 text-black opacity-50 font-bold">
+									<p>Tech</p>
+								</div>
+								<div>
+									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#1</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#2</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+								</div>
+							</div>
+							<div class="flex flex-wrap pt-10">
+								<div class="text pr-3 text-black opacity-50 font-bold">
+									<p>Tech</p>
+								</div>
+								<div>
+									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#1</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#2</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+								</div>
+							</div>
+							<div class="flex flex-wrap pt-10">
+								<div class="text pr-3 text-black opacity-50 font-bold">
+									<p>Tech</p>
+								</div>
+								<div>
+									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#1</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#2</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+			  </div>
+			</div>
+			<div class="bounce w-full text-center text-4xl -mt-8">
+				<a href="#clicks"><i class="fas fa-chevron-down"></i></a>
+			</div>
+		  </div>
+
+		  <div id="clicks" class="h-screen bg-gradient-3">
+			<div class="flex lg:content-center flex-wrap h-screen">
+			  <div class="container mx-auto">
+				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="300" data-aos-duration="600">
+					
+					<div id="counters_3" class="flex justify-center">
+						<div class="w-auto" data-aos="fade-right" data-aos-delay="500" data-aos-duration="600">
+							<div class="flex justify-center heading md-heading font-bold">
+								<h2 class="counter" data-TargetNum="44" data-Speed="1500"></h2>%
+							</div>
+							<div class="text-center">
+								<p class="lg:text-xl">
+									Click rate on Cbus emails.
+								</p>
+							</div>
+						</div>
+						<div class="w-auto pt-20 text-black" data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+							<div class="flex justify-center heading md-heading font-bold opacity-50 ">
+								<h2 class="counter" data-TargetNum="34" data-Speed="2000"></h2>%
+							</div>
+							<div class="text-center opacity-50">
+								<p class="lg:text-xl">
+									Click rate by benchmark suvery.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="pt-5 flex justify-center">
+						<div class="w-auto p-10">
+							<div class="flex flex-wrap p-3">
+								<div class="text-right p-2"><p>#1<br/>Tech</p></div>
+								<div><h4 class="heading-4" data-aos="flip-down" data-aos-delay="200" data-aos-duration="600">77</h4></div>
+							</div>
+							<div class="flex flex-wrap p-3">
+								<div class="text-right p-2"><p>#1<br/>Tech</p></div>
+								<div><h4 class="heading-4"  data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">77</h4></div>
+							</div>
+							<div class="flex flex-wrap p-3">
+								<div class="text-right p-2"><p>#1<br/>Tech</p></div>
+								<div><h4 class="heading-4"  data-aos="flip-down" data-aos-delay="600" data-aos-duration="600">77</h4></div>
+							</div>
+						</div>
+						<div class="w-auto p-10">
+							<div class="flex flex-wrap p-3">
+								<div class="text-right p-2"><p>#1<br/>Tech</p></div>
+								<div><h4 class="heading-4"  data-aos="flip-down" data-aos-delay="700" data-aos-duration="600">77</h4></div>
+							</div>
+							<div class="flex flex-wrap p-3">
+								<div class="text-right p-2"><p>#1<br/>Tech</p></div>
+								<div><h4 class="heading-4"  data-aos="flip-down" data-aos-delay="800" data-aos-duration="600">77</h4></div>
+							</div>
+							<div class="flex flex-wrap p-3">
+								<div class="text-right p-2"><p>#1<br/>Tech</p></div>
+								<div><h4 class="heading-4"  data-aos="flip-down" data-aos-delay="900" data-aos-duration="600">77</h4></div>
+							</div>
+						</div>
+					</div>
+				  </div>
+			  </div>
+			</div>
+			<div class="bounce w-full text-center text-4xl -mt-8">
+				<a href="#times"><i class="fas fa-chevron-down"></i></a>
+			</div>
+		  </div>
+
+		  <div id="times" class="h-screen bg-gradient">
+			<div class="h-screen flex flex-wrap content-center">
+			  <div class="mx-auto">
+				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="300" data-aos-duration="600">
+					<div class="flex justify-center">
+						<div class="flex justify-center font-bold">
+							<h2 class="heading-4">Top Subject lines</h2>
+						</div>
+					</div>
+
+					<div class="pt-5 flex justify-center">
+						<div class="w-auto p-10">
+							<div class="flex flex-wrap pt-10">
+								<div class="text pr-3 text-black opacity-50 font-bold">
+									<p>Tech</p>
+								</div>
+								<div>
+									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#1</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#2</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+								</div>
+							</div>
+							<div class="flex flex-wrap pt-10">
+								<div class="text pr-3 text-black opacity-50 font-bold">
+									<p>Tech</p>
+								</div>
+								<div>
+									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#1</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#2</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+								</div>
+							</div>
+							<div class="flex flex-wrap pt-10">
+								<div class="text pr-3 text-black opacity-50 font-bold">
+									<p>Tech</p>
+								</div>
+								<div>
+									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#1</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#2</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="w-auto p-10">
+							<div class="flex flex-wrap pt-10">
+								<div class="text pr-3 text-black opacity-50 font-bold">
+									<p>Tech</p>
+								</div>
+								<div>
+									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#1</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#2</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+								</div>
+							</div>
+							<div class="flex flex-wrap pt-10">
+								<div class="text pr-3 text-black opacity-50 font-bold">
+									<p>Tech</p>
+								</div>
+								<div>
+									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#1</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#2</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+								</div>
+							</div>
+							<div class="flex flex-wrap pt-10">
+								<div class="text pr-3 text-black opacity-50 font-bold">
+									<p>Tech</p>
+								</div>
+								<div>
+									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#1</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+										<strong class="pr-5">#2</strong> You’re invited to attend an exclusive  member webinar
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+			  </div>
+			</div>
+			<div class="bounce w-full text-center text-4xl -mt-8">
+				<a href="#"><i class="fas fa-chevron-up"></i></a>
+			</div>
+		  </div>
+
 
 	</body>
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
