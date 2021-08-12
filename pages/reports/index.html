@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>Email Report Dashboard</title>
   <link href="../../images/favion.png" rel="icon" type="image/x-icon" />
 
@@ -32,6 +33,17 @@
 		opacity: .7;
         transition: opacity 0.2s ease-in;
 	}
+
+	.px-lg-md { padding-left: 8rem; padding-right: 8rem; }
+	.h-lg-md { height: 33rem; }
+
+	/* md */
+	@media (max-width: 1600px){
+		.px-lg-md { padding-left: 3rem; padding-right: 4rem; }
+		.h-lg-md { height: 23rem; }
+	}
+
+
   </style>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF495ZKW9K"></script>
@@ -96,82 +108,81 @@
 		<div data-v-app="" id="app">
 			<div class="flex h-screen bg-gray-200 font-roboto">
 
-
-				<div class="flex-1 flex flex-col overflow-hidden">
-					<main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-700">
-						<div class="md:container mx-auto xl:px-24 py-8">
-							<div>
-                <!-- Stats -->
-				<div class="mt-4">
-					<div class="flex flex-wrap -mx-6">
-						<div class="w-full px-6 sm:w-1/2 xl:w-1/3">
-							<div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
-								<div class="p-3 bg-indigo-600 bg-opacity-75 rounded-full">
-									<svg class="w-8 h-8 text-white" viewbox="0 0 28 30" xmlns="http://www.w3.org/2000/svg">
-									<path d="M18.2 9.08889C18.2 11.5373 16.3196 13.5222 14 13.5222C11.6804 13.5222 9.79999 11.5373 9.79999 9.08889C9.79999 6.64043 11.6804 4.65556 14 4.65556C16.3196 4.65556 18.2 6.64043 18.2 9.08889Z" fill="currentColor"></path>
-									<path d="M25.2 12.0444C25.2 13.6768 23.9464 15 22.4 15C20.8536 15 19.6 13.6768 19.6 12.0444C19.6 10.4121 20.8536 9.08889 22.4 9.08889C23.9464 9.08889 25.2 10.4121 25.2 12.0444Z" fill="currentColor"></path>
-									<path d="M19.6 22.3889C19.6 19.1243 17.0927 16.4778 14 16.4778C10.9072 16.4778 8.39999 19.1243 8.39999 22.3889V26.8222H19.6V22.3889Z" fill="currentColor"></path>
-									<path d="M8.39999 12.0444C8.39999 13.6768 7.14639 15 5.59999 15C4.05359 15 2.79999 13.6768 2.79999 12.0444C2.79999 10.4121 4.05359 9.08889 5.59999 9.08889C7.14639 9.08889 8.39999 10.4121 8.39999 12.0444Z" fill="currentColor"></path>
-									<path d="M22.4 26.8222V22.3889C22.4 20.8312 22.0195 19.3671 21.351 18.0949C21.6863 18.0039 22.0378 17.9556 22.4 17.9556C24.7197 17.9556 26.6 19.9404 26.6 22.3889V26.8222H22.4Z" fill="currentColor"></path>
-									<path d="M6.64896 18.0949C5.98058 19.3671 5.59999 20.8312 5.59999 22.3889V26.8222H1.39999V22.3889C1.39999 19.9404 3.2804 17.9556 5.59999 17.9556C5.96219 17.9556 6.31367 18.0039 6.64896 18.0949Z" fill="currentColor"></path></svg>
-								</div>
-								<div class="mx-5 flex">
-							  <div class="pr-5">
-								<h4 class="text-2xl font-semibold text-gray-700">
-								  522,109
-								</h4>
-								<div class="text-gray-500">
-								  Male
-								</div>
-							  </div>
-							  <div class="">
-								<h4 class="text-2xl font-semibold text-gray-700">
-								  58,543
-								</h4>
-								<div class="text-gray-500">
-								  Female
-								</div>
-							  </div>
-													</div>
-												</div>
-											</div>
-											<div class="w-full px-6 mt-6 sm:w-1/2 xl:w-1/3 sm:mt-0">
-												<div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
-													<div class="rounded-full text-blue text-5xl ">
-							  <i class="fab fa-chrome"></i>
-													</div>
-													<div class="mx-5 flex">
-	
-							  <div class="">
-								<h4 class="text-lg font-semibold text-gray-700">
-								  Chrome
-								</h4>
-								<div class="text-gray-500">
-								  Mosted used browser
-								</div>
-							  </div>
-													</div>
-												</div>
-											</div>
-											<div class="w-full px-6 mt-6 sm:w-1/2 xl:w-1/3 xl:mt-0">
-												<div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
-													<div class="rounded-full text-grey text-5xl ">
-							  <i class="fab fa-apple"></i>
-													</div>
-													<div class="mx-5">
-														<h4 class="text-2xl font-semibold text-gray-700">
-															Apple
-														</h4>
-														<div class="text-gray-500">
-															Most used device
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+			<div class="flex-1 flex flex-col overflow-hidden">
+				<main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-700">
+					<div class="px-lg-md md:container mx-auto py-8">
+						<div>
+			<!-- Stats -->
+			<div class="mt-4">
+				<div class="flex flex-wrap -mx-6">
+					<div class="w-full px-6 sm:w-1/2 xl:w-1/3">
+						<div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
+							<div class="p-3 bg-indigo-600 bg-opacity-75 rounded-full">
+								<svg class="w-8 h-8 text-white" viewbox="0 0 28 30" xmlns="http://www.w3.org/2000/svg">
+								<path d="M18.2 9.08889C18.2 11.5373 16.3196 13.5222 14 13.5222C11.6804 13.5222 9.79999 11.5373 9.79999 9.08889C9.79999 6.64043 11.6804 4.65556 14 4.65556C16.3196 4.65556 18.2 6.64043 18.2 9.08889Z" fill="currentColor"></path>
+								<path d="M25.2 12.0444C25.2 13.6768 23.9464 15 22.4 15C20.8536 15 19.6 13.6768 19.6 12.0444C19.6 10.4121 20.8536 9.08889 22.4 9.08889C23.9464 9.08889 25.2 10.4121 25.2 12.0444Z" fill="currentColor"></path>
+								<path d="M19.6 22.3889C19.6 19.1243 17.0927 16.4778 14 16.4778C10.9072 16.4778 8.39999 19.1243 8.39999 22.3889V26.8222H19.6V22.3889Z" fill="currentColor"></path>
+								<path d="M8.39999 12.0444C8.39999 13.6768 7.14639 15 5.59999 15C4.05359 15 2.79999 13.6768 2.79999 12.0444C2.79999 10.4121 4.05359 9.08889 5.59999 9.08889C7.14639 9.08889 8.39999 10.4121 8.39999 12.0444Z" fill="currentColor"></path>
+								<path d="M22.4 26.8222V22.3889C22.4 20.8312 22.0195 19.3671 21.351 18.0949C21.6863 18.0039 22.0378 17.9556 22.4 17.9556C24.7197 17.9556 26.6 19.9404 26.6 22.3889V26.8222H22.4Z" fill="currentColor"></path>
+								<path d="M6.64896 18.0949C5.98058 19.3671 5.59999 20.8312 5.59999 22.3889V26.8222H1.39999V22.3889C1.39999 19.9404 3.2804 17.9556 5.59999 17.9556C5.96219 17.9556 6.31367 18.0039 6.64896 18.0949Z" fill="currentColor"></path></svg>
+							</div>
+							<div class="mx-5 flex">
+								<div class="pr-5">
+									<h4 class="text-2xl font-semibold text-gray-700">
+										522,109
+									</h4>
+									<div class="text-gray-500">
+										Male
 									</div>
-					<!-- Ends stats -->
-								<div class="mt-8"></div>
+								</div>
+								<div class="">
+									<h4 class="text-2xl font-semibold text-gray-700">
+										58,543
+									</h4>
+									<div class="text-gray-500">
+										Female
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w-full px-6 mt-6 sm:w-1/2 xl:w-1/3 sm:mt-0">
+						<div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
+							<div class="rounded-full text-blue text-5xl">
+								<i class="fab fa-chrome"></i>
+							</div>
+							<div class="mx-5 flex">
+								<div class="">
+									<h4 class="text-lg font-semibold text-gray-700">
+										Chrome
+									</h4>
+									<div class="text-gray-500">
+										Mosted used browser
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w-full px-6 mt-6 sm:w-1/2 xl:w-1/3 xl:mt-0">
+						<div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
+							<div class="rounded-full text-grey text-5xl">
+								<i class="fab fa-apple"></i>
+							</div>
+							<div class="mx-5">
+								<h4 class="text-2xl font-semibold text-gray-700">
+									Apple
+								</h4>
+								<div class="text-gray-500">
+									Most used device
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Ends stats -->
+
+		<div class="mt-8"></div>
 <!-- White submenu -->
 <div class="w-full mt-5 flex items-center bg-white p-3 rounded-lg">
 	  <div class="date">
@@ -247,121 +258,121 @@
   
   </div>
   <!-- End: White submenu -->
-                <!-- Email table -->
-								<div class="flex flex-col mt-1" style="height: 33rem;">
-									<div class="py-2 -my-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
-										<div class="inline-block min-w-full overflow-hidden align-middle border-b border-gray-200 shadow sm:rounded-lg">
-											<table class="email-list min-w-full">
-												<thead>
-													<tr class="cursor-pointer">
-														<th @click="sortBy('name')" class="px-5 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-															Name
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-														</th>
-														<th @click="sortBy('date')" class="px-5 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-															Date
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-														</th>
-														<th @click="sortBy('group')" class="px-5 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-															Group
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-														</th>
-														<th @click="sortBy('openrate')" class="px-2 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-															Opens
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-														</th>
-                            							<th @click="sortBy('clickrate')" class="px-2 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-															Clicks
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-														</th>
-														<th @click="sortBy('unsub')" class="px-2 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-															Opt-Outs
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-														</th>
-                            							<th @click="sortBy('sent')" class="pl-5 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-															Size
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-														</th>
-													</tr>
-												</thead>
-												<tbody class="bg-white">
-													<template v-for="listData in lists">
-													<tr class="card " :class="['card-' + listData.group + ' ' + listData.color + ' ' + listData.filter]">
-														<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
-															<div class="flex items-center">
-																<div class="flex-shrink-0 w-10 h-10">
-																	<a target="_blank" :href="listData.url">
-																		<img class="bg-grey hover w-10 h-10" 
-																		 :src="'https://image.thum.io/get/maxAge/12/width/100/' + listData.url" 
-																		/> 
-																	</a>
-																</div>
-																<div class="ml-4">
-																	<div class="text-sm font-bold leading-5 text-gray-900">
-																		{{listData.name}}
-																	</div>
-																	<div class="text-sm leading-5 text-gray-500">
-																		<p class="break-words max-w-xs mx-auto">
-																			{{ listData.subject }}
-																		</p>
-																	</div>
-																		<div class="text-xs text-gray-900">
-																		{{listData.id}}
-																	</div>
-																</div>
-															</div>
-														</td>
-														<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
-															<div class="text-sm leading-5 text-gray-900">
-																{{ listData.day }}
-															</div>
-															<div class="text-sm leading-5 text-gray-500">
-																{{ listData.time }}
-															</div>
-														</td>
-														<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
-															<span class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full uppercase">
-																{{ listData.group }}
-															</span>
-														</td>
-														<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
-															<div class="text-lg font-bold leading-5 text-gray-900">
-																{{ listData.openrate }}%
-															</div>
-															<div class="text-sm leading-5 text-gray-500">
-																{{ listData.opens }}
-															</div>
-														</td>
-														<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
-															<div class="text-lg font-bold leading-5 text-gray-900">
-																{{ listData.clickrate }}%
-															</div>
-															<div class="text-sm leading-5 text-gray-500">
-																{{ listData.clicks }}
-															</div>
-														</td>
-														<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
-															<div class="text-lg font-bold leading-5 text-gray-900">
-																{{ listData.unsub }}
-															</div>
-															<div class="text-sm leading-5 text-gray-500">
-																{{ listData.unsubrate }}% 
-															</div>
-														</td>
-														<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
-															<div class="text-lg leading-5 text-gray-900">
-																{{ listData.sent }}
-															</div>
-														</td>
-
-													</tr>
-												</template>
-												</tbody>
-											</table>
+	<!-- Email table -->
+		<div class="flex flex-col mt-1 pr-5 h-lg-md">
+			<div class="py-2 -my-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+				<div class="inline-block min-w-full overflow-hidden align-middle border-b border-gray-200 shadow sm:rounded-lg">
+					<table class="email-list min-w-full">
+						<thead>
+							<tr class="cursor-pointer">
+								<th @click="sortBy('name')" 		class="px-5 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+									Name
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+								</th>
+								<th @click="sortBy('date')" 		class="px-5 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+									Date
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+								</th>
+								<th @click="sortBy('group')" 		class="px-5 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+									Group
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+								</th>
+								<th @click="sortBy('openrate')" 	class="px-2 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+									Opens
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+								</th>
+								<th @click="sortBy('clickrate')" 	class="px-2 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+									Clicks
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+								</th>
+								<th @click="sortBy('unsub')" class="px-2 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+									Opt-Outs
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+								</th>
+								<th @click="sortBy('sent')" class="pl-5 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+									Size
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+								</th>
+							</tr>
+						</thead>
+						<tbody class="bg-white">
+							<template v-for="listData in lists">
+							<tr class="card " :class="['card-' + listData.group + ' ' + listData.color + ' ' + listData.filter]">
+								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
+									<div class="flex items-center">
+										<div class="flex-shrink-0 w-10 h-10">
+											<a target="_blank" :href="listData.url">
+												<img class="bg-grey hover w-10 h-10" 
+													:src="'https://image.thum.io/get/maxAge/12/width/100/' + listData.url" 
+												/> 
+											</a>
+										</div>
+										<div class="ml-4">
+											<div class="text-sm font-bold leading-5 text-gray-900">
+												{{listData.name}}
+											</div>
+											<div class="text-sm leading-5 text-gray-500">
+												<p class="break-words max-w-xs mx-auto">
+													{{ listData.subject }}
+												</p>
+											</div>
+												<div class="text-xs text-gray-900">
+												{{listData.id}}
+											</div>
 										</div>
 									</div>
-								</div>
-                <!-- End table -->
+								</td>
+								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
+									<div class="text-sm leading-5 text-gray-900">
+										{{ listData.day }}
+									</div>
+									<div class="text-sm leading-5 text-gray-500">
+										{{ listData.time }}
+									</div>
+								</td>
+								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
+									<span class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full uppercase">
+										{{ listData.group }}
+									</span>
+								</td>
+								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
+									<div class="text-lg font-bold leading-5 text-gray-900">
+										{{ listData.openrate }}%
+									</div>
+									<div class="text-sm leading-5 text-gray-500">
+										{{ listData.opens }}
+									</div>
+								</td>
+								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
+									<div class="text-lg font-bold leading-5 text-gray-900">
+										{{ listData.clickrate }}%
+									</div>
+									<div class="text-sm leading-5 text-gray-500">
+										{{ listData.clicks }}
+									</div>
+								</td>
+								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
+									<div class="text-lg font-bold leading-5 text-gray-900">
+										{{ listData.unsub }}
+									</div>
+									<div class="text-sm leading-5 text-gray-500">
+										{{ listData.unsubrate }}% 
+									</div>
+								</td>
+								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
+									<div class="text-lg leading-5 text-gray-900">
+										{{ listData.sent }}
+									</div>
+								</td>
+
+							</tr>
+						</template>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	<!-- End table -->
 
 
                 <div class="mt-8">
