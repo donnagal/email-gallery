@@ -4888,7 +4888,7 @@
     "openrate": 27,
     "clicks": 33,
     "clickrate": 0,
-    "subject": "<% if ( recipient.firstName == \"\" ) { %>Are you<%} else {%> <%=recipient.firstName %>,<%}%> looking for help with your business super?",
+    "subject": "Are you looking for help with your business super?",
     "day": "Tuesday, 27 April 2021",
     "unsub": 101,
     "unsubrate": 2,
