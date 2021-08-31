@@ -312,10 +312,10 @@
 							<tr class="card " :class="['card-' + listData.group + ' ' + listData.color + ' ' + listData.filter]">
 								<td class="ecol-lg py-4 border-b border-gray-200 text-left pl-3">
 									<div class="flex items-center">
-										<div class="flex-shrink-0 w-10 h-10">
+										<div class="flex-shrink-0">
 											<a target="_blank" :href="listData.url">
-												<img class="bg-grey hover w-10 h-10" 
-													:src="'https://image.thum.io/get/maxAge/12/width/100/' + listData.url" 
+												<img class="bg-grey hover" 
+													:src="'https://image.thum.io/get/maxAge/12/width/60/' + listData.url" 
 												/> 
 											</a>
 										</div>
@@ -324,7 +324,7 @@
 												{{listData.name}}
 											</div>
 											<div class="text-sm leading-5 text-gray-500">
-												<p class="break-words max-w-xs mx-auto">
+												<p class="">
 													{{ listData.subject }}
 												</p>
 											</div>
