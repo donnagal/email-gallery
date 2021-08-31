@@ -285,6 +285,10 @@
 									Clicks
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
 								</th>
+								<th @click="sortBy('ctor')" class="px-2 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+									CTOR
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+								</th>
 								<th @click="sortBy('unsub')" class="px-2 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
 									Opt-Outs
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
@@ -346,6 +350,14 @@
 								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
 									<div class="text-lg font-bold leading-5 text-gray-900">
 										{{ listData.clickrate }}%
+									</div>
+									<div class="text-sm leading-5 text-gray-500">
+										{{ listData.clicks }}
+									</div>
+								</td>
+								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
+									<div class="text-lg font-bold leading-5 text-gray-900">
+										{{ listData.ctor }}%
 									</div>
 									<div class="text-sm leading-5 text-gray-500">
 										{{ listData.clicks }}
