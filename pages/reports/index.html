@@ -42,6 +42,9 @@
 		.px-lg-md { padding-left: 3rem; padding-right: 4rem; }
 		.h-lg-md { height: 23rem; }
 	}
+	.ecol-lg {width: 15%;}
+	.ecol-md {width: 7%;}
+	.ecol {width: 5%;}
 
 
   </style>
@@ -259,50 +262,55 @@
   </div>
   <!-- End: White submenu -->
 	<!-- Email table -->
+	<div>
+		<table class="email-list min-w-full mt-2 -mb-1 rounded-lg">
+			<thead>
+				<tr class="cursor-pointer text-center">
+					<th @click="sortBy('name')" class="ecol-lg text-left pl-3 py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+						Name
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+					</th>
+					<th @click="sortBy('date')" class="ecol-md py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+						Date
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+					</th>
+					<th @click="sortBy('group')" class="ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+						Group
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+					</th>
+					<th @click="sortBy('openrate')" class="ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+						Opens
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+					</th>
+					<th @click="sortBy('clickrate')" class="ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+						Clicks
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+					</th>
+					<th @click="sortBy('ctor')" class="ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+						CTOR
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+					</th>
+					<th @click="sortBy('unsub')" class="ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+						Opt-Outs
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+					</th>
+					<th @click="sortBy('sent')" class="ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+						Size
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+					</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+
 		<div class="flex flex-col mt-1 pr-5 h-lg-md">
 			<div class="py-2 -my-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
 				<div class="inline-block min-w-full overflow-hidden align-middle border-b border-gray-200 shadow sm:rounded-lg">
-					<table class="email-list min-w-full">
-						<thead>
-							<tr class="cursor-pointer">
-								<th @click="sortBy('name')" class="px-5 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-									Name
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-								</th>
-								<th @click="sortBy('date')" class="px-5 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-									Date
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-								</th>
-								<th @click="sortBy('group')" class="px-5 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-									Group
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-								</th>
-								<th @click="sortBy('openrate')" class="px-2 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-									Opens
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-								</th>
-								<th @click="sortBy('clickrate')" class="px-2 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-									Clicks
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-								</th>
-								<th @click="sortBy('ctor')" class="px-2 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-									CTOR
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-								</th>
-								<th @click="sortBy('unsub')" class="px-2 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-									Opt-Outs
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-								</th>
-								<th @click="sortBy('sent')" class="pl-5 py-3 text-xs font-light leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-									Size
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-								</th>
-							</tr>
-						</thead>
+					<table class="email-list min-w-full text-center">
 						<tbody class="bg-white">
 							<template v-for="listData in lists">
 							<tr class="card " :class="['card-' + listData.group + ' ' + listData.color + ' ' + listData.filter]">
-								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
+								<td class="ecol-lg py-4 border-b border-gray-200 text-left pl-3">
 									<div class="flex items-center">
 										<div class="flex-shrink-0 w-10 h-10">
 											<a target="_blank" :href="listData.url">
@@ -326,7 +334,7 @@
 										</div>
 									</div>
 								</td>
-								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
+								<td class="ecol-md py-4 border-b border-gray-200">
 									<div class="text-sm leading-5 text-gray-900">
 										{{ listData.day }}
 									</div>
@@ -334,12 +342,12 @@
 										{{ listData.time }}
 									</div>
 								</td>
-								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
+								<td class="ecol py-4 border-b border-gray-200">
 									<span class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full uppercase">
 										{{ listData.group }}
 									</span>
 								</td>
-								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
+								<td class="ecol py-4 border-b border-gray-200">
 									<div class="text-lg font-bold leading-5 text-gray-900">
 										{{ listData.openrate }}%
 									</div>
@@ -347,7 +355,7 @@
 										{{ listData.opens }}
 									</div>
 								</td>
-								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
+								<td class="ecol py-4 border-b border-gray-200">
 									<div class="text-lg font-bold leading-5 text-gray-900">
 										{{ listData.clickrate }}%
 									</div>
@@ -355,7 +363,7 @@
 										{{ listData.clicks }}
 									</div>
 								</td>
-								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
+								<td class="ecol py-4 border-b border-gray-200">
 									<div class="text-lg font-bold leading-5 text-gray-900">
 										{{ listData.ctor }}%
 									</div>
@@ -363,7 +371,7 @@
 										{{ listData.clicks }}
 									</div>
 								</td>
-								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
+								<td class="ecol py-4 border-b border-gray-200">
 									<div class="text-lg font-bold leading-5 text-gray-900">
 										{{ listData.unsub }}
 									</div>
@@ -371,7 +379,7 @@
 										{{ listData.unsubrate }}% 
 									</div>
 								</td>
-								<td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
+								<td class="ecol py-4 border-b border-gray-200">
 									<div class="text-lg leading-5 text-gray-900">
 										{{ listData.sent }}
 									</div>
