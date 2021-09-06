@@ -750,7 +750,7 @@
     "unsubrate": 0,
     "id": "DM18039",
     "filter": "Aug-21",
-    "gallery": "hide",
+    "gallery": "",
     "date": "2021-08-03",
     "time": "2:11:58 PM",
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/aug-eofy-performance/"
@@ -3543,7 +3543,7 @@
     "unsubrate": 0,
     "id": "DM16972",
     "filter": "Jun-21",
-    "gallery": "",
+    "gallery": "hide",
     "date": "2021-06-18",
     "time": "12:00:18 PM",
     "url": "https://email-gallery.netlify.app/emails/2021/comms/sis-late-payment/"
