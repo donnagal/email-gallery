@@ -28,6 +28,14 @@
           opacity: .7;
           transition: opacity 0.2s ease-in;
         }
+        u ~ div .spacer-ghost { display: block !important; }
+
+        /* Chrome 29+ */
+        @media screen and (-webkit-min-device-pixel-ratio:0)
+          and (min-resolution:.001dpcm) {
+            .spacer-ghost { display: block !important; }
+        }
+
         @media (max-width: 620px){
           .sm-hide { display: none; }
           .sm-text-md {font-size: 15px !important;}
@@ -360,7 +368,9 @@
                     <strong>Need some advice?</strong>
                   </p>
                     <p class="size-16" style="Margin-top: 20px;Margin-bottom: 20px;font-size: 16px;line-height: 24px;" lang="x-size-16">
-                      As part of your Cbus membership, you have access to our team of advisers. Fill out the form and we’ll call you back.   
+                      As part of your Cbus membership, you have access to our team of advisers. Fill out the form and we’ll call you back.
+                      <!--[if (mso)|(IE)]>&nbsp;<br/>&nbsp;<![endif]-->
+                      <span class="spacer-ghost" style="display: none;">&nbsp;</span>   
                     </p>
                 </div>
               </div>
