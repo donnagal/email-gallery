@@ -3,33 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Cbus Super: Webinars </title>
+  <title>Cbus Super: SIS Webinars</title>
   <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
   <link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-  
+
+  <!-- Link Swiper's CSS --><link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   <!-- tailwindcss --><link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/8ee28de705b5ab88527f77f76b51fc77.css" rel="stylesheet">
   <style>
-		.font-normal {
-			font-family: "Effra", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		}
-		.font-heavy {
-			font-family: 'Effra Heavy', "Helvetica Neue", Helvetica, Arial, sans-serif;
-		}
-		.font-light {
-			font-family: 'Effra Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
-		}
-		.font-medium {
-			font-family: 'Effra Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
-		}
-		.font-400 {
-			font-weight: 400;
-		}
-		.text-brand-gray {
-			color: #666;
-		}
+		.font-normal {font-family: "Effra", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+		.font-heavy {font-family: 'Effra Heavy', "Helvetica Neue", Helvetica, Arial, sans-serif;}
+		.font-light {font-family: 'Effra Light', "Helvetica Neue", Helvetica, Arial, sans-serif;}
+		.font-medium {font-family: 'Effra Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;}
+		.font-400 {font-weight: 400;}
+		.text-brand-gray {color: #666;}
+		.text-brand-purple { color: #72004D; }
 		.bg-gradient {
 			background: rgb(162, 162, 162);
 			background: linear-gradient(100deg, rgba(162, 162, 162, 1) 0%, rgb(55 65 81) 0%, rgba(255, 255, 255, 0) 100%);
@@ -92,31 +83,20 @@
 			visibility: visible!important
 		}
 		@keyframes fadeUp {
-			0% {
-				transform: translateY(15%);
-				opacity: 0
-			}
-			40% {
-				opacity: 0
-			}
-			100% {
-				transform: translateY(0);
-				opacity: 1
-			}
+			0% {transform: translateY(15%);opacity: 0}
+			40% {opacity: 0}
+			100% {transform: translateY(0);opacity: 1}
 		}
 		@-webkit-keyframes fadeUp {
-			0% {
-				-webkit-transform: translateY(15%);
-				opacity: 0
-			}
-			40% {
-				opacity: 0
-			}
-			100% {
-				-webkit-transform: translateY(0);
+			0% {-webkit-transform: translateY(15%);
+				opacity: 0}
+			40% {opacity: 0}
+			100% {-webkit-transform: translateY(0);
 				opacity: 1
 			}
 		}
+		.shadow-box { box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}
+		.shadow-box-2 {box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
   </style>
   	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8N5FBQYX52"></script>
@@ -124,14 +104,13 @@
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-
 			gtag('config', 'G-8N5FBQYX52');
 		</script>
 </head>
 <body>
 	
-<div class="bg-no-repeat bg-center bg-auto h-96" style="background-image: 
-	url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/313aacfc12b7592ce9d417446fe6d1eb.jpg')">
+<div class="bg-no-repeat bg-center bg-top h-96" style="background-image: 
+	url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/ca5c97542eed349f67dd1a924157bb35.jpg')">
     
 	<div class="bg-gradient flex content-center lg:pt-0 flex-wrap h-96">
 		<div class="container mx-auto px-10 lg:px-0">
@@ -146,47 +125,162 @@
 	
 </div>
 
-<div class="container mx-auto py-10 text-gray-700 text-center pb-48 pt-24">
-
-	<div class="text-center">
-		<h2 class="text-4xl font-heavy pb-3">Retirement Planning Webinar Series</h2>
-	</div>
-	
-	<div class="mx-auto lg:w-2/3 pt-5">
-		<p class="text-gray-500 text-lg font-medium">
-			Available times
+<div class="container mx-auto py-16">
+	<div class="mx-auto lg:w-2/3 text-center">
+		<h2 class="text-5xl font-heavy pb-3 text-brand-purple">Retirement Planning Webinar Series</h2>
+		<p class="text-lg pb-8 text-gray-600">
+			This three-part series suits all members who are interested in understanding more about their pre-retirement and fully retired options. You can join one, or multiple webinars. 
 		</p>
 	</div>
+	<!-- Swiper -->
+	<div class="px-5 swiper mySwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="p-5 rounded shadow-box m-2">
+					<p class="font-heavy">Session 1</p>
+					<p class="text-3xl font-heavy">Laying the foundations </p>
+					<p class="text-lg font-medium">(Build and protect)</p>
+					<p class="pt-3">
+						<ul class="list-disc list-inside text-gray-600">
+							<li>Before tax contributions</li>
+							<li>After tax contributions</li>
+							<li>Insurance and beneficiaries</li>
+						</ul>
+					</p>
+					  <!-- Flex columns -->
+					<div class="pt-3">
+						<div class="flex flex-wrap justify-center -mx-5">
+							<div class="date lg:w-auto text-center w-full bg-blue-500 m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2021-11-04">
+								<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz61413bf834a64411/regform?evuid=zzzz61413bf697371337">
+									<strong class="">4 NOV </strong> <br/> 7:30pm - 8pm AEDT
+								</a>
+							</div>
+							<div class="date lg:w-auto text-center w-full bg-blue-500 m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-11-16">
+								<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz61413d73f2a2c826/regform?evuid=zzzz61413d72d566b727">
+									<strong class="">16 NOV </strong> <br/> 7:30pm - 8pm AEDT
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="p-5 rounded shadow-box m-2">
+					<p class="font-heavy">Session 2</p>
+					<p class="text-3xl font-heavy">Getting to lockup</p>
+					<p class="text-lg font-medium">(Consolidate and fine tune)</p>
+					<p class="pt-3">
+						<ul class="list-disc list-inside text-gray-600">
+							<li>Access to super</li>
+							<li>Transition to retirement</li>
+							<li>Investment options</li>
+						</ul>
+					</p>
+					  <!-- Flex columns -->
+					<div class="pt-3">
+						<div class="flex flex-wrap justify-center -mx-5">
+							<div class="date lg:w-auto text-center w-full bg-blue-500 m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-11-09">
+								<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz61413df28566f355/regform?evuid=zzzz61413df1cd773614">
+									<strong class="">9 NOV </strong> <br/> 7:30pm - 8pm AEDT
+								</a>
+							</div>
+							<div class="date lg:w-auto text-center w-full bg-blue-500 m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-11-18">
+								<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz61413e919535e246/regform?evuid=zzzz61413e90c93dc796">
+									<strong class="">18 NOV </strong> <br/> 7:30pm - 8pm AEDT
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="p-5 rounded shadow-box m-2">
+					<p class="font-heavy">Session 3</p>
+					<p class="text-3xl font-heavy">House warming</p>
+					<p class="text-lg font-medium">(Relax and enjoy)</p>
+					<p class="pt-3">
+						<ul class="list-disc list-inside text-gray-600">
+							<li>Retirement Super Income Stream</li>
+							<li>Age Pension overview</li>
+							<li>How much is enough</li>
+						</ul>
+					</p>
+					  <!-- Flex columns -->
+					<div class="pt-3">
+						<div class="flex flex-wrap justify-center -mx-5">
+							<div class="date lg:w-auto text-center w-full bg-blue-500 m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-11-11">
+								<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz6141402cd7929627/regform?evuid=zzzz6141402c291b7209">
+									<strong class="">11 NOV </strong> <br/> 7:30pm - 8pm AEDT
+								</a>
+							</div>
+							<div class="date lg:w-auto text-center w-full bg-blue-500 m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-11-23">
+								<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz614140fa29d9c855/regform?evuid=zzzz614140f97d02e712">
+									<strong class="">23 NOV </strong> <br/> 7:30pm - 8pm AEDT
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<div class="border-t border-gray-200 mt-16 mx-24"></div>
+</div>
 
-  <!-- Flex columns -->
-  <div class="px-2 mb-4">
-	<div class="flex flex-wrap justify-center -mx-2">
-	  
-	<div class="date m-2 text-gray-600 text-sm leading-5 p-4 border border-gray-300 rounded-md" data-date="2022-08-06">
-		<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz60e2bd675931f482/regform?evuid=zzzz60e2bd67581d2864">
-			<strong class="text-lg">Fri, 6 August </strong> <br/> 12pm - 12:30pm AEST
-		</a>
+<div class="container mx-auto pb-24">
+	<div class="mx-auto lg:w-2/3 text-center">
+		<h2 class="text-5xl font-heavy pb-3 text-brand-purple">More Retirement Webinars</h2>
 	</div>
 
-	<div class="date m-2 text-gray-600 text-sm leading-5 p-4 border border-gray-300 rounded-md" data-date="2021-08-10">
-		<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz60e2c329da9a4086/regform?evuid=zzzz60e2c32952dc4668">
-			<strong class="text-lg">Tue, 10 August </strong> <br/>7pm - 7:30 AEST
-		</a>
+	<div class="flex flex-wrap justify-center p-5">
+		<div class="lg:relative lg:w-1/3 p-5 rounded shadow-box-2 m-4">
+			<p class="text-3xl font-heavy">Transition to Retirement Strategy</p>
+			<p class="pt-3 text-gray-600">
+				Learn how to gain access to your super via an Income Stream, even though you may be under 65 years old and still working. 
+			</p>
+			  <!-- Flex columns -->
+			<div class="lg:absolute py-5 bottom-0 left-0 right-0">
+				<div class="flex flex-wrap justify-center -mx-5">
+					<div class="date lg:w-auto text-center w-full bg-blue-500 m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-11-08">
+						<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz614130fc9a227488/regform?evuid=zzzz614130fb5e2e1501">
+							<strong class="">8 NOV </strong> <br/> 2pm - 2:30pm AEDT
+						</a>
+					</div>
+					<div class="date lg:w-auto text-center w-full bg-blue-500 m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-11-30">
+						<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz6141346a7a900896/regform?evuid=zzzz614134698b037814">
+							<strong class="">30 NOV </strong> <br/> 8pm - 8:30pm AEDT
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lg:w-1/3 p-5 rounded shadow-box-2 m-4">
+			<p class="text-3xl font-heavy">Retirement Super Income Stream</p>
+			<p class="pt-3 text-gray-600">
+				Are you ready to retire completely, or over age 65? Understand how a Super Income Stream (SIS) account can provide a regular income to complement the Age Pension or any other investments you have. 			</p>
+			  <!-- Flex columns -->
+			<div class="pt-3">
+				<div class="flex flex-wrap justify-center -mx-5">
+					<div class="date lg:w-auto text-center w-full bg-blue-500 m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-11-08">
+						<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz614130fc9a227488/regform?evuid=zzzz614130fb5e2e1501">
+							<strong class="">8 NOV </strong> <br/> 2pm - 2:30pm AEDT
+						</a>
+					</div>
+					<div class="date lg:w-auto text-center w-full bg-blue-500 m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-11-30">
+						<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz6141346a7a900896/regform?evuid=zzzz614134698b037814">
+							<strong class="">30 NOV </strong> <br/> 8pm - 8:30pm AEDT
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
-
-	</div>
-  </div>
 
 </div>
 
-<div class="container mx-auto p-10 text-gray-700">
-	<div class="mx-auto lg:w-2/3">
-		<p class="text-sm text-gray-500">
-			*The Growth (Cbus MySuper) investment option 2020/2021 Financial Year return is based on the crediting rate, which is the return minus investment fees, taxes, and until 31 January 2020, the percentage-based administration fee. Excludes fees and costs that are deducted directly from members’ accounts. Past performance is not a reliable indicator of future performance.
-		</p>
-	</div>
-</div>
+
 
 <footer class="w-full flex items-center justify-center bg-brand-black">
 	<div class="md:w-2/3 w-full px-4 text-white flex flex-col">
@@ -235,8 +329,26 @@
 	<a href="#" data-nl-type="action" data-nl-action="next">Tell me more</a>
 </form>
 
-<script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+<!-- Initialize Swiper -->
+<script>
+	var swiper = new Swiper(".mySwiper", {
+	slidesPerView: 1.1,
+	spaceBetween: 10,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+	breakpoints: {
+        800: {
+            slidesPerView: 3,
+        }
+    }
+});
+
+//  inActive  Date
 $(function() {
     var currentDate = Date.parse((new Date()).toLocaleDateString());
 
