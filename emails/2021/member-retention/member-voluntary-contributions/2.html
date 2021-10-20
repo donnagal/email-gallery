@@ -31,6 +31,7 @@
         @media (max-width: 620px){
           .sm-hide { display: none; }
           .sm-show { display: block !important; }
+          .sm-mb-0 { margin-bottom: 0 !important;}
         }
       </style>
       <meta name="robots" content="noindex,nofollow"></meta> 
@@ -53,7 +54,7 @@
 </div>
 
 
-    <!-- START: header links -->
+    <!-- START: header -->
     <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
       <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #e3e5e8;">
       <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #e3e5e8;"><td style="width: 600px" class="w560"><![endif]-->
@@ -74,7 +75,7 @@
       <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
       </div>
     </div>
- <!-- END: header links -->
+ <!-- END: header -->
 
 <!-- ### START: INTRO BLOCK ### -->
     <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
@@ -82,11 +83,84 @@
       <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 600px" class="w560"><![endif]-->
         <div class="column" style="text-align: left;color: #454545;font-size: 14px;line-height: 21px;font-family: montserrat, Verdana, arial;">
       
+          <!-- Promo image -->
+          <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
+            <a class="hover" target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz614c0b9e2e859637/regform?evuid=zzzz614c0b9d579f7882">
+              <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" alt="Boost your Super - Webinar." width="600" 
+                    src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/f5d20c104c8b524029d08d58f172cd27706bfabfb4b49f84afc0a8c2d086b265.gif">
+            </a>
+          </div>
+
           <!-- hero image -->
           <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
             <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;font-size: 24px; line-height: 28px;font-weight: bold;color:#989898;" 
-            alt="Cbus coordinators. Here to support you." width="600" 
-            src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/ff251bd2d012224efad12eb8acc5f801eb542cd405c079fb397aa7762b2af9a1.png">
+            alt="A bit extra now, could set you up for a super retirement." width="600" 
+            src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/c932e4be7d02492f38b1a915bc3fa0970723c01124acf1c7c9efece4e7de5b5f.png">
+          </div>
+
+          <!-- Member ID -->
+          <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 20px;">
+            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+              <p style="Margin-top: 0;Margin-bottom: 20px;text-align: right;"><span style="color:#007b7d">
+                <strong>Member&nbsp;number:</strong></span><span style="color:#000000"><strong>&nbsp;</strong><%=  recipient.mbrAccID %></span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div style="Margin-left: 20px;Margin-right: 20px;">
+            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+              <p class="size-14" style="Margin-top: 0;Margin-bottom: 20px;font-size: 14px;line-height: 24px;text-align: left;" lang="x-size-14">
+                Hi <%= recipient.firstName %>,
+              </p>
+            </div>
+          </div>
+
+          <!-- Heading -->
+          <div style="Margin-left: 20px;Margin-right: 20px;">
+            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+              <p class="size-24" style="Margin-top: 0;Margin-bottom: 20px;font-size: 20px;line-height: 28px;text-align: left;" lang="x-size-24">
+                <strong><span style="color:#2e8d47">Making extra personal contributions is one way to supercharge your superannuation.</span></strong>
+              </p>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div style="Margin-left: 20px;Margin-right: 20px;">
+            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+              <p class="size-14" style="Margin-top: 0;Margin-bottom: 0;font-size: 14px;line-height: 21px;" lang="x-size-14">
+                <strong><span style="color:#6eab6b">Right now, you probably haven’t even thought about retirement let alone how you want to spend it</span></strong>
+              </p>
+              <p class="size-14" style="Margin-top: 20px;Margin-bottom: 0;font-size: 14px;line-height: 21px;" lang="x-size-14">
+                Simply set up personal after-tax contributions from your take-home pay to go straight into your Cbus account. Even small amounts added now can make a difference over time.
+              </p>
+              <p class="size-14" style="Margin-top: 20px;Margin-bottom: 20px;font-size: 14px;line-height: 21px;" lang="x-size-14">
+                See the difference in the chart below, where a member begins contributing an <span style="color:#6eab6b"><strong>extra $3.00 per day.</strong></span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Inner spacer -->
+          <div style="Margin-left: 20px;Margin-right: 20px;">
+            <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
+          </div>
+
+
+          <!-- CTA Button Image -->
+          <div style="Margin-left: 20px;Margin-right: 20px;">
+            <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 20px;" align="left">
+              <a class="hover" style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #15798d;" 
+                  href="https://www.cbussuper.com.au/super/making-super-contributions?utm_source=adobe-campaign&utm_medium=edm&utm_campaign=additionalcontribution-vc&utm_content=learnmore-seg1">
+                <img style="border: 0;display: block;height: auto;width: 100%;max-width: 182px;" alt="Learn more >" width="182" 
+                    src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/cbe22410f3e1cf9b83d66d3f0d6c9d7ceedef862ed9d23d7547eabec0e9615a3.png"
+                />
+                </a>
+            </div>
+          </div>
+
+          <!-- Inner spacer -->
+          <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
+            <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
           </div>
 
         </div>
@@ -95,487 +169,289 @@
     </div>
 <!-- ### END: INTRO BLOCK ### -->
 
-<!-- ### START: 50/50 Reverse BLOCK ### -->
-    <div class="layout two-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;" dir="rtl">
-      <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
-      <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 300px" valign="top" class="w260"><![endif]-->
-        <div class="column" style="text-align: left;color: #454545;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);float: right;" dir="ltr">
-        
-          <!-- Member ID -->
-          <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;Margin-bottom: 24px;">
-            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-              <p style="Margin-top: 0;Margin-bottom: 0;text-align: right;">
-                <span style="color:#008a44"><strong>Member:</strong> <%=  recipient.mbrAccID %></span>
-              </p>
-            </div>
-          </div>
-        
-        </div>
-      <!--[if (mso)|(IE)]></td><td style="width: 300px" valign="top" class="w260"><![endif]-->
-        <div class="column" style="text-align: left;color: #454545;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);float: right;" dir="ltr">
-        
-          <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;Margin-bottom: 24px;">
-            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-              <p class="size-15" style="Margin-top: 0;Margin-bottom: 0;font-size: 15px;line-height: 23px;" lang="x-size-15">
-                Hi <%= recipient.firstName %>,
-              </p>
-            </div>
-          </div>
-        
-        </div>
-      <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-      </div>
-    </div>
-<!-- ### END: 50/50 Reverse BLOCK ### -->
-
-<!-- ### START: 50/50 BLOCK ### -->
-    <div class="layout two-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-      <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
-      <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 300px" valign="top" class="w260"><![endif]-->
-        <div class="column" style="text-align: left;color: #454545;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;">
-        
-          <!-- Heading -->
-          <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 0;">
-            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-              <p class="size-28" style="Margin-top: 0;Margin-bottom: 20px;font-size: 24px;line-height: 32px;" lang="x-size-28">
-                <span style="color:#015dab"><strong>Dedicated help for Queensland members.</strong></span>
-              </p>
-            </div>
-          </div>
-          <!-- Text -->     
-          <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
-            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-              <p class="size-15" style="Margin-top: 0;Margin-bottom: 0;font-size: 15px;line-height: 23px;" lang="x-size-15">
-                We&#8217;re invested in Queensland and dedicated to helping our members achieve their retirement goals. That&#8217;s why we have our Coordinators on the ground to support you when you need it.
-              </p>
-              <p class="size-15" style="Margin-top: 20px;Margin-bottom: 0;font-size: 15px;line-height: 23px;" lang="x-size-15">
-                No question is too big or too small. It&#8217;s all part of your membership with us.
-              </p>
-            </div>
-          </div>
-        
-        </div>
-      <!--[if (mso)|(IE)]></td><td style="width: 300px" valign="top" class="w260"><![endif]-->
-        <div class="column" style="text-align: left;color: #454545;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;">
-        
-          <!-- Inner Spacer -->
-          <div class="sm-hide" style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;">
-            <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
-          </div>
-        
-          <!-- Image -->
-          <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
-            <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
-              <img style="border: 0;display: block;height: auto;width: 100%;max-width: 218px;" alt="Map of QLD." width="218" 
-                  src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/87ac2940236ad3770f968b0b5b9cb70d1c1ae6fda36024c1b4ec3fd812d4fcef.png">
-            </div>
-          </div>
-        
-        </div>
-      <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-      </div>
-    </div>
-<!-- ### END: 50/50 BLOCK ### -->
-
-<!-- ### START: GREEN BLOCK (Heading) ### -->
-    <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-      <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #008a44;">
-      <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #008a44;"><td style="width: 600px" class="w560"><![endif]-->
-        <div class="column" style="text-align: left;color: #454545;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;">
-      
-          <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;Margin-bottom: 20px;">
-          <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-            <p class="size-22" style="Margin-top: 0;Margin-bottom: 0;font-size: 18px;line-height: 26px;" lang="x-size-22">
-              <strong><span style="color:#ffffff">Contact your Queensland coordinators:</span></strong>
-            </p>
-          </div>
-        </div>
-      
-        </div>
-      <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-      </div>
-    </div>
-<!-- ### END: GREEN BLOCK (Heading) ### -->
-
-
-
-<!-- ### START: PROFILE BLOCK (Tracie) ### -->
-<div class="layout fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;" dir="rtl">
-  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #008a44;">
-  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #008a44;"><td style="width: 400px" valign="top" class="w360"><![endif]-->
-    <div class="column wide" style="text-align: left;color: white;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;float: right;max-width: 400px;min-width: 320px; width: 320px;width: calc(8000% - 47600px);" dir="ltr">
-      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 27px;">
-        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 12px;" align="left">
-          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 149px;" 
-            alt="Profile image of Tracie Wilson." width="149" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/acda5f6f8af2cf8828ffc3917ff0a01140598b3f72c8e7d427e01080f87391ae.png"
-          />
-        </div>
-      </div>
-      <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
-      <!-- Inner contact info table -->
-      <table style="border-collapse: collapse;table-layout: fixed;" role="contact">
-        <tbody>
-          <tr>
-          <td width="33">
-            <img alt="📞" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/1a254af4f81c59cb96d4213b1615588d.png">
-          </td>
-            <td style="font-family: montserrat, Verdana, arial; color: #f0f0f0">
-              <a style="color: white;text-decoration: none;" href="tel:0448 950 708">0448 950 708</a> 
-            </td>
-          </tr>
-          <tr>
-              <td style="padding-top: 5px;">
-                <img border="0" alt="📧" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/2ca56699b7c1ab62f227da5b6a40310f.png">
-              </td>
-                <td style="font-family: montserrat, Verdana, arial; color: #f0f0f0;">
-                <a style="color: white;text-decoration: none;" href="mailto:tracie.wilson@cbussuper.com.au">tracie.wilson@cbussuper.com.au</a>
-              </td>
-          </tr>
-          </tbody>
-      </table>
-      </div>
-    
-    </div>
-  <!--[if (mso)|(IE)]></td><td style="width: 200px" valign="top" class="w160"><![endif]-->
-    <div class="column narrow" style="text-align: left;color: white;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;float: right;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);" dir="ltr">
-  
-      <div class="sm-hide" style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;">
-        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 5px;" align="center">
-          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 103px;" 
-          alt="Scan QR." width="103" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/2d8e7538076ffdc39652fcf0347467624704266668ca48abc58f148c62623232.png">
-        </div>
-      </div>
-      <div class="sm-hide" style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
-        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-          <p class="size-12" style="Margin-top: 0;Margin-bottom: 0;font-size: 12px;line-height: 19px;text-align: center;" lang="x-size-12">
-            Scan to save contact
-          </p>
-        </div>
-      </div>
-
-      <div class="sm-show" style="display: none;Margin-left: 10px;Margin-right: 10px;Margin-top: 14px;Margin-bottom: 24px;" align="center">
-        <a href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/607856c95a678d7da929323dedd8e51a907f1d34869f614e71dcbff0de1f4d92.vcf">
-          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 178px;" 
-            alt="Save contact." width="178" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/ff602dd1f4bb6a07d0d0ce2480966fcc116ab205dec5cb40f32abe76559f2846.png"
-          />
-        </a>
-      </div>
-    
-    </div>
-  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-  </div>
-</div>
-<!-- ### END: PROFILE BLOCK (Tracie)### -->
-
-<!-- ### START: GREEN BLOCK (line div) ### -->
+<!-- ### START: COLOURED BLOCK ### -->
 <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #008a44;">
-  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #008a44;"><td style="width: 600px" class="w560"><![endif]-->
-    <div class="column" style="text-align: left;color: #454545;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;">
-  
-  <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
-    <img style="border: 0;display: block;height: auto;width: 100%;max-width: 532px;" alt="---" width="532" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/ff99cf3982f8a2749da844685555b21c9b844fc6e809c18a2047c62f829a9743.png">
-  </div>
+  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #3a9747; background-image: linear-gradient(to bottom, #358d41 , #3a9747);">
+  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #3a9747; background-image: linear-gradient(to bottom, #358d41 , #3a9747);"><td style="width: 600px" class="w560"><![endif]-->
+    <div class="column" style="text-align: left;color: #ffffff;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;">
 
-    </div>
-  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-  </div>
-</div>
-<!-- ### END: GREEN BLOCK (line div) ### -->
-
-<!-- ### START: PROFILE BLOCK (Johnny) ### -->
-<div class="layout fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;" dir="rtl">
-  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #008a44;">
-  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #008a44;"><td style="width: 400px" valign="top" class="w360"><![endif]-->
-    <div class="column wide" style="text-align: left;color: white;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;float: right;max-width: 400px;min-width: 320px; width: 320px;width: calc(8000% - 47600px);" dir="ltr">
-      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 27px;">
-        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 12px;" align="left">
-          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 149px;" 
-            alt="Profile image of Johnny Lomax." width="149" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/3e6c1cfd0b08472cea2fc937b4aedf1acc0af4332c5bb7db88ad21c92b8edd13.png"
-          />
-        </div>
+      <!-- Inner spacer -->
+      <div class="" style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;">
+        <div style="mso-line-height-rule: exactly;line-height: 9px;font-size: 1px;">&nbsp;</div>
       </div>
-      <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
-      <!-- Inner contact info table -->
-      <table style="border-collapse: collapse;table-layout: fixed;" role="contact">
-        <tbody>
-          <tr>
-          <td width="33">
-            <img alt="📞" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/1a254af4f81c59cb96d4213b1615588d.png">
-          </td>
-            <td style="font-family: montserrat, Verdana, arial; color: #f0f0f0">
-              <a style="color: white;text-decoration: none;" href="tel:0437 954 187">0437 954 187</a> 
-            </td>
-          </tr>
-          <tr>
-              <td style="padding-top: 5px;">
-                <img border="0" alt="📧" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/2ca56699b7c1ab62f227da5b6a40310f.png">
-              </td>
-                <td style="font-family: montserrat, Verdana, arial; color: #f0f0f0;">
-                <a style="color: white;text-decoration: none;" href="mailto:johnny.lomax@cbussuper.com.au">johnny.lomax@cbussuper.com.au</a>
-              </td>
-          </tr>
-          </tbody>
-      </table>
-      </div>
-    
-    </div>
-  <!--[if (mso)|(IE)]></td><td style="width: 200px" valign="top" class="w160"><![endif]-->
-    <div class="column narrow" style="text-align: left;color: white;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;float: right;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);" dir="ltr">
   
-      <div class="sm-hide" style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;">
-        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 5px;" align="center">
-          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 103px;" 
-              alt="Johhny - Scan QR." width="103" 
-              src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/299a74025147dc96103675d17c267743f6feeadcb052e74c1688df08c0766d34.png"
-            />
-        </div>
-      </div>
-      <div class="sm-hide" style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
+      <!-- Title -->
+      <div style="Margin-left: 20px;Margin-right: 20px;">
         <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-          <p class="size-12" style="Margin-top: 0;Margin-bottom: 0;font-size: 12px;line-height: 19px;text-align: center;" lang="x-size-12">
-            Scan to save contact
+          <p class="size-20 sm-mb-0" style="Margin-top: 0;Margin-bottom: 20px;font-size: 17px;line-height: 26px;" lang="x-size-20">
+            <span style="color:#ffffff"><strong>Just a little extra per day can increase the size of your super balance in retirement.</strong></span>
           </p>
         </div>
       </div>
-
-      <div class="sm-show" style="display: none;Margin-left: 10px;Margin-right: 10px;Margin-top: 14px;Margin-bottom: 24px;" align="center">
-        <a href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/1cff1b5deb90c2bc1381e9ed803ac8b948009ef192f77279ce137789dec1aac1.vcf">
-          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 178px;" 
-            alt="Save contact." width="178" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/ff602dd1f4bb6a07d0d0ce2480966fcc116ab205dec5cb40f32abe76559f2846.png"
-          />
-        </a>
-      </div>
-    
-    </div>
-  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-  </div>
-</div>
-<!-- ### END: PROFILE BLOCK (Johnny)### -->
-<!-- ### START: GREEN BLOCK (line div) ### -->
-    <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-      <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #008a44;">
-      <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #008a44;"><td style="width: 600px" class="w560"><![endif]-->
-        <div class="column" style="text-align: left;color: #454545;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;">
-      
+  
+      <!-- Image graph -->
       <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
-        <img style="border: 0;display: block;height: auto;width: 100%;max-width: 532px;" alt="---" width="532" 
-            src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/ff99cf3982f8a2749da844685555b21c9b844fc6e809c18a2047c62f829a9743.png">
+        <img style="border: 0;display: block;height: auto;width: 100%;max-width: 900px;" 
+            alt="Image graph." width="600" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/d4d71a636bf0e54dd60edc80652debc79bfe17157dc5b4ccbc43881623d70f23.png">
       </div>
-    
-        </div>
-      <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+
+      <!-- Text -->
+    <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 20px;">
+      <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+        <p class="size-16" style="Margin-top: 0;Margin-bottom: 0;font-size: 16px;line-height: 24px;" lang="x-size-16">
+          That extra contribution adds up to <strong><span style="color:#89c33f">$40,677*</span></strong> more in retirement!
+          <br>
+          That’s simple and smart.
+        </p>
+        <p class="size-11" style="Margin-top: 20px;Margin-bottom: 0;font-size: 11px;line-height: 19px;" lang="x-size-11">
+         Graph is for illustrative purposes only, not to scale.
+        </p>
+        <p class="size-11" style="Margin-top: 20px;Margin-bottom: 0;font-size: 11px;line-height: 19px;" lang="x-size-11">
+          *For example, a 25 year old with $0 Super, $80,000 before tax wages, 10% employer super contribution and no additional contributions equals a projected account balance at age 67 of $541,256.
+        </p>
+        <p class="size-11" style="Margin-top: 20px;Margin-bottom: 20px;font-size: 11px;line-height: 19px;" lang="x-size-11">
+          A 45 year old with $0 Super, $80,000 before tax wages, 10% employer super contribution and additional $21 per week after tax contributions equals a projected account balance at age 67 of $267,575. The difference between no additional contributions and an additional $21 per week after tax contributions would be $40,677. Results as at 30 September 2021 by Cbus Retirement Income Estimator Calculator.
+        </p>
       </div>
     </div>
-<!-- ### END: GREEN BLOCK (line div) ### -->
 
-<!-- ### START: PROFILE BLOCK (Mick) ### -->
-<div class="layout fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;" dir="rtl">
-  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #008a44;">
-  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #008a44;"><td style="width: 400px" valign="top" class="w360"><![endif]-->
-    <div class="column wide" style="text-align: left;color: white;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;float: right;max-width: 400px;min-width: 320px; width: 320px;width: calc(8000% - 47600px);" dir="ltr">
-      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 27px;">
-        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 12px;" align="left">
-          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 149px;" 
-            alt="Profile image of Mick Huddy." width="149" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/b0e2564e7555d2e74a5abde675292c483a00db2015bc92e27e0cd90b0046aa6c.png"
-          />
-        </div>
-      </div>
+  <!-- Inner spacer -->
       <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
-      <!-- Inner contact info table -->
-      <table style="border-collapse: collapse;table-layout: fixed;" role="contact">
-        <tbody>
-          <tr>
-          <td width="33">
-            <img alt="📞" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/1a254af4f81c59cb96d4213b1615588d.png">
-          </td>
-            <td style="font-family: montserrat, Verdana, arial; color: #f0f0f0">
-              <a style="color: white;text-decoration: none;" href="tel:0419 555 261">0419 555 261</a> 
-            </td>
-          </tr>
-          <tr>
-              <td style="padding-top: 5px;">
-                <img border="0" alt="📧" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/2ca56699b7c1ab62f227da5b6a40310f.png">
-              </td>
-                <td style="font-family: montserrat, Verdana, arial; color: #f0f0f0;">
-                <a style="color: white;text-decoration: none;" href="mailto:mick.huddy@cbussuper.com.au">mick.huddy@cbussuper.com.au</a>
-              </td>
-          </tr>
-          </tbody>
-      </table>
+        <div style="mso-line-height-rule: exactly;line-height: 5px;font-size: 1px;">&nbsp;</div>
       </div>
-    
-    </div>
-  <!--[if (mso)|(IE)]></td><td style="width: 200px" valign="top" class="w160"><![endif]-->
-    <div class="column narrow" style="text-align: left;color: white;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;float: right;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);" dir="ltr">
   
-      <div class="sm-hide" style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;">
-        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 5px;" align="center">
-          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 103px;" 
-          alt="Mick - Scan QR." width="103" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/16bae0069d300b239ba1ac5e189d1052cb72b29131241acf23ea96a8d77f20ba.png">
-        </div>
-      </div>
-      <div class="sm-hide" style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
-        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-          <p class="size-12" style="Margin-top: 0;Margin-bottom: 0;font-size: 12px;line-height: 19px;text-align: center;" lang="x-size-12">
-            Scan to save contact
-          </p>
-        </div>
-      </div>
-
-      <div class="sm-show" style="display: none;Margin-left: 10px;Margin-right: 10px;Margin-top: 14px;Margin-bottom: 24px;" align="center">
-        <a href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/f0b97adbc803e43482e857baa72791345a465cfe18ec6ca59edaa42ce6dd79ed.vcf">
-          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 178px;" 
-            alt="Save contact." width="178" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/ff602dd1f4bb6a07d0d0ce2480966fcc116ab205dec5cb40f32abe76559f2846.png"
-          />
-        </a>
-      </div>
-    
     </div>
   <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
   </div>
 </div>
-<!-- ### END: PROFILE BLOCK (Mick)### -->
+<!-- ### END: COLOURED BLOCK ### -->
 
-
-<!-- ### START: Text Block ### -->
-    <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-      <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
-      <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 600px" class="w560"><![endif]-->
-        <div class="column" style="text-align: left;color: #454545;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;">
-         
-          <!-- Heading -->
-          <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;">
-            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-              <p class="size-22" style="Margin-top: 0;Margin-bottom: 20px;font-size: 18px;line-height: 26px;" lang="x-size-22">
-                <span style="color:#008a44"><strong>Let's get your super sorted.</strong></span>
-              </p>
-            </div>
-          </div>
-          <!-- Text -->
-          <div style="Margin-left: 20px;Margin-right: 20px;">
-            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-              <p class="size-15" style="Margin-top: 0;Margin-bottom: 20px;font-size: 15px;line-height: 23px;" lang="x-size-15">
-                We're dedicated to our Queensland members and we have coordinators on the ground to support you. Just give us a call, scan the QR code, or drop us an email.
-              </p>
-            </div>
-          </div>
-      
-          <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
-          <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="left">
-            <a class="hover" style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #15798d;" 
-               href="https://www.cbussuper.com.au/campaigns/qld?utm_source=adobe-campaign&utm_medium=edm&utm_campaign=qldret&utm_content=southqld">
-                <img style="border: 0;display: block;height: auto;width: 100%;max-width: 165px;" 
-                  alt="Find out more >" width="165" 
-                  src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/867b2f3369b3a14a40eb2d06f0bc200e9ee6aa81dfc5f711e272671c283c8972.png"
-                />
-          </a>
-          </div>
-        </div>
-      
-        </div>
-      <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+<!-- ### START: HEADING BLOCK (Calculator) ### -->
+<div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
+  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 600px" class="w560"><![endif]-->
+    <div class="column" style="text-align: left;color: #2e8d47;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;">
+  
+      <!-- Inner spacer -->
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;">
+        <div style="mso-line-height-rule: exactly;line-height: 13px;font-size: 1px;">&nbsp;</div>
       </div>
-    </div>
-<!-- ### END: Text Block ### -->
-
-<!-- ### START: GREY BLOCK (text) ### -->
-    <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-      <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #595c5d;">
-      <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #595c5d;"><td style="width: 600px" class="w560"><![endif]-->
-        <div class="column" style="text-align: left;color: #454545;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;">
-      
-          <!-- Heading -->
-          <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;">
-            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-              <p class="size-22" style="Margin-top: 0;Margin-bottom: 20px;font-size: 18px;line-height: 26px;" lang="x-size-22">
-                <span style="color:#ffffff"><strong>Keep on top of your super with our free app.</strong></span>
-              </p>
-            </div>
-          </div>
-      <!-- Text -->
-        <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 14px;">
+  
+      <!-- Heading -->
+        <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 0;">
           <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-            <p class="size-15" style="Margin-top: 0;Margin-bottom: 0;font-size: 15px;line-height: 23px;" lang="x-size-15">
-              <span style="color:#ffffff">The Cbus app lets you manage your super account on the job, on the go, anywhere, anytime. It&#8217;s simple.</span>
+            <p class="size-20" style="Margin-top: 0;Margin-bottom: 0;font-size: 17px;line-height: 26px;" lang="x-size-20">
+              <span style="color:#2e8d47"><strong>Retirement Income Estimate Calculator</strong></span>
             </p>
           </div>
         </div>
-      
-        </div>
-      <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-      </div>
+  
     </div>
-<!-- ### END: GREY BLOCK (text) ### -->
+  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+  </div>
+</div>
+<!-- ### END: HEADING BLOCK (Calculator)### -->
 
-<!-- ### START: APP BLOCK ### -->
-    <div class="layout fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-      <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #595c5d;">
-      <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #595c5d;"><td style="width: 400px" valign="top" class="w360"><![endif]-->
-        <div class="column wide" style="text-align: left;color: #454545;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;Float: left;max-width: 400px;min-width: 320px; width: 320px;width: calc(8000% - 47600px);">
-        
-      <!-- List -->
-    <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 7px;">
-      <!-- Inner contact info table -->
-      <table style="border-collapse: collapse;table-layout: fixed;" role="contact">
-        <tbody>
-          <tr>
-          <td width="33" style="padding-right: 10px;">
-            <img border="0" alt="1." style="color: white;" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/922fa114847c7c5a0964b9b4f5c2b6b88714aa363da0e68add620bd06a2f6c82.png">
-          </td>
-            <td style="font-family: montserrat, Verdana, arial; color: #f0f0f0">
-              Download the Cbus app in seconds.
-            </td>
-          </tr>
-          <tr>
-            <td width="33" style="padding-right: 10px;">
-              <img border="0" alt="2." style="color: white;" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/66e92a5f6bcc94085c9ef584358e2666ee315e4be7b8f04843c91deb29ad3319.png">
-            </td>
-                <td style="font-family: montserrat, Verdana, arial; color: #f0f0f0;">
-                  Register your details as you log in.
-              </td>
-          </tr>
-          <tr>
-            <td width="33" style="padding-right: 10px;">
-              <img border="0" alt="3." style="color: white;" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/86950002d0ab9555ccde6aaca45780db80a68b5fd6a6261bf86315ca3c6fa349.png">
-            </td>
-              <td style="font-family: montserrat, Verdana, arial; color: #f0f0f0;">
-                You’re ready to manage your super 24/7.
-            </td>
-        </tr>
-          </tbody>
-      </table>
+<!-- ### START: 70/30 BLOCK (Calculator) ### -->
+<div class="layout two-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
+  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 300px" valign="top" class="w260"><![endif]-->
+    <div class="column" style="text-align: left;color: #595c5d;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;">
+    
+      <!-- Text -->
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;Margin-bottom: 24px;">
+        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+          <p class="size-14" style="Margin-top: 0;Margin-bottom: 0;font-size: 14px;line-height: 21px;text-align: left;" lang="x-size-14">
+            See the impact it could have on your account balance. Check out the Cbus Super ‘Retirement Income Estimate calculator’
+          </p>
         </div>
-              
-        <!-- CTA image -->
-          <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;Margin-bottom: 24px;">
-            <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="left">
-              <a class="hover" style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #15798d;" 
-                href="https://www.cbussuper.com.au/super/what-we-offer/cbus-member-app">
-                <img style="border: 0;display: block;height: auto;width: 100%;max-width: 178px;" 
-                    alt="Download now - Cbus App." width="178" 
-                    src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/25d0c430131974f7ee6cbb26083ba58ba8f32f3d1997bf33eac7a0df146cf6dd.png">
-                </a>
-            </div>
-          </div>
-        
-        </div>
-      <!--[if (mso)|(IE)]></td><td style="width: 200px" valign="top" class="w160"><![endif]-->
-        <div class="column narrow" style="text-align: left;color: #454545;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;Float: left;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);">
-        
-        <!-- Image -->
-        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
-          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 197px;" 
-                alt="Phone in hand - Cbus App." width="197" 
-                src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/8b7eba3a5d19f01d12be0d6a621cbf8fca4e2412007f01dd0dea8f93ad84e08d.png">
         </div>
     
-        </div>
-      <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-      </div>
     </div>
-<!-- ### END: APP BLOCK ### -->
+  <!--[if (mso)|(IE)]></td><td style="width: 300px" valign="top" class="w260"><![endif]-->
+    <div class="column" style="text-align: left;color: #595c5d;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;">
+    
+      <!-- CTA Button Image -->
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;Margin-bottom: 14px;">
+        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
+            <a class="hover" href="https://www.cbussuper.com.au/tools-resources/calculators/retirement-income-estimate-calculator/about-you?utm_source=adobe-campaign&utm_medium=edm&utm_campaign=additionalcontribution-vc&utm_content=trycalc-seg1">
+              <img style="border: 0;display: block;height: auto;width: 100%;max-width: 183px;" alt="Try calculator >" width="183" 
+                src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/3ca67e9f3554bd19b44b2822315ebbf60d2648be42e28cc41535c2326a236563.png"
+              />
+            </a>
+        </div>
+      </div>
+    
+    </div>
+  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+  </div>
+</div>
+<!-- ### END: 70/30 BLOCK (Calculator) ### -->
 
+<!-- ### START: TEXT BLOCK (Calculator) ### -->
+<div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
+  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 600px" class="w560"><![endif]-->
+    <div class="column" style="text-align: left;color: #595c5d;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;">
+  
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 0;">
+        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+          <p style="Margin-top: 0;Margin-bottom: 20px;">
+            For more information on eligibility, limits and rules visit
+            <a class="hover" target="_blank" style="color: #666666; font-weight: bold; text-decoration: none;" 
+            href="https://www.ato.gov.au/">www.ato.gov.au</a> 
+          </p>
+        </div>
+        </div>
+  
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
+      <div style="mso-line-height-rule: exactly;line-height: 5px;font-size: 1px;">&nbsp;</div>
+      </div>
+  
+    </div>
+  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+  </div>
+</div>
+<!-- ### END: TEXT BLOCK (Calculator) ### -->
+
+<!-- ### START: COLOURED BLOCK (Heading) (Calculator) ### -->
+<div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #2e8d47;">
+  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #2e8d47;"><td style="width: 600px" class="w560"><![endif]-->
+    <div class="column" style="text-align: left;color: #89c33f;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;">
+  
+      <!-- Inner spacer -->
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;">
+        <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
+      </div>
+  
+      <!-- Heading -->
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
+          <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+            <p class="size-20" style="Margin-top: 0;Margin-bottom: 0;font-size: 17px;line-height: 26px;" lang="x-size-20">
+              <span style="color:#89c33f"><strong>How to set up extra contributions to your account</strong></span>
+            </p>
+          </div>
+      </div>
+  
+    </div>
+  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+  </div>
+</div>
+<!-- ### END: COLOURED BLOCK (Heading) (Calculator)### -->
+
+
+<!-- ### START: x3 COLUMNS ### -->
+<div class="layout three-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #2e8d47;">
+  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #2e8d47;"><td style="width: 200px" valign="top" class="w160"><![endif]-->
+    <div class="column" style="text-align: left;color: #ffffff;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);Float: left;">
+    
+      <!-- Image Thumb 1 -->
+        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="left">
+          <img class="gnd-corner-image gnd-corner-image-left gnd-corner-image-top" style="border: 0;display: block;height: auto;width: 100%;max-width: 88px;" 
+              alt="EFT Transfer icon." width="88" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/316bead6b8cc2767a57cab828bc42e202363acdf8e93568e3c2604fb76bee351.png"
+          />
+        </div>
+
+      <!-- Title -->
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 20px;">
+        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+          <p style="Margin-top: 0;Margin-bottom: 20px;"><span style="color:#89c33f"><strong>Payment by EFT Transfer</strong></span></p>
+        </div>
+      </div>
+    <!-- Text info -->
+        <div style="Margin-left: 20px;Margin-right: 5px;">
+          <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+            <p class="size-12" style="Margin-top: 0;Margin-bottom: 0;font-size: 12px;line-height: 19px;" lang="x-size-12">
+              <strong>Account Name:&nbsp;</strong><br/>CBUS Super Fund 
+            </p>
+              
+            <p class="size-12" style="Margin-top: 7px;Margin-bottom: 0;font-size: 12px;line-height: 19px;" lang="x-size-12">
+              <strong>BSB:&nbsp;</strong>083-355
+            </p>
+            
+            <p class="size-12" style="Margin-top: 7px;Margin-bottom: 0;font-size: 12px;line-height: 19px;" lang="x-size-12">
+              <strong>Account No:&nbsp;</strong>673909657
+            </p>
+            
+            <p class="size-12" style="Margin-top: 7px;Margin-bottom: 20px;font-size: 12px;line-height: 19px;" lang="x-size-12">
+              <strong>Reference your member number:&nbsp;</strong><br/><%=  recipient.mbrAccID %>
+            </p>
+          </div>
+      </div>
+    
+      <!-- Inner spacer -->
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
+        <div style="mso-line-height-rule: exactly;line-height: 9px;font-size: 1px;">&nbsp;</div>
+      </div>
+    
+    </div>
+  <!--[if (mso)|(IE)]></td><td style="width: 200px" valign="top" class="w160"><![endif]-->
+    <div class="column" style="text-align: left;color: white;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);Float: left;">
+    
+      <!-- Image Thumb 2 -->
+        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="left">
+          <img class="gnd-corner-image gnd-corner-image-left gnd-corner-image-top" style="border: 0;display: block;height: auto;width: 100%;max-width: 107px;" 
+            alt="icon calendar." width="107" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/42e4b89b7ed120d96a70d5a8f60ce7f290af37ccaf06165f782b1b15629d13eb.png">
+        </div>
+
+      <!-- Title -->
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 20px;">
+        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+          <p style="Margin-top: 0;Margin-bottom: 20px;"><span style="color:#89c33f"><strong>Direct<br>Debit</strong></span></p>
+        </div>
+      </div>
+    
+      <!-- Text -->
+      <div style="Margin-left: 20px;Margin-right: 20px;">
+        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+          <p class="size-12" style="Margin-top: 0;Margin-bottom: 20px;font-size: 12px;line-height: 19px;" lang="x-size-12">
+            Fill out the Direct Debit form and send it to Cbus.
+          </p>
+        </div>
+      </div>
+    
+      <!-- inner spacer -->
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
+        <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
+      </div>
+    
+    </div>
+  <!--[if (mso)|(IE)]></td><td style="width: 200px" valign="top" class="w160"><![endif]-->
+    <div class="column" style="text-align: left;color: white;font-size: 14px;line-height: 21px;font-family: Montserrat,DejaVu Sans,Verdana,sans-serif;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);Float: left;">
+    
+      <!-- Image Thumb 3 -->
+      <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="left">
+        <img class="gnd-corner-image gnd-corner-image-left gnd-corner-image-top" style="border: 0;display: block;height: auto;width: 100%;max-width: 102px;" alt="icon calendar." width="102" 
+            src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/2e8e1360333ef0bcee99f618bf06039726b9df16c16498d56164f2cde92009f5.png">
+      </div>
+
+      <!-- Title -->
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 20px;">
+        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+          <p style="Margin-top: 0;Margin-bottom: 20px;"><span style="color:#89c33f"><strong>Personal Contribution Slip</strong></span></p>
+        </div>
+      </div>
+    
+       <!-- Text -->
+      <div style="Margin-left: 20px;Margin-right: 20px;">
+      <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+        <p class="size-12" style="Margin-top: 0;Margin-bottom: 20px;font-size: 12px;line-height: 19px;" lang="x-size-12">
+         Fill out the Personal contributions form and send it to Cbus.
+        </p>
+      </div>
+      </div>
+      <!-- inner spacer -->
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
+        <div style="mso-line-height-rule: exactly;line-height: 9px;font-size: 1px;">&nbsp;</div>
+      </div>
+    
+    </div>
+  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+  </div>
+</div>
+<!-- ### END: x3 COLUMNS ### -->
 
 <!-- ### START FOOTER BLOCK (Contact) ### -->
 <div class="layout one-col fixed-width" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
@@ -690,6 +566,14 @@
             SuperRatings does not issue, sell, guarantee or underwrite this product. Go to <a target="_blank" style="color: #666666;font-weight: bold;" href="http://www.superratings.com.au">www.superratings.com.au</a> 
             for details of its ratings criteria. For further information about 
             the methodology used by Chant West, see <a target="_blank" style="color: #666666;font-weight: bold;" href="http://www.chantwest.com.au">www.chantwest.com.au</a>.
+          </p>
+
+          <p style="Margin-top: 15px;Margin-bottom: 7px;font-size: 11px;line-height: 19px;">
+            *Source: <a class="hover" target="_blank" style="color: #666666; font-weight: bold;" 
+            href="https://www.cbussuper.com.au/tools-resources/calculators/retirement-incomeestimate-calculator/intro">Cbus Super Retirement Income Estimate calculator</a>. 
+            Calculation is based on certain assumptions including but not limited to the following: person aged 40-years-old, salary
+            sacrificing $10 a week into their super account, over 27 years, starting account balance $50,000, income of $80,000 before tax and Superannuation
+            Guarantee contributions at 9.5%. Accessed October 2018.
           </p>
 
           <p style="Margin-top: 15px;Margin-bottom: 0;font-size: 11px;line-height: 19px;">
