@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cbus</title>
+  <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
+  
+<!-- tailwindcss --><link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/8ee28de705b5ab88527f77f76b51fc77.css" rel="stylesheet">
+
+  <link rel='stylesheet' href='https://codepen.io/kball/pen/VmdBBO.css'>
+  <link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
+
+  <style>
+.font-normal {font-family: "Effra", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.font-heavy {font-family: 'Effra Heavy', "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.font-light {font-family: 'Effra Light', "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.font-medium {font-family: 'Effra Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;}
+
+.bg-gradient {
+  background: rgb(162, 162, 162);
+  background: linear-gradient(100deg, rgba(162, 162, 162, 1) 0%, rgb(55 65 81) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.bg-brand-black { background-color: #1a1a1a;}
+.bg-brand-dark {background-color: #333;}
+.bg-brand-green {background-color: #008a44;}
+.bg-brand-blue {background-color: #00508c;}
+.text-brand-blue { color: #00508c;}
+.accordion-item {
+  margin-bottom: 20px;
+}
+.accordion-title {
+  border-radius: 9px !important;
+  border: none !important;
+}
+.accordion-heading { 
+  font-family: 'Effra Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #0F8045;
+  font-size: 28px;
+  line-height: 35px;
+  padding: 0 10px;
+}
+.accordion-subtilte {
+  font-family:  Arial, sans-serif;
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 0 10px;
+}
+.accordion-title::before {
+  font-size: 30px;
+  color: black;
+}
+.accordion-item {
+  background-color: #f8f8f8;
+  border-radius: 9px;
+}
+.accordion-item:hover, .accordion-title:hover,
+.accordion-item:focus, .accordion-title:focus,
+.accordion-item.is-active {
+  background-color: #0F8045;
+}
+.accordion-item:hover .accordion-heading, .accordion-item:hover .accordion-subtilte,.accordion-item:hover .accordion-title::before,
+.accordion-item:focus .accordion-heading, .accordion-item:focus .accordion-subtilte, .accordion-item:focus .accordion-title::before,
+.is-active .accordion-heading, .is-active .accordion-subtilte, .is-active .accordion-title::before {
+  color: white;
+}
+
+.accordion-content {
+  background-color: #f8f8f8;
+  border: solid 1px #ededed;
+}
+  </style>
+
+</head>
+<body>
+
+  <div class="bg-no-repeat bg-center bg-auto h-96" style="background-image: 
+	url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/313aacfc12b7592ce9d417446fe6d1eb.jpg')">
+    
+	<div class="bg-gradient flex content-center lg:pt-0 flex-wrap h-96">
+		<div class="container mx-auto px-10 lg:px-0">
+			<div class="fadeup  lg:w-1/4 text-white md:mx-8">
+				<h1 class="font-heavy mb-8 mark-bold text-6xl text-5xl leading-none">
+					Cbus <span class="font-light border-2 border-white px-3">Live</span> Webinars
+				</h1>
+				<p class="-mt-5 font-light">Online, via Zoom</p>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+<div class="container mx-auto lg:px-24 pb-24">
+
+  <div class="mx-auto lg:w-2/3 text-center">
+		<h2 class="text-5xl font-heavy text-brand-purple pt-12">Heading goes here</h2>
+    <p class="pt-3 pb-12 text-gray-600">
+      Learn how to gain access to your super via an Income Stream, even though you may be under 65 years old and still working. 
+    </p>
+	</div>
+
+  <ul class="accordion" data-accordion data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge="500" id="deeplinked-accordion-1">
+    <li class="accordion-item" data-accordion-item>
+      <a href="#accordion11" class="accordion-title">
+        <p class="accordion-heading">A top performing super fund with strong long-term returns</p>
+        <p class="accordion-subtilte">Compare our performance over the past 1, 5, 10 and 15 years.</p>
+      </a>
+      <div class="accordion-content" data-tab-content id="accordion11">
+        <p>Panel 1. Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nulla autem nostrum inventore quod? Modi corporis inventore soluta atque, quod dicta ipsam consequuntur labore sequi possimus molestias, iure provident adipisci.</p>
+      </div>
+    </li>
+    <li class="accordion-item" data-accordion-item>
+      <a href="#accordion12" class="accordion-title">
+        <p class="accordion-heading">Low fees for a stronger retirement</p>
+        <p class="accordion-subtilte">See how you much you could save on fees.</p>
+      </a>
+      <div class="accordion-content" data-tab-content id="accordion12">
+        <p>Panel 2. Lorem ipsum dolor. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet iure dolorem hic eaque exercitationem commodi itaque dignissimos ea ullam! Qui exercitationem fuga voluptatibus asperiores culpa facere nobis quas modi nihil.</p>
+      </div>
+    </li>
+    <li class="accordion-item --is-active--" data-accordion-item>
+      <a href="#accordion13" class="accordion-title">
+        <p class="accordion-heading">Insurance for financial security</p>
+        <p class="accordion-subtilte">Learn how our insurance cover keeps you protected.</p>
+      </a>
+      <div class="accordion-content" data-tab-content id="accordion13">
+        <p>Panel 3. Lorem ipsum dolor. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, iure delectus placeat tempora obcaecati sunt minus facere similique aspernatur at laboriosam. Voluptates tenetur sequi hic eligendi ex mollitia, cumque quibusdam.</p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<footer class="w-full flex items-center justify-center bg-brand-black">
+	<div class="md:w-2/3 w-full px-4 text-white flex flex-col">
+		<div class="flex flex-col">
+			<div class="flex mt-24 mb-12 flex-row justify-between">
+				
+				<div class="">
+					<a target="_blank" href="https://www.cbussuper.com.au/">
+						<img src="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/Cbus-ISA-Footer-Logo-2017.png" alt="Cbus Super logo" style="width: 130px;">
+					</a>
+				</div>
+
+				<a target="_blank" class="hidden md:block cursor-pointer text-gray-500 hover:text-white uppercase pt-5" href="https://www.cbussuper.com.au/about-us/who-we-are">
+					About
+				</a>
+				<a target="_blank" class="hidden md:block cursor-pointer text-gray-500 hover:text-white uppercase pt-5" href="https://www.cbussuper.com.au/tools-resources/advice-services">
+					Advice Services
+				</a>
+				<a target="_blank" class="hidden md:block cursor-pointer text-gray-500 hover:text-white uppercase pt-5" href="https://www.comms.cbussuper.com.au/scripts/cbus/seminars/#upsem">
+					All webinars
+				</a>
+				<a target="_blank" class="hidden md:block cursor-pointer text-gray-500 hover:text-white uppercase pt-5" href="https://www.cbussuper.com.au/support/contact">
+					Contact
+				</a>
+
+				<div class="flex flex-row space-x-8 items-center justify-between text-lg">
+					<a target="_blank" href="https://www.facebook.com/cbussuperfund">
+						<i class="fab fa-facebook-f"></i>                           
+					</a>
+					<a target="_blank" href="https://twitter.com/cbussuperfund">
+						<i class="fab fa-twitter"></i>   
+					</a>
+					<a href="https://www.linkedin.com/company/cbus-super-fund">
+						<i class="fab fa-linkedin-in"></i>                            
+					</a>
+				</div>
+			</div>
+			<hr class="border-gray-600"/>
+			<p class="w-full text-center my-12 text-gray-600">©2021 Cbus Super. All rights reserved. Cbus ABN 75 493 363 262.</p>
+		</div>
+	</div>
+</footer>
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://foundation.zurb.com/sites/docs/assets/js/foundation.js?hash=cc77c8f1742c310a128dfc82e4e6fe47'></script>
+
+
+<form class="hidden">
+	<a href="#" data-nl-type="action" data-nl-action="next">Tell me more</a>
+</form>
+
+<script>
+
+$(function() {
+
+  $(document).foundation();
+
+    var currentDate = Date.parse((new Date()).toLocaleDateString());
+
+    $(".date").each(function() {
+        var specifiedDate = $(this).data('date');
+        var date = Date.parse(specifiedDate);
+        
+        if (!isNaN(date) && date == currentDate) {
+            $(this).addClass('today');
+        }
+        else if(!isNaN(date) && currentDate - date > 0) {
+            $(this).addClass('past');
+        }
+        else {
+            $(this).addClass('future');
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>
