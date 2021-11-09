@@ -3970,7 +3970,8 @@ a.thumbnail {
 }
 .accordion-item:hover .accordion-heading, .accordion-item:hover .accordion-subtilte,.accordion-item:hover .accordion-title::before,
 .accordion-item:focus .accordion-heading, .accordion-item:focus .accordion-subtilte, .accordion-item:focus .accordion-title::before,
-.is-active .accordion-heading, .is-active .accordion-subtilte, .is-active .accordion-title::before {
+.is-active .accordion-heading, .is-active .accordion-subtilte, .is-active .accordion-title::before,
+.accordion-title:focus .accordion-heading, .accordion-title:focus .accordion-subtilte {
   color: white;
 }
 
