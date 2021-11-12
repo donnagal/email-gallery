@@ -627,7 +627,7 @@
     "gallery": "hide",
     "date": "2021-10-20",
     "time": "11:01:00 AM",
-    "url": "https://email-gallery.netlify.app/emails/2021/member-retention/young-cohort/noninsurance-25-30"
+    "url": "https://email-gallery.netlify.app/emails/2021/member-retention/young-cohort/noninsurance-25-29"
   },
   {
     "group": "mar",
@@ -690,7 +690,7 @@
     "gallery": "hide",
     "date": "2021-10-20",
     "time": "9:01:00 AM",
-    "url": "https://email-gallery.netlify.app/emails/2021/member-retention/young-cohort/noninsurance-under_20"
+    "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-acquisition/1"
   },
   {
     "group": "mar",
@@ -1185,7 +1185,7 @@
     "clicks": 60,
     "clickrate": 0.14,
     "ctor": 23,
-    "subject": "<% if ( recipient.firstName == \"\" ) { %>Do you<%} else {%> Hi <%=recipient.firstName %>,<%}%> need help making a super payment?",
+    "subject": "<Name> need help making a super payment?",
     "day": "Wednesday, 13 October 2021",
     "unsub": 5,
     "unsubrate": 0.01,
@@ -15369,7 +15369,7 @@
     "gallery": "",
     "date": "2020-10-16",
     "time": "11:09:00 AM",
-    "url": "https://windows10mail.capture.litmuscdn.com/41ec53be-1a3e-42d8-a080-dab9c1dc4822/results/windows10mail-vertical-allowed-1366.png"
+    "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/reminder-email-1-rie"
   },
   {
     "group": "com",
@@ -15390,7 +15390,7 @@
     "gallery": "",
     "date": "2020-10-16",
     "time": "11:09:00 AM",
-    "url": "https://windows10mail.capture.litmuscdn.com/41ec53be-1a3e-42d8-a080-dab9c1dc4822/results/windows10mail-vertical-allowed-1366.png"
+    "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/reminder-email-1-rie"
   },
   {
     "group": "com",
@@ -15408,10 +15408,10 @@
     "unsubrate": 0,
     "id": "DM12932",
     "filter": "Oct-20",
-    "gallery": "",
+    "gallery": "hide",
     "date": "2020-10-16",
     "time": "11:09:00 AM",
-    "url": "https://windows10mail.capture.litmuscdn.com/41ec53be-1a3e-42d8-a080-dab9c1dc4822/results/windows10mail-vertical-allowed-1366.png"
+    "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/reminder-email-1-rie"
   },
   {
     "group": "tec",
