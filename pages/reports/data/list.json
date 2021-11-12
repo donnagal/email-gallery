@@ -1506,7 +1506,7 @@
     "unsubrate": 0.01,
     "id": "DM19511",
     "filter": "Oct-21",
-    "gallery": "",
+    "gallery": "hide",
     "date": "2021-10-06",
     "time": "2:00:00 PM",
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/oct-insurance-special/reminder"
@@ -15327,7 +15327,7 @@
     "gallery": "",
     "date": "2020-10-16",
     "time": "11:09:00 AM",
-    "url": "https://windows10mail.capture.litmuscdn.com/fbb296cb-66ea-4258-8d69-b193f53ae6d0/results/windows10mail-vertical-allowed-1366.png"
+    "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/reminder-email-1-rie"
   },
   {
     "group": "com",
@@ -15345,7 +15345,7 @@
     "unsubrate": 0,
     "id": "DM12937",
     "filter": "Oct-20",
-    "gallery": "",
+    "gallery": "hide",
     "date": "2020-10-16",
     "time": "11:09:00 AM",
     "url": "https://ol2019.capture.litmuscdn.com/49b403d7-51ef-41fd-b193-f82b0ddb0034/results/ol2019-vertical-allowed-1366.png"
