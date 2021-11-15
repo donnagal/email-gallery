@@ -99,7 +99,7 @@
     "unsubrate": 0.01,
     "id": "DM20291",
     "filter": "Oct-21",
-    "gallery": "hide",
+    "gallery": "",
     "date": "2021-10-28",
     "time": "7:01:00 PM",
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov/invite"
@@ -519,7 +519,7 @@
     "unsubrate": 0,
     "id": "DM19974",
     "filter": "Oct-21",
-    "gallery": "",
+    "gallery": "hide",
     "date": "2021-10-21",
     "time": "8:59:00 AM",
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-acquisition/3"
@@ -687,7 +687,7 @@
     "unsubrate": 0.01,
     "id": "DM19970",
     "filter": "Oct-21",
-    "gallery": "hide",
+    "gallery": "",
     "date": "2021-10-20",
     "time": "9:01:00 AM",
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-acquisition/1"
@@ -918,7 +918,7 @@
     "unsubrate": 0,
     "id": "DM19823",
     "filter": "Oct-21",
-    "gallery": "hide",
+    "gallery": "",
     "date": "2021-10-15",
     "time": "11:52:00 AM",
     "url": "https://email-gallery.netlify.app/emails/2021/comms/video-snapshots/video-stapshot-reminder"
@@ -1038,7 +1038,7 @@
     "clicks": 0,
     "clickrate": 0,
     "ctor": 0,
-    "subject": "<% if ( recipient.firstName == \"\" ) { %><%} else {%> Hi <%=recipient.firstName %>,<%}%> 30 years has gone quickly",
+    "subject": "<Name>30 years has gone quickly",
     "day": "Wednesday, 13 October 2021",
     "unsub": 0,
     "unsubrate": 0,
@@ -1059,7 +1059,7 @@
     "clicks": 1,
     "clickrate": 0,
     "ctor": 1,
-    "subject": "<% if ( recipient.firstName == \"\" ) { %><%} else {%> Hi <%=recipient.firstName %>,<%}%> 20 years has gone quickly",
+    "subject": "<Name>20 years has gone quickly",
     "day": "Wednesday, 13 October 2021",
     "unsub": 2,
     "unsubrate": 0.01,
@@ -1080,7 +1080,7 @@
     "clicks": 4,
     "clickrate": 0,
     "ctor": 1,
-    "subject": "<% if ( recipient.firstName == \"\" ) { %><%} else {%> Hi <%=recipient.firstName %>,<%}%> 10 years has gone quickly",
+    "subject": "<Name>10 years has gone quickly",
     "day": "Wednesday, 13 October 2021",
     "unsub": 5,
     "unsubrate": 0.01,
@@ -1101,7 +1101,7 @@
     "clicks": 3,
     "clickrate": 0,
     "ctor": 0,
-    "subject": "<% if ( recipient.firstName == \"\" ) { %><%} else {%> Hi <%=recipient.firstName %>,<%}%> 5 years has gone quickly",
+    "subject": "<Name>5 years has gone quickly",
     "day": "Wednesday, 13 October 2021",
     "unsub": 5,
     "unsubrate": 0.01,
@@ -1191,7 +1191,7 @@
     "unsubrate": 0.01,
     "id": "DM18647",
     "filter": "Oct-21",
-    "gallery": "hide",
+    "gallery": "",
     "date": "2021-10-13",
     "time": "12:31:00 PM",
     "url": "https://email-gallery.netlify.app/emails/2021/employer/kick-starter/email-2"
@@ -1506,7 +1506,7 @@
     "unsubrate": 0.01,
     "id": "DM19511",
     "filter": "Oct-21",
-    "gallery": "hide",
+    "gallery": "",
     "date": "2021-10-06",
     "time": "2:00:00 PM",
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/oct-insurance-special/reminder"
@@ -15327,7 +15327,7 @@
     "gallery": "",
     "date": "2020-10-16",
     "time": "11:09:00 AM",
-    "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/reminder-email-1-rie"
+    "url": "https://windows10mail.capture.litmuscdn.com/fbb296cb-66ea-4258-8d69-b193f53ae6d0/results/windows10mail-vertical-allowed-1366.png"
   },
   {
     "group": "com",
@@ -15345,7 +15345,7 @@
     "unsubrate": 0,
     "id": "DM12937",
     "filter": "Oct-20",
-    "gallery": "hide",
+    "gallery": "",
     "date": "2020-10-16",
     "time": "11:09:00 AM",
     "url": "https://ol2019.capture.litmuscdn.com/49b403d7-51ef-41fd-b193-f82b0ddb0034/results/ol2019-vertical-allowed-1366.png"
@@ -15369,7 +15369,7 @@
     "gallery": "",
     "date": "2020-10-16",
     "time": "11:09:00 AM",
-    "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/reminder-email-1-rie"
+    "url": "https://windows10mail.capture.litmuscdn.com/41ec53be-1a3e-42d8-a080-dab9c1dc4822/results/windows10mail-vertical-allowed-1366.png"
   },
   {
     "group": "com",
@@ -15390,7 +15390,7 @@
     "gallery": "",
     "date": "2020-10-16",
     "time": "11:09:00 AM",
-    "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/reminder-email-1-rie"
+    "url": "https://windows10mail.capture.litmuscdn.com/41ec53be-1a3e-42d8-a080-dab9c1dc4822/results/windows10mail-vertical-allowed-1366.png"
   },
   {
     "group": "com",
