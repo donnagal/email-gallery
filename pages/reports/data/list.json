@@ -1164,7 +1164,7 @@
     "clicks": 29,
     "clickrate": 0.08,
     "ctor": 14,
-    "subject": "<% if ( recipient.firstName == \"\" ) { %>Do you<%} else {%> Hi <%=recipient.firstName %> do you<%}%> still need to make a payment?",
+    "subject": "<Name> still need to make a payment?",
     "day": "Wednesday, 13 October 2021",
     "unsub": 2,
     "unsubrate": 0.01,
