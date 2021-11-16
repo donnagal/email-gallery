@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Cbus Super: Template Webinars</title>
+  <title>Cbus Super: Template Testing</title>
   <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
@@ -130,9 +130,7 @@
 
 
 <div class="container mx-auto pb-24">
-	<div class="mx-auto lg:w-2/3 text-center">
-		<h2 class="text-5xl font-heavy pb-3 text-brand-purple">More Retirement Webinars</h2>
-	</div>
+
 
 	<div class="flex flex-wrap justify-center p-5">
 		<div class="lg:w-1/3 p-5 rounded shadow-box-2 m-4">
@@ -146,27 +144,16 @@
 					<div class="date lg:w-auto text-center w-full bg-blue-500 m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-11-08">
 						<a id="link1" target="_blank" href="https://www.cbussuper.com.au/retirement"
 							data-nl-type="externalLink">
-						   https://www.cbussuper.com.au/retirement
+						  <span class="seg"></span> Find Out More
 						</a>
 					</div>
 					<div class="date lg:w-auto text-center w-full bg-blue-500 m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-11-30">
 						<a target="_blank" href="https://www.cbussuper.com.au/super/tax-on-superannuation"
 						   title="CTA 2">
-						   https://www.cbussuper.com.au/super/tax-on-superannuation
+						   <span class="seg"></span> Read More
 						</a>
 					</div>
-					<div class="date lg:w-auto text-center w-full bg-blue-500 m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-11-16">
-						<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz61413d73f2a2c826/regform?evuid=zzzz61413d72d566b727"
-							title="Sess 1: 2">
-							<strong>18 NOV </strong> <br/> 7:30pm - 8:30pm AEDT
-						</a>
-					</div>
-					<div class="date lg:w-auto text-center w-full bg-blue-500 m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2021-11-04">
-						<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz61413bf834a64411/regform?evuid=zzzz61413bf697371337"
-							title="Sess 1: 1">
-							<strong>4 NOV </strong> <br/> 7:30pm - 8:30pm AEDT
-						</a>
-					</div>
+
 				</div>
 			</div>
 		</div>
@@ -261,7 +248,21 @@ $(function() {
             $(this).addClass('future');
         }
     });
+
+
+	if (window.location.href.indexOf("111") > -1) {
+		$(".seg").append("[111]");
+	}
+	if (window.location.href.indexOf("222") > -1) {
+		$(".seg").append("[222]");
+	}
+	if (window.location.href.indexOf("333") > -1) {
+		$(".seg").append("[333]");
+	}
+	
 });
+
+	
 
 </script>
 
