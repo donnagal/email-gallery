@@ -15500,6 +15500,48 @@
   {
     "group": "template",
     "Label": "",
+    "name": "2021 Template #2",
+    "sent": 0,
+    "opens": 0,
+    "openrate": 0,
+    "clicks": 0,
+    "clickrate": 0,
+    "ctor": 0,
+    "subject": "",
+    "day": 0,
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "",
+    "filter": 0,
+    "gallery": "",
+    "date": 0,
+    "time": "",
+    "url": "https://email-gallery.netlify.app/emails/templates/2021/webinar-feature/template-2"
+  },
+  {
+    "group": "template",
+    "Label": "",
+    "name": "2021 Guidelines",
+    "sent": 0,
+    "opens": 0,
+    "openrate": 0,
+    "clicks": 0,
+    "clickrate": 0,
+    "ctor": 0,
+    "subject": "",
+    "day": 0,
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "",
+    "filter": 0,
+    "gallery": "",
+    "date": 0,
+    "time": 0,
+    "url": "https://email-gallery.netlify.app/emails/templates/2021/guidelines"
+  },
+  {
+    "group": "template",
+    "Label": "",
     "name": "Standrad, 2020-10",
     "sent": 0,
     "opens": 0,
@@ -15514,7 +15556,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://email-gallery.netlify.app/emails/templates/2020/email-1.html"
   },
@@ -15535,7 +15577,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://email-gallery.netlify.app/emails/templates/2020/email-2.html"
   },
@@ -15556,9 +15598,30 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://email-gallery.netlify.app/emails/templates/2020/statement-1"
+  },
+  {
+    "group": "inspo",
+    "Label": "",
+    "name": "zip collier creative",
+    "sent": 0,
+    "opens": 0,
+    "openrate": 0,
+    "clicks": 0,
+    "clickrate": 0,
+    "ctor": 0,
+    "subject": "",
+    "day": 0,
+    "unsub": 0,
+    "unsubrate": 0,
+    "id": "",
+    "filter": 0,
+    "gallery": "",
+    "date": 0,
+    "time": "",
+    "url": "https://t.e2ma.net/message/f1ec7k/fpp071f"
   },
   {
     "group": "inspo",
@@ -15577,7 +15640,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/your-2019-green-impact-report-.png"
   },
@@ -15598,7 +15661,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/your-heroku-activity-report.png"
   },
@@ -15619,7 +15682,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/before-we-completely-block-out-2020.png"
   },
@@ -15640,7 +15703,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/your-2017-with-lyft.png"
   },
@@ -15661,7 +15724,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/ebook-survey-report-on-impact-of-current-crisis-on-agencies.png"
   },
@@ -15682,7 +15745,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://protect-au.mimecast.com/s/GqJIC1WLVViM2103U1C4ze?domain=engage.marketo.com"
   },
@@ -15703,7 +15766,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://email-gallery.netlify.app/images/inspo-vicsuper-3.jpg"
   },
@@ -15724,7 +15787,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://email-gallery.netlify.app/images/inspo-vicsuper-1.jpg"
   },
@@ -15745,7 +15808,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://email-gallery.netlify.app/images/inspo-vicsuper-2.jpg"
   },
@@ -15766,7 +15829,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://email-gallery.netlify.app/images/inspo-hesta-01.jpg"
   },
@@ -15787,7 +15850,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://email-gallery.netlify.app/images/inspo-hesta-02.jpg"
   },
@@ -15808,7 +15871,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://email-gallery.netlify.app/images/inspo-01x2.jpg"
   },
@@ -15829,7 +15892,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://email-gallery.netlify.app/images/inspo-02x2.jpg"
   },
@@ -15850,7 +15913,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/smiles-davis-your-account-statements-are-now-in-the-current-app-.png"
   },
@@ -15871,7 +15934,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/its-kinda-like-the-first-day-of-summer-vacation.png"
   },
@@ -15892,7 +15955,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/top-3-blinkist-titles-that-everyones-loving.png"
   },
@@ -15913,7 +15976,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/salvemos-a-los-hoteles-independientes-a-travs-de-esta-iniciativa.png"
   },
@@ -15934,7 +15997,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/get-in-person-support-at-shopify-in-la.png"
   },
@@ -15955,7 +16018,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/it-s-not-too-late-google-science-fair-is-still-taking-ideas.png"
   },
@@ -15976,7 +16039,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/youre-invited-frontiers-by-slack-our-best-and-first-ever-conference.png"
   },
@@ -15997,7 +16060,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/you-re-in-the-big-leagues-tien-100-deliveries-made.png"
   },
@@ -16018,7 +16081,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/2-rides-are-going-fast.png"
   },
@@ -16039,7 +16102,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/your-invite-to-yourstack-.png"
   },
@@ -16060,7 +16123,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/our-livestream-is-starting.png"
   },
@@ -16081,7 +16144,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://files.reallygoodemails.com/emails/matthew-your-november-skymiles-statement-is-here.png"
   },
@@ -16102,7 +16165,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://email-gallery.netlify.app/images/ing-email.jpg"
   },
@@ -16123,7 +16186,7 @@
     "id": "",
     "filter": 0,
     "gallery": "",
-    "date": "1900-01-00",
+    "date": 0,
     "time": 0,
     "url": "https://assets.mailcharts.com/emails/3402bb1c-85fb-d34d-306a-454979adb6d7/desktop.png"
   }
