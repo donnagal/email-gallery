@@ -28,6 +28,7 @@
 
 .link { color: #15798d; font-weight: bold; }
 .link:hover { color: #15798d; text-decoration: underline; }
+.seg { position: absolute; opacity: 0;}
 </style>
 
 <!-- Adobe tracking -->
@@ -75,13 +76,15 @@
   <ul class="accordion" data-accordion data-allow-all-closed="true" data-accordion data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge="500" id="deeplinked-accordion-1">
     <li class="accordion-item" data-accordion-item>
       <a href="#1" class="accordion-title">
-        <span class="seg hidden">#1</span>
+        <span class="seg"></span>
         <p class="accordion-heading">Dangerous Occupation Exception.</p>
-        <p class="accordion-subtilte text-lg">It’s over a year since a policy to protect workers in hazardous occupations has been in operation… </p>
+        <p class="accordion-subtilte text-lg">
+          Due to advocacy in Parliament on behalf of our members, it's over a year since a policy to protect workers in hazardous occupations has been in operation...
+        </p>
       </a>
       <div class="accordion-content text-lg" data-tab-content id="1">
         <p>
-          Just for the building and construction sector that Cbus covers, the Dangerous Occupation Exception has allowed over <strong>144,000</strong> Cbus Members to obtain or retain vital insurance. 
+          The Dangerous Occupation Exception has allowed over <strong>144,000</strong> Cbus Members to obtain or retain vital insurance. 
         </p>
         <div class="flex flex-wrap justify-center">
           <div class="lg:w-1/2 pb-5 text-right">
@@ -98,7 +101,7 @@
     </li>
     <li class="accordion-item" data-accordion-item>
       <a href="#2" class="accordion-title">
-        <span class="seg hidden">#2</span>
+        <span class="seg"></span>
         <p class="accordion-heading">How do I nominate beneficiaries?</p>
         <p class="accordion-subtilte text-lg">Beneficiaries are the people you elect to receive your super, and any insurance benefits, when you die…</p>
       </a>
@@ -112,7 +115,7 @@
     </li>
     <li class="accordion-item" data-accordion-item>
       <a href="#3" class="accordion-title">
-        <span class="seg hidden">#3</span>
+        <span class="seg"></span>
         <p class="accordion-heading">Changing jobs? Take Cbus with you.</p>
         <p class="accordion-subtilte text-lg">Did you know when you change jobs you can remain with Cbus? This way you can still keep insurance designed for people in the building and construction industry...</p>
       </a>
@@ -186,16 +189,16 @@ $(document).ready(function() {
 
   $(document).foundation();
   
-    // if (window.location.href.indexOf("elecman") > -1) {
-    //   $(".seg").append("[elecman]");
-    //   $(".hero-1").hide();
-    // }
-    // if (window.location.href.indexOf("nonmanprof") > -1) {
-    //   $(".seg").append("[nonmanprof]");
-    // }
-    // if (window.location.href.indexOf("noins") > -1) {
-    //   $(".seg").append("[ins]");
-    // }
+    if (window.location.href.indexOf("elecman") > -1) {
+      $(".seg").append("[elecman]");
+      $(".hero-1").hide();
+    }
+    if (window.location.href.indexOf("nonmanprof") > -1) {
+      $(".seg").append("[nonmanprof]");
+    }
+    if (window.location.href.indexOf("noins") > -1) {
+      $(".seg").append("[ins]");
+    }
 });
 
 </script>
