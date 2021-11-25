@@ -46,14 +46,14 @@
 
 
 
-  <div class="bg-hero bg-no-repeat bg-right bg-cover h-96" style="background-image: 
+  <div class="bg-hero bg-no-repeat bg-right bg-cover lg:h-96 h-32" style="background-image: 
 	      url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/313aacfc12b7592ce9d417446fe6d1eb.jpg')">
     
-	<div class="bg-gradient flex content-center lg:pt-0 flex-wrap h-96">
+	<div class="bg-gradient flex content-center lg:pt-0 flex-wrap lg:h-96 h-32">
 		<div class="container mx-auto px-10 lg:px-0">
 			<div class="fadeup lg:w-1/4 text-white md:mx-8">
         <p class="font-medium mb-8 mark-bold uppercase">Super</p>
-				<h1 class="-mt-8 font-heavy mb-8 mark-bold text-6xl leading-none">
+				<h1 class="-mt-8 font-heavy mb-8 mark-bold lg:text-6xl leading-none">
 					Insurance
 				</h1>
 			</div>
@@ -65,11 +65,11 @@
 <div class="container mx-auto lg:px-24 px-5 pb-24">
 
   <div class="mx-auto lg:w-full text-center">
-		<h2 class="text-5xl font-heavy pt-12">
+		<h2 class="lg:text-5xl text-3xl font-heavy pt-12">
       Is your insurance cover up to date?
     </h2>
     <p class="pt-3 pb-12 text-gray-600 text-lg">
-      When life changes, your insurance cover needs to change with you.
+      Your insurance cover should change as you do.
     </p>
 	</div>
 
@@ -191,13 +191,15 @@ $(document).ready(function() {
   
     if (window.location.href.indexOf("elecman") > -1) {
       $(".seg").append("[elecman]");
-      $(".bg-hero").css("background-image", "url('https://www.cbussuper.com.au/content/dam/cbus/images/3-1-home-and-landing-page-banners/CBUS-smiling-tradie-sunglasses-3000-1000.jpg')");
+      $(".bg-hero").css("background-image", "url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/9e83520ec6444040dbf58a49277997971a07caeb09f3a36b3c2678af5a656952.png')");
     }
     if (window.location.href.indexOf("nonmanprof") > -1) {
       $(".seg").append("[nonmanprof]");
+      $(".bg-hero").css("background-image", "url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/e590a7d5063b66477c52e3db40306a1c402335f73d28c3c151c3c30e6a2387a0.png')");
     }
     if (window.location.href.indexOf("noins") > -1) {
       $(".seg").append("[ins]");
+      $(".bg-hero").css("background-image", "url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/ffb1cd2bc669b0b9b8600998a0472cc8a78ef49aad04575c52a6c70967994150.png')");
     }
 });
 
