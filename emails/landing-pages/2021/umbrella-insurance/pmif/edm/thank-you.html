@@ -5,19 +5,17 @@
     <meta charset="utf-8">
     <title>Opt-in and stay insured with Cbus</title>
     <link rel="stylesheet"
-    href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/96cb0fb449c1f69f8dc96d2f258bfa01.css">
+    href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/5dc299fa6c740bd027c78c9c1c649a93.css">
     <script>
         console.log('version 10')
     </script>
      <script>
           var digitalData = digitalData || {};
-          digitalData = {"page":{"pageInfo":{"pageName":"ACM: EDM Insurance Thank You","brand":"Cbus"},"category":{}}}
+          digitalData = {"page":{"pageInfo":{"pageName":"ACM: EDM PMIF Thankyou","brand":"Cbus"},"category":{}}}
           digitalData.page.pageInfo.pageUrl = window.location.href;
           digitalData.page.pageInfo.domain = window.location.hostname;
-
     </script>
     <script type="text/javascript" src="//assets.adobedtm.com/launch-ENd8db634a912b4764b21552a1fca7014a.min.js" async></script>
-
 </head>
 
 <body style="" class="">
@@ -31,8 +29,8 @@
 <div class="padding-block"></div>
 <div class="content-container">
 <div class="info-container">
-<h2 class="blue-highlight header">We have recorded your election <% if (recipient.@mbrInsuranceConsentGiven == "No") { %><span class="underline">not</span><% } %> to retain your insurance with Cbus at:</h2>
-<p class="subtitle"><span class="magenta-highlight"><span class="nl-dce-field" data-nl-expr="[recipient/@mbrTimeConsentGiven]">[Time]</span></span> AEST on <span class="magenta-highlight"><%= formatDate(recipient.@mbrDateConsentGiven, "%Al %D %Bl %4Y") %></span> <span class="magenta-highlight"><span class="nl-dce-field" data-nl-expr="[recipient/@mbrMannerInsuranceElection]">[Method]</span></span>.</p>
+<h2 class="blue-highlight header">We have recorded your election <% if (recipient.@mbrPMIFInsuranceConsentGiven == "No") { %><span class="underline">not</span><% } %> to retain your insurance with Cbus at:</h2>
+<p class="subtitle"><span class="grey-highlight"><span class="nl-dce-field" data-nl-expr="[recipient/@mbrPMIFTimeConsentGiven]">[Time]</span></span> (AEST) on <span class="grey-highlight"><%= formatDate(recipient.@mbrPMIFDateConsentGiven, "%Al %D %Bl %4Y") %></span> <span class="grey-highlight"><span class="nl-dce-field" data-nl-expr="[recipient/@mbrPMIFMannerInsuranceElection]">[Method]</span></span>.</p>
 </div>
 </div>
 <div class="contact-container contact-container--small">
