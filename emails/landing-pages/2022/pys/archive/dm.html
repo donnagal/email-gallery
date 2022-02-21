@@ -1,0 +1,129 @@
+var givenMemberID = ctx.visitor.memberID
+var consent = ctx.visitor.consent
+var dobGiven = ctx.visitor.dobGiven
+
+ctx.vars.genericError = 0
+ctx.vars.firstTimeError = 0
+ctx.vars.dobMismatchError = 0
+
+logInfo("Version 30")
+logInfo("=== START REGISTER CONSENT 4===")
+
+try {
+  if (!givenMemberID || !consent || !dobGiven) {
+    throw new Error("Invalid fields given")
+  }
+  
+  var validMemberIDStr =  /^[0-9]*$/.test(givenMemberID);
+  
+  if (!validMemberIDStr) {
+    throw new Error("Invalid format of member ID given: " + givenMemberID)
+  }
+
+  var query = xtk.queryDef.create(
+    <queryDef schema="nms:recipient" operation="get">
+      <select>
+        <node expr="@id" />
+        <node expr="@birthDate" />
+        <node expr="@mbrInsuranceConsentGiven" />
+        <node expr="@mbrDOBAttemptCount" />
+      </select>
+      <where>
+        <condition expr={"@mbrAccID = " + "'" + givenMemberID + "'"} />
+      </where>
+    </queryDef>
+  )
+
+  var recipient = query.ExecuteQuery()
+  sleep(1000)
+  logInfo("recipient: " + recipient.recipient)
+  
+  logInfo("@mbrDOBAttemptCount originally: " + recipient.@mbrDOBAttemptCount)
+  
+  if (recipient) {
+    var firstTime = (recipient.@mbrInsuranceConsentGiven == 0)
+    if (firstTime) {
+      var sameDOB = (recipient.@birthDate == dobGiven)
+      var numTimesAttempted = parseInt(recipient.@mbrDOBAttemptCount)
+      var attemptsRemaining = (numTimesAttempted < 3)
+
+      logInfo("@mbrDOBAttemptCount inside firsttime: " + recipient.@mbrDOBAttemptCount)
+      if (attemptsRemaining && sameDOB) {
+        var tzoffset = (new Date()).getTimezoneOffset() * 60000;
+        var localISOTime = (new Date(Date.now() - tzoffset)).toISOString()
+  
+        // date in format YYYY-MM-DD
+        var currentDateStr = localISOTime.split('T')[0]
+            
+        // time in format HH:MM:SS
+        var currentTimeStr = localISOTime.split('T')[1].split('.')[0]
+    
+        // update relevant fields on the found member
+        recipient.@mbrInsuranceConsentGiven = consent
+        recipient.@mbrDateConsentGiven = currentDateStr
+        recipient.@mbrTimeConsentGiven = currentTimeStr
+        recipient.@mbrDOBSubmittedForm = dobGiven
+        recipient.@mbrMannerInsuranceElection = "Online"
+        recipient.@xtkschema = "nms:recipient"
+        recipient.@_operation = "update"
+        recipient.@_key = "@id"
+        xtk.session.Write(recipient)
+        
+        // copy answers into global variables so thankyou page can display
+        ctx.vars.consent = consent
+        ctx.vars.dateConsentGiven = currentDateStr
+        ctx.vars.timeConsentGiven = currentTimeStr
+        ctx.vars.mannerElection = "Online"
+        
+      } else {
+        var numTimesAttempted = parseInt(recipient.@mbrDOBAttemptCount)
+        var updatedTimesAttempted = numTimesAttempted + 1
+        logInfo('== START ==')
+        logInfo('updatedTimesAttempted: ' + updatedTimesAttempted)
+
+        if (numTimesAttempted < 3) {
+          var updatedRecipient = <recipient _key="@id" id={recipient.@id} _operation="update" xtkschema="nms:recipient" mbrDOBAttemptCount={updatedTimesAttempted} />
+          xtk.session.Write(updatedRecipient)
+        }
+        
+        var newQuery = xtk.queryDef.create(
+          <queryDef schema="nms:recipient" operation="get">
+            <select>
+              <node expr="@id" />
+              <node expr="@birthDate" />
+              <node expr="@mbrInsuranceConsentGiven" />
+              <node expr="@mbrDOBAttemptCount" />
+            </select>
+            <where>
+              <condition expr={"@mbrAccID = " + "'" + givenMemberID + "'"} />
+            </where>
+          </queryDef>
+        )
+      
+        var newRecipient = newQuery.ExecuteQuery()
+        
+        logInfo("newRecipient.@mbrDOBAttemptCount: " + newRecipient.@mbrDOBAttemptCount)
+        
+        ctx.vars.lockout = 0
+        if (updatedTimesAttempted > 2) {
+          ctx.vars.lockout = 1
+        }
+            
+        ctx.vars.attemptsRemaining = 3 - updatedTimesAttempted
+        ctx.vars.dobMismatchError = 1
+      }
+    } else {
+      logInfo("going down error path")
+      ctx.vars.firstTimeError = 1
+      logInfo("Recipient has already completed form")
+    }
+  } else {
+    throw new Error("No recipient found with given member ID")
+  }
+} catch (e) {
+  logInfo(e)
+  logInfo("going down error path")
+  ctx.vars.genericError = 1
+  ctx.vars.error = e
+}
+

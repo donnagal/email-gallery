@@ -53,53 +53,25 @@
 	<div class="container mx-auto lg:px-24 px-5">
 		<div class="text-brand-black pb-10">
 			<h2 class="lg:text-5xl text-3xl font-heavy pt-12">Keep your Cbus insurance</h2>
-			<p class="pt-5">
-				If you wish to opt-in to retain your insurance, please click on the <strong>Yes</strong> field below. 
-			</p>
 		</div>
 		<div class="flex flex-wrap">
 			<div class="w-full lg:w-1/2">
-				<form>
-					<div class="md:flex md:items-center mb-6">
-						<div class="md:w-full">
-							<label class="block mb-1 md:mb-0 pr-4 pb-2" for="quantity">Member number*</label>
-							<input class="input-shadow bg-white appearance-none rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" min="9" max="9" required>
-						</div>
-					</div>
-					<div class="md:flex md:items-center mb-6">
-						<div class="md:w-full">
-							<label>
-								Enter your date of birth*:
-								<input class="input-shadow bg-white appearance-none rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" type="date" name="dob" required pattern="\d{4}-\d{2}-\d{2}" required>
-								<span class="validity"></span>
-							</label>
-							<p class="text-sm pt-2 text-brand-gray">
-								*This must match the date of birth that we have on file for your election to be valid.
-							</p>
-						</div>
-					</div>
-			
-					<div class="md:flex md:items-center mb-6">
-					  <label class="block">
-						<input class="mr-1 leading-tight" type="checkbox" required>
-						<span class="text-xl"><strong>Yes - </strong> I want to opt-in and retain my insurance.*</span>
-					  </label>
-					</div>
-					<div class="md:flex md:items-center mb-6">
-						<button class="cta-dark block w-full m-3">Submit</button>
-					</div>
-				</form>
+				<p class="fadeup ">
+                    We have recorded your election <% if (ctx.vars.consent == "No") { %>not<% } %> to retain your insurance with Cbus at:
+                    <br/>
+                    <%= ctx.vars.timeConsentGiven %> AEST on <%= formatDate(ctx.vars.dateConsentGiven, "%Al %D %Bl %4Y") %> <%= ctx.vars.mannerElection %>.
+                </p>
 			</div>
 			<div class="w-full lg:w-1/2 lg:pl-10 pb-24 font-normal">
-				<p class="pt-5">
-					<ul class="list-disc">
-						<li class="text-sm text-gray-400 p-1">Submitting this election to Cbus will mean that your current and any future insurance cover will be maintained and premiums will continue to be deducted, even if your super account does not receive a contribution or roll in for 16 months.</li>
-						<li class="text-sm text-gray-400 p-1">This instruction will apply to the Cbus death, total and permanent disablement and income protection cover (where relevant) you currently have and will continue to remain in place even if the level or type of your cover changes in the future.</li>
-						<li class="text-sm text-gray-400 p-1"> Depending on which Cbus super account and type of cover you have, there are other situations where your cover will stop, for example when you reach a certain age, close your account, no longer receive employer contributions or there's not enough money to pay insurance premiums. See the relevant insurance guide for your super account.</li>
-						<li class="text-sm text-gray-400 p-1">You can choose to cancel your cover at any time by contacting Cbus.</li>
-						<li class="text-sm text-gray-400 p-1">For further information regarding insurance and the protecting your super changes refer to <a class="underline" target="_blank" href="https://www.cbussuper.com.au/about-us/news/cbus-news/changes-to-your-super">changes-to-your-super</a></li>
-					</ul>
-				</p>
+			<!-- Message Green -->
+			<div class="py-4 lg:px-4">
+				<div class="fadeup bg-brand-gray border border-gray-200 items-center leading-none lg:rounded flex lg:inline-flex" role="alert">
+					<span class="flex rounded bg-green-200 uppercase text-xl font-bold mr-3 px-4 py-3">
+						<i class="fa-solid fa-check"></i>
+					</span>
+					<span class="mr-2 text-left flex-auto text-sm pr-24">Your recorded has been sent.</span>
+				</div>
+			</div>
 			</div>
 			
 		</div>
@@ -171,6 +143,12 @@
 
 <script>
 	document.getElementById("year").innerHTML = new Date().getFullYear();
+    $(document).ready(function () {
+    // Scoll to
+    $('html, body').animate({
+        scrollTop: $('#form').offset().top
+    }, 'slow');
+    });
 </script>
 
 </body>
