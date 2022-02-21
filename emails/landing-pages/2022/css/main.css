@@ -27,6 +27,10 @@ p {
 	background: rgb(162, 162, 162);
 	background: linear-gradient(100deg, rgba(162, 162, 162, 1) 0%, rgb(55 65 81) 0%, rgba(255, 255, 255, 0) 100%);
 }
+.bg-gradient-teal {
+	background: #3c7585;
+    background: linear-gradient(100deg, #3c7585 0%, #3c7585 0%, rgba(255, 255, 255, 0) 100%);
+}
 .bg-brand-black {
 	background-color: #1a1a1a;
 }
