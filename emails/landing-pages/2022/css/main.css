@@ -1,4 +1,11 @@
 
+.media-super p, .media-super label, .media-super a {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+.media-super .font-heavy {
+	font-family: 'Roboto Condensed','Arial Narrow,Avenir Next Condensed','Roboto',sans-serif;
+	font-weight: bold;
+}
 p {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -37,20 +44,62 @@ p {
 .bg-brand-gray {
 	background-color: #f8f8f8;
 }
+.media-super .bg-brand-gray {
+	background-color: #F1F1F1;
+}
 .bg-brand-dark {
 	background-color: #333;
 }
 .bg-brand-green {
 	background-color: #008a44;
 }
+.media-super .bg-brand-green {
+	background-color: #3B7684;;
+}
 .bg-brand-blue {
 	background-color: #00508c;
+}
+.media-super .bg-brand-blue {
+	background-color: #9EDEFB;
+}
+.media-super .text-brand-gray {
+	color: #5a5a5a;
 }
 .text-brand-blue {
 	color: #00508c;
 }
 .h-screen-50 {
 	height: 50vh;
+}
+.cta-blue-light {
+	background-color: #9EDEFB;
+	color: #3B7684;
+	font-weight: bold;
+	padding: 12px 50px;
+}
+.cta-blue-light:hover {
+	background-color: black;
+	color: #9EDEFB;
+}
+.cta-pink {
+	background-color: #ffafcd;
+	color: black;
+	font-weight: bold;
+	padding: 12px 50px;
+}
+.cta-pink:hover {
+	background-color: black;
+	color: #ffafcd;
+}
+.cta-blue-dark {
+	background-color: #3B7684;
+	color: white;
+	font-weight: bold;
+	padding: 12px 50px;
+}
+.cta-blue-dark:hover {
+	background-color: black;
+	color: white;
 }
 .cta-light {
 	background-color: white;
