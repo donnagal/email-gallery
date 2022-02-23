@@ -91,16 +91,6 @@ p {
 	background-color: black;
 	color: #ffafcd;
 }
-.cta-blue-dark {
-	background-color: #3B7684;
-	color: white;
-	font-weight: bold;
-	padding: 12px 50px;
-}
-.cta-blue-dark:hover {
-	background-color: black;
-	color: white;
-}
 .cta-light {
 	background-color: white;
 	box-shadow: 0 3px 0 0 #8d8d8d;
@@ -122,6 +112,17 @@ p {
 	position: relative;
 	top: -2px;
 	box-shadow: 0 5px 0 0 #8d8d8d, 0 2px 4px 0 #8d8d8d;
+}
+.media-super .cta-dark {
+	background-color: #3B7684;
+	border-radius: 0;
+	box-shadow: none;
+	color: white;
+	padding: 12px 50px;
+}
+.media-super .cta-dark:hover {
+	background-color: black;
+	color: white;
 }
 .badge-teal {
 	background: #e0f7fb;

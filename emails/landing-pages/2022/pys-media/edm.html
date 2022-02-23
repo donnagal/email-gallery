@@ -7,18 +7,62 @@
   <link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/55e79d51b6e47132a76167d75c5e8fd9d48ecc49ec789a31ca84e51c2fe6bbbb.png" rel="icon" type="image/x-icon" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
+  <!-- Start: ADOBE SCRIPTS -->
+	<script type="text/javascript">// <![CDATA[
+		function formSubmit() {
+			var consent = "";
+			// have to get values from radio buttons manually for IE
+			var radios = document.getElementsByName("consent-given")
+			for (var i = 0; i < radios.length; i++) {
+				var consentRadio = radios[i]
+				if (consentRadio.checked) {
+					consent = consentRadio.value
+				}
+			}
+			var dob = document.forms["page-form"]["mbrDOBSubmittedForm"].value
+			var IEDatePattern = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}/;
+			if (!!consent && !!dob) {
+
+				var normalisedDOB = dob 
+				if (IEDatePattern.test(dob)) {
+					var dobParts = dob.split('/');
+					var day = dobParts[0]
+					var month = dobParts[1]
+					var year = dobParts[2]
+
+					normalisedDOB = year + '-' + month + '-' + day
+				}
+
+				document.controller.setValue('/ctx/visitor/consent', consent, 'consent-given')
+				document.controller.setValue('/ctx/visitor/dobGiven', normalisedDOB, 'mbrDOBSubmittedForm')
+
+				document.controller.submit('next')
+			}
+		}
+	// ]]>
+	</script>
+	<script>
+		var digitalData = digitalData || {};
+		digitalData = {"page":{"pageInfo":{"pageName":"(DEV) ACM: EDM Insurance Landing","brand":"Media Super"},"category":{}}}
+		digitalData.page.pageInfo.pageUrl = window.location.href;
+		digitalData.page.pageInfo.domain = window.location.hostname;
+
+	</script>
+	<script type="text/javascript" src="//assets.adobedtm.com/launch-ENd8db634a912b4764b21552a1fca7014a.min.js" async></script>
+<!-- End: ADOBE SCRIPTS -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic|Roboto+Condensed:400,700,400italic,700italic" rel="stylesheet">
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  <link href="../css/tailwind.css" rel="stylesheet">
-  <link href="../css/main.css" rel="stylesheet">
+  <link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/tailwind.css" rel="stylesheet">
+  <link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/main.css" rel="stylesheet">
 </head>
 <body class="media-super lg:px-10">
 	
 <div class="bg-no-repeat bg-cover bg-top h-48" style="background-image: 
-	url('../img/media-bg.png')">
+	url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/media-bg.png')">
     
 	<div class="bg-gradient-teal flex content-center lg:pt-0 flex-wrap h-48">
 		<div class="container mx-auto px-10 lg:px-0">
