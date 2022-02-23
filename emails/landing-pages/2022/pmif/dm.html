@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Superannuation insurance</title>
+  <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+	<!-- Start: ADOBE SCRIPTS -->
+    <script type="text/javascript">// <![CDATA[
+        function formSubmit(e) {
+
+            var consent = "";
+            // have to get values from radio buttons manually for IE
+            var radios = document.getElementsByName("consent-given")
+            for (var i = 0; i < radios.length; i++) {
+                var consentRadio = radios[i]
+                if (consentRadio.checked) {
+                    consent = consentRadio.value
+                }
+            }
+            var memberID = document.forms["page-form"]["memberID"].value
+            var dob = document.forms["page-form"]["mbrDOBSubmittedForm"].value
+
+            var memberIDPattern = /^[0-9]*$/;
+            var IEDatePattern = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}/;
+            if (!!consent && !!dob && !!memberID && memberIDPattern.test(memberID)) {
+
+                var normalisedDOB = dob 
+                if (IEDatePattern.test(dob)) {
+                    var dobParts = dob.split('/');
+                    var day = dobParts[0]
+                    var month = dobParts[1]
+                    var year = dobParts[2]
+
+                    normalisedDOB = year + '-' + month + '-' + day
+                }
+                document.controller.setValue('/ctx/visitor/consent', consent, 'consent-given')
+                document.controller.setValue('/ctx/visitor/memberID', memberID, 'memberID')
+                document.controller.setValue('/ctx/visitor/dobGiven', normalisedDOB, 'mbrDOBSubmittedForm')
+
+                document.controller.submit('next')
+            }
+
+            return false;
+        }
+    // ]]>
+    </script>
+     <script>
+          var digitalData = digitalData || {};
+          digitalData = {"page":{"pageInfo":{"pageName":"(DEV) ACM: DM PMIF Landing","brand":"Cbus"},"category":{}}}
+          digitalData.page.pageInfo.pageUrl = window.location.href;
+          digitalData.page.pageInfo.domain = window.location.hostname;
+    </script>
+    <script type="text/javascript" src="//assets.adobedtm.com/launch-ENd8db634a912b4764b21552a1fca7014a.min.js" async></script>
+	<!-- End: ADOBE SCRIPTS -->
+
+
+  <link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/effra" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/tailwind.css" rel="stylesheet">
+  <link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/main.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- DM Cbus Umbrella Insurance : Edited 2022 FEB-->	
+<div class="bg-no-repeat bg-cover bg-top lg:h-96 h-48" style="background-image: 
+	url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/684acbc69dc4b5f6cb98160ea3dd99b447869a5c88ec9bb5bbd45fffc6455161.jpg')">
+    
+	<div class="bg-gradient flex content-center lg:pt-0 flex-wrap lg:h-96 h-48">
+		<div class="container mx-auto px-10 lg:px-0">
+			<div class="fadeup w-full text-white lg:px-24">
+				<p class="-mt-5 font-medium uppercase">Super</p>
+				<h1 class="font-heavy mb-8 mark-bold lg:text-6xl text-4xl leading-none">
+					Changes to your insurance
+				</h1>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+<div class="bg-brand-gray">
+	<div class="container mx-auto lg:px-24 px-5">
+		<div class="mx-auto lg:w-full text-brand-black">
+		<h2 class="lg:text-5xl text-3xl font-heavy pt-12">Important message about your insurance</h2>
+		<p class="font-light pt-5 text-xl font-bold">
+			Your automatic insurance cover may be impacted if you don't act.
+		</p>
+		<p class="pt-3 pb-12">
+			The Government has changed the laws that apply to automatic insurance in super, which is the death and disability cover that most members receive when they join Cbus.
+			<br/><br/>
+			From 1 April 2020, you generally won’t be eligible for automatic cover until your account balance reaches $6,000 and you are 25 years of age – unless you make this election or are covered under the dangerous occupation exemption which applies to Industry Manual Workers.
+		</p>
+	</div>
+	</div>
+</div>
+
+<div class="bg-white">
+	<div class="container mx-auto lg:px-24 px-5 pb-16">
+		<h2 class="lg:text-5xl text-3xl font-heavy pt-12 pb-5">Who should use this online form?</h2>
+		<div class="flex flex-wrap">
+			<div class="w-full lg:w-1/2">
+				<p class="font-light pt-5 pb-5 text-xl font-bold">
+					Use this online form if you're in:
+				</p>
+
+					<!-- List item -->
+					<div class="lg:px-2 pb-1">
+						<div class="items-top lg:rounded flex lg:inline-flex" role="alert">
+							<span class="flex font-bold mr-3"><i class="fa-solid fa-square-check text-2xl"></i></span>
+							<span class="mr-2 text-left flex-auto pr-5">
+								Industry Super (electech, non-manual or professional only)
+							</span>
+						</div>
+					</div>
+					<!-- List item -->
+					<div class="lg:px-2 pb-1">
+						<div class="items-top lg:rounded flex lg:inline-flex" role="alert">
+							<span class="flex font-bold mr-3"><i class="fa-solid fa-square-check text-2xl"></i></span>
+							<span class="mr-2 text-left flex-auto pr-5">
+								Sole Trader Super, or
+							</span>
+						</div>
+					</div>
+					<!-- List item -->
+					<div class="lg:px-2 pb-1">
+						<div class="items-top lg:rounded flex lg:inline-flex" role="alert">
+							<span class="flex font-bold mr-3"><i class="fa-solid fa-square-check text-2xl"></i></span>
+							<span class="mr-2 text-left flex-auto pr-5">
+								Corporate Super and you want access to automatic cover now regardless of your account balance or age.
+							</span>
+						</div>
+					</div>
+
+			</div>
+			<div class="w-full lg:w-1/2">
+				<p class="font-light pt-5 pb-5 text-xl font-bold">
+					Don't use this online form if you're in:
+				</p>
+				<!-- List item -->
+				<div class="lg:px-2 pb-1">
+					<div class="items-top lg:rounded flex lg:inline-flex" role="alert">
+						<span class="flex font-bold mr-3"><i class="fa-solid fa-square-xmark text-2xl"></i></span>
+						<span class="mr-2 text-left flex-auto pr-5">
+							Industry Super (manual): You'll still get any automatic cover you're eligible for, regardless of your account balance or age, under a dangerous occupation exemption.
+						</span>
+					</div>
+				</div>
+				<!-- List item -->
+				<div class="lg:px-2 pb-1">
+					<div class="items-center lg:rounded flex lg:inline-flex" role="alert">
+						<span class="flex font-bold mr-3"><i class="fa-solid fa-square-xmark text-2xl"></i></span>
+						<span class="mr-2 text-left flex-auto pr-5">
+							Personal Super: If you’d like cover, you need to <a class="underline text-black" target="_blank" href="https://www.cbussuper.com.au/content/dam/cbus/files/forms-publications/insurance/Insurance-Handbook-Personal-Super.pdf">apply for it</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<p class="font-light pb-5 text-xl font-bold pt-8">
+			Once you tell us you want cover, it will generally start from:
+		</p>
+		<ul class="list-disc lg:px-5">
+			<li>If you're an Industry or Corporate Super member: when we receive an on-time compulsory super payment from your employer, or</li>
+			<li class="pt-3">If you're a Sole Trader Super member: when we accept your completed form (as long as you have at least $250 in your account within 31 days from the date we receive it).</li>
+		</ul>
+		<p class="pt-8 pb-5">
+			You’ll also need to be able to do your normal job without being restricted by injury and illness for ten days in a row. Otherwise your TPD cover will be limited to injuries or illnesses that first occur after your cover starts, until you can do your normal job unrestricted for ten days in a row. 
+			<br><br>
+			See your <a class="underline text-black" id="a158561960200369" href="https://www.cbussuper.com.au/super/my-insurance-options" target="_blank" data-nl-type="externalLink">insurance guide</a> for more details, including when your cover may start later or be limited.
+			<br><br>
+			You can use this online form to tell us that you want automatic insurance cover by making the election below. This will allow it to start as soon as you’re eligible regardless of your account balance or age.
+		</p>
+
+		<p class="font-light pb-5 text-xl font-bold pt-8">
+			Your cover may be limited if:
+		</p>
+		<ul class="list-disc lg:px-5">
+			<li>You're an Industry Super member and you tell us you want cover more than six months after you joined your first Cbus employer, or your employer doesn't make an on-time compulsory super payment within six months of your cover starting</li>
+			<li class="pt-3">You’re a Corporate Super member and you tell us you want cover more than six months after you became eligible for Corporate Super with your employer, or your employer doesn't make an on-time compulsory super payment within six months of your cover starting</li>
+			<li class="pt-3">You’re a Sole Trader Super member and you tell us you want cover after you join Cbus.</li>
+		</ul>
+		<p class="pt-8">
+			This means that for 24 months you’ll only be covered for injuries or illnesses that first occur after your cover starts. After 24 months, you’ll get full cover, providing you can do your normal job without being restricted by injury or illness for ten days in a row. See your <a class="underline text-black" href="https://www.cbussuper.com.au/super/my-insurance-options" target="_blank">insurance guide</a> for more details.
+		</p>
+
+		</div>
+	</div>
+</div>
+
+<div class="bg-brand-gray">
+	<div class="container mx-auto lg:px-24 px-5">
+		<div class="mx-auto lg:w-full text-brand-black">
+		<h2 class="lg:text-5xl text-3xl font-heavy pt-12">Want to keep your cover, even when life changes?</h2>
+		<p class="font-light pt-5 text-xl font-bold">
+			Your automatic insurance cover may be impacted if you don't act.
+		</p>
+		<p class="pt-3 pb-12">
+			Any cover you get will stop if your account doesn’t receive a contribution or roll in for 16 months (unless it stops for another reason under the Policy). Alongside telling us below that you want automatic cover, you can also complete our <a class="underline text-black" href="http://t.marketing.cbussuper.com.au/webApp/dm_consent_cap" target="_blank">online form</a> to tell us you want to keep your cover – even if you stop work or change jobs.
+		</p>
+	</div>
+	</div>
+</div>
+
+  <div id="form" class="bg-white">
+	<div class="container mx-auto lg:px-24 px-5">
+		<div class="text-brand-black pb-10">
+			<h2 class="lg:text-5xl text-3xl font-heavy pt-12">I want Cbus insurance</h2>
+			<p class="pt-5">
+				If you want automatic insurance as described above, please click on the <strong>Yes</strong> field below. 
+			</p>
+		</div>
+		<div class="flex flex-wrap">
+			<div class="w-full lg:w-1/2">
+				<form id="page-form" name="page-form">
+					<div class="md:flex md:items-center mb-6">
+						<div class="md:w-full">
+							<label class="block mb-1 md:mb-0 pr-4 pb-2" for="memberID">Member number*</label>
+							<input class="input-shadow bg-white appearance-none rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" data-nl-ismandatory="true" id="memberID" name="memberID" pattern="^[0-9]*$"  title="Member ID must be comprised only of numbers and not contain any whitespace" type="text" required>
+						</div>
+					</div>
+					<div class="md:flex md:items-center mb-6">
+						<div class="md:w-full">
+							<label for="mbrDOBSubmittedForm">
+								Enter your date of birth*:
+								<input class="input-shadow bg-white appearance-none rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" data-nl-ismandatory="true" id="mbrDOBSubmittedForm" name="mbrDOBSubmittedForm" placeholder="dd/mm/yyyy" type="date" required>
+								<span class="validity"></span>
+							</label>
+							<p class="text-sm pt-2 text-brand-gray">
+								*This must match the date of birth that we have on file for your election to be valid.
+							</p>
+						</div>
+					</div>
+			
+					<div class="md:flex md:items-center mb-6">
+					  <label class="block" for="mbrInsuranceConsentGiven-yes">
+						<input class="mr-1 leading-tight" data-nl-ismandatory="true" id="mbrInsuranceConsentGiven-yes" name="consent-given" type="radio" value="Yes" required>
+						<span class="text-xl"><strong>Yes - </strong> I want automatic insurance cover now.*</span>
+					  </label>
+					</div>
+					<div class="md:flex md:items-center mb-6">
+						<button class="cta-dark block w-full lg:m-3" id="input155539912261392" onclick="formSubmit()">Elect</button>
+					</div>
+				</form>
+			</div>
+			<div class="w-full lg:w-1/2 pl-10 pb-24">
+				<p class="pt-5 text-sm text-gray-400">
+					I have completed this form truthfully and correctly to the best of my knowledge and understand that:
+				</p>
+				<ul class="list-disc">
+					<li class="text-sm text-gray-400 p-1">Submitting this form to Cbus will mean that I want to have automatic insurance cover now (regardless of my age or account balance).</li>
+					<li class="text-sm text-gray-400 p-1">Insurance costs will be deducted from my super account and I understand that this will have an impact on my retirement savings.</li>
+					<li class="text-sm text-gray-400 p-1">This instruction will apply to the Cbus death, total and permanent disablement and income protection cover I may receive. Commencement and type of insurance cover is subject to meeting eligibility requirements and in some cases may be limited.  Please read the relevant <a class="underline" id="a158562026212757" href="https://www.cbussuper.com.au/tools-resources/forms-and-publications" target="_blank" data-nl-type="externalLink">Insurance&nbsp;Guide</a> for your Membership.</li>
+					<li class="text-sm text-gray-400 p-1">There are other situations where my cover will stop as detailed in the relevant <a class="underline" id="a157379358424795" href="https://www.cbussuper.com.au/tools-resources/forms-and-publications" target="_blank" data-nl-type="externalLink">Insurance Guide</a> for my super membership.</li>
+					<li class="text-sm text-gray-400 p-1">I can choose to cancel some or all of my cover at any time by <a class="underline" id="a157379369329325" href="https://www.cbussuper.com.au/support/member-account-log-in" target="_blank" data-nl-type="externalLink">logging into my account</a> or by completing the <a class="underline" id="a157379362826059" href="https://www.cbussuper.com.au/tools-resources/forms-and-publications" target="_blank" data-nl-type="externalLink">relevant form</a>.</li>
+					<li class="text-sm text-gray-400 p-1">The information collected above will be used solely for the purpose of updating your superannuation account with your election and will be handled in accordance with Cbus' Privacy Policy.</li>
+				</ul>
+			</div>
+			
+		</div>
+	  </div>
+  </div>
+
+  <div class="bg-brand-gray">
+	<div class="container mx-auto lg:px-24 px-5 py-12">
+		<div class="mx-auto lg:w-full text-brand-black">
+		<h2 class="lg:text-5xl text-3xl font-heavy">We’re here to help</h2>
+		<p class="font-light pt-5 text-xl font-bold pb-3">
+			If you have any questions or would like to discuss your options further, we can help get your super sorted.
+		</p>
+		<div class="flex flex-wrap text-center">
+			<div class="w-full lg:w-1/2">
+				<a href="tel:1300 361 784" class="cta-light block m-3 relative font-bold">1300 361 784 <i class="fa-solid fa-angle-right text-sm absolute right-0 pr-5"></i></a>
+				<p class="text-brand-gray lg:pb-0 pb-5">Mon to Fri from 8am to 8pm AEDT/AEST</p>
+			</div>
+			<div class="w-full lg:w-1/2">
+				<a href="mailto:cbusenq@cbussuper.com.au" class="cta-light block m-3 relative font-bold">cbusenq@cbussuper.com.au <i class="fa-solid fa-angle-right text-sm absolute right-0 pr-5"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+<div class="bg-white">
+	<div class="container mx-auto lg:px-24 px-5 py-10">
+		<div class="mx-auto lg:w-full text-brand-black">
+		<p class="text-sm text-gray-400">
+			ASIC Money Smart can also provide information about the benefits and risks of insurance as well as the broader impacts of paying for more death and disability insurance cover than you might need. Visit the <a class="underline" id="a157377485367633" href="https://www.moneysmart.gov.au/superannuation-and-retirement/how-super-works/insurance-through-super" target="_blank" data-nl-type="externalLink">MoneySmart</a> website for more information.
+		</p>
+	</div>
+	</div>
+</div>
+
+<footer class="w-full flex items-center justify-center bg-brand-black">
+	<div class="md:w-2/3 w-full px-4 text-white flex flex-col">
+		<div class="flex flex-col">
+			<div class="flex mt-24 mb-12 flex-row justify-between">
+				
+				<div class="">
+					<a target="_blank" href="https://www.cbussuper.com.au/">
+						<img src="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/Cbus-ISA-Footer-Logo-2017.png" alt="Cbus Super logo" style="width: 130px;">
+					</a>
+				</div>
+
+				<a target="_blank" class="hidden md:block cursor-pointer text-gray-500 hover:text-white uppercase pt-5" href="https://www.cbussuper.com.au/about-us/who-we-are">
+					About
+				</a>
+				<a target="_blank" class="hidden md:block cursor-pointer text-gray-500 hover:text-white uppercase pt-5" href="https://www.cbussuper.com.au/tools-resources/advice-services">
+					Advice Services
+				</a>
+				<a target="_blank" class="hidden md:block cursor-pointer text-gray-500 hover:text-white uppercase pt-5" href="https://www.comms.cbussuper.com.au/scripts/cbus/seminars/#upsem">
+					All webinars
+				</a>
+				<a target="_blank" class="hidden md:block cursor-pointer text-gray-500 hover:text-white uppercase pt-5" href="https://www.cbussuper.com.au/support/contact">
+					Contact
+				</a>
+
+				<div class="flex flex-row space-x-8 items-center justify-between text-lg">
+					<a target="_blank" href="https://www.facebook.com/cbussuperfund">
+						<i class="fab fa-facebook-f"></i>                           
+					</a>
+					<a target="_blank" href="https://twitter.com/cbussuperfund">
+						<i class="fab fa-twitter"></i>   
+					</a>
+					<a href="https://www.linkedin.com/company/cbus-super-fund">
+						<i class="fab fa-linkedin-in"></i>                            
+					</a>
+				</div>
+			</div>
+			<hr class="border-gray-600"/>
+			<p class="w-full text-center my-12 text-gray-600">©<span id="year"></span> Cbus Super. All rights reserved. Cbus ABN 75 493 363 262.</p>
+		</div>
+	</div>
+</footer>
+
+<script>
+	document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+</body>
+</html>

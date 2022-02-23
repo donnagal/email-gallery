@@ -7,16 +7,16 @@
   <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
-    <!-- Start: ADOBE SCRIPTS -->
-	<script>console.log('version 24')</script>
-	<script>
+  <!-- Start: ADOBE SCRIPTS -->
+  <script>function reloadPage() {window.location = window.location.href}</script>
+ <script>
 	  var digitalData = digitalData || {};
-	  digitalData = {"page":{"pageInfo":{"pageName":"(DEV) ACM: DM Insurance Thank you","brand":"Cbus"},"category":{}}}
+	  digitalData = {"page":{"pageInfo":{"pageName":"(DEV) ACM: DM PMIF Error","brand":"Cbus"},"category":{}}}
 	  digitalData.page.pageInfo.pageUrl = window.location.href;
 	  digitalData.page.pageInfo.domain = window.location.hostname;
-	</script>
-	<script type="text/javascript" src="//assets.adobedtm.com/launch-ENd8db634a912b4764b21552a1fca7014a.min.js" async></script>
-	<!-- End: ADOBE SCRIPTS -->
+</script>
+<script type="text/javascript" src="//assets.adobedtm.com/launch-ENd8db634a912b4764b21552a1fca7014a.min.js" async></script>
+  <!-- End: ADOBE SCRIPTS -->
 
   <link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/effra" rel="stylesheet">
@@ -26,8 +26,9 @@
 </head>
 <body>
 	
+<!-- DM Cbus Umbrella Insurance : Edited 2022 FEB-->	
 <div class="bg-no-repeat bg-cover bg-top lg:h-96 h-48" style="background-image: 
-	url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/b9bb42fa2e00e7d12311e25b7d4c3e3febd5002a2c5e0e2c58714bd4e3875fb6.jpg')">
+	url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/684acbc69dc4b5f6cb98160ea3dd99b447869a5c88ec9bb5bbd45fffc6455161.jpg')">
     
 	<div class="bg-gradient flex content-center lg:pt-0 flex-wrap lg:h-96 h-48">
 		<div class="container mx-auto px-10 lg:px-0">
@@ -42,24 +43,6 @@
 	
 </div>
 
-
-<div class="bg-brand-gray">
-	<div class="container mx-auto lg:px-24 px-5">
-		<div class="mx-auto lg:w-full text-brand-black">
-		<h2 class="lg:text-5xl text-3xl font-heavy pt-12">Important message about your insurance</h2>
-		<p class="font-light pt-5 text-xl font-bold">
-			New legislation requires you to opt-in to retain any insurance if your account becomes inactive by not receiving a contribution or roll-over for 16 months.
-		</p>
-		<p class="pt-3 pb-12">
-			Your existing insurance cover may stop if your account is inactive, and you do not elect to opt-in to retain your insurance. As such we're seeking your instruction now on whether you would like to retain your insurance.
-			<br/><br/>
-			You can either opt-in by completing the Keep my insurance cover form or simply make an election below.
-		</p>
-	</div>
-	</div>
-	
-</div>
-
   <div id="form" class="bg-white">
 	<div class="container mx-auto lg:px-24 px-5">
 		<div class="text-brand-black pb-10">
@@ -67,20 +50,22 @@
 		</div>
 		<div class="flex flex-wrap">
 			<div class="w-full lg:w-1/2">
-				<p class="fadeup ">
-                    We have recorded your election <% if (ctx.vars.consent == "No") { %>not<% } %> to retain your insurance with Cbus at:
+				<p class="fadeup pb-20">
+                    <% if (ctx.vars.dobMismatchError == 1) { %> The DOB provided did not match our records <%}%> <% if (ctx.vars.firstTimeError == 1) { %> There was an error registering your election <%}%> <% if (ctx.vars.genericError == 1) { %> There was an error registering your election <%}%>
                     <br/>
-                    <%= ctx.vars.timeConsentGiven %> AEST on <%= formatDate(ctx.vars.dateConsentGiven, "%Al %D %Bl %4Y") %> <%= ctx.vars.mannerElection %>.
+                    <% if (ctx.vars.dobMismatchError == 1) { %> <% if (ctx.vars.lockout == 0) { %> You have <%= ctx.vars.attemptsRemaining %> attempt<% if (ctx.vars.attemptsRemaining == 2) { %>s<% } %> remaining.
+                    <br/>
+                    Retry <%} %> <% if (ctx.vars.lockout == 1) { %> Please contact Cbus for more information. <%} %> <%}%> <% if (ctx.vars.firstTimeError == 1) { %> Please contact CBUS for more information. <%}%> <% if (ctx.vars.genericError == 1) { %> Please contact CBUS for more information. <%}%>
                 </p>
 			</div>
 			<div class="w-full lg:w-1/2 lg:pl-10 pb-24">
-			<!-- Message Green -->
-			<div class="py-4 lg:px-4">
-				<div class="fadeup bg-brand-gray border border-gray-200 items-center leading-none lg:rounded flex lg:inline-flex" role="alert">
-					<span class="flex rounded bg-green-200 uppercase text-xl font-bold mr-3 px-4 py-3">
-						<i class="fa-solid fa-check"></i>
+			<!-- Message yellow -->
+			<div class="fadeup py-4 lg:px-4">
+				<div class="bg-brand-gray border border-gray-200 items-center leading-none lg:rounded flex lg:inline-flex" role="alert">
+					<span class="flex rounded bg-yellow-200 uppercase text-xl font-bold mr-3 px-5 py-3">
+						<i class="fa-solid fa-exclamation"></i>
 					</span>
-					<span class="mr-2 text-left flex-auto text-sm pr-24">Your recorded has been sent.</span>
+					<span class="mr-2 text-left flex-auto text-sm pr-24">Something's not quite right.</span>
 				</div>
 			</div>
 			</div>
@@ -108,16 +93,6 @@
 	</div>
 	</div>
 	
-</div>
-
-<div class="bg-white">
-	<div class="container mx-auto lg:px-24 px-5 py-10">
-		<div class="mx-auto lg:w-full text-brand-black">
-		<p class="text-sm text-gray-400">
-			ASIC Money Smart can also provide information about the benefits and risks of insurance as well as the broader impacts of paying for more death and disability insurance cover than you might need. Visit the <a class="underline" id="a157377485367633" href="https://www.moneysmart.gov.au/superannuation-and-retirement/how-super-works/insurance-through-super" target="_blank" data-nl-type="externalLink">MoneySmart</a> website for more information.
-		</p>
-	</div>
-	</div>
 </div>
 
 <footer class="w-full flex items-center justify-center bg-brand-black">
