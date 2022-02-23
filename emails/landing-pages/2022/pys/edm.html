@@ -7,16 +7,61 @@
   <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
+<!-- Start: ADOBE SCRIPTS -->
+<script>console.log('version 10')</script>
+<script type="text/javascript">// <![CDATA[
+	function formSubmit() {
+		var consent = "";
+		// have to get values from radio buttons manually for IE
+		var radios = document.getElementsByName("consent-given")
+		for (var i = 0; i < radios.length; i++) {
+			var consentRadio = radios[i]
+			if (consentRadio.checked) {
+				consent = consentRadio.value
+			}
+		}
+		var dob = document.forms["page-form"]["mbrDOBSubmittedForm"].value
+		var IEDatePattern = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}/;
+		if (!!consent && !!dob) {
+
+			var normalisedDOB = dob 
+			if (IEDatePattern.test(dob)) {
+				var dobParts = dob.split('/');
+				var day = dobParts[0]
+				var month = dobParts[1]
+				var year = dobParts[2]
+
+				normalisedDOB = year + '-' + month + '-' + day
+			}
+
+			document.controller.setValue('/ctx/visitor/consent', consent, 'consent-given')
+			document.controller.setValue('/ctx/visitor/dobGiven', normalisedDOB, 'mbrDOBSubmittedForm')
+
+			document.controller.submit('next')
+		}
+	}
+// ]]>
+</script>
+<script>
+	  var digitalData = digitalData || {};
+	  digitalData = {"page":{"pageInfo":{"pageName":"(DEV) ACM: EDM Insurance Landing","brand":"Cbus"},"category":{}}}
+	  digitalData.page.pageInfo.pageUrl = window.location.href;
+	  digitalData.page.pageInfo.domain = window.location.hostname;
+
+</script>
+<script type="text/javascript" src="//assets.adobedtm.com/launch-ENd8db634a912b4764b21552a1fca7014a.min.js" async></script>
+<!-- End: ADOBE SCRIPTS -->
+
   <link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/effra" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  <link href="../css/tailwind.css" rel="stylesheet">
-  <link href="../css/main.css" rel="stylesheet">
+  <link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/tailwind.css" rel="stylesheet">
+  <link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/main.css" rel="stylesheet">
 </head>
 <body>
 	
 <div class="bg-no-repeat bg-cover bg-top lg:h-96 h-48" style="background-image: 
-	url('img/hero-banner.jpg')">
+	url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/b9bb42fa2e00e7d12311e25b7d4c3e3febd5002a2c5e0e2c58714bd4e3875fb6.jpg')">
     
 	<div class="bg-gradient flex content-center lg:pt-0 flex-wrap lg:h-96 h-48">
 		<div class="container mx-auto px-10 lg:px-0">
@@ -89,11 +134,11 @@
 					  </label>
 					</div>
 					<div class="md:flex md:items-center mb-6">
-						<button class="cta-dark block w-full m-3">Submit</button>
+						<button class="cta-dark block w-full lg:m-3">Submit</button>
 					</div>
 				</form>
 			</div>
-			<div class="w-full lg:w-1/2 lg:pl-10 pb-24">
+			<div class="w-full lg:w-1/2 pl-10 pb-24">
 				<p class="pt-5">
 					<ul class="list-disc">
 						<li class="text-sm text-gray-400 p-1">Submitting this election to Cbus will mean that your current and any future insurance cover will be maintained and premiums will continue to be deducted, even if your super account does not receive a contribution or roll in for 16 months.</li>
