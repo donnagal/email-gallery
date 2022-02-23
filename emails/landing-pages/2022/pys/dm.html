@@ -7,6 +7,62 @@
   <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
+
+	<!-- Start: ADOBE SCRIPTS -->
+    <script>
+        console.log('version 24')
+    </script>
+    <script type="text/javascript">// <![CDATA[
+        function formSubmit(e) {
+            var consent = "";
+            // have to get values from radio buttons manually for IE
+            var radios = document.getElementsByName("consent-given")
+            for (var i = 0; i < radios.length; i++) {
+                var consentRadio = radios[i]
+                if (consentRadio.checked) {
+                    consent = consentRadio.value
+                }
+            }
+            var memberID = document.forms["page-form"]["memberID"].value
+            var dob = document.forms["page-form"]["mbrDOBSubmittedForm"].value
+
+            var memberIDPattern = /^[0-9]*$/;
+            var IEDatePattern = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}/;
+            if (!!consent && !!dob && !!memberID && memberIDPattern.test(memberID)) {
+
+                var normalisedDOB = dob 
+                if (IEDatePattern.test(dob)) {
+                    var dobParts = dob.split('/');
+                    var day = dobParts[0]
+                    var month = dobParts[1]
+                    var year = dobParts[2]
+
+                    normalisedDOB = year + '-' + month + '-' + day
+                }
+                document.controller.setValue('/ctx/visitor/consent', consent, 'consent-given')
+                document.controller.setValue('/ctx/visitor/memberID', memberID, 'memberID')
+                document.controller.setValue('/ctx/visitor/dobGiven', normalisedDOB, 'mbrDOBSubmittedForm')
+
+                document.controller.submit('next')
+            }
+            return false;
+        }
+    // ]]>
+    </script>
+    <script>
+          var digitalData = digitalData || {};
+          digitalData = {"page":{"pageInfo":{"pageName":"(DEV) ACM: DM Insurance Landing","brand":"Cbus"},"category":{}}}
+          digitalData.page.pageInfo.pageUrl = window.location.href;
+          digitalData.page.pageInfo.domain = window.location.hostname;
+    </script>
+    <script type="text/javascript" src="//assets.adobedtm.com/launch-ENd8db634a912b4764b21552a1fca7014a.min.js" async></script>
+    <script>
+        document.write("<img height='0' width='0' alt='' src='https://t.marketing.cbussuper.com.au/r/" +  Math.random().toString() + "?tagid=TRK2'/>");
+    </script>
+    <noscript><img height='0' width='0' alt='' src='https://t.marketing.cbussuper.com.au/r/?tagid=TRK2'/></noscript>
+	<!-- End: ADOBE SCRIPTS -->
+
+
   <link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/effra" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -14,7 +70,8 @@
   <link href="../css/main.css" rel="stylesheet">
 </head>
 <body>
-	
+
+<!-- DM Cbus Umbrella Insurance : Edited 2022 FEB-->	
 <div class="bg-no-repeat bg-cover bg-top lg:h-96 h-48" style="background-image: 
 	url('img/hero-banner.jpg')">
     
@@ -59,18 +116,18 @@
 		</div>
 		<div class="flex flex-wrap">
 			<div class="w-full lg:w-1/2">
-				<form>
+				<form id="page-form" name="page-form">
 					<div class="md:flex md:items-center mb-6">
 						<div class="md:w-full">
-							<label class="block mb-1 md:mb-0 pr-4 pb-2" for="quantity">Member number*</label>
-							<input class="input-shadow bg-white appearance-none rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" min="9" max="9" required>
+							<label class="block mb-1 md:mb-0 pr-4 pb-2" for="memberID">Member number*</label>
+							<input class="input-shadow bg-white appearance-none rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" data-nl-ismandatory="true" id="memberID" name="memberID" pattern="^[0-9]*$"  title="Member ID must be comprised only of numbers and not contain any whitespace" type="text" required>
 						</div>
 					</div>
 					<div class="md:flex md:items-center mb-6">
 						<div class="md:w-full">
-							<label>
+							<label for="mbrDOBSubmittedForm">
 								Enter your date of birth*:
-								<input class="input-shadow bg-white appearance-none rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" type="date" name="dob" required pattern="\d{4}-\d{2}-\d{2}" required>
+								<input class="input-shadow bg-white appearance-none rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" data-nl-ismandatory="true" id="mbrDOBSubmittedForm" name="mbrDOBSubmittedForm" placeholder="dd/mm/yyyy" type="date" required>
 								<span class="validity"></span>
 							</label>
 							<p class="text-sm pt-2 text-brand-gray">
@@ -80,17 +137,17 @@
 					</div>
 			
 					<div class="md:flex md:items-center mb-6">
-					  <label class="block">
-						<input class="mr-1 leading-tight" type="checkbox" required>
+					  <label class="block" for="mbrInsuranceConsentGiven-yes">
+						<input class="mr-1 leading-tight" data-nl-ismandatory="true" id="mbrInsuranceConsentGiven-yes" name="consent-given" type="radio" value="Yes" required>
 						<span class="text-xl"><strong>Yes - </strong> I want to opt-in and retain my insurance.*</span>
 					  </label>
 					</div>
 					<div class="md:flex md:items-center mb-6">
-						<button class="cta-dark block w-full m-3">Submit</button>
+						<button class="cta-dark block w-full lg:m-3" id="input155539912261392" onclick="formSubmit()">Submit</button>
 					</div>
 				</form>
 			</div>
-			<div class="w-full lg:w-1/2 lg:pl-10 pb-24">
+			<div class="w-full lg:w-1/2 pl-10 pb-24">
 				<p class="pt-5">
 					<ul class="list-disc">
 						<li class="text-sm text-gray-400 p-1">Submitting this election to Cbus will mean that your current and any future insurance cover will be maintained and premiums will continue to be deducted, even if your super account does not receive a contribution or roll in for 16 months.</li>
