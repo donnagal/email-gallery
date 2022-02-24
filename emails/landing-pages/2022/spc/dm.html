@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Superannuation insurance</title>
+  <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+	<!-- Start: ADOBE SCRIPTS -->
+	<script type="text/javascript">// <![CDATA[
+        function formSubmit(e) {
+
+            var consent = "";
+            // have to get values from radio buttons manually for IE
+            var radios = document.getElementsByName("consent-given")
+            for (var i = 0; i < radios.length; i++) {
+                var consentRadio = radios[i]
+                if (consentRadio.checked) {
+                    consent = consentRadio.value
+                }
+            }
+            var memberID = document.forms["page-form"]["memberID"].value
+            var dob = document.forms["page-form"]["mbrDOBSubmittedForm"].value
+
+            var memberIDPattern = /^[0-9]*$/;
+            var IEDatePattern = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}/;
+            if (!!consent && !!dob && !!memberID && memberIDPattern.test(memberID)) {
+
+                var normalisedDOB = dob 
+                if (IEDatePattern.test(dob)) {
+                    var dobParts = dob.split('/');
+                    var day = dobParts[0]
+                    var month = dobParts[1]
+                    var year = dobParts[2]
+
+                    normalisedDOB = year + '-' + month + '-' + day
+                }
+                document.controller.setValue('/ctx/visitor/consent', consent, 'consent-given')
+                document.controller.setValue('/ctx/visitor/memberID', memberID, 'memberID')
+                document.controller.setValue('/ctx/visitor/dobGiven', normalisedDOB, 'mbrDOBSubmittedForm')
+
+                document.controller.submit('next')
+            }
+
+            return false;
+        }
+    // ]]>
+    </script>
+     <script>
+          var digitalData = digitalData || {};
+          digitalData = {"page":{"pageInfo":{"pageName":"(DEV) ACM: DM SPC Landing","brand":"Cbus"},"category":{}}}
+          digitalData.page.pageInfo.pageUrl = window.location.href;
+          digitalData.page.pageInfo.domain = window.location.hostname;
+    </script>
+    <script type="text/javascript" src="//assets.adobedtm.com/launch-ENd8db634a912b4764b21552a1fca7014a.min.js" async></script>
+	<!-- End: ADOBE SCRIPTS -->
+
+  <link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/effra" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/tailwind.css" rel="stylesheet">
+  <link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="bg-no-repeat bg-cover bg-top lg:h-96 h-48" style="background-image: 
+	url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/7b6f0ef70aed8cd563aa30e1a4ed19026e3536e2d67167d786126beee439ca9c.jpg')">
+    
+	<div class="bg-gradient flex content-center lg:pt-0 flex-wrap lg:h-96 h-48">
+		<div class="container mx-auto px-10 lg:px-0">
+			<div class="fadeup w-full text-white lg:px-24">
+				<p class="-mt-5 font-medium uppercase">Super</p>
+				<h1 class="font-heavy mb-8 mark-bold lg:text-6xl text-4xl leading-none">
+					Unpaid Super Services
+				</h1>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+<div class="bg-brand-gray">
+	<div class="container mx-auto lg:px-24 px-5">
+		<div class="mx-auto lg:w-full text-brand-black">
+		<h2 class="lg:text-5xl text-3xl font-heavy pt-12">Opt-out below</h2>
+		<p class="pt-5 pb-12">
+			If you do not want Cbus to provide limited personal information to enable a union delegate or representative to check the status of your super contributions to assist in identifying and recovering unpaid super, then you can simply opt out of this service. Opting out has no impact on other services and options provided to you as a Cbus member.
+			<br/><br/>
+			It's important to note that if you choose to opt out, it can take up to <strong>5 business days</strong> to administer this request.
+		</p>
+	</div>
+</div>
+</div>
+
+  <div id="form" class="bg-white">
+	<div class="container mx-auto lg:px-24 px-5">
+		<div class="text-brand-black pb-10">
+			<h2 class="lg:text-5xl text-3xl font-heavy pt-12">I want to opt-out</h2>
+			<p class="pt-5">
+				If you want to opt out as described above, please click on the  <strong>Yes</strong> field below. 
+			</p>
+		</div>
+		<div class="flex flex-wrap">
+			<div class="w-full lg:w-1/2">
+				<form id="page-form" name="page-form">
+					<div class="md:flex md:items-center mb-6">
+						<div class="md:w-full">
+							<label class="block mb-1 md:mb-0 pr-4 pb-2" for="memberID">Member number*</label>
+							<input class="input-shadow bg-white appearance-none rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" data-nl-ismandatory="true" id="memberID" name="memberID" pattern="^[0-9]*$"  title="Member ID must be comprised only of numbers and not contain any whitespace" type="text" required>
+						</div>
+					</div>
+					<div class="md:flex md:items-center mb-6">
+						<div class="md:w-full">
+							<label for="mbrDOBSubmittedForm">
+								Enter your date of birth*:
+								<input class="input-shadow bg-white appearance-none rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" data-nl-ismandatory="true" id="mbrDOBSubmittedForm" name="mbrDOBSubmittedForm" placeholder="dd/mm/yyyy" type="date" required>
+								<span class="validity"></span>
+							</label>
+							<p class="text-sm pt-2 text-brand-gray">
+								*This must match the date of birth that we have on file for your election to be valid.
+							</p>
+						</div>
+					</div>
+			
+					<div class="md:flex md:items-center mb-6">
+					  <label class="block" for="mbrInsuranceConsentGiven-yes">
+						<input class="mr-1 leading-tight" data-nl-ismandatory="true" id="mbrInsuranceConsentGiven-yes" name="consent-given" type="radio" value="Yes" required>
+						<span class="text-xl"><strong>Yes - </strong> I want to opt out*</span>
+					  </label>
+					</div>
+					<div class="md:flex md:items-center mb-6">
+						<button class="cta-dark block w-full lg:m-3" id="input155539912261392" onclick="formSubmit()">Submit</button>
+					</div>
+				</form>
+			</div>
+			<div class="w-full lg:w-1/2 pl-10 pb-24">
+				<p class="pt-5 text-sm text-gray-400">
+					I have completed this form truthfully and correctly to the best of my knowledge and understand that:
+				</p>
+					<ul class="list-disc">
+						<li class="text-sm text-gray-400 p-1">Submitting this form to Cbus will mean that you do not want your details to be shown in Cbus’ Unpaid Super Services.</li>
+						<li class="text-sm text-gray-400 p-1">Your information will not appear in Cbus’ Unpaid Super Services and not be provided to the union delegates or other third parties upon request.</li>
+						<li class="text-sm text-gray-400 p-1">On site card checking will negate this opt out for the Super Payment Checker app. The opt out however will still be valid for Cbus’ other Unpaid Super Services.</li>
+					</ul>
+			</div>
+			
+		</div>
+	  </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="bg-brand-gray">
+	<div class="container mx-auto lg:px-24 px-5 py-12">
+		<div class="mx-auto lg:w-full text-brand-black">
+		<h2 class="lg:text-5xl text-3xl font-heavy">We’re here to help</h2>
+		<p class="font-light pt-5 text-xl font-bold pb-3">
+			If you have any questions or would like to discuss your options further, we can help get your super sorted.
+		</p>
+		<div class="flex flex-wrap text-center">
+			<div class="w-full lg:w-1/2">
+				<a href="tel:1300 361 784" class="cta-light block m-3 relative font-bold">1300 361 784 <i class="fa-solid fa-angle-right text-sm absolute right-0 pr-5"></i></a>
+				<p class="text-brand-gray lg:pb-0 pb-5">Mon to Fri from 8am to 8pm AEDT/AEST</p>
+			</div>
+			<div class="w-full lg:w-1/2">
+				<a href="mailto:cbusenq@cbussuper.com.au" class="cta-light block m-3 relative font-bold">cbusenq@cbussuper.com.au <i class="fa-solid fa-angle-right text-sm absolute right-0 pr-5"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+</div>
+<div class="bg-white">
+	<div class="container mx-auto lg:px-24 px-5 py-10">
+		<div class="mx-auto lg:w-full text-brand-black">
+		<p class="text-sm text-gray-400">
+			This information is about Cbus. It doesn’t take into account your specific needs, so you should look at your own financial position, objectives and requirements before making any financial decisions. Read the relevant Cbus Product Disclosure Statement and related documents to decide whether Cbus is right for you.
+		</p>
+	</div>
+	</div>
+</div>
+<footer class="w-full flex items-center justify-center bg-brand-black">
+	<div class="md:w-2/3 w-full px-4 text-white flex flex-col">
+		<div class="flex flex-col">
+			<div class="flex mt-24 mb-12 flex-row justify-between">
+				
+				<div class="">
+					<a target="_blank" href="https://www.cbussuper.com.au/">
+						<img src="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/Cbus-ISA-Footer-Logo-2017.png" alt="Cbus Super logo" style="width: 130px;">
+					</a>
+				</div>
+
+				<a target="_blank" class="hidden md:block cursor-pointer text-gray-500 hover:text-white uppercase pt-5" href="https://www.cbussuper.com.au/about-us/who-we-are">
+					About
+				</a>
+				<a target="_blank" class="hidden md:block cursor-pointer text-gray-500 hover:text-white uppercase pt-5" href="https://www.cbussuper.com.au/tools-resources/advice-services">
+					Advice Services
+				</a>
+				<a target="_blank" class="hidden md:block cursor-pointer text-gray-500 hover:text-white uppercase pt-5" href="https://www.comms.cbussuper.com.au/scripts/cbus/seminars/#upsem">
+					All webinars
+				</a>
+				<a target="_blank" class="hidden md:block cursor-pointer text-gray-500 hover:text-white uppercase pt-5" href="https://www.cbussuper.com.au/support/contact">
+					Contact
+				</a>
+
+				<div class="flex flex-row space-x-8 items-center justify-between text-lg">
+					<a target="_blank" href="https://www.facebook.com/cbussuperfund">
+						<i class="fab fa-facebook-f"></i>                           
+					</a>
+					<a target="_blank" href="https://twitter.com/cbussuperfund">
+						<i class="fab fa-twitter"></i>   
+					</a>
+					<a href="https://www.linkedin.com/company/cbus-super-fund">
+						<i class="fab fa-linkedin-in"></i>                            
+					</a>
+				</div>
+			</div>
+			<hr class="border-gray-600"/>
+			<p class="w-full text-center my-12 text-gray-600">©<span id="year"></span> Cbus Super. All rights reserved. Cbus ABN 75 493 363 262.</p>
+		</div>
+	</div>
+</footer>
+
+<script>
+	document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+</body>
+</html>

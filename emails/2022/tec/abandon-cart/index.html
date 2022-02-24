@@ -86,17 +86,10 @@
             <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
               <a target="_blank" href="https://www.cbussuper.com.au/join-forms/super/otp-verify-page.html?mjolid=<%= recipient.Campaign_field_2 %>">
                 <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" alt="Yor'e just a few steps away from  joining Cbus." width="600" 
-                    src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/448ec47d6af13019cbf72e69343efc839f37e92e1d6c287f482574da751e51d8.jpg">
+                    src="hero.jpg">
               </a>
             </div>
     
-          <!-- Member number -->
-          <div class="m-id" style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 40px;">
-              <p class="size-16 mso-body-text" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;text-align: right;" lang="x-size-16">
-                <strong>Member number:</strong><br/> <%=  recipient.mbrAccID %>
-              </p>
-          </div>
-
           <!-- Heading -->
           <div style="Margin-left: 40px;Margin-right: 40px;">
             <h1 style="Margin-top: 0;Margin-bottom: 20px;font-family:'Hind',Tahoma,Arial,sans-serif;font-weight: normal;color: #515457;font-size: 30px;line-height: 38px;">
@@ -112,7 +105,7 @@
           <!-- Text -->
           <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
             <p style="Margin-top: 0;Margin-bottom: 0;">
-              Hi <%= recipient.firstName %>,
+              Hi {{profile.person.name.firstName}},
             </p>
             <p style="Margin-top: 10px;Margin-bottom: 0;">
               We get that life sometimes gets in the way - that's why we've made it easy to finish your application when you're ready. 
@@ -138,7 +131,7 @@
                       <table cellpadding="0" cellspacing="0" align="left">
                           <tbody><tr>
                               <td style="width: 306px;height: 55px;background: #0f8045;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 22px;text-align:center;">
-                                <a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0f8045; border-bottom: 10px solid #0f8045; border-right: 5px solid #0f8045;border-left: 5px solid #0f8045;">
+                                <a target="_blank" href="{{profile._cbus.AuthenticatedURL}}" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0f8045; border-bottom: 10px solid #0f8045; border-right: 5px solid #0f8045;border-left: 5px solid #0f8045;">
                                   <strong style="font-family: Hind,Calibri,Arial,sans-serif;">Resume my application</strong>
                                 </a>
                               </td>
