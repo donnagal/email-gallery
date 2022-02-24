@@ -73,7 +73,7 @@
                   </p>
                 </td>
                 <td class="sm-nav-view-link" bgcolor="white" valign="middle" align="right" style="padding-right:10px;font-family: Hind,Calibri,Arial,sans-serif;font-size:14px; line-height:19px;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;color:#666666;">
-                  <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage" style="color: #515457; font-size: 14px;text-decoration:none;">
+                  <a  href="" data-nl-type="mirrorPage" data-tracking-type="MIRROR_PAGE" style="color: #515457; font-size: 14px;text-decoration:none;">
                     View in browser
                   </a>
                 </td>
@@ -90,7 +90,7 @@
           <!-- Member number -->
           <div class="m-id" style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 40px;">
               <p class="size-16 mso-body-text" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;text-align: right;" lang="x-size-16">
-                <strong>Member number:</strong><br/> <%=  recipient.mbrAccID %>
+                <strong>Member number:</strong><br/> {{profile._cbus.MemberID}}
               </p>
           </div>
 
@@ -109,7 +109,7 @@
           <!-- Text -->
           <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
             <p style="Margin-top: 0;Margin-bottom: 0;">
-              Still thinking about retiring but need some more information about the benefits of opening a Cbus Super Income Stream (SIS) account.
+              Hi {{profile.person.name.firstName}}, still thinking about retiring but need some more information about the benefits of opening a Cbus Super Income Stream (SIS) account.
             </p>
             <p style="Margin-top: 20px;Margin-bottom: 0;">
               Let us help you to understand how to get more from your retirement.
@@ -375,8 +375,7 @@
           <p class="footer-nav" style="Margin-top: 44px;Margin-bottom: 12px;font-size: 11px;line-height: 19px;" lang="x-size-11">
             <a href="https://www.cbussuper.com.au/" style="color: #515457;text-decoration:none">Website</a>     <span style="padding-left:4px;padding-right:4px;">|</span>
             <a href="https://www.cbussuper.com.au/about-us/privacy-statement" style="color: #515457;text-decoration:none">Privacy Statement</a> <span style="padding-left:4px;padding-right:4px;">|</span>
-            <a class="hover" target="_blank" style="color: #515457;text-decoration:none" 
-                href="<%@ include option='NmsServer_URL' %>/webApp/edm_unsub?id=<%=escapeUrl(recipient.cryptedId)%>" _label="Opt-out link" _type="optout">
+            <a class="hover" target="_blank" style="color: #515457;text-decoration:none"  target="_blank" data-nl-type="optOut" data-tags="optoutLevel:identity" href="https://cbussuper.com.au" data-tracking-type="DIRECT_OPTOUT">
               unsubscribe
             </a>
           </p>
