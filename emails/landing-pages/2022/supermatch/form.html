@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Superannuation Unsubscribe</title>
+  <title>Superannuation Callback Request</title>
   <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
-
 	<!-- Start: ADOBE SCRIPTS -->
-    <script type="text/javascript">// <![CDATA[
+	<script type="text/javascript">// <![CDATA[
         function formSubmit(e) {
+
             var consent = "";
             // have to get values from radio buttons manually for IE
             var radios = document.getElementsByName("consent-given")
@@ -42,23 +42,19 @@
 
                 document.controller.submit('next')
             }
+
             return false;
         }
     // ]]>
     </script>
-    <script>
+     <script>
           var digitalData = digitalData || {};
-          digitalData = {"page":{"pageInfo":{"pageName":"(DEV) ACM: Unsubscribe Landing","brand":"Cbus"},"category":{}}}
+          digitalData = {"page":{"pageInfo":{"pageName":"(DEV) ACM: Callback Request Supermatch Landing","brand":"Cbus"},"category":{}}}
           digitalData.page.pageInfo.pageUrl = window.location.href;
           digitalData.page.pageInfo.domain = window.location.hostname;
     </script>
     <script type="text/javascript" src="//assets.adobedtm.com/launch-ENd8db634a912b4764b21552a1fca7014a.min.js" async></script>
-    <script>
-        document.write("<img height='0' width='0' alt='' src='https://t.marketing.cbussuper.com.au/r/" +  Math.random().toString() + "?tagid=TRK2'/>");
-    </script>
-    <noscript><img height='0' width='0' alt='' src='https://t.marketing.cbussuper.com.au/r/?tagid=TRK2'/></noscript>
 	<!-- End: ADOBE SCRIPTS -->
-
 
 	<link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.typekit.net/zgy2nvk.css">
@@ -68,7 +64,6 @@
 </head>
 <body>
 
-<!-- DM Cbus Umbrella Insurance : Edited 2022 FEB-->	
 <div class="bg-no-repeat bg-cover bg-top lg:h-96 h-48" style="background-image: 
 	url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/b9bb42fa2e00e7d12311e25b7d4c3e3febd5002a2c5e0e2c58714bd4e3875fb6.jpg')">
     
@@ -77,7 +72,7 @@
 			<div class="fadeup w-full text-white lg:px-24">
 				<p class="-mt-5 font-medium uppercase">Super</p>
 				<h1 class="font-heavy mb-8 mark-bold lg:text-6xl text-4xl leading-none">
-					Unsubscribe
+					Callback Request
 				</h1>
 			</div>
 		</div>
@@ -86,32 +81,53 @@
 </div>
 
 
-
-  <div id="form" class="bg-white">
-	<div class="container mx-auto lg:px-24 px-5 py-10">
-		<div class="text-brand-black pb-10">
-			<h2 class="lg:text-5xl text-3xl font-heavy pt-12">We are sorry to see you go!</h2>
-			<p class="pt-5">
-				Please confirm unsubscribing <span class="font-bold" id="span153352446358349" data-nl-expr="[recipient/@email]">[Email]</span> from our mailing list. 
-			</p>
-		</div>
-		<div class="flex flex-wrap">
-			<div class="w-full lg:w-1/2">
-				<form id="page-form" name="page-form">
-					<input class="hidden" id="blacklistemail" type="checkbox" checked="checked" value="true" data-nl-uncheckedvalue="true" data-nl-ismandatory="true" data-nl-bindto="xpath" data-nl-xpath="@blackListEmail" data-nl-label="No longer contact by email" data-nl-type="boolean"  required checkedValue="Y" />
-					<div class="md:flex md:items-center mb-6">
-						<button class="cta-dark block w-full lg:m-3" id="unsubNewsletter.htmlPage.line6" href="#" data-nl-type="action" data-nl-localizable="true" data-nl-action="next" data-nl-transition="">Unsubscribe</button>
-						<a href="https://www.cbussuper.com.au/" class="cta-light block w-full lg:m-3 mt-5 text-center">Cancel</a>
-					</div>
-				</form>
+<div class="bg-white">
+	<div class="container mx-auto lg:px-24 px-5 py-5">
+		<div id="confirm" class="flex">
+			<div class="w-full p-10 bg-white rounded-md text-center">
+			  <h2 class="text-3xl font-heavy pb-3">Please confirm your mobile number</h2>
+			  <p class="mx-auto lg:w-2/3 text-brand-gray font-400 text-xl">
+				  Before we call you, let’s check we have the right mobile number for you.<br/>
+				  Does your mobile number end with
+				  <strong class="number badge-teal mt-3"><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[mobilePhone]</span></strong>?
+			  </p>
+			  <p class="text-center pt-5 text-brand-gray font-400 text-xl">
+				  <form class="cb-form">
+					  <p class="hidden">
+						  <input id="mbrSuperMatchCallBackDate" class="cb-checkbox" type="checkbox"  value="true" data-nl-xpath="@mbrSuperMatchCallBackDate" data-nl-label="Request Callback" data-nl-ismandatory="true" data-nl-bindto="xpath" required checkedValue="Y"/>
+						  <label for="mbrSuperMatchCallBackDate" class="text-lg font-normal">Yes</label>
+					  </p>
+					  <button class="cta-dark lg:w-auto w-full m-3"  id="a156575514329242" href="#" data-nl-type="action" data-nl-transition="next" data-nl-action="next">
+						  Yes, that’s my number 
+					  </button>
+					  <span id="no" class="cta-light lg:w-auto w-full lg:inline block m-3 cursor-pointer">
+						  No, that’s not right
+					  </span>
+				  </form>
+			  </p>
+  
 			</div>
-		</div>
-		<p class="pt-5">
-			If this is not your email address please do not unsubscribe. 
-		</p>
 	  </div>
-  </div>
 
+	<div id="show" class="flex">
+		<div class="w-full p-10 bg-white rounded-md text-center">
+			<h2 class="text-3xl font-heavy pb-3">Looks like you’ll have to call us!</h2>
+			  <p class="mx-auto lg:w-2/3  text-brand-gray font-400 text-xl">
+				The good news is that you can do two things at once, update your mobile number and at the same time, ask us to check if you have lost or unclaimed super. 
+				<br/><br/>
+				Call <a class="font-bold" target="_blank" href="tel:1300 361 784">1300 361 784</a>
+			  </p>
+			  <p class="text-brand-gray font-400 text-xl pt-2">Mon to Fri from 8am to 8pm AEDT/AEST to speak to a Cbus consultant.</p>
+		  </div>
+	</div>
+
+
+</div>
+</div>
+
+
+
+  <!-- Contact -->
   <div class="bg-brand-gray">
 	<div class="container mx-auto lg:px-24 px-5 py-12">
 		<div class="mx-auto lg:w-full text-brand-black">
@@ -132,17 +148,7 @@
 	</div>
 	
 </div>
-<div class="bg-white">
-	<div class="container mx-auto lg:px-24 px-5 py-10">
-		<div class="mx-auto lg:w-full text-brand-black">
-		<p class="text-sm text-gray-400">
-			* Growth (Cbus MySuper) returns are based on the crediting rate, which is the return minus investment fees, the Trustee Operating Cost and taxes. Excludes account keeping administration fees. Past performance is not a reliable indicator of future performance. You can obtain the most recent performance figures by visiting www.cbussuper.com.au.
-			<br/><br/>
-			Cbus’ Trustee: United Super Pty Ltd ABN 46 006 261 623 AFSL 233792 Cbus ABN 75 493 363 262. This information is about Cbus. It doesn’t take into account your specific needs, so you should look at your own financial position, objectives and requirements before making any financial decisions. Read the relevant Cbus Product Disclosure Statement and related documents to decide whether Cbus is right for you. Call 1300 361 784 or visit www.cbussuper.com.au for a copy.
-		</p>
-	</div>
-	</div>
-</div>
+
 <footer class="w-full flex items-center justify-center bg-brand-black">
 	<div class="md:w-2/3 w-full px-4 text-white flex flex-col">
 		<div class="flex flex-col">
@@ -187,6 +193,19 @@
 
 <script>
 	document.getElementById("year").innerHTML = new Date().getFullYear();
+	$(document).ready(function(){
+		$('label').click();
+
+		$("#show").hide();
+		$("#no").click(function(){
+			$("#show").show();
+			$("#confirm").hide();
+ 		 });
+
+		txt = $.trim($('.number').text());
+		$('.number').text( "### ### " + txt.substring (7, txt.length + 3));
+
+	});
 </script>
 
 </body>
