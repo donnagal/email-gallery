@@ -34,13 +34,6 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 	<link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/tailwind.css" rel="stylesheet">
 	<link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/main.css" rel="stylesheet">
-
-	<style>
-		    input:checked ~ .radio {
-				color:white;
-				background-color: #1a1a1a;
-			}
-	</style>
 </head>
 <body>
 
@@ -83,19 +76,17 @@
 						<div class="w-1/2 text-center">
 							<p class="uppercase text-gray-400 pb-4">Opt-Out</p>
 
-							<div class="flex justify-center items-center">
-								<fieldset>
-									<div class="bg-gray-200 text-gray-400 rounded-md">
-										<div class="inline-flex rounded-md">
-											<input type="radio" name="opt_type" id="optoutAllYes" checked hidden/>
-											<label for="optoutAllYes" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">Yes</label>
-										</div>
-										<div class="inline-flex rounded-md">
-											<input type="radio" name="opt_type" id="optoutAllNo" hidden/>
-											<label for="optoutAllNo" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">No</label>
-										</div>
+							<div class="lead-radio flex justify-center items-center">
+								<div class="bg-gray-200 text-gray-400 rounded-md">
+									<div class="inline-flex rounded-md">
+										<input type="radio" name="opt_type_all" id="optoutAllYes" checked hidden/>
+										<label for="optoutAllYes" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">Yes</label>
 									</div>
-								</fieldset>
+									<div class="inline-flex rounded-md">
+										<input type="radio" name="opt_type_all" id="optoutAllNo" hidden/>
+										<label for="optoutAllNo" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">No</label>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -109,11 +100,11 @@
 							<div class="flex justify-center items-center">
 								<div class="bg-gray-200 text-gray-400 rounded-md">
 									<div class="inline-flex rounded-md">
-										<input type="radio" name="opt_type" id="optoutAdviceYes" checked hidden/>
+										<input type="radio" name="opt_type_advice" id="optoutAdviceYes" class="yes" hidden/>
 										<label for="optoutAdviceYes" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">Yes</label>
 									</div>
 									<div class="inline-flex rounded-md">
-										<input type="radio" name="opt_type" id="optoutAdviceNo" hidden/>
+										<input type="radio" name="opt_type_advice" id="optoutAdviceNo" class="no" checked hidden/>
 										<label for="optoutAdviceNo" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">No</label>
 									</div>
 								</div>
@@ -130,11 +121,11 @@
 							<div class="flex justify-center items-center">
 								<div class="bg-gray-200 text-gray-400 rounded-md">
 									<div class="inline-flex rounded-md">
-										<input type="radio" name="opt_type" id="optoutEventsYes" checked hidden/>
+										<input type="radio" name="opt_type_event" id="optoutEventsYes" class="yes" hidden/>
 										<label for="optoutEventsYes" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">Yes</label>
 									</div>
 									<div class="inline-flex rounded-md">
-										<input type="radio" name="opt_type" id="optoutEventsNo" hidden/>
+										<input type="radio" name="opt_type_event" id="optoutEventsNo" class="no" checked hidden/>
 										<label for="optoutEventsNo" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">No</label>
 									</div>
 								</div>
@@ -151,11 +142,11 @@
 							<div class="flex justify-center items-center">
 								<div class="bg-gray-200 text-gray-400 rounded-md">
 									<div class="inline-flex rounded-md">
-										<input type="radio" name="opt_type" id="optoutMarYes" checked hidden/>
+										<input type="radio" name="opt_type_mar" id="optoutMarYes" class="yes" hidden/>
 										<label for="optoutMarYes" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">Yes</label>
 									</div>
 									<div class="inline-flex rounded-md">
-										<input type="radio" name="opt_type" id="optoutMarNo" hidden/>
+										<input type="radio" name="opt_type_mar" id="optoutMarNo" class="no" checked hidden/>
 										<label for="optoutMarNo" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">No</label>
 									</div>
 								</div>
@@ -167,8 +158,8 @@
 
 					
 					<div class="md:flex md:items-center mb-6 mt-10">
-						<button class="cta-dark block w-full lg:m-3" id="unsubNewsletter.htmlPage.line6" href="#" data-nl-type="action" data-nl-localizable="true" data-nl-action="next" data-nl-transition="">Update</button>
-						<a href="https://www.cbussuper.com.au/" class="cta-light block w-full lg:m-3 mt-5 text-center">Cancel</a>
+						<button class="cta-dark block lg:w-3/4 w-full lg:m-3" id="unsubNewsletter.htmlPage.line6" href="#" data-nl-type="action" data-nl-localizable="true" data-nl-action="next" data-nl-transition="">Update</button>
+
 					</div>
 				</form>
 			</div>
@@ -254,6 +245,16 @@
 
 <script>
 	document.getElementById("year").innerHTML = new Date().getFullYear();
+	
+	$('#optoutAllYes').click(function(){
+		$('.no').prop('checked', true);
+	});
+	$('#optoutAllNo').click(function(){
+		$('.yes').prop('checked', true);
+	});
+	$('.yes').click(function(){
+		$('#optoutAllNo').prop('checked', true);
+	});
 </script>
 
 </body>
