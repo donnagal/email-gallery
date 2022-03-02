@@ -62,6 +62,9 @@ p {
 .media-super .bg-brand-blue {
 	background-color: #9EDEFB;
 }
+.media-super .bg-purple {
+	background-color: #64194b;
+}
 .media-super .text-brand-gray {
 	color: #5a5a5a;
 }
@@ -80,6 +83,8 @@ p {
 .cta-blue-light:hover {
 	background-color: black;
 	color: #9EDEFB;
+	opacity: 1;
+    transition: all .2s;
 }
 .cta-pink {
 	background-color: #ffafcd;
@@ -90,6 +95,20 @@ p {
 .cta-pink:hover {
 	background-color: black;
 	color: #ffafcd;
+	opacity: 1;
+    transition: all .2s;
+}
+.cta-yellow { 
+	background-color: #ffeb6e;
+	color: black;
+	font-weight: bold;
+	padding: 12px 50px;
+} 
+.cta-yellow:hover {
+	background-color: black;
+	color: #ffeb6e;
+	opacity: 1;
+    transition: all .2s;
 }
 .cta-light {
 	background-color: white;
@@ -112,6 +131,8 @@ p {
 	position: relative;
 	top: -2px;
 	box-shadow: 0 5px 0 0 #8d8d8d, 0 2px 4px 0 #8d8d8d;
+	opacity: 1;
+    transition: all .2s;
 }
 .media-super .cta-dark {
 	background-color: #3B7684;
@@ -124,6 +145,8 @@ p {
 .media-super .cta-dark:hover {
 	background-color: black;
 	color: white;
+	opacity: 1;
+    transition: all .2s;
 }
 .media-super .cta-light {
 	background-color: #9EDEFB;
