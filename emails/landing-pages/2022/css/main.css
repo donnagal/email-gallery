@@ -6,6 +6,9 @@
 	font-family: 'balboa','Roboto Condensed','Arial Narrow,Avenir Next Condensed','Roboto',sans-serif;
 	font-weight: bold;
 }
+.media-super .font-heading {
+	font-family: 'balboa','Roboto Condensed','Arial Narrow,Avenir Next Condensed','Roboto',sans-serif;
+}
 p {
 	font-family: 'effra', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -29,6 +32,9 @@ p {
 }
 .text-brand-purple {
 	color: #72004D;
+}
+.text-brand-yellow {
+	color: #ffeb6e;
 }
 .bg-gradient {
 	background: rgb(162, 162, 162);
@@ -71,6 +77,9 @@ p {
 .text-brand-blue {
 	color: #00508c;
 }
+.text-brand-blue-light { color: #8CE1FF;}
+.text-brand-pink { color: #ffafcd;}
+.h-banner { height: 170px; }
 .h-screen-50 {
 	height: 50vh;
 }
