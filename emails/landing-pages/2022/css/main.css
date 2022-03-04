@@ -79,7 +79,10 @@ p {
 }
 .text-brand-blue-light { color: #8CE1FF;}
 .text-brand-pink { color: #ffafcd;}
-.h-banner { height: 170px; }
+.h-banner { 
+	background-position: 70%;
+	height: 170px;
+ }
 .h-screen-50 {
 	height: 50vh;
 }
