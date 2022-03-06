@@ -249,3 +249,10 @@ input:checked ~ .radio {
 	color:white;
 	background-color: #1DA9C4;
 }
+@media (max-width:770px) { 
+	input { height: 50px;} 
+	input[type='checkbox'] {
+		height: 0;
+		padding: 12px;
+	 }
+}
