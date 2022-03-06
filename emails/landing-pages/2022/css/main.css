@@ -79,10 +79,14 @@ p {
 }
 .text-brand-blue-light { color: #8CE1FF;}
 .text-brand-pink { color: #ffafcd;}
-.h-banner { 
+.media-super .h-banner { 
 	background-position: 70%;
 	height: 170px;
  }
+ /* Devsktop */
+@media (min-width:770px) { 
+	.lg\:h-banner { height: 20.1rem; }
+}
 .h-screen-50 {
 	height: 50vh;
 }
@@ -249,6 +253,8 @@ input:checked ~ .radio {
 	color:white;
 	background-color: #1DA9C4;
 }
+
+/* Device */
 @media (max-width:770px) { 
 	input { height: 50px;} 
 	input[type='checkbox'] {
@@ -256,3 +262,5 @@ input:checked ~ .radio {
 		padding: 12px;
 	 }
 }
+
+/* Last published id: 10:31 */
