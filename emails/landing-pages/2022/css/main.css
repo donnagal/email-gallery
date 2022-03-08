@@ -1,17 +1,4 @@
 
-.media-super p, .media-super label, .media-super a, .media-super ul, .media-super span {
-	font-family: 'adelle-sans','Roboto', Helvetica, Arial, sans-serif;
-}
-.media-super .font-heavy {
-	font-family: 'balboa','Roboto Condensed','Arial Narrow,Avenir Next Condensed','Roboto',sans-serif;
-	font-weight: bold;
-}
-.media-super .font-heading {
-	font-family: 'balboa','Roboto Condensed','Arial Narrow,Avenir Next Condensed','Roboto',sans-serif;
-}
-p {
-	font-family: 'effra', "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 .font-heavy {
 	font-family: 'Effra Heavy', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -20,6 +7,22 @@ p {
 }
 .font-medium {
 	font-family: 'Effra Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.media-super p, .media-super label, .media-super a, .media-super ul, .media-super span {
+	font-family: 'adelle-sans','Roboto', Helvetica, Arial, sans-serif;
+}
+.media-super .font-heavy {
+	font-family: 'balboa','Roboto Condensed','Arial Narrow,Avenir Next Condensed','Roboto',sans-serif;
+	font-weight: bold;
+}
+.media-super .font-medium {
+	font-family: 'balboa medium','Roboto Condensed','Arial Narrow,Avenir Next Condensed','Roboto',sans-serif;
+}
+.media-super .font-heading {
+	font-family: 'balboa','Roboto Condensed','Arial Narrow,Avenir Next Condensed','Roboto',sans-serif;
+}
+p {
+	font-family: 'effra', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .font-400 {
 	font-weight: 400;
@@ -263,4 +266,4 @@ input:checked ~ .radio {
 	 }
 }
 
-/* Last published id: 12:13 */
+/* Last published id: 3:38 */
