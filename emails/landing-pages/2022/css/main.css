@@ -257,10 +257,10 @@ input:checked ~ .radio {
 /* Device */
 @media (max-width:770px) { 
 	input { height: 50px;} 
-	input[type='checkbox'] {
+	input[type='checkbox'], input[type='radio'] {
 		height: 0;
 		padding: 12px;
 	 }
 }
 
-/* Last published id: 10:31 */
+/* Last published id: 12:13 */
