@@ -106,24 +106,31 @@
 
 <footer class="bg-brand-black">
 	<div class="container mx-auto">
-		<div class="w-full flex items-center justify-center bg-brand-black font-heavy text-white">
+		<div class="w-full  bg-brand-black font-heavy text-white">
 			<div class="w-full lg:px-24 px-10 pb-14 flex flex-col">
-				<div class="flex flex-col">
-					<div class="flex mt-20 mb-12 flex-row justify-between">
-						
+	
+				<div class="flex pt-20 pb-12">
+					<div class="lg:w-1/5">
 						<a target="_blank" class="hidden md:block cursor-pointer text-white hover:text-white" href="https://www.cbussuper.com.au/about-us/who-we-are">
 							About
 						</a>
+					</div>
+					<div class="lg:w-1/5">
 						<a target="_blank" class="hidden md:block cursor-pointer text-white hover:text-white" href="https://www.cbussuper.com.au/tools-resources/advice-services">
 							Advice Services
 						</a>
+					</div>
+					<div class="lg:w-1/5">
 						<a target="_blank" class="hidden md:block cursor-pointer text-white hover:text-white" href="https://www.comms.cbussuper.com.au/scripts/cbus/seminars/#upsem">
 							All webinars
 						</a>
+					</div>
+					<div class="lg:w-1/5">
 						<a target="_blank" class="hidden md:block cursor-pointer text-white hover:text-white" href="https://www.cbussuper.com.au/support/contact">
 							Contact
 						</a>
-		
+					</div>
+					<div class="lg:w-1/5">
 						<div class="flex flex-row space-x-8 items-center justify-end text-lg text-white">
 							<a target="_blank" href="https://www.facebook.com/cbussuperfund">
 								<i class="fab fa-facebook-f"></i>                           
@@ -136,20 +143,21 @@
 							</a>
 						</div>
 					</div>
-					
+				</div>
+	
 					<hr class="border-gray-300"/>
 		
 					<div class="flex flex-wrap">
-						<div class="lg:w-1/4 w-1/2 w-full pt-10">
+						<div class="lg:w-1/5 w-1/2 w-full pt-10">
 							<a target="_blank" href="https://www.cbussuper.com.au/">
 								<img class="mt-6 hover:opacity-75"  src="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/Cbus-ISA-Footer-Logo-2017.png" alt="Cbus Super logo" style="width: 130px;">
 							</a>
 						</div>
-						<div class="lg:w-1/4 w-1/2 pt-10">
+						<div class="lg:w-1/5 w-1/2 pt-10">
 							<p class="font-heavy">Awards</p>
-							<img class="h-16" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/48cd175c527f8d40f8996ecc7b7519e799ce9b9457f86e3d8d6c8d99bb70761c.gif" />
+							<img class="h-16" style="margin-left: -4px;" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/48cd175c527f8d40f8996ecc7b7519e799ce9b9457f86e3d8d6c8d99bb70761c.gif" />
 						</div>
-						<div class="lg:w-1/4 w-1/2  pt-10">
+						<div class="lg:w-1/5 w-1/2 pt-10">
 							<p class="font-heavy">Get the Cbus app</p>
 							<div class="flex">
 								<a target="_blank" class="p-1 hover:opacity-75" href="https://itunes.apple.com/au/developer/cbus-super-fund/id915194834">
@@ -161,21 +169,21 @@
 							</div>
 						</div>
 					</div>
-				</div>
+	
 			</div>
 		</div>
 	</div>
 		<div class="bg-white">
 			<div class="container mx-auto">
 			<div class="w-full lg:px-24 px-10 py-5 flex flex-col text-brand-black">
-				<p class="text-gray-400">
-					<p class="w-full text-gray-500 text-sm">©<span id="year"></span> Cbus Super. All rights reserved. Cbus ABN 75 493 363 262.</p>
-					<p class="w-full text-gray-500 text-sm pt-4">This information is about Cbus. It doesn’t take into account your specific needs, so you should look at your own financial position, objectives and requirements before making any financial decisions. Read the relevant Cbus Product Disclosure Statement and related documents to decide whether Cbus is right for you.</p>
-				</p>
+				<p class="w-full text-gray-500 text-sm">©<span id="year"></span> Cbus Super. All rights reserved. Cbus ABN 75 493 363 262.</p>
+				<p class="w-full text-gray-500 text-sm pt-4">This information is about Cbus. It doesn’t take into account your specific needs, so you should look at your own financial position, objectives and requirements before making any financial decisions. Read the relevant Cbus Product Disclosure Statement and related documents to decide whether Cbus is right for you.</p>
 			</div>
 			</div>
 		</div>
 </footer>
+
+
 <script>
 	document.getElementById("year").innerHTML = new Date().getFullYear();
     $(document).ready(function () {
