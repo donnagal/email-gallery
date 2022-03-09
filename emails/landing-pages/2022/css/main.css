@@ -15,10 +15,7 @@
 	font-family: 'balboa','Roboto Condensed','Arial Narrow,Avenir Next Condensed','Roboto',sans-serif;
 	font-weight: bold;
 }
-.media-super .font-medium {
-	font-family: 'balboa medium','Roboto Condensed','Arial Narrow,Avenir Next Condensed','Roboto',sans-serif;
-}
-.media-super .font-heading {
+.media-super .font-medium, .media-super .font-heading {
 	font-family: 'balboa','Roboto Condensed','Arial Narrow,Avenir Next Condensed','Roboto',sans-serif;
 }
 p {
@@ -266,4 +263,4 @@ input:checked ~ .radio {
 	 }
 }
 
-/* Last published id: 3:38 */
+/* Last published id: 12:10 */
