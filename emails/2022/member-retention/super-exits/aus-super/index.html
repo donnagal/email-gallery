@@ -62,7 +62,7 @@
               <span style="padding-left:4px;padding-right:4px;font-weight: lighter;color: #98a1a7;">│</span>
               <a target="_blank" href="https://www.cbussuper.com.au/manage-account/super/login?id=" style="color: #515457;text-decoration:none;">Login</a> 
               <span style="padding-left:4px;padding-right:4px;font-weight: lighter;color: #98a1a7;">│</span>
-              <a href="" data-nl-type="mirrorPage" data-tracking-type="MIRROR_PAGE" style="color: #515457; font-size: 14px;text-decoration:none;">View in browser</a>  
+              <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage" style="color: #515457; font-size: 14px;text-decoration:none;">View in browser</a>  
             </p>
 
           <!-- Hero banner -->
@@ -70,14 +70,14 @@
               <a target="_blank" href="https://www.cbussuper.com.au/?utm_source=adobe-campaign&utm_medium=edm&utm_campaign=ase_&utm_content=header">
                 <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" 
                 alt="Working together, for a better future." width="600" 
-                src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/5046fbd1b9d451d7f0399c48ad9b05b2bfc250555c9fc9e548dff9530273eae6.jpg">
+                src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/5aa3d7b9ea5d868111231c8561d7a256e4085ea9338fa217705bb465636b2d18.jpg">
               </a>
             </div>
     
           <!-- Member number -->
           <div class="m-id" style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 40px;">
               <p class="size-16 mso-body-text" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;text-align: right;" lang="x-size-16">
-                <strong>Member number:</strong><br/> {{profile._cbus.MemberID}}
+                <strong>Member number:</strong><br/> <%=  recipient.mbrAccID %>
               </p>
           </div>
 
@@ -174,9 +174,9 @@
       </div>
       <!-- Image Icon -->
       <div style="Margin-left: 20px;Margin-right: 20px;">
-        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 20px;" align="center">
+        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 5px;" align="center">
           <a target="_blank" href="https://www.cbussuper.com.au/campaigns/fees?utm_source=adobe-campaign&utm_medium=edm&utm_campaign=ase_&utm_content=lowfees">
-            <img style="border: 0;display: block;height: auto;width: 100%;max-width: 140px;" alt="low fees icon." width="140" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/219fb6039fbb75e35c71fc5d05403507b615aac11bd812a428acea8b15bc4c8b.png">
+            <img style="border: 0;display: block;height: auto;width: 100%;max-width: 140px;" alt="low fees icon." width="140" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/29dc9fed14a8a862d125b02680c508862682eda05ceb46003ba9822447eb135e.png">
           </a>
         </div>
       </div>
@@ -201,7 +201,7 @@
     
       <div style="Margin-left: 40px;Margin-right: 0;Margin-top: 34px;Margin-bottom: 5px;">
       <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="left">
-        <img style="border: 0;display: block;height: auto;width: 100%;max-width: 140px;" alt="Icon top up money." width="140" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/810f928efac2e660b83c9e4bdc666045f44991d230cf456318945c94bee7c2f0.png">
+        <img style="border: 0;display: block;height: auto;width: 100%;max-width: 140px;" alt="Icon top up money." width="140" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/9881b85220f4b59692e08afb4e6e9fbf63c451850fccf75822615528d458cf7b.png">
       </div>
     </div>
     
@@ -363,7 +363,7 @@
                     <p class="footer-nav" style="Margin-top: 44px;Margin-bottom: 12px;font-size: 11px;line-height: 19px;" lang="x-size-11">
                       <a href="https://www.cbussuper.com.au/" style="color: #515457;text-decoration:none">Website</a>     <span style="padding-left:4px;padding-right:4px;">|</span>
                       <a href="https://www.cbussuper.com.au/about-us/privacy-statement" style="color: #515457;text-decoration:none">Privacy Statement</a> <span style="padding-left:4px;padding-right:4px;">|</span>
-                      <a class="hover" target="_blank" style="color: #515457;text-decoration:none" data-nl-type="optOut" data-tags="optoutLevel:identity" href="https://cbussuper.com.au" data-tracking-type="DIRECT_OPTOUT">
+                      <a class="hover" target="_blank" style="color: #515457;text-decoration:none" href="<%@ include option='NmsServer_URL' %>/webApp/edm_unsub?id=<%=escapeUrl(recipient.cryptedId)%>" _label="Opt-out link" _type="optout">
                         unsubscribe
                       </a>
                     </p>
