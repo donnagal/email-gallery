@@ -62,24 +62,16 @@
               <span style="padding-left:4px;padding-right:4px;font-weight: lighter;color: #98a1a7;">│</span>
               <a target="_blank" href="https://www.cbussuper.com.au/manage-account/super/login?id=" style="color: #515457;text-decoration:none;">Login</a> 
               <span style="padding-left:4px;padding-right:4px;font-weight: lighter;color: #98a1a7;">│</span>
-              <a href="" data-nl-type="mirrorPage" data-tracking-type="MIRROR_PAGE" style="color: #515457; font-size: 14px;text-decoration:none;">View in browser</a>  
+              <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage" style="color: #515457; font-size: 14px;text-decoration:none;">View in browser</a>  
             </p>
 
           <!-- Hero banner -->
             <div style="background-color:#0F8045;color: white;font-weight: bold;font-size: 30px;line-height: 154px;" align="center">
               <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" 
-                alt="Still thinking about retirement?" width="600" 
-                src="images/hero.jpg">
+                alt="Join us for an interactive Federal Budget and Superannuation Update." width="600" 
+                src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/394950ab68236f7ce8550d1fe7342aaae1209585bada09ddea6402658a5c924d.jpg">
             </div>
     
-          <!-- Member number -->
-          <div class="m-id" style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 40px;">
-              <p class="size-16 mso-body-text" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;text-align: right;" lang="x-size-16">
-                <strong>Member number:</strong><br/> {{profile._cbus.MemberID}}
-              </p>
-          </div>
-
-
           <!-- inner spacer -->
           <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 5px;">
             <div style="mso-line-height-rule: exactly;line-height: 5px;font-size: 1px;">&nbsp;</div>
@@ -88,19 +80,24 @@
           <!-- Text -->
           <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
             <p class="size-22" style="Margin-top: 0;Margin-bottom: 0;">
-              Hi {{profile.person.name.firstName}}, 
+              Hi <%= recipient.firstName %>, 
             </p>
             <p class="size-22" style="Margin-top: 20px;Margin-bottom: 0;">
-              As a Cbus member, you’re invited to attend a series of webinars to get the most out of your Super.
+              What will next week's Federal budget announcement mean for you and your super?
             </p>
             <p class="size-22" style="Margin-top: 20px;Margin-bottom: 0;">
-              These webinars will be facilitated by your friendly Cbus super experts and will discuss the following areas of interest:
+              Join us to learn more about:
             </p>
+            <ul>
+              <li class="size-22" style="padding-bottom: 8px;">Federal Budget update and proposals affecting super</strong></li>
+              <li class="size-22" style="padding-bottom: 8px;">Up and coming changes to super – increasing contribution caps, Super Guarantee increases for employers</li>
+              <li class="size-22" style="padding-bottom: 8px;">Cbus investment update.</li>
+            </ul>
           </div>
       
             <!-- inner spacer -->
-            <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 10px;">
-              <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
+            <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 8px;">
+              <div style="mso-line-height-rule: exactly;line-height: 8px;font-size: 1px;">&nbsp;</div>
             </div>
       
         </div>
@@ -109,32 +106,46 @@
     </div>
   <!-- ### END: INTRO BLOCK ### -->
 
-    <!-- ### START: 50/50 BLOCK (sess. 1) ### -->
-    <div class="layout two-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-      <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
-      <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 300px" valign="top" class="w260"><![endif]-->
-        <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Corbel,Segoe UI,Avenir,sans-serif;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;">
-        
-          <div style="Margin-left: 40px;Margin-right: 20px;Margin-top: 44px;Margin-bottom: 14px;">
-            <p class="size-26" style="Margin-top: 0;Margin-bottom: 8px;font-family:'Hind',Tahoma,Arial,sans-serif;font-style: normal;font-size:36px;font-weight: normal;color: #515457;font-size: 30px;line-height: 38px;">
-              <strong>Super fundamentals</strong>
-            </p>
+  
+  <!-- ### START: TEXT BLOCK ### -->
+  <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+    <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: white;">
+    <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: white;"><td style="width: 600px" class="w560"><![endif]-->
+      <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;">
+    
+          <!-- inner spacer -->
+          <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 34px;">
+            <div style="mso-line-height-rule: exactly;line-height: 14px;font-size: 1px;">&nbsp;</div>
+          </div>
+            <!-- Heading -->
+            <div style="Margin-left: 40px;Margin-right: 40px;">
+              <p class="size-36" style="Margin-top: 0;Margin-bottom: 20px;font-family:'Hind',Tahoma,Arial,sans-serif;font-style: normal;font-size:36px;font-weight: normal;color: #515457;font-size: 30px;line-height: 38px;">
+                <strong>Register now</strong>
+              </p>
+          </div>
+          <!-- Text -->
+          <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
             <p class="size-22" style="Margin-top: 0;Margin-bottom: 0;">
-              Unsure about how super works? At Cbus here’s a great place to start for beginners.
+              Join us for a 30-minute webinar where we break down the budget and proposed changes to super.
             </p>
         </div>
 
-        </div>
-      <!--[if (mso)|(IE)]></td><td style="width: 300px" valign="top" class="w260"><![endif]-->
-        <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Corbel,Segoe UI,Avenir,sans-serif;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;">
-        
-        <!-- inner spacer -->
-        <div class="sm-hide" style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 30px;">
-          <div style="mso-line-height-rule: exactly;line-height: 30px;font-size: 1px;">&nbsp;</div>
-        </div>
-        
+    
+      </div>
+    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+    </div>
+  </div>
+<!-- ### END: TEXT BLOCK ### -->
+
+
+  <!-- ### START: 50/50 BLOCK ### -->
+<div class="layout two-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: white;">
+  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: white;"><td style="width: 300px" valign="top" class="w260"><![endif]-->
+    <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;">
+    
           <!-- Button Date (1) -->
-          <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 22px;">
+          <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 10px;">
             <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
               <tbody>
               <tr>
@@ -144,7 +155,7 @@
                           <tbody><tr>
                               <td style="width: 206px;height: 55px;background: #0F8045;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 17px;line-height: 21px;text-align:center;">
                                 <a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0F8045; border-bottom: 10px solid #0F8045; border-right: 5px solid #0F8045;border-left: 5px solid #0F8045;">
-                                  <strong>10 NOV </strong> 7:30pm
+                                  <strong>5 APR </strong> 12pm
                                 </a>
                               </td>
                           </tr>
@@ -157,94 +168,18 @@
             </tbody>
           </table>
           </div>
-        
-            <!-- Button Date (2) -->
-            <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 22px;">
-              <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
-                <tbody>
-                <tr>
-                    <td valign="top" align="left">
-                      <div class="btn" style="text-align:center;color: #ffffff;">
-                        <table cellpadding="0" cellspacing="0" align="left">
-                            <tbody><tr>
-                                <td style="width: 206px;height: 55px;background: #0F8045;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 17px;line-height: 21px;text-align:center;">
-                                  <a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0F8045; border-bottom: 10px solid #0F8045; border-right: 5px solid #0F8045;border-left: 5px solid #0F8045;">
-                                    <strong>12 NOV </strong> 7:30pm
-                                  </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                        </table>
-                    </div>
-                    </td>
-                      <!--[if (mso)|(IE)]><td style="width: 30px;color:white;">&nbsp;</td><![endif]-->
-                  </tr>
-              </tbody>
-            </table>
-            </div>
 
-        <!-- inner spacer -->
-        <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 12px;">
-          <div style="mso-line-height-rule: exactly;line-height: 12px;font-size: 1px;">&nbsp;</div>
-        </div>
-
-        </div>
-      <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-      </div>
-    </div>
-  <!-- ### END: 50/50 BLOCK (sess. 1)### -->
-
-  <!-- ### START: 50/50 BLOCK (sess. 2) ### -->
-  <div class="layout two-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-    <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
-    <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 300px" valign="top" class="w260"><![endif]-->
-      <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Corbel,Segoe UI,Avenir,sans-serif;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;">
-      
-        <div style="Margin-left: 40px;Margin-right: 20px;Margin-top: 44px;Margin-bottom: 14px;">
-          <p class="size-26" style="Margin-top: 0;Margin-bottom: 8px;font-family:'Hind',Tahoma,Arial,sans-serif;font-style: normal;font-size:36px;font-weight: normal;color: #515457;font-size: 30px;line-height: 38px;">
-            <strong>Investments in super</strong>
-          </p>
-          <p class="size-22" style="Margin-top: 0;Margin-bottom: 0;">
-            Identify what is the right super investment option to suit your goals, time frame and preferred level of risk.
-          </p>
-      </div>
-
-      </div>
-    <!--[if (mso)|(IE)]></td><td style="width: 300px" valign="top" class="w260"><![endif]-->
-      <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Corbel,Segoe UI,Avenir,sans-serif;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;">
-      
     <!-- inner spacer -->
-    <div class="sm-hide" style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 30px;">
-      <div style="mso-line-height-rule: exactly;line-height: 30px;font-size: 1px;">&nbsp;</div>
+    <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 12px;">
+      <div style="mso-line-height-rule: exactly;line-height: 12px;font-size: 1px;">&nbsp;</div>
     </div>
-      
-        <!-- Button Date (1) -->
-        <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 22px;">
-          <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
-            <tbody>
-            <tr>
-                <td valign="top" align="left">
-                  <div class="btn" style="text-align:center;color: #ffffff;">
-                    <table cellpadding="0" cellspacing="0" align="left">
-                        <tbody><tr>
-                            <td style="width: 206px;height: 55px;background: #0F8045;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 17px;line-height: 21px;text-align:center;">
-                              <a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0F8045; border-bottom: 10px solid #0F8045; border-right: 5px solid #0F8045;border-left: 5px solid #0F8045;">
-                                <strong>10 NOV </strong> 7:30pm
-                              </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                    </table>
-                </div>
-                </td>
-                  <!--[if (mso)|(IE)]><td style="width: 30px;color:white;">&nbsp;</td><![endif]-->
-              </tr>
-          </tbody>
-        </table>
-        </div>
-      
+    
+    </div>
+  <!--[if (mso)|(IE)]></td><td style="width: 300px" valign="top" class="w260"><![endif]-->
+    <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;">
+    
           <!-- Button Date (2) -->
-          <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 22px;">
+          <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 32px;">
             <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
               <tbody>
               <tr>
@@ -254,7 +189,7 @@
                           <tbody><tr>
                               <td style="width: 206px;height: 55px;background: #0F8045;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 17px;line-height: 21px;text-align:center;">
                                 <a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0F8045; border-bottom: 10px solid #0F8045; border-right: 5px solid #0F8045;border-left: 5px solid #0F8045;">
-                                  <strong>12 NOV </strong> 7:30pm
+                                  <strong>6 APR </strong> 7pm
                                 </a>
                               </td>
                           </tr>
@@ -268,100 +203,17 @@
           </table>
           </div>
 
-          <!-- Button Date (3) -->
-          <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 22px;">
-            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
-              <tbody>
-              <tr>
-                  <td valign="top" align="left">
-                    <div class="btn" style="text-align:center;color: #ffffff;">
-                      <table cellpadding="0" cellspacing="0" align="left">
-                          <tbody><tr>
-                              <td style="width: 206px;height: 55px;background: #0F8045;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 17px;line-height: 21px;text-align:center;">
-                                <a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0F8045; border-bottom: 10px solid #0F8045; border-right: 5px solid #0F8045;border-left: 5px solid #0F8045;">
-                                  <strong>12 NOV </strong> 7:30pm
-                                </a>
-                              </td>
-                          </tr>
-                      </tbody>
-                      </table>
-                  </div>
-                  </td>
-                    <!--[if (mso)|(IE)]><td style="width: 30px;color:white;">&nbsp;</td><![endif]-->
-                </tr>
-            </tbody>
-          </table>
-          </div>
-      <!-- inner spacer -->
-      <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 12px;">
-        <div style="mso-line-height-rule: exactly;line-height: 12px;font-size: 1px;">&nbsp;</div>
-      </div>
-
-      </div>
-    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-    </div>
-  </div>
-<!-- ### END: 50/50 BLOCK (sess. 2)### -->
-
-  <!-- ### START: 50/50 BLOCK (sess. 3) ### -->
-  <div class="layout two-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-    <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
-    <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 300px" valign="top" class="w260"><![endif]-->
-      <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Corbel,Segoe UI,Avenir,sans-serif;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;">
-      
-        <div style="Margin-left: 40px;Margin-right: 20px;Margin-top: 44px;Margin-bottom: 14px;">
-          <p class="size-26" style="Margin-top: 0;Margin-bottom: 8px;font-family:'Hind',Tahoma,Arial,sans-serif;font-style: normal;font-size:36px;font-weight: normal;color: #515457;font-size: 30px;line-height: 38px;">
-            <strong>Insurance and beneficiaries</strong>
-          </p>
-          <p class="size-22" style="Margin-top: 0;Margin-bottom: 0;">
-            Unsure about how super works? At Cbus here’s a great place to start for beginners.
-          </p>
-      </div>
-
-      </div>
-    <!--[if (mso)|(IE)]></td><td style="width: 300px" valign="top" class="w260"><![endif]-->
-      <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Corbel,Segoe UI,Avenir,sans-serif;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);Float: left;">
-      
     <!-- inner spacer -->
-    <div class="sm-hide" style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 30px;">
-      <div style="mso-line-height-rule: exactly;line-height: 30px;font-size: 1px;">&nbsp;</div>
+    <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 12px;">
+      <div style="mso-line-height-rule: exactly;line-height: 12px;font-size: 1px;">&nbsp;</div>
     </div>
-      
-        <!-- Button Date (1) -->
-        <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 22px;">
-          <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
-            <tbody>
-            <tr>
-                <td valign="top" align="left">
-                  <div class="btn" style="text-align:center;color: #ffffff;">
-                    <table cellpadding="0" cellspacing="0" align="left">
-                        <tbody><tr>
-                            <td style="width: 206px;height: 55px;background: #0F8045;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 17px;line-height: 21px;text-align:center;">
-                              <a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0F8045; border-bottom: 10px solid #0F8045; border-right: 5px solid #0F8045;border-left: 5px solid #0F8045;">
-                                <strong>10 NOV </strong> 7:30pm
-                              </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                    </table>
-                </div>
-                </td>
-                  <!--[if (mso)|(IE)]><td style="width: 30px;color:white;">&nbsp;</td><![endif]-->
-              </tr>
-          </tbody>
-        </table>
-        </div>
 
-      <!-- inner spacer -->
-      <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 12px;">
-        <div style="mso-line-height-rule: exactly;line-height: 12px;font-size: 1px;">&nbsp;</div>
-      </div>
-
-      </div>
-    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
     </div>
+  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
   </div>
-<!-- ### END: 50/50 BLOCK (sess. 3)### -->
+</div>
+<!-- ### END: 50/50 BLOCK ### --> 
+
 
     <!-- ### START: TEXT BLOCK ### -->
     <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
@@ -514,7 +366,7 @@
                     <p class="footer-nav" style="Margin-top: 44px;Margin-bottom: 12px;font-size: 11px;line-height: 19px;" lang="x-size-11">
                       <a href="https://www.cbussuper.com.au/" style="color: #515457;text-decoration:none">Website</a>     <span style="padding-left:4px;padding-right:4px;">|</span>
                       <a href="https://www.cbussuper.com.au/about-us/privacy-statement" style="color: #515457;text-decoration:none">Privacy Statement</a> <span style="padding-left:4px;padding-right:4px;">|</span>
-                      <a target="_blank" style="color: #515457;text-decoration:none" data-nl-type="optOut" data-tags="optoutLevel:identity" data-tracking-type="DIRECT_OPTOUT">unsubscribe</a>
+                      <a target="_blank" style="color: #515457;text-decoration:none" href="<%@ include option='NmsServer_URL' %>/webApp/edm_unsub?id=<%=escapeUrl(recipient.cryptedId)%>" _label="Opt-out link" _type="optout">unsubscribe</a>
                     </p>
           
                     <!-- line -->
