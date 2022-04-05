@@ -321,7 +321,15 @@ input:checked ~ .radio {
 	border-color: transparent;
 	background-color: currentColor;
   }
-
+/* Swiper JS */
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+	bottom: 0;
+	position: relative;
+}
+.swiper-pagination-bullet { 
+	height: 12px !important;
+	width: 12px !important;
+}
 /* Device */
 @media (max-width:770px) { 
 	input { height: 50px;} 
@@ -331,4 +339,4 @@ input:checked ~ .radio {
 	 }
 }
 
-/* Last published id: 4:07 */
+/* Last published id: 4:00 */
