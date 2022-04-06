@@ -35,7 +35,7 @@
 	}
 
 	.px-lg-md { padding-left: 8rem; padding-right: 8rem; }
-	.h-lg-md { height: 33rem; }
+	.h-lg-md { height: 43rem; }
 
 	/* md */
 	@media (max-width: 1600px){
@@ -192,79 +192,9 @@
 <!-- White submenu -->
 <div class="w-full px-10 mt-5 flex justify-between bg-white p-3 rounded-lg">
 
-	<div class="w-2/5">
+	<div class="w-1/2">
 		<input type="text" id="search-text" placeholder="search" class="w-5/6 search-box search-box border border-gray-200 rounded-md">
 		<span class="list-count text-gray-500"></span>
-	</div>
-
-	<div class="w-2/5 text-center">
-	  <button class="btn-brand text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 m-1 rounded-full inline focus:outline-none">
-		Brand <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
-	  </button>
-	  <button class="btn-comms text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 m-1 rounded-full inline focus:outline-none">
-		Comm <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
-	  </button>
-	  <button class="btn-employer text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 m-1 rounded-full inline focus:outline-none">
-		Employer <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
-	  </button>
-	  <button class="btn-marketing text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 m-1 rounded-full inline focus:outline-none">
-		Marketing <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
-	  </button>
-	  <button class="btn-tech text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 m-1 rounded-full inline focus:outline-none">
-		Tech <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
-	  </button>
-	  <button class="btn-webinar text-xxs uppercase text-white bg-green hover:bg-red font-bold py-2 pl-5 m-1 rounded-full inline focus:outline-none">
-		Webinar <i class="fas fa-times-circle pl-1 pr-2 hidden"></i> <i class="fas fa-check-circle pl-1 pr-2"></i>
-	  </button>
-	</div>
-
-	<div class="date">
-		<div class="dropdown-date inline-block relative z-10 ml-5">
-		  <button class="rounded-lg bg-blue-md text-white border-purple font-semibold py-4 px-8 rounded inline-flex items-center">
-			<span class="mr-1">Date</span>
-			<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
-		  </button>
-		  <ul class="dropdown-menu-date absolute pt-1 list-reset">
-			<div class="bg-white shadow shadow-lg flex flex-wrap text-sm">
-			  <div class="font-bold p-1">
-				2021
-			  </div>
-			  <div class="flex">
-				  <a class="bnt-21-dec hover:bg-grey text-grey-darkest p-3 block whitespace-no-wrap no-underline cursor-pointer">Dec</a>
-				  <a class="bnt-21-nov hover:bg-grey text-grey-darkest p-3 block whitespace-no-wrap no-underline cursor-pointer">Nov</a>
-				  <a class="bnt-21-oct hover:bg-grey text-grey-darkest p-3 block whitespace-no-wrap no-underline cursor-pointer">Oct</a>
-				<div class="">
-				  <a class="bnt-21-sep hover:bg-grey text-grey-darkest p-3 block whitespace-no-wrap no-underline cursor-pointer">Sep</a>
-				</div>
-			  </div>
-			  <div class="flex">
-				  <a class="bnt-21-aug hover:bg-grey text-grey-darkest p-3 block whitespace-no-wrap no-underline cursor-pointer">Aug</a>
-				  <a class="bnt-21-jul hover:bg-grey text-grey-darkest p-3 block whitespace-no-wrap no-underline cursor-pointer">Jul</a>
-				  <a class="bnt-21-jun hover:bg-grey text-grey-darkest p-3 block whitespace-no-wrap no-underline cursor-pointer">Jun</a>
-				  <a class="bnt-21-may hover:bg-grey text-grey-darkest p-3 block whitespace-no-wrap no-underline cursor-pointer">May</a>
-			  </div>
-			  <div class="flex">
-				  <a class="bnt-21-apr hover:bg-grey text-grey-darkest p-3 block whitespace-no-wrap no-underline cursor-pointer">Apr</a>
-				  <a class="bnt-21-mar hover:bg-grey text-grey-darkest p-3 block whitespace-no-wrap no-underline cursor-pointer">Mar</a>
-				  <a class="bnt-21-feb hover:bg-grey text-grey-darkest p-3 block whitespace-no-wrap no-underline cursor-pointer">Feb</a>
-				  <a class="bnt-21-jan hover:bg-grey text-grey-darkest p-3 block whitespace-no-wrap no-underline cursor-pointer">Jan</a>
-			  </div>
-			  <div class="w-full">
-				<div class="font-bold p-1">
-				  2020
-				</div>
-			  </div>
-			  <div class="flex">
-				  <a class="bnt-oct hover:bg-grey text-grey-darkest p-3 block whitespace-no-wrap no-underline cursor-pointer">Oct</a>
-				  <a class="bnt-nov hover:bg-grey text-grey-darkest p-3 block whitespace-no-wrap no-underline cursor-pointer">Nov</a>
-				  <a class="bnt-dec hover:bg-grey text-grey-darkest p-3 block whitespace-no-wrap no-underline cursor-pointer">Dec</a>
-			  </div>
-			  <div class="bnt-all w-full text-center">
-				<a class="bg-grey-light hover:bg-grey text-grey-darkest p-1 block whitespace-no-wrap no-underline cursor-pointer">All</a>
-			  </div>
-			</div>
-		  </ul>
-		</div>
 	</div>
   
   </div>
@@ -280,20 +210,12 @@
 						Name
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
 					</th>
-					<th @click="sortBy('date')" class="ecol-md py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+					<th @click="sortBy('day')" class="ecol-md py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
 						Date
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-					</th>
-					<th @click="sortBy('group')" class="ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-						Group
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
 					</th>
 					<th @click="sortBy('openrate')" class="ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
 						Opens
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-					</th>
-					<th @click="sortBy('clickrate')" class="ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-						Clicks
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
 					</th>
 					<th @click="sortBy('ctor')" class="ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
@@ -348,14 +270,6 @@
 									<div class="text-sm leading-5 text-gray-900">
 										{{ listData.day }}
 									</div>
-									<div class="text-sm leading-5 text-gray-500">
-										{{ listData.time }}
-									</div>
-								</td>
-								<td class="ecol py-4 border-b border-gray-200">
-									<span class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full uppercase">
-										{{ listData.group }}
-									</span>
 								</td>
 								<td class="ecol py-4 border-b border-gray-200">
 									<div class="text-lg font-bold leading-5 text-gray-900">
@@ -363,14 +277,6 @@
 									</div>
 									<div class="text-sm leading-5 text-gray-500">
 										{{ listData.opens }}
-									</div>
-								</td>
-								<td class="ecol py-4 border-b border-gray-200">
-									<div class="text-lg font-bold leading-5 text-gray-900">
-										{{ listData.clickrate }}%
-									</div>
-									<div class="text-sm leading-5 text-gray-500">
-										{{ listData.clicks }}
 									</div>
 								</td>
 								<td class="ecol py-4 border-b border-gray-200">
@@ -405,48 +311,6 @@
 		</div>
 	<!-- End table -->
 
-
-                <div class="mt-8">
-                  <div class="flex flex-wrap ">
-                    <div class="lg:w-1/2 w-full p-1">
-                      <div class="bg-white py-8 flex flex-wrap rounded-lg shadow-sm">
-                        <div class="w-full">
-                          <h4 class="text-2xl font-semibold text-gray-700 pl-8">Reachable by email</h4>
-                        </div>
-                        <iframe 
-                        src="https://email-gallery.netlify.app/pages/reports/unsubs" 
-                        height="280" width="560" scrolling="no">
-                      </iframe>
-                      </div>
-                    </div>
-                    <div class="lg:w-1/2 w-full p-1">
-                      <div class="bg-white py-8 flex flex-wrap rounded-lg shadow-sm mx-auto">
-                        <div class="w-full">
-                          <h4 class="text-2xl font-semibold text-gray-700 pl-8">SMS opt-outs</h4>
-                        </div>
-                        <div class="swiper-container smsSwiper">
-                          <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                              <iframe 
-                              src="https://email-gallery.netlify.app/pages/reports/sms/" 
-                              height="280" width="560" scrolling="no">
-                            </iframe>
-                            </div>
-                            <div class="swiper-slide">
-                              <iframe 
-                              src="https://email-gallery.netlify.app/pages/reports/sms/2020" 
-                              height="280" width="560" scrolling="no">
-                            </iframe>
-                            </div>
-                          </div>
-                          <div class="swiper-button-next"></div>
-                          <div class="swiper-button-prev"></div>
-                          <div class="swiper-pagination"></div>
-                    </div>
-                    </div>
-                  </div>
-                  </div>
-								</div>
 
 							</div>
 						</div>

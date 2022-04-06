@@ -1,12 +1,11 @@
 [
   {
-    "Label": "Working Age - Investments in Super Invite",
     "name": "20220331 Working Age - Investments in Super Invite",
     "sent": 4399,
     "opens": 444,
     "clicks": 12,
     "subject": "Join our upcoming 'Investments in Super' webinar",
-    "day": "31/03/2022 19:01",
+    "day": "2022-03-31 19:01",
     "unsub": 0,
     "id": "DM23327",
     "ctor": 2.7,
@@ -15,13 +14,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/event/other/mar-working-age/investments.html"
   },
   {
-    "Label": "20220331 Other Webinar - Federal budget announcement Invite",
     "name": "Other Webinar - Federal budget announcement Invite",
     "sent": 102031,
     "opens": 62930,
     "clicks": 1531,
     "subject": "(Name), What does the Federal Budget mean for your super?",
-    "day": "31/03/2022 13:20",
+    "day": "2022-03-31 13:20",
     "unsub": 47,
     "id": "DM23420",
     "ctor": 2.43,
@@ -30,13 +28,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/event/budget/index.html"
   },
   {
-    "Label": "20220329 Retirement Webinar Invite (batch 1 & 2 combined)",
     "name": "Retirement Webinar Invite (batch 1 & 2 combined)",
     "sent": 14003,
     "opens": 7209,
     "clicks": 462,
     "subject": "Join our upcoming Retirement Planning webinars",
-    "day": "29/03/2022 19:00",
+    "day": "2022-03-29 19:00",
     "unsub": 4,
     "id": "DM23383",
     "ctor": 6.41,
@@ -45,13 +42,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/event/retirement-series/apr/invite-final.html"
   },
   {
-    "Label": "20220329 Working Age - Insurance+beneficiaries Invite",
     "name": "20220329 Working Age - Insurance+beneficiaries Invite",
     "sent": 7639,
     "opens": 2132,
     "clicks": 40,
     "subject": "[Webinar] Insurance and Beneficiaries",
-    "day": "29/03/2022 16:01",
+    "day": "2022-03-29 16:01",
     "unsub": 6,
     "id": "DM23323",
     "ctor": 1.88,
@@ -60,13 +56,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/event/other/mar-working-age/insurance+beneficiaries.html"
   },
   {
-    "Label": "20220328 Cbus Learn - Downsizer Invite",
     "name": "20220328 Cbus Learn - Downsizer Invite",
     "sent": 13260,
     "opens": 8288,
     "clicks": 209,
     "subject": "Webinar: Boost your super with the home downsizer contribution",
-    "day": "28/03/2022 19:02",
+    "day": "2022-03-28 19:02",
     "unsub": 5,
     "id": "DM23297",
     "ctor": 2.52,
@@ -75,13 +70,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/event/learn-more/apr-cbuslearn/invite.html"
   },
   {
-    "Label": "Retirement Webinar Invite BATCH 2",
     "name": "20220308 Retirement Webinar Invite BATCH 3",
     "sent": 3377,
     "opens": 472,
     "clicks": 47,
     "subject": "(Name), are you thinking about retirement ?",
-    "day": "8/03/2022 19:03",
+    "day": "2022-03-8 19:03",
     "unsub": 2,
     "id": "DM22801",
     "ctor": 9.96,
@@ -90,13 +84,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/event/retirement-series/mar/invite2.html"
   },
   {
-    "Label": "20220308 - USM eDM",
     "name": "Unclaimed Super Monies (USM)",
     "sent": 7785,
     "opens": 3133,
     "clicks": 692,
     "subject": "Your super may be transferred to the ATO.",
-    "day": "8/03/2022 12:00",
+    "day": "2022-03-8 12:00",
     "unsub": 4,
     "id": "DM22962",
     "ctor": 22.09,
@@ -105,13 +98,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/member-retention/usm/index.html"
   },
   {
-    "Label": "20220304 Other Webinar - Working Age - Investments in Super Invite",
     "name": "Other Webinar - Working Age - Investments in Super Invite",
     "sent": 8539,
     "opens": 3366,
     "clicks": 78,
     "subject": "(Name), getting the most out of your super investment options?",
-    "day": "4/03/2022 19:00",
+    "day": "2022-03-4 19:00",
     "unsub": 7,
     "id": "DM22810",
     "ctor": 2.32,
@@ -120,13 +112,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/event/other/mar-working-age/investments.html"
   },
   {
-    "Label": "20220303 Other Webinar - Working Age - Insurance & Beneficiaries Invite",
     "name": "Other Webinar - Working Age - Insurance & Beneficiaries Invite",
     "sent": 9548,
     "opens": 2173,
     "clicks": 21,
     "subject": "Why is insurance important? Join our webinar",
-    "day": "3/03/2022 19:55",
+    "day": "2022-03-3 19:55",
     "unsub": 4,
     "id": "DM22815",
     "ctor": 0.97,
@@ -135,13 +126,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/event/other/mar-working-age/insurance+beneficiaries.html"
   },
   {
-    "Label": "20220302 - Super Summary - Working Valid Address eDM batch 2",
     "name": "Super Summary - Working Valid Address eDM batch 3",
     "sent": 59356,
     "opens": 33003,
     "clicks": 7228,
     "subject": "(Name), check out your super summary.",
-    "day": "3/03/2022 14:43",
+    "day": "2022-03-3 14:43",
     "unsub": 0,
     "id": "DM22966",
     "ctor": 21.9,
@@ -150,13 +140,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/com/super-summary/working-30-49.html"
   },
   {
-    "Label": "20220303 - Super Summary -  SIS [CORRECTION] eDM",
     "name": "Super Summary -  SIS [CORRECTION] eDM",
     "sent": 3720,
     "opens": 2834,
     "clicks": 268,
     "subject": "CORRECTION",
-    "day": "3/03/2022 14:24",
+    "day": "2022-03-3 14:24",
     "unsub": 0,
     "id": "DM23004",
     "ctor": 9.46,
@@ -165,13 +154,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/com/super-summary/sis-ops.html"
   },
   {
-    "Label": "20220302 - Super Summary - 50 Plus Valid Address eDM",
     "name": "Super Summary - 50 Plus Valid Address eDM",
     "sent": 63947,
     "opens": 40856,
     "clicks": 15613,
     "subject": "(Name), check out your super summary.",
-    "day": "3/03/2022 13:16",
+    "day": "2022-03-3 13:16",
     "unsub": 0,
     "id": "DM22728",
     "ctor": 38.21,
@@ -180,13 +168,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/com/super-summary/50-plus"
   },
   {
-    "Label": "20220302 - Super Summary - Starting Out Valid Address eDM",
     "name": "Super Summary - Starting Out Valid Address eDM",
     "sent": 19624,
     "opens": 10903,
     "clicks": 1490,
     "subject": "(Name), check out your super summary.",
-    "day": "2/03/2022 13:33",
+    "day": "2022-03-2 13:33",
     "unsub": 0,
     "id": "DM22949",
     "ctor": 13.67,
@@ -195,13 +182,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/com/super-summary/starting-out.html"
   },
   {
-    "Label": "20220302 - Super Summary - Working Valid Address eDM",
     "name": "Super Summary - Working Valid Address eDM",
     "sent": 38,
     "opens": 28,
     "clicks": 9,
     "subject": "(Name), check out your super summary.",
-    "day": "2/03/2022 13:03",
+    "day": "2022-03-2 13:03",
     "unsub": 0,
     "id": "DM22952",
     "ctor": 32.14,
@@ -210,13 +196,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/com/super-summary/working-30-49.html"
   },
   {
-    "Label": "Other Webinar - Working Age - Women in Super Invite",
     "name": "20220301 Other Webinar - Working Age - Women in Super Invite",
     "sent": 56266,
     "opens": 27274,
     "clicks": 511,
     "subject": "[WEBINAR] Empowering women - Women and Super",
-    "day": "1/03/2022 19:01",
+    "day": "2022-03-1 19:01",
     "unsub": 60,
     "id": "DM22956",
     "ctor": 1.87,
@@ -225,13 +210,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/event/other/mar-working-age-wowen/index.html"
   },
   {
-    "Label": "Super Summary - SIS INVALID address",
     "name": "Super Summary - SIS INVALID address eDM",
     "sent": 3721,
     "opens": 2648,
     "clicks": 934,
     "subject": "Read the latest Cbus News",
-    "day": "1/03/2022 13:17",
+    "day": "2022-03-1 13:17",
     "unsub": 0,
     "id": "DM22932",
     "ctor": 35.27,
@@ -240,13 +224,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/com/super-summary/sis.html"
   },
   {
-    "Label": "20220301 - Super Summary - SIS INVALID address eDM",
     "name": "Super Summary - SIS INVALID address eDM",
     "sent": 13,
     "opens": 9,
     "clicks": 2,
     "subject": "Read the latest Cbus News",
-    "day": "1/03/2022 13:16",
+    "day": "2022-03-1 13:16",
     "unsub": 0,
     "id": "DM22927",
     "ctor": 22.22,
@@ -255,13 +238,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/com/super-summary/sis.html"
   },
   {
-    "Label": "20220225 - Super Summary - Working INVALID Address eDM",
     "name": "Super Summary - Working INVALID Address eDM",
     "sent": 7828,
     "opens": 2773,
     "clicks": 538,
     "subject": "(Name), check out your super summary.",
-    "day": "25/02/2022 12:00",
+    "day": "2022-02-25 12:00",
     "unsub": 0,
     "id": "DM22736",
     "ctor": 19.4,
@@ -270,13 +252,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/com/super-summary/working-30-49.html"
   },
   {
-    "Label": "Other Webinar - Working Age - Super Fundamentals Invite",
     "name": "20220324 Other Webinar - Working Age - Super Fundamentals Invite",
     "sent": 9283,
     "opens": 3471,
     "clicks": 59,
     "subject": "Are you getting the most out of your super (Name)?",
-    "day": "24/02/2022 19:00",
+    "day": "2022-02-24 19:00",
     "unsub": 10,
     "id": "DM22805",
     "ctor": 1.7,
@@ -285,13 +266,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/event/other/mar-working-age/fundamentals.html"
   },
   {
-    "Label": "20220224 - Super Summary - 50 Plus INVALID Address eDM",
     "name": "Super Summary - 50 Plus INVALID Address eDM",
     "sent": 2390,
     "opens": 987,
     "clicks": 317,
     "subject": "(Name), check out your super summary.",
-    "day": "24/02/2022 14:00",
+    "day": "2022-02-24 14:00",
     "unsub": 0,
     "id": "DM22740",
     "ctor": 32.12,
@@ -300,13 +280,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/com/super-summary/50-plus"
   },
   {
-    "Label": "20220224 - Super Summary - Starting Out INVALID Address eDM",
     "name": "Super Summary - Starting Out INVALID Address eDM",
     "sent": 4308,
     "opens": 1597,
     "clicks": 148,
     "subject": "(Name), check out your super summary.",
-    "day": "24/02/2022 12:09",
+    "day": "2022-02-24 12:09",
     "unsub": 0,
     "id": "DM22732",
     "ctor": 9.27,
@@ -315,13 +294,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/com/super-summary/starting-out.html"
   },
   {
-    "Label": "20220224 - Super Summary - Working Valid Address eDM",
     "name": "Super Summary - Working Valid Address eDM",
     "sent": 70178,
     "opens": 37285,
     "clicks": 7860,
     "subject": "(Name), check out your super summary.",
-    "day": "24/02/2022 10:01",
+    "day": "2022-02-24 10:01",
     "unsub": 0,
     "id": "DM22724",
     "ctor": 21.08,
@@ -330,13 +308,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/com/super-summary/working-30-49.html"
   },
   {
-    "Label": "20220223 - Super Summary - SIS INVALID address eDM",
     "name": "Super Summary - SIS INVALID address eDM",
     "sent": 4,
     "opens": 2,
     "clicks": 0,
     "subject": "Read the latest Cbus News",
-    "day": "23/02/2022 13:30",
+    "day": "2022-02-23 13:30",
     "unsub": 0,
     "id": "DM22684",
     "ctor": 0,
@@ -345,13 +322,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/com/super-summary/sis.html"
   },
   {
-    "Label": "20220223- Super Summary - SIS Valid Address eDM",
     "name": "Super Summary - SIS Valid Address eDM",
     "sent": 2279,
     "opens": 1533,
     "clicks": 665,
     "subject": "Read the latest Cbus News",
-    "day": "23/02/2022 12:30",
+    "day": "2022-02-23 12:30",
     "unsub": 0,
     "id": "DM22680",
     "ctor": 43.38,
@@ -360,13 +336,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/com/super-summary/sis.html"
   },
   {
-    "Label": "20220222 Retirement Webinar BATCH 1 Invite",
     "name": "Retirement Webinar BATCH 1 Invite",
     "sent": 14932,
     "opens": 7422,
     "clicks": 280,
     "subject": "Are you thinking about retirement (Name)?",
-    "day": "22/02/2022 22:01",
+    "day": "2022-02-22 22:01",
     "unsub": 9,
     "id": "DM22766",
     "ctor": 3.77,
@@ -375,13 +350,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/event/retirement-series/feb/invite.html"
   },
   {
-    "Label": "20220221 SEN: New investment options and S56 notice",
     "name": "SEN: New investment options and S56 notice",
     "sent": 9150,
     "opens": 6204,
     "clicks": 769,
     "subject": "Important updates about your account.",
-    "day": "21/02/2022 12:00",
+    "day": "2022-02-21 12:00",
     "unsub": 0,
     "id": "DM22620",
     "ctor": 12.4,
@@ -390,13 +364,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/com/sen-new-investment/index.html"
   },
   {
-    "Label": "20220218 - Super Summary - Starting Out Valid Address eDM",
     "name": "Super Summary - Starting Out Valid Address eDM",
     "sent": 68611,
     "opens": 33347,
     "clicks": 3824,
     "subject": "(Name), check out your super summary.",
-    "day": "18/02/2022 10:00",
+    "day": "2022-02-18 10:00",
     "unsub": 0,
     "id": "DM22719",
     "ctor": 11.47,
@@ -405,13 +378,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/com/super-summary/starting-out.html"
   },
   {
-    "Label": "20220210 Working Age - Investments webinar Invite",
     "name": "Working Age - Investments webinar Invite",
     "sent": 7908,
     "opens": 3145,
     "clicks": 63,
     "subject": "(Name), do your super investments suit you?",
-    "day": "10/02/2022 19:02",
+    "day": "2022-02-10 19:02",
     "unsub": 5,
     "id": "DM22496",
     "ctor": 2,
@@ -420,13 +392,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/event/other/feb-working-age/investments.html"
   },
   {
-    "Label": "20220209 - Working Age - Super Fundamentals - Invite",
     "name": "Working Age - Super Fundamentals - Invite",
     "sent": 8136,
     "opens": 3226,
     "clicks": 73,
     "subject": "(Name), are you getting the most out of your super?",
-    "day": "9/02/2022 19:02",
+    "day": "2022-02-9 19:02",
     "unsub": 2,
     "id": "DM22418",
     "ctor": 2.26,
@@ -435,13 +406,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/event/other/feb-working-age/fundamentals.html"
   },
   {
-    "Label": "20220208 Retirement Series webinar invite",
     "name": "Retirement Series webinar invite",
     "sent": 5479,
     "opens": 2107,
     "clicks": 176,
     "subject": "Are you thinking about retirement (Name)?",
-    "day": "8/02/2022 19:02",
+    "day": "2022-02-8 19:02",
     "unsub": 6,
     "id": "DM22336",
     "ctor": 8.35,
@@ -450,13 +420,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/event/retirement-series/feb/invite.html"
   },
   {
-    "Label": "20220128 - Jan Cash Exits partial eDM",
     "name": "Cash Exits partial",
     "sent": 6855,
     "opens": 3625,
     "clicks": 304,
     "subject": "How retirement ready are you, (Name)?",
-    "day": "28/01/2022 11:31",
+    "day": "2022-01-28 11:31",
     "unsub": 5,
     "id": "DM22140",
     "ctor": 8.39,
@@ -465,13 +434,12 @@
     "url": "https://email-gallery.netlify.app/emails/2022/member-retention/cash-exits/1.html"
   },
   {
-    "Label": "20220128 - Jan Cash Exits propensity eDM",
     "name": "Cash Exits propensity",
     "sent": 1970,
     "opens": 1056,
     "clicks": 157,
     "subject": "(Name), how prepared are you for retirement?",
-    "day": "28/01/2022 11:30",
+    "day": "2022-01-28 11:30",
     "unsub": 1,
     "id": "DM22136",
     "ctor": 14.87,
@@ -480,7 +448,6 @@
     "url": "https://email-gallery.netlify.app/emails/2022/member-retention/cash-exits/2.html"
   },
   {
-    "Label": "20211217 Statement 29 and under",
     "name": "Statement 29 and under",
     "sent": 5328,
     "opens": 2766,
@@ -495,7 +462,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-statement/16-29"
   },
   {
-    "Label": "20211217 Statement 30-49",
     "name": "Statement 30-49",
     "sent": 3781,
     "opens": 2182,
@@ -510,7 +476,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-statement/30-49"
   },
   {
-    "Label": "20211217 Statement 50+",
     "name": "Statement 50+",
     "sent": 1612,
     "opens": 1056,
@@ -525,7 +490,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-statement/50+"
   },
   {
-    "Label": "20211216 Statement 50+",
     "name": "Statement 50+",
     "sent": 13,
     "opens": 7,
@@ -540,7 +504,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-statement/50+"
   },
   {
-    "Label": "20211216 Statement 30-49",
     "name": "Statement 30-49",
     "sent": 30,
     "opens": 16,
@@ -555,7 +518,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-statement/30-49"
   },
   {
-    "Label": "20211216 Statement 29 and under",
     "name": "Statement  29 and under",
     "sent": 6,
     "opens": 1,
@@ -570,7 +532,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-statement/16-29"
   },
   {
-    "Label": "20210208 Retirement Webinar Reminder 2 batch 1",
     "name": "Retirement Webinar Reminder 2 batch 1",
     "sent": 12540,
     "opens": 5693,
@@ -585,7 +546,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/dec/reminder-2"
   },
   {
-    "Label": "20211207 Cbus Learn Reminder Batch 2",
     "name": "Cbus Learn Reminder Batch 2",
     "sent": 12232,
     "opens": 4095,
@@ -600,7 +560,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/dec-cbus-learn-2/reminder"
   },
   {
-    "Label": "20211203 Other Webinar Reminder 1",
     "name": "Other Webinar Reminder 1",
     "sent": 11038,
     "opens": 1613,
@@ -615,7 +574,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/dec/reminder-1"
   },
   {
-    "Label": "20211203 Cbus Learn Reminder batch 1",
     "name": "Cbus Learn Reminder batch 1",
     "sent": 16200,
     "opens": 5001,
@@ -630,7 +588,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/dec-cbus-learn/reminder"
   },
   {
-    "Label": "[MAR] 2021-DEC - Super Match - Pre OTB - Subject C",
     "name": "Super Match - Pre OTB - Subject C",
     "sent": 2354,
     "opens": 1230,
@@ -645,7 +602,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/dec-pre-otb/"
   },
   {
-    "Label": "[MAR] 2021-DEC - Super Match - Pre OTB - Subject B",
     "name": "Super Match - Pre OTB - Subject B",
     "sent": 2277,
     "opens": 1441,
@@ -660,7 +616,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/dec-pre-otb/"
   },
   {
-    "Label": "[MAR] 2021-DEC - Super Match - Pre OTB - Subject A",
     "name": "Super Match - Pre OTB - Subject A",
     "sent": 2282,
     "opens": 1486,
@@ -675,7 +630,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/dec-pre-otb/"
   },
   {
-    "Label": "20211201 Cbus Learn Invite BATCH 2",
     "name": "Cbus Learn Invite -Batch 2",
     "sent": 12332,
     "opens": 4187,
@@ -690,7 +644,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/dec-cbus-learn-2/invite"
   },
   {
-    "Label": "20211201 Retirement Webinar Reminder 1 BATCH 1",
     "name": "Retirement Webinar Reminder 1 (batch 1)",
     "sent": 12577,
     "opens": 5365,
@@ -705,7 +658,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/dec/reminder-1"
   },
   {
-    "Label": "20211129 Other Webinar Invite",
     "name": "Other Webinar Invite",
     "sent": 11415,
     "opens": 1552,
@@ -720,7 +672,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/dec/invite"
   },
   {
-    "Label": "20211129 Cbus Learn Invite BATCH 1",
     "name": "Cbus Learn Invite (Batch 1)",
     "sent": 16302,
     "opens": 5320,
@@ -735,7 +686,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov-cbus-learn/smo-invite"
   },
   {
-    "Label": "20211129 - Cbus Learn - TTR Reminder BATCH 2",
     "name": "Cbus Learn - TTR Reminder (Batch 2)",
     "sent": 4170,
     "opens": 1203,
@@ -750,7 +700,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov-cbus-learn/ttr-reminder-b2"
   },
   {
-    "Label": "20211129 Insurance (Without Insurance)",
     "name": "Insurance (Without Insurance)",
     "sent": 46864,
     "opens": 16896,
@@ -765,7 +714,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/insurance-campaign/nov/3"
   },
   {
-    "Label": "20211129 Insurance (Non Manual & Professional)",
     "name": "Insurance (Non Manual & Professional)",
     "sent": 36542,
     "opens": 15248,
@@ -780,7 +728,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/insurance-campaign/nov/2"
   },
   {
-    "Label": "20211206  Insurance (ElechTech & Manual)",
     "name": "Insurance (ElechTech & Manual)",
     "sent": 363113,
     "opens": 135900,
@@ -795,7 +742,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/insurance-campaign/nov/1"
   },
   {
-    "Label": "20211125 Retirement Webinar Invite BATCH 1",
     "name": "Retirement Webinar Invite (Batch 1)",
     "sent": 12675,
     "opens": 5858,
@@ -810,7 +756,6 @@
     "url": "https://email-gallery.netlify.app//emails/2021/webinars/retirement/nov/invite"
   },
   {
-    "Label": "20211124 Retirement Webinar Reminder 2 Batch 2",
     "name": "Retirement Webinar Reminder 2 (Batch 2)",
     "sent": 3035,
     "opens": 1120,
@@ -825,7 +770,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov-cbus-learn/smo-reminder-b2"
   },
   {
-    "Label": "20211123 - Cbus Learn - TTR Invite BATCH 2",
     "name": "Cbus Learn - TTR Invite (Batch 2)",
     "sent": 4189,
     "opens": 1334,
@@ -840,7 +784,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov-cbus-learn/ttr-invite-b2"
   },
   {
-    "Label": "20211122 Retirement Webinar Reminder 1 Batch 2",
     "name": "Retirement Webinar Reminder 1 (Batch 2)",
     "sent": 3021,
     "opens": 1195,
@@ -855,7 +798,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov-cbus-learn/smo-reminder-b2"
   },
   {
-    "Label": "20211115 - Cbus Learn - SMO Reminder Batch 2",
     "name": "Cbus Learn - SMO Reminder Batch 2",
     "sent": 12375,
     "opens": 3421,
@@ -870,7 +812,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov-cbus-learn/smo-reminder-b2"
   },
   {
-    "Label": "20211112 Win Back BUSSQ eDM",
     "name": "Win Back BUSSQ",
     "sent": 95,
     "opens": 42,
@@ -885,7 +826,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/win-back/nov/bussq"
   },
   {
-    "Label": "20211112 Win Back all member eDM",
     "name": "Win Back all member",
     "sent": 5544,
     "opens": 2598,
@@ -900,7 +840,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/win-back/nov"
   },
   {
-    "Label": "20211111- Retirement Webina-  Invite Batch 2",
     "name": "Retirement Webinar Invite (Batch 2)",
     "sent": 3074,
     "opens": 1385,
@@ -915,7 +854,6 @@
     "url": "https://email-gallery.netlify.app//emails/2021/webinars/retirement/nov-2/invite"
   },
   {
-    "Label": "20211110 Retirement Series Reminder 2 BATCH 1",
     "name": "Retirement Webinar Reminder-1 (Batch 1)",
     "sent": 3089,
     "opens": 1208,
@@ -930,7 +868,6 @@
     "url": "https://email-gallery.netlify.app//emails/2021/webinars/retirement/nov/reminder-1"
   },
   {
-    "Label": "20211109 - Cbus Learn - SMO Invite Batch 2",
     "name": "Cbus Learn - SMO Invite Batch 2",
     "sent": 12431,
     "opens": 3576,
@@ -945,7 +882,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov-cbus-learn/smo-reminder-b2"
   },
   {
-    "Label": "20211105 - Cbus Learn - TTR Reminder Batch 1",
     "name": "Cbus Learn - TTR Reminder Batch 1",
     "sent": 12732,
     "opens": 3747,
@@ -960,7 +896,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov-cbus-learn/ttr-reminder-b2"
   },
   {
-    "Label": "20211104 - Member Vol - seg 3 - propensity - eDM",
     "name": "Member Vol - seg 3 - propensity",
     "sent": 3582,
     "opens": 1764,
@@ -975,7 +910,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/member-voluntary-contributions/3"
   },
   {
-    "Label": "20211104 - Member Vol - seg 2 - propensity - eDM",
     "name": "Member Vol - seg 2 - propensity",
     "sent": 5889,
     "opens": 2614,
@@ -990,7 +924,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/member-voluntary-contributions/2"
   },
   {
-    "Label": "20211104 - Member Vol - seg 1 - propensity - eDM",
     "name": "Member Vol - seg 1 - propensity",
     "sent": 666,
     "opens": 223,
@@ -1005,7 +938,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/member-voluntary-contributions/1"
   },
   {
-    "Label": "20211104 - Member Vol - seg 3 - nonpropensity - eDM",
     "name": "Member Vol - seg 3 - nonpropensity",
     "sent": 4349,
     "opens": 2066,
@@ -1020,7 +952,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/member-voluntary-contributions/3"
   },
   {
-    "Label": "20211104 - Member Vol - seg 2 - nonpropensity - eDM",
     "name": "Member Vol - seg 2 - nonpropensity",
     "sent": 9544,
     "opens": 4025,
@@ -1035,7 +966,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/member-voluntary-contributions/2"
   },
   {
-    "Label": "20211104 - Member Vol - seg 1 - nonpropensity - eDM",
     "name": "Member Vol - seg 1 - nonpropensity",
     "sent": 3155,
     "opens": 1142,
@@ -1050,7 +980,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/member-voluntary-contributions/1"
   },
   {
-    "Label": "20211104 - Salary Sacrifice - seg 3 - nonpropensity - eDM",
     "name": "Salary Sacrifice - seg 3 - nonpropensity",
     "sent": 1767,
     "opens": 923,
@@ -1065,7 +994,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/salary-sacrifice/3"
   },
   {
-    "Label": "20211104 - Salary Sacrifice - seg 2 - nonpropensity - eDM",
     "name": "Salary Sacrifice - seg 2 - nonpropensity",
     "sent": 5658,
     "opens": 2697,
@@ -1080,7 +1008,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/salary-sacrifice/2"
   },
   {
-    "Label": "20211104 - Salary Sacrifice - seg 1 - nonpropensity - eDM",
     "name": "Salary Sacrifice - seg 1 - nonpropensity",
     "sent": 1417,
     "opens": 541,
@@ -1095,7 +1022,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/salary-sacrifice/1"
   },
   {
-    "Label": "20211104 - Salary Sacrifice - seg 3 - propensity - eDM",
     "name": "Salary Sacrifice - seg 3 - propensity",
     "sent": 4297,
     "opens": 2382,
@@ -1110,7 +1036,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/salary-sacrifice/3"
   },
   {
-    "Label": "20211104 Salary Sacrifice -  seg 2 - propensity - eDM",
     "name": "Salary Sacrifice -  seg 2 - propensity",
     "sent": 13183,
     "opens": 6999,
@@ -1125,7 +1050,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/salary-sacrifice/2"
   },
   {
-    "Label": "20211104 - Salary Sacrifice - seg 1 - propensity - eDM",
     "name": "Salary Sacrifice - seg 1 - propensity",
     "sent": 308,
     "opens": 139,
@@ -1140,7 +1064,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/salary-sacrifice/1"
   },
   {
-    "Label": "20211103 Retirement Series Reminder 1 BATCH 1",
     "name": "Retirement Series Reminder (batch 1)",
     "sent": 3095,
     "opens": 1207,
@@ -1155,7 +1078,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov-cbus-learn/smo-reminder"
   },
   {
-    "Label": "20211101 Cbus Learn - TTR Invite BATCH 1",
     "name": "Cbus Learn - TTR Invite (Batch 1)",
     "sent": 12834,
     "opens": 3744,
@@ -1170,7 +1092,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov-cbus-learn/ttr-invite"
   },
   {
-    "Label": "20211101 - Cbus Learn - SMO Reminder BATCH 1",
     "name": "Cbus Learn - SMO Reminder (batch 1)",
     "sent": 12360,
     "opens": 3092,
@@ -1185,7 +1106,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov-cbus-learn/smo-reminder"
   },
   {
-    "Label": "20211029 Remediation eDM (Conservative Growth)",
     "name": "Remediation eDM (Conservative Growth) - Statement",
     "sent": 3985,
     "opens": 2250,
@@ -1200,7 +1120,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2021/comms"
   },
   {
-    "Label": "20211028 Retirement Series Webinar Invite BATCH 1",
     "name": "Retirement Series Webinar Invite",
     "sent": 3133,
     "opens": 1414,
@@ -1215,7 +1134,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov/invite"
   },
   {
-    "Label": "20211028 - QLD Retention Greater Bris eDM",
     "name": "QLD Retention Greater Bris",
     "sent": 15005,
     "opens": 5687,
@@ -1230,7 +1148,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/qld-retention-coordinators/great-bris"
   },
   {
-    "Label": "20211028 QLD Retention North QLD eDM",
     "name": "QLD Retention North QLD",
     "sent": 10594,
     "opens": 4072,
@@ -1245,7 +1162,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/qld-retention-coordinators/north-qld"
   },
   {
-    "Label": "20211028 - QLD Retention South QLD eDM",
     "name": "QLD Retention South QLD",
     "sent": 8095,
     "opens": 3011,
@@ -1260,7 +1176,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/qld-retention-coordinators/south-qld"
   },
   {
-    "Label": "20211027 - Cbus Learn - SMO Invite BATCH 1",
     "name": "Cbus Learn - SMO Invite",
     "sent": 14978,
     "opens": 4745,
@@ -1275,7 +1190,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov-cbus-learn/smo-invite.html"
   },
   {
-    "Label": "20211027 Retirement Webinar Reminder 2 BATCH 2",
     "name": "Retirement Webinar Reminder 2",
     "sent": 13106,
     "opens": 5851,
@@ -1290,7 +1204,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/oct-2/reminder-2"
   },
   {
-    "Label": "[MAR] 2021-10 SIS Acquisition edm Seg 4",
     "name": "SIS Acquisition Seg 4",
     "sent": 15866,
     "opens": 6482,
@@ -1305,7 +1218,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-acquisition/4"
   },
   {
-    "Label": "[MAR] 2021-10 SIS Acquisition edm Seg 3",
     "name": "SIS Acquisition Seg 3",
     "sent": 34902,
     "opens": 15847,
@@ -1320,7 +1232,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-acquisition/3"
   },
   {
-    "Label": "20211020 - Young Cohort - Insurance 25-29",
     "name": "Young Cohort - Insurance 25-29",
     "sent": 54793,
     "opens": 17676,
@@ -1335,7 +1246,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/young-cohort/insurance-25-29"
   },
   {
-    "Label": "20211020 Young Cohort - Insurance 20-24",
     "name": "Young Cohort - Insurance 20-24",
     "sent": 50807,
     "opens": 16001,
@@ -1350,7 +1260,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/young-cohort/insurance-20-24"
   },
   {
-    "Label": "20211020 Young Cohort - Insurance Under 20",
     "name": "Young Cohort - Insurance Under 20",
     "sent": 19347,
     "opens": 6739,
@@ -1365,7 +1274,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/young-cohort/insurance-under_20"
   },
   {
-    "Label": "20211020 - Young Cohort - No insurance 20-24",
     "name": "Young Cohort - No insurance 20-24",
     "sent": 11464,
     "opens": 3726,
@@ -1380,7 +1288,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/young-cohort/noninsurance-20-24"
   },
   {
-    "Label": "20211020 - Young Cohort - No insurance 25-29",
     "name": "Young Cohort - No insurance 25-29",
     "sent": 14004,
     "opens": 4573,
@@ -1395,7 +1302,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/young-cohort/noninsurance-25-29"
   },
   {
-    "Label": "20211020 - Young Cohort - No insurance Under 20",
     "name": "Young Cohort - No insurance Under 20",
     "sent": 4869,
     "opens": 1827,
@@ -1410,7 +1316,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/young-cohort/noninsurance-under_20"
   },
   {
-    "Label": "[MAR] 2021-10 SIS Acquisition edm Seg 2",
     "name": "SIS Acquisition Seg 2",
     "sent": 7136,
     "opens": 3751,
@@ -1425,7 +1330,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-acquisition/1"
   },
   {
-    "Label": "[MAR] 2021-10 SIS Acquisition edm Seg 1a",
     "name": "SIS Acquisition Seg 1a",
     "sent": 63,
     "opens": 34,
@@ -1440,7 +1344,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-acquisition/1"
   },
   {
-    "Label": "[MAR] 2021-10 SIS Acquisition edm Seg 1b",
     "name": "SIS Acquisition Seg 1b",
     "sent": 1404,
     "opens": 595,
@@ -1455,7 +1358,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-acquisition/2"
   },
   {
-    "Label": "20211020 Retirement Webinar Reminder 1 BATCH 2",
     "name": "Retirement Webinar Reminder 1 Batch 2",
     "sent": 7727,
     "opens": 4481,
@@ -1470,7 +1372,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov-2/reminder-1"
   },
   {
-    "Label": "20211018 SMSF Webinar Reminder",
     "name": "SMSF Webinar Reminder",
     "sent": 7313,
     "opens": 2801,
@@ -1485,7 +1386,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/smsf/oct/invite"
   },
   {
-    "Label": "20211015 Video Snapshot Reminder",
     "name": "Video Snapshot Reminder",
     "sent": 258462,
     "opens": 55413,
@@ -1500,7 +1400,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/video-snapshots/video-stapshot-reminder"
   },
   {
-    "Label": "20211014 Retirement Webinar Invite BATCH 2",
     "name": "Retirement Webinar Invite BATCH 2",
     "sent": 13291,
     "opens": 6585,
@@ -1515,7 +1414,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov-2/invite"
   },
   {
-    "Label": "20211013 Retirement Webinar Reminder 2 BATCH 1",
     "name": "Retirement Webinar Reminder 2 BATCH 1",
     "sent": 14624,
     "opens": 6298,
@@ -1530,7 +1428,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/nov-2/reminder-2"
   },
   {
-    "Label": "20211012 Cbus Learn Invite BATCH 2",
     "name": "Cbus Learn Invite BATCH 2",
     "sent": 14984,
     "opens": 5662,
@@ -1545,7 +1442,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/oct-cbus-learn-2/invite"
   },
   {
-    "Label": "20211012 SMSF Oct eDM",
     "name": "SMSF",
     "sent": 7324,
     "opens": 2945,
@@ -1560,7 +1456,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/smsf/oct"
   },
   {
-    "Label": "20211006 Retirement Webinar Reminder 1 BATCH 1",
     "name": "Retirement Webinar Reminder 1 BATCH 1",
     "sent": 14638,
     "opens": 6328,
@@ -1575,7 +1470,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/oct/reminder-01"
   },
   {
-    "Label": "20211006 Other Webinar Insurance Special Reminder",
     "name": "Other Webinar Insurance Special Reminder",
     "sent": 62005,
     "opens": 22226,
@@ -1590,7 +1484,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/oct-insurance-special/reminder"
   },
   {
-    "Label": "20210930 Annual Members Meeting invite",
     "name": "Annual Member Meeting",
     "sent": 15841,
     "opens": 8034,
@@ -1605,7 +1498,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/amm"
   },
   {
-    "Label": "20211004 Cbus Learn Reminder batch 1",
     "name": "Cbus Learn Reminder batch 1",
     "sent": 14804,
     "opens": 4955,
@@ -1620,7 +1512,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/oct-cbus-learn/reminder"
   },
   {
-    "Label": "20210930 Retirement Webinar Invite BATCH 1",
     "name": "Retirement Webinar Invite BATCH 1",
     "sent": 14782,
     "opens": 6628,
@@ -1635,7 +1526,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/amm/"
   },
   {
-    "Label": "20210930 Other Webinar Insurance Special Invite",
     "name": "Other Webinar Insurance Special Invite",
     "sent": 62176,
     "opens": 18660,
@@ -1650,7 +1540,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/oct-insurance-special/"
   },
   {
-    "Label": "20210930 Annual Members Meeting invite",
     "name": "Annual Members Meeting invite",
     "sent": 24304,
     "opens": 9547,
@@ -1665,7 +1554,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/rif-sep-superfriend/invite"
   },
   {
-    "Label": "20210929 RIF Superfriend Webinar Reminder",
     "name": "RIF Superfriend Webinar Reminder",
     "sent": 45358,
     "opens": 17425,
@@ -1680,7 +1568,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/rif-sep-superfriend/invite"
   },
   {
-    "Label": "20210928 Cbus Learn Invite BATCH 1",
     "name": "Cbus Learn Invite BATCH 1",
     "sent": 14979,
     "opens": 5621,
@@ -1695,7 +1582,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/sep-cbus-learn-2/invite"
   },
   {
-    "Label": "20210927 RIF Webinar Reminder",
     "name": "RIF Webinar Reminder",
     "sent": 8506,
     "opens": 4842,
@@ -1710,7 +1596,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/rif-sep-superfriend/reminder.html"
   },
   {
-    "Label": "202109 Statement eDM 16-29 (invalid postal)",
     "name": "Statement eDM 16-29 (invalid postal)",
     "sent": 226,
     "opens": 88,
@@ -1725,7 +1610,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-statement/16-29-has-post"
   },
   {
-    "Label": "202109 Statement 30-49 (invalid post)",
     "name": "Statement 30-49 (invalid post)",
     "sent": 465,
     "opens": 210,
@@ -1740,7 +1624,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-statement/30-49-has-post"
   },
   {
-    "Label": "202109 Statement 50+ (invalid post)",
     "name": "Statement 50+ (invalid post)",
     "sent": 179,
     "opens": 96,
@@ -1755,7 +1638,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-statement/50+-has-post"
   },
   {
-    "Label": "20210923 RIF Superfriend Webinar Invite",
     "name": "RIF Superfriend Webinar Invite",
     "sent": 45698,
     "opens": 16935,
@@ -1770,7 +1652,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/rif-sep-superfriend/invite"
   },
   {
-    "Label": "20210922 Retirement Webinar Reminder 2 batch 2",
     "name": "Retirement Webinar Reminder 2 batch 2",
     "sent": 6195,
     "opens": 2488,
@@ -1785,7 +1666,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/sep/invite"
   },
   {
-    "Label": "20210921 RIF Investment Update Webinar Invite",
     "name": "RIF Investment Update Webinar Invite",
     "sent": 8649,
     "opens": 4671,
@@ -1800,7 +1680,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/rif-sep/invite.html"
   },
   {
-    "Label": "20210921 Cbus Learn Reminder BATCH 2",
     "name": "Cbus Learn Reminder BATCH 2",
     "sent": 15871,
     "opens": 5518,
@@ -1815,7 +1694,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/sep-cbus-learn/reminder.html"
   },
   {
-    "Label": "202109 Statement 29 and under",
     "name": "Statement 29 and under",
     "sent": 84924,
     "opens": 35772,
@@ -1830,7 +1708,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-statement/16-29-has-post"
   },
   {
-    "Label": "20210917 Other Webinars Reminder 2",
     "name": "Other Webinars Reminder 2",
     "sent": 14600,
     "opens": 5252,
@@ -1845,7 +1722,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/sep/reminder-2"
   },
   {
-    "Label": "20210915 Cbus Learn Invite BATCH 2",
     "name": "Cbus Learn Invite BATCH 2",
     "sent": 15981,
     "opens": 5981,
@@ -1860,7 +1736,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/sep-cbus-learn-2/invite"
   },
   {
-    "Label": "20210915 Retirement Webinar Reminder 1 batch 2",
     "name": "Retirement Webinar Reminder 1 batch 2",
     "sent": 6209,
     "opens": 2375,
@@ -1875,7 +1750,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/sep-2/reminder-1"
   },
   {
-    "Label": "202109 Statement 30-49",
     "name": "Statement 30-49",
     "sent": 110284,
     "opens": 57774,
@@ -1890,7 +1764,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-statement/30-49-has-post"
   },
   {
-    "Label": "20210913 Retirement Webinar Reminder 2 BATCH 1",
     "name": "Retirement Webinar Reminder 2 BATCH 1",
     "sent": 6201,
     "opens": 2496,
@@ -1905,7 +1778,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/sep/reminder-2"
   },
   {
-    "Label": "202109 Statement 50+",
     "name": "Statement 50+",
     "sent": 60843,
     "opens": 39227,
@@ -1920,7 +1792,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-statement/50+-has-post"
   },
   {
-    "Label": "20210910 Video Snapshot No RIE default",
     "name": "Video Snapshot No RIE default",
     "sent": 36289,
     "opens": 14211,
@@ -1935,7 +1806,6 @@
     "url": "https://ol365.capture.litmuscdn.com/2baf7bd9-a4a5-42cf-86d3-f912ebd9c548/results/ol365-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210909 Retirement Webinar Invite",
     "name": "Retirement Webinar Invite",
     "sent": 6281,
     "opens": 2734,
@@ -1950,7 +1820,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/sep/invite"
   },
   {
-    "Label": "20210909 Video Snapshot No RIE Combine",
     "name": "Video Snapshot No RIE Combine",
     "sent": 61892,
     "opens": 22457,
@@ -1965,7 +1834,6 @@
     "url": "https://ol365.capture.litmuscdn.com/2baf7bd9-a4a5-42cf-86d3-f912ebd9c548/results/ol365-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210909 Video Snapshot No RIE SIS",
     "name": "Video Snapshot No RIE SIS",
     "sent": 21114,
     "opens": 11699,
@@ -1980,7 +1848,6 @@
     "url": "https://ol365.capture.litmuscdn.com/2baf7bd9-a4a5-42cf-86d3-f912ebd9c548/results/ol365-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210908 Video Snapshot New Member",
     "name": "Video Snapshot New Member",
     "sent": 35648,
     "opens": 15376,
@@ -1995,7 +1862,6 @@
     "url": "https://ol365.capture.litmuscdn.com/2baf7bd9-a4a5-42cf-86d3-f912ebd9c548/results/ol365-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210908 Video Snapshot RIE Default advice",
     "name": "Video Snapshot RIE Default advice",
     "sent": 12472,
     "opens": 7141,
@@ -2010,7 +1876,6 @@
     "url": "https://ol365.capture.litmuscdn.com/2baf7bd9-a4a5-42cf-86d3-f912ebd9c548/results/ol365-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210906 Retirement Webinar Reminder 1 BATCH 1",
     "name": "Retirement Webinar Reminder 1 BATCH 1",
     "sent": 6220,
     "opens": 2486,
@@ -2025,7 +1890,6 @@
     "url": "https://ol365.capture.litmuscdn.com/2baf7bd9-a4a5-42cf-86d3-f912ebd9c548/results/ol365-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210903 Cbus Learn Reminder BATCH 1",
     "name": "Cbus Learn Reminder BATCH 1",
     "sent": 15847,
     "opens": 5737,
@@ -2040,7 +1904,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/sep-cbus-learn/reminder.html"
   },
   {
-    "Label": "20210903 Video Snapshot RIE Default Boost",
     "name": "Video Snapshot RIE Default Boost",
     "sent": 154708,
     "opens": 65843,
@@ -2055,7 +1918,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/sep-cbus-learn/reminder.html"
   },
   {
-    "Label": "20210902 Other Webinar Reminder 1",
     "name": "Other Webinar Reminder 1",
     "sent": 14634,
     "opens": 6019,
@@ -2070,7 +1932,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/sep/reminder-1.html"
   },
   {
-    "Label": "20210902 Insurance Premium Changes [Generic]",
     "name": "Insurance Premium Changes [Generic]",
     "sent": 613,
     "opens": 379,
@@ -2085,7 +1946,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/insurance-premium-changes/generic/index.html"
   },
   {
-    "Label": "20210902 Insurance Premium Changes [Electech]",
     "name": "Insurance Premium Changes [Electech]",
     "sent": 162,
     "opens": 113,
@@ -2100,7 +1960,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/insurance-premium-changes/generic/index.html"
   },
   {
-    "Label": "20210902 Insurance Premium Changes [Non-Manual/Professional]",
     "name": "Insurance Premium Changes [Non-Manual/Professional]",
     "sent": 404,
     "opens": 270,
@@ -2115,7 +1974,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/insurance-premium-changes/generic/index.html"
   },
   {
-    "Label": "20210902 Insurance Premium Changes [Manual]",
     "name": "Insurance Premium Changes [Manual]",
     "sent": 3322,
     "opens": 1876,
@@ -2130,7 +1988,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/insurance-premium-changes/generic/index.html"
   },
   {
-    "Label": "20210902 Video Snapshot RIE Take action",
     "name": "Video Snapshot RIE Take action",
     "sent": 52325,
     "opens": 20222,
@@ -2145,7 +2002,6 @@
     "url": "https://ol2019mac.capture.litmuscdn.com/21cf5af5-eee8-4cb4-9579-ef51e706976d/results/ol2019mac-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210902 Video Snapshot RIE Almost there",
     "name": "Video Snapshot RIE Almost there",
     "sent": 22536,
     "opens": 9057,
@@ -2160,7 +2016,6 @@
     "url": "https://ol2019mac.capture.litmuscdn.com/61106ad8-3aff-4775-af65-2e30c89c4e6f/results/ol2019mac-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210901 Video Snapshot RIE on track advice",
     "name": "Video Snapshot RIE on track advice",
     "sent": 1572,
     "opens": 1045,
@@ -2175,7 +2030,6 @@
     "url": "https://ol2019mac.capture.litmuscdn.com/e256dc16-832b-4543-bb45-bc0b23c3d944/results/ol2019mac-vertical-allowed-1366.png"
   },
   {
-    "Label": "[MAR] 2021-SEP - Supermatch Mar21-Jun21 - [eDM Reminder: non opens]",
     "name": "Supermatch Mar21-Jun21 - [eDM Reminder: non opens]",
     "sent": 4344,
     "opens": 1026,
@@ -2190,7 +2044,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback"
   },
   {
-    "Label": "20210901 Statement SIS (NoPost)",
     "name": "Statement SIS (NoPost)",
     "sent": 17,
     "opens": 8,
@@ -2205,7 +2058,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-statement/sis.html"
   },
   {
-    "Label": "20210901 Statement SIS",
     "name": "Statement SIS",
     "sent": 5686,
     "opens": 4458,
@@ -2220,7 +2072,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-statement/sis.html"
   },
   {
-    "Label": "20210901 Video Snapshot RIE on track boost",
     "name": "Video Snapshot RIE on track boost",
     "sent": 72764,
     "opens": 34588,
@@ -2235,7 +2086,6 @@
     "url": "https://ol2019mac.capture.litmuscdn.com/61106ad8-3aff-4775-af65-2e30c89c4e6f/results/ol2019mac-vertical-allowed-1366.png"
   },
   {
-    "Label": "20210831 Retirement Webinar Invite BATCH 1",
     "name": "Retirement Webinar Invite (batch 1)",
     "sent": 6307,
     "opens": 2628,
@@ -2250,7 +2100,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/aug-1/invite"
   },
   {
-    "Label": "[MAR] 2021-09 Unclaimed monies eDM",
     "name": "Unclaimd super monies",
     "sent": 8086,
     "opens": 3099,
@@ -2265,7 +2114,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/unclaimed-monies"
   },
   {
-    "Label": "20210830 Cbus Learn Invite BATCH 1",
     "name": "Cbus Learn - Invite Batch 1",
     "sent": 15984,
     "opens": 6045,
@@ -2280,7 +2128,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/aug-cbus-learn/invite"
   },
   {
-    "Label": "20210830 RIF Webinar Reminder",
     "name": "RIF Webinar Reminder",
     "sent": 25839,
     "opens": 11808,
@@ -2295,7 +2142,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/rif-aug/reminder"
   },
   {
-    "Label": "20210827 Other Webinar Invite",
     "name": "Other Webinar Invite",
     "sent": 14672,
     "opens": 5625,
@@ -2310,7 +2156,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/aug/invite"
   },
   {
-    "Label": "20210826 Other Webinar Reminder 2",
     "name": "Other Webinar Reminder 2",
     "sent": 713,
     "opens": 395,
@@ -2325,7 +2170,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/aug/reminder-2"
   },
   {
-    "Label": "20210826 Cbus Learn batch 2 Reminder",
     "name": "Cbus Learn batch 2 Reminder",
     "sent": 15907,
     "opens": 5845,
@@ -2340,7 +2184,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/aug-cbus-learn-2/reminder"
   },
   {
-    "Label": "2021-02 Kick Starter Initial (40 days)",
     "name": "Kick Starter Initial (40 days)",
     "sent": 772,
     "opens": 466,
@@ -2355,7 +2198,6 @@
     "url": "https://bit.ly/3vYjWHk"
   },
   {
-    "Label": "20210825 Retirement Webinar Reminder 2 Batch 2",
     "name": "Retirement Webinar Reminder 2 Batch 2",
     "sent": 5927,
     "opens": 2004,
@@ -2370,7 +2212,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/aug-2/reminder-2"
   },
   {
-    "Label": "20210824 RIF Webinar Invite",
     "name": "RIF Webinar Invite",
     "sent": 32911,
     "opens": 16258,
@@ -2385,7 +2226,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/rif-aug/invite"
   },
   {
-    "Label": "20210823 Insurance Premium Changes [Generic]",
     "name": "Insurance Premium Changes [Generic]",
     "sent": 130430,
     "opens": 56948,
@@ -2400,7 +2240,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/insurance-premium-changes/generic/index.html"
   },
   {
-    "Label": "20210823 Insurance Premium Changes [Electech]",
     "name": "Insurance Premium Changes [Electech]",
     "sent": 4647,
     "opens": 1937,
@@ -2415,7 +2254,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/insurance-premium-changes/electech/index.html"
   },
   {
-    "Label": "20210823 Insurance Premium Changes [Non-Manual/Professional]",
     "name": "Insurance Premium Changes [Non-Manual/Professional]",
     "sent": 47343,
     "opens": 26744,
@@ -2430,7 +2268,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/insurance-premium-changes/non-manual-professional/index.html"
   },
   {
-    "Label": "20210823 Insurance Premium Changes [Manual]",
     "name": "Insurance Premium Changes [Manual]",
     "sent": 355762,
     "opens": 160709,
@@ -2445,7 +2282,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/insurance-premium-changes/manual/index.html"
   },
   {
-    "Label": "20210820 Cbus Learn Invite batch 2",
     "name": "Cbus Learn Invite batch 2",
     "sent": 15981,
     "opens": 6568,
@@ -2460,7 +2296,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/aug-cbus-learn-2/invite"
   },
   {
-    "Label": "20210818 Retirement Webinar Reminder 1 batch 2",
     "name": "Retirement Webinar Reminder 1 batch 2",
     "sent": 8199,
     "opens": 2681,
@@ -2475,7 +2310,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/aug-2/reminder-1"
   },
   {
-    "Label": "20210816 Retirement Webinar Reminder 2 batch 1",
     "name": "Retirement Webinar Reminder 2 batch 1",
     "sent": 8210,
     "opens": 3182,
@@ -2490,7 +2324,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/aug-1/reminder-2"
   },
   {
-    "Label": "20210812 Retirement Webinar Invite batch 2",
     "name": "Retirement Webinar Invite batch 2",
     "sent": 8192,
     "opens": 3478,
@@ -2505,7 +2338,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/aug-2/invite"
   },
   {
-    "Label": "20210809 Retirement Webinar Reminder 1 batch 1",
     "name": "Retirement Webinar Reminder 1 batch 1",
     "sent": 8149,
     "opens": 3191,
@@ -2520,7 +2352,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/aug-1/reminder-1"
   },
   {
-    "Label": "20210805 Retail Super Exits",
     "name": "Retail Super Exits",
     "sent": 6945,
     "opens": 2792,
@@ -2535,7 +2366,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/retail-super-exits/email-1"
   },
   {
-    "Label": "20210804 Cbus Learn Reminder batch 1",
     "name": "Cbus Learn Reminder batch 1",
     "sent": 15910,
     "opens": 6783,
@@ -2550,7 +2380,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/aug-cbus-learn-2/reminder"
   },
   {
-    "Label": "20210804 Other Webinar EOFY reminder 1 wave 2",
     "name": "Other Webinar EOFY reminder 1 wave 2",
     "sent": 63840,
     "opens": 43586,
@@ -2565,7 +2394,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/aug-eofy-performance/"
   },
   {
-    "Label": "20210803 Retirement Webinar Invite batch 1",
     "name": "Retirement Webinar Invite batch 1",
     "sent": 8221,
     "opens": 3647,
@@ -2580,7 +2408,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/aug-1/invite"
   },
   {
-    "Label": "20210803 AusSuper Exits eDM",
     "name": "Australian Super Exits",
     "sent": 3940,
     "opens": 1317,
@@ -2595,7 +2422,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/australian-super-exits/email-1"
   },
   {
-    "Label": "20210803 Other Webinar EOFY reminder 1",
     "name": "Other Webinar EOFY reminder 1",
     "sent": 49989,
     "opens": 34101,
@@ -2610,7 +2436,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/aug-eofy-performance/"
   },
   {
-    "Label": "20210802 Other Webinar Reminder 1",
     "name": "Other Webinar Reminder 1",
     "sent": 760,
     "opens": 458,
@@ -2625,7 +2450,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/aug/reminder-1"
   },
   {
-    "Label": "20210729 Cbus Learn Invite batch 1",
     "name": "Cbus Learn Invite batch 1",
     "sent": 15980,
     "opens": 7000,
@@ -2640,7 +2464,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-1/invite"
   },
   {
-    "Label": "20210729 Other Webinar Reminder 2",
     "name": "Other Webinar Reminder 2",
     "sent": 14679,
     "opens": 6555,
@@ -2655,7 +2478,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/july/reminder-2"
   },
   {
-    "Label": "20210727 Other Webinar Invite",
     "name": "Other Webinar Invite",
     "sent": 773,
     "opens": 491,
@@ -2670,7 +2492,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-cbus-learn-2/invite"
   },
   {
-    "Label": "2021-JUL -  FYOB 4 month Consolidate Super  - [25-39yrs]",
     "name": "FYOB 4 month Consolidate Super  - [25-39yrs]",
     "sent": 523,
     "opens": 246,
@@ -2685,7 +2506,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/4-month/25-39"
   },
   {
-    "Label": "20210726 Retirement Webinar Reminder 2 batch 2",
     "name": "Retirement Webinar Reminder 2 batch 2",
     "sent": 14663,
     "opens": 6406,
@@ -2700,7 +2520,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-2/reminder-2"
   },
   {
-    "Label": "20210723 Claiming Tax Deduction",
     "name": "Claiming a Tax dedution",
     "sent": 18369,
     "opens": 12369,
@@ -2715,7 +2534,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/claiming-tax-deduction/"
   },
   {
-    "Label": "20210723 Claiming Tax Deduction [67+]",
     "name": "Claiming a Tax dedution",
     "sent": 399,
     "opens": 287,
@@ -2730,7 +2548,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/claiming-tax-deduction/"
   },
   {
-    "Label": "20210723 Claiming Tax Deduction [67+]",
     "name": "Claiming a Tax dedution",
     "sent": 8569,
     "opens": 5700,
@@ -2745,7 +2562,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/claiming-tax-deduction/"
   },
   {
-    "Label": "20210723 Claiming Tax Deduction",
     "name": "Claiming a Tax dedution",
     "sent": 794,
     "opens": 578,
@@ -2760,7 +2576,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/claiming-tax-deduction/"
   },
   {
-    "Label": "20210721 - EOFY performance eDM Day 4",
     "name": "EOFY performance eDM Day 4",
     "sent": 149544,
     "opens": 64754,
@@ -2775,7 +2590,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/eofy-performance/"
   },
   {
-    "Label": "20210720 Cbus Learn Reminder batch 2",
     "name": "Cbus Learn Reminder batch 2",
     "sent": 11809,
     "opens": 5228,
@@ -2790,7 +2604,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-cbus-learn-2/reminder"
   },
   {
-    "Label": "20210720 - EOFY performance eDM Day 3",
     "name": "EOFY performance eDM Day 3",
     "sent": 122481,
     "opens": 53110,
@@ -2805,7 +2618,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/eofy-performance/"
   },
   {
-    "Label": "20210719 Retirement Webinar Reminder 1 batch 2",
     "name": "Retirement Webinar Reminder 1 batch 2",
     "sent": 14545,
     "opens": 6350,
@@ -2820,7 +2632,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-2/reminder-1"
   },
   {
-    "Label": "20210719 - EOFY performance eDM Day 2",
     "name": "EOFY performance eDM Day 2",
     "sent": 96197,
     "opens": 43403,
@@ -2835,7 +2646,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/eofy-performance/"
   },
   {
-    "Label": "20210716 - EOFY performance eDM Day 1",
     "name": "EOFY performance eDM Day 1",
     "sent": 189683,
     "opens": 80507,
@@ -2850,7 +2660,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/eofy-performance/"
   },
   {
-    "Label": "20210714 Cbus Learn Invite batch 2",
     "name": "Cbus Learn Invite batch 2",
     "sent": 11845,
     "opens": 5445,
@@ -2865,7 +2674,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-cbus-learn-2/invite"
   },
   {
-    "Label": "20210714 Retirement Webinar Reminder 2 batch 1",
     "name": "Retirement Webinar Reminder 2 batch 1",
     "sent": 14600,
     "opens": 6516,
@@ -2880,7 +2688,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-1/reminder-2"
   },
   {
-    "Label": "20210713 Retirement Webinar Invite batch 2",
     "name": "Retirement Webinar Invite batch 2",
     "sent": 14694,
     "opens": 7213,
@@ -2895,7 +2702,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-1/invite"
   },
   {
-    "Label": "20210708 Other Webinar Reminder 1",
     "name": "Other Webinar Reminder 1",
     "sent": 14710,
     "opens": 6913,
@@ -2910,7 +2716,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/july/reminder"
   },
   {
-    "Label": "20210707 Retirement Webinar Reminder 1 batch 1",
     "name": "Retirement Webinar Reminder 1 batch 1",
     "sent": 14605,
     "opens": 6264,
@@ -2925,7 +2730,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-1/invite"
   },
   {
-    "Label": "20210706 Cbus Learn Reminder batch 1",
     "name": "Cbus Learn Reminder batch 1",
     "sent": 11810,
     "opens": 5497,
@@ -2940,7 +2744,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-cbus-learn/reminder"
   },
   {
-    "Label": "20210701 Retirement Webinar Invite batch 1",
     "name": "Retirement Webinar Invite batch 1",
     "sent": 14784,
     "opens": 7201,
@@ -2955,7 +2758,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-1/reminder-1"
   },
   {
-    "Label": "20210630 Cbus Learn Invite",
     "name": "Cbus Learn Invite",
     "sent": 11917,
     "opens": 5644,
@@ -2970,7 +2772,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-cbus-learn/invite"
   },
   {
-    "Label": "20210628 Other Webinar Invite eDM",
     "name": "Other Webinar Invite",
     "sent": 14741,
     "opens": 6117,
@@ -2985,7 +2786,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/june/invite"
   },
   {
-    "Label": "20210628 Other Webinar Reminder 2",
     "name": "Other Webinar Reminder 2",
     "sent": 7007,
     "opens": 3543,
@@ -3000,7 +2800,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/june/reminder-2"
   },
   {
-    "Label": "20210628 RIF Reminder eDM",
     "name": "RIF Reminder",
     "sent": 8069,
     "opens": 4247,
@@ -3015,7 +2814,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/rif-june/reminder"
   },
   {
-    "Label": "20210623 retirement reminder 2 (Batch 2)",
     "name": "Retirement Webinars Reminder 2 June (Batch 2)",
     "sent": 14574,
     "opens": 6377,
@@ -3030,7 +2828,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-2/reminder-2"
   },
   {
-    "Label": "20210622 retirement reminder (Cbus Learn) Batch 2",
     "name": "Cbus Learn - June reminder - Batch 2",
     "sent": 6889,
     "opens": 3289,
@@ -3045,7 +2842,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-cbus-learn-2/reminder"
   },
   {
-    "Label": "20210622 RIF-Invite",
     "name": "RIF Reminder Invite",
     "sent": 8228,
     "opens": 5000,
@@ -3060,7 +2856,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/rif-june/invite"
   },
   {
-    "Label": "20210618 SIS Late payment",
     "name": "SIS Late Payments",
     "sent": 14,
     "opens": 7,
@@ -3075,7 +2870,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/sis-late-payment/"
   },
   {
-    "Label": "20210617 Other Webinar Reminder 1",
     "name": "Other Webinar Reminder 1",
     "sent": 6703,
     "opens": 2898,
@@ -3090,7 +2884,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/june/reminder"
   },
   {
-    "Label": "20210617 retirement-reminder-1 (Batch 2)",
     "name": "Retirement Webinars Reminder-1 (Batch 2)",
     "sent": 14550,
     "opens": 6271,
@@ -3105,7 +2898,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-1/invite"
   },
   {
-    "Label": "20210616 Cbus Learn retirement invite [Batch 2]",
     "name": "Cbus Learn retirement invite [Batch 2]",
     "sent": 6977,
     "opens": 3447,
@@ -3120,7 +2912,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/july-cbus-learn/reminder"
   },
   {
-    "Label": "20210615 retirement-reminder-2",
     "name": "Retirement Webinars Reminder 2",
     "sent": 14513,
     "opens": 6092,
@@ -3135,7 +2926,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-1/reminder-2"
   },
   {
-    "Label": "20210610 retirement-invite (Batch 2)",
     "name": "Retirement invite (Batch 2)",
     "sent": 14746,
     "opens": 6985,
@@ -3150,7 +2940,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-2/invite"
   },
   {
-    "Label": "20210610 Women in Super Reminder eDM",
     "name": "Women in Super Reminder",
     "sent": 126,
     "opens": 64,
@@ -3165,7 +2954,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/super-women/may/invite"
   },
   {
-    "Label": "20210608-retirement-reminder (Cbus Learn) reminder",
     "name": "Cbus Learn - Reminder",
     "sent": 6940,
     "opens": 3294,
@@ -3180,7 +2968,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-cbus-learn/reminder"
   },
   {
-    "Label": "2020608 TFN Notice (B) challenger",
     "name": "EOFY TFN (B)",
     "sent": 566,
     "opens": 285,
@@ -3195,7 +2982,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/tfn-notice/v2"
   },
   {
-    "Label": "20210608 TFN Notice (A) champion",
     "name": "EOFY TFN (A)",
     "sent": 567,
     "opens": 310,
@@ -3210,7 +2996,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/tfn-notice/"
   },
   {
-    "Label": "20210608 SIS Late payment",
     "name": "SIS Late Payments",
     "sent": 1081,
     "opens": 787,
@@ -3225,7 +3010,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/sis-late-payment/"
   },
   {
-    "Label": "20210607 retirement-reminder-1",
     "name": "Retirement Reminder June",
     "sent": 14549,
     "opens": 6407,
@@ -3240,7 +3024,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-1/reminder-2"
   },
   {
-    "Label": "20210604 Women in Super Invite",
     "name": "Women in Super Invite",
     "sent": 139,
     "opens": 83,
@@ -3255,7 +3038,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/super-women/may/invite"
   },
   {
-    "Label": "2021-06 - Consolidate my super",
     "name": "Consolidate my super",
     "sent": 66056,
     "opens": 27664,
@@ -3270,7 +3052,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/"
   },
   {
-    "Label": "20210603 Other Webinar Invite",
     "name": "Other Webinar Invite",
     "sent": 7268,
     "opens": 3397,
@@ -3285,7 +3066,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/june/invite"
   },
   {
-    "Label": "20210602-retirement-invite batch 1 (Cbus Learn)",
     "name": "Cbus Learn - Invite",
     "sent": 7097,
     "opens": 3277,
@@ -3300,7 +3080,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-cbus-learn/invite"
   },
   {
-    "Label": "20210601 retirement-invite",
     "name": "Retirement Webinars Invite",
     "sent": 14781,
     "opens": 6962,
@@ -3315,7 +3094,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/june-1/invite"
   },
   {
-    "Label": "",
     "name": "Spanner over 30 no insurance",
     "sent": 27008,
     "opens": 9674,
@@ -3330,7 +3108,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/insurance-campaign/4.html"
   },
   {
-    "Label": "",
     "name": "Spanner with insurance over 30",
     "sent": 256939,
     "opens": 93390,
@@ -3345,7 +3122,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/insurance-campaign/2.html"
   },
   {
-    "Label": "",
     "name": "EOFY Dates (Correction)",
     "sent": 61506,
     "opens": 24662,
@@ -3360,7 +3136,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/employer/eofy/correction"
   },
   {
-    "Label": "",
     "name": "Spanner under 30 no insurance",
     "sent": 22108,
     "opens": 6887,
@@ -3375,7 +3150,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/insurance-campaign/3.html"
   },
   {
-    "Label": "",
     "name": "Spanner under 30 w insurance",
     "sent": 129079,
     "opens": 36086,
@@ -3390,7 +3164,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/insurance-campaign/1.html"
   },
   {
-    "Label": "",
     "name": "EOFY Dates",
     "sent": 61591,
     "opens": 25719,
@@ -3405,7 +3178,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/employer/eofy/"
   },
   {
-    "Label": "",
     "name": "Retirement-reminder-1 (batch 2)",
     "sent": 3795,
     "opens": 1593,
@@ -3420,7 +3192,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-2/reminder.html"
   },
   {
-    "Label": "",
     "name": "Cbus Learn - May Reminder Batch 2",
     "sent": 13898,
     "opens": 6163,
@@ -3435,7 +3206,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-cbus-learn-2/reminder.html"
   },
   {
-    "Label": "",
     "name": "QLD Brand campaign",
     "sent": 30185,
     "opens": 10246,
@@ -3450,7 +3220,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/qld-update/email-01"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars May - Invite B2",
     "sent": 3842,
     "opens": 1705,
@@ -3465,7 +3234,6 @@
     "url": "https://tinyurl.com/e-umbrella-insurance"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars May Reminder 2",
     "sent": 3764,
     "opens": 1489,
@@ -3480,7 +3248,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-1/reminder-2"
   },
   {
-    "Label": "",
     "name": "SIS May (Seg5)",
     "sent": 39595,
     "opens": 18078,
@@ -3495,7 +3262,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-may/4"
   },
   {
-    "Label": "",
     "name": "Webinar (Other)| Reminder",
     "sent": 35544,
     "opens": 18808,
@@ -3510,7 +3276,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/may/reminder"
   },
   {
-    "Label": "",
     "name": "SIS MAY Seg 4",
     "sent": 7484,
     "opens": 3778,
@@ -3525,7 +3290,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-may/3"
   },
   {
-    "Label": "",
     "name": "Invite (Cbus Learn) Batch 2",
     "sent": 14121,
     "opens": 6973,
@@ -3540,7 +3304,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-cbus-learn-2/invite"
   },
   {
-    "Label": "",
     "name": "SIS MAY Seg 3 (day 1)",
     "sent": 3061,
     "opens": 1734,
@@ -3555,7 +3318,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-may/2"
   },
   {
-    "Label": "",
     "name": "SIS MAY Seg 3 (day 2)",
     "sent": 3066,
     "opens": 1784,
@@ -3570,7 +3332,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-may/2"
   },
   {
-    "Label": "",
     "name": "SIS MAY Seg 1",
     "sent": 1896,
     "opens": 1254,
@@ -3585,7 +3346,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-may/1"
   },
   {
-    "Label": "",
     "name": "SIS MAY Seg 2",
     "sent": 728,
     "opens": 321,
@@ -3600,7 +3360,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-may/2"
   },
   {
-    "Label": "",
     "name": "SIS MAY Seg 2 (Wave 2)",
     "sent": 497,
     "opens": 231,
@@ -3615,7 +3374,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sis-may/2"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars May",
     "sent": 3774,
     "opens": 1589,
@@ -3630,7 +3388,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-1/invite"
   },
   {
-    "Label": "",
     "name": "Webinar Budget Invite all other states",
     "sent": 80027,
     "opens": 48529,
@@ -3645,7 +3402,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/may-budget/"
   },
   {
-    "Label": "",
     "name": "Consolidation MAY",
     "sent": 10037,
     "opens": 5922,
@@ -3660,7 +3416,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/"
   },
   {
-    "Label": "",
     "name": "Webinar Budget Invite WA",
     "sent": 12968,
     "opens": 8106,
@@ -3675,7 +3430,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/may-budget/"
   },
   {
-    "Label": "",
     "name": "Webinar (Other)| Invite",
     "sent": 35595,
     "opens": 18793,
@@ -3690,7 +3444,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/other-webinars/may/invite"
   },
   {
-    "Label": "",
     "name": "Deemed Employer",
     "sent": 4942,
     "opens": 519,
@@ -3705,7 +3458,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/employer/deemed"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars Invite",
     "sent": 3829,
     "opens": 1826,
@@ -3720,7 +3472,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-1/invite"
   },
   {
-    "Label": "",
     "name": "Cbus Learn - May",
     "sent": 14157,
     "opens": 6686,
@@ -3735,7 +3486,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-cbus-learn/invite"
   },
   {
-    "Label": "",
     "name": "Cbus Learn - May Invite",
     "sent": 14270,
     "opens": 7117,
@@ -3750,7 +3500,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/may-cbus-learn/invite"
   },
   {
-    "Label": "",
     "name": "Deemed Employer",
     "sent": 6720,
     "opens": 1793,
@@ -3765,7 +3514,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/employer/deemed/"
   },
   {
-    "Label": "",
     "name": "White Collar Webinar | Reminder 2 (Batch 2)",
     "sent": 6530,
     "opens": 2665,
@@ -3780,7 +3528,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/april-2/reminder-2"
   },
   {
-    "Label": "",
     "name": "White Collar Webinar | Reminder 1 (Batch 2)",
     "sent": 6561,
     "opens": 2964,
@@ -3795,7 +3542,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/april-2/reminder-1"
   },
   {
-    "Label": "",
     "name": "April SMSF",
     "sent": 6430,
     "opens": 2600,
@@ -3810,7 +3556,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/smsf/"
   },
   {
-    "Label": "",
     "name": "White Collar Webinar | Invite (Batch 2)",
     "sent": 6606,
     "opens": 2999,
@@ -3825,7 +3570,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/april-2/invite"
   },
   {
-    "Label": "",
     "name": "Additional contributions campaign",
     "sent": 13120,
     "opens": 6286,
@@ -3840,7 +3584,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sal-sac-and-conts"
   },
   {
-    "Label": "",
     "name": "Additional contributions campaign",
     "sent": 12875,
     "opens": 5755,
@@ -3855,7 +3598,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/sal-sac-and-conts/contributions"
   },
   {
-    "Label": "",
     "name": "White Collar Webinar | Reminder 2",
     "sent": 6595,
     "opens": 2810,
@@ -3870,7 +3612,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/april-2/reminder-2"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars April | Follow Up",
     "sent": 8336,
     "opens": 3529,
@@ -3885,7 +3626,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/april/follow-up"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars April | Follow Up (Non WA members)",
     "sent": 147,
     "opens": 95,
@@ -3900,7 +3640,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/april/follow-up"
   },
   {
-    "Label": "",
     "name": "White Collar Webinar | April| Invite",
     "sent": 6745,
     "opens": 3014,
@@ -3915,7 +3654,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/april/invite"
   },
   {
-    "Label": "",
     "name": "Cbus Learn Webinar April Reminder",
     "sent": 178,
     "opens": 127,
@@ -3930,7 +3668,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/april/invite"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars April",
     "sent": 8362,
     "opens": 3684,
@@ -3945,7 +3682,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/april-2/reminder"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars April",
     "sent": 8353,
     "opens": 3651,
@@ -3960,7 +3696,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/april-2/reminder"
   },
   {
-    "Label": "",
     "name": "Cbus Learn Webinar April Invite",
     "sent": 8415,
     "opens": 4278,
@@ -3975,7 +3710,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/april-2/invite"
   },
   {
-    "Label": "",
     "name": "RBA Cash Rate",
     "sent": 8998,
     "opens": 4509,
@@ -3990,7 +3724,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/rba-cash-rate"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars April Invite",
     "sent": 8419,
     "opens": 3871,
@@ -4005,7 +3738,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/april/invite"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars March Follow up [Series 2]",
     "sent": 15530,
     "opens": 6077,
@@ -4020,7 +3752,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/mar/follow-up"
   },
   {
-    "Label": "",
     "name": "White Collar Webinar Super Women S2 | Reminder 2",
     "sent": 19208,
     "opens": 7555,
@@ -4035,7 +3766,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/super-women/serries-2/reminder-2"
   },
   {
-    "Label": "",
     "name": "Data-Capture-Seg-5 (accum)",
     "sent": 6261,
     "opens": 2445,
@@ -4050,7 +3780,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12_mbr-data-capture__seg5-catchaccum"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars March  [Series 2]",
     "sent": 15606,
     "opens": 6181,
@@ -4065,7 +3794,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/mar-2/reminder"
   },
   {
-    "Label": "",
     "name": "Unclaimed monies eDM day 2",
     "sent": 4152,
     "opens": 1717,
@@ -4080,7 +3808,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/unclaimed-monies"
   },
   {
-    "Label": "",
     "name": "Unclaimed monies eDM WA day 2",
     "sent": 504,
     "opens": 204,
@@ -4095,7 +3822,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/unclaimed-monies"
   },
   {
-    "Label": "",
     "name": "Unclaimed monies eDM day 1",
     "sent": 4095,
     "opens": 1767,
@@ -4110,7 +3836,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/unclaimed-monies"
   },
   {
-    "Label": "",
     "name": "Unclaimed monies eDM WA day 1",
     "sent": 541,
     "opens": 210,
@@ -4125,7 +3850,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/unclaimed-monies"
   },
   {
-    "Label": "",
     "name": "Webinar Super Women S2 | Reminder 1",
     "sent": 19282,
     "opens": 7877,
@@ -4140,7 +3864,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/super-women/serries-2/reminder-3"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars March [Series 2] Invite",
     "sent": 15722,
     "opens": 6296,
@@ -4155,7 +3878,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/mar-2/follow-up"
   },
   {
-    "Label": "",
     "name": "Pre-retiree Information Forum",
     "sent": 51689,
     "opens": 22595,
@@ -4170,7 +3892,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/rif-mar/invite.html"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars March (Follow Up)",
     "sent": 12437,
     "opens": 4956,
@@ -4185,7 +3906,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/mar/follow-up"
   },
   {
-    "Label": "",
     "name": "Webinar Super Women S2 | Invite",
     "sent": 19357,
     "opens": 7603,
@@ -4200,7 +3920,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/super-women/serries-2/reminder-3"
   },
   {
-    "Label": "",
     "name": "Pre-retiree  50-65 Invite",
     "sent": 53407,
     "opens": 22271,
@@ -4215,7 +3934,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/rif-mar/invite.html"
   },
   {
-    "Label": "",
     "name": "White Collar Webinar Super Women - Reminder 2",
     "sent": 23514,
     "opens": 9398,
@@ -4230,7 +3948,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/super-women/serries-2/reminder-2"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars March",
     "sent": 12542,
     "opens": 5547,
@@ -4245,7 +3962,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/mar/invite"
   },
   {
-    "Label": "",
     "name": "White Collar Webinar Super Women - Reminder 1",
     "sent": 23595,
     "opens": 8114,
@@ -4260,7 +3976,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/super-women/serries-1/white-collar-mar-super-women-reminder-1"
   },
   {
-    "Label": "",
     "name": "Cash Exits [Partial]",
     "sent": 6040,
     "opens": 3094,
@@ -4275,7 +3990,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/cash-exits/"
   },
   {
-    "Label": "",
     "name": "Cash Exits [Propensity]",
     "sent": 2357,
     "opens": 1323,
@@ -4290,7 +4004,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/cash-exits/"
   },
   {
-    "Label": "",
     "name": "Super Summaries  [Building wealth]",
     "sent": 1801,
     "opens": 731,
@@ -4305,7 +4018,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-summaries/email-3"
   },
   {
-    "Label": "",
     "name": "Super Summaries  [Building wealth] (Has Address)",
     "sent": 57075,
     "opens": 35886,
@@ -4320,7 +4032,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-summaries/email-4-sis"
   },
   {
-    "Label": "",
     "name": "Super Summaries [Starting out]",
     "sent": 3542,
     "opens": 1144,
@@ -4335,7 +4046,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-summaries/email-1"
   },
   {
-    "Label": "",
     "name": "Super Summaries [Working members]",
     "sent": 6487,
     "opens": 2317,
@@ -4350,7 +4060,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-summaries/email-2"
   },
   {
-    "Label": "",
     "name": "Retirement Webinars March",
     "sent": 12655,
     "opens": 5967,
@@ -4365,7 +4074,6 @@
     "url": "https://email-gallery.netlify.app//emails/2021/webinars/retirement/mar/invite"
   },
   {
-    "Label": "",
     "name": "Women and Super Webinar Invite 1 (A)",
     "sent": 11950,
     "opens": 4260,
@@ -4380,7 +4088,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/super-women/serries-1/white-collar-mar-super-women"
   },
   {
-    "Label": "",
     "name": "Women and Super Webinar Invite 1 (B)",
     "sent": 11946,
     "opens": 4720,
@@ -4395,7 +4102,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/super-women/serries-1/white-collar-mar-super-women"
   },
   {
-    "Label": "20210226 White Collar Webinar Reminder 1",
     "name": "White Collar Webinar Reminder 1",
     "sent": 18949,
     "opens": 8864,
@@ -4410,7 +4116,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/white-collar-feb-1"
   },
   {
-    "Label": "20210225 Super Summaries - Email 2 [Working members] (Has Address)",
     "name": "Super Summaries - Email 2 [Working members] (Has Address)",
     "sent": 123466,
     "opens": 61820,
@@ -4425,7 +4130,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-summaries/email-2"
   },
   {
-    "Label": "20210224 Super Summaries - Email 4 [SIS]",
     "name": "Super Summaries - Email 4 [SIS]",
     "sent": 22,
     "opens": 4,
@@ -4440,7 +4144,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-summaries/email-4-sis"
   },
   {
-    "Label": "20210224 Super Summaries - Email 4 [SIS] (Has Address)",
     "name": "Super Summaries - Email 4 [SIS] (Has Address)",
     "sent": 5370,
     "opens": 3429,
@@ -4455,7 +4158,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-summaries/email-4-sis"
   },
   {
-    "Label": "20210223 White Collar Webinar Invite 1",
     "name": "White Collar Webinars Invite",
     "sent": 19078,
     "opens": 8814,
@@ -4470,7 +4172,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/white-collar-feb-1"
   },
   {
-    "Label": "20210222 Retirement Webinar Reminder 2",
     "name": "Retirement Webinar Reminder 2",
     "sent": 14037,
     "opens": 5511,
@@ -4485,7 +4186,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/feb/reminder-1"
   },
   {
-    "Label": "20210222 Super Summaries - email-1 [Starting out] (Has address)",
     "name": "Super Summaries - email-1 [Starting out] (Has address)",
     "sent": 82463,
     "opens": 33887,
@@ -4500,7 +4200,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/comms/super-summaries/email-1"
   },
   {
-    "Label": "20210217 White Collar Webinar Invite 2",
     "name": "White Collar Invite Webinars [2]",
     "sent": 14555,
     "opens": 5914,
@@ -4515,7 +4214,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/white-collar-feb-2"
   },
   {
-    "Label": "2021-02 Win Back eDM",
     "name": "Super Exits Win Back",
     "sent": 5082,
     "opens": 2336,
@@ -4530,7 +4228,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/win-back/email-1"
   },
   {
-    "Label": "20210215 Feb Retirement Webinar Invite 2",
     "name": "Retirement Webinars Invite February",
     "sent": 14085,
     "opens": 6340,
@@ -4545,7 +4242,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/feb/reminder-1.html"
   },
   {
-    "Label": "2021-02-12-retirement-reminder-2-follow-up",
     "name": "Retirement Webinars February",
     "sent": 11114,
     "opens": 4619,
@@ -4560,7 +4256,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/feb/reminder-1.html"
   },
   {
-    "Label": "2021-02-11 Retail Super Exits",
     "name": "Retail Exits",
     "sent": 3658,
     "opens": 1396,
@@ -4575,7 +4270,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/retail-super-exits/email-1"
   },
   {
-    "Label": "2021-02-11 Australian Super Exits",
     "name": "Australian Super Exits",
     "sent": 2714,
     "opens": 739,
@@ -4590,7 +4284,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/member-retention/australian-super-exits/email-1"
   },
   {
-    "Label": "20210211 Retirement Webinar Invite 1",
     "name": "Retirement Webinars Invite  February",
     "sent": 14164,
     "opens": 6624,
@@ -4605,7 +4298,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/feb-2/invite"
   },
   {
-    "Label": "20210209 White Collar Member Webinar Invite 1",
     "name": "White Collar Member Webinar Invite",
     "sent": 14887,
     "opens": 5929,
@@ -4620,7 +4312,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/white-collar-feb-1"
   },
   {
-    "Label": "2021-02-retirement-reminder-1",
     "name": "Retirement Webinars Reminder February",
     "sent": 11383,
     "opens": 4325,
@@ -4635,7 +4326,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/feb/reminder-1"
   },
   {
-    "Label": "20210202 Data-Capture-Seg-6 (SIS)",
     "name": "Member Data Capture - Seg-6 (SIS)",
     "sent": 271,
     "opens": 201,
@@ -4650,7 +4340,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12_mbr-data-capture__seg6-autosis_subjecta"
   },
   {
-    "Label": "20210202 Data-Capture-Seg-5 (accum)",
     "name": "Member Data Capture - Seg-5 (accum)",
     "sent": 23544,
     "opens": 12317,
@@ -4665,7 +4354,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12_mbr-data-capture__seg5-catchaccum"
   },
   {
-    "Label": "2021-02-retirement-invite",
     "name": "Retirement Webinars Invite February",
     "sent": 11445,
     "opens": 5315,
@@ -4680,7 +4368,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/retirement/feb-2/invite"
   },
   {
-    "Label": "",
     "name": "White Collar Invite",
     "sent": 3444,
     "opens": 1493,
@@ -4695,7 +4382,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/white-collar-january-email-2.html"
   },
   {
-    "Label": "",
     "name": "White Collar Invite",
     "sent": 3458,
     "opens": 1617,
@@ -4710,7 +4396,6 @@
     "url": "https://email-gallery.netlify.app/emails/2021/webinars/white-collar-webinars-2021/white-collar-january-email-1.html"
   },
   {
-    "Label": "",
     "name": "Member notifications introduction",
     "sent": 316061,
     "opens": 136213,
@@ -4725,7 +4410,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/0f1e437f-aad7-4c15-a946-a1c3b6dbfbec/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "Fee Cap Refund Error",
     "sent": 653,
     "opens": 299,
@@ -4740,7 +4424,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12-member-fee-cap.html"
   },
   {
-    "Label": "",
     "name": "Ascot Wealth Management",
     "sent": 32,
     "opens": 18,
@@ -4755,7 +4438,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12-ascot-wealth.html"
   },
   {
-    "Label": "",
     "name": "Member notifications introduction",
     "sent": 289862,
     "opens": 119183,
@@ -4770,7 +4452,6 @@
     "url": "https://windows10mail.capture.litmuscdn.com/0f1e437f-aad7-4c15-a946-a1c3b6dbfbec/results/windows10mail-vertical-allowed-1366.png"
   },
   {
-    "Label": "",
     "name": "White Collar Invite",
     "sent": 7572,
     "opens": 2995,
@@ -4785,7 +4466,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12-event-white-collar-invite"
   },
   {
-    "Label": "",
     "name": "Retirement Super in your 40s Reminder (#17)",
     "sent": 37427,
     "opens": 11947,
@@ -4800,7 +4480,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12-event_webinar-40s-reminder.html"
   },
   {
-    "Label": "",
     "name": "White Collar Invite",
     "sent": 7587,
     "opens": 2465,
@@ -4815,7 +4494,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12-event-white-collar-invite"
   },
   {
-    "Label": "",
     "name": "Retirement Super in your 40s (#17)",
     "sent": 37678,
     "opens": 14719,
@@ -4830,7 +4508,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-12-event_webinar-40s-invite.html"
   },
   {
-    "Label": "",
     "name": "Retirement Multi Reminder (#16)",
     "sent": 36135,
     "opens": 14498,
@@ -4845,7 +4522,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-11-event_webinar-retirement-multi-event-16-reminder.html"
   },
   {
-    "Label": "",
     "name": "Retirement Super in your 40s (#15) - reminder",
     "sent": 36458,
     "opens": 13739,
@@ -4860,7 +4536,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-11-event-15-reminder.html"
   },
   {
-    "Label": "",
     "name": "Retirement Multi Invite (#16)",
     "sent": 31742,
     "opens": 14969,
@@ -4875,7 +4550,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-11-event_webinar-retirement-multi-event-16"
   },
   {
-    "Label": "",
     "name": "Retirement Super in your 40s (#15) - invite",
     "sent": 18420,
     "opens": 7798,
@@ -4890,7 +4564,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/event-single"
   },
   {
-    "Label": "",
     "name": "Retirement Super in your 40s - invite",
     "sent": 18375,
     "opens": 8090,
@@ -4905,7 +4578,6 @@
     "url": "https://email-gallery.netlify.app/emails/templates/2020/event-single"
   },
   {
-    "Label": "",
     "name": "White Collar (A/B 4pm)",
     "sent": 1344,
     "opens": 597,
@@ -4920,7 +4592,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-11-event-white-collar-16-30.html"
   },
   {
-    "Label": "",
     "name": "White Collar (A/B 7pm)",
     "sent": 1351,
     "opens": 600,
@@ -4935,7 +4606,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-11-event-white-collar-16-30.html"
   },
   {
-    "Label": "",
     "name": "SMSF - Get the Facts Campaign",
     "sent": 8292,
     "opens": 3603,
@@ -4950,7 +4620,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-mbr_smsf.html"
   },
   {
-    "Label": "",
     "name": "SMSF - Get the Facts Campaign (bigpond emails)",
     "sent": 1261,
     "opens": 533,
@@ -4965,7 +4634,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-mbr_smsf.html"
   },
   {
-    "Label": "",
     "name": "Retirement Multi Reminder (#14)",
     "sent": 31745,
     "opens": 14682,
@@ -4980,7 +4648,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-11-event_webinar-retirement-event-14-reminder"
   },
   {
-    "Label": "",
     "name": "Retirement Multi invite (#14)",
     "sent": 33442,
     "opens": 16953,
@@ -4995,7 +4662,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-November-Retirement-Webinar-Series-Initial-Invite.html"
   },
   {
-    "Label": "",
     "name": "White Collar",
     "sent": 2740,
     "opens": 944,
@@ -5010,7 +4676,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-09-White-collar-webinar-reminder-02-10-2020.html"
   },
   {
-    "Label": "",
     "name": "Retirement Multi Reminder (#13)",
     "sent": 6052,
     "opens": 2543,
@@ -5025,7 +4690,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-event_webinar-retirement-multi-event-13-reminder.html"
   },
   {
-    "Label": "",
     "name": "Statements - Video Non RIE - Reminder",
     "sent": 875,
     "opens": 168,
@@ -5040,7 +4704,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/reminder-email-1-rie"
   },
   {
-    "Label": "",
     "name": "Statements - Video Non RIE seg-1 - Reminder",
     "sent": 20683,
     "opens": 2607,
@@ -5055,7 +4718,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/reminder-email-1-rie"
   },
   {
-    "Label": "",
     "name": "Statements - Video Non RIE seg-2 - Reminder",
     "sent": 1392,
     "opens": 237,
@@ -5070,7 +4732,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/reminder-email-1-rie"
   },
   {
-    "Label": "",
     "name": "Statements - Video Non RIE seg-4 - Reminder",
     "sent": 7114,
     "opens": 987,
@@ -5085,7 +4746,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/reminder-email-1-rie"
   },
   {
-    "Label": "",
     "name": "Statements - Video RIE seg-4 - Reminder",
     "sent": 51218,
     "opens": 987,
@@ -5100,7 +4760,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/reminder-email-1-rie"
   },
   {
-    "Label": "",
     "name": "Super brand survey - Reminder",
     "sent": 14744,
     "opens": 5144,
@@ -5115,7 +4774,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-mbr_super-brand-survey.html"
   },
   {
-    "Label": "",
     "name": "White Collar",
     "sent": 2965,
     "opens": 1294,
@@ -5130,7 +4788,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-11-event-white-collar-16-30.html"
   },
   {
-    "Label": "",
     "name": "Super brand survey - Subject line A",
     "sent": 7432,
     "opens": 2932,
@@ -5145,7 +4802,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-mbr_super-brand-survey.html"
   },
   {
-    "Label": "",
     "name": "Super brand survey - Subject line B",
     "sent": 7450,
     "opens": 2915,
@@ -5160,7 +4816,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-mbr_super-brand-survey.html"
   },
   {
-    "Label": "",
     "name": "Retirement Super in your 40s - Reminder",
     "sent": 5305,
     "opens": 1854,
@@ -5175,7 +4830,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/retirement%20webinar%20reminder%2040-49"
   },
   {
-    "Label": "",
     "name": "Campaigns Young Cohort",
     "sent": 152308,
     "opens": 44693,
@@ -5190,7 +4844,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-09-mbr_road-to-recovery--young-cohort"
   },
   {
-    "Label": "",
     "name": "Retirement Multi invite (#13)",
     "sent": 6082,
     "opens": 3007,
@@ -5205,7 +4858,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-10-event_webinar-retirement-multi-event-13.html"
   },
   {
-    "Label": "",
     "name": "Statements - seg-1 (no-address)",
     "sent": 4461,
     "opens": 1227,
@@ -5220,7 +4872,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/email-3-annual-statement"
   },
   {
-    "Label": "",
     "name": "Statements - seg-2 (no-address)",
     "sent": 6897,
     "opens": 2273,
@@ -5235,7 +4886,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/email-3-annual-statement"
   },
   {
-    "Label": "",
     "name": "Statements - seg-3 (no-address)",
     "sent": 1867,
     "opens": 752,
@@ -5250,7 +4900,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/email-3-annual-statement"
   },
   {
-    "Label": "",
     "name": "Retirement Super in your 40s - invite",
     "sent": 5335,
     "opens": 2186,
@@ -5265,7 +4914,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/retirement%20webinar%2040-49"
   },
   {
-    "Label": "",
     "name": "Statements - AMB Invite",
     "sent": 1268,
     "opens": 763,
@@ -5280,7 +4928,6 @@
     "url": "https://email-gallery.netlify.app/emails/2020/2020-08-statements/amb-invite.html"
   },
   {
-    "Label": "",
     "name": "Statements - AMB Invite SIS",
     "sent": 33,
     "opens": 24,
