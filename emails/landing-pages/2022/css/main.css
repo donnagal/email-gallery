@@ -324,6 +324,15 @@ input:checked ~ .radio {
 	height: 12px !important;
 	width: 12px !important;
 }
+/* Desktop Only */
+@media (min-width:770px) { 
+	.date {
+	   background: linear-gradient(to top right, #fff calc(50% - 1px), #d1d5db, #fff calc(50% + 1px));
+	   color: #d1d5db;
+	   cursor: pointer;
+	   pointer-events: none;
+   }
+}
 /* Device */
 @media (max-width:770px) { 
 	input { height: 50px;} 
@@ -331,11 +340,5 @@ input:checked ~ .radio {
 		height: 0;
 		padding: 12px;
 	 }
-	 .past {
-		background: linear-gradient(to top right, #fff calc(50% - 1px), #d1d5db, #fff calc(50% + 1px));
-		color: #d1d5db;
-		cursor: pointer;
-		pointer-events: none;
-	}
 }
 
