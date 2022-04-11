@@ -381,6 +381,37 @@
 
 <!-- Initialize Swiper -->
 <script>
+// 	var swiper = new Swiper(".mySwiper", {
+// 	slidesPerView: 1.1,
+// 	spaceBetween: 10,
+// 	simulateTouch: false,
+// 	pagination: {
+// 		el: ".swiper-pagination",
+// 		clickable: true,
+// 	},
+// 	breakpoints: {
+//         800: {
+//             slidesPerView: 3,
+// 			simulateTouch: true,
+//         }
+//     }
+// });
+// var swiper = new Swiper(".mySwiper2", {
+// 	slidesPerView: 1.1,
+// 	spaceBetween: 10,
+// 	simulateTouch: false,
+// 	pagination: {
+// 		el: ".swiper-pagination",
+// 		clickable: true,
+// 	},
+// 	breakpoints: {
+//         800: {
+//             slidesPerView: 3,
+// 			simulateTouch: true,
+//         }
+//     }
+// });
+
 //  inActive  Date
 $(function() {
     var currentDate = Date.parse((new Date()).toLocaleDateString());
@@ -399,37 +430,6 @@ $(function() {
             $(this).addClass('future');
         }
     });
-});
-
-	var swiper = new Swiper(".mySwiper", {
-	slidesPerView: 1.1,
-	spaceBetween: 10,
-	simulateTouch: false,
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	},
-	breakpoints: {
-        800: {
-            slidesPerView: 3,
-			simulateTouch: true,
-        }
-    }
-});
-var swiper = new Swiper(".mySwiper2", {
-	slidesPerView: 1.1,
-	spaceBetween: 10,
-	simulateTouch: false,
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	},
-	breakpoints: {
-        800: {
-            slidesPerView: 3,
-			simulateTouch: true,
-        }
-    }
 });
 
 </script>
