@@ -381,6 +381,26 @@
 
 <!-- Initialize Swiper -->
 <script>
+//  inActive  Date
+$(function() {
+    var currentDate = Date.parse((new Date()).toLocaleDateString());
+
+    $(".date").each(function() {
+        var specifiedDate = $(this).data('date');
+        var date = Date.parse(specifiedDate);
+        
+        if (!isNaN(date) && date == currentDate) {
+            $(this).addClass('today');
+        }
+        else if(!isNaN(date) && currentDate - date > 0) {
+            $(this).addClass('past');
+        }
+        else {
+            $(this).addClass('future');
+        }
+    });
+});
+
 	var swiper = new Swiper(".mySwiper", {
 	slidesPerView: 1.1,
 	spaceBetween: 10,
@@ -410,26 +430,6 @@ var swiper = new Swiper(".mySwiper2", {
 			simulateTouch: true,
         }
     }
-});
-
-//  inActive  Date
-$(function() {
-    var currentDate = Date.parse((new Date()).toLocaleDateString());
-
-    $(".date").each(function() {
-        var specifiedDate = $(this).data('date');
-        var date = Date.parse(specifiedDate);
-        
-        if (!isNaN(date) && date == currentDate) {
-            $(this).addClass('today');
-        }
-        else if(!isNaN(date) && currentDate - date > 0) {
-            $(this).addClass('past');
-        }
-        else {
-            $(this).addClass('future');
-        }
-    });
 });
 
 </script>
