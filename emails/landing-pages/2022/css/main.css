@@ -331,12 +331,12 @@ input:checked ~ .radio {
 		height: 0;
 		padding: 12px;
 	 }
-	 .past {
+	 /* .past {
 		background: linear-gradient(to top right, #fff calc(50% - 1px), #d1d5db, #fff calc(50% + 1px));
 		color: #d1d5db;
 		cursor: pointer;
 		pointer-events: none;
-	}
+	} */
 }
 
 /* Last published id: 3:41 */
