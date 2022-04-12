@@ -81,7 +81,7 @@
           <div style="Margin-left: 40px;Margin-right: 40px;Margin-top: 20px;">
             <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
               <p class="size-16 mso-body-text" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;text-align: right;" lang="x-size-16">
-                <strong>Member number:</strong><br/> 999999999
+                <strong>Member number:</strong><br/> {{profile._cbus.MemberID}}
               </p>
             </div>
           </div>
@@ -101,7 +101,7 @@
           <!-- Text -->
           <div style="Margin-left: 40px;Margin-right: 40px;">
               <p class="mso-body-text" style="Margin-top: 0;Margin-bottom: 20px;">
-                The right investment choice can significantly boost your retirement savings, that's why we provide options to meet your individual needs. Understand your options, our performance and how we invest your money.
+                {{profile.person.name.firstName}}, the right investment choice can significantly boost your retirement savings, that's why we provide options to meet your individual needs. Understand your options, our performance and how we invest your money.
               </p>
           </div>
 
@@ -291,7 +291,7 @@
     <!-- ### END: TEXT BLOCK (Light Block) ### -->
 
     
- <!-- ### START: 30/70 BLOCK (Contact) ### -->
+ <!-- ### START: 30/70 BLOCK (MS Contact) ### -->
  <div class="layout fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
   <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #F1F1F1;">
   <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #F1F1F1;"><td style="width: 400px" valign="top" class="w360"><![endif]-->
@@ -306,7 +306,7 @@
             <tbody>
               <tr>
               <td width="40">
-                <img role="contact" alt="📞" src="https://www.cbussuper.com.au/content/dam/mediasuper/email/icon-call.png">
+                <img role="contact" alt="📞" src="img/icon-call.png">
               </td>
                 <td style="font-family: Arial,sans-serif;font-size:14px;line-height: 21px;color: #5A5A5A">
                   Call us on <a style="color: #5A5A5A; font-weight: bold;" href="tel:1800 640 886">1800 640 886</a> 
@@ -315,12 +315,12 @@
                 </tr>
               <tr>
                 <td>
-                  <img role="contact" border="0" alt="📧" src="https://www.cbussuper.com.au/content/dam/mediasuper/email/icon-email.png"></td>
+                  <img role="contact" border="0" alt="📧" src="img/icon-email.png"></td>
                 <td style="font-family: Arial,sans-serif;font-size:14px;color: #5A5A5A; padding-bottom: 15px; padding-top: 15px">
                   Email us at <a style="color: #5A5A5A; font-weight: bold;" href="mailto:enq@mediasuper.com.au">enq@mediasuper.com.au</a></td></tr>
               <tr>
                 <td>
-                  <img role="contact" border="0" alt="💻" src="https://www.cbussuper.com.au/content/dam/mediasuper/email/icon-web.png"></td>
+                  <img role="contact" border="0" alt="💻" src="img/icon-web.png"></td>
                 <td style="font-family: Arial,sans-serif;font-size:14px;color: #5A5A5A">
                   Visit us online at <a style="color: #5A5A5A; font-weight: bold;" href="https://www.mediasuper.com.au">mediasuper.com.au</a>
                 </td></tr>
@@ -336,7 +336,7 @@
      <div class="sm-mt-0" style="Margin-left: 40px;Margin-top: 33px;">
       <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 20px;" align="left">
         <img style="border: 0;display: block;height: auto;max-width: 140px;"
-        alt="Media Super logo." width="140" src="https://www.cbussuper.com.au/content/dam/mediasuper/email/footer-logo.png">
+        alt="Media Super logo." width="140" src="img/footer-logo.png">
       </div>
     </div>
     
@@ -344,7 +344,7 @@
   <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
   </div>
 </div>
-<!-- ### END: 30/70 BLOCK (Contact) ### -->
+<!-- ### END: 30/70 BLOCK (MS Contact) ### -->
 
 <!-- ### START: TEXT BLOCK (security) ### -->
 <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
@@ -363,7 +363,7 @@
           <tbody>
             <tr role="navigation">
               <td style="width: 40px;">
-                  <img src="https://www.cbussuper.com.au/content/dam/cbus/images/email/icon-lock.png" alt="🔒">
+                  <img src="img/icon-lock.png" alt="🔒">
               </td>
               <td style="padding-left:12px;color:#666666;font-family: Arial,sans-serif;font-size: 16px;line-height: 24px;">
                 Scams aren’t always easy to spot, but there are things you can do to guard against fraudsters stealing your super.
@@ -387,9 +387,7 @@
 </div>
 <!-- ### END: TEXT BLOCK (security) ### -->
 
-
 <div style="line-height:20px;font-size:20px;">&nbsp;</div>
-  
    
 <!-- ### START FOOTER + TERMS BLOCK (MS REG) -->
 <div style="background-color: #ffffff;">
@@ -416,17 +414,17 @@
                   <tr role="socail">
                     <th valign="middle" align="left" style="width:42px;font-family: Roboto,Tahoma,sans-serif;font-size: 12px;">
                         <a class="hover" target="_blank" style="text-decoration: none;transition: opacity 0.1s ease-in;color:#292929;" href="https://www.facebook.com/MediaSuper">
-                              <img src="https://www.cbussuper.com.au/content/dam/cbus/images/email/icon-fb.png" alt="FB" title="facebook.com/MediaSuper" width="40" height="40" style="display:block;border: 0;">
+                              <img src="img/icon-fb.png" alt="FB" title="facebook.com/MediaSuper" width="40" height="40" style="display:block;border: 0;">
                         </a>
                     </th>
                     <th valign="middle" align="left" style="width:42px;font-family: Roboto,Tahoma,sans-serif;font-size: 12px;">
                         <a class="hover" target="_blank" style="text-decoration: none;transition: opacity 0.1s ease-in;color: #292929;" href="https://twitter.com/MediaSuper">
-                              <img src="https://www.cbussuper.com.au/content/dam/cbus/images/email/icon-tw.png" alt="Tw" title="twitter.com/MediaSuper" width="40" height="40" style="display:block;border: 0;">
+                              <img src="img/icon-tw.png" alt="Tw" title="twitter.com/MediaSuper" width="40" height="40" style="display:block;border: 0;">
                         </a>
                     </th>
                     <th valign="middle" align="left" style="width:42px;font-family: Roboto,Tahoma,sans-serif;font-size: 12px;">
                       <a class="hover" target="_blank" style="text-decoration: none;transition: opacity 0.1s ease-in;color: #292929;" href="https://www.linkedin.com/company/2008122">
-                          <img src="https://www.cbussuper.com.au/content/dam/cbus/images/email/icon-in.png" alt="in." title="linkedin.com" width="40" height="40" style="display:block;border: 0;">
+                          <img src="img/icon-in.png" alt="in." title="linkedin.com" width="40" height="40" style="display:block;border: 0;">
                       </a>
                   </th>
               </tr>
