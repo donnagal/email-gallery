@@ -55,9 +55,6 @@
 		<div class="mx-auto lg:w-2/3 text-center px-5">
 			<div class="mx-auto lg:w-full text-brand-black">
 			<h2 class="lg:text-5xl text-3xl font-heavy pt-12">Retirement Planning Webinar Series</h2>
-			<p class="font-light pt-5 text-xl font-bold">
-				This three-part series about pre-retirement and fully retired options.
-			</p>
 			<p class="pt-3 pb-12">
 				This three-part series suits all members who are interested in understanding more about their pre-retirement and fully retired options. You can join one, or multiple webinars. 
 			</p>
@@ -159,19 +156,19 @@
 								<div class="date text-center w-full bg-brand-dark m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-05-3">
 									<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz5f36384107d3d487/regform?evuid=zzzz62305d2fdfb74241"
 									   title="Sess 3:1">
-										<strong>3 MAY </strong> <br/> 7pm - 8:30pm AEST
+										<strong>3 MAY </strong> <br/> 7:00pm - 8:00pm AEST
 									</a>
 								</div>
-								<div class="date text-center w-full bg-brand-dark m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-05-10">
-									<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz5f36384107d3d487/regform?evuid=zzzz624f8109689b1092"
+								<div class="date text-center w-full bg-brand-dark m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-05-12">
+									<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz5f36384107d3d487/regform?evuid=zzzz624f814d202af162"
 									   title="Sess 3:2">
-										<strong>10 MAY </strong> <br/> 7pm - 8:30pm AEST
+										<strong>12 MAY </strong> <br/> 7:00pm - 8:00pm AEST
 									</a>
 								</div>
 								<div class="date text-center w-full bg-brand-dark m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-05-24">
 									<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz5f36384107d3d487/regform?evuid=zzzz624f820cad7b6534"
 									   title="Sess 3:3">
-										<strong>24 MAY </strong> <br/> 7pm - 8:30pm AEST
+										<strong>24 MAY </strong> <br/> 7:00pm - 8:00pm AEST
 									</a>
 								</div>
 							</div>
@@ -230,9 +227,9 @@
 										</a>
 									</div>
 									<div class="date text-center w-full bg-brand-dark m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-05-04">
-										<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz5f36384107d3d487/regform?evuid=zzzz623d4c693be16063"
+										<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz5f36384107d3d487/regform?evuid=zzzz623d53383e8fa110"
 											title="TTR: 2">
-											<strong>17 MAY </strong> <br/> 7:00pm - 7:30pm AEST
+											<strong>17 MAY </strong> <br/> 2:00pm - 2:30pm AEST
 										</a>
 									</div>
 								</div>
@@ -249,15 +246,15 @@
 							<div class="pt-3">
 								<div class="flex flex-wrap">
 									<div class="date text-center w-full bg-brand-dark m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-05-04">
-										<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz5f36384107d3d487/regform?evuid=zzzz623d4c693be16063"
+										<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz5f36384107d3d487/regform?evuid=zzzz623d4ced7c278487"
 											title="SIS: 1">
-											<strong>4 MAY </strong> <br/> 7:00pm - 7:30pm AEST
+											<strong>4 MAY </strong> <br/> 2:00pm - 2:30pm AEST
 										</a>
 									</div>
 									<div class="date text-center w-full bg-brand-dark m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-05-17">
-										<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz5f36384107d3d487/regform?evuid=zzzz623d53383e8fa110"
+										<a target="_blank" href="https://www.comms.cbussuper.com.au/link/id/zzzz5f36384107d3d487/regform?evuid=zzzz623d52b89416c064"
 											title="SIS: 2">
-											<strong>17 MAY </strong> <br/> 2:00pm - 2:30pm AEST
+											<strong>18 MAY </strong> <br/> 7:00pm - 7:30pm AEST
 										</a>
 									</div>
 								</div>
@@ -410,26 +407,6 @@ var swiper = new Swiper(".mySwiper2", {
 			simulateTouch: true,
         }
     }
-});
-
-//  inActive  Date
-$(function() {
-    var currentDate = Date.parse((new Date()).toLocaleDateString());
-
-    $(".date").each(function() {
-        var specifiedDate = $(this).data('date');
-        var date = Date.parse(specifiedDate);
-        
-        if (!isNaN(date) && date == currentDate) {
-            $(this).addClass('today');
-        }
-        else if(!isNaN(date) && currentDate - date > 0) {
-            $(this).addClass('past');
-        }
-        else {
-            $(this).addClass('future');
-        }
-    });
 });
 
 </script>

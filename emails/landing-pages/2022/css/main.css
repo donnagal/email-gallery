@@ -324,6 +324,14 @@ input:checked ~ .radio {
 	height: 12px !important;
 	width: 12px !important;
 }
+
+.date-end {
+	background: linear-gradient(to top right, #fff calc(50% - 1px), #d1d5db, #fff calc(50% + 1px));
+	color: #d1d5db;
+	cursor: pointer;
+	pointer-events: none;
+}
+
 /* Device */
 @media (max-width:770px) { 
 	input { height: 50px;} 

@@ -35,7 +35,7 @@
 	}
 
 	.px-lg-md { padding-left: 8rem; padding-right: 8rem; }
-	.h-lg-md { height: 43rem; }
+	.h-lg-md { height: 40rem; }
 
 	/* md */
 	@media (max-width: 1600px){
@@ -45,11 +45,6 @@
 	.ecol-lg {width: 15%;}
 	.ecol-md {width: 7%;}
 	.ecol {width: 5%;}
-
-
-	
-
-
   </style>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF495ZKW9K"></script>
@@ -121,12 +116,43 @@
 
 		<div class="mt-8"></div>
 
+		<div class="mx-auto flex text-center">
+			<div class="w-1/3 p-5 bg-white mx-1 rounded">
+				<p class="text-xs font-light leading-4 tracking-wider text-gray-600 uppercase">Opens Avg.</p>
+				<p class="text-3xl font-bold">44.31%</p>
+				<a target="_blank" href="https://www.campaignmonitor.com/resources/guides/email-marketing-benchmarks/" 
+					class="text-xs font-light leading-4 tracking-wider text-green uppercase underline">Benchmark: 27.1%
+				</a>
+			</div>
+			<div class="w-1/3 p-5 bg-white mx-1 rounded">
+				<p class="text-xs font-light leading-4 tracking-wider text-gray-600 uppercase">CTOR Avg.</p>
+				<p class="text-3xl font-bold">10.80%</p>
+				<a target="_blank" href="https://www.campaignmonitor.com/resources/guides/email-marketing-benchmarks/" 
+					class="text-xs font-light leading-4 tracking-wider text-green uppercase underline">Benchmark: 10.1%
+				</a>
+			</div>
+			<div class="w-1/3 p-5 bg-white mx-1 rounded">
+				<p class="text-xs font-light leading-4 tracking-wider text-gray-600 uppercase">Opt-Out Avg.</p>
+				<p class="text-3xl font-bold">0.31%</p>
+				<a target="_blank" href="https://www.campaignmonitor.com/resources/guides/email-marketing-benchmarks/" 
+					class="text-xs font-light leading-4 tracking-wider text-red uppercase underline">Benchmark: 0.2%
+			</a>
+			</div>
+		</div>
+
 <!-- Search -->
-<div class="w-full mt-5 flex justify-between p-3 rounded-lg">
-	<div class="w-full">
-		<input type="text" id="search-text" placeholder="search" class="w-2/3 search-box search-box border border-gray-200 rounded-md">
-		<span class="list-count text-gray-500"></span>
-	</div>
+<div class="w-full mt-4 flex rounded-lg">
+
+	<div class="pt-2 relative mx-auto text-gray-600 w-full">
+        <input id="search-text" placeholder="Search emails" class="w-full border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+          type="search" name="search" placeholder="Search">
+        <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
+          <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+            viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px" height="512px">
+            <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+          </svg>
+        </button>
+      </div>
   </div>
  <!-- End: Search -->
 
