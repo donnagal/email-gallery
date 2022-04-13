@@ -1242,7 +1242,7 @@ select {
 .ease-in {
 	transition-timing-function: cubic-bezier(.4, 0, 1, 1)
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	width: 7px
 }
 ::-webkit-scrollbar-track {
@@ -1253,7 +1253,7 @@ select {
 }
 ::-webkit-scrollbar-thumb:hover {
 	background: #718096
-}
+} */
 .hover\:bg-indigo-600:hover {
 	--tw-bg-opacity: 1;
 	background-color: rgba(79, 70, 229, var(--tw-bg-opacity))

@@ -57,7 +57,7 @@
       </script>
 </head>
 
-	<body>
+	<body class="bg-gray-200 ">
 
 		<div id="nav">
 			<header>
@@ -106,11 +106,11 @@
 		</div>
 
 
-		<div data-v-app="" id="app">
-			<div class="flex h-screen bg-gray-200 font-roboto">
+		<div class="" data-v-app="" id="app">
+			<div class="flex bg-gray-200 font-roboto">
 
-			<div class="flex-1 flex flex-col overflow-hidden">
-				<main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-400">
+			<div class="flex-1 flex flex-col ">
+				<main class="flex-1">
 					<div class="px-lg-md md:container mx-auto py-8">
 						<div>
 
@@ -157,32 +157,32 @@
  <!-- End: Search -->
 
 	<!-- Email table -->
-	<div class="bg-white ">
+	<div class="">
 
 		<table class="email-list min-w-full mt-2 -mb-1 rounded-lg">
 			<thead>
 				<tr class="cursor-pointer text-center">
-					<th @click="sortBy('name')" class="ecol-lg text-left pl-3 py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+					<th @click="sortBy('name')" class="border-r ecol-lg text-left pl-3 py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
 						Name
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
 					</th>
-					<th @click="sortBy('day')" class="ecol-md py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+					<th @click="sortBy('day')" class="border-r ecol-md py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
 						Date
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
 					</th>
-					<th @click="sortBy('openrate')" class="ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+					<th @click="sortBy('openrate')" class="border-r ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
 						Opens
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
 					</th>
-					<th @click="sortBy('ctor')" class="ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+					<th @click="sortBy('ctor')" class="border-r ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
 						CTOR
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
 					</th>
-					<th @click="sortBy('unsub')" class="ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+					<th @click="sortBy('unsub')" class="border-r ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
 						Opt-Outs
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
 					</th>
-					<th @click="sortBy('sent')" class="ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+					<th @click="sortBy('sent')" class="border-r ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
 						Size
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="sort-arrow fill-current h-4 w-4 inline"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
 					</th>
@@ -191,9 +191,9 @@
 		</table>
 	</div>
 
-		<div class="flex flex-col mt-1 pr-5 h-lg-md">
-			<div class="py-2 -my-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
-				<div class="inline-block min-w-full overflow-hidden align-middle border-b border-gray-200 shadow sm:rounded-lg">
+		<div class="flex flex-col mt-1 h-lg-md">
+			<div class="py-2 -my-2  sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+				<div class="inline-block min-w-full align-middle border-b border-gray-200 shadow sm:rounded-lg">
 					<table id="list" class="email-list min-w-full text-center">
 						<tbody class="bg-white">
 						<template v-for="listData in lists">
