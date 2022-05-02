@@ -63,22 +63,21 @@
 	</div>
 </div>
 
-		<div id="items">
-			<div class="px-5">
-				<div class="flex lg:justify-center flex flex-wrap">
-					<div v-for="item in items">
-						<div class="p-5 bg-white rounded shadow-box m-2">
-							<p class="font-medium text-brand-gray">30 mins</p>
-							<p class="lg:text-3xl text-xl font-heavy">{{ item.name }}</p>
-							<p class="pt-3 text-xl text-blue-500">{{ item.date }}</p>
-							<!-- Flex columns -->
-							<div class="pt-3">
-								<div class="flex flex-wrap">
-									<div class="date text-center text-lg font-bold w-full bg-brand-dark m-2 text-white text-sm leading-5 py-4 px-4 border border-gray-300 rounded-md">
-										<a target="_blank" :href="item.url">
-											Register 
-										</a>
-									</div>
+	<div id="items">
+		<div class="px-5">
+			<div class="lg:flex lg:justify-center lg:flex-wrap">
+				<div v-for="item in items">
+					<div class="p-5 bg-white rounded shadow-box m-2 mb-4">
+						<p class="font-medium text-brand-gray">30 mins</p>
+						<p class="lg:text-3xl text-xl font-heavy">Insurance & Beneficiaries</p>
+						<p class="pt-3 text-xl text-blue-500">{{ item.date }}</p>
+						<!-- Flex columns -->
+						<div class="pt-3">
+							<div class="flex flex-wrap">
+								<div class="date text-center text-lg font-bold w-full bg-brand-dark m-2 text-white text-sm leading-5 py-4 px-4 border border-gray-300 rounded-md">
+									<a target="_blank" :href="item.url">
+										Register 
+									</a>
 								</div>
 							</div>
 						</div>
@@ -86,6 +85,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 
 </div>
 
@@ -194,18 +194,16 @@
 	<a href="#" data-nl-type="action" data-nl-action="next">Tell me more</a>
 </form>
 
-
 <!-- Vue JS -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
-
 <script>
 	new Vue({
 		el: '#items',
 		data: {
 			current: 1,
 			items: [
-				{ name: 'Insurance & Beneficiaries', date: 'Wed, April 20, 12:00 PM', url: 'https://www.comms.cbussuper.com.au/link/id/zzzz5ea261ab22d45874/regform?evuid=zzzz6239322266b65780'},
-				{ name: 'Insurance & Beneficiaries', date: 'Thu, April 28, 07:00 PM', url: 'https://www.comms.cbussuper.com.au/link/id/zzzz5ea261ab22d45874/regform?evuid=zzzz623932233b4a3591'},
+				{ date: 'Wed, April 20, 12:00 PM', url: 'https://www.comms.cbussuper.com.au/link/id/zzzz5ea261ab22d45874/regform?evuid=zzzz6239322266b65780'},
+				{ date: 'Thu, April 28, 07:00 PM', url: 'https://www.comms.cbussuper.com.au/link/id/zzzz5ea261ab22d45874/regform?evuid=zzzz623932233b4a3591'},
 			],
 		},
 	});
