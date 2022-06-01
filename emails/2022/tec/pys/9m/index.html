@@ -46,7 +46,7 @@
     <div role="banner">
       <!-- pre-header text -->
       <div style="font-size:1px;line-height:1px;mso-line-height-rule:exactly;display:none;max-width:0px;max-height:0px;opacity:0;overflow:hidden;mso-hide:all;" >
-        How Cbus is helping members collect unpaid super.
+        You have a new message from Cbus Super.
       </div>
     </div>
 
@@ -68,7 +68,7 @@
           <!-- Hero banner -->
             <div style="background-color:#0F8045;color: white;font-weight: bold;font-size: 30px;line-height: 154px;" align="center">
               <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" 
-                alt="Important update." width="600" 
+                alt="Your insurance may stop if you don’t act." width="600" 
                 src="images/hero.jpg">
             </div>
     
@@ -79,11 +79,11 @@
               </p>
           </div>
 
-        <!-- Heading -->
-        <div style="Margin-left: 40px;Margin-right: 20px;Margin-top: 40px;">
-          <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-            <h1 style="Margin-top: 0;Margin-bottom: 20px;font-family:'Hind',Tahoma,Arial,sans-serif;font-weight: normal;color: #13767D;font-size: 30px;line-height: 38px;">
-              <strong>How Cbus is helping members collect unpaid super</strong>
+          <!-- Heading -->
+          <div style="Margin-left: 40px;Margin-right: 40px;">
+            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+            <h1 style="Margin-top: 0;Margin-bottom: 20px;font-family:'Hind',Tahoma,Arial,sans-serif;font-weight: normal;color: #515457;font-size: 30px;line-height: 38px;">
+              <strong>Hi {{profile.person.name.firstName}}, You’ve been inactive for 9 months</strong>
             </h1>
           </div>
         </div>
@@ -96,15 +96,44 @@
           <!-- Text -->
           <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
             <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-              <p class="size-22" style="Margin-top: 0;Margin-bottom: 0;">
-                Hi {{profile.person.name.firstName}},
-                <p class="size-22" style="Margin-top: 20px;Margin-bottom: 0;">
-                  Our top priority is making sure our members have enough money to live on in retirement. Unpaid super is a problem which leaves many of our members with much less than they’re entitled to.
-                </p>
-                <p class="size-22" style="Margin-top: 20px;Margin-bottom: 0;">
-                  If you work in the building, construction and allied sector, you can ask to have the status of your super contributions checked by a union delegate or official. It’s an easy way for our members to take control of their super contributions. We provide a limited amount of personal member information to union delegates or official to get their help in checking and recovering unpaid super. 
-                </p>
+            <p class="size-22" style="Margin-top: 0;Margin-bottom: 0;">
+              We are writing to remind you that your account is at a 9 month period of inactivity, which could have a direct impact on your insurance cover.
+            </p>
+            <p class="size-22" style="Margin-top: 20px;Margin-bottom: 0;">
+              Where your account has been inactive for 16 months or more, the Fund will only be able to maintain your insurance cover if you have made an election to keep it. 
+              Your super account can also remain active if we receive a <a class="hover" target="_blank" style="color: #666666; font-weight: bold;" href="https://www.cbussuper.com.au/super/making-super-contributions">contribution</a> or <a class="hover" target="_blank" style="color: #666666; font-weight: bold;" href="https://www.cbussuper.com.au/super/consolidate-or-find-my-super">rollover</a> for you before the end of the 16 months. 
+            </p>
             </div>
+          </div>
+
+           <!-- inner spacer -->
+           <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 12px;">
+            <div style="mso-line-height-rule: exactly;line-height: 12px;font-size: 1px;">&nbsp;</div>
+          </div>
+      
+          <!-- Button -->
+          <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 10px;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+              <tbody>
+              <tr>
+                  <td valign="top" align="left">
+                    <div class="btn" style="text-align:center;color: #ffffff;">
+                      <table cellpadding="0" cellspacing="0" align="left">
+                          <tbody><tr>
+                              <td style="width: 206px;height: 55px;background: #0F8045;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 22px;text-align:center;">
+                                <a target="_blank" href="https://t.marketing.cbussuper.com.au/webApp/edm_consent_cap?id={{profile._cbus.HashedMemberID}}" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0F8045; border-bottom: 10px solid #0F8045; border-right: 5px solid #0F8045;border-left: 5px solid #0F8045;">
+                                  <strong style="font-family: Hind,Calibri,Arial,sans-serif;">Opt-in</strong>
+                                </a>
+                              </td>
+                          </tr>
+                      </tbody>
+                      </table>
+                  </div>
+                  </td>
+                    <!--[if (mso)|(IE)]><td style="width: 30px;color:white;">&nbsp;</td><![endif]-->
+                </tr>
+            </tbody>
+          </table>
           </div>
       
             <!-- inner spacer -->
@@ -118,69 +147,76 @@
     </div>
   <!-- ### END: INTRO BLOCK ### -->
 
-<!-- ### START: TEXT BLOCK (white) ### -->
-<div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: white;">
-  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: white;"><td style="width: 600px" class="w560"><![endif]-->
-    <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;">
-  
-        <!-- inner spacer -->
-        <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 34px;">
-          <div style="mso-line-height-rule: exactly;line-height: 14px;font-size: 1px;">&nbsp;</div>
-        </div>
+  <!-- ### START: TEXT BLOCK ### -->
+  <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+    <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: white;">
+    <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: white;"><td style="width: 600px" class="w560"><![endif]-->
+      <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;">
+    
+          <!-- inner spacer -->
+          <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 34px;">
+            <div style="mso-line-height-rule: exactly;line-height: 14px;font-size: 1px;">&nbsp;</div>
+          </div>
 
-      <!-- Heading -->
-      <div style="Margin-left: 40px;Margin-right: 40px;">
-        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-        <h1 style="Margin-top: 0;Margin-bottom: 20px;font-family: Hind,Calibri,Arial,sans-serif;font-style: normal;font-weight: normal;color: #515457;font-size: 30px;line-height: 38px;">
-          <strong>What information do we share?</strong>
-        </h1>
-        </div>
-    </div>
-
-      <!-- Text List -->
-      <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
-        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-        <ul>
-          <li class="size-22" style="padding-bottom: 8px;">Name</li>
-          <li class="size-22" style="padding-bottom: 8px;"> Application form has been signed</li>
-          <li class="size-22" style="padding-bottom: 8px;">SG Contribution Amounts received in last 6 months</li>
-          <li class="size-22" style="padding-bottom: 8px;">Date SG contributions Received and the Time periods they are paid for</li>
-          <li class="size-22" style="padding-bottom: 8px;">If Salary Sacrifice Payment Received (no amount shown)</li>
-          <li class="size-22" style="padding-bottom: 8px;">Employer Name and ABN</li>
-        </ul>
-        </div>
+        <!-- Heading -->
+        <div style="Margin-left: 40px;Margin-right: 40px;">
+          <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+            <h1 style="Margin-top: 0;Margin-bottom: 20px;font-family:'Hind',Tahoma,Arial,sans-serif;font-style: normal;font-weight: normal;color: #515457;font-size: 30px;line-height: 38px;">
+              <strong>Keep your Cbus Insurance</strong>
+            </h1>
+          </div>
       </div>
 
-        <!-- inner spacer -->
-        <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 10px;">
-          <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
+        <!-- Text -->
+        <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
+          <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+            <p class="size-22" style="Margin-top: 0;Margin-bottom: 0;">
+              As such we're seeking your instruction now on whether you would like to retain your insurance. You can either opt-in via the form we sent you last month with your inactivity letter or simply below.
+            </p>
+            <p class="size-22" style="Margin-top: 20px;Margin-bottom: 0;">
+              Cbus insurance is specially designed for workers in the building and construction industry, including those working in hazardous environments. You should consider what insurance is right for you and the impact insurance premiums can have on your account balance.
+            </p>
+            </div>
         </div>
-        
-  
+
+          <!-- inner spacer -->
+          <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 10px;">
+            <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
+          </div>
+    
+      </div>
+    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
     </div>
-  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
   </div>
-</div>
-<!-- ### END: TEXT BLOCK (white) ### -->
-
-<!-- ### START: TEXT BLOCK (grey) ### -->
-<div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #f3f3f4;">
-  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #f3f3f4;"><td style="width: 600px" class="w560"><![endif]-->
-    <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;">
+<!-- ### END: TEXT BLOCK ### -->
   
-        <!-- inner spacer -->
-        <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 34px;">
-          <div style="mso-line-height-rule: exactly;line-height: 14px;font-size: 1px;">&nbsp;</div>
-        </div>
+  <!-- ### START: TEXT BLOCK (grey) ### -->
+  <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+    <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #f3f3f4;">
+    <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #f3f3f4;"><td style="width: 600px" class="w560"><![endif]-->
+      <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;">
+    
+          <!-- inner spacer -->
+          <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 34px;">
+            <div style="mso-line-height-rule: exactly;line-height: 14px;font-size: 1px;">&nbsp;</div>
+          </div>
 
-          <!-- Heading -->
-          <div style="Margin-left: 40px;Margin-right: 40px;">
-            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-            <h1 style="Margin-top: 0;Margin-bottom: 20px;font-family: Hind,Calibri,Arial,sans-serif;font-style: normal;font-weight: normal;color: #515457;font-size: 30px;line-height: 38px;">
-              <strong>I don't want to use this service</strong>
+        <!-- Heading -->
+        <div style="Margin-left: 40px;Margin-right: 40px;">
+          <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+            <h1 style="Margin-top: 0;Margin-bottom: 20px;font-family:'Hind',Tahoma,Arial,sans-serif;font-style: normal;font-weight: normal;color: #515457;font-size: 30px;line-height: 38px;">
+              <strong>Keep my insurance cover</strong>
             </h1>
+          </div>
+      </div>
+
+
+        <!-- Text -->
+        <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
+          <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+            <p class="size-22" style="Margin-top: 0;Margin-bottom: 0;">
+              If you wish to opt-in to retain your insurance, please click on the button below.
+            </p>
             </div>
         </div>
 
@@ -199,8 +235,8 @@
                       <table cellpadding="0" cellspacing="0" align="left">
                           <tbody><tr>
                               <td style="width: 206px;height: 55px;background: #0F8045;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 22px;text-align:center;">
-                                <a target="_blank" href=" https://t.marketing.cbussuper.com.au/webApp/APP21?id={{profile._cbus.HashedMemberID}}" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0F8045; border-bottom: 10px solid #0F8045; border-right: 5px solid #0F8045;border-left: 5px solid #0F8045;">
-                                  <strong style="font-family: Hind,Calibri,Arial,sans-serif;">Opt-out</strong>
+                                <a target="_blank" href="https://t.marketing.cbussuper.com.au/webApp/edm_consent_cap?id={{profile._cbus.HashedMemberID}}" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0F8045; border-bottom: 10px solid #0F8045; border-right: 5px solid #0F8045;border-left: 5px solid #0F8045;">
+                                  <strong style="font-family: Hind,Calibri,Arial,sans-serif;">Opt-in</strong>
                                 </a>
                               </td>
                           </tr>
@@ -218,165 +254,13 @@
           <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 20px;">
             <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
           </div>
-  
+    
+      </div>
+    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
     </div>
-  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
   </div>
-</div>
 <!-- ### END: TEXT BLOCK (grey) ### -->
-
-<!-- ### START: TEXT BLOCK (white) ### -->
-<div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: white;">
-  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: white;"><td style="width: 600px" class="w560"><![endif]-->
-    <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;">
   
-        <!-- inner spacer -->
-        <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 34px;">
-          <div style="mso-line-height-rule: exactly;line-height: 14px;font-size: 1px;">&nbsp;</div>
-        </div>
-
-      <!-- Heading -->
-      <div style="Margin-left: 40px;Margin-right: 40px;">
-        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-        <h1 style="Margin-top: 0;Margin-bottom: 20px;font-family: Hind,Calibri,Arial,sans-serif;font-style: normal;font-weight: normal;color: #515457;font-size: 30px;line-height: 38px;">
-          <strong> What if you don't opt out? </strong>
-        </h1>
-        </div>
-    </div>
-
-      <!-- Text List -->
-      <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
-        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-        <p class="size-22" style="Margin-top: 0;Margin-bottom: 0;font-size: 18px;line-height: 26px;text-align: left;" lang="x-size-22">
-          <i>If you do not opt out then we will assume that you consent to us providing the above types of information to union officials and delegates.</i>
-        </p>
-        <p class="size-22" style="Margin-top: 20px;Margin-bottom: 0;font-size: 18px;line-height: 26px;text-align: left;" lang="x-size-22">
-          However, if you change your mind you can opt out later using the options available below. Please note that it can take up to 5 business days to manage this request.
-        </p>
-        </div>
-      </div>
-
-        <!-- inner spacer -->
-        <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 10px;">
-          <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
-        </div>
-        
-  
-    </div>
-  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-  </div>
-</div>
-<!-- ### END: TEXT BLOCK (white) ### -->
-
-<!-- ### START: TEXT BLOCK (grey) ### -->
-<div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #f3f3f4;">
-  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #f3f3f4;"><td style="width: 600px" class="w560"><![endif]-->
-    <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;">
-  
-        <!-- inner spacer -->
-        <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 34px;">
-          <div style="mso-line-height-rule: exactly;line-height: 14px;font-size: 1px;">&nbsp;</div>
-        </div>
-
-      <!-- Heading -->
-      <div style="Margin-left: 40px;Margin-right: 40px;">
-        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-        <h1 style="Margin-top: 0;Margin-bottom: 20px;font-family: Hind,Calibri,Arial,sans-serif;font-style: normal;font-weight: normal;color: #515457;font-size: 30px;line-height: 38px;">
-          <strong> Other ways to Opt-out:</strong>
-        </h1>
-        </div>
-    </div>
-
-      <!-- Text List -->
-      <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
-        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-        <ol>
-          <li class="size-22" style="padding-bottom: 8px;">Download the <a target="_blank" style="color: #15798d;" href="https://www.cbussuper.com.au/content/dam/cbus/files/forms-publications/general-information/Cbus-super-payment-checker-consent-form.pdf">Cbus' unpaid super services consent form</a></li>
-          <li class="size-22" style="padding-bottom: 8px;">Call us <a target="_blank" style="color: #15798d;" href="tel:1300 361 784">1300 361 784</a> from 8am to 8pm (AEST/AEDT), Monday to Friday</li>
-          <li class="size-22" style="padding-bottom: 8px;">SG Contribution Amounts received in last 6 months</li>
-          <li class="size-22" style="padding-bottom: 8px;">In person with a <strong>Coordinator</strong></li>
-        </ol>
-        </div>
-      </div>
-
-      <!-- inner spacer -->
-      <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 10px;">
-        <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
-      </div>
-  
-    </div>
-  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-  </div>
-</div>
-<!-- ### END: TEXT BLOCK (grey) ### -->
-
-<!-- ### START: TEXT BLOCK (white) ### -->
-<div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: white;">
-  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: white;"><td style="width: 600px" class="w560"><![endif]-->
-    <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;">
-  
-        <!-- inner spacer -->
-        <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 34px;">
-          <div style="mso-line-height-rule: exactly;line-height: 14px;font-size: 1px;">&nbsp;</div>
-        </div>
-
-      <!-- Heading -->
-      <div style="Margin-left: 40px;Margin-right: 40px;">
-        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-        <h1 style="Margin-top: 0;Margin-bottom: 20px;font-family: Hind,Calibri,Arial,sans-serif;font-style: normal;font-weight: normal;color: #515457;font-size: 30px;line-height: 38px;">
-          <strong> What if you don't opt out? </strong>
-        </h1>
-        </div>
-    </div>
-
-      <!-- Text -->
-      <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
-        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-        <p class="size-22" style="Margin-top: 0;Margin-bottom: 0;font-size: 18px;line-height: 26px;text-align: left;" lang="x-size-22">
-          If you would like further information about our unpaid super recovery work, we have further information available on our <a target="_blank" style="color: #15798d;" href="https://www.cbussuper.com.au/about-us/news/cbus-news/unpaid-super-services-info?utm_medium=edm&amp;utm_source=adobe_campaign&amp;utm_campaign=mem-dr--200618-uss&amp;utm_content=link">website</a>.
-        </p>
-        <p class="size-22" style="Margin-top: 20px;Margin-bottom: 0;font-size: 18px;line-height: 26px;text-align: left;" lang="x-size-22">
-          If you have any other questions, then please call us on <a target="_blank" style="color: #15798d;" href="tel:1300 361 784">1300 361 784</a> from 8am to 8pm (AEST/AEDT), Monday to Friday.
-        </p>
-        <p class="size-22" style="Margin-top: 20px;Margin-bottom: 0;font-size: 18px;line-height: 26px;text-align: left;" lang="x-size-22">
-          Yours,
-        </p>
-        </div>
-      </div>
-
-        <!-- Sign Off-->
-        <div style="Margin-left: 40px;Margin-right: 40px;">
-        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 20px;" align="left">
-          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 123px;" alt="Signed - Marianne Walker." width="123" 
-          src="images/sign.gif">
-        </div>
-      </div>
-
-      <!-- Text -->
-      <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
-        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-        <p class="size-22" style="Margin-top: 0;Margin-bottom: 0;font-size: 18px;line-height: 26px;text-align: left;" lang="x-size-22">
-          Marianne Walker <br/>
-          Group Executive, Member & Employer Experience
-        </p>
-        </div>
-      </div>
-
-        <!-- inner spacer -->
-        <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 10px;">
-          <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
-        </div>
-        
-  
-    </div>
-  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-  </div>
-</div>
-<!-- ### END: TEXT BLOCK (white) ### -->
-
  <!-- ### START: 30/70 BLOCK (Contact) ### -->
  <div class="layout fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
   <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #1A1A1A;">
@@ -484,12 +368,12 @@
     <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-full-width" style="background-color: #ffffff;"><td class="layout__edges">&nbsp;</td><td style="width: 600px" class="w560"><![endif]-->
       <div class="column" style="text-align: left;color: #666666;font-size: 11px;line-height: 21px;font-family: montserrat,arial;">
       
-                  <!-- Footer nav -->
+                 
                   <div style="Margin-left: 10px;Margin-right: 0;">
+                     <!-- Footer nav (AJO)-->
                     <p class="footer-nav" style="Margin-top: 44px;Margin-bottom: 12px;font-size: 11px;line-height: 19px;" lang="x-size-11">
                       <a href="https://www.cbussuper.com.au/" style="color: #515457;text-decoration:none">Website</a>     <span style="padding-left:4px;padding-right:4px;">|</span>
                       <a href="https://www.cbussuper.com.au/about-us/privacy-statement" style="color: #515457;text-decoration:none">Privacy Statement</a> <span style="padding-left:4px;padding-right:4px;">|</span>
-                      <a class="hover" target="_blank" style="color: #515457;text-decoration:none" data-nl-type="unsubscription" data-tags="optoutLevel:identity" href="https://t.marketing.cbussuper.com.au/webApp/edm_unsub_ajo_mem?id={{profile._cbus.HashedMemberID}}" data-label="unsubscribe" data-tracking-type="OPT_OUT"> unsubscribe</a>
                     </p>
           
                     <!-- line -->
@@ -582,6 +466,6 @@
 
 
 </td></tr></tbody></table>
-<style data-ignore-inlining>@media (prefers-color-scheme: dark) { #_t::before {content:url('https://0a2segk1.emltrk.com/v2/0a2segk1?rd&i=[CONTACT-ID]');}} @media (prefers-color-scheme: light) { #_t::before {content:url('https://0a2segk1.emltrk.com/v2/0a2segk1?rl&i=[CONTACT-ID]');}} @media print{ #_t {background-image:url('https://0a2segk1.emltrk.com/v2/0a2segk1?p&i=[CONTACT-ID]');}} div.OutlookMessageHeader {background-image:url('https://0a2segk1.emltrk.com/v2/0a2segk1?f&i=[CONTACT-ID]')} table.moz-email-headers-table {background-image:url('https://0a2segk1.emltrk.com/v2/0a2segk1?f&i=[CONTACT-ID]')} blockquote #_t {background-image:url('https://0a2segk1.emltrk.com/v2/0a2segk1?f&i=[CONTACT-ID]')} #MailContainerBody #_t {background-image:url('https://0a2segk1.emltrk.com/v2/0a2segk1?f&i=[CONTACT-ID]')}</style><div id="_t"></div>
-<img src="https://0a2segk1.emltrk.com/v2/0a2segk1?i=[CONTACT-ID]" width="1" height="1" border="0" alt="" />
+<style data-ignore-inlining>@media (prefers-color-scheme: dark) { #_t::before {content:url('https://wkogbhnh.emltrk.com/v2/wkogbhnh?rd&i=[CONTACT-ID]');}} @media (prefers-color-scheme: light) { #_t::before {content:url('https://wkogbhnh.emltrk.com/v2/wkogbhnh?rl&i=[CONTACT-ID]');}} @media print{ #_t {background-image:url('https://wkogbhnh.emltrk.com/v2/wkogbhnh?p&i=[CONTACT-ID]');}} div.OutlookMessageHeader {background-image:url('https://wkogbhnh.emltrk.com/v2/wkogbhnh?f&i=[CONTACT-ID]')} table.moz-email-headers-table {background-image:url('https://wkogbhnh.emltrk.com/v2/wkogbhnh?f&i=[CONTACT-ID]')} blockquote #_t {background-image:url('https://wkogbhnh.emltrk.com/v2/wkogbhnh?f&i=[CONTACT-ID]')} #MailContainerBody #_t {background-image:url('https://wkogbhnh.emltrk.com/v2/wkogbhnh?f&i=[CONTACT-ID]')}</style><div id="_t"></div>
+<img src="https://wkogbhnh.emltrk.com/v2/wkogbhnh?i=[CONTACT-ID]" width="1" height="1" border="0" alt="" />
   </body></html>
