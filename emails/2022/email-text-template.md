@@ -10,11 +10,14 @@ https://www.cbussuper.com.au/campaigns/stick-with-cbus-aus?utm_source=adobe-camp
 	
     
 Outperforming the industry average: 
-Year after year, Cbus continues to outperform the industry average, giving members more money in their account for retirement[1]. 
+Year after year, Cbus continues to outperform the industry average, giving members more money in their account for retirement. 
 
-Net Benefit to 31 December 2021: 
+Net Benefit to 31 December 2021*: 
+- Today's net benefit with CBUS for the last 15 years - $196,173
+- Today's net benefit with AVERAGE SUPER FUND for the last 15 years - $156,337
+That means Cbus has delivered $39,836 more in net benefit than the average super fund.
 
-*Net benefit is based on a pre-tax salary of $80,000 with SG contributions for 15 years and a starting balance of $50,000. Past performance is not a reliable indicator of future performance. 
+i.e (Net benefit is based on a pre-tax salary of $80,000 with SG contributions for 15 years and a starting balance of $50,000. Past performance is not a reliable indicator of future performance.) 
     
 
 Stay with an award-winning fund. 
@@ -24,7 +27,7 @@ Stay with an award-winning fund.
 
 
 Check your insurance cover: 
-With Cbus, you have peace of mind knowing that you'll be covered even in high-risk occupations like working from heights. 
+With Cbus, you have peace of mind knowing that you'll be covered even in high-risk conditions like working from heights. 
 Check now:  
 https://www.cbussuper.com.au/portals/super-account/insurance.super?utm_source=adobe-campaign&utm_medium=edm&utm_campaign=ase_&utm_content=checkinscover 	
 	
@@ -32,16 +35,16 @@ https://www.cbussuper.com.au/portals/super-account/insurance.super?utm_source=ad
 Call our Advice Team, it's part of your Cbus membership:  
 tel:1300 361 784 (option 4) or request a call back and we'll be in touch soon. 
   
-Or Request a call back:
+Request a call back:
 https://www.cbussuper.com.au/tools-resources/advice-services?utm_source=adobe-campaign&utm_medium=edm&utm_campaign=ase_&utm_content=callback#adviceform 	
 	
   
 Need help? 
 
-Call: 1300361784 1300 361 784  
+Call: 1300 361 784  
 Monday to Friday from 8am - 8pm (AEDT/AEST) 
   
-Email  mailto:cbusenq@cbussuper.com.au cbusenq@cbussuper.com.au   
+Email  mailto:cbusenq@cbussuper.com.au
 Visit  https://www.cbussuper.com.au cbussuper.com.au   
 
   
