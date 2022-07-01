@@ -53,12 +53,12 @@
 <div class="container mx-auto pb-24">
 	<div class="mx-auto lg:w-full text-center px-5">
 		<div class="mx-auto lg:w-full text-brand-black">
-		<h2 class="lg:text-5xl text-3xl font-heavy pt-20">Register for our upcoming webinar</h2>
+		<h2 class="lg:text-5xl text-3xl font-heavy pt-20">Register for a webinar</h2>
 		<p class="pt-3">
-			Remember, super is for the long term. The more informed you are, the better prepared you can be.
+			Remember, super is for the long-term. The more informed you are, the better prepared you can be.
 		</p>
 		<p class="pt-3 pb-12">
-			Join us for our ‘Investment update and Understanding market volatility’ webinars. 
+			Join us at one of our upcoming ‘Understanding investment market volatility’ webinars to help you get the facts.
 		</p>
 	</div>
 </div>
@@ -69,7 +69,6 @@
 				<div v-for="item in items">
 					<div class="p-5 bg-white rounded shadow-box m-2 mb-4">
 						<p class="font-medium text-brand-gray">45 mins</p>
-						<p class="lg:text-2xl text-xl font-heavy">Understanding investment<br/> market volatility</p>
 						<p class="pt-3 text-xl text-blue-500">{{ item.date }}</p>
 						<!-- Flex columns -->
 						<div class="pt-3">
@@ -88,28 +87,6 @@
 	</div>
 
 </div>
-
- <!-- Cbus Contact -->
- <div class="bg-brand-gray">
-	<div class="container mx-auto lg:px-24 px-5 py-12">
-		<div class="mx-auto lg:w-full text-brand-black">
-		<h2 class="lg:text-5xl text-3xl font-heavy">We’re here to help</h2>
-		<p class="font-light pt-5 text-xl font-bold pb-3">
-			If you have any questions or would like to discuss your options further, we can help get your super sorted.
-		</p>
-		<div class="flex flex-wrap text-center">
-			<div class="w-full lg:w-1/2">
-				<a href="tel:1300 361 784" class="cta-light block m-3 relative font-bold">1300 361 784 <i class="fa-solid fa-angle-right text-sm absolute right-0 pr-5"></i></a>
-				<p class="text-brand-gray lg:pb-0 pb-5">Mon to Fri from 8am to 8pm AEST/AEST</p>
-			</div>
-			<div class="w-full lg:w-1/2">
-				<a href="mailto:cbusenq@cbussuper.com.au" class="cta-light block m-3 relative font-bold">cbusenq@cbussuper.com.au <i class="fa-solid fa-angle-right text-sm absolute right-0 pr-5"></i></a>
-			</div>
-		</div>
-	</div>
-	</div>
-</div>
-
 
   <!-- Cbus Footer -->
 <footer class="bg-brand-black">
@@ -184,7 +161,12 @@
 		<div class="bg-white">
 			<div class="container mx-auto">
 			<div class="w-full lg:px-24 px-10 py-5 flex flex-col text-brand-black">
-				<p class="w-full text-gray-500 text-sm">©<span id="year"></span> Cbus Super. All rights reserved. Cbus ABN 75 493 363 262.</p>
+				<p class="w-full text-gray-500 text-sm">
+					©<span id="year"></span> Cbus Super. All rights reserved. Cbus ABN 75 493 363 262.
+				</p>
+				<p class="pt-3 text-gray-500 text-sm">
+					This information is about Cbus. It doesn’t take into account your specific needs, so you should look at your own financial position, objectives and requirements before making any financial decisions. Read the relevant Cbus Product Disclosure Statement and Target Market Determination to decide whether Cbus is right for you. Contact 1300 361 784 or visit <a class="underline font-bold" target="_blank" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/Cbus-ISA-Footer-Logo-2017.png">cbussuper.com.au</a> for a copy.
+				</p>
 			</div>
 			</div>
 		</div>
@@ -202,9 +184,9 @@
 		data: {
 			current: 1,
 			items: [
-				{ date: 'Wed, July 26, 12:00 PM', url: 'https://www.comms.cbussuper.com.au/link/id/zzzz62b166f10d1d4851/regform?evuid=zzzz62b166f030b40349'},
-				{ date: 'Tues, July 12, 12:00 PM', url: 'https://www.comms.cbussuper.com.au/link/id/zzzz62bd118360f21901/regform?evuid=zzzz62bd118292c4d993'},
-				{ date: 'Thurs, July 14, 07:00 PM', url: 'https://www.comms.cbussuper.com.au/link/id/zzzz62b166f1c51ed969/regform?evuid=zzzz62b166f10f1b8690'},
+				{ date: 'Wed, July 6, 2:00 PM (AEST)', url: 'https://www.comms.cbussuper.com.au/link/id/zzzz62b166f10d1d4851/regform?evuid=zzzz62b166f030b40349'},
+				{ date: 'Tues, July 12, 12:00 PM (AEST)', url: 'https://www.comms.cbussuper.com.au/link/id/zzzz62bd118360f21901/regform?evuid=zzzz62bd118292c4d993'},
+				{ date: 'Thurs, July 14, 07:00 PM (AEST)', url: 'https://www.comms.cbussuper.com.au/link/id/zzzz62b166f1c51ed969/regform?evuid=zzzz62b166f10f1b8690'},
 			],
 		},
 	});
