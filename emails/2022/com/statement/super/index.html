@@ -61,15 +61,15 @@
    
 
     <div role="banner">
-      <!-- pre-header text -->
-      <div style="font-size:1px;line-height:1px;mso-line-height-rule:exactly;display:none;max-width:0px;max-height:0px;opacity:0;overflow:hidden;mso-hide:all;" >
-        Thanks for being with Cbus. See how your super’s been tracking and get the latest news.
-      </div>
-      <span class="link-black"><%@ include view='MirrorPage' %> </span>
-    </div>
-    <div>
-
-   <div>
+      <!-- Header Links (AJO) -->
+      <p style="Margin-top: 6px;Margin-bottom: 6px;font-size: 14px;line-height: 19px;font-weight: 500;text-align: center;font-family: Hind,Calibri,Arial,sans-serif;">
+        <a target="_blank" href="https://www.cbussuper.com.au" style="color: #515457;text-decoration:none;">Website</a>
+        <span style="padding-left:4px;padding-right:4px;font-weight: lighter;color: #98a1a7;">│</span>
+        <a target="_blank" href="https://www.cbussuper.com.au/manage-account/super/login?id=" style="color: #515457;text-decoration:none;">Login</a> 
+        <span style="padding-left:4px;padding-right:4px;font-weight: lighter;color: #98a1a7;">│</span>
+        <a href="" data-nl-type="mirrorPage" data-tracking-type="MIRROR_PAGE" style="color: #515457; font-size: 14px;text-decoration:none;">View in browser</a>  
+      </p>
+<div>
 
   <!-- ### START FULL WIDTH BLOCK ### -->
     <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 750px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
@@ -81,7 +81,7 @@
       <div class="sm-margin"  style="Margin-left: 45px;Margin-right: 45px;Margin-top: 24px;">
         <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
         <p style="Margin-top: 0;Margin-bottom: 20px;font-family: montserrat, Verdana, arial;text-align: right;">
-          <span class="font-montserrat"> Member number: <%=  recipient.mbrAccID %></span>
+          <span class="font-montserrat"> Member number: {{profile._cbus.MemberID}}</span>
         </p>
       </div>
     </div>
@@ -91,7 +91,7 @@
         <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 40px;" align="left">
           <a target="_blank" class="hover" title="cbussuper.com.au" href="https://www.cbussuper.com.au/">
             <img style="border: 0;display: block;height: auto;width: 100%;max-width: 104px;" alt="Cbus Super logo." width="104" 
-              src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/49845a6e6bf51c507accf83262ab5f8a.png">
+              src="img/logo.png">
           </a>
         </div>
       </div>
@@ -102,8 +102,8 @@
           <a class="hover" target="_blank"
               href="https://www.cbussuper.com.au/manage-account/super/login">
               <img class="gnd-corner-image gnd-corner-image-center gnd-corner-image-top" 
-              style="border: 0;display: block;height: auto;width: 100%;max-width: 750px;" alt="👷 👍" width="750" 
-              src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/3b554bb4a3fc4514deae98221e5733a4.png"
+              style="border: 0;display: block;height: auto;width: 100%;max-width: 750px;" alt="Your annual statement is ready" width="750" 
+              src="img/hero.png"
             />
           </a> 
         </div>
@@ -121,7 +121,7 @@
         <div class="sm-margin" style="Margin-left: 45px;Margin-right: 45px;Margin-top: 20px;Margin-bottom: 24px;">
           <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
             <p style="Margin-top: 0;Margin-bottom: 11px;">
-              Hi <%= recipient.firstName %>,
+              Hi {{profile.person.name.firstName}},
             </p>
             <p style="Margin-top: 0;Margin-bottom: 0;">
               Thanks for being with Cbus. See how your super’s been tracking and get the latest news.
@@ -141,20 +141,55 @@
 <!-- ### END FULL WIDTH BLOCK ### -->
 
 
+  <!-- ### START FULL WIDTH BLOCK (grey) ### -->
+  <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 750px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+    <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ecedec;">
+    <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ecedec;"><td style="width: 750px" class="w560"><![endif]-->
+      <div class="column" style="text-align: left;color: #454545;font-size: 17px;line-height: 22px;font-family: montserrat, Verdana, arial;font-weight: 500;">
+
+        <!-- heading-28 -->
+        <div class="" style="Margin-left: 40px;Margin-right: 45px;Margin-top: 40px;Margin-bottom: 24px;">
+          <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+            <p class="size-28" style="Margin-top: 0;Margin-bottom: 0;font-weight: 800;color: #015dab;font-size: 28px;line-height: 32px;font-family: montserrat,arial,Verdana;">
+              <span class="font-montserrat">
+                We’re missing something!
+              </span>
+            </p>
+          </div>
+        </div>
+
+      <!-- Text -->
+      <div class="sm-margin" style="Margin-left: 45px;Margin-right: 45px;Margin-top: 20px;Margin-bottom: 40px;">
+        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+          <p style="Margin-top: 0;Margin-bottom: 0;">
+            Looks like your details or postal address may be out of date, so we’ve posted your annual statement to your online account. 
+            It’s easy to update your details <a class="hover" target="_blank" style="color: #015dab; font-weight: bold;" 
+            href="https://www.cbussuper.com.au/manage-account/super/login">online</a> or get in touch and we’d be happy to help.
+          </p>
+        </div>
+      </div>
+    
+      </div>
+    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+    </div>
+  </div>
+<!-- ### END FULL WIDTH BLOCK (grey) ### -->
+
+
   <!-- ### START FULL WIDTH BLOCK (heading) ### -->
   <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 750px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
     <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #dfe7ea;">
     <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #dfe7ea;"><td style="width: 750px" class="w560"><![endif]-->
       <div class="column" style="text-align: left;color: #454545;font-size: 17px;line-height: 22px;font-family: montserrat, Verdana, arial;font-weight: 500;">
 
-    <!-- heading 1 -->
-    <div class="sm-margin" style="Margin-left: 45px;Margin-right: 45px;Margin-top: 40px;Margin-bottom: 24px;">
+    <!-- heading-26 -->
+    <div class="" style="Margin-left: 40px;Margin-right: 45px;Margin-top: 40px;Margin-bottom: 24px;">
       <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-        <h3 style="Margin-top: 0;Margin-bottom: 0;font-weight: 800;color: #007481;font-size: 26px;line-height: 28px;font-family: montserrat,arial,Verdana;">
+        <p class="size-26" style="Margin-top: 0;Margin-bottom: 0;font-weight: 800;color: #007481;font-size: 26px;line-height: 28px;font-family: montserrat,arial,Verdana;">
           <span class="font-montserrat">
             View your annual statement in two easy steps
           </span>
-        </h3>
+        </p>
       </div>
     </div>
 
@@ -170,23 +205,61 @@
       <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #dfe7ea;"><td style="width: 375px" valign="top" class="w260"><![endif]-->
         <div class="column" style="text-align: left;color: #454545;font-weight:500;font-size: 17px;line-height: 22px;font-family: montserrat, arial;max-width: 320px;min-width: 320px; width: 320px;width: calc(12375px - 2000%);Float: left;">
         
-
-         <!-- text -->
-        <div class="sm-margin" style="Margin-left: 50px;Margin-right: 50px;Margin-top: 18px;Margin-bottom: 24px;">
-          <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-            <p class="size-16" style="Margin-top: 0;Margin-bottom: 0;font-size: 16px;line-height: 23px;text-align: left;" lang="x-size-16">
-              <ol style="Margin-top: 0;Margin-bottom: 20px;Margin-left: 24px;padding: 0;list-style-type: decimal;">
-                <li style="Margin-top: 0;Margin-bottom: 5px;Margin-left: 0;text-align: left;">Log into your online account</li>
-                <li style="Margin-top: 0;Margin-bottom: 0;Margin-left: 0;text-align: left;">Select <strong>Check your latest statement</strong></li>
-              </ol>
-            </p>
+            <!-- Steps -->
+            <div style="Margin-left: 50px;Margin-right: 0;">
+            <table class="table-w" style="border-collapse: collapse;table-layout: fixed;" role="presentation">
+              <tbody>
+                <tr role="step-1">
+                  <td valign="top" align="left" style="color: #454545;font-family: montserrat, arial;font-size: 18px;line-height: 24px;padding-left: 8px;">
+                    <p style="Margin-top: 0px;Margin-bottom: 0;font-family: montserrat, arial;">
+                      1.
+                    </p>
+                  </td>
+                  <td style="width:200px;color: #454545;font-family: montserrat, arial;font-size: 18px;line-height: 24px;padding-left: 8px;">
+                    <p style="Margin-top: 0px;Margin-bottom: 0;font-family: montserrat, arial;">
+                      Log into your online account
+                    </p>
+                  </td>
+                  <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="font-size: 0px;">
+                    <div style="mso-line-height-rule: exactly;line-height: 4px;font-size: 4px;">&nbsp;</div>
+                  </td>
+                </tr>
+                <tr role="step-2">
+                  <td valign="top" align="left" style="color: #454545;font-family: montserrat, arial;font-size: 18px;line-height: 24px;padding-left: 8px;">
+                    <p style="Margin-top: 0px;Margin-bottom: 0;font-family: montserrat, arial;">
+                      2.
+                    </p>
+                  </td>
+                  <td style="width:200px;color: #454545;font-family: montserrat, arial;font-size: 18px;line-height: 24px;padding-left: 8px;">
+                    <p style="Margin-top: 0px;Margin-bottom: 0;font-family: montserrat, arial;">
+                      Select<strong> Check your latest statement</strong></span>
+                    </p>
+                  </td>
+                  <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="font-size: 0px;">
+                    <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 10px;">&nbsp;</div>
+                  </td>
+                </tr>
+              </tbody>
+              </table>
           </div>
-        </div>
 
-        <div style="Margin-left: 30px;Margin-right: 30px;Margin-bottom: 24px;">
+        <div style="Margin-left: 0;Margin-right: 0;Margin-bottom: 24px;">
           <table class="device-width" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
             <tbody>
             <tr>
+              <td width="40">
+                &nbsp;&nbsp;
+              </td>
                 <td valign="top" align="left">
                   <div class="btn" style="text-align:left;color: #ffffff;">
                     <table cellpadding="0" cellspacing="0" align="left">
@@ -213,7 +286,7 @@
       <!-- image paperwork -->
       <div class="sm-margin" style="Margin-left: 20px;Margin-right: 20px;font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
         <img style="border: 0;display: block;height: auto;width: 100%;max-width: 480px;font-size: 100px; line-height: 130px;" alt="📰" width="330" 
-          src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/e6b474f112be64b1d5447b5c3ba7b72e.png"
+          src="img/paper.png"
         />
       </div>
     
@@ -235,7 +308,7 @@
             <!-- heading -->
               <p style="mso-text-raise: 25px;Margin-top: 0;Margin-bottom: 0;font-weight: 800;font-size: 85px;line-height: 80px;text-align: center;" lang="x-size-64">
                 <a class="hover" target="_blank" style="color: #007481;text-decoration: none;" title="investment options" 
-                    href="https://www.cbussuper.com.au/super/my-investment-options">9.25<span style="font-size: 55px;">%</span>
+                    href="https://www.cbussuper.com.au/super/my-investment-options">8.8<span style="font-size: 55px;">%</span>
                 </a>  
               </p>
 
@@ -271,9 +344,9 @@
     <!-- image news -->
     <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
       <a target="_blank" class="hover" title="download PDF." 
-        href="https://www.cbussuper.com.au/content/dam/cbus/files/news/cbus-new/Cbus-News-For-working-members.pdf">
+        href="https://www.cbussuper.com.au/content/dam/cbus/files/news/cbus-new/Cbus-News-For-members-starting-out.pdf">
         <img style="border: 0;display: block;height: auto;width: 100%;max-width: 185px;" alt="Read the latest Cbus News." width="185" 
-        src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/c83b2c3e7bbddd18b7dd0d515c42d1d0.png">
+            src="img/mag.png">
       </a>
     </div>
 
@@ -310,7 +383,7 @@
                 <table cellpadding="0" cellspacing="0" align="center">
                     <tbody><tr>
                         <td style="width: 310px;height: 60px;border-radius: 10px;background: #4e9d45; font-family: montserrat, arial; font-size: 20px;text-align:center;">
-                          <a target="_blank" href="https://www.cbussuper.com.au/content/dam/cbus/files/news/cbus-new/Cbus-News-For-working-members.pdf" style="border-radius: 10px;text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #4e9d45; border-bottom: 10px solid #4e9d45; border-right: 5px solid #4e9d45;border-left: 5px solid #4e9d45;">
+                          <a target="_blank" href="https://www.cbussuper.com.au/content/dam/cbus/files/news/cbus-new/Cbus-News-For-members-starting-out.pdf" style="border-radius: 10px;text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #4e9d45; border-bottom: 10px solid #4e9d45; border-right: 5px solid #4e9d45;border-left: 5px solid #4e9d45;">
                             <strong style="font-family: montserrat, arial;">READ NOW</strong>
                           </a>
                         </td>
@@ -331,6 +404,92 @@
 </div>
 <!-- ### END 50/50 BLOCK (news) ### -->
 
+  <!-- ### START FULL WIDTH BLOCK (heading) ### -->
+  <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 750px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+    <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #dfe7ea;">
+    <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #dfe7ea;"><td style="width: 750px" class="w560"><![endif]-->
+      <div class="column" style="text-align: left;color: #454545;font-size: 17px;line-height: 22px;font-family: montserrat, Verdana, arial;font-weight: 500;">
+
+            <!-- heading-28 -->
+            <div class="" style="Margin-left: 40px;Margin-right: 45px;Margin-top: 40px;Margin-bottom: 24px;">
+              <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+                <p class="size-28" style="Margin-top: 0;Margin-bottom: 0;font-weight: 800;color: #007481;font-size: 28px;line-height: 32px;font-family: montserrat,arial,Verdana;">
+                  <span class="font-montserrat">
+                    Join us at the Annual Members' Meeting
+                  </span>
+                </p>
+              </div>
+            </div>
+
+      </div>
+    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+    </div>
+  </div>
+<!-- ### END FULL WIDTH BLOCK (heading) ### -->
+
+<!-- ### START 50/50 BLOCK ### -->
+<div class="layout two-col fixed-width stack" style="Margin: 0 auto;max-width: 750px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #dfe7ea">
+  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #dfe7ea"><td style="width: 375px" valign="top" class="w260"><![endif]-->
+    <div class="column" style="text-align: left;color: #454545;font-weight:500;font-size: 17px;line-height: 22px;font-family: montserrat, arial;max-width: 320px;min-width: 320px; width: 320px;width: calc(12375px - 2000%);Float: left;">
+    
+
+     <!-- text -->
+    <div class="sm-margin" style="Margin-left: 50px;Margin-right: 30px;Margin-top: 18px;Margin-bottom: 24px;">
+      <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+        <p class="size-16" style="Margin-top: 0;Margin-bottom: 0;font-size: 16px;line-height: 23px;text-align: left;" lang="x-size-16">
+          Hear from the leaders of your super fund about our achievements over the last year and what we're planning for the future.
+        </p>
+      </div>
+    </div>
+
+    <div style="Margin-left: 30px;Margin-right: 30px;Margin-bottom: 24px;">
+      <table class="device-width" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+        <tbody>
+        <tr>
+            <td valign="top" align="left">
+              <div class="btn" style="text-align:left;color: #ffffff;">
+                <table cellpadding="0" cellspacing="0" align="left">
+                    <tbody><tr>
+                        <td style="width: 310px;height: 60px;border-radius: 10px;background: #4e9d45; font-family: montserrat, arial; font-size: 19px;text-align:center;">
+                          <a target="_blank" href="https://www.cbussuper.com.au/content/dam/cbus/files/forms-publications/general-information/Cbus-Annual-Member-Meeting-2021.pdf" style="border-radius: 10px;text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #4e9d45; border-bottom: 10px solid #4e9d45; border-right: 5px solid #4e9d45;border-left: 5px solid #4e9d45;">
+                            <strong style="font-family: montserrat, arial;text-transform: uppercase;">Your invitation</strong>
+                          </a>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+    </div>
+    
+    </div>
+  <!--[if (mso)|(IE)]></td><td style="width: 375px" valign="top" class="w260"><![endif]-->
+    <div class="column" style="text-align: left;color: #454545;font-size: 17px;line-height: 22px;font-family: Verdana,sans-serif;max-width: 320px;min-width: 320px; width: 320px;width: calc(12375px - 2000%);Float: left;">
+    
+        <!-- image meeting -->
+        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
+          <a class="hover" target="_blank" title="See PDF - Annual Members’ Meeting."
+            href="https://www.cbussuper.com.au/content/dam/cbus/files/forms-publications/general-information/Cbus-Annual-Member-Meeting-2021.pdf">
+              <img style="border: 0;display: block;height: auto;width: 100%;max-width: 185px;" alt="Register to attend Annual Members’ Meeting." width="185" 
+                src="img/meeting.png"
+              />
+          </a> 
+        </div>
+
+       <!-- inner spacer -->
+      <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 10px;">
+        <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
+      </div>
+
+    </div>
+  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+  </div>
+</div>
+<!-- ### END 50/50 BLOCK ### -->
 
 <!-- ### START FOOTER BLOCK (Contact) ### -->
     <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 750px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
