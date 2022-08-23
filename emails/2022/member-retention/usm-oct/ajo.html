@@ -69,26 +69,26 @@ a {text-decoration: none;}
     <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #f3f3f4;"><td style="width: 600px" class="w560"><![endif]-->
       <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;">
     
-          <!-- Header Links (AC) -->
+          <!-- Header Links (AJO) -->
           <p style="Margin-top: 6px;Margin-bottom: 6px;font-size: 14px;line-height: 19px;font-weight: 500;text-align: center;">
             <a target="_blank" href="https://www.cbussuper.com.au" style="color: #515457;text-decoration:none;">Website</a>
             <span style="padding-left:4px;padding-right:4px;font-weight: lighter;color: #98a1a7;">│</span>
             <a target="_blank" href="https://www.cbussuper.com.au/manage-account/super/login?id=" style="color: #515457;text-decoration:none;">Login</a> 
             <span style="padding-left:4px;padding-right:4px;font-weight: lighter;color: #98a1a7;">│</span>
-            <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage" style="color: #515457; font-size: 14px;text-decoration:none;">View in browser</a>  
+            <a href="" data-nl-type="mirrorPage" data-tracking-type="MIRROR_PAGE" style="color: #515457; font-size: 14px;text-decoration:none;">View in browser</a>  
           </p>
 
           <!-- Hero banner -->
             <div style="color: #0F8045;font-weight: bold;font-size: 30px;line-height: 154px;" align="center">
               <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" 
-                alt="Your super may be transfered..." width="600" 
-                src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/cb5d267d921eef45ec0c65d379795418a2bbd51a2653536a560acab71fee8d29.png">
+                alt="Still thinking about retirement?" width="600" 
+                src="img/hero.png">
             </div>
   
           <!-- Member number -->
           <div class="m-id" style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 40px;">
               <p class="size-16 mso-body-text" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;text-align: right;" lang="x-size-16">
-                <strong>Member number:</strong><br/> <%=  recipient.mbrAccID %>
+                <strong>Member number:</strong><br/> {{profile._cbus.MemberID}}
               </p>
           </div>
 
@@ -97,7 +97,7 @@ a {text-decoration: none;}
         <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
           <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
           <p class="size-22" style="Margin-top: 0;Margin-bottom: 0;">
-            Hi <%= recipient.firstName %>,
+            Hi {{profile.person.name.firstName}},
           </p>
           <p class="size-22" style="Margin-top: 20px;Margin-bottom: 0;">
             Your Cbus account has less than $6,000 and limited activity.  As a result, your super may be transferred to the ATO. This would close your account and you would no longer have access to all the 
@@ -300,11 +300,11 @@ a {text-decoration: none;}
                   
                   <div style="Margin-left: 10px;Margin-right: 0;">
                     
-                    <!-- Footer nav (AC) -->
+                  <!-- Footer nav (AJO) -->
                     <p class="footer-nav" style="Margin-top: 44px;Margin-bottom: 12px;font-size: 11px;line-height: 19px;" lang="x-size-11">
-                      <a href="https://www.cbussuper.com.au/" style="color: #515457;text-decoration:none">Website</a>     <span style="padding-left:4px;padding-right:4px;">|</span>
-                      <a href="https://www.cbussuper.com.au/about-us/privacy-statement" style="color: #515457;text-decoration:none">Privacy Statement</a> <span style="padding-left:4px;padding-right:4px;">|</span>
-                      <a href="<%@ include option='NmsServer_URL' %>/webApp/edm_unsub?id=<%=escapeUrl(recipient.cryptedId)%>" style="color: #515457;text-decoration:none" _label="Opt-out link" _type="optout">Unsubscribe</a>
+                      <a target="_blank" href="https://www.cbussuper.com.au/" style="color: #515457;text-decoration:none">Website</a>     <span style="padding-left:4px;padding-right:4px;">|</span>
+                      <a target="_blank" href="https://www.cbussuper.com.au/about-us/privacy-statement" style="color: #515457;text-decoration:none">Privacy Statement</a> <span style="padding-left:4px;padding-right:4px;">|</span>
+                      <a class="hover" target="_blank" style="color: #515457;text-decoration:none" data-nl-type="unsubscription" data-tags="optoutLevel:identity" href="https://t.marketing.cbussuper.com.au/webApp/edm_unsub_ajo_mem?id={{profile._cbus.HashedMemberID}}" data-label="unsubscribe" data-tracking-type="OPT_OUT">unsubscribe</a>
                     </p>
           
                     <!-- line -->
