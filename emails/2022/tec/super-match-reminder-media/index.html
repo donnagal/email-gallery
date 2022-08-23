@@ -101,7 +101,7 @@
           <!-- Text -->
           <div style="Margin-left: 40px;Margin-right: 40px;">
               <p class="size-22 mso-body-text" style="Margin-top: 0;Margin-bottom: 20px;">
-                If you’ve got lost super out there, you may be paying fees on each of those super accounts. Paying fees on multiple accounts will be eating into your super savings, impacting your retirement outcome. 
+                Hi {{profile.person.name.firstName}}, if you’ve got lost super out there, you may be paying fees on each of those super accounts. Paying fees on multiple accounts will be eating into your super savings, impacting your retirement outcome. 
               </p>
           </div>
 
@@ -135,80 +135,98 @@
         </div>
 
      <!-- Steps -->
-      <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
-        <table class="table-w" style="border-collapse: collapse;table-layout: fixed;" role="presentation">
-          <tbody>
-            <tr role="step-1">
-              <td valign="middle" class="" style="width: 30px;height:20px;background: #5B1F48;color: white;text-align: center;">
-                <strong style="font-family: Roboto,Arial,sans-serif; font-size: 22px;text-align:center;">1</strong>
-              </td>
-              <td style="color: #5B1F48;font-family: Roboto Condensed,Arial Narrow,Avenir Next Condensed,Roboto,sans-serif;font-size: 18px;line-height: 24px;padding-left: 8px;">
-                <p class="size-22 mso-body-text" style="Margin-top: 0px;Margin-bottom: 0;">
-                  Log in to the 
-                  <a class="hover" target="_blank" style="color: #5B1F48; font-weight: bold;" href="https://www.portal.mediasuper.com.au/manage-account/super/login">portal</a>.
-                </p>
-              </td>
-              <td>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2" style="font-size: 0px;">
-                <div style="mso-line-height-rule: exactly;line-height: 4px;font-size: 4px;">&nbsp;</div>
-              </td>
-            </tr>
-            <tr role="step-2">
-              <td valign="middle" class="" style="width: 30px;height:20px;background: #5B1F48;color: white;text-align: center;">
-                <strong style="font-family: Roboto,Arial,sans-serif; font-size: 22px;text-align:center;">2</strong>
-              </td>
-              <td style="color: #5B1F48;font-family: Roboto Condensed,Arial Narrow,Avenir Next Condensed,Roboto,sans-serif;font-size: 18px;line-height: 24px;padding-left: 8px;">
-                <p class="size-22 mso-body-text" style="Margin-top: 0px;Margin-bottom: 0;">
-                 Verify your identity 
-                </p>
-              </td>
-              <td>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2" style="font-size: 0px;">
-                <div style="mso-line-height-rule: exactly;line-height: 4px;font-size: 4px;">&nbsp;</div>
-              </td>
-            </tr>
-            <tr role="step-3">
-              <td valign="middle" class="" style="width: 30px;height:20px;background: #5B1F48;color: white;text-align: center;">
-                <strong style="font-family: Roboto,Arial,sans-serif; font-size: 22px;text-align:center;">3</strong>
-              </td>
-              <td style="color: #5B1F48;font-family: Roboto Condensed,Arial Narrow,Avenir Next Condensed,Roboto,sans-serif;font-size: 18px;line-height: 24px;padding-left: 8px;">
-                <p class="size-22 mso-body-text" style="Margin-top: 0px;Margin-bottom: 0;">
-                 Give us permission to search for your super 
-                </p>
-              </td>
-              <td>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2" style="font-size: 0px;">
-                <div style="mso-line-height-rule: exactly;line-height: 4px;font-size: 4px;">&nbsp;</div>
-              </td>
-            </tr>
-            <tr role="step-4">
-              <td valign="middle" class="" style="width: 30px;height:20px;background: #5B1F48;color: white;text-align: center;">
-                <strong style="font-family: Roboto,Arial,sans-serif; font-size: 22px;text-align:center;">4</strong>
-              </td>
-              <td style="color: #5B1F48;font-family: Roboto Condensed,Arial Narrow,Avenir Next Condensed,Roboto,sans-serif;font-size: 18px;line-height: 24px;padding-left: 8px;">
-                <p class="size-22 mso-body-text" style="Margin-top: 0px;Margin-bottom: 0;">
-                  We’ll then find it for you
-                </p>
-              </td>
-              <td>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-              </td>
-            </tr>
-          </tbody>
-          </table>
-      </div>
+     <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
+      <table class="table-w" style="border-collapse: collapse;table-layout: fixed;" role="presentation">
+        <tbody>
+          <tr role="step-1">
+            <td valign="middle" class="" style="width: 30px;height:20px;background: #5B1F48;color: white;text-align: center;">
+              <strong style="font-family: Roboto,Arial,sans-serif; font-size: 22px;text-align:center;">1</strong>
+            </td>
+            <td style="color: #5B1F48;font-family: Roboto Condensed,Arial Narrow,Avenir Next Condensed,Roboto,sans-serif;font-size: 18px;line-height: 24px;padding-left: 8px;">
+              <p class="size-22 mso-body-text" style="Margin-top: 0px;Margin-bottom: 0;">
+                Log in to the 
+                <a class="hover" target="_blank" style="color: #5B1F48; font-weight: bold;" href="https://www.portal.mediasuper.com.au/manage-account/super/login">member portal</a>.
+              </p>
+            </td>
+            <td>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="font-size: 0px;">
+              <div style="mso-line-height-rule: exactly;line-height: 4px;font-size: 4px;">&nbsp;</div>
+            </td>
+          </tr>
+          <tr role="step-2">
+            <td valign="middle" class="" style="width: 30px;height:20px;background: #5B1F48;color: white;text-align: center;">
+              <strong style="font-family: Roboto,Arial,sans-serif; font-size: 22px;text-align:center;">2</strong>
+            </td>
+            <td style="color: #5B1F48;font-family: Roboto Condensed,Arial Narrow,Avenir Next Condensed,Roboto,sans-serif;font-size: 18px;line-height: 24px;padding-left: 8px;">
+              <p class="size-22 mso-body-text" style="Margin-top: 0px;Margin-bottom: 0;">
+                Select <strong>Consolidate my super</strong> 
+              </p>
+            </td>
+            <td>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="font-size: 0px;">
+              <div style="mso-line-height-rule: exactly;line-height: 4px;font-size: 4px;">&nbsp;</div>
+            </td>
+          </tr>
+          <tr role="step-3">
+            <td valign="middle" class="" style="width: 30px;height:20px;background: #5B1F48;color: white;text-align: center;">
+              <strong style="font-family: Roboto,Arial,sans-serif; font-size: 22px;text-align:center;">3</strong>
+            </td>
+            <td style="color: #5B1F48;font-family: Roboto Condensed,Arial Narrow,Avenir Next Condensed,Roboto,sans-serif;font-size: 18px;line-height: 24px;padding-left: 8px;">
+              <p class="size-22 mso-body-text" style="Margin-top: 0px;Margin-bottom: 0;">
+                Select <strong>Search for super</strong>
+              </p>
+            </td>
+            <td>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="font-size: 0px;">
+              <div style="mso-line-height-rule: exactly;line-height: 4px;font-size: 4px;">&nbsp;</div>
+            </td>
+          </tr>
+          <tr role="step-4">
+            <td valign="middle" class="" style="width: 30px;height:20px;background: #5B1F48;color: white;text-align: center;">
+              <strong style="font-family: Roboto,Arial,sans-serif; font-size: 22px;text-align:center;">4</strong>
+            </td>
+            <td style="color: #5B1F48;font-family: Roboto Condensed,Arial Narrow,Avenir Next Condensed,Roboto,sans-serif;font-size: 18px;line-height: 24px;padding-left: 8px;">
+              <p class="size-22 mso-body-text" style="Margin-top: 0px;Margin-bottom: 0;">
+                Complete the Checklist
+              </p>
+            </td>
+            <td>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="font-size: 0px;">
+              <div style="mso-line-height-rule: exactly;line-height: 4px;font-size: 4px;">&nbsp;</div>
+            </td>
+          </tr>
+          <tr role="step-5">
+            <td valign="middle" class="" style="width: 30px;height:20px;background: #5B1F48;color: white;text-align: center;">
+              <strong style="font-family: Roboto,Arial,sans-serif; font-size: 22px;text-align:center;">5</strong>
+            </td>
+            <td style="color: #5B1F48;font-family: Roboto Condensed,Arial Narrow,Avenir Next Condensed,Roboto,sans-serif;font-size: 18px;line-height: 24px;padding-left: 8px;">
+              <p class="size-22 mso-body-text" style="Margin-top: 0px;Margin-bottom: 0;">
+                We’ll then find it for you
+              </p>
+            </td>
+            <td>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+          </tr>
+        </tbody>
+        </table>
+    </div>
             
         <!-- inner spacer -->
         <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 12px;">
