@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Templates</title>
+  <link href="images/favion.png" rel="icon" type="image/x-icon" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
+	<link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/tailwind.css" rel="stylesheet">
+  <link href="https://email-gallery.netlify.app/emails/landing-pages/2022/css/main.css" rel="stylesheet">
+
+<style>
+	html {scroll-behavior: smooth;}
+.bg-stripes-indigo {
+    background-color: #818cf81a;
+    background-image: linear-gradient(135deg,#6366f180 10%,transparent 0,transparent 50%,#6366f180 0,#6366f180 60%,transparent 0,transparent);
+    background-size: 7.07px 7.07px;
+}
+</style>
+</head>
+
+	<body>
+
+		<nav class="sticky top-0 flex items-center justify-between flex-wrap bg-black p-4 text-white">
+			<div class="flex items-center flex-shrink-0 text-white mr-6">
+			  <span class="font-semibold text-xl tracking-tight">Email Style Guide</span>
+			</div>
+			<div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+			  <div class="text-sm lg:flex-grow">
+				<a href="#types" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+					Examples
+				</a>
+				<a href="#layout" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+					Layout
+				</a>
+				<a href="#hero" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+					Hero Image
+				</a>
+				<a href="#typography" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+					Typography
+				</a>
+				<a href="#buttons" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+					Buttons
+				</a>
+				<a href="#components" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+					Component Library
+				</a>
+			  </div>
+			</div>
+		  </nav>
+
+
+    <div class="container mx-auto pt-10 pb-24 px-10">
+
+		 
+      <h4 id="landing-pages" class="pt-5 pb-5 text-2xl font-bold"> Examples</h4>
+      <hr class="border-gray-400 pb-8">
+
+      <section id="types">
+		<div class="flex justify-center ">
+			<div class="lg:flex w-auto lg:p-10">
+				<div class="text-center px-3">
+					<a target="_blank" href="https://email-gallery.netlify.app/emails/templates/2022/cbus-member/index.html">
+						<img class="mx-auto" src="https://image.thum.io/get/maxAge/12/width/300/https://email-gallery.netlify.app/emails/templates/2022/cbus-member/index.html" />
+						<div class="p-2"><p class="text-black font-bold">Member</p></div>
+					</a>
+				</div>
+				<div class="text-center px-3">
+					<a target="_blank" href="https://email-gallery.netlify.app/emails/templates/2022/cbus-sis/index.html">
+					<img class="mx-auto" src="https://image.thum.io/get/maxAge/12/width/300/https://email-gallery.netlify.app/emails/templates/2022/cbus-sis/index.html" />
+					<div class="p-2"><p class="text-black font-bold">SIS</p></div>
+				</a>
+				</div>
+				<div class="text-center px-3">
+					<a target="_blank" href="https://email-gallery.netlify.app/emails/templates/2022/cbus-letter/index.html">
+					<img class="mx-auto" src="https://image.thum.io/get/maxAge/12/width/300/https://email-gallery.netlify.app/emails/templates/2022/cbus-letter/index.html" />
+					<div class="p-2"><p class="text-black font-bold">Letter</p></div>
+					</a>
+				</div>
+				<div class="text-center px-3">
+					<a target="_blank" href="https://email-gallery.netlify.app/emails/templates/2022/cbus-event-single-topic/index.html">
+					<img class="mx-auto" src="https://image.thum.io/get/maxAge/12/width/300/https://email-gallery.netlify.app/emails/templates/2022/cbus-event-single-topic/index.html" />
+					<div class="p-2"><p class="text-black font-bold">Event</p></div>
+					</a>
+				</div>
+			</div>
+		</div>
+      </section>
+
+	  <h4 id="layout" class="pt-5 pb-5 text-2xl font-bold">Layout</h4>
+      <hr class="border-gray-400 pb-8">
+	  <section>
+
+		<p class="text-center text-gray-500">Full width (600px total)</p>
+		<div class="mx-auto" style="width:600px">
+			<div class="flex gap-2 text-white text-sm font-bold font-mono leading-6 bg-stripes-indigo rounded-lg">
+				<div class="w-14 h-14 flex-none rounded-lg flex items-center justify-center bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">
+				40px
+				</div>
+				<div class="p-4 grow rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg" style="width: 520px">
+				520px
+				</div>
+				<div class="p-4 w-14 h-14 flex-none rounded-lg flex items-center justify-center bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">
+				40px
+				</div>
+			</div>
+		</div>
+
+		<p class="mt-8 text-center text-gray-500">50/50 (Even spacing on each column for device)</p>
+		<div class="mx-auto" style="width:600px">
+			<div class="flex gap-2 text-white text-sm font-bold font-mono leading-6 bg-stripes-indigo rounded-lg">
+				<div class="w-14 h-14 flex-none rounded-lg flex items-center justify-center bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">
+					40px
+				</div>
+				<div class="p-4 grow rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg" style="width: 220px">
+					220px
+				</div>
+				<div class="w-14 h-14 flex-none rounded-lg flex items-center justify-center bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">
+					40px
+				</div>
+				<div class="w-14 h-14 flex-none rounded-lg flex items-center justify-center bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">
+					40px
+				</div>
+				<div class="p-4 grow rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg" style="width: 220px">
+					220px
+				</div>
+				<div class="p-4 w-14 h-14 flex-none rounded-lg flex items-center justify-center bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">
+				40px
+				</div>
+			</div>
+		</div>
+
+		<p class="mt-8 text-center text-gray-500">30/70 (Even spacing on each column for device)</p>
+		<div class="mx-auto" style="width:600px">
+			<div class="flex gap-2 text-white text-sm font-bold font-mono leading-6 bg-stripes-indigo rounded-lg">
+				<div class="w-14 h-14 flex-none rounded-lg flex items-center justify-center bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">
+					40px
+				</div>
+				<div class="p-4 grow rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg" style="width: 160px">
+					160px
+				</div>
+				<div class="w-14 h-14 flex-none rounded-lg flex items-center justify-center bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">
+					40px
+				</div>
+				<div class="p-4 grow rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg" style="width: 320px">
+					320px
+				</div>
+				<div class="p-4 w-14 h-14 flex-none rounded-lg flex items-center justify-center bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">
+					40px
+				</div>
+			</div>
+		</div>
+
+	</section>
+	
+	<h4 id="hero" class="pt-5 pb-5 text-2xl font-bold">Hero Image</h4>
+	<hr class="border-gray-400 pb-8">
+	<section>
+		<div class="flex justify-center ">
+			<div class="w-auto lg:p-10">
+				<div class="flex flex-wrap">
+					<img src="img/hero-1.jpg" />
+				</div>
+				<div class="flex flex-wrap p-3">
+					<div>
+						<p class="font-bold text-xl pb-2">Guidelines and spacing</p>
+						<p class="text-gray-500">
+							<strong>Size</strong>
+							W 600px
+							H450px<br/>
+							<strong>Heading</strong>
+							Effra Bold<br/>
+							<strong>Sub heading</strong>
+							Effra Regular<br/>
+							<strong>HEX</strong> :#eaeaea<br/>
+							<strong>Overlay Image</strong>
+							30% Black
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="w-auto lg:p-10">
+				<div class="flex flex-wrap">
+					<img src="img/hero-2.jpg" />
+				</div>
+				<div class="flex flex-wrap p-3">
+					<div>
+						<p class="font-bold text-xl pb-2">Image to be supplied</p>
+						<p class="text-gray-500"><strong>Size</strong>
+							W 600px
+							H450px</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<h4 id="typography" class="pt-5 pb-5 text-2xl font-bold">Typography</h4>
+	<hr class="border-gray-400 pb-8">
+	<section>
+		<!-- Heading XL -->
+		<div style="Margin-left: 40px;Margin-right: 40px;">
+			<div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+			<h1 style="Margin-top: 0;Margin-bottom: 20px;font-family: Hind,Calibri,Arial,sans-serif;font-style: normal;font-weight: normal;font-size: 30px;line-height: 38px;">
+			  <strong>Heading XL, Hind Bold</strong>
+			</h1>
+			</div>
+		</div>
+
+		<!-- Heading (size-30) -->
+		<div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
+		  <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+			<p class="size-30" style="Margin-top: 0;Margin-bottom: 10px;font-family:'Hind',Tahoma,Arial,sans-serif;font-style: normal;font-weight: normal;font-size: 30px;line-height: 38px;">
+			  <strong>Heading Size-30, Hind Bold</strong>
+			</p>
+		  </div>
+		</div>
+
+	  <!-- Heading (size-28)-->
+	  <div style="Margin-left: 40px;Margin-right: 30px;Margin-top: 24px;">
+		<div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+		  <p class="size-28" style="Margin-top: 0;Margin-bottom: 20px;font-size: 24px;line-height: 32px;" lang="x-size-28">
+			<strong>Heading Size-28, Hind Bold</strong>
+		  </p>
+		</div>
+	  </div>
+
+		<!-- Text -->
+		<div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
+		<div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+			<p class="size-22" style="Margin-top: 0;Margin-bottom: 8px;font-size: 18px;line-height: 26px;text-align: left;" lang="x-size-22">
+			Body Text, Size-22, Hind Regular.
+			</p>
+		</div>
+		</div>
+	</section>
+
+	<h4 id="buttons" class="pt-5 pb-5 text-2xl font-bold">Buttons</h4>
+	<hr class="border-gray-400 pb-8">
+	<section>
+		<p class="text-gray-500">Member Green Button</p>
+		<!-- Button -->
+		<div style="">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+			<tbody>
+			<tr>
+				<td valign="top" align="left">
+					<div class="btn" style="text-align:center;color: #ffffff;">
+					<table cellpadding="0" cellspacing="0" align="left">
+						<tbody><tr>
+							<td style="width: 206px;height: 55px;background: #0F8045;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 22px;text-align:center;">
+								<a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0F8045; border-bottom: 10px solid #0F8045; border-right: 5px solid #0F8045;border-left: 5px solid #0F8045;">
+								<strong style="font-family: Hind,Calibri,Arial,sans-serif;">Read more</strong>
+								</a>
+							</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+				</td>
+					<!--[if (mso)|(IE)]><td style="width: 30px;color:white;">&nbsp;</td><![endif]-->
+				</tr>
+			</tbody>
+		</table>
+		</div>
+
+		<p class="text-gray-500 pt-8">Member Green Button</p>
+		<!-- Button -->
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+			<tbody>
+			<tr>
+				<td valign="top" align="left">
+				<div class="btn" style="text-align:center;color: #ffffff;">
+					<table cellpadding="0" cellspacing="0" align="left">
+						<tbody><tr>
+							<td style="width: 206px;height: 55px;background: #72004D;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 19px;text-align:center;">
+							<a target="_blank" href="https://www.cbussuper.com.au/campaigns/open-sis?utm_source=adobe-campaign&utm_medium=edm&utm_campaign=sis-acq&utm_content=seg1-tell-me-more" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #72004D; border-bottom: 10px solid #72004D; border-right: 5px solid #72004D;border-left: 5px solid #72004D;">
+								<strong style="font-family: Hind,Calibri,Arial,sans-serif;">Read more</strong>
+							</a>
+							</td>
+						</tr>
+					</tbody>
+					</table>
+				</div>
+				</td>
+				<!--[if (mso)|(IE)]><td style="width: 30px;color:white;">&nbsp;</td><![endif]-->
+			</tr>
+		</tbody>
+		</table>
+	</section>
+
+	<h4 id="components" class="pt-10 pb-5 text-2xl font-bold">Component Library</h4>
+	<hr class="border-gray-400 pb-8">
+	<section>
+		<div class="flex justify-center ">
+			<div class="lg:flex w-auto lg:p-10">
+				<div class="text-center px-3">
+					<a target="_blank" href="https://email-gallery.netlify.app/emails/templates/2022/cbus-component-library/index.html">
+						<img class="mx-auto" src="https://image.thum.io/get/maxAge/12/width/300/https://email-gallery.netlify.app/emails/templates/2022/cbus-component-library/index.html" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+      
+    </div>
+
+	</body>
+
+</body>
+
+</html>
