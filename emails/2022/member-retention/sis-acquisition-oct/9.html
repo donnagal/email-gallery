@@ -67,7 +67,12 @@ a {text-decoration: none;}
 <!--<![endif]-->
   <table class="wrapper" style="border-collapse: collapse;table-layout: fixed;min-width: 320px;width: 100%;background-color: #E5E5E5;" cellpadding="0" cellspacing="0" role="presentation"><tbody><tr><td>
   
-    <!-- v1 -->
+    <div role="banner">
+      <!-- pre-header text -->
+      <div style="font-size:1px;line-height:1px;mso-line-height-rule:exactly;display:none;max-width:0px;max-height:0px;opacity:0;overflow:hidden;mso-hide:all;" >
+        Our Super Income Stream product has won Money magazine’s Best Pension Fund for a third year in a row.     
+      </div>
+    </div>
 
   <!-- ### START: INTRO BLOCK ### -->
   <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
@@ -75,13 +80,13 @@ a {text-decoration: none;}
     <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #f3f3f4;"><td style="width: 600px" class="w560"><![endif]-->
       <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;">
     
-          <!-- Header Links (AJO) -->
+          <!-- Header Links (AC) -->
           <p style="Margin-top: 6px;Margin-bottom: 6px;font-size: 14px;line-height: 19px;font-weight: 500;text-align: center;">
             <a target="_blank" href="https://www.cbussuper.com.au" style="color: #515457;text-decoration:none;">Website</a>
             <span style="padding-left:4px;padding-right:4px;font-weight: lighter;color: #98a1a7;">│</span>
             <a target="_blank" href="https://www.cbussuper.com.au/manage-account/super/login?id=" style="color: #515457;text-decoration:none;">Login</a> 
             <span style="padding-left:4px;padding-right:4px;font-weight: lighter;color: #98a1a7;">│</span>
-            <a href="" data-nl-type="mirrorPage" data-tracking-type="MIRROR_PAGE" style="color: #515457; font-size: 14px;text-decoration:none;">View in browser</a>  
+            <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage" style="color: #515457; font-size: 14px;text-decoration:none;">View in browser</a>  
           </p>
 
           <!-- Hero banner -->
@@ -102,7 +107,7 @@ a {text-decoration: none;}
         <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
           <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
           <p class="size-22" style="Margin-top: 20px;Margin-bottom: 0;">
-            Hi {{profile.person.name.firstName}}
+            Hi <%= recipient.firstName %>,
           </p>
           <p class="size-22" style="Margin-top: 20px;Margin-bottom: 0;">
             You’re onto a good thing with Cbus Super Income Stream (SIS). 
@@ -554,11 +559,11 @@ a {text-decoration: none;}
                   
                   <div style="Margin-left: 10px;Margin-right: 0;">
                     
-                  <!-- Footer nav (AJO) -->
+                  <!-- Footer nav (AC) -->
                     <p class="footer-nav" style="Margin-top: 44px;Margin-bottom: 12px;font-size: 11px;line-height: 19px;" lang="x-size-11">
                       <a target="_blank" href="https://www.cbussuper.com.au/" style="color: #515457;text-decoration:none">Website</a>     <span style="padding-left:4px;padding-right:4px;">|</span>
                       <a target="_blank" href="https://www.cbussuper.com.au/about-us/privacy-statement" style="color: #515457;text-decoration:none">Privacy Statement</a> <span style="padding-left:4px;padding-right:4px;">|</span>
-                      <a class="hover" target="_blank" style="color: #515457;text-decoration:none" data-nl-type="unsubscription" data-tags="optoutLevel:identity" href="https://t.marketing.cbussuper.com.au/webApp/edm_unsub_ajo_mem?id={{profile._cbus.HashedMemberID}}" data-label="unsubscribe" data-tracking-type="OPT_OUT">Unsubscribe</a>
+                      <a href="<%@ include option='NmsServer_URL' %>/webApp/edm_unsub?id=<%=escapeUrl(recipient.cryptedId)%>" style="color: #515457;text-decoration:none" _label="Opt-out link" _type="optout">Unsubscribe</a>
                     </p>
           
                     <!-- line -->
@@ -597,18 +602,18 @@ a {text-decoration: none;}
                   </div>
                   <!-- end: Footer nav -->
 
-        <!-- Awards Image (desktop) -->
+        <!-- Awards Image SIS (desktop) -->
         <div class="sm-hide" style="Margin-top: 44px;font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 20px;" align="left">
           <img style="border: 0;display: block;height: auto;width: 100%;max-width: 490px;" 
               alt="Awards: Super Ratings + Chant West." width="490" 
-              src="https://www.cbussuper.com.au/content/dam/cbus/images/email/footer-regular.png">
+              src="https://www.cbussuper.com.au/content/dam/cbus/images/email/footer-sis.png">
         </div>
 
 
-      <!-- Awards Image (Mobile) -->
+      <!-- Awards Image SIS (Mobile) -->
       <div class="sm-show" style="display: none;Margin-top: 44px;font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 20px;" align="left">
         <img alt="Awards: Super Ratings + Chant West." width="150" 
-            src="https://www.cbussuper.com.au/content/dam/cbus/images/email/footer-logo-reg-gif.gif">
+            src="https://www.cbussuper.com.au/content/dam/cbus/images/email/footer-logo-SIS-gif.gif">
       </div>
 
      <!-- Text -->
@@ -625,10 +630,6 @@ a {text-decoration: none;}
           </p>
           <p style="Margin-top: 8px;Margin-bottom: 0;font-size: 11px;line-height: 19px;">
             United Super Pty Ltd ABN 46 006 261 623 AFSL 233792 as Trustee for Cbus ABN 75 493 363 262 offering Cbus and Media Super Products. 
-          </p>
-
-          <p style="Margin-top: 15px;Margin-bottom: 0;font-size: 11px;line-height: 19px;">
-            Cbus Trustee: United Super Pty Ltd ABN 46 006 261 623 AFSL 233792 Cbus ABN 75 493 363 262.  
           </p>
           <p style="Margin-top: 5px;Margin-bottom: 0;font-size: 11px;line-height: 19px;">
             This email (including any attachments) contains information which is confidential and may be subject to legal privilege. If you are not the intended recipient you must not use, distribute or copy this email. If you have received this email in error, please notify the sender immediately and delete this email. Any views expressed in this email are not necessarily the views of Cbus. 
