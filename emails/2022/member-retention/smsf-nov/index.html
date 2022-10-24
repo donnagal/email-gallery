@@ -66,7 +66,7 @@ a {text-decoration: none;}
     <div role="banner">
       <!-- pre-header text -->
       <div style="font-size:1px;line-height:1px;mso-line-height-rule:exactly;display:none;max-width:0px;max-height:0px;opacity:0;overflow:hidden;mso-hide:all;" >
-        It’s not as hard as you think it is
+        You have a new message from Cbus Super.
       </div>
     </div>
 
@@ -76,26 +76,26 @@ a {text-decoration: none;}
     <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #f3f3f4;"><td style="width: 600px" class="w560"><![endif]-->
       <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;">
     
-          <!-- Header Links (AC) -->
+          <!-- Header Links (AJO) -->
           <p style="Margin-top: 6px;Margin-bottom: 6px;font-size: 14px;line-height: 19px;font-weight: 500;text-align: center;">
             <a target="_blank" href="https://www.cbussuper.com.au" style="color: #515457;text-decoration:none;">Website</a>
             <span style="padding-left:4px;padding-right:4px;font-weight: lighter;color: #98a1a7;">│</span>
             <a target="_blank" href="https://www.cbussuper.com.au/manage-account/super/login?id=" style="color: #515457;text-decoration:none;">Login</a> 
             <span style="padding-left:4px;padding-right:4px;font-weight: lighter;color: #98a1a7;">│</span>
-            <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage" style="color: #515457; font-size: 14px;text-decoration:none;">View in browser</a>   
+            <a href="" data-nl-type="mirrorPage" data-tracking-type="MIRROR_PAGE" style="color: #515457; font-size: 14px;text-decoration:none;">View in browser</a>  
           </p>
 
           <!-- Hero banner -->
-            <div style="color: #0F8045;font-weight: bold;font-size: 30px;line-height: 154px;" align="center">
-              <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" 
-                alt="Cbus: Making hard work pay off." width="600" 
-                src="https://www.cbussuper.com.au/content/dam/cbus/images/email/young-cohort/hero-yc-1.png">
-            </div>
+          <div style="color: #0F8045;font-weight: bold;font-size: 30px;line-height: 154px;" align="center">
+            <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" 
+              alt="Cbus: Making hard work pay off." width="600" 
+              src="https://www.cbussuper.com.au/content/dam/cbus/images/email/2022-oct/hero-1.png">
+          </div>
   
           <!-- Member number -->
           <div class="m-id" style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 40px;">
               <p class="size-16 mso-body-text" style="Margin-top: 0;Margin-bottom: 20px;font-size: 16px;line-height: 24px;text-align: right;" lang="x-size-16">
-                <strong>Member number:</strong><br/> <%=  recipient.mbrAccID %>
+                <strong>Member number:</strong><br/> {{profile._cbus.MemberID}}
               </p>
           </div>
 
@@ -107,23 +107,24 @@ a {text-decoration: none;}
         <!-- Text -->
         <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
           <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-          <p class="size-22" style="Margin-top: 0;Margin-bottom: 10px;">
-            Hey <%= recipient.firstName %>, 
+          <p class="size-22" style="Margin-top: 0;Margin-bottom: 0;">
+            Hi {{profile.person.name.firstName}},
           </p>
-          <p class="size-30" style="Margin-top: 0;Margin-bottom: 10px;font-family:'Hind',Tahoma,Arial,sans-serif;font-style: normal;font-weight: normal;font-size: 30px;line-height: 38px;">
-            <strong>Your super is there to make sure all your hard work pays off later</strong>
+          <p class="size-22" style="Margin-top: 20px;Margin-bottom: 0;">
+            Self managed super funds (SMSFs) can be a good option, but in many instances, an industry fund will do better.
           </p>
-          <p class="size-22" style="Margin-top: 0;Margin-bottom: 10px;">
-            Now you’re working full-time, it’s worth keeping an eye on how your super savings are growing. 
+          <p class="size-22" style="Margin-top: 20px;Margin-bottom: 0;">
+            Cbus has delivered an annual average return of 8.88%^. Will a self managed super fund deliver more?
+          </p>
+          <p class="size-22" style="Margin-top: 20px;Margin-bottom: 0;">
+            If you’re thinking about switching to a SMSF, it’s worth speaking to a Cbus Adviser before jumping in.
+          </p>
+          <p class="size-22" style="Margin-top: 20px;Margin-bottom: 0;">
+            <strong>Request a call back from our advice team:</strong>
           </p>
           </div>
         </div>
 
-         <!-- inner spacer -->
-         <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 12px;">
-          <div style="mso-line-height-rule: exactly;line-height: 12px;font-size: 1px;">&nbsp;</div>
-        </div>
-    
         <!-- Button -->
         <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 10px;">
           <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
@@ -133,9 +134,9 @@ a {text-decoration: none;}
                   <div class="btn" style="text-align:center;color: #ffffff;">
                     <table cellpadding="0" cellspacing="0" align="left">
                         <tbody><tr>
-                            <td style="width: 206px;height: 55px;background: #0F8045;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 22px;text-align:center;">
+                            <td style="width: 236px;height: 55px;background: #0F8045;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 22px;text-align:center;">
                               <a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0F8045; border-bottom: 10px solid #0F8045; border-right: 5px solid #0F8045;border-left: 5px solid #0F8045;">
-                                <strong style="font-family: Hind,Calibri,Arial,sans-serif;">Learn more</strong>
+                                <strong style="font-family: Hind,Calibri,Arial,sans-serif;">Request a call back</strong>
                               </a>
                             </td>
                         </tr>
@@ -160,275 +161,17 @@ a {text-decoration: none;}
   </div>
 <!-- ### END: INTRO BLOCK ### -->
 
-<div style="mso-line-height-rule: exactly;line-height: 13px;font-size: 13px;">&nbsp;</div>
-
-<!-- ### END: 50/50 TILE BLOCK (1) ### -->
-<div class="layout two-col has-gutter stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;">
-  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr><td style="width: 290px" valign="top" class="w250"><![endif]-->
-    <div class="column" style="max-width: 320px;min-width: 290px; width: 320px;width: calc(18290px - 3000%);Float: left;">
-      <table class="column__background" style="border-collapse: collapse;table-layout: fixed;background-color: #ffffff;" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-        <tbody><tr>
-          <td style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Arial,sans-serif;">
-          
-            <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;">
-              <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-                <p class="size-22" style="Margin-top: 0;Margin-bottom: 10px;font-size: 20px;line-height: 28px;" lang="x-size-22">
-                  <strong style="color: #1a1a1a;">The basics – what is superannuation?</strong>
-                </p>
-              </div>
-              </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
-                <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-                  <p style="Margin-top: 0;Margin-bottom: 10px;">
-                    Superannuation is your savings for life after work. Your employer pays <strong>10.5%</strong> of your salary into your super fund, to set you up for retirement. 
-                  </p>
-                  <p style="Margin-top: 0;Margin-bottom: 0;">
-                    Want more basics on super?  
-                  </p>
-                </div>
-              </div>
-
-              <!-- Button -->
-              <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 28px;">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
-                  <tbody>
-                  <tr>
-                      <td valign="top" align="center">
-                        <div class="btn" style="text-align:center;color: #ffffff;">
-                          <table cellpadding="0" cellspacing="0" align="center">
-                              <tbody><tr>
-                                  <td style="width: 206px;height: 55px;background: #0F8045;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 22px;text-align:center;">
-                                    <a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0F8045; border-bottom: 10px solid #0F8045; border-right: 5px solid #0F8045;border-left: 5px solid #0F8045;">
-                                      <strong style="font-family: Hind,Calibri,Arial,sans-serif;">Get the basics</strong>
-                                    </a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                          </table>
-                      </div>
-                      </td>
-                        <!--[if (mso)|(IE)]><td style="width: 30px;color:white;">&nbsp;</td><![endif]-->
-                    </tr>
-                </tbody>
-              </table>
-              </div>
-          
-          </td>
-        </tr>
-      </tbody></table>
-    </div>
-  <!--[if (mso)|(IE)]></td><td style="width: 20px"><![endif]--><div class="gutter" style="Float: left;width: 20px;">&nbsp;</div><!--[if (mso)|(IE)]></td><td style="width: 290px" valign="top" class="w250"><![endif]-->
-    <div class="column" style="max-width: 320px;min-width: 290px; width: 320px;width: calc(18290px - 3000%);Float: left;">
-      <table class="column__background" style="border-collapse: collapse;table-layout: fixed;background-color: #ffffff;" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-        <tbody><tr>
-          <td style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Arial,sans-serif;">
-          
-            <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;">
-            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-              <p class="size-22" style="Margin-top: 0;Margin-bottom: 10px;font-size: 20px;line-height: 28px;" lang="x-size-22">
-                <strong style="color: #1a1a1a;">Got Spare Change?</strong>
-              </p>
-            </div>
-            </div>
-          
-            <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
-              <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-                <p style="Margin-top: 0;Margin-bottom: 10px;">
-                  That spare change for maccas could go a long way if you put it in to your super – watch it grow over time
-                </p>
-              </div>
-            </div>
-
-            <div style="Margin-left: 40px;Margin-right: 40px;Margin-top: 0;">
-              <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 20px;" align="center">
-                <img style="border: 0;display: block;height: auto;max-width: 60px;" 
-                      alt="Fries icon." width="60" 
-                      src="https://www.cbussuper.com.au/content/dam/cbus/images/email/icon-fries.png">
-              </div>
-            </div>
-
-
-
-              <!-- Button -->
-              <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 28px;">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
-                  <tbody>
-                  <tr>
-                      <td valign="top" align="center">
-                        <div class="btn" style="text-align:center;color: #ffffff;">
-                          <table cellpadding="0" cellspacing="0" align="center">
-                              <tbody><tr>
-                                  <td style="width: 206px;height: 55px;background: #0F8045;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 22px;text-align:center;">
-                                    <a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0F8045; border-bottom: 10px solid #0F8045; border-right: 5px solid #0F8045;border-left: 5px solid #0F8045;">
-                                      <strong style="font-family: Hind,Calibri,Arial,sans-serif;">Calculate now</strong>
-                                    </a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                          </table>
-                      </div>
-                      </td>
-                        <!--[if (mso)|(IE)]><td style="width: 30px;color:white;">&nbsp;</td><![endif]-->
-                    </tr>
-                </tbody>
-              </table>
-              </div>
-          
-          </td>
-        </tr>
-      </tbody></table>
-    </div>
-  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-  </div>
-</div>
- <!-- ### END: 50/50 TILE BLOCK (1)  ### -->
-
- <div style="mso-line-height-rule: exactly;line-height: 13px;font-size: 13px;">&nbsp;</div>
-
- <!-- ### END: 50/50 TILE BLOCK (2) ### -->
-<div class="layout two-col has-gutter stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;">
-  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr><td style="width: 290px" valign="top" class="w250"><![endif]-->
-    <div class="column" style="max-width: 320px;min-width: 290px; width: 320px;width: calc(18290px - 3000%);Float: left;">
-      <table class="column__background" style="border-collapse: collapse;table-layout: fixed;background-color: #ffffff;" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-        <tbody><tr>
-          <td style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Arial,sans-serif;">
-          
-            <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;">
-            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-              <p class="size-22" style="Margin-top: 0;Margin-bottom: 10px;font-size: 20px;line-height: 28px;" lang="x-size-22">
-                <strong style="color: #1a1a1a;">Change jobs recently? Take Cbus with you</strong>
-              </p>
-            </div>
-            </div>
-          
-            <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
-              <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-                <p style="Margin-top: 0;Margin-bottom: 0;">
-                  Download and give your new employer the Cbus super form below.
-                </p>
-              </div>
-            </div>
-
-            <!-- inner spacer desktop -->
-            <div class="sm-hide" style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 18px;">
-              <div style="mso-line-height-rule: exactly;line-height: 18px;font-size: 1px;">&nbsp;</div>
-            </div>
-
-              <!-- Button -->
-              <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 28px;">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
-                  <tbody>
-                  <tr>
-                      <td valign="top" align="center">
-                        <div class="btn" style="text-align:center;color: #ffffff;">
-                          <table cellpadding="0" cellspacing="0" align="center">
-                              <tbody><tr>
-                                  <td style="width: 206px;height: 55px;background: #0F8045;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 22px;text-align:center;">
-                                    <a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0F8045; border-bottom: 10px solid #0F8045; border-right: 5px solid #0F8045;border-left: 5px solid #0F8045;">
-                                      <strong style="font-family: Hind,Calibri,Arial,sans-serif;">Download</strong>
-                                    </a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                          </table>
-                      </div>
-                      </td>
-                        <!--[if (mso)|(IE)]><td style="width: 30px;color:white;">&nbsp;</td><![endif]-->
-                    </tr>
-                </tbody>
-              </table>
-              </div>
-          
-          </td>
-        </tr>
-      </tbody></table>
-    </div>
-  <!--[if (mso)|(IE)]></td><td style="width: 20px"><![endif]--><div class="gutter" style="Float: left;width: 20px;">&nbsp;</div><!--[if (mso)|(IE)]></td><td style="width: 290px" valign="top" class="w250"><![endif]-->
-    <div class="column" style="max-width: 320px;min-width: 290px; width: 320px;width: calc(18290px - 3000%);Float: left;">
-      <table class="column__background" style="border-collapse: collapse;table-layout: fixed;background-color: #ffffff;" cellpadding="0" cellspacing="0" width="100%" role="presentation">
-        <tbody><tr>
-          <td style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Arial,sans-serif;">
-          
-            <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;">
-            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-              <p class="size-22" style="Margin-top: 0;Margin-bottom: 10px;font-size: 20px;line-height: 28px;" lang="x-size-22">
-                <strong style="color: #1a1a1a;">Smarter and faster. Get the Cbus app</strong>
-              </p>
-            </div>
-            </div>
-          
-            <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
-              <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-                <p style="Margin-top: 0;Margin-bottom: 0;">
-                  Get the app and manage your super easily with a few taps, from the palm of your hand.
-                </p>
-              </div>
-            </div>
-
-             <!-- inner spacer desktop -->
-             <div class="sm-hide" style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 18px;">
-              <div style="mso-line-height-rule: exactly;line-height: 18px;font-size: 1px;">&nbsp;</div>
-            </div>
-
-              <!-- Button -->
-              <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 28px;">
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
-                  <tbody>
-                  <tr>
-                      <td valign="top" align="center">
-                        <div class="btn" style="text-align:center;color: #ffffff;">
-                          <table cellpadding="0" cellspacing="0" align="center">
-                              <tbody><tr>
-                                  <td style="width: 206px;height: 55px;background: #0F8045;border-radius: 4px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 22px;text-align:center;">
-                                    <a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #0F8045; border-bottom: 10px solid #0F8045; border-right: 5px solid #0F8045;border-left: 5px solid #0F8045;">
-                                      <strong style="font-family: Hind,Calibri,Arial,sans-serif;">Download App</strong>
-                                    </a>
-                                  </td>
-                              </tr>
-                          </tbody>
-                          </table>
-                      </div>
-                      </td>
-                        <!--[if (mso)|(IE)]><td style="width: 30px;color:white;">&nbsp;</td><![endif]-->
-                    </tr>
-                </tbody>
-              </table>
-              </div>
-
-
-          </td>
-        </tr>
-      </tbody></table>
-    </div>
-  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-  </div>
-</div>
- <!-- ### END: 50/50 TILE BLOCK (2)  ### -->
-
- <div style="mso-line-height-rule: exactly;line-height: 13px;font-size: 13px;">&nbsp;</div>
-
- <!-- ### START: 30/70 BLOCK (Contact - Get answers) ### -->
+ <!-- ### START: 30/70 BLOCK (Contact) ### -->
  <div class="layout fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
   <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #1a1a1a;">
   <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #1a1a1a;"><td style="width: 400px" valign="top" class="w360"><![endif]-->
-    <div class="column wide" style="text-align: left;color: white;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;Float: left;max-width: 400px;min-width: 320px; width: 320px;width: calc(8000% - 47600px);">
+    <div class="column wide" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;Float: left;max-width: 400px;min-width: 320px; width: 320px;width: calc(8000% - 47600px);">
     
       <div style="Margin-left: 40px;Margin-right: 20px;Margin-top: 34px;">
         <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-          <h2 class="size-32" style="Margin-top: 0;Margin-bottom: 8px;font-style: normal;font-weight: normal;color: #515457;font-size: 28px;line-height: 36px;" lang="x-size-32">
-            <span style="text-decoration: inherit;color: #ffffff;"><strong>Contact Us  </strong></span>
+          <h2 class="size-32" style="Margin-top: 0;Margin-bottom: 16px;font-style: normal;font-weight: normal;color: #515457;font-size: 28px;line-height: 36px;" lang="x-size-32">
+            <span style="text-decoration: inherit;color: #ffffff;"><strong>Need help?</strong></span>
           </h2>
-        </div>
-      </div>
-
-      <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
-        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
-          <p class="size-18" style="Margin-top: 0;Margin-bottom: 0;">
-            The Cbus team can answer your questions and help you get answers.
-          </p>
         </div>
       </div>
     
@@ -442,9 +185,9 @@ a {text-decoration: none;}
             </td>
               <td style="font-family: Hind,Calibri,Arial,sans-serif;font-size:16px;line-height: 22px;color: white">
                 Call <a style="color: white; font-weight: bold;" href="tel:1300361784">1300 361 784</a> 
-                <span style="color: #9d9d9d;"><br/>Monday to Friday from<br/> 8am - 8pm (AEDT/AEST) <br></span>
+                <span style="color: white;"><br/>Monday to Friday from<br/> 8am - 8pm (AEDT/AEST) <br></span>
                 </td>
-              </tr> 
+              </tr>
             <tr>
               <td>
                 <img role="contact" border="0" alt="📧" src="https://www.cbussuper.com.au/content/dam/cbus/images/email/icon-email-white.png"></td>
@@ -454,7 +197,7 @@ a {text-decoration: none;}
               <td>
                 <img role="contact" border="0" alt="💻" src="https://www.cbussuper.com.au/content/dam/cbus/images/email/icon-web-white.png"></td>
               <td style="font-family: Hind,Calibri,Arial,sans-serif;font-size:16px;color: white">
-                Visit <a style="color: white; font-weight: bold;" href="https://www.cbussuper.com.au">cbussuper.com.au</a>
+                Visit <a style="color: white; font-weight: bold;" href="https://www.cbussuper.com.au/retire">cbussuper.com.au/retire</a>
               </td></tr>
             </tbody>
         </table>
@@ -476,7 +219,7 @@ a {text-decoration: none;}
   <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
   </div>
 </div>
-<!-- ### END: 30/70 BLOCK (Contact - Get answers) ### -->
+<!-- ### END: 30/70 BLOCK (Contact) ### -->
 
 <!-- ### START: TEXT BLOCK (security) ### -->
 <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
@@ -533,11 +276,11 @@ a {text-decoration: none;}
                   
                   <div style="Margin-left: 10px;Margin-right: 0;">
                     
-                  <!-- Footer nav (AC) -->
+                  <!-- Footer nav (AJO) -->
                     <p class="footer-nav" style="Margin-top: 44px;Margin-bottom: 12px;font-size: 11px;line-height: 19px;" lang="x-size-11">
                       <a target="_blank" href="https://www.cbussuper.com.au/" style="color: #515457;text-decoration:none">Website</a>     <span style="padding-left:4px;padding-right:4px;">|</span>
                       <a target="_blank" href="https://www.cbussuper.com.au/about-us/privacy-statement" style="color: #515457;text-decoration:none">Privacy Statement</a> <span style="padding-left:4px;padding-right:4px;">|</span>
-                                <a href="<%@ include option='NmsServer_URL' %>/webApp/edm_unsub?id=<%=escapeUrl(recipient.cryptedId)%>" style="color: #515457;text-decoration:none" _label="Opt-out link" _type="optout">Unsubscribe</a>
+                      <a class="hover" target="_blank" style="color: #515457;text-decoration:none" data-nl-type="unsubscription" data-tags="optoutLevel:identity" href="https://t.marketing.cbussuper.com.au/webApp/edm_unsub_ajo_mem?id={{profile._cbus.HashedMemberID}}" data-label="unsubscribe" data-tracking-type="OPT_OUT">Unsubscribe</a>
                     </p>
           
                     <!-- line -->
@@ -602,7 +345,7 @@ a {text-decoration: none;}
             href="https://www.cbussuper.com.au/">website</a>.
           </p>
           <p style="Margin-top: 5px;Margin-bottom: 0;font-size: 11px;line-height: 19px;">
-            The Canstar 2022 Outstanding Value Account Based Pension Award was received in September 2022 for the Cbus Super Income Stream product.
+            The Canstar 2021 Outstanding Value Account Based Pension Award was received in September 2021 for the Cbus Super Income Stream product.
           </p>
 
           <p style="Margin-top: 15px;Margin-bottom: 0;font-size: 11px;line-height: 19px;">
