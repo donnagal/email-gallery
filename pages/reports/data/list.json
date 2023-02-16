@@ -72,6 +72,42 @@
     "url": "https://email-gallery.netlify.app/emails/2023/cbus-brand-qld-insurance"
   },
   {
+    "Label": "",
+    "name": "Cbus - Young Cohort",
+    "subject": "",
+    "day": "2022-11-16",
+    "unsub": 0,
+    "id": "ajo",
+    "ctor":0 ,
+    "openrate":0 ,
+    "unsubrate": 0,
+    "url": "https://email-gallery.netlify.app/emails/2022/member-retention/young-cohort/1.html"
+  },
+  {
+    "Label": "",
+    "name": "Cbus - Rit - SIS Acquisition",
+    "subject": "",
+    "day": "2022-10-20",
+    "unsub": 0,
+    "id": "ajo",
+    "ctor":0 ,
+    "openrate":0 ,
+    "unsubrate": 0,
+    "url": "https://email-gallery.netlify.app/emails/2022/member-retention/sis-acquisition-oct/1.html"
+  },
+  {
+    "Label": "",
+    "name": "Cbus - Win Back",
+    "subject": "",
+    "day": "2022-05-22",
+    "unsub": 0,
+    "id": "ajo",
+    "ctor":0 ,
+    "openrate":0 ,
+    "unsubrate": 0,
+    "url": "https://email-gallery.netlify.app/emails/2022/member-retention/winback/index.html"
+  },
+  {
     "Label": "20220429 Retirement Webinar | Invite | COMBINED BATCHES",
     "name": "Retirement Webinars May (cominbed batch)",
     "sent": 17424,
