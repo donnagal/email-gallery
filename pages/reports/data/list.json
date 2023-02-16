@@ -1,29 +1,5 @@
 [
   {
-    "Label": "",
-    "name": "Cbus - SIS - Partial Cash Exits",
-    "subject": "",
-    "day": "2023-01-31",
-    "unsub": 0,
-    "id": "ajo",
-    "ctor": 0,
-    "openrate": 0,
-    "unsubrate": 0,
-    "url": "https://email-gallery.netlify.app/emails/2023/cbus-sis-partial-cash-exits/1.html"
-  },
-  {
-    "Label": "",
-    "name": "Cbus - QLD Brand",
-    "subject": "",
-    "day": "2023-02-02",
-    "unsub": 0,
-    "id": "ajo",
-    "ctor":0 ,
-    "openrate":0 ,
-    "unsubrate": 0,
-    "url": "https://email-gallery.netlify.app/emails/2023/cbus-brand-qld-insurance"
-  },
-  {
     "Label": "20220429 Retirement Webinar | Invite | COMBINED BATCHES",
     "name": "Retirement Webinars May (cominbed batch)",
     "sent": 17424,
