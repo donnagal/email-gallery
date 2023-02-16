@@ -1,6 +1,18 @@
 [
   {
     "Label": "",
+    "name": "Cbus - Super summary",
+    "subject": "",
+    "day": "2023-02-17",
+    "unsub": 0,
+    "id": "ajo",
+    "ctor": 0,
+    "openrate": 0,
+    "unsubrate": 0,
+    "url": "https://storage.capture.litmus.com/api/emails/9a14cdc6-3a7a-49b0-89ac-5a739300dd27/captures/appmail15/full?images=allowed&orientation=vertical&width=1366"
+  },
+  {
+    "Label": "",
     "name": "Cbus - USM",
     "subject": "",
     "day": "2023-02-02",
