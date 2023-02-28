@@ -188,13 +188,15 @@ body{background-color:#e8e8e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
                   </div><!--[if (mso)|(IE)]></td></tr></table><![endif]-->
                 </div>
               </div>
-              <!-- ### END: INTRO BLOCK ### --><!-- <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 20px;"> </div>
+              <!-- ### END: INTRO BLOCK ### -->
+              
+              
+              <!-- <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 20px;"> </div>
 
     <p style="text-align: center;font-family: Arial,Roboto,Tahoma,sans-serif;">Mobile Stack</p> -->
     
-    <!-- ### START: HEADING BLOCK ### -->
-              <div class="layout one-col fixed-width stack" style=
-              "Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;">
+          <!-- ### START: HEADING BLOCK ### -->
+              <div class="layout one-col fixed-width stack" style="Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;">
                 <div class="layout__inner" style="border-collapse:collapse;display:table;width:100%;background-color:#ffffff;">
                   <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 600px" class="w560"><![endif]-->
                   <div class="column" style="text-align:left;color:#003359;font-size:14px;line-height:21px;font-family:sans-serif;">
@@ -205,8 +207,7 @@ body{background-color:#e8e8e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
                     </div>
                     <div style="Margin-left:20px;Margin-right:20px;Margin-bottom:12px;">
                       <div style="mso-line-height-rule:exactly;mso-text-raise:11px;vertical-align:middle;">
-                        <h3 class="size-26" lang="x-size-26" style=
-                        "Margin-top:0;Margin-bottom:0;font-style:normal;font-weight:normal;font-size:22px;line-height:31px;font-family:Montserrat,&quot;DejaVu Sans&quot;,Verdana,sans-serif;text-align:center;">
+                        <h3 class="size-26" lang="x-size-26" style="Margin-top:0;Margin-bottom:0;font-style:normal;font-weight:normal;font-size:22px;line-height:31px;font-family:Montserrat,&quot;DejaVu Sans&quot;,Verdana,sans-serif;text-align:center;">
                           <span class="font-montserrat" style="text-decoration:inherit;"><strong>Order Details</strong></span>
                         </h3>
                       </div>
@@ -216,16 +217,17 @@ body{background-color:#e8e8e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
               </div>
               <!-- ### END: HEADING BLOCK ### -->
               
-              <!-- ### START: 50/50 COL STACK ### -->
+<!-- ### START: 50/50 COL STACK ### -->
               
-              <!-- ### START: Main If condition ### -->
-              {%#if context.journey.events.`1076358589`._gpnw.LotteryOrder.LotteryEntries.EntryId != ""%} 
+            <!-- ### START: Main If condition ### -->
+            {%#if context.journey.events.`1076358589`._gpnw.LotteryOrder.LotteryEntries.EntryId != ""%} 
               
-              <!-- ### START: Main each loop ### -->
-              {{#each context.journey.events.1076358589._gpnw.LotteryOrder.LotteryEntries as|entry|}} 
+
+          <!-- ### START: Main each loop ### -->
+          {{#each context.journey.events.1076358589._gpnw.LotteryOrder.LotteryEntries as|entry|}} 
               
-              <!-- ### START: Above 100 Games If condition ### -->
-              {%#if count(entry.Games) > 100 %}
+<!-- ### START: Above 100 Games If condition ### -->
+{%#if count(entry.Games) > 100 %}
               <div class="layout two-col fixed-width stack" style="Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;">
                 <div class="layout__inner" style="border-collapse:collapse;display:table;width:100%;background-color:#f3f5f7;">
                   <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #f3f5f7;"><td style="width: 300px" valign="top" class="w260"><![endif]-->
@@ -263,7 +265,7 @@ body{background-color:#e8e8e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
                   </div><!--[if (mso)|(IE)]></td></tr></table><![endif]-->
                 </div>
               </div>
-              <!-- ### END: 50/50 COL STACK ### -->
+<!-- ### END: 50/50 COL STACK ### -->
               
               <!-- ### START: FULL WIDTH BLUE ### -->
               <div class="layout one-col fixed-width stack" style="Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;">
@@ -299,19 +301,16 @@ body{background-color:#e8e8e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
               </div>
               <!-- ### END: FULL WIDTH LIGHT ### -->
               
-              <!-- ### START: 50/50 COL STACK (light) ### -->
-              <div class="layout two-col fixed-width stack" style="Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;">
-                
-              <!-- ### START: Each loops for Games ### -->
-              {{#each entry.Games as |game|}} 
-                
-              <!-- ### START: Loop break at 100th game If condition ### -->
-              {%#if @index < 100 %}  
-                
-                
-                <!-- ### START: EvenOdd block If condition ### -->
-                {%#if @index % 2 = 0 %}
-                <div class="layout__inner" style="border-collapse:collapse;display:table;width:100%;background-color:#f3f5f7;">
+       <!-- ### START: Each loops for Games ### -->
+      {{#each entry.Games as |game|}} 
+      <!-- ### START: 50/50 COL STACK (light) ### -->
+      <!-- ### START: Loop break at 100th game If condition ### -->
+      {%#if @index < 100 %}  
+      <div class="layout two-col fixed-width stack" style="Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;">
+                     
+         <div class="layout__inner" style="border-collapse:collapse;display:table;width:100%;background-color:#f3f5f7;">
+            <!-- ### START: EvenOdd block If condition ### -->
+            {%#if @index % 2 = 0 %}              
                   <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #f3f5f7;"><td style="width: 300px" valign="top" class="w260"><![endif]-->
                   <div class="column" style="text-align:left;color:#535f67;font-size:14px;line-height:21px;font-family:sans-serif;max-width:320px;min-width:300px;width:320px;width:calc(12300px - 2000%);Float:left;">
                     <div style="Margin-left:20px;Margin-right:20px;Margin-top:12px;Margin-bottom:12px;">
@@ -325,7 +324,6 @@ body{background-color:#e8e8e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
                   <!--[if (mso)|(IE)]></td><![endif]-->
                   {%else%} 
                   <!--[if (mso)|(IE)]><td style="width: 300px" valign="top" class="w260"><![endif]-->
-
                   <div class="column" style="text-align:left;color:#535f67;font-size:14px;line-height:21px;font-family:sans-serif;max-width:320px;min-width:300px;width:320px;width:calc(12300px - 2000%);Float:left;">
                     <div style="Margin-left:20px;Margin-right:20px;Margin-top:12px;Margin-bottom:12px;">
                       <div style="mso-line-height-rule:exactly;mso-text-raise:11px;vertical-align:middle;">
@@ -334,17 +332,28 @@ body{background-color:#e8e8e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
                         </p>
                       </div>
                     </div>
-                  </div><!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-                  {%/if%}
-                  <!-- ### END: Even block If condition ### -->
-                  {%/if%}
-                  <!-- ### END: Loop break at 100th Game If condition ### -->
-                  {{/each}}
-                  <!-- ### END: Each loop for games ### -->
-                </div>
-              </div>
-              <!-- ### END: 50/50 COL STACK (light) ### -->
+                  </div>
+                  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+        {%/if%}
+         <!-- ### END: Even block If condition ### -->
+
+  {%/if%}
+      <!-- ### END: Loop break at 100th Game If condition ### -->
+
+
+       </div>
+
+      </div>
+    {{/each}}
+    <!-- ### END: Each loop for games ### -->
+
+ <!-- ### END: 50/50 COL STACK (light) ### -->
               
+      <!-- inner spacer -->
+     <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 10px;">
+       <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
+     </div>
+
               <!-- ### START: TEXT BLOCK WHITE ### -->
               <div class="layout one-col fixed-width stack" style="Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;">
                 <div class="layout__inner" style="border-collapse:collapse;display:table;width:100%;background-color:#ffffff;">
@@ -404,11 +413,12 @@ body{background-color:#e8e8e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
                   </div><!--[if (mso)|(IE)]></td></tr></table><![endif]-->
                 </div>
               </div>
-              {%/if%}
-              <!-- ### END: More than 100 games If Condition ### --> 
-              
-              <!-- ### START: below 100 Games If condition ### -->
-              {%#if count(entry.Games) <= 100 %}
+       <!-- ### END: More than 100 games If Condition ### --> 
+{%/if%}  
+
+     
+     <!-- ### START: below 100 Games If condition ### -->
+           {%#if count(entry.Games) <= 100 %}
               <div class="layout two-col fixed-width stack" style="Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;">
                 <div class="layout__inner" style="border-collapse:collapse;display:table;width:100%;background-color:#f3f5f7;">
                   <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #f3f5f7;"><td style="width: 300px" valign="top" class="w260"><![endif]-->
@@ -427,7 +437,9 @@ body{background-color:#e8e8e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
                         </p>
                       </div>
                     </div>
-                  </div><!--[if (mso)|(IE)]></td><td style="width: 300px" valign="top" class="w260"><![endif]-->
+                  </div>
+                  
+                  <!--[if (mso)|(IE)]></td><td style="width: 300px" valign="top" class="w260"><![endif]-->
                   <div class="column" style="text-align:left;color:#535f67;font-size:14px;line-height:21px;font-family:sans-serif;max-width:320px;min-width:300px;width:320px;width:calc(12300px - 2000%);Float:left;">
                     <div style="background-color:#0289cd;">
                       <div style="mso-line-height-rule:exactly;mso-text-raise:11px;vertical-align:middle;">
@@ -471,10 +483,11 @@ body{background-color:#e8e8e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
               "Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;">
                 
               
-              <!-- ### START: Each loops for Games ### -->{{#each entry.Games as |game|}} 
-                
-              <!-- ### START: EvenOdd block If condition ### -->{%#if @index % 2 = 0 %}
+     <!-- ### START: Each loops for Games ### -->{{#each entry.Games as |game|}} 
+        
+     <!-- ### START: EvenOdd block If condition ### -->{%#if @index % 2 = 0 %}
                 <div class="layout__inner" style="border-collapse:collapse;display:table;width:100%;background-color:#f3f5f7;">
+                 
                   <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #f3f5f7;"><td style="width: 300px" valign="top" class="w260"><![endif]-->
                   <div class="column" style="text-align:left;color:#535f67;font-size:14px;line-height:21px;font-family:sans-serif;max-width:320px;min-width:300px;width:320px;width:calc(12300px - 2000%);Float:left;">
                     <div style="Margin-left:20px;Margin-right:20px;Margin-top:12px;Margin-bottom:12px;">
@@ -484,7 +497,12 @@ body{background-color:#e8e8e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
                         </p>
                       </div>
                     </div>
-                  </div><!--[if (mso)|(IE)]></td><![endif]-->{%else%} <!--[if (mso)|(IE)]><td style="width: 300px" valign="top" class="w260"><![endif]-->
+                  </div>
+                  <!--[if (mso)|(IE)]></td><![endif]-->
+                  
+                  {%else%} 
+                  
+                  <!--[if (mso)|(IE)]><td style="width: 300px" valign="top" class="w260"><![endif]-->
                   <div class="column" style="text-align:left;color:#535f67;font-size:14px;line-height:21px;font-family:sans-serif;max-width:320px;min-width:300px;width:320px;width:calc(12300px - 2000%);Float:left;">
                     <div style="Margin-left:20px;Margin-right:20px;Margin-top:12px;Margin-bottom:12px;">
                       <div style="mso-line-height-rule:exactly;mso-text-raise:11px;vertical-align:middle;">
@@ -493,10 +511,18 @@ body{background-color:#e8e8e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
                         </p>
                       </div>
                     </div>
-                  </div><!--[if (mso)|(IE)]></td></tr></table><![endif]-->{%/if%}<!-- ### END: Even block If condition ### -->{{/each}}<!-- ### END: Each loop for games ### -->
+                  </div>
+                  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
                 </div>
-              </div>
-              <!-- ### END: 50/50 COL STACK (light) ### -->
+
+         {%/if%}<!-- ### END: Even block If condition ### -->
+         {{/each}}
+        <!-- ### END: Each loop for games ### -->
+                
+
+
+      </div>
+      <!-- ### END: 50/50 COL STACK (light) ### -->
               
               <!-- ### START: TEXT BLOCK WHITE ### -->
               <div class="layout one-col fixed-width stack" style=
@@ -520,8 +546,20 @@ body{background-color:#e8e8e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
                     </div>
                   </div><!--[if (mso)|(IE)]></td></tr></table><![endif]-->
                 </div>
-              </div>{%/if%}<!-- ### END: below 100 games If Condition ### -->
-              {{/each}}<!-- ### END: Main each loop ### -->{%/if%}<!-- ### END: Main If Condition ### --><!-- ### END: TEXT BLOCK WHITE ### --> <!-- outer spacer -->
+              </div>
+              {%/if%}
+              
+  <!-- ### END: below 100 games If Condition ### -->
+   {{/each}}
+              
+        <!-- ### END: Main each loop ### -->
+{%/if%}
+<!-- ### END: Main If Condition ### -->
+              
+              
+<!-- ### END: TEXT BLOCK WHITE ### --> 
+              
+              <!-- outer spacer -->
               <div style="mso-line-height-rule:exactly;line-height:20px;font-size:20px;">
                 &nbsp;
               </div>
@@ -1127,7 +1165,8 @@ body{background-color:#e8e8e8}.logo a:hover,.logo a:focus{color:#859bb1 !importa
                   </div><!--[if (mso)|(IE)]></td></tr></table><![endif]-->
                 </div>
               </div>
-              <!-- ### END: x3 COLS BLOCK ### --><!-- Start: Proudly Licensed by  -->
+              <!-- ### END: x3 COLS BLOCK ### -->
+              <!-- Start: Proudly Licensed by  -->
               <div class="layout one-col fixed-width" style=
               "Margin:0 auto;max-width:600px;min-width:320px;width:320px;width:calc(28000% - 167400px);overflow-wrap:break-word;word-wrap:break-word;word-break:break-word;">
                 <div class="layout__inner" style="box-shadow:0px 7px 14px 0px rgba(0, 0, 0, 0.22);border-collapse:collapse;display:table;width:100%;background-color:#7a7b78;">
