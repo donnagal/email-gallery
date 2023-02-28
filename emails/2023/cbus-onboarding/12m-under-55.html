@@ -29,6 +29,7 @@
     .sm-m-0 { margin: 0 !important;}
     .sm-ml-0 { margin-left: 0 !important;}
     .sm-mr-0 { margin-right: 0 !important;}
+    .sm-mx-sm { margin-left: 5px !important; margin-right: 5px !important;}
     .sm-m-logo { margin: 0 !important; margin-left: 40px !important;}
     .sm-w-0 { width: auto !important; }
     .sm-size-16 { font-size: 16px !important; line-height: 18px !important; }
@@ -82,7 +83,7 @@ a {text-decoration: none;}
           <div class="column narrow" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Corbel,Segoe UI,Avenir,sans-serif;display: table-cell;vertical-align: top;width: 33.3%;">
           
             <!-- Logo -->
-          <div style="Margin-left: 10px;Margin-right: 0;Margin-bottom: 0;">
+          <div class="sm-mx-sm" style="Margin-left: 10px;Margin-right: 0;Margin-bottom: 0;">
             <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
               <p class="size-15" style="Margin-top: 0;Margin-bottom: 0;font-size: 15px;line-height: 23px;text-align: right;" lang="x-size-15">
                 <strong>Member number:</strong><br/> {{profile._cbus.MemberID}}
@@ -100,12 +101,12 @@ a {text-decoration: none;}
       </div>
 
           <!-- AJO links -->
-          <div style="Margin-left: 5px;Margin-right: 30px;Margin-bottom: 0;">
+          <div class="sm-mx-sm" style="Margin-left: 5px;Margin-right: 30px;Margin-bottom: 0;">
             <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
               <p class="size-15" style="Margin-top: 0;Margin-bottom: 0;font-size: 15px;line-height: 23px;text-align: right;" lang="x-size-15">
                 <a class="hover" href="" data-nl-type="mirrorPage" data-tracking-type="MIRROR_PAGE" style="color: #515457; font-size: 16px;text-decoration:none;">View in browser</a> 
                 &nbsp;│&nbsp;
-                <a class="hover" target="_blank" href="https://www.cbussuper.com.au/manage-account/super/login?utm_source=ajo&utm_medium=edm&utm_campaign=supersummaries-0-29&utm_content=login" style="text-decoration: inherit;color: #0F8045;">
+                <a class="hover" target="_blank" href="https://www.cbussuper.com.au/manage-account/super/login" style="text-decoration: inherit;color: #0F8045;">
                   <strong>Login</strong>
                 </a>
               </p>
@@ -141,7 +142,7 @@ a {text-decoration: none;}
             </div>
 
         <!-- Text -->
-        <div class="m-id" style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
+        <div class="m-id sm-mx-sm" style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
           <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;text-align: center;">
           <p class="size-18" style="Margin-top: 0;Margin-bottom: 0;">
             Hi {{profile.person.name.firstName}}, 
@@ -171,13 +172,13 @@ a {text-decoration: none;}
             </div>
 
             <!-- image icon (1) -->
-            <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
-                <img style="border: 0;display: block;height: auto;max-width: 188px;" alt="Book informationicon." width="188" 
-                  src="https://www.cbussuper.com.au/content/dam/cbus/images/email/onboarding-icon-tax-saver.png">
-            </div>
+            <div style="Margin-bottom: 18px;font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
+              <img style="border: 0;display: block;height: auto;max-width: 150px;" alt="information and reading icon." width="150" 
+                src="https://www.cbussuper.com.au/content/dam/cbus/images/email/u55-icon-1.png">
+          </div>
 
             <!-- Title / Text (1) -->
-            <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
+            <div class="sm-mx-sm" style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
               <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;text-align: center;">
                 <p class="size-24" style="Margin-top: 0;Margin-bottom: 6px;font-size: 24px;line-height: 32px;" lang="x-size-24">
                   <strong style="color:#007582;">Understanding super</strong>
@@ -189,7 +190,7 @@ a {text-decoration: none;}
             </div>
 
             <!-- Button (1) -->
-            <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 10px;">
+            <div class="sm-mx-sm" style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 10px;">
               <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
                 <tbody>
                 <tr>
@@ -198,8 +199,8 @@ a {text-decoration: none;}
                         <table cellpadding="0" cellspacing="0" align="center">
                             <tbody><tr>
                                 <td style="width:450px;height: 55px;background: #007582;border-radius: 8px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 22px;text-align:center;">
-                                  <a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #007582; border-bottom: 10px solid #007582; border-right: 55px solid #007582;border-left: 55px solid #007582;">
-                                    <strong style="font-family: Hind,Calibri,Arial,sans-serif;">Maximise your super</strong>
+                                  <a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #007582; border-bottom: 10px solid #007582; border-right: 25px solid #007582;border-left: 25px solid #007582;">
+                                    <strong style="font-family: Hind,Calibri,Arial,sans-serif;">Access our contributions calculator to add to your super</strong>
                                   </a>
                                 </td>
                             </tr>
@@ -229,17 +230,17 @@ a {text-decoration: none;}
             <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
           </div>
 
-          <!-- image icon (2) -->
-          <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
-              <img style="border: 0;display: block;height: auto;max-width: 188px;" alt="Book informationicon." width="188" 
-                src="https://www.cbussuper.com.au/content/dam/cbus/images/email/onboarding-icon-tax-saver.png">
+            <!-- image icon (2) -->
+            <div style="Margin-bottom: 18px;font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
+              <img style="border: 0;display: block;height: auto;max-width: 110px;" alt="Money in hand icon." width="110" 
+                src="https://www.cbussuper.com.au/content/dam/cbus/images/email/u55-icon-2.png">
           </div>
 
           <!-- Title / Text (2) -->
-          <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
+          <div class="sm-mx-sm" style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
             <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;text-align: center;">
               <p class="size-24" style="Margin-top: 0;Margin-bottom: 6px;font-size: 24px;line-height: 32px;" lang="x-size-24">
-                <strong style="color:#4c9e45;">Use your super to save on tax</strong>
+                <strong style="color:#4c9e45;">Boost your super</strong>
               </p>
             <p class="size-18" style="Margin-top: 6px;Margin-bottom: 0;">
               Salary sacrificing is an efficient way to make extra payments to your super from your salary. You’ll be able to grow your super while reducing the amount of tax you pay.
@@ -248,7 +249,7 @@ a {text-decoration: none;}
           </div>
 
           <!-- Button (2) -->
-          <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 10px;">
+          <div class="sm-mx-sm" style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 10px;">
             <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
               <tbody>
               <tr>
@@ -257,8 +258,8 @@ a {text-decoration: none;}
                       <table cellpadding="0" cellspacing="0" align="center">
                           <tbody><tr>
                               <td style="width:450px;height: 55px;background: #4c9e45;border-radius: 8px;font-family: Hind,Calibri,Arial,sans-serif; font-size: 22px;text-align:center;">
-                                <a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #4c9e45; border-bottom: 10px solid #4c9e45; border-right: 55px solid #4c9e45;border-left: 55px solid #4c9e45;">
-                                  <strong style="font-family: Hind,Calibri,Arial,sans-serif;">Find out how to salary sacrifice</strong>
+                                <a target="_blank" href="https://www.cbussuper.com.au/" style="text-decoration: none; color: #fff; display: inline-block; border-top: 10px solid #4c9e45; border-bottom: 10px solid #4c9e45; border-right: 25px solid #4c9e45;border-left: 25px solid #4c9e45;">
+                                  <strong style="font-family: Hind,Calibri,Arial,sans-serif;">Watch a video to find out how it works</strong>
                                 </a>
                               </td>
                           </tr>
@@ -288,26 +289,26 @@ a {text-decoration: none;}
             <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
           </div>
 
-          <!-- image icon (3) -->
-          <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
-              <img style="border: 0;display: block;height: auto;max-width: 188px;" alt="Book informationicon." width="188" 
-                src="https://www.cbussuper.com.au/content/dam/cbus/images/email/onboarding-icon-tax-saver.png">
+            <!-- image icon (3) -->
+            <div style="Margin-bottom: 18px;font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
+              <img style="border: 0;display: block;height: auto;max-width: 150px;" alt="information and communication icon." width="150" 
+                src="https://www.cbussuper.com.au/content/dam/cbus/images/email/u55-icon-3.png">
           </div>
 
           <!-- Title / Text (3) -->
-          <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
+          <div class="sm-mx-sm" style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
             <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;text-align: center;">
               <p class="size-24" style="Margin-top: 0;Margin-bottom: 6px;font-size: 24px;line-height: 32px;" lang="x-size-24">
                 <strong style="color:#005dab;">Check your insurance has you covered</strong>
               </p>
             <p class="size-18" style="Margin-top: 6px;Margin-bottom: 0;">
-              At Cbus, we offer insurance that’s specifically tailored to suit your occuption risk. It’s important to review your insurance regularly as your circumstances and occupation may change throughout life. You can check and adjust your insurance easily online.
+              At Cbus, we offer insurance that’s specifically suited to your industry. It’s important to review your insurance regularly as your circumstances and occupation may change throughout life. You can check and adjust your insurance easily online.
               </p>
             </div>
           </div>
 
           <!-- Button (3) -->
-          <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 10px;">
+          <div class="sm-mx-sm" style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 10px;">
             <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
               <tbody>
               <tr>
@@ -343,46 +344,13 @@ a {text-decoration: none;}
   </div>
 <!-- ### END: INTRO BLOCK ### -->
 
-<!-- ### START: TEXT BLOCK ### -->
-<div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-    <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #c8e1f2;">
-    <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #c8e1f2;"><td style="width: 600px" class="w560"><![endif]-->
-      <div class="column" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;">
-    
-          <!-- inner spacer -->
-          <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 34px;">
-            <div style="mso-line-height-rule: exactly;line-height: 14px;font-size: 1px;">&nbsp;</div>
-          </div>
-
-          <!-- Text -->
-          <div style="Margin-left: 40px;Margin-right: 40px;Margin-bottom: 24px;">
-            <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;text-align: center;">
-            <p class="size-22" style="Margin-top: 6px;Margin-bottom: 0;">
-              As part of your membership we offer an advice service. Speak to us if you have more questions about your super or insurance needs.
-            </p>
-            </div>
-          </div>
-
-         <!-- inner spacer -->
-         <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 12px;">
-          <div style="mso-line-height-rule: exactly;line-height: 12px;font-size: 1px;">&nbsp;</div>
-        </div>
-    
-    
-      </div>
-    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-    </div>
-  </div>
-<!-- ### END: TEXT BLOCK ### -->
-
-
  <!-- ### START: 30/70 BLOCK (Contact) ### -->
  <div class="layout fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
   <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #1a1a1a;">
   <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #1a1a1a;"><td style="width: 400px" valign="top" class="w360"><![endif]-->
     <div class="column wide" style="text-align: left;color: #454545;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;Float: left;max-width: 400px;min-width: 320px; width: 320px;width: calc(8000% - 47600px);">
     
-      <div style="Margin-left: 40px;Margin-right: 20px;Margin-top: 34px;">
+      <div class="sm-mx-sm" style="Margin-left: 40px;Margin-right: 20px;Margin-top: 34px;">
         <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
           <h2 class="size-32" style="Margin-top: 0;Margin-bottom: 16px;font-style: normal;font-weight: normal;color: #515457;font-size: 28px;line-height: 36px;" lang="x-size-32">
             <span style="text-decoration: inherit;color: #ffffff;"><strong>Need help?</strong></span>
@@ -479,8 +447,8 @@ a {text-decoration: none;}
 
 
 <div style="line-height:20px;font-size:20px;">&nbsp;</div>
-  
-   
+
+
 <!-- ### START FOOTER + TERMS BLOCK (REG 2023) -->
 <div style="background-color: #ffffff;">
   <div class="layout one-col stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
@@ -562,18 +530,13 @@ a {text-decoration: none;}
             <a class="hover" target="_blank" style="color: #666666; font-weight: bold;" href="https://www.chantwest.com.au">www.chantwest.com.au</a>.
           </p>
 
-            <!-- Awards: Canstar-->
-            <p style="Margin-top: 12px;Margin-bottom: 32px;font-size: 11px;line-height: 19px;">
-              The Canstar 2022 Outstanding Value Account Based Pension Award was received in September 2022 for the Cbus Super Income Stream product.
-            </p>
-
 
           <!-- line -->
           <hr class="sm-hide" style="border-top: 1px solid #d6d6d6;border-right: 0;border-left: 0;border-bottom: 0;">
           
           <!-- Regular disclaimer -->
           <p style="Margin-top: 22px;Margin-bottom: 0;font-size: 11px;line-height: 19px;">
-            United Super Pty Ltd ABN 46 006 261 623 AFSL 233792 as Trustee for Construction and Building Unions Superannuation Fund (Cbus) ABN 75 493 363 262 offering Cbus and Media Super Products. 
+            United Super Pty Ltd ABN 46 006 261 623 AFSL 233792 as Trustee for the Construction and Building Unions Superannuation Fund ABN 75 493 363 262 (Cbus and/or Cbus Super)
           </p>
           <p style="Margin-top: 12px;Margin-bottom: 0;font-size: 11px;line-height: 19px;">
             This email (including any attachments) contains information which is confidential and may be subject to legal privilege. If you are not the intended recipient you must not use, distribute or copy this email. If you have received this email in error, please notify the sender immediately and delete this email. Any views expressed in this email are not necessarily the views of Cbus.
