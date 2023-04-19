@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cbus Super - Notifications Opt out preferences</title>
+  <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+
+	<link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/zgy2nvk.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+	<link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/tailwind.css" rel="stylesheet">
+	<link href="https://email-gallery.netlify.app/emails/landing-pages/2022/css/main.css" rel="stylesheet">
+</head>
+<body>
+
+	
+<div class="bg-no-repeat bg-center bg-auto lg:h-banner h-48" style="background-image: 
+	url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/313aacfc12b7592ce9d417446fe6d1eb.jpg')">
+    
+	<div class="bg-gradient flex content-center lg:pt-0 flex-wrap lg:h-banner h-48">
+		<div class="container mx-auto px-10 lg:px-0">
+			<div class="fadeup w-full text-white lg:px-24">
+				<p class="-mt-5 font-medium uppercase">Cbus Super</p>
+				<h1 class="font-heavy mb-8 mark-bold lg:text-6xl text-4xl leading-none">
+					Notifications Opt out
+				</h1>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+<form class="bg-white acr-Form spectrum-Form spectrum-Form--labelsAbove" dir="ltr" data-confirmation-id="acr-form-confirmation" data-error-id="acr-form-error"></form>
+	<div class="container mx-auto lg:px-24 px-5 py-12">
+		<div class="text-brand-black pb-10">
+			<h2 class="lg:text-5xl text-3xl font-heavy pt-12">Notifications Opt out preferences</h2>
+			<p class="pt-5 text-lg">
+				To change how you receive notifications, please opt out of any channel below. This will not affect you receiving other communications from Cbus. 
+			</p>
+		</div>
+		<div class="flex flex-wrap">
+			<div class="w-full lg:w-3/4">
+				<form id="page-form" name="page-form">
+					<div class="flex justify-center items-center">
+						<div class="w-1/2">
+							<p class="uppercase text-gray-400 pb-4">All notifications</p>
+							<p class="text-lg font-bold"> Opt out of all notifications by any channel</p>
+						</div>
+						<div class="w-1/2 text-center">
+							<p class="uppercase text-gray-400 pb-4">Opt-Out</p>
+
+							<div class="lead-radio flex justify-center items-center">
+								<div class="bg-gray-200 text-gray-400 rounded-md">
+									<div class="inline-flex rounded-md">
+										<input type="radio" name="opt_type_all" id="optoutAllYes" checked hidden/>
+										<label for="optoutAllYes" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">Yes</label>
+									</div>
+									<div class="inline-flex rounded-md">
+										<input type="radio" name="opt_type_all" id="optoutAllNo" hidden/>
+										<label for="optoutAllNo" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">No</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex justify-center items-center mt-4 border-t pt-5">
+						<div class="w-1/2">
+							<p class="text-lg">App</p>
+							<p class="text-gray-400">Opt out of push notifications</p>
+						</div>
+						<div class="w-1/2 text-center">
+							<div class="flex justify-center items-center">
+								<div class="bg-gray-200 text-gray-400 rounded-md">
+									<div class="inline-flex rounded-md">
+										<input type="radio" name="opt_type_push" id="optoutPushYes" class="yes" hidden/>
+										<label for="optoutPushYes" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">Yes</label>
+									</div>
+									<div class="inline-flex rounded-md">
+										<input type="radio" name="opt_type_push" id="optoutPushNo" class="no" checked hidden/>
+										<label for="optoutPushNo" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">No</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex justify-center items-center mt-4 border-t pt-5">
+						<div class="w-1/2">
+							<p class="text-lg">Email</p>
+							<p class="text-gray-400">Opt out of email notifications</p>
+						</div>
+						<div class="w-1/2 text-center">
+							<div class="flex justify-center items-center">
+								<div class="bg-gray-200 text-gray-400 rounded-md">
+									<div class="inline-flex rounded-md">
+										<input type="radio" name="opt_type_email" id="optoutEmailsYes" class="yes" hidden/>
+										<label for="optoutEmailsYes" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">Yes</label>
+									</div>
+									<div class="inline-flex rounded-md">
+										<input type="radio" name="opt_type_email" id="optoutEmailsNo" class="no" checked hidden/>
+										<label for="optoutEmailsNo" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">No</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex justify-center items-center mt-4 border-t pt-5">
+						<div class="w-1/2">
+							<p class="text-lg">SMS</p>
+							<p class="text-gray-400"> Opt out of SMS notifications</p>
+						</div>
+						<div class="w-1/2 text-center">
+							<div class="flex justify-center items-center">
+								<div class="bg-gray-200 text-gray-400 rounded-md">
+									<div class="inline-flex rounded-md">
+										<input type="radio" name="opt_type_SMS" id="optoutSMSYes" class="yes" hidden/>
+										<label for="optoutSMSYes" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">Yes</label>
+									</div>
+									<div class="inline-flex rounded-md">
+										<input type="radio" name="opt_type_SMS" id="optoutSMSNo" class="no" checked hidden/>
+										<label for="optoutSMSNo" class="radio text-center self-center py-2 px-4 rounded-md cursor-pointer hover:opacity-75">No</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					
+					<div class="md:flex md:items-center mb-6 mt-10">
+						<button class="cta-dark block lg:w-3/5 w-full lg:m-3" id="unsubNewsletter.htmlPage.line6" href="#" data-nl-type="action" data-nl-localizable="true" data-nl-action="next" data-nl-transition="">Update</button>
+
+					</div>
+				</form>
+			</div>
+		</div>
+		<p class="pt-5 text-sm text-gray-400">
+			Please note that we will continue to send emails to you for other important communication regarding your account.   
+		</p>
+	  </div>
+  </form>
+
+
+  <div id="acr-form-confirmation" style="display:none;">
+	<p class="acr-form-submissionText">Thanks</p>
+	<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgd2lkdGg9IjE4Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmEgewogICAgICAgIGZpbGw6ICM2ZTZlNmU7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDx0aXRsZT5TIENoZWNrbWFya0NpcmNsZU91dGxpbmUgMTggTjwvdGl0bGU+CiAgPHJlY3QgaWQ9IkNhbnZhcyIgZmlsbD0iI2ZmMTNkYyIgb3BhY2l0eT0iMCIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiAvPjxwYXRoIGNsYXNzPSJhIiBkPSJNOS4wNSwxLjFBNy45NSw3Ljk1LDAsMSwwLDE3LDkuMDUsNy45NSw3Ljk1LDAsMCwwLDkuMDUsMS4xWm0wLDE0LjkwNkE2Ljk1Niw2Ljk1NiwwLDEsMSwxNi4wMDYsOS4wNSw2Ljk1Niw2Ljk1NiwwLDAsMSw5LjA1LDE2LjAwNlptNC40OTA3Mi05LjY4ODQ1LTUuNDM2LDYuOTg3NzNhLjUuNSwwLDAsMS0uNzQ4MzkuMDQ2MjhMNC4yNzc5LDEwLjI4NTg2YS41MDAzNS41MDAzNSwwLDAsMSwuMDAwMjEtLjcwNzM2bC42NjIyNi0uNjYyMjZhLjUuNSwwLDAsMSwuNzA3MDksMGwxLjkzOSwxLjkyMTU1LDQuNDM3MzUtNS43MDFhLjUwMDA2LjUwMDA2LDAsMCwxLC43MDE3Ni0uMDg3NDRoMGwuNzI3NjQuNTY2NDJBLjUwMDE2LjUwMDE2LDAsMCwxLDEzLjU0MDcyLDYuMzE3NTVaIiAvPgo8L3N2Zz4=">
+  </div>
+  <div id="acr-form-error" style="display:none;">
+	<p class="acr-form-submissionText">Error</p>
+	<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgd2lkdGg9IjE4Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmEgewogICAgICAgIGZpbGw6ICM2RTZFNkU7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDx0aXRsZT5TIEFsZXJ0IDE4IE48L3RpdGxlPgogIDxyZWN0IGlkPSJDYW52YXMiIGZpbGw9IiNmZjEzZGMiIG9wYWNpdHk9IjAiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgLz48cGF0aCBjbGFzcz0iYSIgZD0iTTguNTYzNSwxLjI4OTUuMiwxNi4yNTZBLjUuNSwwLDAsMCwuNjM2LDE3SDE3LjM2NGEuNS41LDAsMCwwLC40MzYtLjc0NEw5LjQzNjUsMS4yODk1YS41LjUsMCwwLDAtLjg3MywwWk0xMCwxNC43NWEuMjUuMjUsMCwwLDEtLjI1LjI1SDguMjVBLjI1LjI1LDAsMCwxLDgsMTQuNzV2LTEuNUEuMjUuMjUsMCwwLDEsOC4yNSwxM2gxLjVhLjI1LjI1LDAsMCwxLC4yNS4yNVptMC0zYS4yNS4yNSwwLDAsMS0uMjUuMjVIOC4yNUEuMjUuMjUsMCwwLDEsOCwxMS43NXYtNmEuMjUuMjUsMCwwLDEsLjI1LS4yNWgxLjVhLjI1LjI1LDAsMCwxLC4yNS4yNVoiIC8+Cjwvc3ZnPg==">
+  </div>
+
+  <div class="bg-brand-gray">
+	<div class="container mx-auto lg:px-24 px-5 py-12">
+		<div class="mx-auto lg:w-full text-brand-black">
+		<h2 class="lg:text-5xl text-3xl font-heavy">We’re here to help</h2>
+		<p class="font-light pt-5 text-xl font-bold pb-3">
+			If you have any questions or would like to discuss your options further, we can help get your super sorted.
+		</p>
+		<div class="flex flex-wrap text-center">
+			<div class="w-full lg:w-1/2">
+				<a href="tel:1300 361 784" class="cta-light block m-3 relative font-bold">1300 361 784 <i class="fa-solid fa-angle-right text-sm absolute right-0 pr-5"></i></a>
+				<p class="text-brand-gray lg:pb-0 pb-5">Mon to Fri from 8am to 8pm AEDT/AEST</p>
+			</div>
+			<div class="w-full lg:w-1/2">
+				<a href="mailto:cbusenq@cbussuper.com.au" class="cta-light block m-3 relative font-bold">cbusenq@cbussuper.com.au <i class="fa-solid fa-angle-right text-sm absolute right-0 pr-5"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+</div>
+<footer class="bg-brand-black">
+	<div class="container mx-auto">
+		<div class="w-full  bg-brand-black font-heavy text-white">
+			<div class="w-full lg:px-24 px-10 pb-14 flex flex-col">
+	
+				<div class="flex pt-20 pb-12">
+					<div class="lg:w-1/5">
+						<a target="_blank" class="hidden md:block cursor-pointer text-white hover:text-white" href="https://www.cbussuper.com.au/about-us/who-we-are">
+							About
+						</a>
+					</div>
+					<div class="lg:w-1/5">
+						<a target="_blank" class="hidden md:block cursor-pointer text-white hover:text-white" href="https://www.cbussuper.com.au/tools-resources/advice-services">
+							Advice Services
+						</a>
+					</div>
+					<div class="lg:w-1/5">
+						<a target="_blank" class="hidden md:block cursor-pointer text-white hover:text-white" href="https://www.comms.cbussuper.com.au/scripts/cbus/seminars/#upsem">
+							All webinars
+						</a>
+					</div>
+					<div class="lg:w-1/5">
+						<a target="_blank" class="hidden md:block cursor-pointer text-white hover:text-white" href="https://www.cbussuper.com.au/support/contact">
+							Contact
+						</a>
+					</div>
+					<div class="lg:w-1/5">
+						<div class="flex flex-row space-x-8 items-center justify-end text-lg text-white">
+							<a target="_blank" href="https://www.facebook.com/cbussuperfund">
+								<i class="fab fa-facebook-f"></i>                           
+							</a>
+							<a target="_blank" href="https://twitter.com/cbussuperfund">
+								<i class="fab fa-twitter"></i>   
+							</a>
+							<a href="https://www.linkedin.com/company/cbus-super-fund">
+								<i class="fab fa-linkedin-in"></i>                            
+							</a>
+						</div>
+					</div>
+				</div>
+	
+					<hr class="border-gray-300"/>
+		
+					<div class="flex flex-wrap">
+						<div class="lg:w-1/5 w-1/2 w-full pt-10">
+							<a target="_blank" href="https://www.cbussuper.com.au/">
+								<img class="mt-6 hover:opacity-75"  src="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/Cbus-ISA-Footer-Logo-2017.png" alt="Cbus Super logo" style="width: 130px;">
+							</a>
+						</div>
+						<div class="lg:w-1/5 w-1/2 pt-10">
+							<p class="font-heavy">Awards</p>
+							<img class="h-16" style="margin-left: -4px;" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/48cd175c527f8d40f8996ecc7b7519e799ce9b9457f86e3d8d6c8d99bb70761c.gif" />
+						</div>
+						<div class="lg:w-1/5 w-1/2 pt-10">
+							<p class="font-heavy">Get the Cbus app</p>
+							<div class="flex">
+								<a target="_blank" class="p-1 hover:opacity-75" href="https://itunes.apple.com/au/developer/cbus-super-fund/id915194834">
+									<img src="https://www.cbussuper.com.au/content/dam/cbus/images/app/appstore-apple-xs.png" alt="Apple Appstore">
+								</a>
+								<a target="_blank" class="p-1 hover:opacity-75" href="https://play.google.com/store/apps/developer?id=Cbus%20Super%20Fund&amp;hl=en">
+									<img src="https://www.cbussuper.com.au/content/dam/cbus/images/app/appstore-google-xs.png" alt="Google Playstore">
+								</a>
+							</div>
+						</div>
+					</div>
+	
+			</div>
+		</div>
+	</div>
+		<div class="bg-white">
+			<div class="container mx-auto">
+			<div class="w-full lg:px-24 px-10 py-5 flex flex-col text-brand-black">
+				<p class="w-full text-gray-500 text-sm">©<span id="year"></span> Cbus Super. All rights reserved. Cbus ABN 75 493 363 262.</p>
+			</div>
+			</div>
+		</div>
+	</footer>
+<script>
+	document.getElementById("year").innerHTML = new Date().getFullYear();
+	
+	$('#optoutAllYes').click(function(){
+		$('.no').prop('checked', true);
+	});
+	$('#optoutAllNo').click(function(){
+		$('.yes').prop('checked', true);
+	});
+	$('.yes').click(function(){
+		$('#optoutAllNo').prop('checked', true);
+	});
+</script>
+
+</body>
+</html>
