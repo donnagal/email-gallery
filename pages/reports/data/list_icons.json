@@ -1,42 +1,37 @@
 [
   {
+    "name": "Grey webinar icon",
     "text": "webinar, event, education sessions",
-    "name": "Grey Laptop",
+    "url": "webinar.png"
+  },
+  {
+    "name": "Grey Laptop icon",
+    "text": "webinar, event, education sessions",
     "url": "laptop.png"
   },
   {
+    "name": "Grey Laptop with lines icon",
     "text": "webinar, event, education sessions",
-    "name": "Grey webinar icon",
-    "url": "webinar.png"
+    "url": "laptop-lines.png"
   },
   {
-    "text": "webinar, event, education sessions",
-    "name": "Grey webinar icon",
-    "url": "webinar.png"
+    "name": "Grey Phone in hand icon",
+    "text": "Phone, call, contact, app",
+    "url": "phone-hand.png"
   },
   {
-    "text": "webinar, event, education sessions",
-    "name": "Grey webinar icon",
-    "url": "webinar.png"
+    "name": "Grey No Tax icon",
+    "text": "Tax, benfit",
+    "url": "no-tax.png"
   },
   {
-    "text": "webinar, event, education sessions",
-    "name": "Grey Laptop",
-    "url": "laptop.png"
+    "name": "Grey Money down icon",
+    "text": "money, dollar, chart, down",
+    "url": "dollar-money-chart.png"
   },
   {
-    "text": "webinar, event, education sessions",
-    "name": "Grey webinar icon",
-    "url": "webinar.png"
-  },
-  {
-    "text": "webinar, event, education sessions",
-    "name": "Grey webinar icon",
-    "url": "webinar.png"
-  },
-  {
-    "text": "webinar, event, education sessions",
-    "name": "Grey webinar icon",
-    "url": "webinar.png"
+    "name": "Grey Bar Chart Up icon",
+    "text": "graph, chart, up",
+    "url": "chart-up.png"
   }
 ]

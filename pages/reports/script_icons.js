@@ -26,8 +26,8 @@ const vm = new Vue({
     }
   },
   mounted() {
-    // fetch("https://donnagal.github.io/email-gallery/pages/reports/data/list_icons.json")
-    fetch("http://127.0.0.1:5500/cbus/pages/reports/data/list_icons.json")
+    fetch("https://donnagal.github.io/email-gallery/pages/reports/data/list_icons.json")
+    // fetch("http://127.0.0.1:5500/cbus/pages/reports/data/list_icons.json")
       .then(resp => resp.json())
       .then(json => (this.lists = json));
   }

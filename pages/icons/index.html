@@ -98,21 +98,22 @@
   
 							<div class="flex flex-wrap">
 								  <div v-for="listData in lists" v-bind:class="['card-' + listData.group + ' ' + listData.gallery]" 
-																  class="in xl:w-1/6 md:w-1/3 w-full no-underline ">
+																  class="in xl:w-1/4 md:w-1/3 w-full no-underline ">
 									  <div class="flex flex-wrap">
 											<button :href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ listData.url" :download="listData.url" 
 													onclick='forceDownload(this)'
 													class="downloadImage bg-white hover:bg-gray-100 shadow-sm m-1 w-auto flex-grow flex flex-col justify-center items-center">
-													<img class="" :src="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ listData.url" width="100" />
-											  <div class="w-auto flex-grow flex flex-col text-center pb-2">
-												  <h4 class="text-md">{{ listData.name }}</h4>
-												  <div class="px-6 pt-4 pb-2 text-xs">
-													<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">
-														{{listData.url}} ↓
-													</span>
-												  </div>
-												  <p class="pb-1 text-left px-3 text-xs">{{listData.text}}</p>
-											  </div>
+													<img class="pt-3" :src="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ listData.url" width="100" />
+														<div class="w-auto flex-grow flex flex-col text-center">
+															<h4 class="text-lg">{{ listData.name }}</h4>
+															<div class="pt-4 pb-2 text-xs">
+																<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">
+																	{{listData.url}} ↓
+																</span>
+															</div>
+															<hr/>
+															<p class="py-2 text-left px-3 text-xs text-gray-500">{{listData.text}}</p>
+														</div>
 											</button>
 								</div>
 								  
