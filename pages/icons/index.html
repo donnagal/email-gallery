@@ -32,7 +32,7 @@
 				<div class="bg-black mx-auto text-white px-5 text-center">
 				  <div class="flex py-2">
 					<div class="flex-1">
-					  <h1 class="font-bold text-2xl"><i class="fas fa-th-large"></i> Gallery</h1>
+					  <h1 class="font-bold text-2xl"><i class="fas fa-th-large"></i> Icons</h1>
 					</div>
 				  </div>
 				</div>
@@ -83,7 +83,7 @@
 						<div class="w-full mt-4 flex rounded-lg">
 
 							<div class="pt-2 relative mx-auto text-gray-600 w-full">
-								<input id="search-text" placeholder="Search emails" class="w-full border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+								<input id="search-text" placeholder="Search icons" class="w-full border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
 								type="search" name="search" placeholder="Search">
 								<button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
 								<svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
@@ -98,27 +98,23 @@
   
 							<div class="flex flex-wrap">
 								  <div v-for="listData in lists" v-bind:class="['card-' + listData.group + ' ' + listData.gallery]" 
-																  class="in xl:w-1/4 md:w-1/3 w-full p-2 no-underline ">
-							  
-								  <a class="no-underline" :href="listData.url" target="_blank">
+																  class="in xl:w-1/6 md:w-1/3 w-full no-underline ">
 									  <div class="flex flex-wrap">
-											<div class="border-4 border-gray-600  w-auto flex-grow flex flex-col justify-center text-white bg-cover bg-top relative overlay overlay-hover" 
-												style="height: 300px;width: 271px;" 
-												:style="{ 'background-image': 'url(' + 'https://image.thum.io/get/width/500/crop/900/' + listData.url + ')' }"
-											>
-											  <div class="hover-show z-10 w-auto flex-grow flex flex-col text-center " style="background: #000000cf;">
-												  <h3 class="font-bold p-5 pt-24 text-white text-2xl">
-													{{ listData.name }}
-												  </h3>
-												  <small class="text-xs">{{ listData.day }}</small>
+											<a target="_blank" :href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ listData.url" download="listData.url" 
+												class="bg-white hover:bg-gray-100 shadow-sm m-1 w-auto flex-grow flex flex-col justify-center items-center">
+												<img class="" :src="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ listData.url" width="100" />
+											  <div class="w-auto flex-grow flex flex-col text-center pb-2">
+												  <h4 class="text-md">{{ listData.name }}</h4>
+												  <div class="px-6 pt-4 pb-2 text-xs">
+													<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2">
+														{{listData.url}} ↓
+													</span>
+												  </div>
+												  <p class="pb-1 text-left px-3 text-xs">{{listData.text}}</p>
 											  </div>
-											</div>
-									  </div>
-								  </a>
-							
+											</a>
 								</div>
 								  
-							  
 							  </div>
 							  </div>
 						</div>
