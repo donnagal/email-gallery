@@ -23,7 +23,8 @@ const vm = new Vue({
       this.reverse = (this.sortKey === sortKey) ? !this.reverse : false;
       if(this.reverse) this.lists.reverse();
       this.sortKey = sortKey;
-    }
+    },
+    
   },
   mounted() {
     fetch("https://donnagal.github.io/email-gallery/pages/reports/data/list_icons.json")
