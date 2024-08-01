@@ -129,15 +129,15 @@
 							</button>
 						</div>
 
-						<a target="_blank" class="opacity-100 hover:opacity-25" title="open in new window"
+						<a target="_blank" class="opacity-100 hover:opacity-25" title="open puplished path in new window"
 							:href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url" >
 							<img class="pt-3" :src="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url" width="100" />
 						</a>
 							
 						<div class="w-auto flex-grow flex flex-col text-center">
-								<h4 class="text-lg pb-5 text">{{ item.name }}</h4>
 							
 							<div class="bg-white rounded">
+								<h4 class="pt-3 text-left px-3 text-lg text-black">{{ item.name }}</h4>
 								<p class="py-2 text-left px-3 text-sm text-black"><strong>Brand:</strong> {{item.group}}</p>
 								<p class="py-2 text-left px-3 text-xs text-gray-500"><strong>Topics:</strong> {{item.text}}</p>
 							</div>
@@ -151,16 +151,12 @@
 </div>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js'></script>
 
-  
-
-    <script src="js/vue-icons.js"></script>
-
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 	<script src="../../js/filter-group.js"></script>
 	<script src="../../js/global.js"></script>
 	<script src="../../js/vue.min.js"></script>
 	<script  src="../../pages/reports/script_icons.js"></script>
-
+    <script src="js/vue-icons.js"></script>
 
 
 </body>
