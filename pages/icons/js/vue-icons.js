@@ -59,11 +59,6 @@ new Vue({
        {
         text:'',
         group: 'Cbus, Line', 
-        name: ["cbus-box"],
-       },
-       {
-        text:'',
-        group: 'Cbus, Line', 
         name: ["chart-up-green"],
        },
        {
