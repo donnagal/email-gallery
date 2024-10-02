@@ -106,39 +106,25 @@
 						class="downloadImage shadow-md bg-gray-100 rounded-lg m-2 flex flex-col items-center">
 
 						<div class="pt-4 text-xs ubuntu-mono-regular">
-							<button :href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url" 
-									:download="item.url"
-									onclick='forceDownload(this)'
-									title="download image"
-									class="inline-block bg-white hover:bg-black hover:text-white rounded-md px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 shadow-sm">
-								SM↓ 
-							</button>
-							<button :href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url" 
-							:download="item.url"
+							<button :href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.name+'.png'" 
+							:download="item.name"
 							onclick='forceDownload(this)'
 							title="download image"
 							class="inline-block bg-white hover:bg-black hover:text-white rounded-md px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 shadow-sm">
-								MD↓ 
-							</button>
-							<button :href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/lg/'+ item.url" 
-							:download="item.url"
-							onclick='forceDownload(this)'
-							title="download image"
-							class="inline-block bg-white hover:bg-black hover:text-white rounded-md px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 shadow-sm">
-								LG↓ 
+								Downlaod ↓ 
 							</button>
 						</div>
 
 						<a target="_blank" class="opacity-100 hover:opacity-25" title="open puplished path in new window"
-							:href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url" >
-							<img class="pt-3" :src="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url" width="100" />
+							:href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.name+'.png'" >
+							<img class="pt-3" :src="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.name+'.png'" width="100" />
 						</a>
 							
 						<div class="w-auto flex-grow flex flex-col text-center">
 							
 							<div class="bg-white rounded">
 								<h4 class="pt-3 text-left px-3 text-lg text-black">{{ item.name }}</h4>
-								<p class="py-2 text-left px-3 text-sm text-black"><strong>Brand:</strong> {{item.group}}</p>
+								<p class="py-2 text-left px-3 text-sm text-black"><strong>Brand & Style:</strong> {{item.group}}</p>
 								<p class="py-2 text-left px-3 text-xs text-gray-500"><strong>Topics:</strong> {{item.text}}</p>
 							</div>
 
