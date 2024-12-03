@@ -506,10 +506,256 @@ new Vue({
         text: 'login online, Log in to Employer Portal',
         url: ["ms-click-button-purple.png"],
       }, 
-
-
-
-
+      { 
+        group: 'Cbus', 
+        text: 'Submit online, Submit your payment',
+        url: ["click-button-action.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'Submit online, Submit your payment',
+        url: ["click-button-action-green.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'Submit online, Submit your payment, SIS',
+        url: ["click-button-action-purple.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'Submit online, Submit your payment',
+        url: ["click-button-action-pine.png"],
+      }, 
+      { 
+        group: 'Cbus, Media', 
+        text: 'Submit online, Submit your payment',
+        url: ["click-button-action-white.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Submit online, Submit your payment',
+        url: ["ms-click-button-action-m3.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Submit online, Submit your payment',
+        url: ["ms-click-button-action-m4.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Submit online, Submit your payment',
+        url: ["ms-click-button-action-c1.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Submit online, Submit your payment',
+        url: ["ms-click-button-action-c2.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Submit online, Submit your payment',
+        url: ["ms-click-button-action-purple.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'Get a regular pay check in retirement, money benefit',
+        url: ["cash-in-hand.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'Get a regular pay check in retirement, money benefit',
+        url: ["cash-in-hand-green.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'Get a regular pay check in retirement, money benefit, SIS',
+        url: ["cash-in-hand-purple.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'Get a regular pay check in retirement, money benefit',
+        url: ["cash-in-hand-pine.png"],
+      }, 
+      { 
+        group: 'Cbus, Media', 
+        text: 'Get a regular pay check in retirement, money benefit',
+        url: ["cash-in-hand-white.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Get a regular pay check in retirement, money benefit',
+        url: ["ms-cash-in-hand-m3.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Get a regular pay check in retirement, money benefit',
+        url: ["ms-cash-in-hand-m4.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Get a regular pay check in retirement, money benefit',
+        url: ["ms-cash-in-hand-c1.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Get a regular pay check in retirement, money benefit',
+        url: ["ms-cash-in-hand-c2.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Get a regular pay check in retirement, money benefit',
+        url: ["ms-cash-in-hand-purple.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'Your super will continue to work for you in retirement, managed benefit',
+        url: ["calendar-tick-chart.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'Your super will continue to work for you in retirement, managed benefit',
+        url: ["calendar-tick-chart-green.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'Your super will continue to work for you in retirement, managed benefit, SIS',
+        url: ["calendar-tick-chart-purple.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'Your super will continue to work for you in retirement, managed benefit',
+        url: ["calendar-tick-chart-pine.png"],
+      }, 
+      { 
+        group: 'Cbus, Media', 
+        text: 'Your super will continue to work for you in retirement, managed benefit',
+        url: ["calendar-tick-chart-white.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Your super will continue to work for you in retirement, managed benefit',
+        url: ["ms-calendar-tick-chart-m3.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Your super will continue to work for you in retirement, managed benefit',
+        url: ["ms-calendar-tick-chart-m4.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Your super will continue to work for you in retirement, managed benefit',
+        url: ["ms-calendar-tick-chart-c1.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Your super will continue to work for you in retirement, managed benefit',
+        url: ["ms-calendar-tick-chart-c2.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Your super will continue to work for you in retirement, managed benefit',
+        url: ["ms-calendar-tick-chart-purple.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'Target, managed benefit',
+        url: ["date-target.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'Target, managed benefit',
+        url: ["date-target-green.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'Target, managed benefit, SIS',
+        url: ["date-target-purple.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'Target, managed benefit',
+        url: ["date-target-pine.png"],
+      }, 
+      { 
+        group: 'Cbus, Media', 
+        text: 'Target, managed benefit',
+        url: ["date-target-white.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Target, managed benefit',
+        url: ["ms-date-target-m3.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Target, managed benefit',
+        url: ["ms-date-target-m4.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Target, managed benefit',
+        url: ["ms-date-target-c1.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Target, managed benefit',
+        url: ["ms-date-target-c2.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'Target, managed benefit',
+        url: ["ms-date-target-purple.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'movie clapperboard, performance, media work job',
+        url: ["media-snapboard.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'movie clapperboard, performance, media work job',
+        url: ["media-snapboard-green.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'movie clapperboard, performance, media work job, SIS',
+        url: ["media-snapboard-purple.png"],
+      }, 
+      { 
+        group: 'Cbus', 
+        text: 'movie clapperboard, performance, media work job',
+        url: ["media-snapboard-pine.png"],
+      }, 
+      { 
+        group: 'Cbus, Media', 
+        text: 'movie clapperboard, performance, media work job',
+        url: ["media-snapboard-white.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'movie clapperboard, performance, media work job',
+        url: ["ms-media-snapboard-m3.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'movie clapperboard, performance, media work job',
+        url: ["ms-media-snapboard-m4.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'movie clapperboard, performance, media work job',
+        url: ["ms-media-snapboard-c1.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'movie clapperboard, performance, media work job',
+        url: ["ms-media-snapboard-c2.png"],
+      }, 
+      { 
+        group: 'Media', 
+        text: 'movie clapperboard, performance, media work job',
+        url: ["ms-media-snapboard-purple.png"],
+      }, 
 
 
 
