@@ -50,6 +50,11 @@
 				width:calc(25% - 64px);
 			}
 		}
+		@media (min-width:1200px) {
+			.icon-item {
+				width:calc(20% - 80px);
+			}
+		}
 	</style>
 </head>
 
@@ -135,13 +140,12 @@
 			<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
 				@click.prevent="setStatus('ms')">Media Super</button>
 		</form>
-
 		<div class="flex bg-white font-roboto">
 			<div id="list" class="email-list w-full">
 				<div class="flex flex-wrap justify-center py-4" style="gap:16px;">
 					<div v-for="item in items | filterBy search_filter in 'url' | filterBy status_filter in 'group'"
 						v-show="setPaginate($index)"
-						class="icon-item downloadImage shadow-md bg-gray-100 rounded-lg flex flex-col items-center box-border" style="box-sizing:border-box; gap:16px;">
+						class="icon-item downloadImage shadow-md bg-gray-100 rounded-lg flex flex-col items-center" style="box-sizing:border-box; gap:16px;">
 
 						<div class="pt-4 text-xs ubuntu-mono-regular">
 							<button
@@ -152,15 +156,10 @@
 							</button>
 						</div>
 
-						<a target="_blank" class="opacity-100 hover:opacity-25" title="open puplished path in new window"
+						<a target="_blank" class="opacity-100 hover:opacity-25" title="open published path in new window"
 							:href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url" >
 							<img class="pt-3" :src="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url" width="100" />
 						</a>
-
-						<!-- <a target="_blank" class="opacity-100 hover:opacity-25"
-							title="open puplished path in new window" :href="'./images/'+ item.url">
-							<img class="pt-3" :src="'./images/'+ item.url" width="100" />
-						</a> -->
 
 						<div class="w-full flex-grow flex flex-col text-center">
 
@@ -170,7 +169,6 @@
 								</p>
 								<p class="py-2 text-left px-3 text-xs text-gray-500">{{item.text}}</p>
 							</div>
-
 
 						</div>
 					</div>
