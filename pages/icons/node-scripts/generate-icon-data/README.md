@@ -11,13 +11,13 @@ The data is then used on the icon library front end.
 
 ```js
 type icon {
-    // which brand the icon belongs to. cbus or media super
+    // The brand that the icon belongs to. Cbus or Media Super
     group:"cbus"| "ms"|"none",
 
-    // desription of the icon. used as keywords for sear
+    // Desription of the icon. Used as keywords for search functionality
     text: string,
 
-    // the url of the icon
+    // The filename of the icon
     url: string,
 };
 ```
@@ -28,22 +28,23 @@ type icon {
 
 - Figma file: https://www.figma.com/design/xoR7FUbBdcG3Vb1jxmSe2V/Icons?node-id=0-1&t=D2PbZ5RiMxqN6yEr-1
 
-- Replace all images in the `./images/` folder next to the script.
+- Replace all images in the `./icons/` folder next to the script.
 
 #### 2. Upload images to `AEM`
 
 - Images are hosted on `AEM` so we will upload them there.
 
-- AEM: <insert link here>
+- AEM: https://author.prod.internal.cbussupertech.com.au/assets.html/content/dam/cbus/images/email/icon_library
 - Production img path: `https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/`
 
 #### 3. Run the node script
 
-- install dependencies
+- install dependencies, if you haven't already
 
   `npm i`
 
 - To run the script:
+
   `npm start`
 
 - The script will output a `json` file in the `/output` folder.
@@ -55,5 +56,4 @@ type icon {
 - Replace the `items` array with the output of the script
 
 ---
-
 Tested with Node.js v20.10.0 🙃
