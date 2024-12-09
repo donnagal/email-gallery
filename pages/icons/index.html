@@ -117,6 +117,7 @@
 			</div>
 		</nav>
 	</div>
+
 	<div id="items">
 
 		<form class="bg-gray-100 p-5 text-center">
@@ -141,41 +142,37 @@
 				@click.prevent="setStatus('ms')">Media Super</button>
 		</form>
 
-		<div class="flex bg-white font-roboto pt-10 container mx-auto">
-			<div id="list" class="email-list">
-				<div class="flex flex-wrap justify-center" style="gap:16px;">
-					<div v-for="item in items | filterBy search_filter in 'url' | filterBy status_filter in 'group'"
-						v-show="setPaginate($index)"
-						class="icon-item downloadImage shadow-md bg-gray-100 rounded-lg flex flex-col items-center" style="box-sizing:border-box; gap:16px;">
+		<div class="container mx-auto pt-10">
 
-						<div class="pt-4 text-xs ubuntu-mono-regular">
-							<button
-								:href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url"
-								:download="item.url" onclick='forceDownload(this)' title="download image"
-								class="inline-block bg-white hover:bg-black hover:text-white rounded-md px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 shadow-sm">
-								Download ↓
-							</button>
-						</div>
+			<div class="flex flex-wrap text-center">
 
-						<a target="_blank" class="opacity-100 hover:opacity-25" title="open published path in new window"
-							:href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url" >
-							<img class="pt-3" :src="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url" width="100" />
-						</a>
+			<div class="w-1/6 m-2 bg-gray-100 rounded-lg" v-for="item in items | filterBy search_filter in 'url' | filterBy status_filter in 'group'"
+				v-show="setPaginate($index)">
+				<a target="_blank" class="opacity-100 hover:opacity-25" title="open published path in new window"
+					:href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url" >
+					<img class="pt-3 mx-auto" :src="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url" width="100" />
+				</a>
+					<div class="text-sm text-black py-5">
+					
+						<button
+							:href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url"
+							:download="item.url" onclick='forceDownload(this)' title="download image"
+							class="inline-block bg-white hover:bg-black hover:text-white rounded-md px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 shadow-sm">
+							Download ↓
+						</button>
 
-						<div class="w-full flex-grow flex flex-col text-center">
-
-							<div class="bg-white rounded">
-								<h4 class="pt-3 text-left px-3 text-lg text-black">{{ item.url }}</h4>
-								<p class="py-2 text-left px-3 text-sm text-black"><strong>Brand:</strong> {{item.group}}
-								</p>
-								<p class="py-2 text-left px-3 text-xs text-gray-500">{{item.text}}</p>
-							</div>
-
-						</div>
+						<p class="pt-3 text-left px-3 ">{{ item.url }}</p>
+						<p class="text-left px-3"><strong>Brand:</strong> {{item.group}}</p>
+						<p class="text-left px-3 text-xs text-gray-500">{{item.text}}</p>
 					</div>
 				</div>
+
 			</div>
+
 		</div>
+
+
+		
 	</div>
 
 
