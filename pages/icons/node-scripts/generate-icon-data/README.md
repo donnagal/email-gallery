@@ -37,7 +37,10 @@ type icon {
 - AEM: https://author.prod.internal.cbussupertech.com.au/assets.html/content/dam/cbus/images/email/icon_library
 - Production img path: `https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/`
 
-#### 3. Run the node script
+#### 3. Update the search words
+- Update description search words from Figma to: `search-words.js`
+
+#### 4. Run the node script
 
 - install dependencies, if you haven't already
 
@@ -54,6 +57,7 @@ type icon {
 - There is an `items` array in this file.
 - https://github.com/donnagal/email-gallery/blob/master/pages/icons/js/vue-icons.js
 - Replace the `items` array with the output of the script
+- To test local file update the fetch path in `https://github.com/donnagal/email-gallery/blob/master/pages/reports/data/list_icons.json` 
 
 ---
 Tested with Node.js v20.10.0 🙃
