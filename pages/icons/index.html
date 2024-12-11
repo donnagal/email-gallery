@@ -146,7 +146,7 @@
 
 			<div class="flex flex-wrap text-center">
 
-			<div class="w-1/6 m-2 bg-gray-100 rounded-lg" v-for="item in items | filterBy search_filter in 'url' | filterBy status_filter in 'group'"
+			<div class="lg:w-1/6 md:1/3 m-2 bg-gray-100 rounded-lg" v-for="item in items | filterBy search_filter in 'url' | filterBy status_filter in 'group'"
 				v-show="setPaginate($index)">
 				<a target="_blank" class="opacity-100 hover:opacity-25" title="open published path in new window"
 					:href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url" >
