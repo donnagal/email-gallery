@@ -153,13 +153,11 @@
 					<img class="pt-3 mx-auto" :src="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url" width="100" />
 				</a>
 					<div class="text-sm text-black py-5">
-					
-						<button
-						:href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url"
-						:download="item.url" onclick='forceDownload(this)' title="download image"
+
+						<a target="_blank"  :href="'images/'+ item.url" :download="item.url"
 						class="inline-block bg-white hover:bg-black hover:text-white rounded-md px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 shadow-sm">
-						Download ↓
-					</button>
+							Download ↓
+						</a>
 
 						<p class="pt-3 text-left px-3 ">{{ item.url }}</p>
 						<p class="text-left px-3"><strong>Brand:</strong> {{item.group}}</p>
