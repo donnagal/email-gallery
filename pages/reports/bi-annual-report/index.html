@@ -1,219 +1,275 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>2021 bi-annual review report</title>
-  <link href="../../../images/favion.png" rel="icon" type="image/x-icon" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>2021 bi-annual review report</title>
+	<link href="../../../images/favion.png" rel="icon" type="image/x-icon" />
 
-  <link rel="stylesheet" href="../../../css/v-dashbaord.css">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
-  <link rel="stylesheet" href="../../../css/global.css">
+	<link rel="stylesheet" href="../../../css/v-dashbaord.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
+	<link rel="stylesheet" href="../../../css/global.css">
 
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
 
 		html {
-		scroll-behavior: smooth;
+			scroll-behavior: smooth;
 		}
+
 		body {
 			font-family: 'Montserrat', sans-serif;
 		}
-		.heading  {font-size: 10rem; }
-		.heading-4  {font-size: 3rem; }
-		  
-		@media (min-width: 1600px){
-			.text  { font-size: 1.5rem; }
+
+		.heading {
+			font-size: 10rem;
 		}
 
-		@media (max-width: 1600px){
-			.md-heading  { font-size: 5rem;  }
-			.bounce {top: -40px !important;}
+		.heading-4 {
+			font-size: 3rem;
 		}
-		@media (max-width: 620px){
-			.heading {font-size: 2.5rem;}
-			.heading-4 {font-size: 1.5rem;}
-			.text  { font-size: 12px; }
+
+		@media (min-width: 1600px) {
+			.text {
+				font-size: 1.5rem;
+			}
 		}
+
+		@media (max-width: 1600px) {
+			.md-heading {
+				font-size: 5rem;
+			}
+
+			.bounce {
+				top: -40px !important;
+			}
+		}
+
+		@media (max-width: 620px) {
+			.heading {
+				font-size: 2.5rem;
+			}
+
+			.heading-4 {
+				font-size: 1.5rem;
+			}
+
+			.text {
+				font-size: 12px;
+			}
+		}
+
 		.bg-gradient {
 			background: linear-gradient(-45deg, #5555FF, #9787FF, #FF55B8, #FF8787);
 			background-size: 400% 400%;
 			animation: bg 20s infinite;
 		}
+
 		.bg-gradient-2 {
 			background: linear-gradient(-45deg, #331a70, #5555FF, #3185a9, #30c8cc);
 			background-size: 400% 400%;
 			animation: bg 20s infinite;
 		}
+
 		.bg-gradient-3 {
 			background: linear-gradient(-45deg, #ff6733, #ff904b, #fda656, #FF8787);
 			background-size: 400% 400%;
 			animation: bg 20s infinite;
 		}
-		@keyframes bg
-		{
-		0% {
+
+		@keyframes bg {
+			0% {
 				background-position: 0% 50%
 			}
+
 			50% {
 				background-position: 100% 50%
 			}
+
 			100% {
 				background-position: 0% 50%
 			}
 		}
 
 		.bounce {
-				animation: bounce 2s infinite;
-				position: relative;
-				top: -100px;
-			}
+			animation: bounce 2s infinite;
+			position: relative;
+			top: -100px;
+		}
 
-			@keyframes bounce {
-			0%, 20%, 50%, 80%, 100% {
+		@keyframes bounce {
+
+			0%,
+			20%,
+			50%,
+			80%,
+			100% {
 				transform: translateY(0);
 			}
+
 			40% {
 				transform: translateY(-30px);
 			}
+
 			60% {
 				transform: translateY(-15px);
 			}
 		}
+	</style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LF495ZKW9K"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-</style>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF495ZKW9K"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-  
-        gtag('config', 'G-LF495ZKW9K');
-      </script>
+		gtag('config', 'G-LF495ZKW9K');
+	</script>
 </head>
 
-	<body id="counter">
-		<div id="nav">
-			<header>
-				<div class="bg-black mx-auto text-white px-5 text-center">
-				  <div class="flex py-2">
+<body id="counter">
+	<div id="nav">
+		<header>
+			<div class="bg-black mx-auto text-white px-5 text-center">
+				<div class="flex py-2">
 					<div class="flex-1">
-					  <h1 class="font-bold text-2xl">Bi-annual report</h1>
+						<h1 class="font-bold text-2xl">Bi-annual report</h1>
 					</div>
-				  </div>
 				</div>
-			  </header>
-			<nav class="animate-add z-100">
-			  <div class="nav-overlay"></div>
-			  <button type="button" class="slide-toggle">
-				  <div class="menu-wrapper">
-					  <div class="hamburger-menu"></div>	  
-				  </div>
-			  </button>
-			  <div class="menu z-100">
-				  <div class="menu-inner">
-					  <div class="bg-gray-900 h-screen py-8 font-bold">
+			</div>
+		</header>
+		<nav class="animate-add z-100">
+			<div class="nav-overlay"></div>
+			<button type="button" class="slide-toggle">
+				<div class="menu-wrapper">
+					<div class="hamburger-menu"></div>
+				</div>
+			</button>
+			<div class="menu z-100">
+				<div class="menu-inner">
+					<div class="bg-gray-900 h-screen py-8 font-bold">
 						<nav class="mt-10">
-							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100" 
-								href="https://email-gallery.netlify.app/"><i class="fas fa-th-large"></i> <span class="mx-4">Gallery</span>
+							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 bg-gray-600 bg-opacity-25 text-gray-100 border-gray-100"
+								href="/">
+								<i class="fas fa-th-large"></i>
+								<span class="mx-4">Gallery</span>
 							</a>
-							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100" 
-								href="https://email-gallery.netlify.app/pages/reports/"><svg class="w-5 h-5" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-								<path d="M2 10C2 5.58172 5.58172 2 10 2V10H18C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10Z" fill="currentColor"></path>
-								<path d="M12 2.25195C14.8113 2.97552 17.0245 5.18877 17.748 8.00004H12V2.25195Z" fill="currentColor"></path></svg> <span class="mx-4">
-								Dashboard</span>
-							</a> 
-							<a target="_blank" class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100" href="https://www.senderscore.org/report/?lookup=66.235.130.62&authenticated=true"><i class="mr-5 fas fa-chart-line"></i> 
-								Sender Score
-							</a> 
-							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 bg-gray-600 bg-opacity-25 text-gray-100 border-gray-100" href="https://email-gallery.netlify.app//pages/reports/bi-annual-report"><i class="fas fa-list-ol"></i> <span class="mx-4">
-								Bi-annual report</span>
-							</a> 
-							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100" href="https://email-gallery.netlify.app/pages/utm-tracking/"><i class="fas fa-pen-square"></i> <span class="mx-4">
-								UTM Tool</span>
-							</a> 
+
+							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100"
+								href="/pages/reports/">
+								<svg class="w-5 h-5" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M2 10C2 5.58172 5.58172 2 10 2V10H18C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10Z"
+										fill="currentColor"></path>
+									<path d="M12 2.25195C14.8113 2.97552 17.0245 5.18877 17.748 8.00004H12V2.25195Z"
+										fill="currentColor"></path>
+								</svg>
+								<span class="mx-4">Dashboard</span>
+							</a>
+
+							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100"
+								href="/pages/reports/bi-annual-report">
+								<i class="fas fa-list-ol"></i>
+								<span class="mx-4">Bi-annual report</span>
+							</a>
+
+							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100"
+								href="/pages/icons">
+								<i class="fas fa-stamp"></i>
+								<span class="mx-4">Icon Library</span>
+							</a>
+
 						</nav>
-					  </div>
-				  </div>
-			   </div>
-			</nav>
-		</div>
-		<div class="h-screen bg-gradient">
-			<div class="h-screen flex flex-wrap content-center">
-			  <div class="container mx-auto px-5">
-				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<div class="h-screen bg-gradient">
+		<div class="h-screen flex flex-wrap content-center">
+			<div class="container mx-auto px-5">
+				<div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200"
+					data-aos-duration="600">
 					<div class="flex justify-center">
 						<img src="img/heading-text.png" />
 					</div>
 					<div class="text-center">
 						<p class="my-5 pb-5 text-xl">
-							January 1, 2021 - July 30, 2021.<br/> 
+							January 1, 2021 - July 30, 2021.<br />
 							Cbus Email marketing report.
 						</p>
-						<a href="#volumes" class="bg-white font-bold text-black text-sm uppercase p-4 px-10 hover:opacity-75 no-underline">
+						<a href="#volumes"
+							class="bg-white font-bold text-black text-sm uppercase p-4 px-10 hover:opacity-75 no-underline">
 							Get started
 						</a>
 					</div>
-				  </div>
-			  </div>
+				</div>
 			</div>
-		  </div>
+		</div>
+	</div>
 
-		  <div id="volumes" class="h-screen bg-gradient-2">
-			<div class="h-screen text-white flex flex-wrap content-center">
-			  <div class="mx-auto container">
-					
-					<div id="counters_1" class="heading md-heading font-bold text-center">
-						3,<span class="counter" data-TargetNum="300" data-Speed="1000"></span>,<span class="counter" data-TargetNum="877" data-Speed="1000"></span>
+	<div id="volumes" class="h-screen bg-gradient-2">
+		<div class="h-screen text-white flex flex-wrap content-center">
+			<div class="mx-auto container">
+
+				<div id="counters_1" class="heading md-heading font-bold text-center">
+					3,<span class="counter" data-TargetNum="300" data-Speed="1000"></span>,<span class="counter"
+						data-TargetNum="877" data-Speed="1000"></span>
+				</div>
+				<div class="text-center">
+					<p class="lg:text-xl">
+						Volume of emails has been sent.
+					</p>
+				</div>
+
+				<div class="pt-8 px-5 lg:px-0">
+					<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="1200" data-aos-duration="800">
+						<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:88%;">
+						</div>
+						<p class="px-3"><strong class="text-xl">37%</strong><br />1,230,237 Tec</p>
 					</div>
-					<div class="text-center">
-						<p class="lg:text-xl">
-							Volume of emails has been sent.
-						</p>
+					<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="1400" data-aos-duration="800">
+						<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:75%;">
+						</div>
+						<p class="px-3"><strong class="text-xl">29%</strong><br />964,333 Web</p>
 					</div>
-					
-					<div class="pt-8 px-5 lg:px-0">
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="1200" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:88%;"></div>
-							<p class="px-3"><strong class="text-xl">37%</strong><br/>1,230,237 Tec</p>
+					<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="1600" data-aos-duration="800">
+						<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:65%;">
 						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="1400" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:75%;"></div>
-							<p class="px-3"><strong class="text-xl">29%</strong><br/>964,333 Web</p>
-						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="1600" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:65%;"></div>
-							<p class="px-3"><strong class="text-xl">20%</strong><br/>656,209 Mar</p>
-						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="1800" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:44%;"></div>
-							<p class="px-3"><strong class="text-xl">9%</strong><br/>281,321 Com</p>
-						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="1900" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:35%;"></div>
-							<p class="px-3"><strong class="text-xl">4%</strong><br/> 138,592 Emp</p>
-						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="2000" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:6%;"></div>
-							<p class="px-3"><strong class="text-xl">1%</strong><br/>30,185 Bnd</p>
-						</div>
+						<p class="px-3"><strong class="text-xl">20%</strong><br />656,209 Mar</p>
 					</div>
-			  </div>
+					<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="1800" data-aos-duration="800">
+						<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:44%;">
+						</div>
+						<p class="px-3"><strong class="text-xl">9%</strong><br />281,321 Com</p>
+					</div>
+					<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="1900" data-aos-duration="800">
+						<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:35%;">
+						</div>
+						<p class="px-3"><strong class="text-xl">4%</strong><br /> 138,592 Emp</p>
+					</div>
+					<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="2000" data-aos-duration="800">
+						<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:6%;">
+						</div>
+						<p class="px-3"><strong class="text-xl">1%</strong><br />30,185 Bnd</p>
+					</div>
+				</div>
 			</div>
-			<div class="bounce w-full text-center text-4xl">
-				<a href="#campaigns"><i class="fas fa-chevron-down"></i></a>
-			</div>
-		  </div>
-			
-		  <div id="campaigns" class="h-screen bg-gradient-3">
-			<div class="flex content-center flex-wrap h-screen">
-			  <div class="container mx-auto">
-				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
+		</div>
+		<div class="bounce w-full text-center text-4xl">
+			<a href="#campaigns"><i class="fas fa-chevron-down"></i></a>
+		</div>
+	</div>
+
+	<div id="campaigns" class="h-screen bg-gradient-3">
+		<div class="flex content-center flex-wrap h-screen">
+			<div class="container mx-auto">
+				<div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200"
+					data-aos-duration="600">
 					<div id="counters_2" class="flex justify-center">
 						<h2 class="heading counter font-bold " data-TargetNum="331" data-Speed="1000"></h2>
 					</div>
@@ -224,70 +280,109 @@
 					</div>
 					<div class="lg:flex pt-8">
 						<div class="lg:w-1/2">
-							<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
-								<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-orange-dark" style="width:88%;"></div>
-								<p class="px-3"><strong class="text-xl">58%</strong><br/>Tec</p>
+							<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="200"
+								data-aos-duration="800">
+								<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-orange-dark"
+									style="width:88%;"></div>
+								<p class="px-3"><strong class="text-xl">58%</strong><br />Tec</p>
 							</div>
-							<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
-								<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-orange-dark" style="width:70%;"></div>
-								<p class="px-3"><strong class="text-xl">23%</strong><br/>Web</p>
+							<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="400"
+								data-aos-duration="800">
+								<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-orange-dark"
+									style="width:70%;"></div>
+								<p class="px-3"><strong class="text-xl">23%</strong><br />Web</p>
 							</div>
-							<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="600" data-aos-duration="800">
-								<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-orange-dark" style="width:60%;"></div>
-								<p class="px-3"><strong class="text-xl">10%</strong><br/>Mar</p>
+							<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="600"
+								data-aos-duration="800">
+								<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-orange-dark"
+									style="width:60%;"></div>
+								<p class="px-3"><strong class="text-xl">10%</strong><br />Mar</p>
 							</div>
-							<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="800" data-aos-duration="800">
-								<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-orange-dark" style="width:44%;"></div>
-								<p class="px-3"><strong class="text-xl">6%</strong><br/>Emp</p>
+							<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="800"
+								data-aos-duration="800">
+								<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-orange-dark"
+									style="width:44%;"></div>
+								<p class="px-3"><strong class="text-xl">6%</strong><br />Emp</p>
 							</div>
 						</div>
-						
+
 						<div class="lg:w-1/2 lg:pl-5 text-white">
 							<div class="flex justify-center">
 								<div class="w-auto lg:p-10">
 									<div class="flex flex-wrap p-3">
-										<div class="text-right p-2"><p>#1<br/>Tec</p></div>
-										<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="200" data-aos-duration="600">181</h4></div>
+										<div class="text-right p-2">
+											<p>#1<br />Tec</p>
+										</div>
+										<div>
+											<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="200"
+												data-aos-duration="600">181</h4>
+										</div>
 									</div>
 									<div class="flex flex-wrap p-3">
-										<div class="text-right p-2"><p>#2<br/>Web</p></div>
-										<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">45</h4></div>
+										<div class="text-right p-2">
+											<p>#2<br />Web</p>
+										</div>
+										<div>
+											<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="400"
+												data-aos-duration="600">45</h4>
+										</div>
 									</div>
 									<div class="flex flex-wrap p-3">
-										<div class="text-right p-2"><p>#3<br/>Mar</p></div>
-										<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="600" data-aos-duration="600">22</h4></div>
+										<div class="text-right p-2">
+											<p>#3<br />Mar</p>
+										</div>
+										<div>
+											<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="600"
+												data-aos-duration="600">22</h4>
+										</div>
 									</div>
 								</div>
 								<div class="w-auto lg:p-10">
 									<div class="flex flex-wrap p-3">
-										<div class="text-right p-2"><p>#4<br/>Emp</p></div>
-										<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="700" data-aos-duration="600">12</h4></div>
+										<div class="text-right p-2">
+											<p>#4<br />Emp</p>
+										</div>
+										<div>
+											<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="700"
+												data-aos-duration="600">12</h4>
+										</div>
 									</div>
 									<div class="flex flex-wrap p-3">
-										<div class="text-right p-2"><p>#5<br/>Com</p></div>
-										<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="800" data-aos-duration="600">06</h4></div>
+										<div class="text-right p-2">
+											<p>#5<br />Com</p>
+										</div>
+										<div>
+											<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="800"
+												data-aos-duration="600">06</h4>
+										</div>
 									</div>
 									<div class="flex flex-wrap p-3">
-										<div class="text-right p-2"><p>#6<br/>Bnd</p></div>
-										<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="900" data-aos-duration="600">01</h4></div>
+										<div class="text-right p-2">
+											<p>#6<br />Bnd</p>
+										</div>
+										<div>
+											<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="900"
+												data-aos-duration="600">01</h4>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				  </div>
-			  </div>
+				</div>
 			</div>
-			<div class="bounce w-full text-center text-4xl -mt-8">
-				<a href="#opens"><i class="fas fa-chevron-down"></i></a>
-			</div>
-		  </div>
+		</div>
+		<div class="bounce w-full text-center text-4xl -mt-8">
+			<a href="#opens"><i class="fas fa-chevron-down"></i></a>
+		</div>
+	</div>
 
-		  <div id="opens" class="h-screen bg-gradient">
-			<div class="flex content-center flex-wrap h-screen">
-			  <div class="container mx-auto">
-				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="300" data-aos-duration="600">
-					
+	<div id="opens" class="h-screen bg-gradient">
+		<div class="flex content-center flex-wrap h-screen">
+			<div class="container mx-auto">
+				<div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="300"
+					data-aos-duration="600">
+
 					<div id="counters_3" class="lg:flex justify-center">
 						<div class="w-auto" data-aos="fade-right" data-aos-delay="500" data-aos-duration="600">
 							<div class="flex justify-center heading md-heading font-bold">
@@ -299,7 +394,8 @@
 								</p>
 							</div>
 						</div>
-						<div class="w-auto lg:pt-20 text-black" data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+						<div class="w-auto lg:pt-20 text-black" data-aos="fade-up" data-aos-delay="500"
+							data-aos-duration="600">
 							<div class="flex justify-center heading md-heading font-bold opacity-50 ">
 								<h2 class="counter" data-TargetNum="25" data-Speed="2000"></h2>%
 							</div>
@@ -314,45 +410,76 @@
 					<div class="flex justify-center  ">
 						<div class="w-auto lg:p-10">
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#1<br/>Tec</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="200" data-aos-duration="600">51%</h4></div>
+								<div class="text-right p-2">
+									<p>#1<br />Tec</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="200"
+										data-aos-duration="600">51%</h4>
+								</div>
 							</div>
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#2<br/>Emp</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">48%</h4></div>
+								<div class="text-right p-2">
+									<p>#2<br />Emp</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="400"
+										data-aos-duration="600">48%</h4>
+								</div>
 							</div>
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#3<br/>Web</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="600" data-aos-duration="600">45%</h4></div>
+								<div class="text-right p-2">
+									<p>#3<br />Web</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="600"
+										data-aos-duration="600">45%</h4>
+								</div>
 							</div>
 						</div>
 						<div class="w-auto lg:p-10">
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#4<br/>Mar</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="700" data-aos-duration="600">44%</h4></div>
+								<div class="text-right p-2">
+									<p>#4<br />Mar</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="700"
+										data-aos-duration="600">44%</h4>
+								</div>
 							</div>
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#5<br/>Com</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="800" data-aos-duration="600">40%</h4></div>
+								<div class="text-right p-2">
+									<p>#5<br />Com</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="800"
+										data-aos-duration="600">40%</h4>
+								</div>
 							</div>
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#6<br/>Bnd</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="900" data-aos-duration="600">34%</h4></div>
+								<div class="text-right p-2">
+									<p>#6<br />Bnd</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="900"
+										data-aos-duration="600">34%</h4>
+								</div>
 							</div>
 						</div>
 					</div>
-				  </div>
-			  </div>
+				</div>
 			</div>
-			<div class="bounce w-full text-center text-4xl -mt-8">
-				<a href="#subjectlines"><i class="fas fa-chevron-down"></i></a>
-			</div>
-		  </div>
+		</div>
+		<div class="bounce w-full text-center text-4xl -mt-8">
+			<a href="#subjectlines"><i class="fas fa-chevron-down"></i></a>
+		</div>
+	</div>
 
-		  <div id="subjectlines" class="h-screen bg-gradient-2">
-			<div class="h-screen flex flex-wrap content-center">
-			  <div class="mx-auto">
-				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="300" data-aos-duration="600">
+	<div id="subjectlines" class="h-screen bg-gradient-2">
+		<div class="h-screen flex flex-wrap content-center">
+			<div class="mx-auto">
+				<div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="300"
+					data-aos-duration="600">
 					<div class="flex justify-center">
 						<div class="flex justify-center font-bold">
 							<h2 class="heading-4">Top Subject lines</h2>
@@ -367,8 +494,10 @@
 									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
 										<strong class="pr-5">#1</strong>You have a new super contribution.
 									</p>
-									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
-										<strong class="pr-5">#2</strong>(Name), good news - we've saved your application.
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400"
+										data-aos-duration="600">
+										<strong class="pr-5">#2</strong>(Name), good news - we've saved your
+										application.
 									</p>
 								</div>
 							</div>
@@ -378,7 +507,8 @@
 									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
 										<strong class="pr-5">#1</strong>(Name), need help making a super payment?
 									</p>
-									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400"
+										data-aos-duration="600">
 										<strong class="pr-5">#2</strong>Do you do you still need to make a payment?
 									</p>
 								</div>
@@ -387,10 +517,13 @@
 								<div>
 									<p class="text pb-3 text-black opacity-50 font-bold">Web</p>
 									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
-										<strong class="pr-5">#1</strong>(Name), are you getting the most out of your super?
+										<strong class="pr-5">#1</strong>(Name), are you getting the most out of your
+										super?
 									</p>
-									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
-										<strong class="pr-5">#2</strong>(Name), Don’t be 🥴 once the budget is announced.
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400"
+										data-aos-duration="600">
+										<strong class="pr-5">#2</strong>(Name), Don’t be 🥴 once the budget is
+										announced.
 									</p>
 								</div>
 							</div>
@@ -402,7 +535,8 @@
 									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
 										<strong class="pr-5">#1</strong>(Name), we’re missing your mobile number.
 									</p>
-									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400"
+										data-aos-duration="600">
 										<strong class="pr-5">#2</strong>(Name), checking in since we last spoke.
 									</p>
 								</div>
@@ -411,10 +545,13 @@
 								<div>
 									<p class="text pb-3 text-black opacity-50 font-bold">Com</p>
 									<p class="text" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
-										<strong class="pr-5">#1</strong>We’re sorry, your 1 July payment may be a day late.
+										<strong class="pr-5">#1</strong>We’re sorry, your 1 July payment may be a day
+										late.
 									</p>
-									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">
-										<strong class="pr-5">#2</strong>Claiming a tax deduction on your personal contributions to super.
+									<p class="text mt-3" data-aos="flip-down" data-aos-delay="400"
+										data-aos-duration="600">
+										<strong class="pr-5">#2</strong>Claiming a tax deduction on your personal
+										contributions to super.
 									</p>
 								</div>
 							</div>
@@ -428,19 +565,20 @@
 							</div>
 						</div>
 					</div>
-				  </div>
-			  </div>
+				</div>
 			</div>
-			<div class="bounce w-full text-center text-4xl -mt-8">
-				<a href="#clicks"><i class="fas fa-chevron-down"></i></a>
-			</div>
-		  </div>
+		</div>
+		<div class="bounce w-full text-center text-4xl -mt-8">
+			<a href="#clicks"><i class="fas fa-chevron-down"></i></a>
+		</div>
+	</div>
 
-		  <div id="clicks" class="h-screen bg-gradient-3">
-			<div class="flex content-center flex-wrap h-screen">
-			  <div class="container mx-auto">
-				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="300" data-aos-duration="600">
-					
+	<div id="clicks" class="h-screen bg-gradient-3">
+		<div class="flex content-center flex-wrap h-screen">
+			<div class="container mx-auto">
+				<div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="300"
+					data-aos-duration="600">
+
 					<div id="counters_3" class="lg:flex justify-center">
 						<div class="w-auto" data-aos="fade-right" data-aos-delay="500" data-aos-duration="600">
 							<div class="flex justify-center heading md-heading font-bold">
@@ -448,11 +586,12 @@
 							</div>
 							<div class="text-center">
 								<p class="lg:text-xl">
-								<strong>Click through rate</strong> on Cbus emails.
+									<strong>Click through rate</strong> on Cbus emails.
 								</p>
 							</div>
 						</div>
-						<div class="w-auto lg:pt-20 text-black" data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+						<div class="w-auto lg:pt-20 text-black" data-aos="fade-up" data-aos-delay="500"
+							data-aos-duration="600">
 							<div class="flex justify-center heading md-heading font-bold opacity-50 ">
 								<h2 class="counter" data-TargetNum="3" data-Speed="2000"></h2>%
 							</div>
@@ -467,47 +606,78 @@
 					<div class="flex justify-center ">
 						<div class="w-auto lg:p-10">
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#1<br/>Tec</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="200" data-aos-duration="600">13%</h4></div>
+								<div class="text-right p-2">
+									<p>#1<br />Tec</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="200"
+										data-aos-duration="600">13%</h4>
+								</div>
 							</div>
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#2<br/>Emp</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">6.5%</h4></div>
+								<div class="text-right p-2">
+									<p>#2<br />Emp</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="400"
+										data-aos-duration="600">6.5%</h4>
+								</div>
 							</div>
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#5<br/>Com</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="800" data-aos-duration="600">7%</h4></div>
+								<div class="text-right p-2">
+									<p>#5<br />Com</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="800"
+										data-aos-duration="600">7%</h4>
+								</div>
 							</div>
 						</div>
 						<div class="w-auto lg:p-10">
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#4<br/>Mar</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="700" data-aos-duration="600">4%</h4></div>
+								<div class="text-right p-2">
+									<p>#4<br />Mar</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="700"
+										data-aos-duration="600">4%</h4>
+								</div>
 							</div>
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#3<br/>Web</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="600" data-aos-duration="600">3%</h4></div>
+								<div class="text-right p-2">
+									<p>#3<br />Web</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="600"
+										data-aos-duration="600">3%</h4>
+								</div>
 							</div>
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#6<br/>Bnd</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="900" data-aos-duration="600">1%</h4></div>
+								<div class="text-right p-2">
+									<p>#6<br />Bnd</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="900"
+										data-aos-duration="600">1%</h4>
+								</div>
 							</div>
 						</div>
 					</div>
 
-				  </div>
-			  </div>
+				</div>
 			</div>
-			<div class="bounce w-full text-center text-4xl -mt-8">
-				<a href="#ctor"><i class="fas fa-chevron-down"></i></a>
-			</div>
-		  </div>
+		</div>
+		<div class="bounce w-full text-center text-4xl -mt-8">
+			<a href="#ctor"><i class="fas fa-chevron-down"></i></a>
+		</div>
+	</div>
 
-		  <div id="ctor" class="h-screen bg-gradient">
-			<div class="flex content-center flex-wrap h-screen">
-			  <div class="container mx-auto">
-				  <div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="300" data-aos-duration="600">
-					
+	<div id="ctor" class="h-screen bg-gradient">
+		<div class="flex content-center flex-wrap h-screen">
+			<div class="container mx-auto">
+				<div class="text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="300"
+					data-aos-duration="600">
+
 					<div id="counters_3" class="lg:flex justify-center">
 						<div class="w-auto" data-aos="fade-right" data-aos-delay="500" data-aos-duration="600">
 							<div class="flex justify-center heading md-heading font-bold">
@@ -519,7 +689,8 @@
 								</p>
 							</div>
 						</div>
-						<div class="w-auto lg:pt-20 text-black" data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+						<div class="w-auto lg:pt-20 text-black" data-aos="fade-up" data-aos-delay="500"
+							data-aos-duration="600">
 							<div class="flex justify-center heading md-heading font-bold opacity-50 ">
 								<h2 class="counter" data-TargetNum="11" data-Speed="2000"></h2>%
 							</div>
@@ -534,245 +705,361 @@
 					<div class="flex justify-center ">
 						<div class="w-auto lg:p-10">
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#1<br/>Tec</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="200" data-aos-duration="600">25%</h4></div>
+								<div class="text-right p-2">
+									<p>#1<br />Tec</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="200"
+										data-aos-duration="600">25%</h4>
+								</div>
 							</div>
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#2<br/>Emp</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">15%</h4></div>
+								<div class="text-right p-2">
+									<p>#2<br />Emp</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="400"
+										data-aos-duration="600">15%</h4>
+								</div>
 							</div>
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#5<br/>Com</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="800" data-aos-duration="600">17%</h4></div>
+								<div class="text-right p-2">
+									<p>#5<br />Com</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="800"
+										data-aos-duration="600">17%</h4>
+								</div>
 							</div>
 						</div>
 						<div class="w-auto lg:p-10">
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#4<br/>Mar</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="700" data-aos-duration="600">9%</h4></div>
+								<div class="text-right p-2">
+									<p>#4<br />Mar</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="700"
+										data-aos-duration="600">9%</h4>
+								</div>
 							</div>
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#3<br/>Web</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="600" data-aos-duration="600">7%</h4></div>
+								<div class="text-right p-2">
+									<p>#3<br />Web</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="600"
+										data-aos-duration="600">7%</h4>
+								</div>
 							</div>
 							<div class="flex flex-wrap p-3">
-								<div class="text-right p-2"><p>#6<br/>Bnd</p></div>
-								<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="900" data-aos-duration="600">3%</h4></div>
+								<div class="text-right p-2">
+									<p>#6<br />Bnd</p>
+								</div>
+								<div>
+									<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="900"
+										data-aos-duration="600">3%</h4>
+								</div>
 							</div>
 						</div>
 					</div>
 
-				  </div>
-			  </div>
+				</div>
 			</div>
-			<div class="bounce w-full text-center text-4xl -mt-8">
-				<a href="#ctor2"><i class="fas fa-chevron-down"></i></a>
-			</div>
-		  </div>
+		</div>
+		<div class="bounce w-full text-center text-4xl -mt-8">
+			<a href="#ctor2"><i class="fas fa-chevron-down"></i></a>
+		</div>
+	</div>
 
-		  <div id="ctor2" class="h-screen bg-gradient-2">
-			<div class="h-screen text-white flex flex-wrap content-center">
-			  <div class="mx-auto container lg:p-0 p-3">
-				<h4 class="heading-4 font-bold pb-8 text-center">Segmentation categories</h4>	
-				<h4 class="lg:text-xl pb-8 text-center">Click to open rate</h4>	
+	<div id="ctor2" class="h-screen bg-gradient-2">
+		<div class="h-screen text-white flex flex-wrap content-center">
+			<div class="mx-auto container lg:p-0 p-3">
+				<h4 class="heading-4 font-bold pb-8 text-center">Segmentation categories</h4>
+				<h4 class="lg:text-xl pb-8 text-center">Click to open rate</h4>
 				<div class="flex justify-center ">
 					<div class="lg:flex w-auto lg:p-10">
 						<div class="text-center px-3">
-							<img class="mx-auto" src="https://image.thum.io/get/maxAge/12/width/150/https://email-gallery.netlify.app/emails/2021/member-retention/unclaimed-monies" />
-							<div class="p-2"><p class="text-black font-bold">Unclaimed monies</p></div>
-							<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="200" data-aos-duration="600">16%</h4></div>
+							<img class="mx-auto"
+								src="https://image.thum.io/get/maxAge/12/width/150/https://email-gallery.netlify.app/emails/2021/member-retention/unclaimed-monies" />
+							<div class="p-2">
+								<p class="text-black font-bold">Unclaimed monies</p>
+							</div>
+							<div>
+								<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="200"
+									data-aos-duration="600">16%</h4>
+							</div>
 						</div>
 						<div class="text-center px-3">
-							<img class="mx-auto" src="https://image.thum.io/get/maxAge/12/width/150/https://email-gallery.netlify.app/emails/2021/member-retention/cash-exits/" />
-							<div class="p-2"><p class="text-black font-bold">SIS</p></div>
-							<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="200" data-aos-duration="600">8%</h4></div>
+							<img class="mx-auto"
+								src="https://image.thum.io/get/maxAge/12/width/150/https://email-gallery.netlify.app/emails/2021/member-retention/cash-exits/" />
+							<div class="p-2">
+								<p class="text-black font-bold">SIS</p>
+							</div>
+							<div>
+								<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="200"
+									data-aos-duration="600">8%</h4>
+							</div>
 						</div>
 						<div class="text-center px-3">
-							<img class="mx-auto" src="https://image.thum.io/get/maxAge/12/width/150/https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback" />
-							<div class="p-2"><p class="text-black font-bold">Consolidation</p></div>
-							<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="200" data-aos-duration="600">5%</h4></div>
+							<img class="mx-auto"
+								src="https://image.thum.io/get/maxAge/12/width/150/https://email-gallery.netlify.app/emails/2021/member-retention/supermatch-consolidate/callback" />
+							<div class="p-2">
+								<p class="text-black font-bold">Consolidation</p>
+							</div>
+							<div>
+								<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="200"
+									data-aos-duration="600">5%</h4>
+							</div>
 						</div>
 						<div class="text-center px-3">
-							<img class="mx-auto" src="https://image.thum.io/get/maxAge/12/width/150/https://email-gallery.netlify.app/emails/2021/member-retention/australian-super-exits/email-1" />
-							<div class="p-2"><p class="text-black font-bold">Super Exits</p></div>
-							<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="200" data-aos-duration="600">4%</h4></div>
+							<img class="mx-auto"
+								src="https://image.thum.io/get/maxAge/12/width/150/https://email-gallery.netlify.app/emails/2021/member-retention/australian-super-exits/email-1" />
+							<div class="p-2">
+								<p class="text-black font-bold">Super Exits</p>
+							</div>
+							<div>
+								<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="200"
+									data-aos-duration="600">4%</h4>
+							</div>
 						</div>
 					</div>
 				</div>
 
-			  </div>
 			</div>
-			<div class="bounce w-full text-center text-4xl -mt-8">
-				<a href="#times"><i class="fas fa-chevron-down"></i></a>
-			</div>
-		  </div>
+		</div>
+		<div class="bounce w-full text-center text-4xl -mt-8">
+			<a href="#times"><i class="fas fa-chevron-down"></i></a>
+		</div>
+	</div>
 
-		  <div id="times" class="h-screen bg-gradient-3">
-			<div class="h-screen text-white flex flex-wrap content-center">
-			  <div class="mx-auto container lg:p-0 p-3">
-					
+	<div id="times" class="h-screen bg-gradient-3">
+		<div class="h-screen text-white flex flex-wrap content-center">
+			<div class="mx-auto container lg:p-0 p-3">
+
 				<div class="lg:flex">
 					<div class="lg:w-1/2 pb-5">
 						<h2 class="heading-4 font-bold pb-8">Top Open Times</h2>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:88%;"></div>
-							<p class="px-3"><strong class="text-xl">3PM</strong><br/>441K</p>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="200"
+							data-aos-duration="800">
+							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:88%;">
+							</div>
+							<p class="px-3"><strong class="text-xl">3PM</strong><br />441K</p>
 						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:70%;"></div>
-							<p class="px-3"><strong class="text-xl">5PM</strong><br/>355K</p>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="400"
+							data-aos-duration="800">
+							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:70%;">
+							</div>
+							<p class="px-3"><strong class="text-xl">5PM</strong><br />355K</p>
 						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="600" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:60%;"></div>
-							<p class="px-3"><strong class="text-xl">6PM</strong><br/>338K</p>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="600"
+							data-aos-duration="800">
+							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:60%;">
+							</div>
+							<p class="px-3"><strong class="text-xl">6PM</strong><br />338K</p>
 						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="800" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:44%;"></div>
-							<p class="px-3"><strong class="text-xl">4PM</strong><br/>311K</p>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="800"
+							data-aos-duration="800">
+							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:44%;">
+							</div>
+							<p class="px-3"><strong class="text-xl">4PM</strong><br />311K</p>
 						</div>
 					</div>
-					
+
 					<div class="lg:w-1/2 lg:pl-5 text-black opacity-50">
 						<h2 class="heading-4 font-bold pb-8">Top Send Times</h2>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-black" style="width:88%;"></div>
-							<p class="px-3"><strong class="text-xl">1PM</strong><br/>32%</p>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="200"
+							data-aos-duration="800">
+							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-black" style="width:88%;">
+							</div>
+							<p class="px-3"><strong class="text-xl">1PM</strong><br />32%</p>
 						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-black" style="width:45%;"></div>
-							<p class="px-3"><strong class="text-xl">5PM+</strong><br/>14%</p>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="400"
+							data-aos-duration="800">
+							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-black" style="width:45%;">
+							</div>
+							<p class="px-3"><strong class="text-xl">5PM+</strong><br />14%</p>
 						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="600" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-black" style="width:32%;"></div>
-							<p class="px-3"><strong class="text-xl">12PM</strong><br/>11%</p>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="600"
+							data-aos-duration="800">
+							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-black" style="width:32%;">
+							</div>
+							<p class="px-3"><strong class="text-xl">12PM</strong><br />11%</p>
 						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="800" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-black" style="width:32%;"></div>
-							<p class="px-3"><strong class="text-xl">4PM</strong><br/>11%</p>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="800"
+							data-aos-duration="800">
+							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-black" style="width:32%;">
+							</div>
+							<p class="px-3"><strong class="text-xl">4PM</strong><br />11%</p>
 						</div>
 					</div>
 				</div>
 
-			  </div>
 			</div>
-			<div class="bounce w-full text-center text-4xl -mt-8">
-				<a href="#os"><i class="fas fa-chevron-down"></i></a>
-			</div>
-		  </div>
+		</div>
+		<div class="bounce w-full text-center text-4xl -mt-8">
+			<a href="#os"><i class="fas fa-chevron-down"></i></a>
+		</div>
+	</div>
 
-		  <div id="os" class="h-screen bg-gradient">
-			<div class="h-screen text-white flex flex-wrap content-center">
-			  <div class="mx-auto container lg:p-0 p-3">
-				<h4 class="heading-4 font-bold pb-8">Operating Systems usage</h4>	
+	<div id="os" class="h-screen bg-gradient">
+		<div class="h-screen text-white flex flex-wrap content-center">
+			<div class="mx-auto container lg:p-0 p-3">
+				<h4 class="heading-4 font-bold pb-8">Operating Systems usage</h4>
 				<div class="lg:flex pt-8">
 					<div class="lg:w-1/2">
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-purple-dark" style="width:88%;"></div>
-							<p class="px-3"><strong class="text-xl">46%</strong><br/>Apple</p>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="200"
+							data-aos-duration="800">
+							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-purple-dark"
+								style="width:88%;"></div>
+							<p class="px-3"><strong class="text-xl">46%</strong><br />Apple</p>
 						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-purple-dark" style="width:53%;"></div>
-							<p class="px-3"><strong class="text-xl">25%</strong><br/>Windows</p>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="400"
+							data-aos-duration="800">
+							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-purple-dark"
+								style="width:53%;"></div>
+							<p class="px-3"><strong class="text-xl">25%</strong><br />Windows</p>
 						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="600" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-purple-dark" style="width:50%;"></div>
-							<p class="px-3"><strong class="text-xl">24%</strong><br/>Android </p>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="600"
+							data-aos-duration="800">
+							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-purple-dark"
+								style="width:50%;"></div>
+							<p class="px-3"><strong class="text-xl">24%</strong><br />Android </p>
 						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="800" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-purple-dark" style="width:10%;"></div>
-							<p class="px-3"><strong class="text-xl">5%</strong><br/>Other (Unkown/Linux/Google)</p>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="800"
+							data-aos-duration="800">
+							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-purple-dark"
+								style="width:10%;"></div>
+							<p class="px-3"><strong class="text-xl">5%</strong><br />Other (Unkown/Linux/Google)</p>
 						</div>
 					</div>
-					
+
 					<div class="lg:w-1/2 lg:pl-5 text-white">
 						<div class="flex justify-center">
 							<div class="w-auto lg:p-10">
 								<div class="flex flex-wrap p-3">
-									<div class="text-right p-2"><p>#1<br/><i class="fab fa-apple"></i></p></div>
-									<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="200" data-aos-duration="600">936</h4></div>
+									<div class="text-right p-2">
+										<p>#1<br /><i class="fab fa-apple"></i></p>
+									</div>
+									<div>
+										<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="200"
+											data-aos-duration="600">936</h4>
+									</div>
 								</div>
 								<div class="flex flex-wrap p-3">
-									<div class="text-right p-2"><p>#2<br/><i class="fab fa-windows"></i></p></div>
-									<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">508</h4></div>
+									<div class="text-right p-2">
+										<p>#2<br /><i class="fab fa-windows"></i></p>
+									</div>
+									<div>
+										<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="400"
+											data-aos-duration="600">508</h4>
+									</div>
 								</div>
 								<div class="flex flex-wrap p-3">
-									<div class="text-right p-2"><p>#3<br/><i class="fab fa-android"></i></p></div>
-									<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="600" data-aos-duration="600">492</h4></div>
+									<div class="text-right p-2">
+										<p>#3<br /><i class="fab fa-android"></i></p>
+									</div>
+									<div>
+										<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="600"
+											data-aos-duration="600">492</h4>
+									</div>
 								</div>
 							</div>
+						</div>
 					</div>
 				</div>
-			  </div>
 
-			  </div>
 			</div>
-			<div class="bounce w-full text-center text-4xl -mt-8">
-				<a href="#apple"><i class="fas fa-chevron-down"></i></a>
-			</div>
-		  </div>
+		</div>
+		<div class="bounce w-full text-center text-4xl -mt-8">
+			<a href="#apple"><i class="fas fa-chevron-down"></i></a>
+		</div>
+	</div>
 
-		  <div id="apple" class="h-screen bg-gradient-2">
-			<div class="h-screen text-white flex flex-wrap content-center">
-			  <div class="mx-auto container lg:p-0 p-3">
-				<h4 class="heading-4 font-bold pb-8"><i class="fab fa-apple"></i> Apple usage</h4>	
+	<div id="apple" class="h-screen bg-gradient-2">
+		<div class="h-screen text-white flex flex-wrap content-center">
+			<div class="mx-auto container lg:p-0 p-3">
+				<h4 class="heading-4 font-bold pb-8"><i class="fab fa-apple"></i> Apple usage</h4>
 				<div class="lg:flex pt-8">
 					<div class="lg:w-1/2">
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:88%;"></div>
-							<p class="px-3"><strong class="text-xl">75%</strong><br/>Unkown</p>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="200"
+							data-aos-duration="800">
+							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:88%;">
+							</div>
+							<p class="px-3"><strong class="text-xl">75%</strong><br />Unkown</p>
 						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:25%;"></div>
-							<p class="px-3"><strong class="text-xl">13%</strong><br/>Mac Desktop OS X</p>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="400"
+							data-aos-duration="800">
+							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:25%;">
+							</div>
+							<p class="px-3"><strong class="text-xl">13%</strong><br />Mac Desktop OS X</p>
 						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="600" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:15%;"></div>
-							<p class="px-3"><strong class="text-xl">7%</strong><br/>iOS 14.4 - 14.7 (latest) </p>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="600"
+							data-aos-duration="800">
+							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:15%;">
+							</div>
+							<p class="px-3"><strong class="text-xl">7%</strong><br />iOS 14.4 - 14.7 (latest) </p>
 						</div>
-						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="800" data-aos-duration="800">
-							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:10%;"></div>
-							<p class="px-3"><strong class="text-xl">5%</strong><br/>iOS (older)</p>
+						<div class="relative pt-1 flex" data-aos="fade-right" data-aos-delay="800"
+							data-aos-duration="800">
+							<div class="overflow-hidden h-8 mb-4 text-xs flex rounded-full bg-white" style="width:10%;">
+							</div>
+							<p class="px-3"><strong class="text-xl">5%</strong><br />iOS (older)</p>
 						</div>
 					</div>
-					
+
 					<div class="lg:w-1/2 lg:pl-5 text-white">
 						<div class="flex justify-center">
 							<div class="w-auto lg:p-10">
 								<div class="flex flex-wrap p-3">
-									<div class="text-right p-2"><p>#1<br/>Unkown</p></div>
-									<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="200" data-aos-duration="600">127K</h4></div>
+									<div class="text-right p-2">
+										<p>#1<br />Unkown</p>
+									</div>
+									<div>
+										<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="200"
+											data-aos-duration="600">127K</h4>
+									</div>
 								</div>
 								<div class="flex flex-wrap p-3">
-									<div class="text-right p-2"><p>#2<br/>Mac</p></div>
-									<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="400" data-aos-duration="600">21.4K</h4></div>
+									<div class="text-right p-2">
+										<p>#2<br />Mac</p>
+									</div>
+									<div>
+										<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="400"
+											data-aos-duration="600">21.4K</h4>
+									</div>
 								</div>
 								<div class="flex flex-wrap p-3">
-									<div class="text-right p-2"><p>#3<br/>Device</p></div>
-									<div><h4 class="heading-4 font-bold"  data-aos="flip-down" data-aos-delay="600" data-aos-duration="600">16K</h4></div>
+									<div class="text-right p-2">
+										<p>#3<br />Device</p>
+									</div>
+									<div>
+										<h4 class="heading-4 font-bold" data-aos="flip-down" data-aos-delay="600"
+											data-aos-duration="600">16K</h4>
+									</div>
 								</div>
 							</div>
+						</div>
 					</div>
 				</div>
-			  </div>
 
-			  </div>
 			</div>
-			<div class="bounce w-full text-center text-4xl">
-				<a href="#"><i class="fas fa-chevron-up"></i></a>
-			</div>
-		  </div>
+		</div>
+		<div class="bounce w-full text-center text-4xl">
+			<a href="#"><i class="fas fa-chevron-up"></i></a>
+		</div>
+	</div>
 
 
-	</body>
-	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script type="text/javascript" src="js/multi-animated-counter.js"></script>
-	<script src="../../../js/global.js"></script>
+<script type="text/javascript" src="js/multi-animated-counter.js"></script>
+<script src="../../../js/global.js"></script>
 
-	<script>
-		AOS.init();
-	</script>
+<script>
+	AOS.init();
+</script>
 </body>
 
 </html>

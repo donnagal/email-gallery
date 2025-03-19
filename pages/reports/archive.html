@@ -105,36 +105,37 @@
 				<div class="menu-inner">
 					<div class="bg-gray-900 h-screen py-8 font-bold">
 						<nav class="mt-10">
-							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 bg-gray-600 bg-opacity-25 text-gray-100 border-gray-100"
-								href="/">
-								<i class="fas fa-th-large"></i>
-								<span class="mx-4">Gallery</span>
-							</a>
-
 							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100"
-								href="/pages/reports/">
-								<svg class="w-5 h-5" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+								href="https://email-gallery.netlify.app/"><i class="fas fa-th-large"></i> <span
+									class="mx-4">Gallery</span>
+							</a>
+							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 bg-gray-600 bg-opacity-25 text-gray-100 border-gray-100"
+								href="https://email-gallery.netlify.app/pages/reports/"><svg class="w-5 h-5"
+									viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 									<path
 										d="M2 10C2 5.58172 5.58172 2 10 2V10H18C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10Z"
 										fill="currentColor"></path>
 									<path d="M12 2.25195C14.8113 2.97552 17.0245 5.18877 17.748 8.00004H12V2.25195Z"
 										fill="currentColor"></path>
-								</svg>
-								<span class="mx-4">Dashboard</span>
+								</svg> <span class="mx-4">
+									Dashboard</span>
 							</a>
-
+							<a target="_blank"
+								class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100"
+								href="https://www.senderscore.org/report/?lookup=66.235.130.62&authenticated=true"><i
+									class="mr-5 fas fa-chart-line"></i>
+								Sender Score
+							</a>
 							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100"
-								href="/pages/reports/bi-annual-report">
-								<i class="fas fa-list-ol"></i>
-								<span class="mx-4">Bi-annual report</span>
+								href="https://email-gallery.netlify.app//pages/reports/bi-annual-report"><i
+									class="fas fa-list-ol"></i> <span class="mx-4">
+									Bi-annual report</span>
 							</a>
-
-							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100"
-								href="/pages/icons">
-								<i class="fas fa-stamp"></i>
-								<span class="mx-4">Icon Library</span>
-							</a>
-
+							<!--<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100"
+								href="https://email-gallery.netlify.app/pages/utm-tracking/"><i
+									class="fas fa-pen-square"></i> <span class="mx-4">
+									UTM Tool</span>
+							</a>-->
 						</nav>
 					</div>
 				</div>
@@ -157,35 +158,31 @@
 								<div class="w-1/3 p-5 bg-white mx-1 rounded">
 									<p class="text-xs font-light leading-4 tracking-wider text-gray-600 uppercase">Opens
 										Avg.</p>
-									<p class="text-3xl font-bold">{{totals.openAvg}}% </p>
+									<p class="text-3xl font-bold">44.31%</p>
 									<a target="_blank"
 										href="https://www.campaignmonitor.com/resources/guides/email-marketing-benchmarks/"
-										class="text-xs font-light leading-4 tracking-wider text-green uppercase underline">
-										Benchmark:
+										class="text-xs font-light leading-4 tracking-wider text-green uppercase underline">Benchmark:
 										27.1%
 									</a>
 								</div>
 								<div class="w-1/3 p-5 bg-white mx-1 rounded">
-									<p class="text-xs font-light leading-4 tracking-wider text-gray-600 uppercase">
-										Clicks
+									<p class="text-xs font-light leading-4 tracking-wider text-gray-600 uppercase">CTOR
 										Avg.</p>
-									<p class="text-3xl font-bold">{{ totals.clickAvg }}%</p>
+									<p class="text-3xl font-bold">10.80%</p>
 									<a target="_blank"
 										href="https://www.campaignmonitor.com/resources/guides/email-marketing-benchmarks/"
-										class="text-xs font-light leading-4 tracking-wider text-green uppercase underline">
-										Benchmark:
+										class="text-xs font-light leading-4 tracking-wider text-green uppercase underline">Benchmark:
 										10.1%
 									</a>
 								</div>
 								<div class="w-1/3 p-5 bg-white mx-1 rounded">
 									<p class="text-xs font-light leading-4 tracking-wider text-gray-600 uppercase">
-										Total delivered</p>
-									<p class="text-3xl font-bold">{{totals.delivered}}</p>
+										Opt-Out Avg.</p>
+									<p class="text-3xl font-bold">0.31%</p>
 									<a target="_blank"
 										href="https://www.campaignmonitor.com/resources/guides/email-marketing-benchmarks/"
-										class="text-xs font-light leading-4 tracking-wider text-red uppercase underline">
-										<!-- Benchmark:
-										0.2% -->
+										class="text-xs font-light leading-4 tracking-wider text-red uppercase underline">Benchmark:
+										0.2%
 									</a>
 								</div>
 							</div>
@@ -218,9 +215,9 @@
 								<table class="email-list min-w-full mt-2 -mb-1 rounded-lg">
 									<thead>
 										<tr class="cursor-pointer text-center">
-											<th @click="sortBy('label')"
+											<th @click="sortBy('name')"
 												class="border-r ecol-lg text-left pl-3 py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-												Label
+												Name
 												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
 													class="sort-arrow fill-current h-4 w-4 inline">
 													<path
@@ -228,7 +225,7 @@
 													</path>
 												</svg>
 											</th>
-											<th @click="sortBy('date')"
+											<th @click="sortBy('day')"
 												class="border-r ecol-md py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
 												Date
 												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -238,27 +235,7 @@
 													</path>
 												</svg>
 											</th>
-											<th @click="sortBy('brand')"
-												class="border-r ecol-md py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-												Brand
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-													class="sort-arrow fill-current h-4 w-4 inline">
-													<path
-														d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
-													</path>
-												</svg>
-											</th>
-											<th @click="sortBy('type')"
-												class="border-r ecol-md py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-												Type
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-													class="sort-arrow fill-current h-4 w-4 inline">
-													<path
-														d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
-													</path>
-												</svg>
-											</th>
-											<th @click="sortBy('unique-opens-pc')"
+											<th @click="sortBy('openrate')"
 												class="border-r ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
 												Opens
 												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -268,9 +245,9 @@
 													</path>
 												</svg>
 											</th>
-											<th @click="sortBy('unique-clicks-pc')"
+											<th @click="sortBy('ctor')"
 												class="border-r ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-												Clicks
+												CTOR
 												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
 													class="sort-arrow fill-current h-4 w-4 inline">
 													<path
@@ -278,9 +255,19 @@
 													</path>
 												</svg>
 											</th>
-											<th @click="sortBy('delivered-int')"
+											<th @click="sortBy('unsub')"
 												class="border-r ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-												Delivered
+												Opt-Outs
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+													class="sort-arrow fill-current h-4 w-4 inline">
+													<path
+														d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
+													</path>
+												</svg>
+											</th>
+											<th @click="sortBy('sent')"
+												class="border-r ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+												Size
 												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
 													class="sort-arrow fill-current h-4 w-4 inline">
 													<path
@@ -305,10 +292,24 @@
 														<td
 															class="ecol-lg py-4 border-b border-gray-200 text-left pl-3">
 															<div class="flex items-center">
+																<div class="flex-shrink-0">
+																	<a target="_blank" :href="listData.url">
+																		<img class="bg-grey hover border border-2"
+																			:src="'https://image.thum.io/get/width/120/crop/900/' + listData.url" />
+																	</a>
+																</div>
 																<div class="ml-4">
 																	<div
 																		class="text-sm font-bold leading-5 text-gray-900">
-																		{{listData.label}}
+																		{{listData.name}}
+																	</div>
+																	<div class="text-sm leading-5 text-gray-500">
+																		<p class="">
+																			{{ listData.subject }}
+																		</p>
+																	</div>
+																	<div class="text-xs text-gray-900">
+																		{{listData.id}}
 																	</div>
 																</div>
 															</div>
@@ -316,39 +317,43 @@
 														<td class="ecol-md py-4 border-b border-gray-200">
 															<div class="text-sm leading-5 text-gray-900">
 																{{ listData.day }}
-																<!-- {{ listData.date }} -->
-															</div>
-														</td>
-														<td class="ecol-md py-4 border-b border-gray-200">
-															<div class="text-sm leading-5 text-gray-900">
-																{{ listData.brand }}
-															</div>
-														</td>
-														<td class="ecol-md py-4 border-b border-gray-200">
-															<div class="text-sm leading-5 text-gray-900">
-																{{ listData.type }}
 															</div>
 														</td>
 														<td class="ecol py-4 border-b border-gray-200">
 															<div class="text-lg font-bold leading-5 text-gray-900">
-																{{ listData['unique-opens-pc'] }}%
+																{{ listData.openrate }}%
+															</div>
+															<div class="text-sm leading-5 text-gray-500">
+																{{ listData.opens }}
 															</div>
 														</td>
 														<td class="ecol py-4 border-b border-gray-200">
 															<div class="text-lg font-bold leading-5 text-gray-900">
-																{{ listData['unique-clicks-pc'] }}%
+																{{ listData.ctor }}%
+															</div>
+															<div class="text-sm leading-5 text-gray-500">
+																{{ listData.clicks }}
+															</div>
+														</td>
+														<td class="ecol py-4 border-b border-gray-200">
+															<div class="text-lg font-bold leading-5 text-gray-900">
+																{{ listData.unsub }}
+															</div>
+															<div class="text-sm leading-5 text-gray-500">
+																{{ listData.unsubrate }}%
 															</div>
 														</td>
 														<td class="ecol py-4 border-b border-gray-200">
 															<div class="text-lg leading-5 text-gray-900">
-																{{listData['delivered']}}
+																{{ listData.sent }}
 															</div>
 														</td>
+
 													</tr>
 												</template>
 											</tbody>
 										</table>
-										<!-- <span class="empty-item">no results</span> -->
+										<span class="empty-item">no results</span>
 									</div>
 								</div>
 							</div>
@@ -368,7 +373,7 @@
 <script src="../../js/filter-group.js"></script>
 <script src="../../js/global.js"></script>
 <script src="../../js/vue.min.js"></script>
-<script src="./script.js"></script>
+<script src="./script-archive.js"></script>
 <script src="../../js/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper -->
@@ -450,10 +455,6 @@
 
 		});
 	});
-
-
-
-
 
 </script>
 </body>
