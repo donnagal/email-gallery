@@ -36,9 +36,12 @@ const vm = new Vue({
         data.map(({ day }, i) => {
           data[i].date = formatDate(day); // add new sortable value `date`
           data[i]["delivered-int"] = formatNum(data[i].delivered); // add new sortable value `delivered-int`
+
           totalDelivered = totalDelivered + data[i]["delivered-int"];
+
           totalOpens =
             parseInt(totalOpens) + parseInt(data[i]["unique-opens-pc"]);
+
           totalClicks = totalClicks + data[i]["unique-clicks-pc"];
         });
 
