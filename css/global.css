@@ -302,3 +302,7 @@ a.bg-color:hover {
 :hover.hover\:opacity-75{opacity:.75; opacity 0.2s ease-in;}
 :hover.hover\:opacity-100{opacity:1; opacity 0.2s ease-in;}
 :active.bg-active, :focus.bg-active, :hover.bg-active { border-color: black;}
+
+body{
+  min-height: 100vh;
+}
