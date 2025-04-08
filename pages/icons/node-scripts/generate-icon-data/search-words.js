@@ -42,6 +42,29 @@ const searchWords = {
   "super-health-check-stethoscope":
     "stethoscope, money, health, financial health",
   transfer: "tick, coin, cycle",
+  "multi-transfer": "money, streams, account, cycle",
+  "power-tower": "Energy, transmission tower",
+  "wind-energy": "Energy, wind, power",
+  "solar-power": "Energy, sun, eco, power",
+  "power-house": "power battery, storage",
+  "profile-id": "People, Name tag",
+  "hydro-energy": "Energy, power",
+  "power-distribution": "Energy, power",
+  "gov-house": "Buildings, Government house",
+  "building-dev": "Buildings development",
+  "retial": "Building retial, shops, store",
+  "residential": "Building residential, house, homes",
+  "contract": "People, Building, Hand shake, paper",
+  "enviromental": "sustainability, environmental",
+  "megaphone": "Announcement",
+  "construction-site": "Buildings, hard hat",
+  "construction-buildings": "Budilings",
+  "chat-bot-1": "Digtal chat bot",
+  "mobile-access": "Digital mobile in hand",
+  "mobile-chat": "Digtal chat bot,mobile in hand",
+  "umbrella-rain": "umbrella, insurance",
+  "umbrella-tick": "umbrella, insurance",
+
 };
 
 module.exports = searchWords;
