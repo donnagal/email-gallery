@@ -205,9 +205,19 @@
 			<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
 				@click.prevent="setStatus('')">All</button>
 			<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-				@click.prevent="setStatus('cbus')">Cbus</button>
+				@click.prevent="setStatus('performance')">Performance</button>
 			<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-				@click.prevent="setStatus('ms')">Media Super</button>
+				@click.prevent="setStatus('productivity')">Productivity</button>
+				<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
+				@click.prevent="setStatus('protection')">Protection</button>
+				<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
+				@click.prevent="setStatus('people')">People</button>
+				<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
+				@click.prevent="setStatus('money')">Money & Savings</button>
+				<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
+				@click.prevent="setStatus('digital')">Digital & UI</button>
+				<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
+				@click.prevent="setStatus('infrastructure')">Infrastructure </button>
 		</form>
 
 		<div class="container mx-auto pt-10">
@@ -219,21 +229,53 @@
 					v-show="setPaginate($index)">
 					<a target="_blank" class="icon img-hover" title="open published path in new window"
 						:href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url">
-						<img class="pt-3 mx-auto icon img-hover" :src="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url" width="100" />
+						<img class="pt-3 mx-auto icon img-hover" :src="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url + '--grey.png'" width="100" />
 						<span class="tooltip">Preview in brower</span>
 					</a>
-					<div class="text-sm text-black py-5">
-
-						<a target="_blank" :href="'images/'+ item.url" :download="item.url"
-							class="inline-block bg-white hover:bg-black hover:text-white rounded-md px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 shadow-sm">
-							Download ↓
-						</a>
-
-
-						<p class="pt-3 text-left px-3 pb-3 text-xs">{{ item.url }}</p>
-						<p class="text-left px-3"><strong>Brand:</strong> <span class="uppercase">{{item.group}}</span>
-						</p>
+					<div class="text-sm text-black">
+						
+						<p class="text-left px-3 text-lg">{{ item.url }}</p>
 						<p class="text-left px-3 text-xs text-gray-500">{{item.text}}</p>
+					</div>
+
+					<div class="p-3 cursor-pointer text-left">
+						<p class="text-left text-xs text-gray-500">Download:</p>
+
+						<a target="_blank" :href="'images/'+ item.url + '--grey.png'" :download="item.url" title="Grey"
+						class="inline-block bg-gray-600 hover:opacity-25 rounded-lg h-6 w-6 text-gray-200">
+
+						</a>
+						<a target="_blank" :href="'images/'+ item.url + '--green.png'" :download="item.url" title="Cbus Green"
+						class="inline-block hover:opacity-25 rounded-lg h-6 w-6 text-gray-200" style="background-color: #0F8045;"></a>
+
+						<a target="_blank" :href="'images/'+ item.url + '--purple.png'" :download="item.url" title="Cbus Purple - SIS"
+						class="inline-block bg-gray-600 hover:opacity-25 rounded-lg h-6 w-6 text-gray-200" style="background-color: #72004D;">
+
+						</a>
+						<a target="_blank" :href="'images/'+ item.url + '--pine.png'" :download="item.url" title="Pine"
+						class="inline-block bg-gray-600 hover:opacity-25 rounded-lg h-6 w-6 text-gray-200" style="background-color: #017D8C;">
+
+						</a>
+						<a target="_blank" :href="'images/'+ item.url + '--purple-3.png'" :download="item.url" title="Media Purple Light"
+						class="inline-block bg-gray-600 hover:opacity-25 rounded-lg h-6 w-6 text-gray-200" style="background-color: #AA4187">
+
+						</a>
+						<a target="_blank" :href="'images/'+ item.url + '--purple-4.png'" :download="item.url" title="Media Purple"
+						class="inline-block bg-gray-600 hover:opacity-25 rounded-lg h-6 w-6 text-gray-200" style="background-color: #72004D;">
+
+						</a>
+						<a target="_blank" :href="'images/'+ item.url + '--blue-1.png'" :download="item.url" title="Media Light blue"
+						class="inline-block bg-gray-600 hover:opacity-25 rounded-lg h-6 w-6 text-gray-200" style="background-color: #88CCEE;">
+
+						</a>
+						<a target="_blank" :href="'images/'+ item.url + '--blue-2.png'" :download="item.url" title="Media Dark Blue"
+						class="inline-block bg-gray-600 hover:opacity-25 rounded-lg h-6 w-6 text-gray-200" style="background-color: #327DDC;">
+
+						</a>
+						<a target="_blank" :href="'images/'+ item.url + '--purple-leg.png'" :download="item.url" title="Media Purple legacy"
+						class="inline-block bg-gray-600 hover:opacity-25 rounded-lg h-6 w-6 text-gray-200" style="background-color: #643F91;">
+
+						</a>
 					</div>
 				</div>
 
