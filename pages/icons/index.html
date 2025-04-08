@@ -133,7 +133,7 @@
 			<div class="bg-black mx-auto text-white px-5 text-center">
 				<div class="flex py-2">
 					<div class="flex-1">
-						<h1 class="font-bold text-2xl"><i class="fas fa-stamp"></i> Icons</h1>
+						<h1 class="font-bold text-2xl"><i class="fas fa-th-large"></i> Icons</h1>
 					</div>
 				</div>
 			</div>
@@ -145,9 +145,43 @@
 					<div class="hamburger-menu"></div>
 				</div>
 			</button>
-			<div id="menu">
+			<div class="menu z-100">
+				<div class="menu-inner">
+					<div class="bg-gray-900 h-screen py-8 font-bold">
+						<nav class="mt-10">
+							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 bg-gray-600 bg-opacity-25 text-gray-100 border-gray-100"
+								href="/">
+								<i class="fas fa-th-large"></i>
+								<span class="mx-4">Gallery</span>
+							</a>
 
-				<!-- <img src="images/duck.gif" /> -->
+							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100"
+								href="/pages/reports/">
+								<svg class="w-5 h-5" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M2 10C2 5.58172 5.58172 2 10 2V10H18C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10Z"
+										fill="currentColor"></path>
+									<path d="M12 2.25195C14.8113 2.97552 17.0245 5.18877 17.748 8.00004H12V2.25195Z"
+										fill="currentColor"></path>
+								</svg>
+								<span class="mx-4">Dashboard</span>
+							</a>
+
+							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100"
+								href="/pages/reports/bi-annual-report">
+								<i class="fas fa-list-ol"></i>
+								<span class="mx-4">Bi-annual report</span>
+							</a>
+
+							<a class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4 border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100"
+								href="/pages/icons">
+								<i class="fas fa-stamp"></i>
+								<span class="mx-4">Icon Library</span>
+							</a>
+
+						</nav>
+					</div>
+				</div>
 			</div>
 		</nav>
 	</div>
@@ -178,19 +212,19 @@
 
 		<div class="container mx-auto pt-10">
 
-			<div class="wrapper flex flex-wrap text-center justify-center">
+			<div class="wrapper flex flex-wrap text-center">
 
 				<div class="lg:w-1/6 md:1/3 m-2 bg-gray-100 rounded-lg"
 					v-for="item in items | filterBy search_filter in 'url' | filterBy status_filter in 'group'"
 					v-show="setPaginate($index)">
 					<a target="_blank" class="icon img-hover" title="open published path in new window"
 						:href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url">
-						<img class="pt-3 mx-auto icon img-hover" :src="'./images/'+ item.url" width="100" />
+						<img class="pt-3 mx-auto icon img-hover" :src="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url" width="100" />
 						<span class="tooltip">Preview in brower</span>
 					</a>
 					<div class="text-sm text-black py-5">
 
-						<a target="_blank" :href="'./images/'+ item.url" :download="item.url"
+						<a target="_blank" :href="'images/'+ item.url" :download="item.url"
 							class="inline-block bg-white hover:bg-black hover:text-white rounded-md px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2 shadow-sm">
 							Download ↓
 						</a>
@@ -218,7 +252,9 @@
 	<script src="../../js/filter-group.js"></script>
 	<script src="../../js/global.js"></script>
 	<script src="../../js/vue.min.js"></script>
+	<!-- <script src="../../pages/reports/script_icons.js"></script> -->
 
+	
 </body>
 
 </html>
