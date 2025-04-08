@@ -228,7 +228,7 @@
 					v-for="item in items | filterBy search_filter in 'url' | filterBy status_filter in 'group'"
 					v-show="setPaginate($index)">
 					<a target="_blank" class="icon img-hover" title="open published path in new window"
-						:href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url">
+						:href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url + '--grey.png'">
 						<img class="pt-3 mx-auto icon img-hover" :src="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url + '--grey.png'" width="100" />
 						<span class="tooltip">Preview in brower</span>
 					</a>

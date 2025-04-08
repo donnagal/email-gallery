@@ -7,12 +7,12 @@ new Vue({
     current: 1,
     items: [
       {
-        group: "money",
+        group: "money, productivity",
         text:"calculator, hand, push button",
         url:"calculator"
       },
       {
-        group: "performance",
+        group: "performance, productivity",
         text:"Your super will continue to work for you in retirement, managed benefit",
         url:"calendar-tick-chart"
       },
@@ -31,6 +31,17 @@ new Vue({
         text:"track money, investment updates, performance, strong returns",
         url:"chart-up-solid"
       },
+      {
+        group: "performance",
+        text:"track money, investment updates, performance, strong returns",
+        url:"investments-chart-bars"
+      }, 
+      {
+        group: "performance",
+        text:"track money, investment updates, performance, strong returns",
+        url:"investments-chart"
+      },
+
       {
         group: "digital",
         text:"login online, Log in to Employer Portal",
@@ -57,7 +68,7 @@ new Vue({
         url:"factory"
       },
       {
-        group: "protection",
+        group: "protection, performance",
         text:"first place, podium, winner, star",
         url:"first-place"
       },
@@ -247,7 +258,7 @@ new Vue({
           url: "power-house"
         },
         {
-          group: "people",
+          group: "people, digital, protection",
           text: "People, Name tag",
           url: "profile-id"
         },
@@ -280,6 +291,31 @@ new Vue({
           group: "infrastructure",
           text: "Buildings",
           url: "construction-buildings"
+        },
+        {
+          group: "infrastructure",
+          text: "Buildings",
+          url: "retial"
+        },
+        {
+          group: "infrastructure",
+          text: "Buildings",
+          url: "residential"
+        },
+        {
+          group: "infrastructure, people",
+          text: "Buildings",
+          url: "contract"
+        },
+        {
+          group: "infrastructure",
+          text: "sustainability, environmental",
+          url: "enviromental"
+        },
+        {
+          group: "digital",
+          text: "Announcement",
+          url: "megaphone"
         },
         {
           group: "digital",
