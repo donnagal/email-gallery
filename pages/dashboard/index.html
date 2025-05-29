@@ -201,6 +201,12 @@
 				</a>
 			</div>
 
+  <div class="dashboard" v-if="lists.length">
+    <p><strong>Avg Unique Opens %:</strong> {{ totals.openAvg }}%</p>
+    <p><strong>Avg Unique Clicks %:</strong> {{ totals.clickAvg }}%</p>
+    <p><strong>Total Delivered:</strong> {{ totals.delivered }}</p>
+  </div>
+  
 		<table class="t-styles w-full mt-5 bg-white" v-if="filteredAndSorted.length">
 			<thead>
 			<tr>
