@@ -1,441 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Email Report Dashboard</title>
-	<link href="../../images/favion.png" rel="icon" type="image/x-icon" />
-
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-	<link rel='stylesheet' href='../../css/v-dashbaord.css'>
-	<link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
-	<link rel="stylesheet" href="../../css/global.css">
-	<link rel="stylesheet" href="../../css/swiper-bundle.min.css">
-
-	<style>
-		.card-template,
-		.card-inspo {
-			display: none;
-		}
-
-		.active {
-			font-weight: bold;
-			color: black;
-		}
-
-		.rotate {
-			-webkit-transform: rotate(180deg);
-			-moz-transform: rotate(180deg);
-			-o-transform: rotate(180deg);
-			-ms-transform: rotate(180deg);
-			transform: rotate(180deg);
-		}
-
-		.hover:hover {
-			opacity: .7;
-			transition: opacity 0.2s ease-in;
-		}
-
-		.px-lg-md {
-			padding-left: 8rem;
-			padding-right: 8rem;
-		}
-
-		.h-lg-md {
-			height: 40rem;
-		}
-
-		/* md */
-		@media (max-width: 1600px) {
-			.px-lg-md {
-				padding-left: 3rem;
-				padding-right: 4rem;
-			}
-
-			.h-lg-md {
-				height: 23rem;
-			}
-		}
-
-		.ecol-lg {
-			width: 15%;
-		}
-
-		.ecol-md {
-			width: 7%;
-		}
-
-		.ecol {
-			width: 5%;
-		}
-	</style>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LF495ZKW9K"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-LF495ZKW9K');
-	</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Email Campaign Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9fafb;
+    margin: 20px;
+    color: #333;
+  }
+  h1 {
+    margin-bottom: 12px;
+    color: #2c3e50;
+  }
+  .dashboard {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .dashboard p {
+    margin: 4px 0;
+  }
+  input[type="search"] {
+    margin-bottom: 15px;
+    padding: 7px 10px;
+    width: 300px;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+  }
+  input[type="search"]:focus {
+    border-color: #2c7be5;
+    outline: none;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  thead {
+    background-color: #2c7be5;
+    color: white;
+  }
+  th, td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #eaeaea;
+    text-align: left;
+    user-select: none;
+  }
+  th {
+    cursor: pointer;
+    position: relative;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  th.sort-asc::after,
+  th.sort-desc::after {
+    content: '';
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    width: 0; 
+    height: 0; 
+    border-style: solid;
+    transform: translateY(-50%);
+  }
+  th.sort-asc::after {
+    border-width: 6px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
+  }
+  th.sort-desc::after {
+    border-width: 0 5px 6px 5px;
+    border-color: transparent transparent #fff transparent;
+  }
+  tbody tr:hover {
+    background: #f1f8ff;
+  }
+  tfoot td {
+    font-weight: 700;
+    background: #f0f0f0;
+    font-size: 15px;
+  }
+  .loading {
+    font-size: 16px;
+    color: #666;
+  }
+</style>
 </head>
+<body>
+<div id="app">
+  <h1>Email Campaign Dashboard</h1>
 
-<body class="bg-gray-200 ">
+  <div class="dashboard" v-if="lists.length">
+    <p><strong>Avg Unique Opens %:</strong> {{ totals.openAvg }}%</p>
+    <p><strong>Avg Unique Clicks %:</strong> {{ totals.clickAvg }}%</p>
+    <p><strong>Total Delivered:</strong> {{ totals.delivered }}</p>
+  </div>
 
-	<div id="nav">
+  <input
+    type="search"
+    placeholder="Search Campaign Name..."
+    v-model="searchTerm"
+    aria-label="Search campaigns"
+  />
 
+  <table v-if="filteredAndSorted.length">
+    <thead>
+      <tr>
+        <th
+          @click="sortBy('label')"
+          :class="sortKey === 'label' ? ('sort-' + sortOrder) : ''"
+          scope="col"
+        >Campaign Name</th>
+        <th
+          @click="sortBy('day')"
+          :class="sortKey === 'day' ? ('sort-' + sortOrder) : ''"
+          scope="col"
+        >Send Date</th>
+        <th
+          @click="sortBy('brand')"
+          :class="sortKey === 'brand' ? ('sort-' + sortOrder) : ''"
+          scope="col"
+        >Brand</th>
+        <th
+          @click="sortBy('type')"
+          :class="sortKey === 'type' ? ('sort-' + sortOrder) : ''"
+          scope="col"
+        >Campaign Type</th>
+        <th
+          @click="sortBy('unique-opens-pc')"
+          :class="sortKey === 'unique-opens-pc' ? ('sort-' + sortOrder) : ''"
+          scope="col"
+        >Unique Opens %</th>
+        <th
+          @click="sortBy('unique-clicks-pc')"
+          :class="sortKey === 'unique-clicks-pc' ? ('sort-' + sortOrder) : ''"
+          scope="col"
+        >Unique Clicks %</th>
+        <th
+          @click="sortBy('delivered')"
+          :class="sortKey === 'delivered' ? ('sort-' + sortOrder) : ''"
+          scope="col"
+        >Delivered</th>
+        <th
+          @click="sortBy('unsub')"
+          :class="sortKey === 'unsub' ? ('sort-' + sortOrder) : ''"
+          scope="col"
+        >Unsub</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="(item, index) in filteredAndSorted" :key="index">
+        <td>{{ item.label }}</td>
+        <td>{{ item.day }}</td>
+        <td>{{ item.brand }}</td>
+        <td>{{ item.type }}</td>
+        <td>{{ item['unique-opens-pc'].toFixed(2) }}%</td>
+        <td>{{ item['unique-clicks-pc'].toFixed(2) }}%</td>
+        <td>{{ item.delivered.toLocaleString() }}</td>
+        <td>{{ item.unsub.toLocaleString() }}</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="5">Totals / Averages</td>
+        <td>{{ totals.clickAvg }}%</td>
+        <td>{{ totals.delivered }}</td>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
 
+  <p v-if="!lists.length" class="loading">Loading data, please wait...</p>
+  <p v-if="lists.length && !filteredAndSorted.length" class="loading">No results found.</p>
+</div>
 
-		<header>
-			<div class="bg-black mx-auto text-white px-5 text-center">
-				<div class="flex py-2">
-					<div class="flex-1">
-						<h1 class="font-bold text-2xl flex gap-6 items-center justify-center">
-
-							<svg class="w-5 h-5" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M2 10C2 5.58172 5.58172 2 10 2V10H18C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10Z"
-									fill="currentColor"></path>
-								<path d="M12 2.25195C14.8113 2.97552 17.0245 5.18877 17.748 8.00004H12V2.25195Z"
-									fill="currentColor"></path>
-							</svg>
-
-							<div>Dashboard</div>
-						</h1>
-					</div>
-				</div>
-			</div>
-		</header>
-		<nav class="animate-add z-100">
-			<div class="nav-overlay"></div>
-			<button type="button" class="slide-toggle">
-				<div class="menu-wrapper">
-					<div class="hamburger-menu"></div>
-				</div>
-			</button>
-			<div id="menu">
-
-				<!-- <img src="images/duck.gif" /> -->
-			</div>
-		</nav>
-	</div>
-
-
-	<div class="" data-v-app="" id="app">
-		<div class="flex bg-gray-200 font-roboto">
-
-			<div class="flex-1 flex flex-col ">
-				<main class="flex-1">
-					<div class="px-lg-md md:container mx-auto py-8">
-						<div>
-
-							<div class="mt-8"></div>
-
-							<div class="mx-auto flex text-center">
-								<div class="w-1/3 p-5 bg-white mx-1 rounded">
-									<p class="text-xs font-light leading-4 tracking-wider text-gray-600 uppercase">Opens
-										Avg.</p>
-									<p class="text-3xl font-bold">{{totals.openAvg}}% </p>
-									<a target="_blank"
-										href="https://www.campaignmonitor.com/resources/guides/email-marketing-benchmarks/"
-										class="text-xs font-light leading-4 tracking-wider text-green uppercase underline">
-										Benchmark:
-										27.1%
-									</a>
-								</div>
-								<div class="w-1/3 p-5 bg-white mx-1 rounded">
-									<p class="text-xs font-light leading-4 tracking-wider text-gray-600 uppercase">
-										Clicks
-										Avg.</p>
-									<p class="text-3xl font-bold">{{ totals.clickAvg }}%</p>
-									<a target="_blank"
-										href="https://www.campaignmonitor.com/resources/guides/email-marketing-benchmarks/"
-										class="text-xs font-light leading-4 tracking-wider text-green uppercase underline">
-										Benchmark:
-										10.1%
-									</a>
-								</div>
-								<div class="w-1/3 p-5 bg-white mx-1 rounded">
-									<p class="text-xs font-light leading-4 tracking-wider text-gray-600 uppercase">
-										Total delivered</p>
-									<p class="text-3xl font-bold">{{totals.delivered}}</p>
-									<a target="_blank"
-										href="https://www.campaignmonitor.com/resources/guides/email-marketing-benchmarks/"
-										class="text-xs font-light leading-4 tracking-wider text-red uppercase underline">
-										<!-- Benchmark:
-										0.2% -->
-									</a>
-								</div>
-							</div>
-
-							<!-- Search -->
-							<div class="w-full mt-4 flex rounded-lg">
-
-								<div class="pt-2 relative mx-auto text-gray-600 w-full">
-									<input id="search-text" placeholder="Search emails"
-										class="w-full border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
-										type="search" name="search" placeholder="Search">
-									<button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
-										<svg class="text-gray-600 h-4 w-4 fill-current"
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px"
-											y="0px" viewBox="0 0 56.966 56.966"
-											style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
-											width="512px" height="512px">
-											<path
-												d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
-										</svg>
-									</button>
-								</div>
-							</div>
-							<!-- End: Search -->
-
-							<!-- Email table -->
-							<div class="">
-
-								<table class="email-list min-w-full mt-2 -mb-1 rounded-lg">
-									<thead>
-										<tr class="cursor-pointer text-center">
-											<th @click="sortBy('label')"
-												class="border-r ecol-lg text-left pl-3 py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-												Label
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-													class="sort-arrow fill-current h-4 w-4 inline">
-													<path
-														d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
-													</path>
-												</svg>
-											</th>
-											<th @click="sortBy('date')"
-												class="border-r ecol-md py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-												Date
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-													class="sort-arrow fill-current h-4 w-4 inline">
-													<path
-														d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
-													</path>
-												</svg>
-											</th>
-											<th @click="sortBy('brand')"
-												class="border-r ecol-md py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-												Brand
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-													class="sort-arrow fill-current h-4 w-4 inline">
-													<path
-														d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
-													</path>
-												</svg>
-											</th>
-											<th @click="sortBy('type')"
-												class="border-r ecol-md py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-												Type
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-													class="sort-arrow fill-current h-4 w-4 inline">
-													<path
-														d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
-													</path>
-												</svg>
-											</th>
-											<th @click="sortBy('unique-opens-pc')"
-												class="border-r ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-												Opens
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-													class="sort-arrow fill-current h-4 w-4 inline">
-													<path
-														d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
-													</path>
-												</svg>
-											</th>
-											<th @click="sortBy('unique-clicks-pc')"
-												class="border-r ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-												Clicks
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-													class="sort-arrow fill-current h-4 w-4 inline">
-													<path
-														d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
-													</path>
-												</svg>
-											</th>
-											<th @click="sortBy('delivered-int')"
-												class="border-r ecol py-3 text-xs font-light leading-4 tracking-wider text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
-												Delivered
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-													class="sort-arrow fill-current h-4 w-4 inline">
-													<path
-														d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z">
-													</path>
-												</svg>
-											</th>
-										</tr>
-									</thead>
-								</table>
-							</div>
-
-							<div class="flex flex-col mt-1 h-lg-md">
-								<div class="py-2 -my-2  sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
-									<div
-										class="inline-block min-w-full align-middle border-b border-gray-200 shadow sm:rounded-lg">
-										<table id="list" class="email-list min-w-full text-center">
-											<tbody class="bg-white">
-												<template v-for="listData in lists">
-													<tr class="in card "
-														:class="['card-' + listData.group + ' ' + listData.color + ' ' + listData.filter]">
-														<td
-															class="ecol-lg py-4 border-b border-gray-200 text-left pl-3">
-															<div class="flex items-center">
-																<div class="ml-4">
-																	<div
-																		class="text-sm font-bold leading-5 text-gray-900">
-																		{{listData.label}}
-																	</div>
-																</div>
-															</div>
-														</td>
-														<td class="ecol-md py-4 border-b border-gray-200">
-															<div class="text-sm leading-5 text-gray-900">
-																{{ listData.day }}
-																<!-- {{ listData.date }} -->
-															</div>
-														</td>
-														<td class="ecol-md py-4 border-b border-gray-200">
-															<div class="text-sm leading-5 text-gray-900">
-																{{ listData.brand }}
-															</div>
-														</td>
-														<td class="ecol-md py-4 border-b border-gray-200">
-															<div class="text-sm leading-5 text-gray-900">
-																{{ listData.type }}
-															</div>
-														</td>
-														<td class="ecol py-4 border-b border-gray-200">
-															<div class="text-lg font-bold leading-5 text-gray-900">
-																{{ listData['unique-opens-pc'] }}%
-															</div>
-														</td>
-														<td class="ecol py-4 border-b border-gray-200">
-															<div class="text-lg font-bold leading-5 text-gray-900">
-																{{ listData['unique-clicks-pc'] }}%
-															</div>
-														</td>
-														<td class="ecol py-4 border-b border-gray-200">
-															<div class="text-lg leading-5 text-gray-900">
-																{{listData['delivered']}}
-															</div>
-														</td>
-													</tr>
-												</template>
-											</tbody>
-										</table>
-										<!-- <span class="empty-item">no results</span> -->
-									</div>
-								</div>
-							</div>
-							<!-- End table -->
-
-
-						</div>
-					</div>
-				</main>
-			</div>
-
-
-		</div>
-	</div>
-</body>
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src="../../js/filter-group.js"></script>
-<script src="../../js/global.js"></script>
-<script src="../../js/vue.min.js"></script>
-<script src="./script.js"></script>
-<script src="../../js/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
 <script>
-	var swiper = new Swiper(".smsSwiper", {
-		pagination: {
-			el: ".swiper-pagination",
-		},
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-	});
+new Vue({
+  el: '#app',
+  data() {
+    return {
+      lists: [],
+      totals: {
+        openAvg: '0.00',
+        clickAvg: '0.00',
+        delivered: '0',
+      },
+      sortKey: 'day',
+      sortOrder: 'asc', // 'asc' or 'desc'
+      searchTerm: '',
+    };
+  },
+  computed: {
+    filteredAndSorted() {
+      let filtered = this.lists;
 
-	//filter
-	$(document).ready(function () {
-		$('.email-list').on('click', 'th', function () {
-			$('.email-list th.active').removeClass('active');
-			$(this).addClass('active');
-		});
+      if (this.searchTerm.trim() !== '') {
+        const term = this.searchTerm.trim().toLowerCase();
+        filtered = filtered.filter(item => item.label.toLowerCase().includes(term));
+      }
 
+      // Sorting
+      filtered = filtered.slice().sort((a, b) => {
+        let valA = a[this.sortKey];
+        let valB = b[this.sortKey];
 
-		$('.email-list').click(function () {
-			$('.sort-arrow').toggleClass('rotate');
-		});
+        // Special case: date sorting
+        if (this.sortKey === 'day') {
+          valA = new Date(valA);
+          valB = new Date(valB);
+          if (isNaN(valA)) valA = new Date(0);
+          if (isNaN(valB)) valB = new Date(0);
+        }
 
-	});
+        // Numeric sorting for these keys
+        if (['unique-opens-pc', 'unique-clicks-pc', 'delivered', 'unsub'].includes(this.sortKey)) {
+          valA = Number(valA);
+          valB = Number(valB);
+        }
 
-	//search
-	$(document).ready(function () {
+        if (valA < valB) return this.sortOrder === 'asc' ? -1 : 1;
+        if (valA > valB) return this.sortOrder === 'asc' ? 1 : -1;
+        return 0;
+      });
 
-		var jobCount = $('#list .in').length;
-		$('.list-count').text(jobCount + ' items');
+      return filtered;
+    },
+  },
+  methods: {
+    async fetchExcel() {
+      try {
+        const response = await fetch('data/ajo-report-fy25.xlsx');
+        if (!response.ok) throw new Error('Failed to load Excel file');
+        const arrayBuffer = await response.arrayBuffer();
+        this.parseExcel(arrayBuffer);
+      } catch (error) {
+        console.error('Error fetching Excel file:', error);
+      }
+    },
+    parseExcel(data) {
+      const workbook = XLSX.read(data, { type: 'array' });
+      const sheetName = workbook.SheetNames[0];
+      const worksheet = workbook.Sheets[sheetName];
+      let jsonData = XLSX.utils.sheet_to_json(worksheet);
 
+      jsonData = jsonData.map(row => {
+        // Handle delivered column from 'deliveried' or other variants
+        let deliveredRaw = row['deliveried'] || row['Delivered'] || row['delivered'] || 0;
+        if (typeof deliveredRaw === 'string') {
+          deliveredRaw = deliveredRaw.replace(/,/g, '');
+        }
+        const deliveredNum = Number(deliveredRaw);
 
-		$("#search-text").keyup(function () {
-			//$(this).addClass('hidden');
+        return {
+          label: row['Campaign Name'] || row['name'] || '',
+          day: this.formatDate(row['Send Date'] || row['date']),
+          brand: row['brand'] || '',
+          type: row['Campaign Type'] || row['type'] || '',
+          'unique-opens-pc': Number(row['Unique Opens %'] || row['unique-opens-pc'] || 0) || 0,
+          'unique-clicks-pc': Number(row['Unique Clicks %'] || row['unique-clicks-pc'] || 0) || 0,
+          delivered: isNaN(deliveredNum) ? 0 : deliveredNum,
+          unsub: Number(String(row['unsub'] || 0).replace(/,/g, '')) || 0,
+        };
+      });
 
-			var searchTerm = $("#search-text").val();
-			var listItem = $('#list').children('li');
+      this.lists = jsonData;
+      this.calculateTotals();
+    },
+    formatDate(dateStr) {
+      if (!dateStr) return '';
+      const d = new Date(dateStr);
+      if (isNaN(d)) return dateStr; // fallback for non-date strings
+      return d.toLocaleDateString('en-AU', { day: '2-digit', month: 'short', year: '2-digit' });
+    },
+    calculateTotals() {
+      if (!this.lists.length) {
+        this.totals.openAvg = '0.00';
+        this.totals.clickAvg = '0.00';
+        this.totals.delivered = '0';
+        return;
+      }
 
+      let totalDelivered = 0;
+      let totalOpens = 0;
+      let totalClicks = 0;
 
-			var searchSplit = searchTerm.replace(/ /g, "'):containsi('")
+      this.lists.forEach(item => {
+        totalDelivered += item.delivered;
+        totalOpens += item['unique-opens-pc'];
+        totalClicks += item['unique-clicks-pc'];
+      });
 
-			//extends :contains to be case insensitive
-			$.extend($.expr[':'], {
-				'containsi': function (elem, i, match, array) {
-					return (elem.textContent || elem.innerText || '').toLowerCase()
-						.indexOf((match[3] || "").toLowerCase()) >= 0;
-				}
-			});
-
-
-			$("#list tr").not(":containsi('" + searchSplit + "')").each(function (e) {
-				$(this).addClass('hiding out').removeClass('in');
-				setTimeout(function () {
-					$('.out').addClass('hidden');
-				}, 300);
-			});
-
-			$("#list tr:containsi('" + searchSplit + "')").each(function (e) {
-				$(this).removeClass('hidden out').addClass('in');
-				setTimeout(function () {
-					$('.in').removeClass('hiding');
-				}, 1);
-			});
-
-
-			var jobCount = $('#list .in').length;
-			$('.list-count').text(jobCount + ' items');
-
-			//shows empty state text when no jobs found
-			if (jobCount == '0') {
-				$('#list').addClass('empty');
-			}
-			else {
-				$('#list').removeClass('empty');
-			}
-
-		});
-	});
-
-
-
-
-
+      this.totals.delivered = totalDelivered.toLocaleString();
+      this.totals.openAvg = (totalOpens / this.lists.length).toFixed(2);
+      this.totals.clickAvg = (totalClicks / this.lists.length).toFixed(2);
+    },
+    sortBy(key) {
+      if (this.sortKey === key) {
+        this.sortOrder = this.sortOrder === 'asc' ? 'desc' : 'asc';
+      } else {
+        this.sortKey = key;
+        this.sortOrder = 'asc';
+      }
+    }
+  },
+  mounted() {
+    this.fetchExcel();
+  }
+});
 </script>
 </body>
-
 </html>

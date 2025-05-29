@@ -7,7 +7,7 @@ new Vue({
     current: 1,
     items: [
       {
-        group: "money, productivity",
+        group: "money, productivity, didgital",
         text:"calculator, hand, push button",
         url:"calculator"
       },
