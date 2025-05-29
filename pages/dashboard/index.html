@@ -94,7 +94,7 @@
   }
 </style>
 </head>
-<body>
+<body class="bg-gray-200 ">
 <div id="app">
   <h1>Email Campaign Dashboard</h1>
 
@@ -128,7 +128,7 @@
           @click="sortBy('brand')"
           :class="sortKey === 'brand' ? ('sort-' + sortOrder) : ''"
           scope="col"
-        >Brand</th>
+        >brand</th>
         <th
           @click="sortBy('type')"
           :class="sortKey === 'type' ? ('sort-' + sortOrder) : ''"
@@ -189,12 +189,12 @@ new Vue({
     return {
       lists: [],
       totals: {
-        openAvg: '0.00',
-        clickAvg: '0.00',
-        delivered: '0',
+        openAvg: 0,
+        clickAvg: 0,
+        delivered: 0,
       },
       sortKey: 'day',
-      sortOrder: 'asc', // 'asc' or 'desc'
+      sortOrder: 'asc',
       searchTerm: '',
     };
   },
@@ -207,12 +207,10 @@ new Vue({
         filtered = filtered.filter(item => item.label.toLowerCase().includes(term));
       }
 
-      // Sorting
       filtered = filtered.slice().sort((a, b) => {
         let valA = a[this.sortKey];
         let valB = b[this.sortKey];
 
-        // Special case: date sorting
         if (this.sortKey === 'day') {
           valA = new Date(valA);
           valB = new Date(valB);
@@ -220,7 +218,6 @@ new Vue({
           if (isNaN(valB)) valB = new Date(0);
         }
 
-        // Numeric sorting for these keys
         if (['unique-opens-pc', 'unique-clicks-pc', 'delivered', 'unsub'].includes(this.sortKey)) {
           valA = Number(valA);
           valB = Number(valB);
@@ -251,40 +248,47 @@ new Vue({
       const worksheet = workbook.Sheets[sheetName];
       let jsonData = XLSX.utils.sheet_to_json(worksheet);
 
-      jsonData = jsonData.map(row => {
-        // Handle delivered column from 'deliveried' or other variants
-        let deliveredRaw = row['deliveried'] || row['Delivered'] || row['delivered'] || 0;
-        if (typeof deliveredRaw === 'string') {
-          deliveredRaw = deliveredRaw.replace(/,/g, '');
-        }
-        const deliveredNum = Number(deliveredRaw);
-
-        return {
-          label: row['Campaign Name'] || row['name'] || '',
-          day: this.formatDate(row['Send Date'] || row['date']),
-          brand: row['brand'] || '',
-          type: row['Campaign Type'] || row['type'] || '',
-          'unique-opens-pc': Number(row['Unique Opens %'] || row['unique-opens-pc'] || 0) || 0,
-          'unique-clicks-pc': Number(row['Unique Clicks %'] || row['unique-clicks-pc'] || 0) || 0,
-          delivered: isNaN(deliveredNum) ? 0 : deliveredNum,
-          unsub: Number(String(row['unsub'] || 0).replace(/,/g, '')) || 0,
-        };
-      });
+      jsonData = jsonData.map(row => ({
+        label: row['Campaign Name'] || row['name'] || '',
+        day: this.formatDate(row['Send Date'] || row['date']),
+        brand: row['brand'] || '',
+        type: row['Campaign Type'] || row['type'] || '',
+        'unique-opens-pc': Number(row['Unique Opens %'] || row['unique-opens-pc'] || 0),
+        'unique-clicks-pc': Number(row['Unique Clicks %'] || row['unique-clicks-pc'] || 0),
+        delivered: Number(String(row['deliveried'] || row['Delivered'] || 0).replace(/,/g, '')) || 0,
+        unsub: Number(String(row['unsub'] || 0).replace(/,/g, '')) || 0,
+      }));
 
       this.lists = jsonData;
       this.calculateTotals();
     },
-    formatDate(dateStr) {
-      if (!dateStr) return '';
-      const d = new Date(dateStr);
-      if (isNaN(d)) return dateStr; // fallback for non-date strings
+    formatDate(dateValue) {
+      if (!dateValue) return '';
+
+      // If it's a number (Excel serial date), convert it
+      if (typeof dateValue === 'number') {
+        const jsDate = this.excelDateToJSDate(dateValue);
+        if (!jsDate || isNaN(jsDate)) return '';
+        return jsDate.toLocaleDateString('en-AU', { day: '2-digit', month: 'short', year: '2-digit' });
+      }
+
+      // Otherwise, parse as string date
+      const d = new Date(dateValue);
+      if (isNaN(d)) return dateValue;
       return d.toLocaleDateString('en-AU', { day: '2-digit', month: 'short', year: '2-digit' });
+    },
+    excelDateToJSDate(serial) {
+      if (typeof serial !== 'number') return null;
+      const utc_days = serial - 25569;
+      const utc_value = utc_days * 86400;
+      const date_info = new Date(utc_value * 1000);
+      return date_info;
     },
     calculateTotals() {
       if (!this.lists.length) {
-        this.totals.openAvg = '0.00';
-        this.totals.clickAvg = '0.00';
-        this.totals.delivered = '0';
+        this.totals.openAvg = 0;
+        this.totals.clickAvg = 0;
+        this.totals.delivered = 0;
         return;
       }
 
