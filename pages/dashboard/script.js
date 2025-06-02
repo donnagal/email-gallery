@@ -7,6 +7,7 @@ new Vue({
         openAvg: 0,
         clickAvg: 0,
         delivered: 0,
+        unsubAvg: 0,        // new total for unsub-pc avg
       },
       sortKey: 'day',
       sortOrder: 'asc',
@@ -33,7 +34,7 @@ new Vue({
           if (isNaN(valB)) valB = new Date(0);
         }
 
-        if (['unique-opens-pc', 'unique-clicks-pc', 'delivered', 'unsub'].includes(this.sortKey)) {
+        if (['unique-opens-pc', 'unique-clicks-pc', 'delivered', 'unsub', 'unsub-pc'].includes(this.sortKey)) {
           valA = Number(valA);
           valB = Number(valB);
         }
@@ -72,6 +73,7 @@ new Vue({
         'unique-clicks-pc': Number(row['Unique Clicks %'] || row['unique-clicks-pc'] || 0),
         delivered: Number(String(row['deliveried'] || row['Delivered'] || 0).replace(/,/g, '')) || 0,
         unsub: Number(String(row['unsub'] || 0).replace(/,/g, '')) || 0,
+        'unsub-pc': Number(row['unsub-pc'] || 0), // added unsub-pc parsing
       }));
 
       this.lists = jsonData;
@@ -80,14 +82,12 @@ new Vue({
     formatDate(dateValue) {
       if (!dateValue) return '';
 
-      // If it's a number (Excel serial date), convert it
       if (typeof dateValue === 'number') {
         const jsDate = this.excelDateToJSDate(dateValue);
         if (!jsDate || isNaN(jsDate)) return '';
         return jsDate.toLocaleDateString('en-AU', { day: '2-digit', month: 'short', year: '2-digit' });
       }
 
-      // Otherwise, parse as string date
       const d = new Date(dateValue);
       if (isNaN(d)) return dateValue;
       return d.toLocaleDateString('en-AU', { day: '2-digit', month: 'short', year: '2-digit' });
@@ -96,30 +96,33 @@ new Vue({
       if (typeof serial !== 'number') return null;
       const utc_days = serial - 25569;
       const utc_value = utc_days * 86400;
-      const date_info = new Date(utc_value * 1000);
-      return date_info;
+      return new Date(utc_value * 1000);
     },
     calculateTotals() {
       if (!this.lists.length) {
         this.totals.openAvg = 0;
         this.totals.clickAvg = 0;
         this.totals.delivered = 0;
+        this.totals.unsubAvg = 0;
         return;
       }
 
       let totalDelivered = 0;
       let totalOpens = 0;
       let totalClicks = 0;
+      let totalUnsubPc = 0;
 
       this.lists.forEach(item => {
         totalDelivered += item.delivered;
         totalOpens += item['unique-opens-pc'];
         totalClicks += item['unique-clicks-pc'];
+        totalUnsubPc += item['unsub-pc'] || 0;
       });
 
       this.totals.delivered = totalDelivered.toLocaleString();
       this.totals.openAvg = (totalOpens / this.lists.length).toFixed(2);
       this.totals.clickAvg = (totalClicks / this.lists.length).toFixed(2);
+      this.totals.unsubAvg = (totalUnsubPc / this.lists.length).toFixed(2); // new avg total for unsub-pc
     },
     sortBy(key) {
       if (this.sortKey === key) {
