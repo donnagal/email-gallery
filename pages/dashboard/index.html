@@ -13,119 +13,11 @@
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
 	<link rel="stylesheet" href="../../css/global.css">
 	<link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="styles.css">
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 
-	<style>
-		.card-template,
-		.card-inspo {
-			display: none;
-		}
-
-		.active {
-			font-weight: bold;
-			color: black;
-		}
-
-		.rotate {
-			-webkit-transform: rotate(180deg);
-			-moz-transform: rotate(180deg);
-			-o-transform: rotate(180deg);
-			-ms-transform: rotate(180deg);
-			transform: rotate(180deg);
-		}
-
-		.hover:hover {
-			opacity: .7;
-			transition: opacity 0.2s ease-in;
-		}
-
-		.px-lg-md {
-			padding-left: 8rem;
-			padding-right: 8rem;
-		}
-
-		.h-lg-md {
-			height: 40rem;
-		}
-
-		/* md */
-		@media (max-width: 1600px) {
-			.px-lg-md {
-				padding-left: 3rem;
-				padding-right: 4rem;
-			}
-
-			.h-lg-md {
-				height: 23rem;
-			}
-		}
-
-		.ecol-lg {
-			width: 15%;
-		}
-
-		.ecol-md {
-			width: 7%;
-		}
-
-		.ecol {
-			width: 5%;
-		}
-		.t-stlyes   table {
-    border-collapse: collapse;
-    width: 100%;
-    background: white;
-    box-shadow: 0 0 8px rgba(0,0,0,0.05);
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  thead {
-    background-color: #2c7be5;
-    color: white;
-	font-size: 12px;
-  }
-  th, td {
-    padding: 10px 14px;
-    border-bottom: 1px solid #eaeaea;
-    text-align: left;
-    user-select: none;
-  }
-  th {
-    cursor: pointer;
-    position: relative;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-  th.sort-asc::after,
-  th.sort-desc::after {
-    content: '';
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    width: 0; 
-    height: 0; 
-    border-style: solid;
-    transform: translateY(-50%);
-  }
-  th.sort-asc::after {
-    border-width: 6px 5px 0 5px;
-    border-color: #fff transparent transparent transparent;
-  }
-  th.sort-desc::after {
-    border-width: 0 5px 6px 5px;
-    border-color: transparent transparent #fff transparent;
-  }
-  tbody tr:hover {
-    background: #f1f8ff;
-  }
-  tfoot td {
-    font-weight: 700;
-    background: #f0f0f0;
-    font-size: 15px;
-  }
-	</style>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LF495ZKW9K"></script>
 	<script>
@@ -198,11 +90,44 @@
                 </a>
               </div>
 			  
- <div class="dashboard" v-if="lists.length">
-    <p><strong>Avg Unique Opens %:</strong> {{ totals.openAvg }}%</p>
-    <p><strong>Avg Unique Clicks %:</strong> {{ totals.clickAvg }}%</p>
-    <p><strong>Total Delivered:</strong> {{ totals.delivered }}</p>
-  </div>
+				<div id="summary-boxes" class="flex flex-wrap -mx-2 my-4">
+				<div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+					<div class="bg-grey-lighter p-4 rounded shadow text-center">
+					<div class="text-grey-darker text-sm mb-1">Avg Open %</div>
+					<div class="text-2xl font-bold text-black mb-1">{{ totals.openAvg }}%</div>
+					<div class="text-xs" :class="trend.click === 'up' ? 'text-green' : 'text-red'">
+						{{ trend.open === 'up' ? '▲ Up' : '▼ Down' }} 4-week
+					</div>
+					</div>
+				</div>
+				<div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+					<div class="bg-grey-lighter p-4 rounded shadow text-center">
+					<div class="text-grey-darker text-sm mb-1">Avg Click %</div>
+					<div class="text-2xl font-bold text-black mb-1">{{ totals.clickAvg }}%</div>
+					<div class="text-xs" :class="trend.click === 'up' ? 'text-green' : 'text-red'">
+						{{ trend.click === 'up' ? '▲ Up' : '▼ Down' }} 4-week
+					</div>
+					</div>
+				</div>
+				<div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+					<div class="bg-grey-lighter p-4 rounded shadow text-center">
+					<div class="text-grey-darker text-sm mb-1">Delivered</div>
+					<div class="text-2xl font-bold text-black mb-1">{{ totals.delivered }}</div>
+					<div class="text-xs" :class="trend.delivered === 'up' ? 'text-green' : 'text-red'">
+						{{ trend.delivered === 'up' ? '▲ Up' : '▼ Down' }} 4-week
+					</div>
+					</div>
+				</div>
+				<div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+					<div class="bg-grey-lighter p-4 rounded shadow text-center">
+					<div class="text-grey-darker text-sm mb-1">Avg Unsub %</div>
+					<div class="text-2xl font-bold text-black mb-1">{{ totals.unsubAvg }}%</div>
+					<div class="text-xs" :class="trend.unsub === 'down' ? 'text-green' : 'text-red'">
+						{{ trend.unsub === 'down' ? '▼ Down' : '▲ Up' }} 4-week
+					</div>
+					</div>
+				</div>
+				</div>
 
               <table class="t-styles w-full mt-5 bg-white" v-if="filteredAndSorted.length">
                 <thead>
@@ -250,6 +175,15 @@
                   </tr>
                 </thead>
                 <tbody>
+				<tfoot>
+                  <tr>
+                    <td colspan="4" class="text-right font-semibold">Totals / Averages:</td>
+                    <td>{{ totals.openAvg }}%</td>
+                    <td>{{ totals.clickAvg }}%</td>
+                    <td>{{ totals.delivered }}</td>
+                    <td>{{ totals.unsubAvg }}%</td>
+                  </tr>
+                </tfoot>
                   <tr v-for="(item, index) in filteredAndSorted" :key="index">
                     <td>{{ item.label }}</td>
                     <td>{{ item.day }}</td>
@@ -261,15 +195,7 @@
                     <td>{{ item['unsub-pc'].toFixed(2) }}%</td>
                   </tr>
                 </tbody>
-                <tfoot>
-                  <tr>
-                    <td colspan="4" class="text-right font-semibold">Totals / Averages:</td>
-                    <td>{{ totals.openAvg }}%</td>
-                    <td>{{ totals.clickAvg }}%</td>
-                    <td>{{ totals.delivered }}</td>
-                    <td>{{ totals.unsubAvg }}%</td>
-                  </tr>
-                </tfoot>
+
               </table>
 
               <p v-if="!lists.length" class="loading">Loading data, please wait...</p>

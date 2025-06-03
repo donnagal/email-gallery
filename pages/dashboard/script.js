@@ -7,7 +7,13 @@ new Vue({
         openAvg: 0,
         clickAvg: 0,
         delivered: 0,
-        unsubAvg: 0,        // new total for unsub-pc avg
+        unsubAvg: 0,
+      },
+      trend: {
+        delivered: 'neutral',
+        open: 'neutral',
+        click: 'neutral',
+        unsub: 'neutral',
       },
       sortKey: 'day',
       sortOrder: 'asc',
@@ -67,13 +73,14 @@ new Vue({
       jsonData = jsonData.map(row => ({
         label: row['Campaign Name'] || row['name'] || '',
         day: this.formatDate(row['Send Date'] || row['date']),
+        rawDate: new Date(row['Send Date'] || row['date']),
         brand: row['brand'] || '',
         type: row['Campaign Type'] || row['type'] || '',
         'unique-opens-pc': Number(row['Unique Opens %'] || row['unique-opens-pc'] || 0),
         'unique-clicks-pc': Number(row['Unique Clicks %'] || row['unique-clicks-pc'] || 0),
         delivered: Number(String(row['deliveried'] || row['Delivered'] || 0).replace(/,/g, '')) || 0,
         unsub: Number(String(row['unsub'] || 0).replace(/,/g, '')) || 0,
-        'unsub-pc': Number(row['unsub-pc'] || 0), // added unsub-pc parsing
+        'unsub-pc': Number(row['unsub-pc'] || 0),
       }));
 
       this.lists = jsonData;
@@ -122,7 +129,23 @@ new Vue({
       this.totals.delivered = totalDelivered.toLocaleString();
       this.totals.openAvg = (totalOpens / this.lists.length).toFixed(2);
       this.totals.clickAvg = (totalClicks / this.lists.length).toFixed(2);
-      this.totals.unsubAvg = (totalUnsubPc / this.lists.length).toFixed(2); // new avg total for unsub-pc
+      this.totals.unsubAvg = (totalUnsubPc / this.lists.length).toFixed(2);
+
+      // Calculate trends using last 4 records
+      const sorted = [...this.lists].sort((a, b) => new Date(b.rawDate) - new Date(a.rawDate));
+      const recent = sorted.slice(0, 4);
+
+      const avg = (arr, key) => arr.reduce((sum, item) => sum + (item[key] || 0), 0) / arr.length;
+
+      const deliveredRecentAvg = avg(recent, 'delivered');
+      const openRecentAvg = avg(recent, 'unique-opens-pc');
+      const clickRecentAvg = avg(recent, 'unique-clicks-pc');
+      const unsubRecentAvg = avg(recent, 'unsub-pc');
+
+      this.trend.delivered = deliveredRecentAvg > (totalDelivered / this.lists.length) ? 'up' : 'down';
+      this.trend.open = openRecentAvg > this.totals.openAvg ? 'up' : 'down';
+      this.trend.click = clickRecentAvg > this.totals.clickAvg ? 'up' : 'down';
+      this.trend.unsub = unsubRecentAvg < this.totals.unsubAvg ? 'down' : 'up'; // unsub is better when it's lower
     },
     sortBy(key) {
       if (this.sortKey === key) {
