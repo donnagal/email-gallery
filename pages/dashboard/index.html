@@ -46,7 +46,7 @@
                   fill="currentColor"></path>
               </svg>
 
-              <div>Dashboard</div>
+              <div>Dashboard FY25</div>
             </h1>
           </div>
         </div>
@@ -90,46 +90,70 @@
                 </a>
               </div>
 			  
-				<div id="summary-boxes" class="flex flex-wrap -mx-2 my-4">
-				<div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
-					<div class="bg-grey-lighter p-4 rounded shadow text-center">
-					<div class="text-grey-darker text-sm mb-1">Avg Open %</div>
-					<div class="text-2xl font-bold text-black mb-1">{{ totals.openAvg }}%</div>
-					<div class="text-xs" :class="trend.click === 'up' ? 'text-green' : 'text-red'">
-						{{ trend.open === 'up' ? '▲ Up' : '▼ Down' }} 4-week
-					</div>
-					</div>
-				</div>
-				<div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
-					<div class="bg-grey-lighter p-4 rounded shadow text-center">
-					<div class="text-grey-darker text-sm mb-1">Avg Click %</div>
-					<div class="text-2xl font-bold text-black mb-1">{{ totals.clickAvg }}%</div>
-					<div class="text-xs" :class="trend.click === 'up' ? 'text-green' : 'text-red'">
-						{{ trend.click === 'up' ? '▲ Up' : '▼ Down' }} 4-week
-					</div>
-					</div>
-				</div>
-				<div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
-					<div class="bg-grey-lighter p-4 rounded shadow text-center">
-					<div class="text-grey-darker text-sm mb-1">Delivered</div>
-					<div class="text-2xl font-bold text-black mb-1">{{ totals.delivered }}</div>
-					<div class="text-xs" :class="trend.delivered === 'up' ? 'text-green' : 'text-red'">
-						{{ trend.delivered === 'up' ? '▲ Up' : '▼ Down' }} 4-week
-					</div>
-					</div>
-				</div>
-				<div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
-					<div class="bg-grey-lighter p-4 rounded shadow text-center">
-					<div class="text-grey-darker text-sm mb-1">Avg Unsub %</div>
-					<div class="text-2xl font-bold text-black mb-1">{{ totals.unsubAvg }}%</div>
-					<div class="text-xs" :class="trend.unsub === 'down' ? 'text-green' : 'text-red'">
-						{{ trend.unsub === 'down' ? '▼ Down' : '▲ Up' }} 4-week
-					</div>
-					</div>
-				</div>
-				</div>
+<!-- Tailwind CSS CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css">
 
-              <table class="t-styles w-full mt-5 bg-white" v-if="filteredAndSorted.length">
+<!-- Summary Boxes -->
+<div id="summary-boxes" class="flex flex-wrap -mx-2 my-4">
+  <!-- Avg Open % -->
+  <div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+    <div class="bg-grey-lighter p-4 rounded shadow text-center">
+      <div class="text-grey-darker text-sm mb-1">Avg Open %</div>
+      <div class="text-2xl font-bold text-black mb-1">{{ totals.openAvg }}%</div>
+      <div class="text-xs text-grey-dark mb-1">Benchmark: 42.6%</div>
+      <div class="text-xs" :class="trend.open === 'up' ? 'text-green' : 'text-red'">
+        {{ trend.open === 'up' ? '▲ Up' : '▼ Down' }} 4-week
+      </div>
+    </div>
+  </div>
+
+  <!-- Avg Click % -->
+  <div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+    <div class="bg-grey-lighter p-4 rounded shadow text-center">
+      <div class="text-grey-darker text-sm mb-1">Avg Click %</div>
+      <div class="text-2xl font-bold text-black mb-1">{{ totals.clickAvg }}%</div>
+      <div class="text-xs text-grey-dark mb-1">Benchmark: 3.1%</div>
+      <div class="text-xs" :class="trend.click === 'up' ? 'text-green' : 'text-red'">
+        {{ trend.click === 'up' ? '▲ Up' : '▼ Down' }} 4-week
+      </div>
+    </div>
+  </div>
+
+  <!-- Delivered -->
+  <div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+    <div class="bg-grey-lighter p-4 rounded shadow text-center">
+      <div class="text-grey-darker text-sm mb-1">Delivered</div>
+      <div class="text-2xl font-bold text-black mb-1">{{ totals.delivered }}</div>
+      <div class="text-xs text-grey-dark mb-1">FY24: 4,573,328</div>
+      <div class="text-xs" :class="trend.delivered === 'up' ? 'text-green' : 'text-red'">
+        {{ trend.delivered === 'up' ? '▲ Up' : '▼ Down' }} 4-week
+      </div>
+    </div>
+  </div>
+
+  <!-- Avg Unsub % -->
+  <div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+    <div class="bg-grey-lighter p-4 rounded shadow text-center">
+      <div class="text-grey-darker text-sm mb-1">Avg Unsub %</div>
+      <div class="text-2xl font-bold text-black mb-1">{{ totals.unsubAvg }}%</div>
+      <div class="text-xs text-grey-dark mb-1">Benchmark: 0.21%</div>
+      <div class="text-xs" :class="trend.unsub === 'down' ? 'text-green' : 'text-red'">
+        {{ trend.unsub === 'down' ? '▼ Down' : '▲ Up' }} 4-week
+      </div>
+    </div>
+  </div>
+  <div>
+	<p class="text-xs text-gray-500 mt-2">
+    Source: 
+    <a href="https://www.getresponse.com/resources/reports/email-marketing-benchmarks#average-results-by-industry" target="_blank" class="text-blue-600 underline">
+      GetResponse Email Marketing Benchmarks
+    </a>
+  </p>
+</div>
+</div>
+
+
+              <table class="t-styles w-full mt-5 bg-white text-sm" v-if="filteredAndSorted.length">
                 <thead>
                   <tr>
                     <th
