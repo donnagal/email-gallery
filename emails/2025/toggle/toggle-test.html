@@ -15,6 +15,11 @@
 		input:checked ~ .content {
 		display:block;
 		}
+    .hover-tab:hover {
+       background-color: #F5F5F5 !important; color: #909090 !important;
+        opacity: 6;
+        transition: all 0.9s ease;
+    }
 /* Gmail */
   u + .main .fallback { display: block !important; }
   u + .main .interactive { display:none !important; }
@@ -46,10 +51,7 @@
     <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #0F8045;">
     <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #0F8045;"><td style="width: 600px" class="w560"><![endif]-->
       <div class="column" style="text-align: left;color: white;font-size: 18px;line-height: 26px;font-family: Hind,Calibri,Arial,sans-serif;">
-                
-            <a href="" data-nl-type="mirrorPage" data-tracking-type="MIRROR_PAGE" style="color: white; font-size: 14px;text-decoration:none;">
-              View in browser
-            </a> 
+
 
           <!-- Heading (size-28)-->
           <div class="sm-mx-sm" style="Margin-top: 22px;Margin-bottom: 12px;Margin-left: 40px;Margin-right: 30px;">
@@ -69,123 +71,98 @@
       <!-- START: interactive -->
       <!--[if !mso]><!-->
 
+
         <div class="interactive">      
-          <label data-label="tab-1" data-tracking-id="tab" style="display: block; cursor: pointer;" onclick="trackAJOClick('tab-1')">
+          <label data-label="tab-1" data-tracking-id="tab" style="display: block; cursor: pointer;">
             <input type="checkbox">
             <table class="show" border="0" style="border-collapse: collapse;table-layout: fixed;" role="presentation">
               <tbody>
                 <tr>
-                  <td width="40" bgcolor="#0F8045">&nbsp;</td>
-                  <td data-label="q1-icon" valign="middle" bgcolor="#0F8045" style="text-align: center;">
-                      <table class="device-width" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="table-layout: fixed;border-collapse: collapse;" role="presentation">
+                  <td data-label="q1-icon" valign="middle" bgcolor="" style="text-align: center;">
+                      <table class="device-width" width="100%"  cellspacing="0" cellpadding="0" align="center" border="0" style="table-layout: fixed;border-collapse: collapse;margin-bottom: -1px;" role="presentation">
                       <tbody>
                         <tr>
                           <td valign="top" align="center">
-                            <table border="0" cellspacing="0" cellpadding="0" role="button">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="">
                               <tr>
-                              <td align="center" style="">
-                                  <img src="https://litmus-builder.s3.amazonaws.com/e0ba1a33-92b6-4aa1-8335-cb2819eb8530" alt="tab buttons." width="330" style="border: 0;display: block;height: auto;width: 100%;max-width: 330px;" />
-                              </td>
+                                <!-- Active Tab -->
+                                <td align="center" valign="middle" style="padding: 14px 24px; background-color: #ffffff; border-top-left-radius: 4px; border-top-right-radius: 4px; font-family: Arial, sans-serif; font-size: 14px;  line-height: 16px;font-weight: bold; color: #1A1A1A;">
+                                  Retirement income
+                                </td>
+                                <td>&nbsp;</td>
+                                <!-- Inactive Tab -->
+                                <td class="hover-tab" align="center" valign="middle" style="padding: 14px 24px; background-color: #8AC4A2;  border-top-left-radius: 4px; border-top-right-radius: 4px; font-family: Arial, sans-serif; font-size: 14px;  line-height: 16px;font-weight: normal; color: #ffffff;">
+                                  Super health check
+                                </td>
                               </tr>
                             </table>
+
+
                           </td>
                         </tr>
                       </tbody>
                     </table>
                   </td>
-                  <td width="40" bgcolor="#0F8045">&nbsp;</td>
               </tr>
                 <tr>
-                  <td width="40" bgcolor="#0F8045">&nbsp;</td>
-        
-                <td valign="top" bgcolor="#0F8045" style="color: white;margin:0;mso-line-height-rule: exactly;mso-text-raise: 8px;vertical-align: middle;width:500px;padding:10px;text-align: center;">
+                <td valign="top" bgcolor="white" style="color: #1A1A1A;margin:0;mso-line-height-rule: exactly;mso-text-raise: 8px;vertical-align: middle;width:100%;padding:10px;text-align: center;">
                 <table border="0" style="border-collapse: collapse;table-layout: fixed;" role="presentation">
                   <tbody>
                       <tr>
-                          <td width="39" bgcolor="#0F8045">&nbsp;</td>
-                          <td valign="top" bgcolor="#0F8045" style="color: white;margin:0;mso-line-height-rule: exactly;mso-text-raise: 8px;vertical-align: middle;width:500px;padding:10px;text-align: center;">
-                                  <p class="size-36" style="Margin: 0;font-family:'Hind',Tahoma,Arial,sans-serif;font-size:50px;line-height: 56px;color: white;padding: 15px;">
-                                  <strong>75%</strong>
-                                  </p>
-                                          <table class="device-width" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="table-layout: fixed;border-collapse: collapse;" role="presentation">
-                                            <tbody>
-                                              <tr>
-                                                <td valign="top" align="center">
-                                                  <table border="0" cellspacing="0" cellpadding="0" role="button">
-                                                    <tr>
-                                                      <td align="center" style="">
-                                                                                <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="max-width: 300px;">
-                                                              <tr>
-                                                                <td style="font-family: Arial, sans-serif; font-size: 18px; padding-bottom: 6px; color: white;text-align: center;">
-                                                                  Progress: It's a not so bad!
-                                                                </td>
-                                                              </tr>
-                                                              <tr>
-                                                                <td style="background-color: #81B99C; border-radius: 20px;" width="100%" height="16">
-                                                                  <table role="presentation" cellpadding="0" cellspacing="0" width="75%">
-                                                                    <tr>
-                                                                      <td height="16" style="background-color: white; border-radius: 20px;"></td>
-                                                                    </tr>
-                                                                  </table>
-                                                                </td>
-                                                              </tr>
-                                                            </table>
-                                                      </td>
-                                                    </tr>
-                                                  </table>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-
-                                  <p style="font-size: 10px;line-height: 18px;padding-left: 20px;padding-right: 20px;"> 
-                                  *^The score above compares your estimated retirement income with half of the ASFA Comfortable Retirement Standard for a couple at March 2024. Watch your personal video and read your statement for details of your estimated retirement income and full assumptions.
-                                </p>
-                            </td>
-                          <td width="39" bgcolor="#0F8045" style="">&nbsp;</td>
+                          <td valign="top" bgcolor="white" style="color: #1A1A1A;margin:0;mso-line-height-rule: exactly;mso-text-raise: 8px;vertical-align: middle;width:100%;padding:10px;text-align: center;">
+                    <p style="margin: 0;font-weight: bold;padding-top: 22px;">Retirement income estimate</p>
+                         <p class="size-36" style="font-family:'Hind',Tahoma,Arial,sans-serif;font-size:50px;line-height: 56px;color: #1A1A1A;margin: 0;padding-top: 30px;padding-bottom: 30px;">
+                          <strong>$1,500</strong>
+                          </p>
+                          <p style="font-size: 10px;line-height: 18px;padding-left: 20px;padding-right: 20px;padding-bottom: 30px;color: #515457;margin: 0;"> 
+                          *The lump sum is your estimated super balance at age 67. The fortnightly amount is your estimated retirement income from age 67 to 92, based on your super and any Age Pension you may be eligible for. 
+                          See your statement for details and the assumptions used to calculate this estimate. 
+                          </p>
+                        </td>
                       </tr>
                   </tbody>
                 </table> 
                   </td>
-                  <td width="40" bgcolor="#0F8045">&nbsp;</td>
               </tr>
               </tbody>
             </table> 
         
-              <table class="hide" border="0" style="border-collapse: collapse;table-layout: fixed;" role="presentation">
+              <table bgcolor="white" class="hide" border="0" style="border-collapse: collapse;table-layout: fixed;" role="presentation">
                 <tbody>
                 <tr>
-                  <td width="40" bgcolor="#0F8045">&nbsp;</td>
                   <td data-label="q1-icon" valign="middle" bgcolor="#0F8045" style="text-align: center;">
-                            <table class="device-width" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="table-layout: fixed;border-collapse: collapse;" role="presentation">
+                <table class="device-width" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="table-layout: fixed;border-collapse: collapse;margin-bottom: -1px;" role="presentation">
                 <tbody>
                   <tr>
                     <td valign="top" align="center">
-                      <table border="0" cellspacing="0" cellpadding="0" role="button">
-                        <tr>
-                          <td align="center" style="">
-                            <img src="https://litmus-builder.s3.amazonaws.com/46dfcb25-94d8-4654-b159-b376ddfbee0a" alt="tab buttons active." width="330" style="border: 0;display: block;height: auto;width: 100%;max-width: 330px;" />
-                          </td>
-                        </tr>
-                      </table>
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="">
+                              <tr>
+                                <!-- Inactive Tab -->
+                                <td class="hover-tab" align="center" valign="middle" style="padding: 14px 24px; background-color: #8AC4A2;  border-top-left-radius: 4px; border-top-right-radius: 4px; font-family: Arial, sans-serif; font-size: 14px;  line-height: 16px;font-weight: normal; color: #ffffff;">
+                                  Retirement income
+                                </td>
+
+                                <td>&nbsp;</td>
+                                <!-- Active Tab -->
+                                <td align="center" valign="middle" style="padding: 14px 24px; background-color: #ffffff; border-top-left-radius: 4px; border-top-right-radius: 4px; font-family: Arial, sans-serif; font-size: 14px;  line-height: 16px;font-weight: bold; color: #1A1A1A;">
+                                  Super health check
+                                </td>
+                              </tr>
+                            </table>
                     </td>
                   </tr>
                 </tbody>
               </table>
                   </td>
-                  <td width="40" bgcolor="#0F8045">&nbsp;</td>
               </tr>
                 </tbody>
               </table> 
-              <label class="content sm-mx-5" style="">
-                <div style="color: white;text-align: center;">
-                            <p class="size-36" style="font-family:'Hind',Tahoma,Arial,sans-serif;font-size:50px;line-height: 56px;color: white;">
-                          <strong>$1,500</strong>
-                          </p>
-                          <p style="font-size: 10px;line-height: 18px;padding-left: 20px;padding-right: 20px;"> 
-                          *The lump sum is your estimated super balance at age 67. The fortnightly amount is your estimated retirement income from age 67 to 92, based on your super and any Age Pension you may be eligible for. 
-                          See your statement for details and the assumptions used to calculate this estimate. 
-                          </p>
+              <label class="content" style="">
+                <div style="text-align: center;background-color: white;color: #1A1A1A;padding-top: 22px;padding-bottom: 22px;">
+                      <img src="https://image.ltms.app/pb/mt0xnff045lja39u0ep285fs3.png?min=0&max=100&cur=77" width="162" />
+                       <p style="font-size: 10px;line-height: 18px;padding-left: 20px;padding-right: 20px;padding-bottom: 30px;color: #515457;margin: 0;"> 
+                         *^The score above compares your estimated retirement income with half of the ASFA Comfortable Retirement Standard for a couple at March 2024. Watch your personal video and read your statement for details of your estimated retirement income and full assumptions.
+                      </p>
                     </div>
               </label>
             </label>
@@ -200,62 +177,89 @@
       <!--<![endif]-->
       <!-- END: interactive -->
 
+		  
+	 <!--  Outlook Fallback A -->	  
       <!--[if mso]>
-                  <div style="" align="center">
+     <div style="" align="center">
 
-                    <table cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; background-color: #F5F5F5; border-radius: 12px; font-family: Arial, sans-serif;">
-                        <tr>
-                        <td style="padding: 12px 24px; font-weight: bold; color: #1A1A1A; font-size: 16px;">
-                           <a  href="" data-nl-type="mirrorPage" data-tracking-type="MIRROR_PAGE" style="font-weight: bold; color: #1A1A1A; font-size: 16px;text-decoration: none;">
-                              Fortnightly
-                           </a> 
-                        </td>
-                        <td style="padding: 12px 24px; background-color: #0A5490; border-radius: 12px; font-weight: bold; color: #FFFFFF; font-size: 16px;">
-                         <a  href="" data-nl-type="mirrorPage" data-tracking-type="MIRROR_PAGE" style="font-weight: bold; color: #FFFFFF; font-size: 16px;text-decoration: none;">
-                           &nbsp;&nbsp;&nbsp; Progress&nbsp;&nbsp;&nbsp;
-                          </a>
-                        </td>
-                        </tr>
-                      </table>
+          <table class="device-width" bgcolor="#0F8045" width="600" align="center" border="0"  cellspacing="0" cellpadding="0" style="table-layout: fixed;border-collapse: collapse;" role="presentation">
+          <tbody>
+            <tr>
+              <td valign="top" align="center">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="">
+                  <tr>
 
+                    <td class="hover-tab" align="center" valign="middle" style="background-color: #8AC4A2;  border-top-left-radius: 4px; border-top-right-radius: 4px; font-family: Arial, sans-serif; font-size: 14px;  line-height: 16px;font-weight: normal; color: #ffffff;">
+                     <a  href="" data-nl-type="mirrorPage" data-tracking-type="MIRROR_PAGE" style="padding: 14px 24px; border-top-left-radius: 4px; border-top-right-radius: 4px;background-color: #8AC4A2; color: #FFFFFF; font-size: 16px;text-decoration: none;">Retirement income</a> 
+                    </td>
+
+                    <td align="center" valign="middle" style="padding: 14px 24px; background-color: #ffffff; border-top-left-radius: 4px; border-top-right-radius: 4px; font-family: Arial, sans-serif; font-size: 14px;  line-height: 16px;font-weight: bold; color: #1A1A1A;">
+                       Super health check
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+          <table cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;font-family: Arial, sans-serif;width: 600px;">
+              <tr>
+                <td style="font-family: Arial, Helvetica, sans-serif;">
+                    <div style="text-align: center;background-color: white;color: #1A1A1A;padding-top: 22px;padding-bottom: 22px;">
+                     <img src="https://image.ltms.app/pb/mt0xnff045lja39u0ep285fs3.png?min=0&max=100&cur=77" width="162" />
+                       <p style="font-size: 10px;line-height: 18px;padding-left: 20px;padding-right: 20px;padding-bottom: 30px;color: #515457;margin: 0;"> 
+                        <styrong>Outlook Fallback A </styrong> *^The score above compares your estimated retirement income with half of the ASFA Comfortable Retirement Standard for a couple at March 2024. Watch your personal video and read your statement for details of your estimated retirement income and full assumptions.
+                      </p>
+                    </div>
+                </td>
+              </tr>
+        </table>
                 </div>
-                  <div style="text-align: center;color: white;">
-                    <p class="size-22" style="font-family:'Hind',Tahoma,Arial,sans-serif;font-size:22px;line-height: 26px;color: white;">
-                    This is a fallback test! A
-                    </p>
-                  </div>
       <![endif]-->
-            <div class="fallback" style="display: none;">
-                  <div style="" align="center">
+		  
 
-                    <table cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; background-color: #F5F5F5; border-radius: 12px; font-family: Arial, sans-serif;">
-                        <tr>
-                        <td style="padding: 12px 24px; font-weight: bold; color: #1A1A1A; font-size: 16px;">
-                           <a  href="" data-nl-type="mirrorPage" data-tracking-type="MIRROR_PAGE" style="font-weight: bold; color: #1A1A1A; font-size: 16px;text-decoration: none;">
-                              Fortnightly
-                           </a> 
-                        </td>
-                        <td style="padding: 12px 24px; background-color: #0A5490; border-radius: 12px; font-weight: bold; color: #FFFFFF; font-size: 16px;">
-                         <a  href="" data-nl-type="mirrorPage" data-tracking-type="MIRROR_PAGE" style="font-weight: bold; color: #FFFFFF; font-size: 16px;text-decoration: none;">
-                           &nbsp;&nbsp;&nbsp; Progress&nbsp;&nbsp;&nbsp;
-                          </a>
-                        </td>
-                        </tr>
-                      </table>
+			<!-- GMAIL FALLBACK B (Hidden from Outlook) -->
+			<!--[if !mso]><!-->
+			<tr class="fallback" style="display: none;">
+			  <td align="center" style="">
+          <table class="device-width" bgcolor="#0F8045" width="600" align="center" border="0"  cellspacing="0" cellpadding="0" style="table-layout: fixed;border-collapse: collapse;" role="presentation">
+          <tbody>
+            <tr>
+              <td valign="top" align="center">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="">
+                  <tr>
+                    <!-- Inactive Tab -->
+                    <td class="hover-tab" align="center" valign="middle" style="background-color: #8AC4A2;  border-top-left-radius: 4px; border-top-right-radius: 4px; font-family: Arial, sans-serif; font-size: 14px;  line-height: 16px;font-weight: normal; color: #ffffff;">
+                     <a  href="" data-nl-type="mirrorPage" data-tracking-type="MIRROR_PAGE" style="padding: 14px 24px; border-top-left-radius: 4px; border-top-right-radius: 4px;background-color: #8AC4A2; color: #FFFFFF; font-size: 16px;text-decoration: none;">Retirement income</a> 
+                    </td>
 
-                </div>
-                  <div style="text-align: center;color: white;">
-                    <p class="size-22" style="font-family:'Hind',Tahoma,Arial,sans-serif;font-size:22px;line-height: 26px;color: white;">
-                    This is a fallback test! B
-                    </p>
-                  </div>
-            </div>
+                    <td>&nbsp;</td>
+                    <!-- Active Tab -->
+                    <td align="center" valign="middle" style="padding: 14px 24px; background-color: #ffffff; border-top-left-radius: 4px; border-top-right-radius: 4px; font-family: Arial, sans-serif; font-size: 14px;  line-height: 16px;font-weight: bold; color: #1A1A1A;">
+                       Super health check
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+          <table cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;font-family: Arial, sans-serif;width: 600px;">
+              <tr>
+                <td style="font-family: Arial, Helvetica, sans-serif;">
+                    <div style="text-align: center;background-color: white;color: #1A1A1A;padding-top: 22px;padding-bottom: 22px;">
+                     <img src="https://image.ltms.app/pb/mt0xnff045lja39u0ep285fs3.png?min=0&max=100&cur=77" width="162" />
+                       <p style="font-size: 10px;line-height: 18px;padding-left: 20px;padding-right: 20px;padding-bottom: 30px;color: #515457;margin: 0;"> 
+                        <styrong>GMAIL FALLBACK B</styrong> *^The score above compares your estimated retirement income with half of the ASFA Comfortable Retirement Standard for a couple at March 2024. Watch your personal video and read your statement for details of your estimated retirement income and full assumptions.
+                      </p>
+                    </div>
+                </td>
+              </tr>
+        </table>
+			  </td>
+			</tr>
+			<!--<![endif]-->
 
-
-          <!-- inner spacer -->
-          <div style="Margin-left: 10px;Margin-right: 10px;Margin-bottom: 5px;">
-            <div style="mso-line-height-rule: exactly;line-height: 5px;font-size: 1px;">&nbsp;</div>
-          </div>
 
 
           <!-- inner spacer -->
