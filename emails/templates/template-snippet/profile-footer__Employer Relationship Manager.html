@@ -1,0 +1,211 @@
+<%
+var relManagers = {
+  "Natasha Tanoto": {
+     phone: '0448 718 105', 
+     email: 'natasha.tanoto@cbussuper.com.au',
+     title: 'Employer Relationship Manager',
+     image: 'https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/e3e9c7252e9e7eb71b62f2e59eb3c9fb.jpg',
+   },
+   
+   "Gillian Huyskens": {
+     phone: '0429 060 931', 
+     email: 'gillian.huyskens@cbussuper.com.au',
+     title: 'Employer Relationship Manager',
+     image: 'https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/b5168ea470426a5c1f064b8ba2ea4b09.jpg',
+   },   
+
+   "Jim Docherty": {
+     phone: '0438 813 629', 
+     email: 'jim.docherty@cbussuper.com.au',
+     title: 'Business Partnership Manager',
+     image: 'https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/f6a8674b261ee19a194aa86ed4d3de00.jpg',
+   },
+   
+   "Belinda Tanner": {
+     phone: '0475 982 258', 
+     email: 'belinda.tanner@cbussuper.com.au',
+     title: 'Senior Employer Relationship Manager',
+     image: 'https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/6de0a8e4649d6fb323c5a346a1adeb1f.jpg',
+   },
+   
+   "Kylie Dallas": {
+     phone: '0477 363 016', 
+     email: 'kylie.dallas@cbussuper.com.au',
+     title: 'Senior Employer Relationship Manager',
+     image: 'https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/9b37510e8e58837829015c1695598e12.jpg',
+   },
+   
+   "Martha Coro": {
+     phone: '0429 166 785', 
+     email: 'martha.coro@cbussuper.com.au',
+     title: 'Business Development Manager',
+     image: 'https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/c59ba1e8dae44e28f49782b713ec8c3f.jpg',
+   },
+   
+   "Mark Wall": {
+     phone: '0455 440 167', 
+     email: 'mark.wall@cbussuper.com.au',
+     title: 'Senior Business Partnership Manager',
+     image: 'https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/85077c646f4cf2d896f20e0eacbeb79b.jpg',
+   },
+   
+   "Chris D'Astoli": {
+     phone: '0448 066 247', 
+     email: 'chris.d \'astoli@cbussuper.com.au',
+     title: 'Business Development Manager',
+     image: 'https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/89397ab2ec331a4b37b1373e8483299d.jpg',
+   },
+   
+   "Maria Armenio": {
+     phone: '0437 481 548', 
+     email: 'maria.armenio@cbussuper.com.au',
+     title: 'Employer Relationship Manager',
+     image: 'https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/d931ee9d3868236a795c43496d8b7541.jpg',
+   },
+   
+   "Sally Caruana": {
+     phone: '0410 419 604', 
+     email: 'sally.caruana@cbussuper.com.au',
+     title: 'Senior Employer Relationship Manager',
+     image: 'https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/2c612a5ac518231ffe0595230c782a3d.jpg',
+   },
+   
+   "Salma Sallie": {
+     phone: '0477 714 217', 
+     email: 'salma.sallie@cbussuper.com.au',
+     title: 'Senior Employer Relationship Manager',
+     image: 'https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/eaf2fc95273b4fb57e6460d728a81c42.jpg',
+   },
+   
+   "Igor Zecic": {
+     phone: '0457 546 842', 
+     email: 'igor.zecic@cbussuper.com.au',
+     title: 'Senior Employer Relationship Manager',
+     image: 'https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/c003f15ef1aed59c201353cb3bc953e2.jpg',
+   },
+   
+   
+  "Default": {
+     phone: '1300 361 784', 
+     email: '',
+     title: '',
+     image: ''
+  }
+}
+
+var relMan = {}; 
+if(relManagers[recipient.accMgrName]){
+  relMan = relManagers[recipient.accMgrName];
+} else { 
+  relMan = relManagers['Default'];
+}
+
+
+%> <!-- ### START: WHITE SECTION ### -->
+   <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+    <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
+    <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 600px" class="w560"><![endif]-->
+      <div class="column" style="text-align: left;color: #000;font-size: 17px;line-height: 26px;font-family: Calibri,Carlito,PT Sans,Trebuchet MS,sans-serif;">
+    
+
+        <!-- Contact Text -->
+        <div style="Margin-left: 20px;Margin-right: 20px; Margin-top: 0px;">
+          <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
+          
+            <p style="Margin-bottom: 20px;text-align: left;">
+              <%
+              if( relMan == relManagers['Default'] )
+              {
+                %>
+
+                 If you have any questions about your super, we’re here to help.  Give us a call on <strong><%= relMan.phone %></strong>.
+                 <br/><br/>
+                 Yours sincerely,
+                 <br/><br/>
+                 Marianne Walker<br/>
+                 Group Executive, Member and Employer Experience
+
+                <%
+              } else { 
+                %> 
+
+                  If you have any questions about your super, please get in touch with <strong><%= recipient.accMgrName %></strong>, your Employer Relationship Manager.
+                  <br/><br/>
+                  Take care,
+
+              <%
+               }
+            %>
+            </p>
+          </div>
+      </div>
+
+    
+      </div>
+    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+    </div>
+  </div>
+<!-- ### END: WHITE SECTION ### -->
+
+
+<%
+if( relMan == relManagers['Default'] )
+{
+  %> <%
+} else { 
+  %> 
+ <!-- ### START: 30/70 WHITE SECTION (Profile Block) ### -->
+ <div class="layout fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167450px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
+  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 100px" valign="top" class="w160"><![endif]-->
+    <div class="column narrow-20p" style="text-align: left;color: #000;font-size: 17px;line-height: 26px;font-family: calibri,arial,sans-serif;Float: left;max-width: 320px;min-width: 100px; width: 320px;width: calc(72100px - 12000%);">
+     
+      <!-- Image Profile -->
+      <div style="Margin-bottom:8px;Margin-left: 20px;font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="left">
+        <img class="gnd-corner-image gnd-corner-image-center gnd-corner-image-bottom" style="border: 0;display: block;height: auto;width: 100%;max-width: 98px;"  width="98" 
+        alt="<%= recipient.accMgrName %>" src="<%= relMan.image %>" >
+      </div>
+
+    </div>
+  <!--[if (mso)|(IE)]></td><td style="width: 482px" valign="top" class="w360"><![endif]-->
+    <div class="column wide-90p" style="text-align: left;color: #000;font-size: 17px;line-height: 26px;font-family: calibri,arial,sans-serif;Float: left;max-width: 450px;min-width: 320px; width: 320px;width: calc(8000% - 47600px);">
+    
+      <!-- Text -->
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 0;Margin-bottom: 12px;">
+        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+          <p class="size-16" style="Margin-top: 0;Margin-bottom: 0;font-size: 16px;line-height: 22px;" lang="x-size-16">
+            <strong><%= relMan.title %></strong>
+          </p>
+          <p class="size-19" style="Margin-top: 0;Margin-bottom: 0px;font-size: 19px;line-height: 22px;" lang="x-size-19">
+            <strong><span style="color:#1DA9C4"><%= recipient.accMgrName %></span></strong>
+          </p>
+          <p class="size-14" style="Margin-top: 0;Margin-bottom: 0;font-size: 14px;line-height: 23px;" lang="x-size-14">
+            <a href="mailto:<%= relMan.email %>" style="color: black;"><%= relMan.email %></a>
+            <br/>
+           <a style="color: black;" href="tel:<%= relMan.phone %>"><%= relMan.phone %></a>  
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Inner spacer -->
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 19px;">
+        <div style="mso-line-height-rule: exactly;line-height: 19px;font-size: 1px;">&nbsp;</div>
+      </div>
+    
+  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+  </div>
+</div>
+</div>
+<!-- ### END: 30/70 WHITE SECTION (Profile Block) ### -->
+
+<%
+ }
+%>
+
+
+
+
+
+
+

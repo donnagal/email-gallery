@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: both mandatory;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-snap-type: both mandatory;
+}
+
+#nav {
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  scroll-snap-align: start;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  border-bottom: 1px solid rgb(49, 182, 87);
+
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.page-cover-links {
+  width: 100%;
+  max-width: 400px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.bar-vertical {
+  background-color: #fff;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.panel-green-muted {
+  padding: 16px;
+  background-color: #3f9164;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.text-link {
+  color: #3185a9;
+  text-decoration: underline;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.link-source {
+  position: fixed;
+  bottom: 15px;
+  right: 16px;
+  text-decoration: underline;
+}
+
+.mw-50 {
+  max-width: 50%;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.bg-green.bg-green {
+  background-color: #0f8045;
+}
+
+.bg-cream {
+  background-color: #f4efeb;
+}
+
+.bg-green-bright {
+  background-color: #00fb92;
+}
+
+.bg-red {
+  background-color: #ff7a5b;
+}
+
+.bg-blue-bright {
+  background-color: #73feff;
+}
+
+.bg-brown {
+  background-color: #99866d;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-grey {
+  background-color: #1a1a1a;
+}
+
+.text-green-bright {
+  color: #00fb92;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-green-muted {
+  color: #3f9164;
+}
+
+.text-green-light {
+  color: #47d48c;
+}
+
+.text-grey {
+  color: #1a1a1a;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-white {
+  color: #fff;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Superannuation Callback Request</title>
+  <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+	<!-- Start: ADOBE SCRIPTS -->
+	<script type="text/javascript">// <![CDATA[
+        function formSubmit(e) {
+
+            var consent = "";
+            // have to get values from radio buttons manually for IE
+            var radios = document.getElementsByName("consent-given")
+            for (var i = 0; i < radios.length; i++) {
+                var consentRadio = radios[i]
+                if (consentRadio.checked) {
+                    consent = consentRadio.value
+                }
+            }
+            var memberID = document.forms["page-form"]["memberID"].value
+            var dob = document.forms["page-form"]["mbrDOBSubmittedForm"].value
+
+            var memberIDPattern = /^[0-9]*$/;
+            var IEDatePattern = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}/;
+            if (!!consent && !!dob && !!memberID && memberIDPattern.test(memberID)) {
+
+                var normalisedDOB = dob 
+                if (IEDatePattern.test(dob)) {
+                    var dobParts = dob.split('/');
+                    var day = dobParts[0]
+                    var month = dobParts[1]
+                    var year = dobParts[2]
+
+                    normalisedDOB = year + '-' + month + '-' + day
+                }
+                document.controller.setValue('/ctx/visitor/consent', consent, 'consent-given')
+                document.controller.setValue('/ctx/visitor/memberID', memberID, 'memberID')
+                document.controller.setValue('/ctx/visitor/dobGiven', normalisedDOB, 'mbrDOBSubmittedForm')
+
+                document.controller.submit('next')
+            }
+
+            return false;
+        }
+    // ]]>
+    </script>
+     <script>
+          var digitalData = digitalData || {};
+          digitalData = {"page":{"pageInfo":{"pageName":"ACM: Callback Request Supermatch Landing","brand":"Cbus"},"category":{}}}
+          digitalData.page.pageInfo.pageUrl = window.location.href;
+          digitalData.page.pageInfo.domain = window.location.hostname;
+    </script>
+	<!-- Dev Cbus -->
+	<script type="text/javascript" src="//assets.adobedtm.com/launch-ENc106691bb5db4ed1b31e0d95f8849685-development.min.js" async></script>
+<!-- End: ADOBE SCRIPTS -->
+
+	<link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/zgy2nvk.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+	<link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/tailwind.css" rel="stylesheet">
+	<link href="https://email-gallery.netlify.app/emails/landing-pages/2022/css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="bg-no-repeat bg-cover bg-top lg:h-banner h-48" style="background-image: 
+	url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/b9bb42fa2e00e7d12311e25b7d4c3e3febd5002a2c5e0e2c58714bd4e3875fb6.jpg')">
+    
+	<div class="bg-gradient flex content-center lg:pt-0 flex-wrap lg:h-banner h-48">
+		<div class="container mx-auto px-10 lg:px-0">
+			<div class="fadeup w-full text-white lg:px-24">
+				<p class="-mt-5 font-medium uppercase">Super</p>
+				<h1 class="font-heavy mb-8 mark-bold lg:text-6xl text-4xl leading-none">
+					Callback Request
+				</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="bg-white">
+
+	<div class="container mx-auto lg:px-24 px-5 py-5">
+		<p class="text-right"><strong>Your member number:</strong> <span class="badge-teal text-sm">[Member ID]</span></p>
+
+		<div id="confirm" class="flex">
+			<div class="w-full p-10 bg-white rounded-md text-center">
+			  <h2 class="text-3xl font-heavy pb-3">Please confirm your mobile number</h2>
+			  <p class="mx-auto lg:w-2/3 text-brand-gray font-400 text-xl">
+				  Before we call you, let’s check we have the right mobile number for you.<br/>
+				  Does your mobile number end with
+				  <strong class="number badge-teal mt-3"><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[mobilePhone]</span></strong>?
+			  </p>
+			  <p class="text-center pt-5 text-brand-gray font-400 text-xl">
+				  <form class="cb-form">
+					  <p class="hidden">
+						  <input id="mbrSuperMatchCallBackDate" class="cb-checkbox" type="checkbox"  value="true" data-nl-xpath="@mbrSuperMatchCallBackDate" data-nl-label="Request Callback" data-nl-ismandatory="true" data-nl-bindto="xpath" required checkedValue="Y"/>
+						  <label for="mbrSuperMatchCallBackDate" class="text-lg font-normal">Yes</label>
+					  </p>
+					  <button class="cta-dark lg:w-auto w-full m-3"  id="a156575514329242" href="#" data-nl-type="action" data-nl-transition="next" data-nl-action="next">
+						  Yes, that’s my number 
+					  </button>
+					  <span id="no" class="cta-light lg:w-auto w-full lg:inline block m-3 cursor-pointer">
+						  No, that’s not right
+					  </span>
+				  </form>
+			  </p>
+  
+			</div>
+	  </div>
+
+	<div id="show" class="flex">
+		<div class="w-full p-10 bg-white rounded-md text-center">
+			<h2 class="text-3xl font-heavy pb-3">Looks like you’ll have to call us!</h2>
+			  <p class="mx-auto lg:w-2/3  text-brand-gray font-400 text-xl">
+				The good news is that you can do two things at once, update your mobile number and at the same time, ask us to check if you have lost or unclaimed super. 
+				<br/><br/>
+				Call <a class="font-bold" target="_blank" href="tel:1300 361 784">1300 361 784</a>
+			  </p>
+			  <p class="text-brand-gray font-400 text-xl pt-2">Mon to Fri from 8am to 8pm AEDT/AEST to speak to a Cbus consultant.</p>
+		  </div>
+	</div>
+
+
+</div>
+</div>
+
+
+
+  <!-- Contact -->
+  <div class="bg-brand-gray">
+	<div class="container mx-auto lg:px-24 px-5 py-12">
+		<div class="mx-auto lg:w-full text-brand-black">
+		<h2 class="lg:text-5xl text-3xl font-heavy">We’re here to help</h2>
+		<p class="font-light pt-5 text-xl font-bold pb-3">
+			If you have any questions or would like to discuss your options further, we can help get your super sorted.
+		</p>
+		<div class="flex flex-wrap text-center">
+			<div class="w-full lg:w-1/2">
+				<a href="tel:1300 361 784" class="cta-light block m-3 relative font-bold">1300 361 784 <i class="fa-solid fa-angle-right text-sm absolute right-0 pr-5"></i></a>
+				<p class="text-brand-gray lg:pb-0 pb-5">Mon to Fri from 8am to 8pm AEDT/AEST</p>
+			</div>
+			<div class="w-full lg:w-1/2">
+				<a href="mailto:cbusenq@cbussuper.com.au" class="cta-light block m-3 relative font-bold">cbusenq@cbussuper.com.au <i class="fa-solid fa-angle-right text-sm absolute right-0 pr-5"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+</div>
+
+<footer class="bg-brand-black">
+	<div class="container mx-auto">
+		<div class="w-full  bg-brand-black font-heavy text-white">
+			<div class="w-full lg:px-24 px-10 pb-14 flex flex-col">
+	
+				<div class="flex pt-20 pb-12">
+					<div class="lg:w-1/5">
+						<a target="_blank" class="hidden md:block cursor-pointer text-white hover:text-white" href="https://www.cbussuper.com.au/about-us/who-we-are">
+							About
+						</a>
+					</div>
+					<div class="lg:w-1/5">
+						<a target="_blank" class="hidden md:block cursor-pointer text-white hover:text-white" href="https://www.cbussuper.com.au/tools-resources/advice-services">
+							Advice Services
+						</a>
+					</div>
+					<div class="lg:w-1/5">
+						<a target="_blank" class="hidden md:block cursor-pointer text-white hover:text-white" href="https://www.comms.cbussuper.com.au/scripts/cbus/seminars/#upsem">
+							All webinars
+						</a>
+					</div>
+					<div class="lg:w-1/5">
+						<a target="_blank" class="hidden md:block cursor-pointer text-white hover:text-white" href="https://www.cbussuper.com.au/support/contact">
+							Contact
+						</a>
+					</div>
+					<div class="lg:w-1/5">
+						<div class="flex flex-row space-x-8 items-center justify-end text-lg text-white">
+							<a target="_blank" href="https://www.facebook.com/cbussuperfund">
+								<i class="fab fa-facebook-f"></i>                           
+							</a>
+							<a target="_blank" href="https://twitter.com/cbussuperfund">
+								<i class="fab fa-twitter"></i>   
+							</a>
+							<a href="https://www.linkedin.com/company/cbus-super-fund">
+								<i class="fab fa-linkedin-in"></i>                            
+							</a>
+						</div>
+					</div>
+				</div>
+	
+					<hr class="border-gray-300"/>
+		
+					<div class="flex flex-wrap">
+						<div class="lg:w-1/5 w-1/2 w-full pt-10">
+							<a target="_blank" href="https://www.cbussuper.com.au/">
+								<img class="mt-6 hover:opacity-75"  src="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/Cbus-ISA-Footer-Logo-2017.png" alt="Cbus Super logo" style="width: 130px;">
+							</a>
+						</div>
+						<div class="lg:w-1/5 w-1/2 pt-10">
+							<p class="font-heavy">Awards</p>
+							<img class="h-16" style="margin-left: -4px;" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/48cd175c527f8d40f8996ecc7b7519e799ce9b9457f86e3d8d6c8d99bb70761c.gif" />
+						</div>
+						<div class="lg:w-1/5 w-1/2 pt-10">
+							<p class="font-heavy">Get the Cbus app</p>
+							<div class="flex">
+								<a target="_blank" class="p-1 hover:opacity-75" href="https://itunes.apple.com/au/developer/cbus-super-fund/id915194834">
+									<img src="https://www.cbussuper.com.au/content/dam/cbus/images/app/appstore-apple-xs.png" alt="Apple Appstore">
+								</a>
+								<a target="_blank" class="p-1 hover:opacity-75" href="https://play.google.com/store/apps/developer?id=Cbus%20Super%20Fund&amp;hl=en">
+									<img src="https://www.cbussuper.com.au/content/dam/cbus/images/app/appstore-google-xs.png" alt="Google Playstore">
+								</a>
+							</div>
+						</div>
+					</div>
+	
+			</div>
+		</div>
+	</div>
+		<div class="bg-white">
+			<div class="container mx-auto">
+			<div class="w-full lg:px-24 px-10 py-5 flex flex-col text-brand-black">
+				<p class="w-full text-gray-500 text-sm">©<span id="year"></span> Cbus Super. All rights reserved. Cbus ABN 75 493 363 262.</p>
+			</div>
+			</div>
+		</div>
+</footer>
+
+<script>
+	document.getElementById("year").innerHTML = new Date().getFullYear();
+	$(document).ready(function(){
+		$('label').click();
+
+		$("#show").hide();
+		$("#no").click(function(){
+			$("#show").show();
+			$("#confirm").hide();
+ 		 });
+
+		txt = $.trim($('.number').text());
+		$('.number').text( "### ### " + txt.substring (7, txt.length + 3));
+
+	});
+</script>
+
+</body>
+</html>

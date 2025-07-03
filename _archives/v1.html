@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Email Gallery</title>
+  <link href="/images/favion.png" rel="icon" type="image/x-icon" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
+  <link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
+  <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="bg-black mx-auto text-white px-5 text-center">
+      <div class="flex py-2">
+        <div class="flex-1">
+          <h1 class="text-xl">Cbus email gallery</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<div id="nav">
+  <nav class="animate-add z-100">
+    <div class="nav-overlay"></div>
+    <button type="button" class="slide-toggle">
+        <div class="menu-wrapper">
+            <div class="hamburger-menu"></div>	  
+        </div>
+    </button>
+    <div class="menu z-100">
+        <div class="menu-inner">
+            <div class="bg-grey-darkest h-screen p-8 font-bold">
+                <ul class="list-reset text-xl mt-32">
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/" class="text-teal-lighter hover:text-white no-underline">Email galley</a>
+                    </li>
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/pages/utm-tracking" class="text-teal-lighter hover:text-white no-underline">UTM Tracking tool</a>
+                    </li>
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/pages/reports/" class="text-teal-lighter hover:text-white no-underline">Email Report Dashboard</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+     </div>
+  </nav>
+</div>
+
+  <div id="items">
+    
+    <nav :class="active">
+      <form autocomplete="off">
+        <div class="flex w-3/4 mx-auto mt-10 mb-5">
+          <div class="w-full text-center text-gray-700">
+            <input id="myInput" type="text" class="pl-16 py-4 bg-grey-lighter w-full rounded-full shadow-inner focus:outline-none focus:bg-grey-lightest" 
+            placeholder="Search emails: SIS, Event, Statement..." v-model="search_filter" @keyup="show = !show">
+            
+
+            <div class="mt-2 text-left">
+              <span @click="show = !show" class="ml-4"> <i class="fas fa-link"></i></span>
+              <p class="text-xs p-4 text-black flex-1 inline-block" v-if="show">
+                share filter link: <a class="text-xs text-grey-dark pl-3" target="blank" href="https://email-gallery.netlify.app/?search={{ search_filter }}" > https://email-gallery.netlify.app/?search={{ search_filter }}</a>
+              </p>
+            </div>
+
+          </div>
+          <div class="flex-1 -ml-20">
+            <button class="text-3xl py-2 px-8 rounded-full text-white bg-blue hover:bg-red focus:outline-none" @click="clear(i)"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+      </form>
+
+      <div id="submenu" class="w-full mb-5">
+        <div class="text-center">
+          <button class="px-5 pt-5 text-grey-dark focus:outline-none line-active" @click="selectItem('link-1')" @click.prevent="setStatus('')">All</button>
+          <button class="px-5 pt-5 text-grey-dark focus:outline-none" @click="selectItem('link-2')" @click.prevent="setStatus('template')">Templates</button>
+          <button class="px-5 pt-5 text-grey-dark focus:outline-none" @click="selectItem('link-3')" @click.prevent="setStatus('event')">Event</button>
+          <button class="px-5 pt-5 text-grey-dark focus:outline-none" @click="selectItem('link-4')" @click.prevent="setStatus('mbr')">Member</button>
+          <button class="px-5 pt-5 text-grey-dark focus:outline-none" @click="selectItem('link-5')" @click.prevent="setStatus('employer')">Employer</button>
+          <button class="px-5 pt-5 text-grey-dark focus:outline-none" @click="selectItem('link-6')" @click.prevent="setStatus('external')">External Inspo</button>
+        </div>
+    </div>
+</nav>
+
+
+
+    <div class="flex flex-wrap lg:mx-32">
+                <a target="_blank" :href="item.url" class="lg:w-1/4 md:w-1/2 w-full p-5 text-black hover:text-grey-dark no-underline"
+                    v-for="item in items | filterBy search_filter in 'name' | filterBy status_filter in 'group'"
+                    v-show="setPaginate($index)">
+
+                    <img class="border-2" :src="item.pic">
+
+                    <div class="mt-1">
+                      <h3 class="text-sm font-nromal">
+                           {{ item.name }}
+                      </h3>
+                  </div>
+                </a>
+     </div>
+
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  
+  <script src="js/global.js"></script>
+  <script src="js/vue-email-gallery.js"></script>
+  <script src="js/submenu.js"></script>
+</body>
+
+</html>

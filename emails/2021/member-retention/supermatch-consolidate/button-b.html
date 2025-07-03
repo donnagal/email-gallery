@@ -1,0 +1,775 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!--[if IE]><html xmlns="http://www.w3.org/1999/xhtml" class="ie"><![endif]--><!--[if !IE]><!--><html style="margin: 0;padding: 0;" xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]--><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
+  <meta name="viewport" content="width=device-width">
+  <link href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" rel="icon" type="image/x-icon" />
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    table {
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    * {
+      line-height: inherit;
+    }
+    [x-apple-data-detectors],
+    [href^="tel"],
+    [href^="sms"] {
+      color: inherit !important;
+      text-doration: none !important;
+    }
+    a:hover,.btn a:hover,
+    a.btn img:hover,
+    .btn a:focus {
+      opacity: 0.8;
+    }
+    /* brand colours*/
+    .red {color: #e10000} /* brand colour*/
+    .cream  {color: #f3f3f3;}   /* background colour*/
+    .grey-dark  {color:#333333;}  /* Content background colour*/
+    .grey-darker   {color: #262626;}  /* Content Heading & Text links*/
+    .grey {color: #5c5c5c ;} /* body text*/
+    /*animations*/
+    /*fade*/
+     .fade {
+       -webkit-animation:fade 1s linear;
+       -moz-animation:fade 1s linear ;
+       animation:fade 1s linear;
+     }
+     @-webkit-keyframes fade {
+       0%   { opacity: 0.3; }
+     }
+    /* main layout*/
+    .layout-lg, .layout,
+    .column {
+      transition: width 0.25s ease-in-out, max-width 0.25s ease-in-out;
+    }
+    .layout-lg, .layout,
+    .header {
+      max-width: 400px !important;
+      -fallback-width: 95% !important;
+      width: calc(100% - 20px) !important;
+    }
+    .column {
+      max-width: 400px !important;
+      width: 100% !important;
+    }
+    .snippet,
+    .webversion {
+      width: 50% !important;
+    }
+    .ie .btn {
+      width: 100%;
+    }
+    .ie .layout,
+    [owa] .layout,
+    .ie .one-col .column,
+    [owa] .one-col .column {
+      max-width: 600px !important;
+      width: 600px !important;
+    }
+    .ie .fixed-width.has-border,
+    [owa] .fixed-width.has-border,
+    .ie .has-gutter.has-border,
+    [owa] .has-gutter.has-border {
+      max-width: 602px !important;
+      width: 602px !important;
+    }
+    .ie .two-col .column,
+    [owa] .two-col .column {
+      max-width: 300px !important;
+      width: 300px !important;
+    }
+    .ie .three-col .column,
+    [owa] .three-col .column,
+    .ie .narrow,
+    [owa] .narrow {
+      max-width: 200px !important;
+      width: 200px !important;
+    }
+    .ie .wide,
+    [owa] .wide {
+      width: 400px !important;
+    }
+    .ie .fixed-width .layout__inner {
+      border-left: 0 none white !important;
+      border-right: 0 none white !important;
+    }
+    .layout-fixed-width,
+    .mso .layout-full-width {
+      background-color: #ffffff;
+    }
+    @media only screen and (min-width: 620px) {
+      .column {
+        display: table-cell;
+        Float: none !important;
+        vertical-align: top;
+      }
+      .layout-lg {
+        max-width: 755px !important;
+        width: 755px !important;
+      }
+      .layout,
+      .one-col .column {
+        max-width: 600px !important;
+        width: 600px !important;
+      }
+      .two-col .column {
+        max-width: 300px !important;
+        width: 300px !important;
+      }
+      .three-col .column,
+      .column.narrow {
+        max-width: 150px !important;
+        width: 150px !important;
+      }
+      .column.wide {
+        width: 400px !important;
+      }
+    }
+    @media (max-width: 321px) {
+      .layout-lg, .layout,
+      .column {
+        min-width: 320px !important;
+        width: 320px !important;
+      }
+    }
+      .lg-layout-lg, .lg-layout,
+      .lg-column {
+        transition: width 0.25s ease-in-out, max-width 0.25s ease-in-out;
+      }
+      .lg-layout-lg, .lg-layout,
+      .header {
+        max-width: 400px !important;
+        -fallback-width: 95% !important;
+        width: calc(100% - 20px) !important;
+      }
+      .lg-column {
+        max-width: 400px !important;
+        width: 100% !important;
+      }
+      .ie .lg-layout,
+      [owa] .lg-layout,
+      .ie .lg-one-col .lg-column,
+      [owa] .lg-one-col .lg-column {
+        max-width: 750px !important;
+        width: 750px !important;
+      }
+      .ie .lg-fixed-width.has-border,
+      [owa] .lg-fixed-width.has-border,
+      .ie .has-gutter.has-border,
+      [owa] .has-gutter.has-border {
+        max-width: 602px !important;
+        width: 602px !important;
+      }
+      .ie .two-col .lg-column,
+      [owa] .two-col .lg-column {
+        max-width: 300px !important;
+        width: 300px !important;
+      }
+      .ie .three-col .lg-column,
+      [owa] .three-col .lg-column,
+      .ie .narrow,
+      [owa] .narrow {
+        max-width: 200px !important;
+        width: 200px !important;
+      }
+      .ie .lg-fixed-width .lg-layout__inner {
+        border-left: 0 none white !important;
+        border-right: 0 none white !important;
+      }
+      .lg-layout-lg-fixed-width,
+      .mso .lg-layout-full-width {
+        background-color: #ffffff;
+      }
+      @media only screen and (min-width: 620px) {
+        .lg-column {
+          display: table-cell;
+          Float: none !important;
+          vertical-align: top;
+        }
+        .lg-layout-lg {
+          max-width: 755px !important;
+          width: 755px !important;
+        }
+        .lg-layout,
+        .lg-one-col .lg-column {
+          max-width: 750px !important;
+          width: 750px !important;
+        }
+        .two-col .lg-column {
+          max-width: 300px !important;
+          width: 300px !important;
+        }
+        .three-col .lg-column,
+        .lg-column.narrow {
+          max-width: 200px !important;
+          width: 200px !important;
+        }
+        .lg-column.wide {
+          width: 400px !important;
+        }
+      }
+      @media (max-width: 321px) {
+        .lg-layout-lg, .lg-layout,
+        .lg-column {
+          min-width: 320px !important;
+          width: 320px !important;
+        }
+      }
+      .shade {box-shadow: 0 5px 5px #b7b7b7; }
+        @media only screen and (max-width: 620px) {
+          .hide { display: none !important; }
+        }
+        @media only screen and (max-width: 755px) and (min-width: 624px), @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+          .lg-layout, .lg-one-col .lg-column {
+            width: calc(100% - 66px) !important; 
+          } 
+          .lg-layout__inner.hero  { background-color: #f3f1ee !important; }
+          .hide img { opacity: 0;}
+          .shade { box-shadow:0 0 0 #f3f1ee !important; }
+        }
+        /*fade*/
+         .fade {
+           -webkit-animation:fade 1s linear;
+           -moz-animation:fade 1s linear ;
+           animation:fade 1s linear;
+         }
+         @-webkit-keyframes fade {
+           0%   { opacity: 0.3; }
+         }
+    @media screen yahoo {
+      * {
+        overflow: visible!important
+      }
+      .y-overflow-hidden {
+        overflow: hidden!important
+      }
+    }
+    .shade {box-shadow: 0 5px 5px #b7b7b7; }
+    .corners-top {border-radius: 4px 4px 0 0;}
+    .corners-bottom {border-radius: 0 0 4px 4px;}
+
+    /* Toogle */
+    input,
+    .toogle-hide,
+    .toogle-content,
+    input:checked ~ .toogle-show {
+      display:none;
+    }
+    input:checked ~ .toogle-hide,
+    input:checked ~ .toogle-content {
+      display:block;
+    }
+
+    @media only screen and (max-width: 620px) {
+      .m-block {
+        display:block; 
+        box-sizing:border-box; 
+        clear:both;
+        width: 100% !important;
+      }
+      .m-full { width: 100% !important;}
+      .m-p-0 { padding: 0 !important;}
+      .mso-browser { display: block !important; }
+      .sm-hide { display: none !important} 
+    }
+
+    </style>
+  <title>Cbus Mail</title>
+  <!--[if gte mso 9]><xml>
+   <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+   </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+  <!--[if (mso)|(mso 16)]>
+  <style type="text/css">
+  body, table, td, a, span { font-family: Arial, Helvetica, sans-serif !important; }
+  a {text-decoration: none;}
+  </style>
+  <![endif]-->
+  <!--[if mso 16]>
+  <style>
+    .bg-split {width: 600px !important;background-color: #f3f1ee;}
+     .hide { display:none !important; }
+     .bg-split_02 { width: 600px !important; }
+     .header-ol {background-color: #f3f1ee !important;}
+     .ol-header-title { padding-left:10px !important;}
+   </style>
+   <![endif]-->
+  <meta name="robots" content="noindex,nofollow"></meta>
+
+  </head>
+<!--[if mso]>
+<body class="mso">
+<![endif]-->
+<!--[if !mso]><!-->
+
+  <META name=GENERATOR content="MSHTML 11.00.10570.1001"></HEAD>
+<body class="half-padding" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;">
+  <!--<![endif]-->
+      <table class="wrapper" style="border-collapse: collapse;table-layout: fixed;min-width: 320px;width: 100%;background-color: #f8f8f8;" cellpadding="0" cellspacing="0" role="presentation"><tbody><tr><td>
+    
+  
+    <div role="section">
+      
+      <!-- spacer -->
+      <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 20px;">&nbsp;</div>
+
+      <span class="link-black"><%@ include view='MirrorPage' %> </span>
+
+
+ <!-- ### START HERO OVERLAP ### -->
+    <div class="lg-layout lg-one-col lg-fixed-width" style="Margin: 0 auto;max-width: 750px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+      <div class="lg-layout__inner hero" style="border-collapse: collapse;display: table;width: 100%;background-color: #c5bcba;">
+      <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" border="0" role="presentation">
+        <tr class="lg-layout-lg-fixed-width" style="background-color: #c5bcba;font-size:0px; line-height:0px; border-collapse: collapse;">
+          <td align="left" class="w560"><![endif]-->
+        <div class="lg-column y-overflow-hidden" style='font-size: 0; line-height: 0;overflow: hidden;text-align: center;color: #5c5c5c;max-width: 750px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);'>
+          <table class="bg-split" style="border-collapse: collapse;table-layout: fixed;" role="presentation">
+            <tbody>
+              <tr role="navigation" style="font-size:0px; line-height:0px; border-collapse: collapse;">
+                <td class="hide slide-l" align="left" valign="bottom" class="" style="border: 0;padding:0;display: block;font-size: 0; line-height: 0;">
+                  <img src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/hero_001.jpg" alt=""style="border: 0;display: block;height: auto;max-width: 100%;border: 0;padding:0;font-size: 0; line-height: 0;"/>
+                </td>
+                <td class="" align="right" valign="bottom" style="width: 600px;border: 0;padding:0;font-size: 0; line-height: 0;">
+                  <img class="bg-split_02" style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" alt="Consolidating is super easy. It’s just a few minutes work."
+                  src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/hero_002.jpg" />
+                </td>
+                <td class="hide" align="left" valign="bottom" class="" style="border: 0;padding:0;display: block;font-size: 0; line-height: 0;">
+                  <img src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/hero_003.jpg" alt="" style="border: 0;display: block;height: auto;max-width: 100%;"/>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+      </div>
+    </div>
+ <!-- ### END HERO OVERLAP ### -->
+
+
+<!-- ## START TEXT BLOCK ### -->
+        <div class="layout one-col fixed-width" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+          <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: white;">
+          <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: white;"><td style="width: 600px" class="w560"><![endif]-->
+            <div class="column" style="text-align: left;color: black;font-size: 16px;line-height: 26px;font-family: calibri,arial,sans-serif;;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);">
+              
+          <!-- Member number -->
+          <div style="Margin-left: 20px;Margin-right: 20px;Margin-top:0;">
+            <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
+              <p style="Margin-bottom: 0;font-style: normal;font-weight: bold;color: black;font-size: 17px;line-height: 26px;text-align: right;">
+                  Member number: <%=  recipient.mbrAccID %>
+              </p>
+            </div>
+          </div>
+
+              <!-- Text -->
+              <div style="Margin-left: 20px;Margin-right: 20px; Margin-top: 5px;">
+                  <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
+                   
+                    <!-- text -->
+                    <p style="Margin-bottom: 20px;text-align: left;color: #666;">
+                      <%= recipient.firstName %><br/><br/>
+                      We get it! Filling in pages and pages of forms can be a headache. That's why we've simplified the process to bring all of your super accounts together. We can find any other super that you might have, you can tick the boxes of the funds that you decide to roll into Cbus and we can take care of the rest.                 
+                  </p>
+                  <!-- heading + text -->
+                  <h3 style="Margin-top: 0;Margin-bottom: 15px;font-style: normal;font-weight: bold;color: #0a5490;font-size: 24px;line-height: 32px;text-align: left;">
+                    Ready, set, roll
+                  </h3>
+                  <p style="Margin-bottom: 20px;text-align: left;color: #666;">
+                    Selecting the right super fund is an important decision so make sure you take some time to decide. Be sure to get advice and when you are ready, you can consolidate in just 3 easy steps.
+                  </p>
+                  </div>
+              </div>
+
+ 
+    
+              <!-- Inner spacer -->
+              <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
+                <div style="mso-line-height-rule: exactly;line-height: 8px;font-size: 1px;">&nbsp;</div>
+              </div>
+          
+            </div>
+          <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+          </div>
+        </div>
+<!-- ## END: TEXT BLOCK ### -->
+
+
+<!-- ### START COLOR BLOCK ### -->
+<div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #0a5490">
+  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #0a5490"><td style="width: 600px" class="w560"><![endif]-->
+    <div class="column" style="text-align: left;color:#666666;font-size: 17px;line-height: 26px;font-family: Calibri,Carlito,PT Sans,Trebuchet MS,sans-serif;">
+  
+      
+    <!-- inner spacer -->
+    <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 5px;">
+      <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 5px;">&nbsp;</div>
+    </div>
+  
+    <!-- inner coloured block STEP 1 -->
+    <div style="Margin-left: 20px; Margin-right: 20px;">
+      <table class="mso-inner m-full" style="border-collapse: collapse;table-layout: fixed;background-color:white;" role="presentation">
+        <tbody>
+          <tr role="navigation">
+            <td bgcolor="#4f9e2e" class="m-block m-p-0" style="width: 100px;padding: 25px;color:white;font-family: arial,sans-serif;font-size:15px; text-align: center;">
+              <strong>STEP</strong>
+              <p style="Margin-top: 0;Margin-bottom: 0;font-size: 48px;line-height: 44px;">
+                <strong>1</strong>
+              </p>
+            </td>
+            <td bgcolor="white" class="m-block" style="width: 500px;padding:15px;color:#666666;font-family: Verdana,sans-serif;font-size:15px;">
+              <p style="Margin-top: 0;Margin-bottom: 10px;">
+                <strong>
+                  Log in to your account and select <span style="color: #4f9e2e; font-weight: bold;">‘Search your super using TFN’</span> 
+                </strong>
+              </p>
+            <img class="sm-hide" style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" 
+             alt="Step 1 Desktop."  width="396" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/5da671efccd95edd93107ce667375ad1.gif"
+           />
+            </td>
+              <!--[if (mso)|(IE)]>
+                <td width="20" style="background-color: #0a5490;color: #0a5490;"><p style="Margin:0;">--- </p></td>
+              <![endif]-->  
+          </tr>
+        </tbody>
+      </table>
+
+      <!--[if !mso]><!-- -->
+      <div class="mso-browser" style="display: none;border-radius: 0 0 14px 0;background-color: white;">
+        <label>
+          <input type="checkbox">
+          <div class="toogle-show" style="text-align: right;padding-top: 15px;color: #0a5490;font-weight: bold;">
+            Show me <span style="padding-right: 5px;position: relative;top:-4px">⌄</span>
+          </div>
+          <div class="toogle-hide" style="text-align: right;padding-top: 15px;color: #0a5490;font-weight: bold;">
+            Hide <span style="padding-right: 5px;position: relative;top:-4px;">⌃</span>
+          </div>
+          <label class="toogle-content">
+            <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" 
+            alt="Step 1." width="450" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/5da671efccd95edd93107ce667375ad1.gif">
+          </label>
+        </label>
+      </div>
+    <!--<![endif]-->
+   </div>
+  
+    <!-- inner spacer -->
+    <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 5px;">
+      <div style="mso-line-height-rule: exactly;line-height: 5px;font-size: 5px;">&nbsp;</div>
+    </div>
+
+
+    </div>
+  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+  </div>
+  </div>
+  <!-- ### END COLOR BLOCK ### -->
+
+
+<!-- BLUE Block section  -->
+<div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #0a5490;">
+  <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #0a5490;"><td style="width: 600px" class="w560"><![endif]-->
+    <div class="column" style="text-align: left;color: #353638;font-size: 16px;line-height: 26px;font-family: Calibri,Carlito,PT Sans,Trebuchet MS,sans-serif;">
+
+    <!-- inner coloured block STEP 2 -->
+      <div style="Margin-left: 20px; Margin-right: 20px;">
+        <table class="mso-inner m-full" style="border-collapse: collapse;table-layout: fixed;background-color:white;" role="presentation">
+          <tbody>
+            <tr role="navigation">
+              <td bgcolor="#4f9e2e" class="m-block m-p-0" style="width: 100px;padding: 25px;color:white;font-family: arial,sans-serif;font-size:15px; text-align: center;">
+                <strong>STEP</strong>
+                <p style="Margin-top: 0;Margin-bottom: 0;font-size: 48px;line-height: 44px;">
+                  <strong>2</strong>
+                </p>
+              </td>
+              <td bgcolor="white" class="m-block" style="width: 500px;padding:15px;color:#666666;font-family: Verdana,sans-serif;font-size:15px;">
+                <p style="Margin-top: 0;Margin-bottom: 10px;">
+                  <strong>
+                    Verify your account via Passcode.
+                   </strong>
+                </p>
+                <img class="sm-hide" style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" 
+                  alt="Step 2 Desktop."  width="396" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/41350f8563996ad47a26369ce3507a09.gif"
+                />
+              </td>
+                <!--[if (mso)|(IE)]>
+                  <td width="20" style="background-color: #0a5490;color: #0a5490;"><p style="Margin:0;">--- </p></td>
+                <![endif]-->  
+            </tr>
+          </tbody>
+        </table>
+
+        <!--[if !mso]><!-- -->
+        <div class="mso-browser" style="display: none;border-radius: 0 0 14px 0;background-color: white;">
+          <label>
+            <input type="checkbox">
+            <div class="toogle-show" style="text-align: right;padding-top: 15px;color: #0a5490;font-weight: bold;">
+              Show me <span style="padding-right: 5px;position: relative;top:-4px">⌄</span>
+            </div>
+            <div class="toogle-hide" style="text-align: right;padding-top: 15px;color: #0a5490;font-weight: bold;">
+              Hide <span style="padding-right: 5px;position: relative;top:-4px;">⌃</span>
+            </div>
+            <label class="toogle-content">
+              <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" alt="Step 2." width="450" 
+              src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/1eabc2006e43e0c5dff5c9c0c0154232.gif">
+            </label>
+          </label>
+        </div>
+      <!--<![endif]-->
+      </div>
+  
+    <!-- inner spacer -->
+    <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 5px;">
+      <div style="mso-line-height-rule: exactly;line-height: 5px;font-size: 5px;">&nbsp;</div>
+    </div>
+            
+        </div>
+  
+    </div>
+  <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+  </div>
+</div>
+
+
+<!-- START: Green section w inner blue -->
+<div style="background-color: #0F8045;">
+  <div class="layout one-col stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+    <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #0a5490">
+    <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-full-width" style="background-color: #0F8045;"><td class="layout__edges">&nbsp;</td><td style="width: 600px" class="w560"><![endif]-->
+      <div class="column" style="text-align: left;color: #white;font-size: 17px;line-height: 26px;font-family: Calibri,Carlito,PT Sans,Trebuchet MS,sans-serif;">
+      
+        <!--[if (mso)|(IE)]><table style="border-collapse: collapse;table-layout: fixed;background-color:#0a5490" role="presentation"><tbody><tr role="navigation"><td><![endif]-->
+
+
+       <!-- inner coloured block STEP 3 -->
+       <div style="Margin-left: 20px; Margin-right: 20px;">
+        <table class="mso-inner m-full" style="border-collapse: collapse;table-layout: fixed;background-color:white;" role="presentation">
+          <tbody>
+            <tr role="navigation">
+              <td bgcolor="#4f9e2e" class="m-block m-p-0" style="width: 100px;padding: 25px;color:white;font-family: arial,sans-serif;font-size:15px; text-align: center;">
+                <strong>STEP</strong>
+                <p style="Margin-top: 0;Margin-bottom: 0;font-size: 48px;line-height: 44px;">
+                  <strong>3</strong>
+                </p>
+              </td>
+              <td bgcolor="white" class="m-block" style="width: 500px;padding:15px;color:#666666;font-family: Verdana,sans-serif;font-size:15px;">
+                <p style="Margin-top: 0;Margin-bottom: 10px;">
+                  <strong>
+                    Read the disclaimer and tick the declaration.
+                    <br/>Select <span style="color: #4f9e2e">‘Rollover to Cbus.’</span>
+                   </strong>
+                </p>
+
+              <img class="sm-hide" style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" 
+                alt="Step 3 Desktop."  width="396" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/db94a169efd5e6451a25ac82fad883fb.gif"
+              />
+              </td>
+                <!--[if (mso)|(IE)]>
+                  <td width="20" style="background-color: #0a5490;color: #0a5490;"><p style="Margin:0;">--- </p></td>
+                <![endif]-->  
+            </tr>
+          </tbody>
+        </table>
+
+        <!--[if !mso]><!-- -->
+        <div class="mso-browser" style="display: none;border-radius: 0 0 14px 0;background-color: white;">
+          <label>
+            <input type="checkbox">
+            <div class="toogle-show" style="text-align: right;padding-top: 15px;color: #0a5490;font-weight: bold;">
+              Show me <span style="padding-right: 5px;position: relative;top:-4px">⌄</span>
+            </div>
+            <div class="toogle-hide" style="text-align: right;padding-top: 15px;color: #0a5490;font-weight: bold;">
+              Hide <span style="padding-right: 5px;position: relative;top:-4px;">⌃</span>
+            </div>
+            <label class="toogle-content">
+              <img style="border: 0;display: block;height: auto;width: 100%;max-width: 600px;" alt="Step 3." 
+              width="450" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/db94a169efd5e6451a25ac82fad883fb.gif">
+            </label>
+          </label>
+        </div>
+      <!--<![endif]-->
+      </div>
+      
+        <!-- inner spacer -->
+        <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 5px;">
+          <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 5px;">&nbsp;</div>
+        </div>
+
+                  <!-- Button -->
+                  <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 24px;">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%"> <tbody><tr><td align="center"> 
+                        <table cellpadding="0" cellspacing="0" width="330" border="0" style="border-collapse: separate !important;"> 
+                          <tbody>
+                            <tr>
+                            <td style="background-color:white;color:#0a5490;font-size:18px;padding:13px;border-radius: 90px;font-family: Verdana,calibri,arial,sans-serif;font-weight:bold;text-align:center;">
+                              <a target="_blank" class="hover" href="https://www.cbussuper.com.au/portals/super-account/consolidate-my-super.super" style="color:#0a5490;text-decoration:none;">
+                                Log in to get started
+                              </a>
+                            </td>
+                        <!--[if (mso)|(IE)]>
+                            <td valign="middle" width="20" align="left" class="" style="width:20px;font-size:15px;color:#0a5490;border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;">--</td>
+                        <![endif]-->
+                          </tr>
+                        </tbody>
+                      </table>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                </div>
+          <!-- Inner spacer -->
+          <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
+            <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
+          </div>
+          
+
+        <!--[if (mso)|(IE)]></td></tr></tbody></table><![endif]-->
+
+      
+      </div>
+    <!--[if (mso)|(IE)]></td><td class="layout__edges">&nbsp;</td></tr></table><![endif]-->
+    </div>
+  </div>
+</div>
+<!-- END: Green section w inner blue -->
+
+
+<!-- Green section -->
+<div style="background-color: #0F8045;">
+<div class="layout one-col stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+  <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;">
+  <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-full-width" style="background-color: #0F8045;"><td class="layout__edges">&nbsp;</td><td style="width: 600px" class="w560"><![endif]-->
+    <div class="column" style="text-align: left;color: #353638;font-size: 17px;line-height: 26px;font-family: Calibri,Carlito,PT Sans,Trebuchet MS,sans-serif;">
+    
+      <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 12px;Margin-bottom: 12px;">
+      <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+
+            <!-- Inner spacer -->
+            <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
+              <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
+            </div>
+
+          <!-- heading -->
+          <h2 style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color:#ffffff;font-size: 18px;line-height: 26px;">
+            <strong>Ready to consolidate your super?</strong>
+          </h2>
+          <!-- text -->
+          <p style="Margin-bottom: 20px;text-align: left;color: #ffffff;">
+             Before you combine your super be sure to check out our <strong>checklist</strong> and consider loss of benefits. 
+             We can help you understand your options.               
+          </p>
+
+          <!-- Inner spacer -->
+          <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
+            <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
+          </div>
+
+          <!-- Inner info table -->
+            <table class="" style="border-collapse: collapse;table-layout: fixed;" role="presentation">
+              <tbody>
+                <tr>
+                  <td width="50"><img role="presentation" alt="" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/1a254af4f81c59cb96d4213b1615588d.png"></td>
+                  <td style="FONT-FAMILY: calibri,arial,sans-serif; COLOR: #f0f0f0">Call 
+                    us on <a style="FONT-SIZE: 18px; TEXT-DECORATION: none; FONT-WEIGHT: bold; COLOR: #f0f0f0" href="tel:1300361784">1300 361 784</a> <br>Monday to 
+                    Friday from 8am to 8pm AEST/AEDT<br></td></tr>
+                <tr>
+                  <td><img role="presentation" border="0" alt="" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/2ca56699b7c1ab62f227da5b6a40310f.png"></td>
+                  <td style="FONT-FAMILY: calibri,arial,sans-serif; COLOR: #f0f0f0; PADDING-BOTTOM: 25px; PADDING-TOP: 25px">Email 
+                    us at <a style="TEXT-DECORATION: none; FONT-WEIGHT: bold; COLOR: #f0f0f0" href="mailto:cbusenq@cbussuper.com.au">cbusenq@cbussuper.com.au</a></td></tr>
+                <tr>
+                  <td><img role="presentation" border="0" alt="" src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/49053d7d82289323fe419ca9513bdc2f.png"></td>
+                  <td style="FONT-FAMILY: calibri,arial,sans-serif; COLOR: #f0f0f0">Visit 
+                    us online at <a style="TEXT-DECORATION: none; FONT-WEIGHT: bold; COLOR: #f0f0f0" href="https://www.cbussuper.com.au">cbussuper.com.au</a></td></tr></tbody>
+            </table>
+
+              <!-- Inner spacer -->
+              <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
+                <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
+              </div>
+
+      </div>
+      </div>
+
+        <!-- Inner spacer -->
+        <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
+          <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
+        </div>
+    
+    </div>
+  <!--[if (mso)|(IE)]></td><td class="layout__edges">&nbsp;</td></tr></table><![endif]-->
+  </div>
+</div>
+</div>
+
+
+<!-- ### START TERMS BLOCK -->
+<div class="layout one-col fixed-width" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+<div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #f8f8f8;">
+<!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #f8f8f8;"><td style="width: 600px" class="w560"><![endif]-->
+  <div class="column" style="text-align: left;color: #454545;font-size: 17px;line-height: 21px;font-family: calibri,arial,sans-serif;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);">
+
+    <!-- Text -->
+    <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 40px;">
+      <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
+
+                          <p class="size-11" style="Margin-top: 0;Margin-bottom: 20px;font-family: arial,sans-serif;font-size: 11px;line-height: 19px;" lang="x-size-11">
+                Trustee: United Super Pty Ltd ABN 46 006 261 623 AFSL 233792 Cbus 
+                ABN 75 493 363 262.
+              </p>
+               <p style="FONT-SIZE: 12px; FONT-FAMILY: calibri,ariel,sans-serif; COLOR: #454545">This 
+                email (including any attachments) contains information which is 
+                confidential and may be subject to legal privilege. If you are not 
+                the intended recipient you must not use, distribute or copy this 
+                email. If you have received this email in error, please notify the 
+                sender immediately and delete this email. Any views expressed in 
+                this email are not necessarily the views of Cbus.
+              </p>
+                <p style="FONT-SIZE: 12px; FONT-FAMILY: calibri,ariel,sans-serif; COLOR: #454545">This 
+                information is about Cbus. It doesn’t take into account your 
+                specific needs, so you should look at your own financial position, 
+                objectives and requirements before making any financial decisions. 
+                Read the relevant Cbus Product Disclosure Statement and related 
+                documents to decide whether Cbus is right for you.
+              </p>
+              <p style="FONT-SIZE: 12px; FONT-FAMILY: calibri,ariel,sans-serif; COLOR: #454545">
+                <a style="TEXT-DECORATION: none; FONT-WEIGHT: bold; COLOR: #545454" href="https://www.cbussuper.com.au">www.cbussuper.com.au</a> 
+                for a copy.
+              </p>
+              <p style="FONT-SIZE: 12px; FONT-FAMILY: calibri,ariel,sans-serif; COLOR: #454545"><a style="COLOR: #454545" href="https://www.cbussuper.com.au/about-us/privacy-statement">Cbus 
+                Privacy Policy
+              </a> |
+              <%@ include view='UnsubscriptionLink'%>
+              </p>
+          </div>
+      </div>
+  
+      <!-- Inner spacer -->
+      <div style="Margin-left: 20px;Margin-right: 20px;">
+        <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
+      </div>
+    <!-- Inner spacer -->
+    <div style="Margin-left: 20px;Margin-right: 20px;Margin-bottom: 12px;">
+      <div style="mso-line-height-rule: exactly;line-height: 1px;font-size: 1px;">&nbsp;</div>
+    </div>
+
+  </div>
+<!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+</div>
+</div>
+<!-- ### END TERMS BLOCK -->
+
+<div style="mso-line-height-rule: exactly;line-height: 40px;font-size: 40px;">&nbsp;</div>
+
+</div></td></tr></tbody></table>
+
+</body>
+</html>

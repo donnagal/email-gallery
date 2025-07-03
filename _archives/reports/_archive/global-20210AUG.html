@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Email Report Dashboard: Global</title>
+  <link href="../../images/favion.png" rel="icon" type="image/x-icon" />
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
+  <link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
+
+  <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF495ZKW9K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LF495ZKW9K');
+    </script>
+</head>
+<body class="bg-grey-lighter">
+
+  <header>
+    <div class="bg-black mx-auto text-white px-5 text-center">
+      <div class="flex py-2">
+        <div class="flex-1">
+          <h1 class="text-xl">Dashboard: Global Report</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<div id="nav">
+  <nav class="animate-add z-100">
+    <div class="nav-overlay"></div>
+    <button type="button" class="slide-toggle">
+        <div class="menu-wrapper">
+            <div class="hamburger-menu"></div>	  
+        </div>
+    </button>
+    <div class="menu z-100">
+        <div class="menu-inner">
+            <div class="bg-grey-darkest h-screen p-8 font-bold">
+                <ul class="list-reset text-xl mt-32">
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/" class="text-teal-lighter hover:text-white no-underline">Email galley</a>
+                    </li>
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/pages/utm-tracking" class="text-teal-lighter hover:text-white no-underline">UTM Tracking tool</a>
+                    </li>
+                    <li class="lg:pt-4 pt-8 nav-li">
+                      <a href="https://email-gallery.netlify.app/pages/reports/" class="text-teal-lighter hover:text-white no-underline">Email Report Dashboard</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+     </div>
+  </nav>
+</div>
+
+<div class="container mx-auto mt-10">
+  <div class="w-full">
+    <div class="flex border-b">
+      <div class="-mb-px mr-1">
+        <a href="https://email-gallery.netlify.app/pages/reports" class="text-center block border border-black rounded hover:border-grey-light text-black hover:bg-grey-dark py-2 px-4 no-underline ">
+          Campaign Report
+        </a>
+      </div>
+      <div class="mr-1">
+        <button class="text-center block border border-blue-dark rounded py-2 px-4 bg-black hover:bg-blue-700 text-white no-underline">
+          Global Report
+        </button>
+      </div>
+      <div class="-mb-px mr-1">
+        <a target="_blank" href="https://www.senderscore.org/report/?lookup=66.235.130.62&authenticated=true" class="text-center block border border-black rounded hover:border-grey-light text-black hover:bg-grey-dark py-2 px-4 no-underline ">
+          Sender Score
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="app" class="all">
+
+<div class="container mx-auto mt-10">
+
+  <section>
+    <div class="bg-white container mx-auto mt-10 mb-5 p-5">
+      <h2 class="pb-5">Email Stats</h2>
+      <div class="flex flex-wrap">
+        <div class="lg:w-1/5 w-1/3">
+          <div class="flex text-center">
+            <div class="flex-1 lg:px-4">
+              <p class="tracking-wide uppercase text-grey font-1">female members</p>
+              <p class="font-1 text-3xl"> 55.4K </p><i class="fas fa-female pr-2 opacity-75 text-2xl"></i>
+            </div>
+            </div>
+        </div>
+        <div class="lg:w-1/5 w-1/3">
+          <div class="flex text-center">
+            <div class="flex-1 lg:px-4 px-2">
+              <p class="tracking-wide uppercase text-grey font-1">male members</p>
+              <p class="font-1 text-3xl"> 511.5K </p><i class="fas fa-male pr-2 opacity-75 text-2xl"></i>
+            </div>
+        </div>
+      </div>
+      <div class="lg:w-1/5 w-1/3">
+        <div class="flex text-center">
+          <div class="flex-1 lg:px-4 px-2">
+            <p class="tracking-wide uppercase text-grey font-1">Most used</p> 
+            <p class="font-1 text-3xl">#1 Mobile </p><i class="fas fa-mobile-alt pr-2 opacity-75 text-2xl"></i>
+          </div>
+      </div>
+    </div>
+      <div class="lg:w-1/5 w-1/3">
+        <div class="flex text-center">
+          <div class="flex-1 lg:px-4 px-2">
+            <p class="tracking-wide uppercase text-grey font-1">Most used Browser</p>
+            <p class="font-1 text-3xl">#1 GMAIL </p><i class="fab fa-chrome pr-2 opacity-75 text-2xl"></i>
+          </div>
+      </div>
+    </div>
+    <div class="lg:w-1/5 w-1/3">
+      <div class="flex text-center">
+        <div class="flex-1 lg:px-4 px-2">
+          <p class="tracking-wide uppercase text-grey font-1">Most used Browser</p>
+          <p class="font-1 text-3xl">#2 OUTLOOK </p><i class="fab fa-windows pr-2 opacity-75 text-2xl"></i>
+        </div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-8">
+    <div class="container mx-auto mt-10">
+      <div class="flex flex-wrap">
+        <div class="lg:w-1/2 w-full p-1">
+          <div class="bg-white py-8 flex flex-wrap">
+            <div class="w-full">
+              <h2 class="pl-8 pb-4">Reachable by email</h2>
+            </div>
+            <iframe 
+            src="https://email-gallery.netlify.app/pages/reports/unsubs" 
+            height="280" width="560" scrolling="no">
+          </iframe>
+          </div>
+        </div>
+        <div class="lg:w-1/2 w-full p-1">
+          <div class="bg-white py-8 flex flex-wrap">
+            <div class="w-full">
+              <h2 class="pl-8 pb-4">SMS opt-outs</h2>
+            </div>
+            <div class="swiper-container smsSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <iframe 
+                  src="https://email-gallery.netlify.app/pages/reports/sms/" 
+                  height="280" width="560" scrolling="no">
+                </iframe>
+                </div>
+                <div class="swiper-slide">
+                  <iframe 
+                  src="https://email-gallery.netlify.app/pages/reports/sms/2020" 
+                  height="280" width="560" scrolling="no">
+                </iframe>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="flex flex-wrap">
+        <div class="lg:w-1/2 w-full p-1">
+          <div class="bg-white py-8 flex flex-wrap">
+            <div class="w-full">
+              <h2 class="pl-8 pb-4">Sent email campaigns</h2>
+            </div>
+            <div class="swiper-container smsSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <iframe 
+                  src="https://email-gallery.netlify.app/pages/reports/sent-emails" 
+                  height="280" width="560" scrolling="no">
+                </iframe>
+                </div>
+                <div class="swiper-slide">
+                  <iframe 
+                  src="https://email-gallery.netlify.app/pages/reports/sent-emails/2020" 
+                  height="280" width="560" scrolling="no">
+                </iframe>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="../../js/filter-group.js"></script>
+  <script src="../../js/global.js"></script>
+  <script src="../../js/swiper-bundle.min.js"></script>
+   
+  <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".smsSwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+
+</html>

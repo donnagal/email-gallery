@@ -1,0 +1,177 @@
+
+<!-- TUT: https://www.emailonacid.com/blog/article/email-development/tutorial-how-to-code-an-interactive-greeting-card-email -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!--[if !mso]><!-->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cbus eCard</title>
+
+  <style type="text/css">
+  @media (max-width: 3780px) {
+    .card_holder {
+      height:567px;
+    }
+    .card_container {
+      height:567px;
+    }
+    /* entire container, keeps perspective */
+    .flip-container {
+      -webkit-perspective: 1000px;
+      perspective: 1000px;
+      z-index: 10;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 0px;
+    }
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper {
+      transform: rotateY(-180deg);
+      -webkit-transform: rotateY(-180deg);
+      -ms-transform: rotateY(-180deg);
+    }
+
+    /* flip speed goes here */
+    .flipper, .inside {
+      transition: 2s;
+      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      position: relative;
+    }
+
+    /* hide back of pane during swap */
+    .front, .back {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    /* front pane, placed above back */
+    .front {
+      z-index: 10;
+      width:500px;
+      height:567px;
+      padding:0px;
+      /* for firefox 31 */
+      transform: rotateX(0deg);
+    }
+
+    /* back, initially hidden pane */
+    .back {
+      z-index: 5;
+      width:500px;
+      height:567px;
+      padding:0px;
+      transform: rotateX(180deg);
+      -webkit-transform: rotateX(180deg);
+    }
+
+    .inside {
+      z-index: -1;
+      width:500px;
+      height:567px;
+      padding:0px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      /* for firefox 31 */
+    }
+
+    .kinetic {
+      display:block !important;
+      max-height:none !important;
+      height:567px !important;
+      width:0px !important;
+      overflow:visible !important;
+    }
+    .fallback {
+      display:none !important;
+    }
+  }
+
+  .c-forms-form {
+    text-align: left;
+  }
+  .c-forms-form {
+    padding: 23px !important;
+  }
+  .cognito textarea, .c-forms-form input[type=text] {
+    margin: 5px 0  24px 0!important;
+  }
+  </style>
+  <!--<![endif]-->
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body style="Margin:0;padding:0;min-width:100%;background-color:#286bd6;">
+  <table class="card_holder" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing:0;max-width: 500px;margin:0 auto;">
+    <tr>
+      <td height="50">&nbsp;<!-- This just adds a little padding above the card so that you can see how it opens out --></td>
+    </tr>
+    <tr>
+      <td align="center">
+        <!-- START INTERACTIVE SECTION -->
+        <!--[if !mso]><!-->
+        <div class="card_container" style="position: relative;">
+          <div class="flip-container kinetic" style="mso-hide:all;display:none;max-height:0;overflow:hidden;text-align:center;width:100%;">
+            <div class="flipper">
+              <div class="front">
+                <img width="100%" src="https://community-ideas.netlify.app/img/card.jpg" style="max-width:500px;" />
+              </div>
+              <div class="back">
+                <img width="100%" src="https://www.emailonacid.com/images/blog_images/Emailology/2016/HolidayCard_InsideLeft.jpg" style="max-width:500px;" />
+              </div>
+
+            </div>
+            <div class="inside" style="height:567px; background-color: white">
+               
+                <div style="padding: 0 60px; font-family: 'Indie Flower', cursive, Arial, sans-serif; color: black;">
+                  <h2 style="margin-top:40px;margin-bottom:0;margin-right:0;margin-left:0;font-size:28px !important;">
+                    Dear <%= targetData.dear %>,
+                  </h2>
+  
+                  <p style="line-height:inherit; padding-top: 20px;">
+                    <span style="line-height:inherit;">
+                      <%= targetData.msg %>
+                        <br/>
+                       <strong>- <%= targetData.from_firstname %> <%=targetData.from_lastname %> </strong>
+                    </span>
+                  </p>
+                </div>
+
+              </div>
+          </div>
+
+        </div>
+
+        <!--<![endif]-->
+        <!-- END INTERACTIVE SECTION -->
+
+        <!-- START FALLBACK SECTION -->
+        <center>
+          <table border="0" width="100%" cellpadding="0" cellspacing="0" class="fallback" style="margin: 0 auto; padding: 0;">
+            <tr>
+              <td class="padding" style="margin: 0; padding: 0px;">
+                <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">
+                  <img src="https://i4.createsend1.com/ei/i/B4/ECB/E9B/194054/images/card-envolpe.gif" width="500" style="width:100%;max-width:500px;" />
+                </a>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </center>
+        <!-- END FALLBACK SECTION -->
+
+      </td>
+    </tr>
+  </table>
+<!-- ======= end hero article ======= -->
+
+</body>
+</html>

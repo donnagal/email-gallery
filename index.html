@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>Email Gallery</title>
+	<link href="images/favion.png" rel="icon" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+	<link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/v-dashbaord.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LF495ZKW9K"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-LF495ZKW9K');
+	</script>
+
+</head>
+
+<body>
+	<div id="nav">
+		<header>
+			<div class="bg-black mx-auto text-white px-5 text-center">
+				<div class="flex py-2">
+					<div class="flex-1">
+						<h1 class="font-bold text-2xl"><i class="fas fa-house"></i> Cbus Email Gallery</h1>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<nav class="animate-add z-100">
+			<div class="nav-overlay"></div>
+			<button type="button" class="slide-toggle">
+				<div class="menu-wrapper">
+					<div class="hamburger-menu"></div>
+				</div>
+			</button>
+			<div id="menu">
+
+				<!-- <img src="images/duck.gif" /> -->
+			</div>
+		</nav>
+	</div>
+
+	<div data-v-app="" id="app">
+		<div class="flex bg-gray-200 font-roboto">
+			<div class="flex-1 flex flex-col">
+				<main class="flex-1" style="min-height:100vh;">
+					<div class="container mx-auto px-5 py-8">
+						<div className="flex gap-6" style="display:flex; gap:16px;">
+							<a href="/pages/gallery/" class="flex justify-center items-center text-white bg-gray-600"
+								style="width:25%; aspect-ratio:1/1; border-radius:16px">Gallery</a>
+							<a href="/pages/dashboard/" class="flex justify-center items-center text-white bg-gray-600"
+								style="width:25%; aspect-ratio:1/1; border-radius:16px">Dashboard</a>
+							<a href="/pages/annual-report-24/"
+								class="flex justify-center items-center text-white bg-gray-600"
+								style="width:25%; aspect-ratio:1/1; border-radius:16px">Annual Report FY24</a>
+							<a href="/pages/icons/" class="flex justify-center items-center text-white bg-gray-600"
+								style="width:25%; aspect-ratio:1/1; border-radius:16px">Icons</a>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+	</div>
+</body>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="js/filter-group.js"></script>
+<script src="js/global.js"></script>
+<script src="js/vue.min.js"></script>
+<script>
+
+
+	//search
+	$(document).ready(function () {
+
+		var jobCount = $('#list .card').length;
+		$('.list-count').text(jobCount + ' items');
+
+
+		$("#search-text").keyup(function () {
+			//$(this).addClass('hidden');
+
+			var searchTerm = $("#search-text").val();
+			var listItem = $('#list').children('.card');
+
+
+			var searchSplit = searchTerm.replace(/ /g, "'):containsi('")
+
+			//extends :contains to be case insensitive
+			$.extend($.expr[':'], {
+				'containsi': function (elem, i, match, array) {
+					return (elem.textContent || elem.innerText || '').toLowerCase()
+						.indexOf((match[3] || "").toLowerCase()) >= 0;
+				}
+			});
+
+
+			$("#list div").not(":containsi('" + searchSplit + "')").each(function (e) {
+				$(this).addClass('hiding out').removeClass('in');
+				setTimeout(function () {
+					$('.out').addClass('hidden');
+				}, 300);
+			});
+
+			$("#list div:containsi('" + searchSplit + "')").each(function (e) {
+				$(this).removeClass('hidden out').addClass('in');
+				setTimeout(function () {
+					$('.in').removeClass('hiding');
+				}, 1);
+			});
+
+
+			var jobCount = $('#list .in').length;
+			$('.list-count').text(jobCount + ' items');
+
+			//shows empty state text when no jobs found
+			if (jobCount == '0') {
+				$('#list').addClass('empty');
+			}
+			else {
+				$('#list').removeClass('empty');
+			}
+
+		});
+	});
+
+</script>
+</body>
+
+</html>

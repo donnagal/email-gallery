@@ -1,0 +1,217 @@
+.margin {
+      margin: 25px;
+    }
+    
+    .semi-donut {
+      --percentage: 0;
+      --fill: #ff0;
+      width: 300px;
+      height: 150px;
+      position: relative;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 600;
+      overflow: hidden;
+      color: var(--fill);
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+              justify-content: center;
+      box-sizing: border-box;
+      zoom: .8;
+    }
+    .semi-donut:after {
+      content: '';
+      width: 300px;
+      height: 300px;
+      border: 50px solid;
+      border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) var(--fill) var(--fill);
+      position: absolute;
+      border-radius: 50%;
+      left: 0;
+      top: 0;
+      box-sizing: border-box;
+      -webkit-transform: rotate(calc( 1deg * ( -45 + var(--percentage) * 1.8 ) ));
+              transform: rotate(calc( 1deg * ( -45 + var(--percentage) * 1.8 ) ));
+      -webkit-animation: fillAnimation 1s ease-in;
+              animation: fillAnimation 1s ease-in;
+    }
+    
+    .semi-donut-model-2 {
+      width: 300px;
+      height: 150px;
+      position: relative;
+      text-align: center;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 600;
+      border-radius: 150px 150px 0 0;
+      overflow: hidden;
+      color: var(--fill);
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+              justify-content: center;
+      box-sizing: border-box;
+    }
+    .semi-donut-model-2:before, .semi-donut-model-2:after {
+      content: '';
+      width: 300px;
+      height: 150px;
+      border: 50px solid var(--fill);
+      border-top: none;
+      position: absolute;
+      -webkit-transform-origin: 50%  0% 0;
+              transform-origin: 50%  0% 0;
+      border-radius: 0 0 300px 300px;
+      box-sizing: border-box;
+      left: 0;
+      top: 100%;
+    }
+    .semi-donut-model-2:before {
+      border-color: rgba(0, 0, 0, 0.15);
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+    .semi-donut-model-2:after {
+      z-index: 3;
+      -webkit-animation: 1s fillGraphAnimation ease-in;
+              animation: 1s fillGraphAnimation ease-in;
+      -webkit-transform: rotate(calc( 1deg * ( var(--percentage) * 1.8 ) ));
+              transform: rotate(calc( 1deg * ( var(--percentage) * 1.8 ) ));
+    }
+    .semi-donut-model-2:hover:after {
+      opacity: .8;
+      cursor: pointer;
+    }
+    
+    .multi-graph {
+      width: 300px;
+      height: 150px;
+      position: relative;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 600;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+              justify-content: center;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+    .multi-graph:before {
+      content: '';
+      width: 300px;
+      height: 150px;
+      border: 50px solid rgba(0, 0, 0, 0.15);
+      border-bottom: none;
+      position: absolute;
+      box-sizing: border-box;
+      -webkit-transform-origin: 50%  0%;
+              transform-origin: 50%  0%;
+      border-radius: 300px 300px 0 0;
+      left: 0;
+      top: 0;
+    }
+    .multi-graph .graph {
+      width: 300px;
+      height: 150px;
+      border: 50px solid var(--fill);
+      border-top: none;
+      position: absolute;
+      -webkit-transform-origin: 50%  0% 0;
+              transform-origin: 50%  0% 0;
+      border-radius: 0 0 300px 300px;
+      left: 0;
+      top: 100%;
+      z-index: 5;
+      -webkit-animation: 1s fillGraphAnimation ease-in;
+              animation: 1s fillGraphAnimation ease-in;
+      -webkit-transform: rotate(calc( 1deg * ( var(--percentage) * 1.8 ) ));
+              transform: rotate(calc( 1deg * ( var(--percentage) * 1.8 ) ));
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+    .multi-graph .graph:after {
+      content: attr(data-name) " " counter(varible) "%";
+      counter-reset: varible var(--percentage);
+      background: var(--fill);
+      box-sizing: border-box;
+      border-radius: 2px;
+      color: #fff;
+      font-weight: 200;
+      font-size: 12px;
+      height: 20px;
+      padding: 3px 5px;
+      top: 0px;
+      position: absolute;
+      left: 0;
+      -webkit-transform: rotate(calc( -1deg * var(--percentage) * 1.8 )) translate(-30px, 0px);
+              transform: rotate(calc( -1deg * var(--percentage) * 1.8 )) translate(-30px, 0px);
+      -webkit-transition: 0.2s ease-in;
+      transition: 0.2s ease-in;
+      -webkit-transform-origin: 0 50% 0;
+              transform-origin: 0 50% 0;
+      opacity: 0;
+    }
+    .multi-graph .graph:hover {
+      opacity: 0.8;
+    }
+    .multi-graph .graph:hover:after {
+      opacity: 1;
+      left: 30px;
+    }
+    
+    @-webkit-keyframes fillAnimation {
+      0% {
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+      }
+      50% {
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+      }
+    }
+    
+    @keyframes fillAnimation {
+      0% {
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+      }
+      50% {
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+      }
+    }
+    @-webkit-keyframes fillGraphAnimation {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      50% {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+      }
+    }
+    @keyframes fillGraphAnimation {
+      0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+      }
+      50% {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+      }
+    }
+    
+    .text-r {
+      position: relative;
+        left: 130px;
+    }
+    

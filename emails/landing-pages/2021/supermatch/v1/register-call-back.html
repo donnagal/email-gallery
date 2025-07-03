@@ -1,0 +1,22 @@
+var recipient=ctx.recipient
+
+try {
+
+  
+    
+    if {
+      var tzoffset = (new Date()).getTimezoneOffset() * 60000;
+      var localISOTime = (new Date(Date.now() - tzoffset)).toISOString()
+
+      // date in format YYYY-MM-DD
+      var currentDateStr = localISOTime.split('T')[0]      
+      
+      recipient.@mbrSuperMatchCallBackDate = currentDateStr
+      recipient.@xtkschema = "nms:recipient"
+      recipient.@_operation = "update"
+      recipient.@_key = "@id"
+      xtk.session.Write(recipient)
+   
+
+     
+}

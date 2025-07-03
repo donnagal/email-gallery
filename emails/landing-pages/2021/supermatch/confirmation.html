@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cbus Super: Callback Request - for lost super </title>
+  <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
+  
+  <link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
+  <!-- tailwindcss --><link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/8ee28de705b5ab88527f77f76b51fc77.css" rel="stylesheet">
+  <style>
+		.font-normal {
+			font-family: "Effra", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		.font-heavy {
+			font-family: 'Effra Heavy', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		.font-light {
+			font-family: 'Effra Light', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		.font-medium {
+			font-family: 'Effra Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		.font-400 {
+			font-weight: 400;
+		}
+		.text-brand-gray {
+			color: #666;
+		}
+		.bg-white { background-color: white;}
+		.bg-gradient {
+			background: rgb(162, 162, 162);
+			background: linear-gradient(100deg, rgba(162, 162, 162, 1) 0%, rgba(162, 162, 162, 1) 0%, rgba(255, 255, 255, 0) 100%);
+		}
+		.bg-brand-black { background-color: #1a1a1a;}
+		.bg-brand-dark {
+			background-color: #333;
+		}
+		.bg-brand-green {
+			background-color: #008a44;
+		}
+		.bg-brand-blue {
+			background-color: #00508c;
+		}
+		.h-screen-50 {
+			height: 50vh;
+		}
+		.cta-light {
+			background-color: white;
+			box-shadow: 0 3px 0 0 #8d8d8d;
+			border-radius: 8px;
+			border: solid 1px #8d8d8d;
+			color: #333;
+			font-family: 'Effra Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			padding: 8px 50px;
+		}
+		.cta-dark {
+			background-color: #333;
+			box-shadow: 0 3px 0 0 #8d8d8d;
+			border-radius: 8px;
+			color: white;
+			font-family: 'Effra Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			padding: 8px 50px;
+		}
+		.cta-dark:hover, .cta-light:hover {
+			position: relative;
+			top: -2px;
+			box-shadow: 0 5px 0 0 #8d8d8d, 0 2px 4px 0 #8d8d8d;
+		}
+		.badge-teal {
+			background: #e0f7fb;
+			border-radius: 10px;
+			color: #21abc5;
+			display: inline-block;
+			line-height: 2.1;
+			padding: 0 9px;
+		}
+		.overlap-under {
+			z-index: -1;
+			position: relative;
+		}
+		a:hover {
+			opacity: .7;
+			transition: all .2s;
+		}
+		.fadeup {
+			animation-name: fadeUp;
+			-webkit-animation-name: fadeUp;
+			animation-duration: 1s;
+			-webkit-animation-duration: 1s;
+			animation-timing-function: ease;
+			-webkit-animation-timing-function: ease;
+			visibility: visible!important
+		}
+		@keyframes fadeUp {
+			0% {
+				transform: translateY(15%);
+				opacity: 0
+			}
+			40% {
+				opacity: 0
+			}
+			100% {
+				transform: translateY(0);
+				opacity: 1
+			}
+		}
+		@-webkit-keyframes fadeUp {
+			0% {
+				-webkit-transform: translateY(15%);
+				opacity: 0
+			}
+			40% {
+				opacity: 0
+			}
+			100% {
+				-webkit-transform: translateY(0);
+				opacity: 1
+			}
+		}
+  </style>
+</head>
+<body>
+<div class="bg-no-repeat bg-right bg-auto h-96" style="background-image: 
+	url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/f31907e0521e21b2332e3eef590bcc3c.jpg')">
+    
+	<div class="bg-gradient flex content-center lg:pt-0 flex-wrap h-96">
+		<div class="container mx-auto px-10 lg:px-0">
+			<div class="lg:w-1/4 text-white md:mx-8">
+				<h1 class="fadeup font-heavy mb-8 mark-bold text-6xl text-5xl leading-none">
+					Callback request
+				</h1>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+<div class="container mx-auto -mt-8">
+	<div class="rounded-t-xl overflow-hidden bg-brand-green lg:p-8 p-3">
+		<p class="w-full px-5 pb-5 text-white text-2xl text-right">
+			<strong>Member number:</strong> <span class="nl-dce-field" data-nl-expr="[recipient/@mbrAccID]">[Member ID]</span>
+		</p>
+		<div class="flex">
+		  <div class="w-full p-10 bg-white rounded-md text-center">
+			<h2 class="text-3xl font-heavy pb-3">Thanks <span class="nl-dce-field" id="span162623603434230" data-nl-expr="[recipient/@firstName]">[First name]</span>!</h2>
+			<p class="mx-auto lg:w-2/4 text-brand-gray font-400 text-xl">
+				Your request has been submitted. A Cbus consultant will call you the next business day. Please have your ID on hand when we call, as we’ll need to verify your identify before we can search for your lost or unclaimed super.
+			</p>
+		  </div>
+	</div>
+
+		</div>
+
+	 </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SMS opt-outs</title>
+  <link rel="stylesheet" href="../../../css/chart-line.css">
+  <style>
+    .card #canvas {
+      margin-left: -30px;
+    margin-right: -30px;
+    width: 517px !important;
+    margin-top: -210px;
+  }
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="card">
+  <!-- Custom information -->
+  <div class="about">
+    <p class="lead">2021</p>
+  </div>
+  
+  <!-- Canvas for Chart.js -->
+  <canvas id="canvas"></canvas>
+  
+  <!-- Custom Axis -->
+  <div class="axis">
+    <div class="tick">
+      <span class="day-number">-837</span>
+      <span class="day-name">JAN</span>
+      <span class="value value--this">837</span>
+    </div>
+    <div class="tick">
+      <span class="day-number">-51</span>
+      <span class="day-name">FEB</span>
+      <span class="value value--this">51</span>
+    </div>
+    <div class="tick">
+      <span class="day-number">-99</span>
+      <span class="day-name">MAR</span>
+      <span class="value value--this">99</span>
+    </div>
+    <div class="tick">
+      <span class="day-number">-106</span>
+      <span class="day-name">APR</span>
+      <span class="value value--this">106</span>
+    </div>
+    <div class="tick">
+      <span class="day-number">-99</span>
+      <span class="day-name">MAY</span>
+      <span class="value value--this">99</span>
+    </div>
+    <div class="tick">
+      <span class="day-number">-570</span>
+      <span class="day-name">JUNE</span>
+      <span class="value value--this">570</span>
+    </div>
+    <div class="tick">
+      <span class="day-number">-381</span>
+      <span class="day-name">JUL</span>
+      <span class="value value--this">381</span>
+    </div>
+    <div class="tick">
+      <span class="day-number">-286</span>
+      <span class="day-name">AUG</span>
+      <span class="value value--this">-286</span>
+    </div>
+     <div class="tick">
+      <span class="day-number">-61</span>
+      <span class="day-name">SEP</span>
+      <span class="value value--this">-61</span>
+    </div>
+   <div class="tick">
+      <span class="day-number">-159</span>
+      <span class="day-name">OCT</span>
+      <span class="value value--this">-159</span>
+    </div>
+     <div class="tick">
+      <span class="day-number">-179</span>
+      <span class="day-name">NOV</span>
+      <span class="value value--this">-179</span>
+    </div>
+       <div class="tick">
+      <span class="day-number">-414</span>
+      <span class="day-name">DEC</span>
+      <span class="value value--this">-414</span>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js'></script>
+  
+  <script>
+    var canvas = document.getElementById("canvas");
+
+// Apply multiply blend when drawing datasets
+var multiply = {
+  beforeDatasetsDraw: function(chart, options, el) {
+    chart.ctx.globalCompositeOperation = 'multiply';
+  },
+  afterDatasetsDraw: function(chart, options) {
+    chart.ctx.globalCompositeOperation = 'source-over';
+  },
+};
+
+// Gradient color - this week
+var gradientThisWeek = canvas.getContext('2d').createLinearGradient(0, 0, 0, 150);
+gradientThisWeek.addColorStop(0, '#5555FF');
+gradientThisWeek.addColorStop(1, '#9787FF');
+
+// Gradient color - previous week
+var gradientPrevWeek = canvas.getContext('2d').createLinearGradient(0, 0, 0, 150);
+gradientPrevWeek.addColorStop(0, '#FF55B8');
+gradientPrevWeek.addColorStop(1, '#FF8787');
+
+var config = {
+    type: 'line',
+    data: {
+        labels: ["0", "JAN", "FEB", "MAR", "APR", "MAY", "JUNE", "JULY", "AUG", "SEP", "OCT", "NOV", "DEC"],
+        datasets: [
+          {
+              label: 'SMS',
+              data: [0, 837, 51, 99, 106, 99, 570, 381, 286, 61, 159, 179, 414],
+              fill: false,
+              borderColor: 'rgba(255, 255, 255, 0.2)',
+              borderWidth: 2,
+              pointBackgroundColor: 'transparent',
+              pointBorderColor: '#FFFFFF',
+              pointBorderWidth: 3,
+              pointHoverBorderColor: 'rgba(255, 255, 255, 0.2)',
+              pointHoverBorderWidth: 10,
+              lineTension: 0,
+          }
+        ]
+    },
+    options: {
+    	responsive: false,
+      elements: { 
+        point: {
+          radius: 6,
+          hitRadius: 6, 
+          hoverRadius: 6 
+        } 
+      },
+      legend: {
+        display: false,
+      },
+      tooltips: {
+      	backgroundColor: 'transparent',
+        displayColors: false,
+        bodyFontSize: 14,
+        callbacks: {
+          label: function(tooltipItems, data) { 
+            return tooltipItems.yLabel + '';
+          }
+        }
+      },
+      scales: {
+        xAxes: [{
+          display: false,
+        }],
+        yAxes: [{
+          display: false,
+          ticks: {
+            beginAtZero: true,
+          },
+        }]
+      }
+    },
+    plugins: [multiply],
+};
+
+window.chart = new Chart(canvas, config);
+  </script>
+
+</body>
+</html>

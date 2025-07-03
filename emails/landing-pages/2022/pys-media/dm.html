@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>
+      Superannuation insurance
+    </title>
+    <link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/55e79d51b6e47132a76167d75c5e8fd9d48ecc49ec789a31ca84e51c2fe6bbbb.png" rel="icon" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+	
+	<!-- Start: ADOBE SCRIPTS -->
+    <script type="text/javascript">
+    // <![CDATA[
+        function formSubmit(e) {
+            var consent = "";
+            // have to get values from radio buttons manually for IE
+            var radios = document.getElementsByName("consent-given")
+            for (var i = 0; i < radios.length; i++) {
+                var consentRadio = radios[i]
+                if (consentRadio.checked) {
+                    consent = consentRadio.value
+                }
+            }
+            var memberID = document.forms["page-form"]["memberID"].value
+            var dob = document.forms["page-form"]["mbrDOBSubmittedForm"].value
+
+            var memberIDPattern = /^[0-9]*$/;
+            var IEDatePattern = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}/;
+            if (!!consent && !!dob && !!memberID && memberIDPattern.test(memberID)) {
+
+                var normalisedDOB = dob 
+                if (IEDatePattern.test(dob)) {
+                    var dobParts = dob.split('/');
+                    var day = dobParts[0]
+                    var month = dobParts[1]
+                    var year = dobParts[2]
+
+                    normalisedDOB = year + '-' + month + '-' + day
+                }
+                document.controller.setValue('/ctx/visitor/consent', consent, 'consent-given')
+                document.controller.setValue('/ctx/visitor/memberID', memberID, 'memberID')
+                document.controller.setValue('/ctx/visitor/dobGiven', normalisedDOB, 'mbrDOBSubmittedForm')
+
+                document.controller.submit('next')
+            }
+            return false;
+        }
+    // ]]>
+    </script>
+    <script>
+          var digitalData = digitalData || {};
+          digitalData = {"page":{"pageInfo":{"pageName":"MS: ACM: DM PYS Insurance Landing","brand":"Media Super"},"category":{}}}
+          digitalData.page.pageInfo.pageUrl = window.location.href;
+          digitalData.page.pageInfo.domain = window.location.hostname;
+    </script>
+    <script>
+        document.write("<img height='0' width='0' alt='' src='https://t.marketing.cbussuper.com.au/r/" +  Math.random().toString() + "?tagid=TRK2'/>");
+    </script> <noscript><img alt='' height='0' src='https://t.marketing.cbussuper.com.au/r/?tagid=TRK2' width='0'></noscript>
+	
+		<!-- Prod Media super -->
+		<script src=https://assets.adobedtm.com/b8f44b6ccd00/987dddf6d251/launch-98a11dd3f024.min.js async></script>
+	<!-- End: ADOBE SCRIPTS -->
+
+    <!-- media super -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://use.typekit.net/sdy0sxg.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic|Roboto+Condensed:400,700,400italic,700italic" rel="stylesheet"><!-- global -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/tailwind.css" rel="stylesheet">
+    <link href="https://email-gallery.netlify.app/emails/landing-pages/2022/css/main.css" rel="stylesheet">
+  </head>
+  
+  <body class="media-super lg:px-10">
+    <div class="bg-no-repeat bg-cover bg-top h-banner" style="background-image: url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/header-insurance.jpg');">
+      <div class="flex content-center lg:pt-0 flex-wrap h-banner">
+        <div class="container mx-auto px-10 lg:px-0">
+          <div class="fadeup w-full text-white lg:px-24">
+            <h1 class="text-brand-blue-light font-heading lg:text-5xl text-4xl leading-none uppercase">
+              My insurance options
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-brand-gray">
+      <div class="container mx-auto lg:px-24 px-5">
+        <div class="mx-auto lg:w-full text-brand-black">
+          <h2 class="lg:text-5xl text-3xl font-medium pt-12">
+            Important message about your insurance
+          </h2>
+          <p class="font-light pt-5 text-xl font-bold">
+            New legislation requires you to choose to keep any insurance if your account becomes inactive. Your account becomes inactive by not receiving a contribution or roll-over for 16 months.
+          </p>
+          <p class="pt-3 pb-12">
+            We're seeking your instruction now on whether you would like to retain your insurance.
+            <br><br>
+            You can either opt-in by completing the <a class="hover" target="_blank" style="color: #454545; font-weight: bold;text-decoration: underline;" href="https://assets.mediasuper.com.au/documents/pdfs/forms/keep-my-insurance-cover.pdf">Keep my insurance cover form</a> or simply choose below.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white" id="form">
+      <div class="container mx-auto lg:px-24 px-5">
+        <div class="text-brand-black pb-10">
+          <h2 class="lg:text-5xl text-3xl font-medium pt-12">
+            Keep your insurance
+          </h2>
+          <p class="pt-5">
+            If you’d like to keep your insurance, please click on the <strong>Yes</strong> field below.
+          </p>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-1/2">
+            <form autocomplete="off" id="page-form" name="page-form">
+              <div class="md:flex md:items-center mb-6">
+                <div class="md:w-full">
+                  <label class="block mb-1 md:mb-0 pr-4 pb-2" for="memberID">Member number: (required)</label> <input class=
+                  "input-shadow bg-white appearance-none rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" data-nl-ismandatory="true"
+                  id="memberID" name="memberID" pattern="^[0-9]*$" required="" title="Member ID must be comprised only of numbers and not contain any whitespace" type="text">
+                </div>
+              </div>
+              <div class="md:flex md:items-center mb-6">
+                <div class="md:w-full">
+                  <label for="mbrDOBSubmittedForm">Enter your date of birth: (required)<input class=
+                  "input-shadow bg-white appearance-none rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-gray-100 focus:border-gray-500" data-nl-ismandatory="true"
+                  id="mbrDOBSubmittedForm" name="mbrDOBSubmittedForm" placeholder="dd/mm/yyyy" required="" type="date"> <span class="validity"></span></label>
+                  <p class="text-sm pt-2 text-brand-gray">
+                    This must match the date of birth that we have on file for your election to be valid.
+                  </p>
+                </div>
+              </div>
+              <div class="md:flex md:items-center mb-6">
+                <label class="block" for="mbrInsuranceConsentGiven-yes"><input class="form-checkbox mr-1 -mt-1 leading-tight" data-nl-ismandatory="true" id="mbrInsuranceConsentGiven-yes" name=
+                "consent-given" required="" type="checkbox" value="Yes"> <span class="text-xl"><strong>Yes -</strong> I want to opt-in and retain my insurance.</span></label>
+              </div>
+              <div class="md:flex md:items-center mb-6">
+                <button class="cta-dark block w-full lg:m-3" id="input155539912261392" onclick="formSubmit()">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="w-full lg:w-1/2 lg:pl-10 pl-4 pb-24">
+            <ul class="list-disc">
+              <li class="text-sm text-gray-400 p-1">Submitting this election to Media Super will mean that your current and any future insurance cover will be maintained and premiums will continue to be
+              deducted, even if your super account does not receive a contribution or roll in for 16 months.
+              </li>
+              <li class="text-sm text-gray-400 p-1">This instruction will apply to the Media Super death, total and permanent disablement and income protection cover (where relevant) you currently have and
+              will continue to remain in place even if the level or type of your cover changes in the future.
+              </li>
+              <li class="text-sm text-gray-400 p-1">Depending on which Media Super account and type of cover you have, there are other situations where your cover will stop, for example when you
+              reach a certain age, close your account, no longer receive employer contributions or there's not enough money to pay insurance premiums. See the relevant insurance guide for your super
+              account.
+              </li>
+              <li class="text-sm text-gray-400 p-1">You can choose to cancel your cover at any time by contacting Media Super.
+              </li>
+              <li class="text-sm text-gray-400 p-1">For further information regarding insurance and the Protecting Your Super changes, refer to <a class="underline" href=
+              "https://www.mediasuper.com.au/blog/news/protecting-your-super-legislation-changes-explained" target="_blank">changes-to-your-super</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!-- Contact -->
+    <div class="bg-purple">
+      <div class="container mx-auto lg:px-24 px-5 py-12">
+        <div class="mx-auto lg:w-full text-white">
+          <h2 class="text-3xl font-semibold">
+            We&rsquo;re here to help
+          </h2>
+          <p class="pt-5 text-xl pb-3">
+            If you have any questions or would like to discuss your options further, we can help get your super sorted.
+          </p>
+          <div class="flex flex-wrap text-center">
+            <div class="w-full lg:w-1/2">
+              <a class="cta-yellow block m-3 relative" href="tel:1800%20640%20886">1800 640 886 <i class="fa-solid fa-angle-right text-sm absolute right-0 pr-5"></i></a>
+              <p class="lg:pb-0 pb-5">
+                Available 8.00am to 8.00pm (AEST/AEDT) weekdays.
+              </p>
+            </div>
+            <div class="w-full lg:w-1/2">
+              <a class="cta-yellow block m-3 relative" href="mailto:enq@mediasuper.com.au">enq@mediasuper.com.au <i class="fa-solid fa-angle-right text-sm absolute right-0 pr-5"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- footer MS -->
+    <footer class="w-full flex items-center justify-center bg-brand-gray py-16">
+      <div class="container mx-auto lg:px-24 px-5">
+        <div class="flex flex-col">
+          <div class="flex mb-12 flex-row justify-between text-brand-gray">
+            <div>
+              <a href="https://www.mediasuper.com.au/" target="_blank"><img alt="Media Super logo" class="nlui-widget" src=
+              "https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/7ce92bc4056a9f197b73c63f8a92b0de5005a369e691ebe156f634def35e3037.png" style="width: 130px;"></a>
+            </div>
+            <a class="hidden md:block cursor-pointer hover:text-blue-600 pt-2" href="https://www.mediasuper.com.au/about-us" target="_blank">About Us</a> 
+            <a class="hidden md:block cursor-pointer hover:text-blue-600 pt-2" href="https://www.mediasuper.com.au/retirement/retirement-planning/retirement-advice-and-resources" target="_blank">Advice Services</a> 
+            <a class="hidden md:block cursor-pointer hover:text-blue-600 pt-2" href="https://www.mediasuper.com.au/tools-resources/seminars" target="_blank">Seminars & webinars</a>
+            <a class="hidden md:block cursor-pointer hover:text-blue-600 pt-2" href="https://www.mediasuper.com.au/contact-us" target="_blank">Contact</a>
+          </div>
+          <hr class="border-gray-400 pb-8">
+          <!-- terms -->
+          <div class="flex">
+            <p class="w-full text-gray-500 text-xs">
+              <a class="underline pr-5" target="_blank" href="https://www.mediasuper.com.au/terms-of-use">Terms and conditions</a>
+              <a class="underline" target="_blank" href="https://www.mediasuper.com.au/privacy-policy">Privacy policy</a> 
+              <br><br/>
+              United Super Pty Ltd ABN 46 006 261 623 AFSL 233792 as Trustee for Cbus Super Fund ABN 75 493 363 262 offering Media Super products. 
+              The information on this website is general in nature and does not take into account your personal objectives, situation or needs. Before making a decision about joining Media Super, you should consider your own requirements and read the relevant <a class="underline" target="_blank"  href="https://www.mediasuper.com.au/tools-resources/product-disclosure-statements">Product Disclosure Statement</a> and  
+              <a class="underline" target="_blank" href="https://www.mediasuper.com.au/about-us/target-market-determinations">Target Market Determination</a>.
+              <br><br/>
+              ©Media Super <span id="year"></span>. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script type="text/javascript">
+    // <![CDATA[
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    // ]]>
+    </script>
+  </body>
+</html>

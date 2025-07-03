@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cbus Super: Template Testing</title>
+  <link rel="shortcut icon" href="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/favicon.ico" type="image/vnd.microsoft.icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <link href="https://fonts.cdnfonts.com/css/effra-heavy" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+  <!-- Link Swiper's CSS --><link rel="stylesheet" href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/a5f577cca485379c4aacc2a6cd5ec365.css"/>
+  <!-- tailwindcss --><link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/8ee28de705b5ab88527f77f76b51fc77.css" rel="stylesheet">
+  <style>
+		.font-normal {font-family: "Effra", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+		.font-heavy {font-family: 'Effra Heavy', "Helvetica Neue", Helvetica, Arial, sans-serif;}
+		.font-light {font-family: 'Effra Light', "Helvetica Neue", Helvetica, Arial, sans-serif;}
+		.font-medium {font-family: 'Effra Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;}
+		.font-400 {font-weight: 400;}
+		.text-brand-gray {color: #666;}
+		.text-brand-purple { color: #72004D; }
+		.bg-gradient {
+			background: rgb(162, 162, 162);
+			background: linear-gradient(100deg, rgba(162, 162, 162, 1) 0%, rgb(55 65 81) 0%, rgba(255, 255, 255, 0) 100%);
+		}
+		.bg-brand-black { background-color: #1a1a1a;}
+		.bg-brand-dark {background-color: #333;}
+		.bg-brand-green {background-color: #008a44;}
+		.bg-brand-blue {background-color: #00508c;}
+		.text-brand-blue { color: #00508c;}
+		.h-screen-50 {
+			height: 50vh;
+		}
+		.cta-light {
+			background-color: white;
+			box-shadow: 0 3px 0 0 #8d8d8d;
+			border-radius: 8px;
+			border: solid 1px #8d8d8d;
+			color: #333;
+			font-family: 'Effra Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			padding: 8px 50px;
+		}
+		.cta-dark {
+			background-color: #333;
+			box-shadow: 0 3px 0 0 #8d8d8d;
+			border-radius: 8px;
+			color: white;
+			font-family: 'Effra Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
+			padding: 8px 50px;
+		}
+		.cta-dark:hover, .cta-light:hover {
+			position: relative;
+			top: -2px;
+			box-shadow: 0 5px 0 0 #8d8d8d, 0 2px 4px 0 #8d8d8d;
+		}
+		.badge-teal {
+			background: #e0f7fb;
+			border-radius: 10px;
+			color: #21abc5;
+			display: inline-block;
+			line-height: 2.1;
+			padding: 0 9px;
+		}
+		.past {
+			background: linear-gradient(to top right, #fff calc(50% - 1px), #d1d5db, #fff calc(50% + 1px) );
+			color: #d1d5db;
+			cursor: pointer;
+			pointer-events: none;
+		}
+		a:hover {
+			opacity: .7;
+			transition: all .2s;
+		}
+		.fadeup {
+			animation-name: fadeUp;
+			-webkit-animation-name: fadeUp;
+			animation-duration: 1s;
+			-webkit-animation-duration: 1s;
+			animation-timing-function: ease;
+			-webkit-animation-timing-function: ease;
+			visibility: visible!important
+		}
+		@keyframes fadeUp {
+			0% {transform: translateY(15%);opacity: 0}
+			40% {opacity: 0}
+			100% {transform: translateY(0);opacity: 1}
+		}
+		@-webkit-keyframes fadeUp {
+			0% {-webkit-transform: translateY(15%);
+				opacity: 0}
+			40% {opacity: 0}
+			100% {-webkit-transform: translateY(0);
+				opacity: 1
+			}
+		}
+		.shadow-box { box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}
+		.shadow-box-2 {box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+
+		.seg { position: absolute; opacity: 0;}
+  </style>
+
+
+<!-- Adobe tracking -->
+<script>
+	var digitalData = digitalData || {};
+	digitalData = {"page":{"pageInfo":{"pageName":"ACM: Cbus App Landing - Template Testing","brand":"Cbus"},"category":{}}}
+	digitalData.page.pageInfo.pageUrl = window.location.href;
+	digitalData.page.pageInfo.domain = window.location.hostname;
+</script>
+
+<script type="text/javascript" src="//assets.adobedtm.com/launch-ENd8db634a912b4764b21552a1fca7014a.min.js" async></script>
+
+</head>
+<body>
+	
+<div class="bg-no-repeat bg-center bg-top h-96" style="background-image: 
+	url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/ca5c97542eed349f67dd1a924157bb35.jpg')">
+    
+	<div class="bg-gradient flex content-center lg:pt-0 flex-wrap h-96">
+		<div class="container mx-auto px-10 lg:px-0">
+			<div class="fadeup  lg:w-1/4 text-white md:mx-8">
+				<h1 class="font-heavy mb-8 mark-bold text-6xl text-5xl leading-none">
+					Cbus <span class="font-light border-2 border-white px-3">Live</span> Webinars
+				</h1>
+				<p class="-mt-5 font-light">Online, via Zoom</p>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+<div class="container mx-auto pb-24">
+
+
+	<div class="flex flex-wrap justify-center p-5">
+		<div class="lg:w-1/3 p-5 rounded shadow-box-2 m-4">
+			<p class="text-3xl font-heavy">Transition to Retirement Strategy</p>
+			<p class="pt-3 text-gray-600">
+				Learn how to gain access to your super via an Income Stream, even though you may be under 65 years old and still working. 
+			</p>
+			  <!-- Flex columns -->
+			<div class="py-5 bottom-0 left-0 right-0">
+				<div class="flex flex-wrap justify-center -mx-5">
+					<div class="date lg:w-auto text-center w-full bg-blue-500 m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-11-08">
+						<a id="link1" target="_blank" href="https://www.cbussuper.com.au/retirement"
+							data-nl-type="externalLink">
+						  <span class="seg"></span> Find Out More
+						</a>
+					</div>
+					<div class="date lg:w-auto text-center w-full bg-blue-500 m-2 text-white text-sm leading-5 py-2 px-4 border border-gray-300 rounded-md" data-date="2022-11-30">
+						<a target="_blank" href="https://www.cbussuper.com.au/super/tax-on-superannuation"
+						   title="CTA 2">
+						   <span class="seg"></span> Read More
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+<footer class="w-full flex items-center justify-center bg-brand-black">
+	<div class="md:w-2/3 w-full px-4 text-white flex flex-col">
+		<div class="flex flex-col">
+			<div class="flex mt-24 mb-12 flex-row justify-between">
+				
+				<div class="">
+					<a target="_blank" href="https://www.cbussuper.com.au/">
+						<img src="https://www.cbussuper.com.au/content/dam/cbus/images/icons-and-logos/Cbus-ISA-Footer-Logo-2017.png" alt="Cbus Super logo" style="width: 130px;">
+					</a>
+				</div>
+
+				<a target="_blank" class="hidden md:block cursor-pointer text-gray-500 hover:text-white uppercase pt-5" href="https://www.cbussuper.com.au/about-us/who-we-are">
+					About
+				</a>
+				<a target="_blank" class="hidden md:block cursor-pointer text-gray-500 hover:text-white uppercase pt-5" href="https://www.cbussuper.com.au/tools-resources/advice-services">
+					Advice Services
+				</a>
+				<a target="_blank" class="hidden md:block cursor-pointer text-gray-500 hover:text-white uppercase pt-5" href="https://www.comms.cbussuper.com.au/scripts/cbus/seminars/#upsem">
+					All webinars
+				</a>
+				<a target="_blank" class="hidden md:block cursor-pointer text-gray-500 hover:text-white uppercase pt-5" href="https://www.cbussuper.com.au/support/contact">
+					Contact
+				</a>
+
+				<div class="flex flex-row space-x-8 items-center justify-between text-lg">
+					<a target="_blank" href="https://www.facebook.com/cbussuperfund">
+						<i class="fab fa-facebook-f"></i>                           
+					</a>
+					<a target="_blank" href="https://twitter.com/cbussuperfund">
+						<i class="fab fa-twitter"></i>   
+					</a>
+					<a href="https://www.linkedin.com/company/cbus-super-fund">
+						<i class="fab fa-linkedin-in"></i>                            
+					</a>
+				</div>
+			</div>
+			<hr class="border-gray-600"/>
+			<p class="w-full text-center my-12 text-gray-600">©2021 Cbus Super. All rights reserved. Cbus ABN 75 493 363 262.</p>
+		</div>
+	</div>
+
+
+<form class="hidden">
+	<a href="#" data-nl-type="action" data-nl-action="next">Tell me more</a>
+</form>
+
+    <!-- Swiper JS -->
+    <script src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/acdd06efcdb1fad5701c48186f8a9fe9.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+	var swiper = new Swiper(".mySwiper", {
+	slidesPerView: 1.1,
+	spaceBetween: 10,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+	breakpoints: {
+        800: {
+            slidesPerView: 3,
+        }
+    }
+});
+
+//  inActive  Date
+$(function() {
+    var currentDate = Date.parse((new Date()).toLocaleDateString());
+
+    $(".date").each(function() {
+        var specifiedDate = $(this).data('date');
+        var date = Date.parse(specifiedDate);
+        
+        if (!isNaN(date) && date == currentDate) {
+            $(this).addClass('today');
+        }
+        else if(!isNaN(date) && currentDate - date > 0) {
+            $(this).addClass('past');
+        }
+        else {
+            $(this).addClass('future');
+        }
+    });
+
+
+	if (window.location.href.indexOf("111") > -1) {
+		$(".seg").append("[111]");
+	}
+	if (window.location.href.indexOf("222") > -1) {
+		$(".seg").append("[222]");
+	}
+	if (window.location.href.indexOf("333") > -1) {
+		$(".seg").append("[333]");
+	}
+	
+});
+
+	
+
+</script>
+
+</body>
+</html>

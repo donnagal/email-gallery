@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Superannuation - Callback Request</title>
+  <link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/55e79d51b6e47132a76167d75c5e8fd9d48ecc49ec789a31ca84e51c2fe6bbbb.png" rel="icon" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+	<!-- Start: ADOBE SCRIPTS -->
+	<script type="text/javascript">// <![CDATA[
+        function formSubmit(e) {
+
+            var consent = "";
+            // have to get values from radio buttons manually for IE
+            var radios = document.getElementsByName("consent-given")
+            for (var i = 0; i < radios.length; i++) {
+                var consentRadio = radios[i]
+                if (consentRadio.checked) {
+                    consent = consentRadio.value
+                }
+            }
+            var memberID = document.forms["page-form"]["memberID"].value
+            var dob = document.forms["page-form"]["mbrDOBSubmittedForm"].value
+
+            var memberIDPattern = /^[0-9]*$/;
+            var IEDatePattern = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}/;
+            if (!!consent && !!dob && !!memberID && memberIDPattern.test(memberID)) {
+
+                var normalisedDOB = dob 
+                if (IEDatePattern.test(dob)) {
+                    var dobParts = dob.split('/');
+                    var day = dobParts[0]
+                    var month = dobParts[1]
+                    var year = dobParts[2]
+
+                    normalisedDOB = year + '-' + month + '-' + day
+                }
+                document.controller.setValue('/ctx/visitor/consent', consent, 'consent-given')
+                document.controller.setValue('/ctx/visitor/memberID', memberID, 'memberID')
+                document.controller.setValue('/ctx/visitor/dobGiven', normalisedDOB, 'mbrDOBSubmittedForm')
+
+                document.controller.submit('next')
+            }
+
+            return false;
+        }
+    // ]]>
+    </script>
+     <script>
+          var digitalData = digitalData || {};
+          digitalData = {"page":{"pageInfo":{"pageName":"ACM: Callback Request Supermatch Landing","brand":"MediaSuper"},"category":{}}}
+          digitalData.page.pageInfo.pageUrl = window.location.href;
+          digitalData.page.pageInfo.domain = window.location.hostname;
+    </script>
+	<!-- Dev Media super -->
+	<script type="text/javascript" src="//assets.adobedtm.com/b8f44b6ccd00/987dddf6d251/launch-50352b2fd1e7-development.min.js"></script>  
+<!-- End: ADOBE SCRIPTS -->
+
+  <!-- media super -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://use.typekit.net/sdy0sxg.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic|Roboto+Condensed:400,700,400italic,700italic" rel="stylesheet">
+  <!-- global -->	
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/tailwind.css" rel="stylesheet">
+  <link href="https://email-gallery.netlify.app/emails/landing-pages/2022/css/main.css" rel="stylesheet">
+</head>
+<body class="media-super lg:px-10">
+
+<div class="bg-no-repeat bg-cover bg-top h-banner" style="background-image: 
+		url('https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/header-super.jpg')">
+	<div class="flex content-center lg:pt-0 flex-wrap h-banner">
+		<div class="container mx-auto px-10 lg:px-0">
+			<div class="fadeup w-full text-white lg:px-24">
+				<h1 class="text-brand-yellow font-heading lg:text-5xl text-4xl leading-none uppercase">
+					Callback Request
+				</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="bg-white">
+	<div class="container mx-auto lg:px-24 px-5 py-10">
+		<p class="text-right"><strong>Your member number:</strong> <span class="badge-teal text-sm">[Member ID]</span></p>
+		<div id="confirm" class="flex">
+			<div class="w-full p-10 bg-white rounded-md text-center">
+			  <h2 class="text-4xl font-medium pb-3">Please confirm your mobile number</h2>
+			  <p class="mx-auto lg:w-2/3 text-brand-gray font-400 text-xl">
+				  Before we call you, let’s check we have the right mobile number for you.<br/>
+				  Does your mobile number end with
+				  <strong class="number badge-teal mt-3"><span class="nl-dce-field" id="span162503854014471" data-nl-expr="[recipient/@mobilePhone]">[mobilePhone]</span></strong>?
+			  </p>
+			  <p class="text-center pt-5 text-brand-gray font-400 text-xl">
+				  <form class="cb-form">
+					  <p class="hidden">
+						  <input id="mbrSuperMatchCallBackDate" class="cb-checkbox" type="checkbox"  value="true" data-nl-xpath="@mbrSuperMatchCallBackDate" data-nl-label="Request Callback" data-nl-ismandatory="true" data-nl-bindto="xpath" required checkedValue="Y"/>
+						  <label for="mbrSuperMatchCallBackDate" class="text-lg font-normal">Yes</label>
+					  </p>
+					  <button class="cta-dark lg:w-auto w-full lg:m-3 mb-4"  id="a156575514329242" href="#" data-nl-type="action" data-nl-transition="next" data-nl-action="next">
+						  Yes, that’s my number 
+					  </button>
+					  <button id="no" type="button" class="cta-light lg:w-auto w-full  lg:m-3 cursor-pointer">
+						  No, that’s not right
+					  </button>
+				  </form>
+			  </p>
+  
+			</div>
+	  </div>
+
+	<div id="show" class="flex">
+		<div class="w-full p-10 bg-white rounded-md text-center">
+			<h2 class="text-4xl font-medium pb-3">Looks like you’ll have to call us!</h2>
+			  <p class="mx-auto lg:w-2/3  text-brand-gray font-400 text-xl">
+				The good news is that you can do two things at once, update your mobile number and at the same time, ask us to check if you have lost or unclaimed super. 
+				<br/><br/>
+				Call <a class="font-bold" target="_blank" href="tel:1800 640 886">1800 640 886</a>
+			  </p>
+			  <p class="text-brand-gray font-400 text-xl pt-2">Mon to Fri from 8am to 8pm AEDT/AEST to speak to a consultant.</p>
+		  </div>
+	</div>
+
+
+</div>
+</div>
+
+
+ <!-- Contact -->
+ <div class="bg-purple">
+	<div class="container mx-auto lg:px-24 px-5 py-12">
+		<div class="mx-auto lg:w-full text-white">
+		<h2 class="text-3xl font-semibold">We’re here to help</h2>
+		<p class="pt-5 text-xl pb-3">
+			If you have any questions or would like to discuss your options further, we can help get your super sorted.
+		</p>
+		<div class="flex flex-wrap text-center">
+			<div class="w-full lg:w-1/2">
+				<a href="tel:1800 640 886" class="cta-yellow block m-3 relative">1800 640 886 <i class="fa-solid fa-angle-right text-sm absolute right-0 pr-5"></i></a>
+				<p class="lg:pb-0 pb-5">Available 8.00am to 8.00pm (AEST/AEDT) weekdays.</p>
+			</div>
+			<div class="w-full lg:w-1/2">
+				<a href="mailto:enq@mediasuper.com.au" class="cta-yellow block m-3 relative">enq@mediasuper.com.au <i class="fa-solid fa-angle-right text-sm absolute right-0 pr-5"></i></a>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+<!-- footer MS -->
+<footer class="w-full flex items-center justify-center bg-brand-gray py-16">
+	<div class="container mx-auto lg:px-24 px-5 py-12">
+		<div class="flex flex-col">
+			<div class="flex mb-12 flex-row justify-between text-brand-gray">
+				
+				<div class="">
+					<a target="_blank" href="https://www.mediasuper.com.au/">
+						<img src="https://res.marketing.cbussuper.com.au/res/cbus_mkt_prod1/7ce92bc4056a9f197b73c63f8a92b0de5005a369e691ebe156f634def35e3037.png" alt="Media Super logo" style="width: 130px;">
+					</a>
+				</div>
+
+				<a target="_blank" class="hidden md:block cursor-pointer hover:text-blue-600 pt-2" href="https://www.mediasuper.com.au/about-us">
+					About Us
+				</a>
+				<a target="_blank" class="hidden md:block cursor-pointer hover:text-blue-600 pt-2" href="https://www.mediasuper.com.au/retirement/retirement-planning/retirement-advice-and-resources">
+					Advice Services
+				</a>
+				<a target="_blank" class="hidden md:block cursor-pointer hover:text-blue-600 pt-2" href="https://www.mediasuper.com.au/tools-resources/seminars">
+					Seminars & webinars
+				</a>
+				<a target="_blank" class="hidden md:block cursor-pointer hover:text-blue-600 pt-2" href="https://www.mediasuper.com.au/contact-us">
+					Contact
+				</a>
+			</div>
+			<hr class="border-gray-400 pb-8"/>
+
+			<div class="flex flex-wrap pb-5">
+				<div class="lg:w-1/2">
+					<p class="w-full text-gray-600 text-sm pb-4">©Media Super <span id="year"></span>. All rights reserved.</p>
+				</div>
+				<div class="lg:w-1/2">
+					<div class="flex flex-row space-x-8 items-center justify-end text-lg text-brand-gray">
+						<a target="_blank" href="http://instagram.com/Media_Super">
+							<i class="fa-brands fa-instagram"></i>                          
+						</a>
+						<a target="_blank" href="https://www.facebook.com/MediaSuper">
+							<i class="fab fa-facebook-f"></i>                           
+						</a>
+						<a target="_blank" href="https://twitter.com/MediaSuper">
+							<i class="fab fa-twitter"></i>   
+						</a>
+						<a href="https://www.linkedin.com/company/2008122">
+							<i class="fab fa-linkedin-in"></i>                            
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- terms -->
+			<hr class="border-gray-400 pt-8"/>
+			<div class="flex">
+				<p class="w-full text-gray-500 text-xs">
+					Media Super Ltd (ABN 30 059 502 948, AFSL 230254) is Trustee of Media Super (ABN 42 574 421 650). The information on this website is of a general nature only and does not take into account your personal objectives, situation or needs. 
+				</p>
+			</div>
+
+
+		</div>
+	</div>
+</footer>
+
+
+<script>
+	document.getElementById("year").innerHTML = new Date().getFullYear();
+	$(document).ready(function(){
+		$('label').click();
+
+		$("#show").hide();
+		$("#no").click(function(){
+			$("#show").show();
+			$("#confirm").hide();
+ 		 });
+
+		txt = $.trim($('.number').text());
+		$('.number').text( "### ### " + txt.substring (7, txt.length + 3));
+
+	});
+</script>
+
+</body>
+</html>
