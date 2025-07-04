@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Annual Report FY24</title>
+	<title>Year in review</title>
 	<link href="../../../images/favion.png" rel="icon" type="image/x-icon" />
 
 	<link rel="stylesheet" href="../../../css/v-dashbaord.css">
@@ -15,6 +15,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 	<link rel="stylesheet" href="../../../css/global.css">
 	<link rel="stylesheet" href="styles.css">
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body id="counter">
@@ -45,9 +47,61 @@
 		</nav>
 	</div>
 
-	<div class="link-source">
-		<a href="#source">Source</a>
-	</div>
+<div class="menu-nav relative inline-block text-left">
+  <div class="dropdown">
+    <!-- Main menu button -->
+    <button class="bg-white px-4 py-2 w-full rounded-full shadow border border-gray-300 text-gray-800 font-semibold text-left">
+      Menu
+    </button>
+
+    <!-- Main dropdown -->
+    <ul class="dropdown-menu hidden mt-2 w-full bg-white border border-gray-200 rounded shadow-lg">
+
+      <!-- Item 1 -->
+      <li class="relative dropdown group">
+        <a href="#chapter1" class="block px-4 py-2 hover:bg-gray-100 text-gray-800 w-full font-bold rounded-lg">
+          1. Team workload delivery
+        </a>
+        <ul class="dropdown-menu hidden absolute right-full top-0 mr-1 w-64 bg-white border border-gray-200 rounded shadow z-10 group-hover:block">
+          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#launched">Campaigns launched</a></li>
+          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#brand">Breakdown by brand</a></li>
+          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#team">Breakdown by team</a></li>
+          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#channel">Breakdown by channel</a></li>
+          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#emails-fy-compare">Email FY comparison</a></li>
+          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#email-effort">Email effort</a></li>
+        </ul>
+      </li>
+
+      <!-- Item 2 -->
+      <li class="relative dropdown group">
+        <a href="#chapter2" class="block px-4 py-2 hover:bg-gray-100 text-gray-800 w-full font-bold rounded-lg">
+          2. Member engagement stats
+        </a>
+        <ul class="dropdown-menu hidden absolute right-full top-0 mr-1 w-64 bg-white border border-gray-200 rounded shadow z-10 group-hover:block">
+          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#vlolumes">Volumes</a></li>
+          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#opens">Opens</a></li>
+          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#clicks">Clicks</a></li>
+          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#reads">Read time</a></li>
+          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#inbox">Inbox</a></li>
+        </ul>
+      </li>
+
+      <!-- Item 3 -->
+      <li class="relative dropdown group">
+        <a href="#chapter3" class="block px-4 py-2 hover:bg-gray-100 text-gray-800 w-full font-bold rounded-lg">
+          3. Highlights & Achievements
+        </a>
+        <ul class="dropdown-menu hidden absolute right-full top-0 mr-1 w-64 bg-white border border-gray-200 rounded shadow z-10 group-hover:block">
+          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#web">Personalisation success</a></li>
+          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#highlights">Highlights</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+
 
 	<!-- cover -->
 	<div class="bg-gradient-2 page flex justify-center items-center bg-fixed bg-cover">
@@ -93,7 +147,7 @@
 
 
 
-	<div class="bg-gradient page flex justify-center items-center bg-green bg-fixed bg-cover bg-center">
+	<div id="launched" class="bg-gradient page flex justify-center items-center bg-green bg-fixed bg-cover bg-center">
 
 		<div data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
 			<div class="flex flex-col gap-6 text-white">
@@ -116,7 +170,7 @@
 	</div>
 
 
-	<div class="bg-gradient page flex justify-center items-center bg-green bg-fixed bg-cover bg-center">
+	<div id="brand" class="bg-gradient page flex justify-center items-center bg-green bg-fixed bg-cover bg-center">
 		<div class="flex flex-col gap-9 text-white">
 			<div data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
 				<p class="text-5xl text-center font-bold">Breakdown by brand</p>
@@ -148,7 +202,7 @@
 
 
 
-	<div class="bg-gradient page flex justify-center items-center bg-green bg-fixed bg-cover bg-center">
+	<div id="team" class="bg-gradient page flex justify-center items-center bg-green bg-fixed bg-cover bg-center">
 		<div class="h-full flex flex-col gap-9 text-white">
 			<div class="h-full">
 				<div class="h-1/2 flex items-center justify-center" data-aos="fade" data-aos-easing="ease-in"
@@ -192,7 +246,7 @@
 
 
 
-	<div class="bg-gradient page flex flex-col gap-10 justify-center items-center bg-green bg-fixed bg-cover bg-center">
+	<div id="channel" class="bg-gradient page flex flex-col gap-10 justify-center items-center bg-green bg-fixed bg-cover bg-center">
 		<div>
 			<p class=" font-bold text-3xl text-center text-white">Breakdown Multi channel</p>
 			<p class="text-center text-white">148 campaigns launched across multiple channels.</p>
@@ -284,9 +338,7 @@
 
 
 
-	<div class="bg-gradient page flex justify-center items-center bg-green  bg-fixed bg-cover bg-center">
-
-
+	<div id="emails-fy-compare" class="bg-gradient page flex justify-center items-center bg-green  bg-fixed bg-cover bg-center">
 		<div class="h-full flex flex-col gap-9 text-white">
 			<div data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600"
 				class="h-1/2 flex flex-col items-center justify-center">
@@ -373,7 +425,7 @@
 
 
 
-	<div class="bg-gradient page flex justify-center items-center bg-green  bg-fixed bg-cover bg-center">
+	<div id="email-effort" class="bg-gradient page flex justify-center items-center bg-green  bg-fixed bg-cover bg-center">
 
 		<div class="h-full flex justify-center items-end gap-30">
 			<div>
@@ -435,7 +487,7 @@
 
 
 
-	<div class="bg-gradient-2 page flex justify-center items-center bg-green bg-fixed bg-cover bg-center">
+	<div id="volumes" class="bg-gradient-2 page flex justify-center items-center bg-green bg-fixed bg-cover bg-center">
 		<div class="flex flex-col justify-center items-center gap-20 w-full" style="max-width:800px">
 			<div data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600" class="mr-auto">
 				<div class="flex flex-col gap-6 text-white">
@@ -462,7 +514,7 @@
 
 
 
-	<div class="bg-gradient-2 page flex justify-center items-center bg-green bg-fixed bg-cover bg-center">
+	<div id="opens" class="bg-gradient-2 page flex justify-center items-center bg-green bg-fixed bg-cover bg-center">
 		<div class="h-full flex flex-col gap-9 text-white">
 
 			<div class="h-1/2 flex flex-col items-center justify-center" data-aos="fade" data-aos-easing="ease-in"
@@ -572,7 +624,7 @@
 
 
 
-	<div class="page flex justify-center items-center bg-green bg-fixed bg-cover bg-center"
+	<div id="clicks" class="page flex justify-center items-center bg-green bg-fixed bg-cover bg-center"
 		style="background-image: url(./img/bg5.jpg);">
 		<div class="h-full flex flex-col gap-9 text-white">
 
@@ -641,7 +693,7 @@
 
 
 
-	<div class="page bg-green flex flex-col justify-center items-center bg-fixed bg-cover bg-center"
+	<div id="reads" class="page bg-green flex flex-col justify-center items-center bg-fixed bg-cover bg-center"
 		style="background-image: url(./img/bg5.jpg);">
 
 		<div class="h-1/2 flex flex-col items-center justify-center text-white text-center">
@@ -698,7 +750,7 @@
 
 
 
-	<div class="page bg-cream flex flex-col justify-center items-center ">
+	<div id="inbox" class="page bg-cream flex flex-col justify-center items-center ">
 		<div class="text-white text-center">
 			<p class="text-5xl font-bold text-grey">Read time</p>
 			<br />

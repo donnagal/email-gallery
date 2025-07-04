@@ -54,11 +54,10 @@ body {
   text-decoration: underline;
 }
 
-.link-source {
+.menu-nav {
   position: fixed;
-  bottom: 15px;
+  top: 15px;
   right: 16px;
-  text-decoration: underline;
 }
 
 .mw-50 {

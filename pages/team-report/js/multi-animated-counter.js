@@ -108,3 +108,31 @@ $(function () {
     );
   }
 });
+
+
+  $(document).ready(function () {
+    // Toggle main menu on click
+    $('.menu-nav > .dropdown > button').on('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const $mainMenu = $(this).siblings('.dropdown-menu');
+      $('.menu-nav .dropdown-menu').not($mainMenu).addClass('hidden'); // Hide others
+      $mainMenu.toggleClass('hidden');
+    });
+
+    // Show/hide nested submenus on hover
+    $('.menu-nav .dropdown-menu > li').hover(
+      function () {
+        $(this).children('.dropdown-menu').removeClass('hidden');
+      },
+      function () {
+        $(this).children('.dropdown-menu').addClass('hidden');
+      }
+    );
+
+    // Hide all dropdowns when clicking outside
+    $(document).on('click', function () {
+      $('.menu-nav .dropdown-menu').addClass('hidden');
+    });
+  });
