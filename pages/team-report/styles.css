@@ -186,3 +186,128 @@ body {
 				transform: translateY(-15px);
 			}
 		}
+
+
+.animated-bg-event {
+  animation: bgCycleEvent 12s infinite;
+  height: 500px; 
+  width: 271px;
+  background-size: cover;
+  background-position: top; /* or 'top' if you want */
+  background-repeat: no-repeat;
+  /* Initial image (optional, will be overridden by animation) */
+  background-image: url('../../gallery/event-ms-2.jpg');
+}
+
+@keyframes bgCycleEvent {
+  0%, 33.33% {
+    background-image: url('../../gallery/event-ms-2.jpg');
+  }
+  33.34%, 66.66% {
+    background-image: url('../../gallery/event-template-ms.png');
+  }
+  66.67%, 100% {
+    background-image: url('../../gallery/event-template-cbus.png');
+  }
+}
+
+.animated-bg-mar {
+  animation: bgCycleMar 13s infinite;
+  height: 500px; 
+  width: 271px;
+  background-size: cover;
+  background-position: top; /* or 'top' if you want */
+  background-repeat: no-repeat;
+  /* Initial image (optional, will be overridden by animation) */
+  background-image: url('../../gallery/12-month-tenure.jpg');
+}
+
+@keyframes bgCycleMar {
+  0%, 33.33% {
+    background-image: url('../../gallery/12-month-tenure.jpg');
+  }
+  33.34%, 66.66% {
+    background-image: url('../../gallery/beneficiaries-accum.jpg');
+  }
+  66.67%, 100% {
+    background-image: url('../../gallery/isa.jpg');
+  }
+}
+
+.animated-bg-comms {
+  animation: bgCycleComms 14s infinite;
+  height: 500px; 
+  width: 271px;
+  background-size: cover;
+  background-position: top; /* or 'top' if you want */
+  background-repeat: no-repeat;
+  /* Initial image (optional, will be overridden by animation) */
+  background-image: url('../../gallery/annual-statement.jpg');
+}
+
+@keyframes bgCycleComms {
+  0%, 33.33% {
+    background-image: url('../../gallery/annual-statement.jpg');
+  }
+  33.34%, 66.66% {
+    background-image: url('../../gallery/super-summary-accum.jpg');
+  }
+  66.67%, 100% {
+    background-image: url('../../gallery/super-summary-sis.jpg');
+  }
+}
+
+
+.confetti-bg {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.confetti-bg::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background:
+    radial-gradient(circle 4px at 10% 20%, #ff3, #ff3 80%, transparent 80%),
+    radial-gradient(circle 4px at 20% 50%, #0f9, #0f9 80%, transparent 80%),
+    radial-gradient(circle 4px at 30% 80%, #f39, #f39 80%, transparent 80%),
+    radial-gradient(circle 4px at 40% 10%, #3cf, #3cf 80%, transparent 80%),
+    radial-gradient(circle 4px at 50% 40%, #fc0, #fc0 80%, transparent 80%),
+    radial-gradient(circle 4px at 60% 70%, #c0f, #c0f 80%, transparent 80%),
+    radial-gradient(circle 4px at 70% 30%, #0cf, #0cf 80%, transparent 80%),
+    radial-gradient(circle 4px at 80% 60%, #f06, #f06 80%, transparent 80%),
+    radial-gradient(circle 4px at 90% 90%, #ff6, #ff6 80%, transparent 80%);
+  animation: confettiFall 5s linear infinite;
+}
+
+@keyframes confettiFall {
+  0% {
+    background-position:
+      10% -50px,
+      20% 0,
+      30% 10px,
+      40% -30px,
+      50% -10px,
+      60% 5px,
+      70% -40px,
+      80% -20px,
+      90% -35px;
+  }
+  100% {
+    background-position:
+      10% 550px,
+      20% 600px,
+      30% 610px,
+      40% 570px,
+      50% 590px,
+      60% 605px,
+      70% 560px,
+      80% 580px,
+      90% 565px;
+  }
+}
