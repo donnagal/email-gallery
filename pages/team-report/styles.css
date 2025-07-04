@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: both mandatory;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-snap-type: both mandatory;
+}
+
+#nav {
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  scroll-snap-align: start;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  border-bottom: 1px solid rgb(49, 182, 87);
+
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.page-cover-links {
+  width: 100%;
+  max-width: 400px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.bar-vertical {
+  background-color: #fff;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.panel-round {
+  padding: 44px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.text-link {
+  color: #3185a9;
+  text-decoration: underline;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.link-source {
+  position: fixed;
+  bottom: 15px;
+  right: 16px;
+  text-decoration: underline;
+}
+
+.mw-50 {
+  max-width: 50%;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.bg-green.bg-green {
+  background-color: #0f8045;
+}
+
+.bg-cream {
+  background-color: #f4efeb;
+}
+
+.bg-green-bright {
+  background-color: #00fb92;
+}
+
+.bg-red {
+  background-color: #ff7a5b;
+}
+
+.bg-blue-bright {
+  background-color: #73feff;
+}
+
+.bg-brown {
+  background-color: #99866d;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-grey {
+  background-color: #1a1a1a;
+}
+
+.text-green-bright {
+  color: #00fb92;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-green-muted {
+  color: #3f9164;
+}
+
+.text-green-light {
+  color: #47d48c;
+}
+
+.text-grey {
+  color: #1a1a1a;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-white {
+  color: #fff;
+}
+.bg-gradient {
+			background: linear-gradient(-45deg, #5555FF, #9787FF, #FF55B8, #FF8787);
+			background-size: 400% 400%;
+			animation: bg 10s infinite;
+		}
+
+		.bg-gradient-2 {
+			background: linear-gradient(-45deg, #331a70, #5555FF, #3185a9, #30c8cc);
+			background-size: 400% 400%;
+			animation: bg 10s infinite;
+		}
+
+		.bg-gradient-3 {
+			background: linear-gradient(-45deg, #ff6733, #ff904b, #fda656, #FF8787);
+			background-size: 400% 400%;
+			animation: bg 10s infinite;
+		}
+
+		@keyframes bg {
+			0% {
+				background-position: 0% 50%
+			}
+
+			50% {
+				background-position: 100% 50%
+			}
+
+			100% {
+				background-position: 0% 50%
+			}
+		}
+
+		.bounce {
+			animation: bounce 2s infinite;
+			position: relative;
+			bottom: -100px;
+		}
+    		@keyframes bounce {
+
+			0%,
+			20%,
+			50%,
+			80%,
+			100% {
+				transform: translateY(0);
+			}
+
+			40% {
+				transform: translateY(-30px);
+			}
+
+			60% {
+				transform: translateY(-15px);
+			}
+		}
