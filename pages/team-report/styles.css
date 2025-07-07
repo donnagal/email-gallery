@@ -131,23 +131,23 @@ body {
 .text-white {
   color: #fff;
 }
-.bg-gradient {
-			background: linear-gradient(-45deg, #5555FF, #9787FF, #FF55B8, #FF8787);
-			background-size: 400% 400%;
-			animation: bg 10s infinite;
-		}
 
-		.bg-gradient-2 {
+		.bg-gradient-1 {
 			background: linear-gradient(-45deg, #331a70, #5555FF, #3185a9, #30c8cc);
 			background-size: 400% 400%;
 			animation: bg 10s infinite;
 		}
-
-		.bg-gradient-3 {
-			background: linear-gradient(-45deg, #ff6733, #ff904b, #fda656, #FF8787);
+  .bg-gradient-2 {
+			background: linear-gradient(-45deg, #0F8045, #57C785, #2A7B9B, #5555FF);
 			background-size: 400% 400%;
 			animation: bg 10s infinite;
 		}
+
+    .bg-gradient-3 {
+     	background: linear-gradient(-45deg, #2A7B9B, #57C785, #0F8045, #5555FF);
+			background-size: 400% 400%;
+			animation: bg 10s infinite;
+    }
 
 		@keyframes bg {
 			0% {
