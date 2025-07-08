@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Email Gallery</title>
+  <link href="../../images/favion.png" rel="icon" type="image/x-icon" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css" />
+  <link rel="stylesheet" href="../../css/global.css" />
+  <link rel="stylesheet" href="../../css/v-dashbaord.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .icon-item {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    @media (min-width: 496px) {
+      .icon-item {
+        width: calc(50% - 16px);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .icon-item {
+        width: calc(33.333333% - 32px);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .icon-item {
+        width: calc(25% - 64px);
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .icon-item {
+        width: calc(20% - 80px);
+      }
+    }
+
+    .icon-container svg {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 0.5rem;
+    }
+
+    .wrapper .tooltip {
+      position: absolute;
+      top: 0;
+      font-size: 14px;
+      background: #ffffff;
+      color: #ffffff;
+      padding: 5px 8px;
+      border-radius: 5px;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="items" class="container mx-auto p-5">
+
+    <!-- Search and Filter -->
+    <form class="bg-gray-100 p-5 text-center mb-5" @submit.prevent>
+      <input id="search-text" placeholder="Quick search..."
+        class="w-1/3 border border-gray-200 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+        type="search" name="search" v-model="search_filter" @input="current = 1" />
+
+      <button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active" @click.prevent="setStatus('')">
+        All
+      </button>
+      <button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
+        @click.prevent="setStatus('performance')">Performance</button>
+      <button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
+        @click.prevent="setStatus('productivity')">Productivity</button>
+      <button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
+        @click.prevent="setStatus('protection')">Protection</button>
+      <button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active" @click.prevent="setStatus('people')">People
+      </button>
+      <button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
+        @click.prevent="setStatus('money')">Money & Savings</button>
+      <button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
+        @click.prevent="setStatus('digital')">Digital & UI</button>
+      <button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
+        @click.prevent="setStatus('infrastructure')">Infrastructure</button>
+    </form>
+
+<div>
+  Colors:
+  <button @click="setStyle(1)">Style 1</button>
+  <button @click="setStyle(2)">Style 2</button>
+  <button @click="setStyle(3)">Style 3</button>
+  <button @click="setStyle(4)">Style 4</button>
+  <button @click="setStyle(5)">Style 5</button>
+  <button @click="setStyle(6)">Style 6</button>
+</div>
+
+<!-- Icons Grid -->
+<div class="wrapper flex flex-wrap text-center">
+  <div class="icon-item bg-gray-100 rounded-lg m-2 p-4" v-for="(item, index) in paginatedItems" :key="item.url">
+    <div class="icon-container" v-html="item.svg"></div>
+    <button @click="downloadSvg(index)" class="download-btn mt-2 px-3 py-1 bg-blue-600 text-white rounded">
+      Download SVG
+    </button>
+    <div class="text-black text-left px-3 mt-2">
+      <p class="text-lg font-semibold">{{ item.url }}</p>
+      <p class="text-xs text-gray-500">{{ item.text }}</p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Pagination Controls -->
+    <div class="mt-5 text-center">
+      <button
+        v-for="page in paginate_total"
+        :key="page"
+        @click="updateCurrent(page)"
+        :class="['py-1 px-3 mx-1 rounded', { 'bg-blue-600 text-white': page === current, 'bg-gray-200': page !== current }]"
+      >
+        {{ page }}
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Vue 2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
+  <script src="js/vue-icons.js"></script>
+
+</body>
+
+</html>
