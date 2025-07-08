@@ -3,13 +3,37 @@ new Vue({
   data: {
     current: 1,
     paginate: 6,
-    primaryColor: "#0055A4",
-    secondaryColor: "#FFCC00",
+    primaryColor: "#515457",
+    secondaryColor: "#0F8045",
     strokeWidth: 4,  // default stroke width
     search_filter: "",
     status_filter: "",
     items: [
       {
+        group: "money, productivity, digital",
+        text: "calculator, hand, push button",
+        url: "laptop",
+        svg: ""
+      },
+      {
+        group: "performance, productivity",
+        text: "Your super will continue to work for you in retirement, managed benefit",
+        url: "webinar",
+        svg: ""
+      },
+            {
+        group: "money, productivity, digital",
+        text: "calculator, hand, push button",
+        url: "laptop",
+        svg: ""
+      },
+      {
+        group: "performance, productivity",
+        text: "Your super will continue to work for you in retirement, managed benefit",
+        url: "webinar",
+        svg: ""
+      },
+            {
         group: "money, productivity, digital",
         text: "calculator, hand, push button",
         url: "laptop",
@@ -114,8 +138,8 @@ new Vue({
           this.strokeWidth = 2.5;
           break;
         default:
-          this.primaryColor = "#0A5490";
-          this.secondaryColor = "#FFCC00";
+          this.primaryColor = "#515457";
+          this.secondaryColor = "#0F8045";
           this.strokeWidth = 2.5;
       }
 

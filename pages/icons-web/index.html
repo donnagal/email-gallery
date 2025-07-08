@@ -76,7 +76,7 @@
 </head>
 
 <body>
-  <div id="items" class="container mx-auto p-5">
+  <div id="items" class="mx-auto p-5">
 
     <!-- Search and Filter -->
     <form class="bg-gray-100 p-5 text-center mb-5" @submit.prevent>
@@ -103,14 +103,15 @@
         @click.prevent="setStatus('infrastructure')">Infrastructure</button>
     </form>
 
+<div class="container mx-auto">
 <div>
   Colors:
-  <button @click="setStyle(1)">Style 1</button>
-  <button @click="setStyle(2)">Style 2</button>
-  <button @click="setStyle(3)">Style 3</button>
-  <button @click="setStyle(4)">Style 4</button>
-  <button @click="setStyle(5)">Style 5</button>
-  <button @click="setStyle(6)">Style 6</button>
+  <button @click="setStyle(1)" class="mt-2 px-3 py-1 bg-gray-600 text-white rounded">Style 1</button>
+  <button @click="setStyle(2)" class="mt-2 px-3 py-1 bg-gray-600 text-white rounded">Style 2</button>
+  <button @click="setStyle(3)" class="mt-2 px-3 py-1 bg-gray-600 text-white rounded">Style 3</button>
+  <button @click="setStyle(4)" class="mt-2 px-3 py-1 bg-gray-600 text-white rounded">Style 4</button>
+  <button @click="setStyle(5)" class="mt-2 px-3 py-1 bg-gray-600 text-white rounded">Style 5</button>
+  <button @click="setStyle(6)" class="mt-2 px-3 py-1 bg-gray-600 text-white rounded">Style 6</button>
 </div>
 
 <!-- Icons Grid -->
@@ -126,7 +127,7 @@
     </div>
   </div>
 </div>
-
+</div>
 
     <!-- Pagination Controls -->
     <div class="mt-5 text-center">
