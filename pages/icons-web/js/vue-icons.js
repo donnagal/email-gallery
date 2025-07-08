@@ -5,7 +5,7 @@ new Vue({
     paginate: 6,
     primaryColor: "#515457",
     secondaryColor: "#0F8045",
-    strokeWidth: 4,  // default stroke width
+    strokeWidth: 4,
     search_filter: "",
     status_filter: "",
     items: [
@@ -21,7 +21,7 @@ new Vue({
         url: "webinar",
         svg: ""
       },
-            {
+      {
         group: "money, productivity, digital",
         text: "calculator, hand, push button",
         url: "laptop",
@@ -33,7 +33,7 @@ new Vue({
         url: "webinar",
         svg: ""
       },
-            {
+      {
         group: "money, productivity, digital",
         text: "calculator, hand, push button",
         url: "laptop",
@@ -45,8 +45,7 @@ new Vue({
         url: "webinar",
         svg: ""
       }
-      // Add more items as needed
-    ],
+    ]
   },
   computed: {
     filteredItems() {
@@ -123,18 +122,18 @@ new Vue({
           this.strokeWidth = 4;
           break;
         case 4:
-          this.primaryColor = "#0099FF";  
-          this.secondaryColor = "#D3D3D3";  
-          this.strokeWidth = 2.5;  
+          this.primaryColor = "#0099FF";
+          this.secondaryColor = "#D3D3D3";
+          this.strokeWidth = 2.5;
           break;
         case 5:
-          this.primaryColor = "#800080";  
-          this.secondaryColor = "#D3D3D3"; 
+          this.primaryColor = "#800080";
+          this.secondaryColor = "#D3D3D3";
           this.strokeWidth = 2.5;
           break;
         case 6:
-          this.primaryColor = "#7B3F61";  
-          this.secondaryColor = "#0A5490";  
+          this.primaryColor = "#7B3F61";
+          this.secondaryColor = "#0A5490";
           this.strokeWidth = 2.5;
           break;
         default:
@@ -143,7 +142,6 @@ new Vue({
           this.strokeWidth = 2.5;
       }
 
-      // Re-apply colors to all visible icons
       this.$nextTick(() => {
         this.paginatedItems.forEach((_, i) => {
           this.applyColors(i);
@@ -157,10 +155,7 @@ new Vue({
       const svgEl = iconEl.querySelector("svg");
       if (!svgEl) return alert("SVG not loaded yet");
 
-      // Clone to avoid mutation
       const svgClone = svgEl.cloneNode(true);
-
-      // Update strokes and stroke widths for download
       svgClone.querySelectorAll(".stroke-primary").forEach(el => {
         el.setAttribute("stroke", this.primaryColor);
         el.setAttribute("stroke-width", this.strokeWidth);
@@ -170,11 +165,8 @@ new Vue({
         el.setAttribute("stroke-width", this.strokeWidth);
       });
 
-      // Serialize SVG to string
       const serializer = new XMLSerializer();
       const svgString = serializer.serializeToString(svgClone);
-
-      // Create a blob and download link
       const blob = new Blob([svgString], { type: "image/svg+xml" });
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
@@ -184,6 +176,46 @@ new Vue({
       link.click();
       document.body.removeChild(link);
       URL.revokeObjectURL(url);
+    },
+    downloadPng(index) {
+      const iconEl = document.querySelectorAll(".icon-container")[index];
+      if (!iconEl) return alert("SVG not loaded yet");
+
+      const svgEl = iconEl.querySelector("svg");
+      if (!svgEl) return alert("SVG not loaded yet");
+
+      const svgClone = svgEl.cloneNode(true);
+      svgClone.querySelectorAll(".stroke-primary").forEach(el => {
+        el.setAttribute("stroke", this.primaryColor);
+        el.setAttribute("stroke-width", this.strokeWidth);
+      });
+      svgClone.querySelectorAll(".stroke-secondary").forEach(el => {
+        el.setAttribute("stroke", this.secondaryColor);
+        el.setAttribute("stroke-width", this.strokeWidth);
+      });
+
+      const serializer = new XMLSerializer();
+      const svgString = serializer.serializeToString(svgClone);
+      const svgBlob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
+      const url = URL.createObjectURL(svgBlob);
+
+      const img = new Image();
+      img.onload = () => {
+        const canvas = document.createElement("canvas");
+        canvas.width = img.width || 150;
+        canvas.height = img.height || 150;
+        const ctx = canvas.getContext("2d");
+
+        ctx.drawImage(img, 0, 0);
+        URL.revokeObjectURL(url);
+
+        const pngUrl = canvas.toDataURL("image/png");
+        const downloadLink = document.createElement("a");
+        downloadLink.href = pngUrl;
+        downloadLink.download = `${this.items[index].url}.png`;
+        downloadLink.click();
+      };
+      img.src = url;
     }
   }
 });

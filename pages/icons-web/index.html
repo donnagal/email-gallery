@@ -105,7 +105,7 @@
 
 <div class="container mx-auto">
 <div>
-  Colors:
+  Styles:
   <button @click="setStyle(1)" class="mt-2 px-3 py-1 bg-gray-600 text-white rounded">Style 1</button>
   <button @click="setStyle(2)" class="mt-2 px-3 py-1 bg-gray-600 text-white rounded">Style 2</button>
   <button @click="setStyle(3)" class="mt-2 px-3 py-1 bg-gray-600 text-white rounded">Style 3</button>
@@ -116,11 +116,10 @@
 
 <!-- Icons Grid -->
 <div class="wrapper flex flex-wrap text-center">
-  <div class="icon-item bg-gray-100 rounded-lg m-2 p-4" v-for="(item, index) in paginatedItems" :key="item.url">
+  <div class="icon-item bg-gray-100 rounded-lg m-2 p-1" v-for="(item, index) in paginatedItems" :key="item.url">
     <div class="icon-container" v-html="item.svg"></div>
-    <button @click="downloadSvg(index)" class="download-btn mt-2 px-3 py-1 bg-blue-600 text-white rounded">
-      Download SVG
-    </button>
+    <button @click="downloadSvg(index)" class="download-btn text-xs px-1 py-1 bg-blue-600 text-white rounded"> SVG ↓</button>
+	<button @click="downloadPng(index)" class="mt-2 text-xs px-1 py-1 bg-blue-600 text-white rounded">PNG ↓</button>
     <div class="text-black text-left px-3 mt-2">
       <p class="text-lg font-semibold">{{ item.url }}</p>
       <p class="text-xs text-gray-500">{{ item.text }}</p>
