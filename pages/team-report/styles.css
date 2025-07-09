@@ -58,6 +58,7 @@ body {
   position: fixed;
   top: 15px;
   right: 16px;
+  z-index: 9;
 }
 
 .mw-50 {
@@ -311,3 +312,31 @@ body {
       90% 565px;
   }
 }
+
+
+/* swiper */
+
+swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      border-radius: 33px;
+      background: white;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+      height: 300px;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }

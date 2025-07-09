@@ -1,34 +1,4 @@
 $(function () {
-  // ! Counter (used for Social Proof)
-
-  /* Usage example
-        <div id="counters_1">
-            <div ="counter" data-TargetNum="10" data-Speed="6000"></div>
-            <div class="counter" data-TargetNum="7" data-Speed="7000" 
-            data-Direction="reverse" data-Easing="linear"></div>
-            <div class="counter" data-TargetNum="80333" data-Speed="2500">0</div>
-        </div>
-        <div id="counters_2">
-            <div class="counter" data-TargetNum="4200" data-Speed="1000">0</div>
-            <div class="counter" data-TargetNum="4500" data-Speed="4000">0</div>
-            <div class="counter" data-TargetNum="4743">0</div>
-        </div>
-        <div id="counters_3">
-            <div class="counter" data-TargetNum="5200" data-Speed="1000">0</div>
-            <div class="counter" data-TargetNum="5500" data-Speed="4000">0</div>
-            <div class="counter" data-TargetNum="5743">0</div>
-        </div>
-    
-       Required attr: data-TargetNum
-       Optionals attr: data-Speed(milisecons), data-Direction(reverse), data-Easing(linear, swing)
-
-       **CONFIG**
-       Please set a the ID's to watch, a class for all counters and a default speed
-
-       Avoid to use this script in pages where it isn't needed
-    */
-
-  // CONFIG
   let visibilityIds = []; //must be an array, could have only one element
   for (let i = 0; i < 100; i++) {
     const str = `#counters_${i}`;
@@ -136,3 +106,7 @@ $(function () {
       $('.menu-nav .dropdown-menu').addClass('hidden');
     });
   });
+
+
+
+  
