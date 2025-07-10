@@ -1,0 +1,13 @@
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M72.0306 89.8713L50.5541 111.342C67.5765 123.631 91.477 122.116 106.797 106.791C122.116 91.4711 123.637 67.5828 111.354 50.5604L98.9913 62.9166" class="stroke-primary" stroke="#017D8C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M79.9691 62.1949L101.482 40.676C84.4595 28.3683 60.547 29.8772 45.2153 45.2089C29.8836 60.5405 28.3747 84.4592 40.6885 101.482L52.972 89.192" class="stroke-primary" stroke="#017D8C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M76 132C106.928 132 132 106.928 132 76C132 45.0721 106.928 20 76 20C45.0721 20 20 45.0721 20 76C20 106.928 45.0721 132 76 132Z" class="stroke-primary" stroke="#017D8C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M65.7648 69.7035H59.0382" class="stroke-secondary" stroke="#86C543" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M77.8664 79.2291H71.1459" class="stroke-secondary" stroke="#86C543" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M62.3163 82.0903V69.8613" class="stroke-secondary" stroke="#86C543" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83.5929 82.3017L92.4768 69.7333" class="stroke-secondary" stroke="#86C543" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M92.9682 82.3017L84.0782 69.7333" class="stroke-secondary" stroke="#86C543" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M79.3387 82.3017L74.2059 69.7333" class="stroke-secondary" stroke="#86C543" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M68.8677 82.3017L73.9944 69.7333" class="stroke-secondary" stroke="#86C543" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M94.8586 62.6563H57.1475C49.7678 62.6563 43.7853 68.6387 43.7853 76.0185C43.7853 83.3982 49.7678 89.3806 57.1475 89.3806H94.8586C102.238 89.3806 108.221 83.3982 108.221 76.0185C108.221 68.6387 102.238 62.6563 94.8586 62.6563Z" class="stroke-secondary" stroke="#86C543" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
