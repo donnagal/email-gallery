@@ -332,6 +332,7 @@ swiper-container {
       align-items: center;
       width: 400px;
       height: 300px;
+      margin-bottom: 77px;
     }
 
     swiper-slide img {
@@ -340,3 +341,11 @@ swiper-container {
       height: 100%;
       object-fit: cover;
     }
+/* Arrows */
+swiper-container {
+  --swiper-navigation-color: #00fb92;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #00fb92;
+}
