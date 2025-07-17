@@ -192,69 +192,69 @@ body {
 .animated-bg-event {
   animation: bgCycleEvent 12s infinite;
   height: 500px; 
-  width: 271px;
+  width: 100%;
   background-size: cover;
   background-position: top; /* or 'top' if you want */
   background-repeat: no-repeat;
   /* Initial image (optional, will be overridden by animation) */
-  background-image: url('../../gallery/event-ms-2.jpg');
+  background-image: url('../gallery/images/9.jpg');
 }
 
 @keyframes bgCycleEvent {
   0%, 33.33% {
-    background-image: url('../../gallery/event-ms-2.jpg');
+    background-image: url('../gallery/images/9.jpg');
   }
   33.34%, 66.66% {
-    background-image: url('../../gallery/event-template-ms.png');
+    background-image: url('../gallery/images/11.jpg');
   }
   66.67%, 100% {
-    background-image: url('../../gallery/event-template-cbus.png');
+    background-image: url('../gallery/images/13.jpg');
   }
 }
 
 .animated-bg-mar {
   animation: bgCycleMar 13s infinite;
   height: 500px; 
-  width: 271px;
+  width: 100%;
   background-size: cover;
   background-position: top; /* or 'top' if you want */
   background-repeat: no-repeat;
   /* Initial image (optional, will be overridden by animation) */
-  background-image: url('../../gallery/12-month-tenure.jpg');
+  background-image: url('../gallery/images/1.jpg');
 }
 
 @keyframes bgCycleMar {
   0%, 33.33% {
-    background-image: url('../../gallery/12-month-tenure.jpg');
+    background-image: url('../gallery/images/20.jpg');
   }
   33.34%, 66.66% {
-    background-image: url('../../gallery/beneficiaries-accum.jpg');
+    background-image: url('../gallery/images/15.jpg');
   }
   66.67%, 100% {
-    background-image: url('../../gallery/isa.jpg');
+    background-image: url('../gallery/images/29.jpg');
   }
 }
 
 .animated-bg-comms {
   animation: bgCycleComms 14s infinite;
   height: 500px; 
-  width: 271px;
+  width: 100%;
   background-size: cover;
   background-position: top; /* or 'top' if you want */
   background-repeat: no-repeat;
   /* Initial image (optional, will be overridden by animation) */
-  background-image: url('../../gallery/annual-statement.jpg');
+  background-image: url('../gallery/images/23.jpg');
 }
 
 @keyframes bgCycleComms {
   0%, 33.33% {
-    background-image: url('../../gallery/annual-statement.jpg');
+    background-image: url('../gallery/images/23.jpg');
   }
   33.34%, 66.66% {
-    background-image: url('../../gallery/super-summary-accum.jpg');
+    background-image: url('../gallery/images/24.jpg');
   }
   66.67%, 100% {
-    background-image: url('../../gallery/super-summary-sis.jpg');
+    background-image: url('../gallery/images/30.jpg');
   }
 }
 
@@ -331,7 +331,7 @@ swiper-container {
       justify-content: center;
       align-items: center;
       width: 400px;
-      height: 300px;
+      height: 400px;
       margin-bottom: 77px;
     }
 

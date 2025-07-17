@@ -63,11 +63,12 @@
         </a>
         <ul class="dropdown-menu hidden absolute right-full top-0 mr-1 w-64 bg-white border border-gray-200 rounded shadow z-10 group-hover:block">
           <li><a class="block px-4 py-2 hover:bg-gray-100" href="#launched">Campaigns launched</a></li>
-          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#brand">Breakdown by brand</a></li>
-          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#team">Breakdown by team</a></li>
-          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#channel">Breakdown by channel</a></li>
-          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#emails-fy-compare">Email FY comparison</a></li>
-          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#email-effort">Email effort</a></li>
+          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#brand">Brand</a></li>
+		<li><a class="block px-4 py-2 hover:bg-gray-100" href="#team">Team</a></li>
+		<li><a class="block px-4 py-2 hover:bg-gray-100" href="#channel">Channel</a></li>
+		<li><a class="block px-4 py-2 hover:bg-gray-100" href="#personalisation">Prsonalisation</a></li>
+		<li><a class="block px-4 py-2 hover:bg-gray-100" href="#email-effort">Email effort</a></li>
+		<li><a class="block px-4 py-2 hover:bg-gray-100" href="#emails-fy-compare">Email FY comparison</a></li>
         </ul>
       </li>
 
@@ -91,7 +92,6 @@
           3. Highlights & Achievements
         </a>
         <ul class="dropdown-menu hidden absolute right-full top-0 mr-1 w-64 bg-white border border-gray-200 rounded shadow z-10 group-hover:block">
-          <li><a class="block px-4 py-2 hover:bg-gray-100" href="#web">Personalisation success</a></li>
           <li><a class="block px-4 py-2 hover:bg-gray-100" href="#highlights">Highlights</a></li>
         </ul>
       </li>
@@ -257,94 +257,211 @@
 	<div id="channel" class="bg-gradient-1 page flex flex-col gap-10 justify-center items-center bg-green bg-fixed bg-cover bg-center">
 		<div>
 			<p class=" font-bold text-3xl text-center text-white">Breakdown Multi channel</p>
-			<p class="text-center text-white">148 campaigns launched across multiple channels.</p>
+			<p class="text-center text-white">148 campaigns launched across multiple channels in AJO.</p>
 		</div>
 
 		<div class="flex justify-center gap-9 text-center" style="width:100%; max-width:1100px;">
-			<div class="panel-round bg-white" data-aos="fade-up" data-aos-delay="0" data-aos-duration="800">
-				<p class="font-bold text-6xl">269</p>
-				<p class="font-bold text-xl">Emails</p>
-			</div>
-			<div class="panel-round bg-white" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-				<p class="font-bold text-6xl">36</p>
-				<p class="font-bold text-xl">SMS</p>
-			</div>
 			<div class="panel-round bg-white" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
 				<p class="font-bold text-6xl">189</p>
 				<p class="font-bold text-xl">Journeys</p>
 			</div>
-			<div class="panel-round bg-white" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
-				<p class="font-bold text-6xl">24</p>
-				<p class="font-bold text-xl">Web pages</p>
+			<div class="panel-round bg-gray-600 text-white" data-aos="fade-up" data-aos-delay="0" data-aos-duration="800">
+				<p class="font-bold text-6xl">269</p>
+				<p class="font-bold text-xl">Emails</p>
+			</div>
+			<div class="panel-round bg-green-500 text-white" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+				<p class="font-bold text-6xl">36</p>
+				<p class="font-bold text-xl">SMS</p>
 			</div>
 		</div>
 
-		<div class="flex flex-col gap-6" style="width:100%; max-width:1100px;">
-			<div data-aos="fade-right" data-aos-delay="600" data-aos-duration="800">
-				<div class="flex text-center text-white font-bold text-1xl">
-				<div class="w-1/6">	
-					<p class="px-6 py-3 flex items-center gap-3">70
-						<span class=" text-base font-normal">
-							Education
-						</span>
+	<div class="flex flex-col gap-6" style="width:100%; max-width:1100px;">
+
+	<!-- Education: -->
+	<div data-aos="fade-right" data-aos-delay="600" data-aos-duration="800">
+		<div class="flex text-center text-white font-bold text-1xl">
+			<div class="w-1/6">	
+				<p class="px-6 py-3 flex items-center gap-3 w-50">70
+					<span class="text-base font-normal">Education</span>
+				</p>
+			</div>
+			<p class="bg-white text-black px-6 py-3" style="width:28%">69 Journeys</p>
+			<p class="bg-gray-600 px-6 py-3" style="width:44%">125 emails</p>
+			<p class="bg-green-500 px-6 py-3" style="">16 SMS</p>
+		</div>
+	</div>
+
+	<!-- Comms:  -->
+	<div data-aos="fade-right" data-aos-delay="800" data-aos-duration="800">
+		<div class="flex text-center text-white font-bold text-1xl">
+			<div class="w-1/6">	
+				<p class="px-6 py-3 flex items-center gap-3 w-50">24
+					<span class="text-base font-normal">Comms</span>
+				</p>
+			</div>
+			<p class="bg-white text-black px-6 py-3" style="width:52.3%">57 Journeys</p>
+			<p class="bg-gray-600 px-6 py-3" style="width:47.7%">52 emails</p>
+		</div>
+	</div>
+
+	<!-- Marketing:-->
+	<div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="800">
+		<div class="flex text-center text-white font-bold text-1xl">
+			<div class="w-1/6">	
+				<p class="px-6 py-3 flex items-center gap-3 w-50">19
+					<span class="text-base font-normal">Marketing</span>
+				</p>
+			</div>
+			<p class="bg-white text-black px-6 py-3" style="width:37%">34 Journeys</p>
+			<p class="bg-gray-600 px-6 py-3" style="width:63%">58 emails</p>
+		</div>
+	</div>
+
+	<!-- Other: -->
+	<div data-aos="fade-right" data-aos-delay="1200" data-aos-duration="800">
+		<div class="flex text-center text-white font-bold text-1xl">
+			<div class="w-1/6">	
+				<p class="px-6 py-3 flex items-center gap-3 w-50">35
+					<span class="text-base font-normal">Other</span>
+				</p>
+			</div>
+			<p class="bg-white text-black px-6 py-3" style="width:25.4%">18 Journeys</p>
+			<p class="bg-gray-600 px-6 py-3" style="width:47.9%">34 emails</p>
+			<p class="bg-green-500 px-6 py-3" style="width:26.8%">19 SMS</p>
+		</div>
+	</div>
+
+</div>
+
+	</div>
+
+	<div id="personalisation" class="bg-gradient-1 page flex flex-col gap-10 justify-center items-center bg-green bg-fixed bg-cover bg-center">
+		<div>
+			<p class=" font-bold text-3xl text-center text-white">Breakdown by personalisation</p>
+		</div>
+
+		<div class="flex justify-center gap-9 text-center" style="width:100%; max-width:1100px;">
+			<div class="panel-round bg-gray-600 text-white" data-aos="fade-up" data-aos-delay="0" data-aos-duration="800">
+				<p class="font-bold text-6xl">24</p>
+				<p class="font-bold text-xl">Page volume</p>
+			</div>
+			<div class="panel-round bg-white" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+				<p class="font-bold text-6xl">30</p>
+				<p class="font-bold text-xl">Portal experience</p>
+			</div>
+			<div class="panel-round bg-blue-500 text-white" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+				<p class="font-bold text-6xl">17</p>
+				<p class="font-bold text-xl">Web Personalisation</p>
+			</div>
+		</div>
+
+<div class="flex flex-col gap-6" style="width:100%; max-width:1100px;">
+
+	<!-- Education: -->
+	<div data-aos="fade-right" data-aos-delay="600" data-aos-duration="800">
+		<div class="flex text-center text-white font-bold text-1xl">
+			<div class="w-1/6">	
+				<p class="px-6 py-3 flex items-center gap-3">
+					<span class="text-base font-normal w-50">Education</span>
+				</p>
+			</div>
+			<p class="bg-gray-600 px-6 py-3" style="">1 Page</p>
+		</div>
+	</div>
+
+	<!-- Comms:  -->
+	<div data-aos="fade-right" data-aos-delay="800" data-aos-duration="800">
+		<div class="flex text-center text-white font-bold text-1xl">
+			<div class="w-1/6">	
+				<p class="px-6 py-3 flex items-center gap-3">
+					<span class="text-base font-normal w-50">Comms</span>
+				</p>
+			</div>
+			<p class="bg-gray-600 px-6 py-3" style="width:61.3%">19 Pages</p>
+			<p class="bg-white text-black px-6 py-3" style="width:38.7%">12 Portal</p>
+		</div>
+	</div>
+
+	<!-- Marketing:  -->
+	<div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="800">
+		<div class="flex text-center text-white font-bold text-1xl">
+			<div class="w-1/6">	
+				<p class="px-6 py-3 flex items-center gap-3">
+					<span class="text-base font-normal w-50">Marketing</span>
+				</p>
+			</div>
+			<p class="bg-gray-600 px-6 py-3" style="">4 Pages</p>
+			<p class="bg-white text-black px-6 py-3" style="width:33%">17 Portal</p>
+			<p class="bg-blue-500 px-6 py-3" style="width:33%">17 Web Personalisation</p>
+		</div>
+	</div>
+
+	<!-- Other:-->
+	<div data-aos="fade-right" data-aos-delay="1200" data-aos-duration="800">
+		<div class="flex text-center text-white font-bold text-1xl">
+			<div class="w-1/6">	
+				<p class="px-6 py-3 flex items-center gap-3">
+					<span class="text-base font-normal w-50">Other</span>
+				</p>
+			</div>
+			<p class="bg-white text-black px-6 py-3" style="">1 Portal</p>
+		</div>
+	</div>
+
+</div>
+
+</div>
+
+
+	<div id="email-effort" class="bg-gradient-1 page flex justify-center items-center bg-green  bg-fixed bg-cover bg-center">
+
+		<div class="h-full flex justify-center items-end gap-30">
+			<div>
+				<div class="text-center flex flex-col justify-center align-center" data-aos="fade-up" data-aos-delay="0"
+					data-aos-duration="800">
+					<p class="text-2xl">🔄 💨</p>
+					<p class="font-bold text-6xl text-green-bright">125 </p>
+					<p class="font-bold text-xl text-white">Education emails created</p>
+					<p class="text-white mx-auto" style="max-width:300px; ">
+						Higher activity with simpler updates, using reusable templates.
 					</p>
 				</div>
-					<p class="bg-gray-600 px-6 py-3" style="width:35%">125 emails</p>
-					<p class="bg-white text-black px-6 py-3" style="width:25%">69 Journeys</p>
-					<p class="bg-green-500 px-6 py-3">16 SMS</p>
-
+				<div class="flex flex-wrap">
+				<div class="animated-bg-event border-4 w-auto flex-grow flex flex-col justify-center relative overlay overlay-hover"></div>
 				</div>
 			</div>
 
-			<div data-aos="fade-right" data-aos-delay="800" data-aos-duration="800">
-				<div class="flex text-center text-white font-bold text-1xl">
-				<div class="w-1/6">	
-					<p class="px-6 py-3 flex items-center gap-3">24
-						<span class=" text-base font-normal">
-							Comms
-						</span>
+			<div>
+				<div class="text-center flex flex-col justify-center align-center" data-aos="fade-up"
+					data-aos-delay="200" data-aos-duration="800">
+					<p class="text-2xl">🎭 </p>
+					<p class="font-bold text-6xl text-green-bright">58</p>
+					<p class="font-bold text-xl text-white">Marketing emails created</p>
+					<p class="text-white mx-auto" style="max-width:300px; ">
+						Marketing emails vary in complexity depending on the design.
 					</p>
 				</div>
-					<p class="bg-gray-600 px-6 py-3" style="width:20%">52 emails</p>
-					<p class="bg-white text-black px-6 py-3" style="width:25%">57 Journeys</p>
-					<p class="bg-blue-500 px-6 py-3">19 Web Pages</p>
+				<div class="flex flex-wrap">
+					<div class="animated-bg-mar border-4 w-auto flex-grow flex flex-col justify-center relative overlay overlay-hover"></div>
 				</div>
 			</div>
 
-			<div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="800">
-				<div class="flex text-center text-white font-bold text-1xl">
-				<div class="w-1/6">	
-					<p class="px-6 py-3 flex items-center gap-3">19
-						<span class=" text-base font-normal">
-							Marketing
-						</span>
+			<div>
+				<div class="text-center flex flex-col justify-center align-center" data-aos="fade-up"
+					data-aos-delay="400" data-aos-duration="800">
+					<p class="text-2xl">💪</p>
+					<p class="font-bold text-6xl text-green-bright">52</p>
+					<p class="font-bold text-xl text-white">Comms emails created</p>
+					<p class="text-white mx-auto" style="max-width:300px; ">
+						Communication emails are highly personalised and require more design and testing effort.
 					</p>
 				</div>
-					<p class="bg-gray-600 px-6 py-3">58 emails</p>
-					<p class="bg-white text-black px-6 py-3">34 Journeys</p>
-					<p class="bg-blue-500 px-6 py-3">4 Web Pages</p>
-				</div>
-			</div>
-
-			<div data-aos="fade-right" data-aos-delay="1200" data-aos-duration="800">
-				<div class="flex text-center text-white font-bold text-1xl">
-				<div class="w-1/6">	
-					<p class="px-6 py-3 flex items-center gap-3">35
-						<span class=" text-base font-normal">
-							Other
-						</span>
-					</p>
-				</div>
-					<p class="bg-gray-600 px-6 py-3">34 emails</p>
-					<p class="bg-white text-black px-6 py-3">18 Journeys</p>
-					<p class="bg-green-500 px-6 py-3">19 SMS</p>
+				<div class="flex flex-wrap">
+					<div class="animated-bg-comms border-4 w-auto flex-grow flex flex-col justify-center relative overlay overlay-hover"></div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-
-
 
 	<div id="emails-fy-compare" class="bg-gradient-1 page flex justify-center items-center bg-green  bg-fixed bg-cover bg-center">
 		<div class="h-full flex flex-col gap-9 text-white">
@@ -428,58 +545,6 @@
 			</div>
 
 
-		</div>
-	</div>
-
-
-
-	<div id="email-effort" class="bg-gradient-1 page flex justify-center items-center bg-green  bg-fixed bg-cover bg-center">
-
-		<div class="h-full flex justify-center items-end gap-30">
-			<div>
-				<div class="text-center flex flex-col justify-center align-center" data-aos="fade-up" data-aos-delay="0"
-					data-aos-duration="800">
-					<p class="text-2xl">🔄 💨</p>
-					<p class="font-bold text-6xl text-green-bright">125 </p>
-					<p class="font-bold text-xl text-white">Education emails created</p>
-					<p class="text-white mx-auto" style="max-width:300px; ">
-						Higher activity with simpler updates, using reusable templates.
-					</p>
-				</div>
-				<div class="flex flex-wrap">
-				<div class="animated-bg-event border-4 w-auto flex-grow flex flex-col justify-center relative overlay overlay-hover"></div>
-				</div>
-			</div>
-
-			<div>
-				<div class="text-center flex flex-col justify-center align-center" data-aos="fade-up"
-					data-aos-delay="200" data-aos-duration="800">
-					<p class="text-2xl">🎭 </p>
-					<p class="font-bold text-6xl text-green-bright">58</p>
-					<p class="font-bold text-xl text-white">Marketing emails created</p>
-					<p class="text-white mx-auto" style="max-width:300px; ">
-						Marketing emails vary in complexity depending on the design.
-					</p>
-				</div>
-				<div class="flex flex-wrap">
-					<div class="animated-bg-mar border-4 w-auto flex-grow flex flex-col justify-center relative overlay overlay-hover"></div>
-				</div>
-			</div>
-
-			<div>
-				<div class="text-center flex flex-col justify-center align-center" data-aos="fade-up"
-					data-aos-delay="400" data-aos-duration="800">
-					<p class="text-2xl">💪</p>
-					<p class="font-bold text-6xl text-green-bright">52</p>
-					<p class="font-bold text-xl text-white">Comms emails created</p>
-					<p class="text-white mx-auto" style="max-width:300px; ">
-						Communication emails are highly personalised and require more design and testing effort.
-					</p>
-				</div>
-				<div class="flex flex-wrap">
-					<div class="animated-bg-comms border-4 w-auto flex-grow flex flex-col justify-center relative overlay overlay-hover"></div>
-				</div>
-			</div>
 		</div>
 	</div>
 
@@ -800,100 +865,136 @@
 		</div>
 	</div>
 
-	<div class="page bg-gradient-3 justify-center items-center">
-		<div class="h-1/2 flex flex-col items-center justify-center text-white" data-aos="fade" data-aos-easing="ease-in"
-			data-aos-delay="200" data-aos-duration="600">
-			<p class="text-7xl font-bold text-center">Highlights & <br/>Achievments</p>
-		</div>
+<div class="page bg-gradient-3 min-h-screen flex flex-col justify-center items-center">
+	<div class="mb-10" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
+		<p class="text-4xl font-bold text-center">Highlights & Achievements</p>
+	</div>
 
-		<div class="swiper-main pl-20">
+	<div class="swiper-main w-full px-5 md:px-20 relative">
 		<div class="swiper-button-prev"></div>
 		<div class="swiper-button-next"></div>
 
-		<swiper-container
-			class="mySwiper"
-			pagination="true"
-			pagination-clickable="true"
-			navigation="true"
-			slides-per-view="2.5"
-			space-between="30"
-			free-mode="true"
-			autoplay-delay="9500"
-			autoplay-disable-on-interaction="false">
+<swiper-container
+	class="mySwiper"
+	slides-per-view="2.5"
+	space-between="30"
+	direction="horizontal"
+	effect="slide"
+	speed="2000"
+	loop="true"
+	autoplay-delay="4000"
+	autoplay-disable-on-interaction="true"
+	autoplay="true"
+	free-mode="false"
+	keyboard="true"
+	navigation="true"
+	pagination="true"
+	pagination-clickable="true"
+	pagination-type="fraction"
+	grab-cursor="true">
 
-			<swiper-slide>
-				<div class="px-5"  data-aos="zoom-in">
-					<p class="text-2xl pb-5">📣 Team Highlight</p>
-					<p class="text-1xl">
-					Successfully <strong>upgraded email deliverability monitoring</strong> and processes in response to significant changes by Microsoft and Google, improving inbox placement and sender reputation.					</p>
-				</div>
-			</swiper-slide>
-			<swiper-slide>
-				<div class="px-5"  data-aos="zoom-in">
-					<p class="text-2xl pb-5">🛠️ Experience Platform & AJO</p>
-					<p class="text-1xl">
-						<strong>Delivered security enhancements </strong> for Adobe Journey Optimiser (AJO), migrating authentication from JWT to OAuth for improved platform integrity.					</p>
-				</div>
-			</swiper-slide>
-			<swiper-slide>
-				<div class="px-5"  data-aos="zoom-in">
-					<p class="text-2xl pb-5">📣 Team Highlight</p>
-					<p class="text-1xl">
-						Implemented a <strong>new centralised icon library and MarTech Hub</strong>, supporting consistency across assets and streamlining access to shared design elements.				</div>
-			</swiper-slide>
-			<swiper-slide>
-				<div class="px-5"  data-aos="zoom-in">
-					<p class="text-2xl pb-5">🛠️ Experience Platform & AJO</p>
-					<p class="text-1xl">
-						Created <strong>additional campaign attributes</strong> to support personalised email statements and summaries, enabling more member-centric communications.					</p>
-				</div>
-			</swiper-slide>
-			<swiper-slide>
-				<div class="px-5"  data-aos="zoom-in">
-					<p class="text-2xl pb-5">📣 Team Highlight</p>
-					<p class="text-1xl">
-					<strong>Launched Quarterly Design Sessions initiative -</strong> a new collaborative forum designed to drive consistency, share best practices, and align teams on brand and design direction.
-					</p>
-				</div>
-			</swiper-slide>
-			<swiper-slide>
-				<div class="px-5"  data-aos="zoom-in">
-					<p class="text-2xl pb-5">📊 Analytics & Personalisation</p>
-					<p class="text-1xl">
-						Led the <strong>solutioning and testing of analytics and personalisation</strong> capability for the new Member Portal, laying the groundwork for more tailored member experiences					</p>
-				</div>
-			</swiper-slide>
-			<swiper-slide>
-				<div class="px-5"  data-aos="zoom-in">
-					<p class="text-2xl pb-5">🛠️ Experience Platform & AJO</p>
-					<p class="text-1xl">
-						Developed <strong>custom queries to support email deliverability</strong> metrics for the Insights & Analytics team.
-					</p>
-				</div>
-			</swiper-slide>
-			<swiper-slide>
-				<div class="px-5"  data-aos="zoom-in">
-					<p class="text-2xl pb-5">📣 Team Highlight</p>
-					<p class="text-1xl">
-					Launched a <strong>refreshed Email Library</strong>, including a streamlined email dashboard to improve navigation and usability.</div>
-			</swiper-slide>
-			<swiper-slide>
-				<div class="px-5"  data-aos="zoom-in">
-					<p class="text-2xl pb-5">🛠️ Experience Platform & AJO</p>
-					<p class="text-1xl">
-						Configured AJO to <strong>prioritise Cbus-specific identity namespaces</strong>, preventing unintended profile merges in shared device scenarios.
-					</p>
-				</div>
-			</swiper-slide>
-			<swiper-slide>
-				<div class="px-5"  data-aos="zoom-in">
-					<p class="text-2xl pb-5">📣 Team Highlight</p>
-					<p class="text-1xl">
-						<strong>MarTech World Forum in March</strong> – attended by our team leaders.
-					</p>
-				</div>
-			</swiper-slide>
-		</swiper-container>
+	<swiper-slide>
+		<div class="px-5" data-aos="zoom-in">
+			<p class="text-2xl pb-5">📬 Inbox Boost</p>
+			<p class="text-1xl">
+				Boosted inbox placement by upgrading email deliverability monitoring after major Microsoft and Google changes.
+			</p>
+		</div>
+	</swiper-slide>
+
+	<swiper-slide>
+		<div class="px-5" data-aos="zoom-in">
+			<p class="text-2xl pb-5">📈 Analytics Pioneer</p>
+			<p class="text-1xl">
+				Pioneered analytics and personalisation testing for the new Member Portal for tailored user experiences.
+			</p>
+		</div>
+	</swiper-slide>
+
+	<swiper-slide>
+		<div class="px-5" data-aos="zoom-in">
+			<p class="text-2xl pb-5">🔒 Security Upgrade</p>
+			<p class="text-1xl">
+				Strengthened AJO security by migrating authentication from JWT to OAuth.
+			</p>
+		</div>
+	</swiper-slide>
+
+	<swiper-slide>
+		<div class="px-5" data-aos="zoom-in">
+			<p class="text-2xl pb-5">🎨 Design Central</p>
+			<p class="text-1xl">
+				Launched a centralised icon library and MarTech Hub to boost design consistency and asset access.
+			</p>
+		</div>
+	</swiper-slide>
+
+	<swiper-slide>
+		<div class="px-5" data-aos="zoom-in">
+			<p class="text-2xl pb-5">🚀 Personalisation Boost</p>
+			<p class="text-1xl">
+				Added new campaign attributes for personalised email statements and member-focused communications.
+			</p>
+		</div>
+	</swiper-slide>
+
+	<swiper-slide>
+		<div class="px-5" data-aos="zoom-in">
+			<p class="text-2xl pb-5">🤝 Design Collaboration</p>
+			<p class="text-1xl">
+				Started Quarterly Design Sessions to align teams, share best practices, and drive brand consistency.
+			</p>
+		</div>
+	</swiper-slide>
+
+	<swiper-slide>
+	<div class="px-5" data-aos="zoom-in">
+		<p class="text-2xl pb-5">🎓 Education Web Launch</p>
+		<p class="text-1xl">
+		Launched an upgraded Education webpage with personalised content to enhance member learning and engagement.
+		</p>
+	</div>
+	</swiper-slide>
+
+
+	<swiper-slide>
+		<div class="px-5" data-aos="zoom-in">
+			<p class="text-2xl pb-5">🔍 Data Insights</p>
+			<p class="text-1xl">
+				Created custom queries to track email deliverability for Insights & Analytics.
+			</p>
+		</div>
+	</swiper-slide>
+
+	<swiper-slide>
+		<div class="px-5" data-aos="zoom-in">
+			<p class="text-2xl pb-5">📚 Email Library Refresh</p>
+			<p class="text-1xl">
+				Revamped the Email Library with a sleek dashboard for easier navigation and better usability.
+			</p>
+		</div>
+	</swiper-slide>
+
+	<swiper-slide>
+		<div class="px-5" data-aos="zoom-in">
+			<p class="text-2xl pb-5">🛡️ Identity Safeguard</p>
+			<p class="text-1xl">
+				Configured AJO to prioritise Cbus-specific identity namespaces, avoiding profile merges on shared devices.
+			</p>
+		</div>
+	</swiper-slide>
+
+	<swiper-slide>
+		<div class="px-5" data-aos="zoom-in">
+			<p class="text-2xl pb-5">🌍 MarTech Forum</p>
+			<p class="text-1xl">
+				Represented at MarTech World Forum in March — insights shared by our team leaders.
+			</p>
+		</div>
+	</swiper-slide>
+
+</swiper-container>
+
 		</div>
 
 	</div>
