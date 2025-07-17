@@ -867,133 +867,147 @@
 
 <div class="page bg-gradient-3 min-h-screen flex flex-col justify-center items-center">
 	<div class="mb-10" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
-		<p class="text-4xl font-bold text-center">Highlights & Achievements</p>
+		<p class="text-5xl font-bold text-center">Highlights & Achievements</p>
 	</div>
 
 	<div class="swiper-main w-full px-5 md:px-20 relative">
 		<div class="swiper-button-prev"></div>
 		<div class="swiper-button-next"></div>
 
-<swiper-container
-	class="mySwiper"
-	slides-per-view="2.5"
+			<div class="slide-tags flex  justify-center items-center text-1xl pb-10 text-white">
+			<button class="p-10 mx-5 border-b-2 border-black" onclick="goToSlide(0)">📬<br/> Inbox Boost</button>
+			<button class="p-10 mx-5 border-b-2 border-black" onclick="goToSlide(0)">📈<br/> Analytics Pioneer</button>
+			<button class="p-10 mx-5 border-b-2 border-black" onclick="goToSlide(1)">🔒<br/> Secure Updates</button>
+			<button class="p-10 mx-5 border-b-2 border-black" onclick="goToSlide(2)">🎨<br/> Design Refresh</button>
+			<button class="p-10 mx-5 border-b-2 border-black" onclick="goToSlide(3)">🚀<br/> Personalisation Boost</button>
+			<button class="p-10 mx-5 border-b-2 border-black" onclick="goToSlide(4)">🤝<br/> Design Collaboration</button>
+			<button class="p-10 mx-5 border-b-2 border-black" onclick="goToSlide(5)">🎓<br/> Education Launch</button>
+			<button class="p-10 mx-5 border-b-2 border-black" onclick="goToSlide(6)">🔍<br/> Data Insights</button>
+			<button class="p-10 mx-5 border-b-2 border-black" onclick="goToSlide(7)">📚<br/> Email Library Refresh</button>
+			<button class="p-10 mx-5 border-b-2 border-black" onclick="goToSlide(8)">🛡️<br/> Identity Safeguard</button>
+			<button class="p-10 mx-5 border-b-2 border-black" onclick="goToSlide(9)">🌍<br/> MarTech Forum</button>
+			</div>
+
+	<swiper-container
+	id="mySwiper"
+	slides-per-view="3"
 	space-between="30"
 	direction="horizontal"
-	effect="slide"
-	speed="2000"
 	loop="true"
+	effect="slide"
+	speed="600"
+	autoplay="true"
 	autoplay-delay="4000"
 	autoplay-disable-on-interaction="true"
-	autoplay="true"
-	free-mode="false"
-	keyboard="true"
 	navigation="true"
 	pagination="true"
 	pagination-clickable="true"
-	pagination-type="fraction"
+	pagination-type="bullets"
+	keyboard="true"
 	grab-cursor="true">
 
-	<swiper-slide>
-		<div class="px-5" data-aos="zoom-in">
-			<p class="text-2xl pb-5">📬 Inbox Boost</p>
-			<p class="text-1xl">
-				Boosted inbox placement by upgrading email deliverability monitoring after major Microsoft and Google changes.
-			</p>
-		</div>
-	</swiper-slide>
+				<swiper-slide>
+					<div class="px-5" data-aos="zoom-in">
+						<p class="text-2xl pb-5">📬 Inbox Boost</p>
+						<p class="text-1xl">
+							Boosted inbox placement by upgrading email deliverability monitoring after major Microsoft and Google changes.
+						</p>
+					</div>
+				</swiper-slide>
 
-	<swiper-slide>
-		<div class="px-5" data-aos="zoom-in">
-			<p class="text-2xl pb-5">📈 Analytics Pioneer</p>
-			<p class="text-1xl">
-				Pioneered analytics and personalisation testing for the new Member Portal for tailored user experiences.
-			</p>
-		</div>
-	</swiper-slide>
+				<swiper-slide>
+					<div class="px-5" data-aos="zoom-in">
+						<p class="text-2xl pb-5">📈 Analytics Pioneer</p>
+						<p class="text-1xl">
+							Pioneered analytics and personalisation testing for the new Member Portal for tailored user experiences.
+						</p>
+					</div>
+				</swiper-slide>
 
-	<swiper-slide>
-		<div class="px-5" data-aos="zoom-in">
-			<p class="text-2xl pb-5">🔒 Security Upgrade</p>
-			<p class="text-1xl">
-				Strengthened AJO security by migrating authentication from JWT to OAuth.
-			</p>
-		</div>
-	</swiper-slide>
+				<swiper-slide>
+					<div class="px-5" data-aos="zoom-in">
+						<p class="text-2xl pb-5">🔒 Security Upgrade</p>
+						<p class="text-1xl">
+							Strengthened AJO security by migrating authentication from JWT to OAuth.
+						</p>
+					</div>
+				</swiper-slide>
 
-	<swiper-slide>
-		<div class="px-5" data-aos="zoom-in">
-			<p class="text-2xl pb-5">🎨 Design Central</p>
-			<p class="text-1xl">
-				Launched a centralised icon library and MarTech Hub to boost design consistency and asset access.
-			</p>
-		</div>
-	</swiper-slide>
+				<swiper-slide>
+					<div class="px-5" data-aos="zoom-in">
+						<p class="text-2xl pb-5">🎨 Design Central</p>
+						<p class="text-1xl">
+							Launched a centralised icon library and MarTech Hub to boost design consistency and asset access.
+						</p>
+					</div>
+				</swiper-slide>
 
-	<swiper-slide>
-		<div class="px-5" data-aos="zoom-in">
-			<p class="text-2xl pb-5">🚀 Personalisation Boost</p>
-			<p class="text-1xl">
-				Added new campaign attributes for personalised email statements and member-focused communications.
-			</p>
-		</div>
-	</swiper-slide>
+				<swiper-slide>
+					<div class="px-5" data-aos="zoom-in">
+						<p class="text-2xl pb-5">🚀 Personalisation Boost</p>
+						<p class="text-1xl">
+							Added new campaign attributes for personalised email statements and member-focused communications.
+						</p>
+					</div>
+				</swiper-slide>
 
-	<swiper-slide>
-		<div class="px-5" data-aos="zoom-in">
-			<p class="text-2xl pb-5">🤝 Design Collaboration</p>
-			<p class="text-1xl">
-				Started Quarterly Design Sessions to align teams, share best practices, and drive brand consistency.
-			</p>
-		</div>
-	</swiper-slide>
+				<swiper-slide>
+					<div class="px-5" data-aos="zoom-in">
+						<p class="text-2xl pb-5">🤝 Design Collaboration</p>
+						<p class="text-1xl">
+							Started Quarterly Design Sessions to align teams, share best practices, and drive brand consistency.
+						</p>
+					</div>
+				</swiper-slide>
 
-	<swiper-slide>
-	<div class="px-5" data-aos="zoom-in">
-		<p class="text-2xl pb-5">🎓 Education Web Launch</p>
-		<p class="text-1xl">
-		Introducing a new seminars calendar and webpage! Partnered with education and Swift to deliver a unified calendar for Cbus and Media Super, alongside a revamped Cbus webpage—now fully content-managed in-house.
-		</p>
-	</div>
-	</swiper-slide>
+				<swiper-slide>
+				<div class="px-5" data-aos="zoom-in">
+					<p class="text-2xl pb-5">🎓 Education Web Launch</p>
+					<p class="text-1xl">
+					Introducing a new seminars calendar and webpage! Partnered with education and Swift to deliver a unified calendar for Cbus and Media Super, alongside a revamped Cbus webpage—now fully content-managed in-house.
+					</p>
+				</div>
+				</swiper-slide>
 
 
-	<swiper-slide>
-		<div class="px-5" data-aos="zoom-in">
-			<p class="text-2xl pb-5">🔍 Data Insights</p>
-			<p class="text-1xl">
-				Created custom queries to track email deliverability for Insights & Analytics.
-			</p>
-		</div>
-	</swiper-slide>
+				<swiper-slide>
+					<div class="px-5" data-aos="zoom-in">
+						<p class="text-2xl pb-5">🔍 Data Insights</p>
+						<p class="text-1xl">
+							Created custom queries to track email deliverability for Insights & Analytics.
+						</p>
+					</div>
+				</swiper-slide>
 
-	<swiper-slide>
-		<div class="px-5" data-aos="zoom-in">
-			<p class="text-2xl pb-5">📚 Email Library Refresh</p>
-			<p class="text-1xl">
-				Revamped the Email Library with a sleek dashboard for easier navigation and better usability.
-			</p>
-		</div>
-	</swiper-slide>
+				<swiper-slide>
+					<div class="px-5" data-aos="zoom-in">
+						<p class="text-2xl pb-5">📚 Email Library Refresh</p>
+						<p class="text-1xl">
+							Revamped the Email Library with a sleek dashboard for easier navigation and better usability.
+						</p>
+					</div>
+				</swiper-slide>
 
-	<swiper-slide>
-		<div class="px-5" data-aos="zoom-in">
-			<p class="text-2xl pb-5">🛡️ Identity Safeguard</p>
-			<p class="text-1xl">
-				Configured AJO to prioritise Cbus-specific identity namespaces, avoiding profile merges on shared devices.
-			</p>
-		</div>
-	</swiper-slide>
+				<swiper-slide>
+					<div class="px-5" data-aos="zoom-in">
+						<p class="text-2xl pb-5">🛡️ Identity Safeguard</p>
+						<p class="text-1xl">
+							Configured AJO to prioritise Cbus-specific identity namespaces, avoiding profile merges on shared devices.
+						</p>
+					</div>
+				</swiper-slide>
 
-	<swiper-slide>
-		<div class="px-5" data-aos="zoom-in">
-			<p class="text-2xl pb-5">🌍 MarTech Forum</p>
-			<p class="text-1xl">
-				Represented at MarTech World Forum in March — insights shared by our team leaders.
-			</p>
-		</div>
-	</swiper-slide>
+				<swiper-slide>
+					<div class="px-5" data-aos="zoom-in">
+						<p class="text-2xl pb-5">🌍 MarTech Forum</p>
+						<p class="text-1xl">
+							Represented at MarTech World Forum in March — insights shared by our team leaders.
+						</p>
+					</div>
+				</swiper-slide>
 
-</swiper-container>
+			</swiper-container>
+
 
 		</div>
 
@@ -1013,6 +1027,21 @@
 <script>
 	AOS.init();
 </script>
+
+<script type="module">
+  import 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.mjs';
+
+  function goToSlide(index) {
+    const swiperEl = document.querySelector('#mySwiper');
+    if (swiperEl && swiperEl.swiper) {
+      swiperEl.swiper.slideToLoop(index); // `slideToLoop` works even if Swiper is in loop mode
+    }
+  }
+
+  window.goToSlide = goToSlide; // Expose globally so buttons can use it
+</script>
+
+
 </body>
 
 </html>
