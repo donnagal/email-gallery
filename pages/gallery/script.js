@@ -1,7 +1,7 @@
   new Vue({
     el: "#app",
     data: {
-      imageCount: 30, // Update to match the number of images
+      imageCount: 90, // Update to match the number of images
     },
     mounted() {
       lightGallery(this.$refs.lightGallery, {
