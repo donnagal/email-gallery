@@ -7,30 +7,32 @@ $(function () {
   let counterClass = ".counter";
   let defaultSpeed = 3000;
 
-  // Init on scroll and on page load
-  $(window).on("scroll", getVisibilityStatus);
-  getVisibilityStatus();
-
-  function getVisibilityStatus() {
-    let elValFromTop = [];
-    const windowHeight = $(window).height(),
-      windowScrollValFromTop = $(this).scrollTop();
-
-    visibilityIds.forEach(function (item, index) {
-      try {
-        elValFromTop[index] = Math.ceil($(item).offset().top);
-      } catch (err) {
-        return;
-      }
-      if (windowHeight + windowScrollValFromTop > elValFromTop[index]) {
-        counter_init(item);
-      }
-    });
+  // Helper: check if element is in viewport
+  function isInViewport($el) {
+    const windowTop = $(window).scrollTop();
+    const windowBottom = windowTop + $(window).height();
+    const elTop = $el.offset().top;
+    const elBottom = elTop + $el.outerHeight();
+    return elBottom >= windowTop && elTop <= windowBottom;
   }
 
+  // Reset and re-run counters for groupId
   function counter_init(groupId) {
+    const $group = $(groupId);
+    if (!$group.length) return;
+
+    // Remove previous animation classes & stop ongoing animations so we can rerun
+    $group.find(counterClass).each(function () {
+      $(this)
+        .stop(true, true)
+        .text('0')
+        .removeClass(function(i, className) {
+          return (className.match(/(^|\s)c_\d+/g) || []).join(' ');
+        });
+    });
+
     let index = 0;
-    $(counterClass).each(function () {
+    $group.find(counterClass).each(function () {
       let num = $(this).attr("data-TargetNum"),
         speed = $(this).attr("data-Speed") || defaultSpeed,
         direction = $(this).attr("data-Direction"),
@@ -56,9 +58,31 @@ $(function () {
             $(this).text(Math.floor(now));
           }
         },
+        complete() {
+          if (direction === "reverse") {
+            $(this).text(0);
+          } else {
+            $(this).text(num);
+          }
+        },
       }
     );
   }
+
+  // Check which counters are visible & init their animations
+  function getVisibilityStatus() {
+    visibilityIds.forEach(function (item) {
+      const $el = $(item);
+      if (!$el.length) return;
+      if (isInViewport($el)) {
+        counter_init(item);
+      }
+    });
+  }
+
+  // Run on scroll, and on page load only
+  $(window).on("scroll", getVisibilityStatus);
+  getVisibilityStatus();
 });
 
 $(document).ready(function () {

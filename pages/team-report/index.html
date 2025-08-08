@@ -159,13 +159,10 @@
 			<div class="flex flex-col gap-6 text-white">
 				<p data-aos="zoom-in-up" data-aos-easing="ease-in" data-aos-delay="900" data-aos-duration="400" 
 				class="font-bold text-center text-7xl">🎉</p>
-				<p class="font-bold text-center counter lg:text-9xl text-8xl">
+				<p class="font-bold text-center counter lg:text-9xl text-10xl">
 					 <span class="count-up" data-key="initiatives_launched">0</span>
 				</p>
 				<p class="font-bold text-5xl text-center">Initiatives launched</p>
-				<p class="text-xl text-balance text-center mx-auto">
-					Calculated based on the individual <br />initiatives&apos;s go-to-market launch date.
-				</p>
 			</div>
 		</div>
 
@@ -180,17 +177,20 @@
 					<div class="flex justify-center gap-16 text-center">
 					<div>
 						<p class="font-bold text-center lg:text-9xl text-7xl">
-						<span class="count-up" data-key="cbus">0</span>
+						<span class="count-up" data-key="in_cbus">0</span>
 						</p>
 						<p class="text-white">Cbus initiatives</p>
 						<img class="pt-5 mx-auto" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="1000" src="img/cbus-white-sq.png" width="60" />
 					</div>
 					<div>
-						<p class="font-bold text-center text-7xl">
-						<span class="count-up" data-key="media">0</span>
+						<p class="font-bold text-center text-9xl">
+						<span class="count-up" data-key="in_all">0</span>
 						</p>
-						<p class="text-white">Media initiatives</p>
-						<img class="pt-5 mx-auto" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="1000" src="img/ms-logo-white.png" width="140" />
+						<p class="text-white">Duo brand initiatives</p>
+						<div class="grid grid-cols-2  place-items-center">
+						<img class="h-auto w-[140px]" src="img/ms-logo-white.png" />
+						<img class="h-auto w-[60px]" src="img/cbus-white-sq.png" />
+						</div>
 					</div>
 					</div>
 			</div>
@@ -617,44 +617,49 @@
 
 
 
-	<div id="volumes" class="bg-gradient-2 page flex justify-center items-center bg-green bg-fixed bg-cover bg-center">
+<div id="volumes" class="bg-gradient-2 page flex justify-center items-center bg-green bg-fixed bg-cover bg-center">
 
-		<div class="container columns-3 gap-8 text-center">
-			<div class="mr-auto">
-				<p class="font-bold text-6xl" data-aos="zoom-in-up" data-aos-delay="500">📧</p>
-				<div class="flex flex-col gap-6 text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
-					<p class="font-bold text-center text-8xl">
-						<span id="counters_5"><span class="counter" data-TargetNum="7."
-								data-Speed="1000"></span></span>.<span id="counters_6"><span class="counter"
-								data-TargetNum="2" data-Speed="1000"></span>M</span>
-					</p>
-					<p class="font-bold text-3xl">Sent emails</p>
-				</div>
-			</div>
-			<div data-aos="fade" class="ml-auto">
-				<p class="font-bold text-6xl" data-aos="zoom-in-up" data-aos-delay="600">💬</p>
-				<div class="flex flex-col gap-6 text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
-					<p class="font-bold text-8xl">
-						<span id="counters_5"><span id="counters_6"><span class="counter" data-TargetNum="436" data-Speed="1000"></span>
-						.<span class="counter"
-								data-TargetNum="9" data-Speed="1000"></span>K</span>
-					</p>
-					<p class="font-bold text-3xl">Sent SMS</p>
-				</div>
-			</div>
-			<div data-aos="fade" class="ml-auto">
-				<p class="font-bold text-6xl" data-aos="zoom-in-up" data-aos-delay="700">🎯</p>
-				<div class="flex flex-col gap-6 text-white" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
-					<p class="font-bold text-8xl">
-						<span id="counters_5"><span id="counters_6"><span class="counter" data-TargetNum="878" data-Speed="1000"></span>
-						.<span class="counter"
-								data-TargetNum="9" data-Speed="1000"></span>K</span>
-					</p>
-					<p class="font-bold text-3xl">Unique profiles targeted</p>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container columns-3 gap-8 text-center">
+
+    <!-- First counter group -->
+    <div id="counters_5" class="mr-auto" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
+      <p class="font-bold text-6xl" data-aos="zoom-in-up" data-aos-delay="500">📧</p>
+      <div class="flex flex-col gap-6 text-white">
+        <p class="font-bold text-center text-8xl">
+          <span class="counter" data-TargetNum="7" data-Speed="1000"></span>.
+          <span class="counter" data-TargetNum="2" data-Speed="1000"></span>M
+        </p>
+        <p class="font-bold text-3xl">Sent emails</p>
+      </div>
+    </div>
+
+    <!-- Second counter group -->
+    <div id="counters_6" class="ml-auto" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
+      <p class="font-bold text-6xl" data-aos="zoom-in-up" data-aos-delay="600">💬</p>
+      <div class="flex flex-col gap-6 text-white">
+        <p class="font-bold text-8xl">
+          <span class="counter" data-TargetNum="436" data-Speed="1000"></span>.
+          <span class="counter" data-TargetNum="9" data-Speed="1000"></span>K
+        </p>
+        <p class="font-bold text-3xl">Sent SMS</p>
+      </div>
+    </div>
+
+    <!-- Third counter group -->
+    <div id="counters_7" class="ml-auto" data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600">
+      <p class="font-bold text-6xl" data-aos="zoom-in-up" data-aos-delay="700">🎯</p>
+      <div class="flex flex-col gap-6 text-white">
+        <p class="font-bold text-8xl">
+          <span class="counter" data-TargetNum="878" data-Speed="1000"></span>.
+          <span class="counter" data-TargetNum="9" data-Speed="1000"></span>K
+        </p>
+        <p class="font-bold text-3xl">Unique profiles targeted</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 
 
