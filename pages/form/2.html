@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Email Brief Form 2025</title>
+
+  <link href="images/favion.png" rel="icon" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
+  <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="../../css/v-dashbaord.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
+
+  <!-- LightGallery CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF495ZKW9K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-LF495ZKW9K');
+  </script>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <div id="nav">
+    <header>
+      <div class="bg-black mx-auto text-white px-5 text-center">
+        <div class="flex py-2">
+          <div class="flex-1">
+            <h1 class="font-bold text-2xl">Brief Form</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="animate-add z-100">
+      <div class="nav-overlay"></div>
+      <button type="button" class="slide-toggle">
+        <div class="menu-wrapper">
+          <div class="hamburger-menu"></div>
+        </div>
+      </button>
+      <div id="menu"></div>
+    </nav>
+  </div>
+
+<div id="app"></div>
+
+
+<script>
+const { createApp, reactive, ref } = Vue;
+
+createApp({
+  setup() {
+    const today = new Date().toISOString().substr(0, 10);
+
+    const campaign = reactive({
+      jira: '',
+      name: '',
+      goLive:'',
+      submitted: today,
+      compliance: '',
+      comments: ''
+    });
+
+    const emails = ref([
+      { 
+        name: '', subject: '', preheader: '', brand: '', fromAddress: '', heroImage: '', automated: 'No',
+        awardFooter: 'No', emailContent: '', 
+        heroHeading: '', subHeading: '', buttonText: '', heading2: '',
+        includeMemberNumber: 'No',  // New field
+        standardFooter: ''           // New field
+      }
+    ]);
+
+    const designType = ref('');
+    const showDownloadMessage = ref(false);
+    const invalidFields = ref(false);
+
+    function addEmail() {
+      emails.value.push({ 
+        name: '', subject: '', preheader: '', brand: '', fromAddress: '', heroImage: '', automated: 'No',
+        awardFooter: 'No', emailContent: '', 
+        heroHeading: '', subHeading: '', buttonText: '', heading2: '',
+        includeMemberNumber: 'No',
+        standardFooter: ''
+      });
+    }
+
+    function removeEmail(index) {
+      if (index > 0) emails.value.splice(index, 1);
+    }
+
+    function validateFields() {
+      invalidFields.value = false;
+
+      if (!campaign.jira || !campaign.name || !campaign.goLive || !campaign.submitted || !campaign.compliance) {
+        invalidFields.value = true;
+      }
+
+      emails.value.forEach(email => {
+        if (!email.brand || !email.name || !email.subject || !email.preheader || !email.fromAddress || 
+            !email.heroImage || !email.automated || !email.awardFooter) {
+          invalidFields.value = true;
+        }
+        if (designType.value === 'inHouse' && 
+            (!email.heroHeading || !email.subHeading || !email.buttonText || !email.heading2 || !email.emailContent)) {
+          invalidFields.value = true;
+        }
+      });
+
+      return !invalidFields.value;
+    }
+
+    function downloadExcel() {
+      if (!validateFields()) {
+        alert("Please fill all required fields before downloading.");
+        return;
+      }
+
+      let table = `<table border="1"><tr>
+        <th>Email #</th>
+        <th>Brand</th>
+        <th>Name & Segment</th>
+        <th>Subject</th>
+        <th>Preheader</th>
+        <th>From Address</th>
+        <th>Hero Image</th>
+        <th>Automated</th>
+        <th>Award Footer</th>
+        <th>Include Member Number</th>
+        <th>Standard Footer</th>`;
+
+      if (designType.value === 'inHouse') {
+        table += `<th>Hero Heading</th>
+                  <th>Sub Heading</th>
+                  <th>Button Text</th>
+                  <th>Heading 2</th>
+                  <th>Email Content Text</th>`;
+      }
+
+      table += `</tr>`;
+
+      emails.value.forEach((email, i) => {
+        table += `<tr>
+          <td>${i+1}</td>
+          <td>${email.brand}</td>
+          <td>${email.name}</td>
+          <td>${email.subject}</td>
+          <td>${email.preheader}</td>
+          <td>${email.fromAddress}</td>
+          <td>${email.heroImage}</td>
+          <td>${email.automated}</td>
+          <td>${email.awardFooter}</td>
+          <td>${email.includeMemberNumber}</td>
+          <td>${email.standardFooter}</td>`;
+
+        if (designType.value === 'inHouse') {
+          table += `<td>${email.heroHeading}</td>
+                    <td>${email.subHeading}</td>
+                    <td>${email.buttonText}</td>
+                    <td>${email.heading2}</td>
+                    <td>${email.emailContent}</td>`;
+        }
+
+        table += `</tr>`;
+      });
+
+      table += `</table>`;
+
+      const blob = new Blob([table], { type: 'application/vnd.ms-excel' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `${campaign.name || 'email-brief'}.xls`;
+      link.click();
+      URL.revokeObjectURL(url);
+
+      showDownloadMessage.value = true;
+      setTimeout(() => showDownloadMessage.value = false, 4000);
+    }
+
+    return { campaign, emails, addEmail, removeEmail, downloadExcel, designType, showDownloadMessage, invalidFields };
+  },
+  template: `
+  <div class="max-w-7xl mx-auto bg-white p-20">
+    <h1 class="text-2xl font-bold mb-6">Email Brief Template 2025</h1>
+
+    <!-- Campaign Info -->
+    <section class="mb-6">
+      <h2 class="text-xl font-semibold mb-2 pt-10">Project</h2>
+      <div class="grid grid-cols-1 gap-4">
+        <div>
+          <label class="block text-sm font-medium mb-1">Jira ID</label>
+          <input v-model="campaign.jira" placeholder="(ie: MC25-2130)" 
+                class="border p-2 w-full"
+                :class="{'border-red-600': invalidFields && !campaign.jira}" required/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Campaign Name</label>
+          <input v-model="campaign.name" placeholder="(ie: EOFY investment performance)" 
+                class="border p-2 w-full"
+                :class="{'border-red-600': invalidFields && !campaign.name}" required/>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">Go Live Date</label>
+            <input v-model="campaign.goLive" type="date" 
+                  class="border p-2 w-full"
+                  :class="{'border-red-600': invalidFields && !campaign.goLive}" required/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">
+              Submitted Date <small>(TBC Note about timeframes)</small>
+            </label>
+            <input v-model="campaign.submitted" type="date" 
+                  class="border p-2 w-full"
+                  :class="{'border-red-600': invalidFields && !campaign.submitted}" required/>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium mb-1">Compliance approval complete?</label>
+          <input v-model="campaign.compliance" placeholder="Provide status" 
+                class="border p-2 w-full"
+                :class="{'border-red-600': invalidFields && !campaign.compliance}" required/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Other comments</label>
+          <textarea v-model="campaign.comments" placeholder="Other comments" 
+                    class="border p-2 w-full"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Tabs -->
+    <div class="mb-6">
+      <p class="font-semibold mr-2 text-xl pt-20 pb-5">Design Type:</p>
+      <button @click="designType='inHouse'" 
+              :class="designType==='inHouse' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-800'" 
+              class="px-4 py-2 rounded mr-2">In-house design</button>
+      <button @click="designType='agency'" 
+              :class="designType==='agency' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-800'" 
+              class="px-4 py-2 rounded">Agency design supplied</button>
+    </div>
+
+    <div v-if="designType==='agency'" class="mb-4 p-4 bg-yellow-100 border-l-4 border-yellow-400 rounded">
+      Please attach on JIRA, ensure design meets Email design guide.
+    </div>
+
+    <!-- Two-column layout -->
+    <div class="mx-auto mt-5 flex flex-col lg:flex-row gap-6 px-5">
+      <!-- Left Column: -->
+      <div class="lg:flex-[0_0_70%] w-full">
+        <section v-if="designType">
+          <section v-for="(email, i) in emails" :key="i" class="mb-6 border-t pt-4 pb-10 relative">
+            <h2 class="font-semibold mb-2">
+              Email #{{ i + 1 }} – 
+              {{ email.brand || 'No Brand' }} – 
+              {{ campaign.name || 'No Campaign Name' }} – 
+              {{ email.name || 'Untitled' }}
+            </h2>
+            <div class="grid grid-cols-1 gap-4">
+              <button v-if="i>0" @click="removeEmail(i)" class="absolute top-0 right-0 bg-red-600 text-white px-2 py-1 rounded">Remove</button>
+
+              <select v-model="email.brand" class="border p-2 w-full" :class="{'border-red-600': invalidFields && !email.brand}" required>
+                <option disabled value="">Select Brand</option>
+                <option>Cbus Accum</option>
+                <option>Cbus SIS</option>
+                <option>Cbus All</option>
+                <option>Media</option>
+              </select>
+
+              <input v-model="email.name" placeholder="Email segment name (ie: Under 35s)" class="border p-2 w-full" maxlength="30" />
+
+              <label class="block text-sm font-medium mb-0 pt-5">Inbox text</label>
+              <input v-model="email.subject" placeholder="Subject Line (50–65 chars)" class="border p-2 w-full" :class="{'border-red-600': invalidFields && !email.subject}" maxlength="60" required/>
+              <input v-model="email.preheader" placeholder="Preheader (85–100 chars)" class="border p-2 w-full" :class="{'border-red-600': invalidFields && !email.preheader}" maxlength="100" required/>
+
+              <!-- Include Member Number Dropdown -->
+              <div class="mb-4">
+                <label class="block text-sm font-medium mb-1">Include member number in header?</label>
+                <select v-model="email.includeMemberNumber" class="border p-2 w-full">
+                  <option value="No">No, default</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </div>
+
+              <!-- Hero fields, content, button etc. (same as before) -->
+
+              <!-- Award Footer -->
+              <div class="pt-5 pb-2">
+                <p class="text-lg">Email footer<p>
+                <p class="text-sm">The Award Footer is optional for direct-blast marketing emails.</p>
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-1">From Address</label>
+                <select v-model="email.fromAddress" class="border p-2 w-full" :class="{'border-red-600': invalidFields && !email.fromAddress}" required>
+                  <option disabled value="">Select From Address</option>
+                  <option>Campaign (marketing, survey & promo)</option>
+                  <option>Events (education & promo)</option>
+                  <option>Communication (mandatory - recipients must receive)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-1">Automated</label>
+                <select v-model="email.automated" class="border p-2 w-full" :class="{'border-red-600': invalidFields && !email.automated}" required>
+                  <option>No, this is a direct blast 🚀</option>
+                  <option>Yes</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-1">Award Footer: <a class="underline" target="_blank" href="https://bit.ly/cbus-footer-awards">Example</a></label>
+                <select v-model="email.awardFooter"
+                        class="border p-2 w-full"
+                        :disabled="!(email.fromAddress === 'Campaign (marketing, survey & promo)' && email.automated === 'No, this is a direct blast 🚀')"
+                        :class="{
+                          'bg-gray-100 text-gray-500': !(email.fromAddress === 'Campaign (marketing, survey & promo)' && email.automated === 'No, this is a direct blast 🚀'),
+                          'border-red-600': invalidFields && !email.awardFooter
+                        }"
+                        required>
+                  <option>N/A</option>
+                  <option>Yes (Ensure awards are up to date with Compliance.)</option>
+                </select>
+              </div>
+
+              <!-- Standard Footer Dropdown -->
+              <div class="mt-4">
+                <label class="block text-sm font-medium mb-1">Standard footer</label>
+                <select v-model="email.standardFooter" class="border p-2 w-full">
+                  <option :value="email.brand === 'Media Super' ? 'Media Super' : 'Cbus'">
+                    {{ email.brand === 'Media' ? 'Include Media Super standard text reff: bit.ly/tbc1' : 'Include Cbus standard text reff: bit.ly/tbc2' }}
+                  </option>
+                </select>
+              </div>
+
+            </div>
+          </section>
+        </section>
+
+        <!-- Buttons -->
+        <div class="space-x-2 mt-4" v-if="designType">
+          <button @click="addEmail" class="bg-blue-600 text-white px-4 py-2 rounded">+ Add Email</button>
+          <button @click="downloadExcel" class="bg-yellow-600 text-white px-4 py-2 rounded">Download Excel</button>
+        </div>
+
+        <!-- Download Message -->
+        <div v-if="showDownloadMessage" class="mt-4 p-3 bg-green-100 border-l-4 border-green-400 rounded">
+          Great, please attach Excel to your JIRA task.
+        </div>
+
+      </div>
+
+      <!-- Right Column: -->
+      <div class="lg:flex-[0_0_30%] w-full">
+        <img src="img/email-wireframe.jpg" width="600" alt="Email Wireframe" class="rounded shadow">
+      </div>
+
+    </div>
+  </div>
+  `
+}).mount('#app');
+</script>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="../../js/filter-group.js"></script>
+<script src="../../js/global.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</body>
+</html>
