@@ -457,7 +457,7 @@
                   </div>
                   <div>
                     <label class="block text-sm font-medium mb-1">Heading 2 <small class="text-gray-400">{{ (email.heading2 ? email.heading2.length : 0) }}/46</small></label>
-                    <input v-model="email.heading2" placeholder="(Name), here are two ways to boost your super" 
+                    <input v-model="email.heading2" placeholder="(Name, here are two ways to boost your super" 
                           class="border p-2 w-full" 
                           :class="{'border-red-600': invalidFields && !email.heading2}" maxlength="46" required/>
                   </div>
@@ -565,9 +565,18 @@
      </div>
         <!-- Right Column: -->
         <div class="lg:flex-[0_0_40%] w-full pt-60">
-          <p class="text-xl">Email Example</p>
-          <img src="img/email-wireframe.jpg" width="600" alt="Email Wireframe" class="rounded shadow" style="">
-        </div>
+          <p class="text-xl pb-3">Email Example</p>
+          <div class="mb-3 flex items-start space-x-2 rounded-md bg-blue-50 p-2 text-xs text-blue-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+            </svg>
+            <p>See the <a target="_blank" class="underline" href="https://www.figma.com/proto/t7QHMECbqW0ZDMTd49qZIG/Email-Design-Guide">Cbus Email Style Guide</a>
+              or <a target="_blank" class="underline" href="https://bit.ly/ms-style-guide">Media Super Email Style Guide</a>
+              
+             </p>
+            </div>
+            <img src="img/email-wireframe.jpg" width="600" alt="Email Wireframe" class="rounded shadow" style="">
+          </div>
 
       </div>
 
