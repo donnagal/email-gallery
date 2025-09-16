@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Email Brief Form 2025</title>
+
+    <link href="images/favion.png" rel="icon" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css"
+    />
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/v-dashbaord.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css"
+    />
+
+    <!-- LightGallery CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LF495ZKW9K"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-LF495ZKW9K");
+    </script>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+ 
+    
+
+
+
+       <div class="max-w-7xl mx-auto bg-white p-20">
+      <h1 class="text-2xl font-bold mb-6">Email Brief Template 2025</h1>
+
+      <!-- Campaign Info -->
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold mb-2 pt-10">
+          Step 1: Tell me about your project
+        </h2>
+        <div class="grid grid-cols-1 gap-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">Jira ID*</label>
+            <input
+              v-model="campaign.jira"
+              placeholder="(ie: MC25-2130 or N/A Team doesn't use JIRA)"
+              class="border p-2 w-full"
+              :class="{'border-red-600': invalidFields && !campaign.jira}"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Campaign Name*</label>
+            <input
+              v-model="campaign.name"
+              placeholder="(ie: EOFY Update)"
+              class="border p-2 w-full"
+              :class="{'border-red-600': invalidFields && !campaign.name}"
+              required
+            />
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium mb-1"
+                >Go Live Date*</label
+              >
+              <input
+                v-model="campaign.goLive"
+                type="date"
+                class="border p-2 w-full"
+                :class="{'border-red-600': invalidFields && !campaign.goLive}"
+                required
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">
+                Submitted timestamp date* <small>(Apporx. XX weeks)</small>
+              </label>
+              <input
+                v-model="campaign.submitted"
+                type="date"
+                class="border p-2 w-full"
+                :class="{'border-red-600': invalidFields && !campaign.submitted}"
+                required
+              />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-1"
+              >Compliance approval complete?*
+              <small
+                >Compliance approval should be complete prior to
+                submission</small
+              ></label
+            >
+            <input
+              v-model="campaign.compliance"
+              placeholder="Add comment about status"
+              class="border p-2 w-full"
+              :class="{'border-red-600': invalidFields && !campaign.compliance}"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Other comments</label>
+            <textarea
+              v-model="campaign.comments"
+              placeholder="Other comments"
+              class="border p-2 w-full"
+            ></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- Design Tabs -->
+      <div class="mb-6">
+        <p class="font-semibold mr-2 text-xl pt-20 pb-5">Step 2: Design Type</p>
+        <button
+          @click="designType='inHouse'"
+          :class="designType==='inHouse' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-800'"
+          class="px-4 py-2 rounded mr-2"
+        >
+          In-house design
+        </button>
+        <button
+          @click="designType='agency'"
+          :class="designType==='agency' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-800'"
+          class="px-4 py-2 rounded"
+        >
+          Agency design supplied
+        </button>
+      </div>
+
+      <div
+        v-if="designType==='agency'"
+        class="mb-4 p-4 bg-yellow-100 border-l-4 border-yellow-400 rounded"
+      >
+        Please attach on JIRA, ensure design meets Email design guide.
+      </div>
+
+    <!-- Two-column layout -->
+      <div class="mx-auto mt-5 flex flex-col lg:flex-row gap-6 px-5">
+       
+        <!-- Left Column: -->
+        <div class="lg:flex-[0_0_60%] w-full">
+          A
+        </div>
+        <!-- Right Column: -->
+        <div class="lg:flex-[0_0_40%] w-full">
+             <p class="text-xl">Example</p>
+              <img
+                src="img/email-wireframe.jpg"
+                width="600"
+                alt="Email Wireframe"
+                class="rounded shadow"
+                style=""
+              />
+        </div>
+
+
+
+                  <!-- Buttons -->
+          <div class="space-x-2 mt-4" v-if="designType">
+            <button @click="addEmail" class="bg-blue-600 text-white px-4 py-2 rounded">
+              + Add Email
+            </button>
+            <button @click="downloadExcel"class="bg-yellow-600 text-white px-4 py-2 rounded">
+              Download Brief
+            </button>
+          </div>
+
+          <!-- Download Message -->
+          <div v-if="showDownloadMessage" class="mt-4 p-3 bg-green-100 border-l-4 border-green-400 rounded">
+            Great, please attach Excel to your JIRA task.
+          </div>
+
+       </div>
+
+        
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/filter-group.js"></script>
+    <script src="../../js/global.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
+</html>

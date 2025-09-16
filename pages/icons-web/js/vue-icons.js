@@ -2,47 +2,65 @@ new Vue({
   el: "#items",
   data: {
     current: 1,
-    paginate: 6,
-    primaryColor: "#515457",
-    secondaryColor: "#0F8045",
-    strokeWidth: 4,
+    paginate: 20,
+    primaryColor: "#017D8C",
+    secondaryColor: "#86C543",
+    strokeWidth: 3,
     search_filter: "",
     status_filter: "",
     items: [
       {
         group: "money, productivity, digital",
         text: "calculator, hand, push button",
-        url: "laptop",
+        url: "1",
         svg: ""
       },
       {
         group: "performance, productivity",
         text: "Your super will continue to work for you in retirement, managed benefit",
-        url: "webinar",
+        url: "2",
         svg: ""
       },
       {
         group: "money, productivity, digital",
         text: "calculator, hand, push button",
-        url: "laptop",
+        url: "3",
         svg: ""
       },
       {
         group: "performance, productivity",
         text: "Your super will continue to work for you in retirement, managed benefit",
-        url: "webinar",
+        url: "4",
         svg: ""
       },
       {
         group: "money, productivity, digital",
         text: "calculator, hand, push button",
-        url: "laptop",
+        url: "5",
         svg: ""
       },
       {
         group: "performance, productivity",
         text: "Your super will continue to work for you in retirement, managed benefit",
-        url: "webinar",
+        url: "6",
+        svg: ""
+      },
+     {
+        group: "performance, productivity",
+        text: "Your super will continue to work for you in retirement, managed benefit",
+        url: "7",
+        svg: ""
+      },
+      {
+        group: "performance, productivity",
+        text: "Your super will continue to work for you in retirement, managed benefit",
+        url: "8",
+        svg: ""
+      },
+    {
+        group: "performance, productivity",
+        text: "Your super will continue to work for you in retirement, managed benefit",
+        url: "9",
         svg: ""
       }
     ]
@@ -107,19 +125,19 @@ new Vue({
     setStyle(styleNumber) {
       switch (styleNumber) {
         case 1:
-          this.primaryColor = "#01796F"; // Pine green
-          this.secondaryColor = "#D3D3D3"; // Light grey
-          this.strokeWidth = 4;
+          this.primaryColor = "#017D8C"; // Pine
+          this.secondaryColor = "#86C543"; // Bright Breen
+          this.strokeWidth = 3;
           break;
         case 2:
           this.primaryColor = "#008000"; // Green
           this.secondaryColor = "#808080"; // Grey
-          this.strokeWidth = 4;
+          this.strokeWidth = 3;
           break;
         case 3:
           this.primaryColor = "#0000FF"; // Blue
           this.secondaryColor = "#808080"; // Grey
-          this.strokeWidth = 4;
+          this.strokeWidth = 3;
           break;
         case 4:
           this.primaryColor = "#0099FF";
@@ -137,8 +155,8 @@ new Vue({
           this.strokeWidth = 2.5;
           break;
         default:
-          this.primaryColor = "#515457";
-          this.secondaryColor = "#0F8045";
+          this.primaryColor = "#017D8C";
+          this.secondaryColor = "#86C543";
           this.strokeWidth = 2.5;
       }
 

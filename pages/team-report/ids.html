@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Team Report Counts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #222;
+      color: white;
+      padding: 2rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 0.3rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Team Report Counts</h1>
+<p>Initiatives Launched: <span class="count-up" data-key="initiatives_launched">0</span></p>
+<p>Initiatives Launched: <span class="count-up" data-key="initiatives_launched">0</span></p>
+<p>Initiatives Cbus: <span class="count-up" data-key="in_cbus">0</span></p>
+<p>Initiatives Media: <span class="count-up" data-key="in_media">0</span></p>
+<p>Initiatives Both: <span class="count-up" data-key="in_all">0</span></p>
+<p>In Education: <span class="count-up" data-key="in_education">0</span></p>
+<p>In Comms: <span class="count-up" data-key="in_comms">0</span></p>
+<p>In Marketing: <span class="count-up" data-key="in_marketing">0</span></p>
+<p>In Other: <span class="count-up" data-key="in_other">0</span></p>
+<p>CH Journey Total: <span class="count-up" data-key="ch_journey_tot">0</span></p>
+<p>CH Email Total: <span class="count-up" data-key="ch_email_tot">0</span></p>
+<p>CH SMS Total: <span class="count-up" data-key="ch_sms_tot">0</span></p>
+<p>CH Journey Education: <span class="count-up" data-key="ch_journey_education">0</span></p>
+<p>CH Email Education: <span class="count-up" data-key="ch_email_education">0</span></p>
+<p>CH SMS Education: <span class="count-up" data-key="ch_sms_education">0</span></p>
+<p>CH Journey Comms: <span class="count-up" data-key="ch_journey_comms">0</span></p>
+<p>CH Email Comms: <span class="count-up" data-key="ch_email_comms">0</span></p>
+<p>CH SMS Comms: <span class="count-up" data-key="ch_sms_comms">0</span></p>
+<p>CH Journey Marketing: <span class="count-up" data-key="ch_journey_marketing">0</span></p>
+<p>CH Email Marketing: <span class="count-up" data-key="ch_email_marketing">0</span></p>
+<p>CH SMS Marketing: <span class="count-up" data-key="ch_sms_marketing">0</span></p>
+<p>CH Journey Other: <span class="count-up" data-key="ch_journey_other">0</span></p>
+<p>CH Email Other: <span class="count-up" data-key="ch_email_other">0</span></p>
+<p>CH SMS Other: <span class="count-up" data-key="ch_sms_other">0</span></p>
+<p>Page Volume: <span class="count-up" data-key="page_vol">0</span></p>
+<p>Portal Ex: <span class="count-up" data-key="portal_ex">0</span></p>
+<p>Web Personalisation: <span class="count-up" data-key="web_pers">0</span></p>
+<p>Page Education: <span class="count-up" data-key="page_education">0</span></p>
+<p>Portal Education: <span class="count-up" data-key="portal_education">0</span></p>
+<p>Web Education: <span class="count-up" data-key="web_education">0</span></p>
+<p>Page Comms: <span class="count-up" data-key="page_comms">0</span></p>
+<p>Portal Comms: <span class="count-up" data-key="portal_comms">0</span></p>
+<p>Web Comms: <span class="count-up" data-key="web_comms">0</span></p>
+<p>Page Marketing: <span class="count-up" data-key="page_marketing">0</span></p>
+<p>Portal Marketing: <span class="count-up" data-key="portal_marketing">0</span></p>
+<p>Web Marketing: <span class="count-up" data-key="web_marketing">0</span></p>
+<p>Page Other: <span class="count-up" data-key="page_other">0</span></p>
+<p>Portal Other: <span class="count-up" data-key="portal_other">0</span></p>
+<p>Web Other: <span class="count-up" data-key="web_other">0</span></p>
+
+
+  
+
+</body>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+<script type="text/javascript" src="./js/scripts.js"></script>
+<script src="../../../js/global.js"></script>
+
+<script>
+	AOS.init();
+</script>
+
+<script type="module">
+  import 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.mjs';
+
+  function goToSlide(index) {
+    const swiperEl = document.querySelector('#mySwiper');
+    if (swiperEl && swiperEl.swiper) {
+      swiperEl.swiper.slideToLoop(index); // `slideToLoop` works even if Swiper is in loop mode
+    }
+  }
+
+  window.goToSlide = goToSlide; // Expose globally so buttons can use it
+</script>
+
+
+</body>
+
+</html>
