@@ -26,20 +26,6 @@
       href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css"
     />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-LF495ZKW9K"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-LF495ZKW9K");
-    </script>
-
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -69,7 +55,7 @@
     <div id="app"></div>
 
     <script>
-      const { createApp, reactive, ref } = Vue;
+      const { createApp, reactive, ref, computed } = Vue;
 
       createApp({
         setup() {
@@ -107,6 +93,16 @@
           const designType = ref("");
           const showDownloadMessage = ref(false);
           const invalidFields = ref(false);
+
+          const reviewEstimate = computed(() => {
+            const count = emails.value.length;
+            if (count === 1)
+              return "approx. 7 business days depending on workload";
+            if (count <= 3)
+              return "approx. 14 business days depending on workload";
+            if (count <= 5) return "approx. 3-4 weeks depending on workload";
+            return "approx. 4 weeks depending on workload";
+          });
 
           function addEmail() {
             emails.value.push({
@@ -148,7 +144,6 @@
             emails.value.forEach((email) => {
               if (
                 !email.brand ||
-                !email.name ||
                 !email.subject ||
                 !email.preheader ||
                 !email.fromAddress ||
@@ -179,49 +174,61 @@
               return;
             }
 
-            let table = `<table border="1"><tr>
-        <th>Email #</th>
-        <th>Brand</th>
-        <th>Name & Segment</th>
-        <th>Subject</th>
-        <th>Preheader</th>
-        <th>From Address</th>
-        <th>Hero Image</th>
-        <th>Automated</th>
-        <th>Award Footer</th>
-        <th>Include Member Number</th>
-        <th>Standard Footer</th>`;
+            // Campaign-level info
+            let table = `<table border="1">
+  <tr><th colspan="2">Campaign Information</th></tr>
+  <tr><td>JIRA ID</td><td>${campaign.jira}</td></tr>
+  <tr><td>Campaign Name</td><td>${campaign.name}</td></tr>
+  <tr><td>Go Live</td><td>${campaign.goLive}</td></tr>
+  <tr><td>Submitted timestamp</td><td>${campaign.submitted}</td></tr>
+  <tr><td>Compliance approval complete</td><td>${campaign.compliance}</td></tr>
+  <tr><td>Other comments</td><td>${campaign.comments}</td></tr>
+  </table><br/><br/>`;
+
+            // Emails info
+            table += `<table border="1"><tr>
+    <th>Email #</th>
+    <th>Brand</th>
+    <th>Name & Segment</th>
+    <th>Subject</th>
+    <th>Preheader</th>
+    <th>From Address</th>
+    <th>Hero Image</th>
+    <th>Automated</th>
+    <th>Award Footer</th>
+    <th>Include Member Number</th>
+    <th>Standard Footer</th>`;
 
             if (designType.value === "inHouse") {
               table += `<th>Hero Heading</th>
-                  <th>Sub Heading</th>
-                  <th>Button Text</th>
-                  <th>Heading 2</th>
-                  <th>Email Content Text</th>`;
+              <th>Sub Heading</th>
+              <th>Button Text</th>
+              <th>Heading 2</th>
+              <th>Email Content Text</th>`;
             }
 
             table += `</tr>`;
 
             emails.value.forEach((email, i) => {
               table += `<tr>
-          <td>${i + 1}</td>
-          <td>${email.brand}</td>
-          <td>${email.name}</td>
-          <td>${email.subject}</td>
-          <td>${email.preheader}</td>
-          <td>${email.fromAddress}</td>
-          <td>${email.heroImage}</td>
-          <td>${email.automated}</td>
-          <td>${email.awardFooter}</td>
-          <td>${email.includeMemberNumber}</td>
-          <td>${email.standardFooter}</td>`;
+      <td>${i + 1}</td>
+      <td>${email.brand}</td>
+      <td>${email.name}</td>
+      <td>${email.subject}</td>
+      <td>${email.preheader}</td>
+      <td>${email.fromAddress}</td>
+      <td>${email.heroImage}</td>
+      <td>${email.automated}</td>
+      <td>${email.awardFooter}</td>
+      <td>${email.includeMemberNumber}</td>
+      <td>${email.standardFooter}</td>`;
 
               if (designType.value === "inHouse") {
                 table += `<td>${email.heroHeading}</td>
-                    <td>${email.subHeading}</td>
-                    <td>${email.buttonText}</td>
-                    <td>${email.heading2}</td>
-                    <td>${email.emailContent}</td>`;
+                <td>${email.subHeading}</td>
+                <td>${email.buttonText}</td>
+                <td>${email.heading2}</td>
+                <td>${email.emailContent}</td>`;
               }
 
               table += `</tr>`;
@@ -240,7 +247,7 @@
             URL.revokeObjectURL(url);
 
             showDownloadMessage.value = true;
-            setTimeout(() => (showDownloadMessage.value = false), 4000);
+            setTimeout(() => (showDownloadMessage.value = false), 94000);
           }
 
           return {
@@ -252,6 +259,7 @@
             designType,
             showDownloadMessage,
             invalidFields,
+            reviewEstimate, // 🔹 Exposed to template
           };
         },
 
@@ -284,11 +292,19 @@
               </div>
               <div class="">
                 <label class="block text-sm font-medium mb-1">
-                  Submitted timestamp date* <small>(Apporx. XX weeks)</small>
+                  Submitted timestamp date* 
                 </label>
                 <input v-model="campaign.submitted" type="date" 
                       class="border p-2 w-full"
                       :class="{'border-red-600': invalidFields && !campaign.submitted}" required/>
+
+                <div class="mb-3 flex items-start space-x-2 rounded-md bg-blue-50 p-2 text-xs text-blue-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+                    </svg>
+                    <p>An estimate will display after you finish filling out the form.</p>
+                </div>
+
               </div>
             </div>
 
@@ -300,7 +316,7 @@
         </div>
         <div class="pt-5">
           <label class="block text-sm font-medium mb-1">Other comments</label>
-          <textarea v-model="campaign.comments" placeholder="Other comments" 
+          <textarea v-model="campaign.comments" placeholder="(ie: I would like to add some personalisation on the hero banners.)" 
                     class="border p-2 w-full"></textarea>
         </div>
       </div>
@@ -351,7 +367,7 @@
                 </select>
               </div>
               <div>
-                  <input v-model="email.name" placeholder="Email segment name (ie: Under 35s)" class="border p-2 w-full" maxlength="30"/>
+                  <input v-model="email.name" placeholder="Email segment name (ie: Under 35s)" class="border p-2 w-full" maxlength="30">
               </div>
             </div>
 
@@ -464,6 +480,12 @@
 
                   <div>
                     <label class="block text-sm font-medium mb-1">Email Content</label>
+                  <div class="flex items-start space-x-2 rounded-md bg-blue-50 p-2 text-xs text-blue-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+                    </svg>
+                    <p>Or provide a SharePoint link to your approved copy.</p>
+                  </div>
                     <textarea v-model="email.emailContent" 
       placeholder="(Insert Body text)
       Cbus Super is proud to have delivered a healthy return of 8.95%* for our default Growth (MySuper) investment option for the last financial year. 
@@ -565,16 +587,18 @@
      </div>
         <!-- Right Column: -->
         <div class="lg:flex-[0_0_40%] w-full pt-60">
+
           <p class="text-xl pb-3">Email Example</p>
+
           <div class="mb-3 flex items-start space-x-2 rounded-md bg-blue-50 p-2 text-xs text-blue-700">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
             </svg>
             <p>See the <a target="_blank" class="underline" href="https://www.figma.com/proto/t7QHMECbqW0ZDMTd49qZIG/Email-Design-Guide">Cbus Email Style Guide</a>
               or <a target="_blank" class="underline" href="https://bit.ly/ms-style-guide">Media Super Email Style Guide</a>
-              
              </p>
             </div>
+
             <img src="img/email-wireframe.jpg" width="600" alt="Email Wireframe" class="rounded shadow" style="">
           </div>
 
@@ -589,10 +613,13 @@
               <button @click="downloadExcel" class="bg-yellow-600 text-white px-4 py-2 rounded">Download Brief</button>
             </div>
 
-            <!-- Download Message -->
-            <div v-if="showDownloadMessage" class="mt-4 p-3 bg-green-100 border-l-4 border-green-400 rounded">
-              Great, please attach Excel to your JIRA task.
-            </div>
+          <!-- Download Message -->
+          <div v-if="showDownloadMessage" class="mt-4 p-3 bg-green-100 border-l-4 border-green-400 rounded">
+            Great, please attach Excel to your JIRA task. <br/>
+            Based on the number of emails requested, the first email design review is estimated to take 
+            <strong>{{ reviewEstimate }}</strong>.
+          </div>
+
 
   </div>
 `,
