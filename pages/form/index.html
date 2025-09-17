@@ -271,18 +271,31 @@
     <section class="mb-6">
       <h2 class="text-xl font-semibold mb-2 pt-10 pb-5">Step 1: Tell me about your project</h2>
       <div class="grid grid-cols-1 gap-4">
-        <div>
-          <label class="block text-sm font-medium mb-1">Jira ID*</label>
-          <input v-model="campaign.jira" placeholder="(ie: MC25-2130 or N/A Team doesn't use JIRA)" 
-                class="border p-2 w-full"
-                :class="{'border-red-600': invalidFields && !campaign.jira}" required/>
-        </div>
-        <div class="pt-5">
-          <label class="block text-sm font-medium mb-1">Campaign Name*</label>
-          <input v-model="campaign.name" placeholder="(ie: EOFY Update)" 
-                class="border p-2 w-full"
-                :class="{'border-red-600': invalidFields && !campaign.name}" required/>
-        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium mb-1">Jira ID*</label>
+              <input 
+                v-model="campaign.jira" 
+                placeholder="(ie: MC25-2130 or N/A Team doesn't use JIRA)" 
+                class="w-full p-2 border-b border-gray-300 focus:border-blue-600 focus:outline-none transition-colors"
+                :class="{'border-red-600': invalidFields && !campaign.jira}" 
+                required
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium mb-1">Campaign Name*</label>
+              <input 
+                v-model="campaign.name" 
+                placeholder="(ie: EOFY Update)" 
+                class="w-full p-2 border-b border-gray-300 focus:border-blue-600 focus:outline-none transition-colors"
+                :class="{'border-red-600': invalidFields && !campaign.name}" 
+                required
+              />
+            </div>
+          </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-5">
               <div>
                 <label class="block text-sm font-medium mb-1">Go Live Date*</label>
@@ -298,7 +311,7 @@
                       class="border p-2 w-full"
                       :class="{'border-red-600': invalidFields && !campaign.submitted}" required/>
 
-                <div class="mb-3 flex items-start space-x-2 rounded-md bg-blue-50 p-2 text-xs text-blue-700">
+                <div class="flex items-start space-x-2 rounded-md bg-blue-50 p-2 text-xs text-blue-700">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
                     </svg>
@@ -308,11 +321,17 @@
               </div>
             </div>
 
-        <div class="pt-5">
-          <label class="block text-sm font-medium mb-1">Compliance approval complete?* <small>Compliance approval should be complete prior to submission</small></label>
+        <div class="">
+          <label class="block text-sm font-medium mb-1">Compliance approval complete?*</label>
           <input v-model="campaign.compliance" placeholder="Add comment about status" 
                 class="border p-2 w-full"
                 :class="{'border-red-600': invalidFields && !campaign.compliance}" required/>
+                 <div class="mb-3 flex items-start space-x-2 rounded-md bg-blue-50 p-2 text-xs text-blue-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+                    </svg>
+                    <p>Compliance approval should be complete prior to submission.</p>
+                </div>
         </div>
         <div class="pt-5">
           <label class="block text-sm font-medium mb-1">Other comments</label>
@@ -324,7 +343,7 @@
 
     <!-- Design Tabs -->
     <div class="mb-6">
-      <p class="font-semibold mr-2 text-xl pt-20 pb-5">Step 2: Design Type</p>
+      <p class="font-semibold mr-2 text-xl pt-20 pb-5 ">Step 2: Design Type</p>
       <button @click="designType='inHouse'" 
               :class="designType==='inHouse' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-800'" 
               class="px-4 py-2 rounded mr-2">In-house design</button>
@@ -347,7 +366,7 @@
             
             <section >
               
-              <h2 class="font-semibold mb-2">
+              <h2 class="mb-2 text-blue-600 text-xl">
                 Email #{{ i + 1 }} – 
                 {{ email.brand || 'No Brand' }} – 
                 {{ campaign.name || 'No Campaign Name' }} – 
@@ -473,7 +492,7 @@
                   </div>
                   <div>
                     <label class="block text-sm font-medium mb-1">Heading 2 <small class="text-gray-400">{{ (email.heading2 ? email.heading2.length : 0) }}/46</small></label>
-                    <input v-model="email.heading2" placeholder="(Name, here are two ways to boost your super" 
+                    <input v-model="email.heading2" placeholder="(Name), here are two ways to boost your super" 
                           class="border p-2 w-full" 
                           :class="{'border-red-600': invalidFields && !email.heading2}" maxlength="46" required/>
                   </div>
@@ -536,6 +555,18 @@
                     <p class="text-lg">Email footer<p>
                   </div>
 
+                   <div class="flex items-start space-x-2 rounded-md bg-blue-50 p-2 text-xs text-blue-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+                    </svg>
+                    <p>
+                      Example: 
+                      <a v-if="email.brand === 'Media'" target="_blank" class="underline" href="https://bit.ly/ms-email-guide-pg"> Media Super Guide </a> 
+                      <a v-else target="_blank" class="underline" href="https://cbussuper.info/cbus-email-guide-pg"> Cbus Guide </a>
+                      </p>
+                  </div>
+
+
                 <div>
                   <label class="block text-sm font-medium mb-1">Automated</label>
                   <select v-model="email.automated" 
@@ -546,39 +577,43 @@
                   </select>
                 </div>
 
-                <div>
-                  <label class="block text-sm font-medium mb-1 pt-5">Award Footer: <a class="underline" target="_blank" href="https://bit.ly/cbus-footer-awards">Example</a></label>
-                 <div class="mt-2 flex items-start space-x-2 rounded-md bg-blue-50 p-2 text-xs text-blue-700">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
-                    </svg>
-                    <p>The Award Footer is optional for <strong>direct-blast, marketing<strong> emails.</p>
-                  </div>
+                <div v-if="email.fromAddress === 'Campaign (marketing, survey & promo)' && email.automated === 'No, this is a direct blast 🚀'">
+                  <label class="block text-sm font-medium mb-1 pt-5">
+                    Award Footer
+                  </label>
+
                   <select v-model="email.awardFooter"
                           class="border p-2 w-full"
-                          :disabled="!(email.fromAddress === 'Campaign (marketing, survey & promo)' && email.automated === 'No, this is a direct blast 🚀')"
-                          :class="{
-                            'bg-gray-100 text-gray-500': !(email.fromAddress === 'Campaign (marketing, survey & promo)' && email.automated === 'No, this is a direct blast 🚀'),
-                            'border-red-600': invalidFields && !email.awardFooter
-                          }"
+                          :class="{'border-red-600': invalidFields && !email.awardFooter}"
                           required>
                     <option>No, not needed</option>
                     <option>Yes (Ensure awards are up to date with Compliance.)</option>
-                     <option>Yes, but need new / updated ones</option>
+                    <option>Yes, but need new / updated ones</option>
                   </select>
+                   <div class="mt-2 flex items-start space-x-2 rounded-md bg-blue-50 p-2 text-xs text-blue-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+                    </svg>
+                    <p>The Award Footer is optional for <strong>direct-blast, marketing</strong> emails.</p>
+                  </div>
                 </div>
+
+
                 <div class="mt-4">
                   <label class="block text-sm font-medium mb-1">Standard footer</label>
                   <select v-model="email.standardFooter" class="border p-2 w-full" required>
                     <option 
                       v-if="email.brand === 'Media'" 
-                      value="Include Media Super standard text ref: bit.ly/tbc1">
-                      Include Media Super standard text ref: bit.ly/tbc1
+                      value="Include Media Super standard text">
+                      Include Media Super standard text
                     </option>
                     <option 
                       v-else 
-                      value="Include Cbus standard text ref: bit.ly/tbc2">
-                      Include Cbus standard text ref: bit.ly/tbc2
+                      value="Include Cbus standard text">
+                      Include Cbus standard text
+                    </option>
+                    <option>
+                      Out of date - an update is needed.
                     </option>
                   </select>
                 </div>
