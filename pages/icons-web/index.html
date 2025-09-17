@@ -15,10 +15,7 @@
     />
     <link rel="stylesheet" href="../../css/global.css" />
     <link rel="stylesheet" href="../../css/v-dashbaord.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css"
-    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,218 +24,97 @@
       rel="stylesheet"
     />
 
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
 
-      .icon-item {
-        width: 100%;
-        margin-bottom: 1rem;
-      }
-
-      @media (min-width: 496px) {
-        .icon-item {
-          width: calc(50% - 16px);
-        }
-      }
-
-      @media (min-width: 768px) {
-        .icon-item {
-          width: calc(33.333333% - 32px);
-        }
-      }
-
-      @media (min-width: 1024px) {
-        .icon-item {
-          width: calc(25% - 64px);
-        }
-      }
-
-      @media (min-width: 1200px) {
-        .icon-item {
-          width: calc(20% - 80px);
-        }
-      }
-
-      .icon-container svg {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto 0.5rem;
-      }
-
-      .wrapper .tooltip {
-        position: absolute;
-        top: 0;
-        font-size: 14px;
-        background: #ffffff;
-        color: #ffffff;
-        padding: 5px 8px;
-        border-radius: 5px;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-        opacity: 0;
-        pointer-events: none;
-        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      }
-    </style>
   </head>
 
   <body>
-    <div id="items" class="mx-auto p-5">
-      <!-- Search and Filter -->
-      <form class="bg-gray-100 p-5 text-center mb-5" @submit.prevent>
-        <input
-          id="search-text"
-          placeholder="Quick search..."
-          class="w-1/3 border border-gray-200 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
-          type="search"
-          name="search"
-          v-model="search_filter"
-          @input="current = 1"
-        />
+    	<div id="nav">
+		<header>
+			<div class="bg-black mx-auto text-white px-5 text-center">
+				<div class="flex py-2">
+					<div class="flex-1">
+						<h1 class="font-bold text-2xl">Email Gallery Hub</h1>
+					</div>
+				</div>
+			</div>
+		</header>
 
-        <button
-          class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-          @click.prevent="setStatus('')"
-        >
-          All
-        </button>
-        <button
-          class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-          @click.prevent="setStatus('performance')"
-        >
-          Performance
-        </button>
-        <button
-          class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-          @click.prevent="setStatus('productivity')"
-        >
-          Productivity
-        </button>
-        <button
-          class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-          @click.prevent="setStatus('protection')"
-        >
-          Protection
-        </button>
-        <button
-          class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-          @click.prevent="setStatus('people')"
-        >
-          People
-        </button>
-        <button
-          class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-          @click.prevent="setStatus('money')"
-        >
-          Money & Savings
-        </button>
-        <button
-          class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-          @click.prevent="setStatus('digital')"
-        >
-          Digital & UI
-        </button>
-        <button
-          class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-          @click.prevent="setStatus('infrastructure')"
-        >
-          Infrastructure
-        </button>
-      </form>
+		<nav class="animate-add z-100">
+			<div class="nav-overlay"></div>
+			<button type="button" class="slide-toggle">
+				<div class="menu-wrapper">
+					<div class="hamburger-menu"></div>
+				</div>
+			</button>
+			<div id="menu">
+			</div>
+		</nav>
+	</div>
 
-      <div class="container mx-auto">
-        <div>
-          Styles:
-          <button
-            @click="setStyle(1)"
-            class="mt-2 px-3 py-1 bg-gray-600 text-white rounded"
-          >
-            Style 1
-          </button>
-          <button
-            @click="setStyle(2)"
-            class="mt-2 px-3 py-1 bg-gray-600 text-white rounded"
-          >
-            Style 2
-          </button>
-          <button
-            @click="setStyle(3)"
-            class="mt-2 px-3 py-1 bg-gray-600 text-white rounded"
-          >
-            Style 3
-          </button>
-          <button
-            @click="setStyle(4)"
-            class="mt-2 px-3 py-1 bg-gray-600 text-white rounded"
-          >
-            Style 4
-          </button>
-          <button
-            @click="setStyle(5)"
-            class="mt-2 px-3 py-1 bg-gray-600 text-white rounded"
-          >
-            Style 5
-          </button>
-          <button
-            @click="setStyle(6)"
-            class="mt-2 px-3 py-1 bg-gray-600 text-white rounded"
-          >
-            Style 6
-          </button>
-        </div>
-        <div>
-          <p class="text-sm mt-5 mb-8">
-            <strong>Can't find an icon that fits?</strong> Reach out to team:
-            sample@sample.com
-          </p>
-        </div>
+	</div>
 
-        <!-- Icons Grid -->
-        <div class="wrapper flex flex-wrap text-center">
-          <div
-            class="icon-item bg-gray-100 rounded-lg m-2 p-1"
-            v-for="(item, index) in paginatedItems"
-            :key="item.url"
+    <div id="items" class="max-w-7xl  mx-auto wrapper flex flex-wrap text-center">
+      <!-- Style buttons -->
+      <div class="mb-5">
+        <span class="mr-2">Styles:</span>
+        <button @click="setStyle(1)" class="mt-2 px-3 py-1 bg-gray-600 text-white rounded">
+          Style 1
+        </button>
+        <button @click="setStyle(2)" class="mt-2 px-3 py-1 bg-gray-600 text-white rounded">
+          Style 2
+        </button>
+        <button @click="setStyle(3)" class="mt-2 px-3 py-1 bg-gray-600 text-white rounded">
+          Style 3
+        </button>
+        <button @click="setStyle(4)" class="mt-2 px-3 py-1 bg-gray-600 text-white rounded">
+          Style 4
+        </button>
+        <button @click="setStyle(5)" class="mt-2 px-3 py-1 bg-gray-600 text-white rounded">
+          Style 5
+        </button>
+        <button @click="setStyle(6)" class="mt-2 px-3 py-1 bg-gray-600 text-white rounded">
+          Style 6
+        </button>
+      </div>
+
+      <!-- Icons Grid -->
+      <div class="max-w-7xl  mx-auto wrapper flex flex-wrap text-center">
+        <div
+          class="icon-item bg-gray-100 rounded-lg m-2 p-1"
+          v-for="n in totalIcons"
+          :key="n"
+        >
+          <div class="icon-container" v-html="svgs[n-1]"></div>
+
+          <button
+            @click="downloadSvg(n-1)"
+            class="download-btn text-xs px-1 py-1 bg-blue-600 text-white rounded mt-2"
           >
-            <div class="icon-container" v-html="item.svg"></div>
-            <button
-              @click="downloadSvg(index)"
-              class="download-btn text-xs px-1 py-1 bg-blue-600 text-white rounded"
-            >
-              SVG ↓
-            </button>
-            <button
-              @click="downloadPng(index)"
-              class="mt-2 text-xs px-1 py-1 bg-blue-600 text-white rounded"
-            >
-              PNG ↓
-            </button>
-            <div class="text-black text-left px-3 mt-2">
-              <p class="text-lg font-semibold">{{ item.url }}</p>
-            </div>
+            SVG ↓
+          </button>
+          <button
+            @click="downloadPng(n-1)"
+            class="mt-2 text-xs px-1 py-1 bg-blue-600 text-white rounded"
+          >
+            PNG ↓
+          </button>
+
+          <div class="text-black text-left px-3 mt-2">
+            <p class="text-lg font-semibold">Icon {{ n }}</p>
           </div>
         </div>
       </div>
-
-      <!-- Pagination Controls -->
-      <div class="mt-5 text-center">
-        <button
-          v-for="page in paginate_total"
-          :key="page"
-          @click="updateCurrent(page)"
-          :class="['py-1 px-3 mx-1 rounded', { 'bg-blue-600 text-white': page === current, 'bg-gray-200': page !== current }]"
-        >
-          {{ page }}
-        </button>
-      </div>
+      
     </div>
 
-    <!-- Vue 2 CDN -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
     <script src="js/vue-icons.js"></script>
+
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+      <script src="../../js/filter-group.js"></script>
+      <script src="../../js/global.js"></script>
+      <script src="../../js/vue.min.js"></script>
+  
   </body>
 </html>
