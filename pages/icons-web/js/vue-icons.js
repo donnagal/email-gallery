@@ -2,79 +2,26 @@ new Vue({
   el: "#items",
   data: {
     current: 1,
-    paginate: 20,
+    paginate: 100,
     primaryColor: "#017D8C",
     secondaryColor: "#86C543",
     strokeWidth: 3,
     search_filter: "",
     status_filter: "",
-    items: [
-      {
-        group: "money, productivity, digital",
-        text: "calculator, hand, push button",
-        url: "1",
-        svg: ""
-      },
-      {
-        group: "performance, productivity",
-        text: "Your super will continue to work for you in retirement, managed benefit",
-        url: "2",
-        svg: ""
-      },
-      {
-        group: "money, productivity, digital",
-        text: "calculator, hand, push button",
-        url: "3",
-        svg: ""
-      },
-      {
-        group: "performance, productivity",
-        text: "Your super will continue to work for you in retirement, managed benefit",
-        url: "4",
-        svg: ""
-      },
-      {
-        group: "money, productivity, digital",
-        text: "calculator, hand, push button",
-        url: "5",
-        svg: ""
-      },
-      {
-        group: "performance, productivity",
-        text: "Your super will continue to work for you in retirement, managed benefit",
-        url: "6",
-        svg: ""
-      },
-     {
-        group: "performance, productivity",
-        text: "Your super will continue to work for you in retirement, managed benefit",
-        url: "7",
-        svg: ""
-      },
-      {
-        group: "performance, productivity",
-        text: "Your super will continue to work for you in retirement, managed benefit",
-        url: "8",
-        svg: ""
-      },
-    {
-        group: "performance, productivity",
-        text: "Your super will continue to work for you in retirement, managed benefit",
-        url: "9",
-        svg: ""
-      }
-    ]
+    items: [], // will be filled dynamically
   },
   computed: {
     filteredItems() {
       let filtered = this.items;
       if (this.search_filter.trim()) {
         const term = this.search_filter.trim().toLowerCase();
-        filtered = filtered.filter(i => i.url.toLowerCase().includes(term));
+        filtered = filtered.filter((i) => i.url.toLowerCase().includes(term));
       }
       if (this.status_filter.trim()) {
         const status = this.status_filter.trim().toLowerCase();
-        filtered = filtered.filter(i => i.group.toLowerCase().includes(status));
+        filtered = filtered.filter((i) =>
+          i.group?.toLowerCase().includes(status)
+        );
       }
       return filtered;
     },
@@ -85,17 +32,29 @@ new Vue({
     },
     paginate_total() {
       return Math.ceil(this.filteredItems.length / this.paginate) || 1;
-    }
+    },
   },
   mounted() {
+    // Generate number sequence automatically (e.g. 1–50 icons)
+    const totalIcons = 50; // change to however many SVGs you have
+    this.items = Array.from({ length: totalIcons }, (_, i) => ({
+      url: String(i + 1),
+    }));
+
+    // Fetch SVGs for each item
     this.items.forEach((item, index) => {
       fetch(`/pages/icons-web/svg/${item.url}.svg`)
-        .then(res => res.text())
-        .then(svg => {
+        .then((res) => res.text())
+        .then((svg) => {
           this.$set(this.items, index, { ...item, svg });
           this.$nextTick(() => this.applyColors(index));
         })
-        .catch(err => console.error(`Failed to load /pages/icons-web/svg/${item.url}.svg`, err));
+        .catch((err) =>
+          console.error(
+            `Failed to load /pages/icons-web/svg/${item.url}.svg`,
+            err
+          )
+        );
     });
   },
   methods: {
@@ -105,11 +64,11 @@ new Vue({
 
       const svg = iconEl.querySelector("svg");
       if (svg) {
-        svg.querySelectorAll(".stroke-primary").forEach(el => {
+        svg.querySelectorAll(".stroke-primary").forEach((el) => {
           el.setAttribute("stroke", this.primaryColor);
           el.setAttribute("stroke-width", this.strokeWidth);
         });
-        svg.querySelectorAll(".stroke-secondary").forEach(el => {
+        svg.querySelectorAll(".stroke-secondary").forEach((el) => {
           el.setAttribute("stroke", this.secondaryColor);
           el.setAttribute("stroke-width", this.strokeWidth);
         });
@@ -126,7 +85,7 @@ new Vue({
       switch (styleNumber) {
         case 1:
           this.primaryColor = "#017D8C"; // Pine
-          this.secondaryColor = "#86C543"; // Bright Breen
+          this.secondaryColor = "#86C543"; // Bright Green
           this.strokeWidth = 3;
           break;
         case 2:
@@ -174,11 +133,11 @@ new Vue({
       if (!svgEl) return alert("SVG not loaded yet");
 
       const svgClone = svgEl.cloneNode(true);
-      svgClone.querySelectorAll(".stroke-primary").forEach(el => {
+      svgClone.querySelectorAll(".stroke-primary").forEach((el) => {
         el.setAttribute("stroke", this.primaryColor);
         el.setAttribute("stroke-width", this.strokeWidth);
       });
-      svgClone.querySelectorAll(".stroke-secondary").forEach(el => {
+      svgClone.querySelectorAll(".stroke-secondary").forEach((el) => {
         el.setAttribute("stroke", this.secondaryColor);
         el.setAttribute("stroke-width", this.strokeWidth);
       });
@@ -203,18 +162,20 @@ new Vue({
       if (!svgEl) return alert("SVG not loaded yet");
 
       const svgClone = svgEl.cloneNode(true);
-      svgClone.querySelectorAll(".stroke-primary").forEach(el => {
+      svgClone.querySelectorAll(".stroke-primary").forEach((el) => {
         el.setAttribute("stroke", this.primaryColor);
         el.setAttribute("stroke-width", this.strokeWidth);
       });
-      svgClone.querySelectorAll(".stroke-secondary").forEach(el => {
+      svgClone.querySelectorAll(".stroke-secondary").forEach((el) => {
         el.setAttribute("stroke", this.secondaryColor);
         el.setAttribute("stroke-width", this.strokeWidth);
       });
 
       const serializer = new XMLSerializer();
       const svgString = serializer.serializeToString(svgClone);
-      const svgBlob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
+      const svgBlob = new Blob([svgString], {
+        type: "image/svg+xml;charset=utf-8",
+      });
       const url = URL.createObjectURL(svgBlob);
 
       const img = new Image();
@@ -234,6 +195,6 @@ new Vue({
         downloadLink.click();
       };
       img.src = url;
-    }
-  }
+    },
+  },
 });
