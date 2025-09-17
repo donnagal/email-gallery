@@ -1,134 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Email Gallery</title>
+    <link href="../../images/favion.png" rel="icon" type="image/x-icon" />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css"
+    />
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/v-dashbaord.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<head>
-	<meta charset="UTF-8">
-	<title>Email Gallery</title>
-	<link href="../../images/favion.png" rel="icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-	<link rel='stylesheet' href='https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css'>
-	<link rel="stylesheet" href="../../css/global.css">
-	<link rel="stylesheet" href="../../css/v-dashbaord.css">
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-		rel="stylesheet">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LF495ZKW9K"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+  </head>
 
-		gtag('config', 'G-LF495ZKW9K');
-	</script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js'></script>
-	<style>
-		* {
-			box-sizing: border-box;
-		}
-
-		.icon-item {
-			width: 100%;
-		}
-
-		@media (min-width:496px) {
-			.icon-item {
-				width: calc(50% - 16px);
-			}
-		}
-
-		@media (min-width:768px) {
-			.icon-item {
-				width: calc(33.333333% - 32px);
-			}
-		}
-
-		@media (min-width:1024px) {
-			.icon-item {
-				width: calc(25% - 64px);
-			}
-		}
-
-		@media (min-width:1200px) {
-			.icon-item {
-				width: calc(20% - 80px);
-			}
-		}
-
-		/*
-			Tooltip
-		*/
-
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-
-		.wrapper {
-			display: inline-flex;
-			list-style: none;
-		}
-
-		.wrapper .icon {
-			position: relative;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			cursor: pointer;
-			transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-		}
-
-		.wrapper .tooltip {
-			position: absolute;
-			top: 0;
-			font-size: 14px;
-			background: #ffffff;
-			color: #ffffff;
-			padding: 5px 8px;
-			border-radius: 5px;
-			box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-			opacity: 0;
-			pointer-events: none;
-			transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-		}
-
-		.wrapper .tooltip::before {
-			position: absolute;
-			content: "";
-			height: 8px;
-			width: 8px;
-			background: #ffffff;
-			bottom: -3px;
-			left: 50%;
-			transform: translate(-50%) rotate(45deg);
-			transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-		}
-
-		.wrapper .icon:hover .tooltip {
-			top: -12px;
-			opacity: 1;
-			visibility: visible;
-			pointer-events: auto;
-		}
-
-		.wrapper .img-hover:hover .tooltip,
-		.wrapper .img-hover:hover .tooltip::before {
-			background: #1877F2;
-			color: #ffffff;
-		}
-	</style>
-
-</head>
-
-<body>
-	<div id="nav">
+  <body>
+    	<div id="nav">
 		<header>
 			<div class="bg-black mx-auto text-white px-5 text-center">
 				<div class="flex py-2">
@@ -153,117 +54,101 @@
 
 	</div>
 
-	<div id="items">
+    <div id="items" class="max-w-7xl  mx-auto wrapper flex flex-wrap text-center">
+     
 
-		<form class="bg-gray-100 p-5 text-center">
-			<input id="search-text" placeholder="Quick search..."
-				class="w-1/3 border border-gray-200 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
-				type="search" name="search" v-model="search_filter" @keyup="updatePaginate" />
-			<button type="submit" class="relative" style="left: -37px;">
-				<svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
-					viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
-					width="512px" height="512px">
-					<path
-						d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
-				</svg>
-			</button>
+    <div class="mb-5 mt-10">
+            <!-- Brand Toggle -->
+            <div class="flex space-x-2 mb-4">
+              <button @click="activeBrand = 'cbus'"
+                      :class="['px-4 py-2 rounded-lg font-semibold transition', 
+                              activeBrand === 'cbus' ? 'bg-gray-800 text-white' : 'bg-gray-200 text-gray-800 hover:bg-gray-300']">
+                Cbus
+              </button>
+              <button @click="activeBrand = 'media'"
+                      :class="['px-4 py-2 rounded-lg font-semibold transition', 
+                              activeBrand === 'media' ? 'bg-gray-800 text-white' : 'bg-gray-200 text-gray-800 hover:bg-gray-300']">
+                Media Super
+              </button>
+            </div>
 
-			<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-				@click.prevent="setStatus('')">All</button>
-			<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-				@click.prevent="setStatus('performance')">Performance</button>
-			<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-				@click.prevent="setStatus('productivity')">Productivity</button>
-				<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-				@click.prevent="setStatus('protection')">Protection</button>
-				<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-				@click.prevent="setStatus('people')">People</button>
-				<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-				@click.prevent="setStatus('money')">Money & Savings</button>
-				<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-				@click.prevent="setStatus('digital')">Digital & UI</button>
-				<button class="py-2 px-3 border-gray-100 border-b-2 hover:text-black bg-active"
-				@click.prevent="setStatus('infrastructure')">Infrastructure </button>
-		</form>
+    <!-- Cbus Styles -->
+    <div v-if="activeBrand === 'cbus'" class="flex flex-wrap gap-3 mb-5">
+      <button @click="setStyle(1)" 
+              :class="['w-10 h-10 rounded-full border-2 transition', activeStyle === 1 ? 'border-yellow-400' : 'border-gray-400']"
+              :style="{ backgroundColor: '#515457' }" title="Default Grey"></button>
+      <button @click="setStyle(2)" 
+              :class="['w-10 h-10 rounded-full border-2 transition', activeStyle === 2 ? 'border-yellow-400' : 'border-gray-400']"
+              :style="{ backgroundColor: '#0F8045' }" title="Cbus Green"></button>
+      <button @click="setStyle(3)" 
+              :class="['w-10 h-10 rounded-full border-2 transition', activeStyle === 3 ? 'border-yellow-400' : 'border-gray-400']"
+              :style="{ backgroundColor: '#72004D' }" title="Cbus Purple"></button>
+      <button @click="setStyle(4)" 
+              :class="['w-10 h-10 rounded-full border-2 transition', activeStyle === 4 ? 'border-yellow-400' : 'border-gray-400']"
+              :style="{ backgroundColor: '#1A1A1A' }" title="Cbus Black"></button>
+      <button @click="setStyle(5)" 
+              :class="['w-10 h-10 rounded-full border-2 transition', activeStyle === 5 ? 'border-yellow-400' : 'border-gray-400']"
+              :style="{ backgroundColor: '#017D8C' }" title="Cbus Teal"></button>
+    </div>
 
-		<div class="container mx-auto pt-10">
-
-			<div class="wrapper flex flex-wrap text-center">
-
-				<div class="lg:w-1/6 md:1/3 m-2 bg-gray-100 rounded-lg"
-					v-for="item in items | filterBy search_filter in 'url' | filterBy status_filter in 'group'"
-					v-show="setPaginate($index)">
-					<a target="_blank" class="icon img-hover" title="open published path in new window"
-						:href="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url + '--grey.png'">
-						<img class="pt-3 mx-auto icon img-hover" :src="'https://www.cbussuper.com.au/content/dam/cbus/images/email/icon_library/'+ item.url + '--grey.png'" width="100" />
-						<span class="tooltip">Preview in brower</span>
-					</a>
-					<div class="text-sm text-black">
-						
-						<p class="text-left px-3 text-lg">{{ item.url }}</p>
-						<p class="text-left px-3 text-xs text-gray-500">{{item.text}}</p>
-					</div>
-
-					<div class="p-3 cursor-pointer text-left">
-						<p class="text-left text-xs text-gray-500">Download:</p>
-
-						<a target="_blank" :href="'images/'+ item.url + '--grey.png'" :download="item.url" title="Grey"
-						class="inline-block bg-gray-600 hover:opacity-25 rounded-lg h-6 w-6 text-gray-200">
-
-						</a>
-						<a target="_blank" :href="'images/'+ item.url + '--green.png'" :download="item.url" title="Cbus Green"
-						class="inline-block hover:opacity-25 rounded-lg h-6 w-6 text-gray-200" style="background-color: #0F8045;"></a>
-
-						<a target="_blank" :href="'images/'+ item.url + '--purple.png'" :download="item.url" title="Cbus Purple - SIS"
-						class="inline-block bg-gray-600 hover:opacity-25 rounded-lg h-6 w-6 text-gray-200" style="background-color: #72004D;">
-
-						</a>
-						<a target="_blank" :href="'images/'+ item.url + '--pine.png'" :download="item.url" title="Pine"
-						class="inline-block bg-gray-600 hover:opacity-25 rounded-lg h-6 w-6 text-gray-200" style="background-color: #017D8C;">
-
-						</a>
-						<a target="_blank" :href="'images/'+ item.url + '--purple-3.png'" :download="item.url" title="Media Purple Light"
-						class="inline-block bg-gray-600 hover:opacity-25 rounded-lg h-6 w-6 text-gray-200" style="background-color: #AA4187">
-
-						</a>
-						<a target="_blank" :href="'images/'+ item.url + '--purple-4.png'" :download="item.url" title="Media Purple"
-						class="inline-block bg-gray-600 hover:opacity-25 rounded-lg h-6 w-6 text-gray-200" style="background-color: #72004D;">
-
-						</a>
-						<a target="_blank" :href="'images/'+ item.url + '--blue-1.png'" :download="item.url" title="Media Light blue"
-						class="inline-block bg-gray-600 hover:opacity-25 rounded-lg h-6 w-6 text-gray-200" style="background-color: #88CCEE;">
-
-						</a>
-						<a target="_blank" :href="'images/'+ item.url + '--blue-2.png'" :download="item.url" title="Media Dark Blue"
-						class="inline-block bg-gray-600 hover:opacity-25 rounded-lg h-6 w-6 text-gray-200" style="background-color: #327DDC;">
-
-						</a>
-						<a target="_blank" :href="'images/'+ item.url + '--purple-leg.png'" :download="item.url" title="Media Purple legacy"
-						class="inline-block bg-gray-600 hover:opacity-25 rounded-lg h-6 w-6 text-gray-200" style="background-color: #643F91;">
-
-						</a>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
+    <!-- Media Super Styles -->
+    <div v-if="activeBrand === 'media'" class="flex flex-wrap gap-3 mb-5">
+      <button @click="setStyle(6)" 
+              :class="['w-10 h-10 rounded-full border-2 transition', activeStyle === 6 ? 'border-yellow-400' : 'border-gray-400']"
+              :style="{ backgroundColor: '#AA4187' }" title="Media Super Purple"></button>
+      <button @click="setStyle(7)" 
+              :class="['w-10 h-10 rounded-full border-2 transition', activeStyle === 7 ? 'border-yellow-400' : 'border-gray-400']"
+              :style="{ backgroundColor: '#64194B' }" title="Media Super Dark Pink"></button>
+      <button @click="setStyle(8)" 
+              :class="['w-10 h-10 rounded-full border-2 transition', activeStyle === 8 ? 'border-yellow-400' : 'border-gray-400']"
+              :style="{ backgroundColor: '#88CCEE' }" title="Media Super Blue"></button>
+      <button @click="setStyle(9)" 
+              :class="['w-10 h-10 rounded-full border-2 transition', activeStyle === 9 ? 'border-yellow-400' : 'border-gray-400']"
+              :style="{ backgroundColor: '#643F91' }" title="Media Super Purple Dark"></button>
+      <button @click="setStyle(10)" 
+              :class="['w-10 h-10 rounded-full border-2 transition', activeStyle === 10 ? 'border-yellow-400' : 'border-gray-400']"
+              :style="{ backgroundColor: '#000000' }" title="Media Super Black"></button>
+    </div>
 
 
 
-	</div>
+          <!-- Icons Grid -->
+          <div class="max-w-7xl  mx-auto wrapper flex flex-wrap text-center">
+            <div
+              class="icon-item bg-gray-100 rounded-lg m-2 p-1"
+              v-for="n in totalIcons"
+              :key="n"
+            >
+              <div class="icon-container" v-html="svgs[n-1]"></div>
 
+              <button
+                @click="downloadSvg(n-1)"
+                class="download-btn text-xs px-1 py-1 bg-blue-600 text-white rounded mt-2"
+              >
+                SVG ↓
+              </button>
+              <button
+                @click="downloadPng(n-1)"
+                class="mt-2 text-xs px-1 py-1 bg-blue-600 text-white rounded"
+              >
+                PNG ↓
+              </button>
 
-	<script src="../../pages/icons/js/vue-icons.js"></script>
+              <div class="text-black text-left px-3 mt-2">
+                <p class="text-lg font-semibold">Icon {{ n }}</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
 
-	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-	<script src="../../js/filter-group.js"></script>
-	<script src="../../js/global.js"></script>
-	<script src="../../js/vue.min.js"></script>
-	<!-- <script src="../../pages/reports/script_icons.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
+    <script src="js/vue-icons.js"></script>
 
-	
-</body>
-
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+      <script src="../../js/filter-group.js"></script>
+      <script src="../../js/global.js"></script>
+      <script src="../../js/vue.min.js"></script>
+  
+  </body>
 </html>
