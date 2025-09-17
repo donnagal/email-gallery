@@ -12,7 +12,7 @@ new Vue({
   mounted() {
     // Load all SVGs
     for (let i = 1; i <= this.totalIcons; i++) {
-      fetch(`/pages/icons-web/svg/${i}.svg`)
+      fetch(`/pages/icons/svg/${i}.svg`)
         .then((res) => res.text())
         .then((svg) => {
           this.$set(this.svgs, i - 1, svg);
