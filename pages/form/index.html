@@ -127,7 +127,7 @@
           function removeEmail(index) {
             if (index > 0) emails.value.splice(index, 1);
           }
-
+          // required fields
           function validateFields() {
             invalidFields.value = false;
 
@@ -156,7 +156,6 @@
               if (
                 designType.value === "inHouse" &&
                 (!email.heroHeading ||
-                  !email.subHeading ||
                   !email.buttonText ||
                   !email.heading2 ||
                   !email.emailContent)
@@ -259,7 +258,7 @@
             designType,
             showDownloadMessage,
             invalidFields,
-            reviewEstimate, // 🔹 Exposed to template
+            reviewEstimate,
           };
         },
 
@@ -569,15 +568,17 @@
                   </div>
 
 
-                <div>
-                  <label class="block text-sm font-medium mb-1">Automated</label>
-                  <select v-model="email.automated" 
-                          class="border p-2 w-full" 
-                          :class="{'border-red-600': invalidFields && !email.automated}" required>
-                    <option>No, this is a direct blast 🚀</option>
-                    <option>Yes</option>
-                  </select>
-                </div>
+                        <div>
+                          <label class="block text-sm font-medium mb-1">Automated</label>
+                          <select v-model="email.automated" 
+                                  class="border p-2 w-full">
+                            <option value="No, this is a direct blast 🚀" selected>
+                              No, this is a direct blast 🚀
+                            </option>
+                            <option value="Yes">Yes</option>
+                          </select>
+                        </div>
+
 
                 <div v-if="email.fromAddress === 'Campaign (marketing, survey & promo)' && email.automated === 'No, this is a direct blast 🚀'">
                   <label class="block text-sm font-medium mb-1 pt-5">
