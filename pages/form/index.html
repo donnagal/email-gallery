@@ -362,7 +362,7 @@
       <div class="mx-auto mt-5 flex flex-col lg:flex-row gap-6 px-5" v-for="(email, i) in emails" :key="i" class="mb-6 border-t pt-4 pb-10 relative">
         
         <!-- Left Column: -->
-        <div class="lg:flex-[0_0_60%] w-full">
+        <div class="lg:flex-[0_0_50%] w-full">
               <!-- Emails Section -->
           <section v-if="designType">
             
@@ -489,7 +489,7 @@
                       <option disabled value="">Select Hero Option</option>
                       <option>Standard Hero Image (Attach image on JIRA)</option>
                       <option>Standard Hero Icon Infographic</option>
-                      <option>Hero Header 2 – BG Layer (Attach image on JIRA)</option>
+                      <option>Hero Header 2 – BG Layer (Attach x2 images on JIRA)</option>
                     </select>
                   </div>
                   <div>
@@ -623,7 +623,7 @@
 
      </div>
         <!-- Right Column: -->
-        <div class="lg:flex-[0_0_40%] w-full pt-60">
+        <div class="lg:flex-[0_0_50%] w-full pt-60">
 
           <p class="text-xl pb-3">Email Example</p>
 
@@ -636,7 +636,24 @@
              </p>
             </div>
 
-            <img src="img/email-wireframe.jpg" width="600" alt="Email Wireframe" class="rounded shadow" style="">
+                <!-- 1. Show if includeMemberNumber = Yes -->
+                <img v-if="email.includeMemberNumber === 'Yes'" src="img/email-wireframe_01.gif" width="600" alt="Member ID" loading="lazy" />
+
+                <!-- 2. Hero header option -->
+                <img v-if="email.heroImage === 'Hero Header 2 – BG Layer (Attach x2 images on JIRA)'" src="img/email-wireframe-alt_02.gif" width="600" alt="Email Body" loading="lazy" />
+                <img v-else src="img/email-wireframe_02.gif" width="600" alt="Email Body" loading="lazy" />
+
+
+                <!-- 3. Show Awards based on from address  -->
+                <img v-if="email.fromAddress === 'Campaign (marketing, survey & promo)' && email.automated === 'No, this is a direct blast 🚀'" src="img/email-wireframe_03.gif" width="600" alt="Awards" loading="lazy" />
+
+                <!-- 4. Show disclaimer based on brand -->
+                <img v-if="email.brand !== 'Media'" src="img/email-wireframe_04.gif" width="600" alt="Cbus disclaimer" loading="lazy" />
+                <img v-else src="img/email-wireframe-ms_04.gif" width="600" alt="Media disclaimer" loading="lazy" />
+
+                <!-- 5. Show Unsub + Socails if fromAddress is not 'Comms' -->
+                <img v-if="email.fromAddress !== 'Communication (mandatory - recipients must receive)'" src="img/email-wireframe_05.gif" width="600" alt="Unsub + Socials" loading="lazy" /
+
           </div>
 
       </div>
