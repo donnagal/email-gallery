@@ -119,7 +119,10 @@
                       Unique Opens {{ sortIndicator('unique-opens') }}
                     </th>
                     <th @click="sortBy('unique-clicks')" class="cursor-pointer">
-                      Unique Clicks {{ sortIndicator('unique-clicks') }}
+                      Unique Clicks (CR) {{ sortIndicator('unique-clicks') }}
+                    </th>
+                    <th @click="sortBy('ctor-pc')" class="cursor-pointer">
+                      CTOR {{ sortIndicator('ctor-pc') }}
                     </th>
                     <th @click="sortBy('unsub')" class="cursor-pointer">
                       Unsub {{ sortIndicator('unsub') }}
@@ -161,7 +164,7 @@
                     <td>{{ item.type }}</td>
                     <td>{{ formatNumber(item['unique-sends']) }}</td>
 
-                    <!-- Opens, Clicks, Unsubs with % -->
+                    <!-- Opens -->
                     <td>
                       <p class="text-lg">
                         {{ formatNumber(item['unique-opens']) }}
@@ -170,6 +173,8 @@
                         {{ formatPercentage(item['unique-opens-pc']) }}
                       </p>
                     </td>
+
+                    <!-- Clicks -->
                     <td>
                       <p class="text-lg">
                         {{ formatNumber(item['unique-clicks']) }}
@@ -178,6 +183,15 @@
                         {{ formatPercentage(item['unique-clicks-pc']) }}
                       </p>
                     </td>
+
+                    <!-- CTOR -->
+                    <td>
+                      <p class="text-lg">
+                        {{ formatPercentage(item['ctor-pc']) }}
+                      </p>
+                    </td>
+
+                    <!-- Unsub -->
                     <td>
                       <p class="text-lg">{{ formatNumber(item['unsub']) }}</p>
                       <p class="text-gray-500">
@@ -199,6 +213,7 @@
                     <td>{{ formatNumber(totals.uniqueSends) }}</td>
                     <td>{{ formatPercentage(totals.openAvg) }}</td>
                     <td>{{ formatPercentage(totals.clickAvg) }}</td>
+                    <td>{{ formatPercentage(totals.ctorAvg) }}</td>
                     <td>{{ formatPercentage(totals.unsubAvg) }}</td>
                     <td>{{ formatNumber(totals.readOver8s) }}</td>
                     <td>{{ formatNumber(totals.readUnder8s) }}</td>

@@ -6,6 +6,7 @@ new Vue({
       totals: {
         openAvg: 0,
         clickAvg: 0,
+        ctorAvg: 0,
         delivered: 0,
         unsubAvg: 0,
         uniqueSends: 0,
@@ -20,6 +21,7 @@ new Vue({
         delivered: "neutral",
         open: "neutral",
         click: "neutral",
+        ctor: "neutral",
         unsub: "neutral",
       },
       sortKey: "day",
@@ -55,6 +57,7 @@ new Vue({
         const numericKeys = [
           "unique-opens-pc",
           "unique-clicks-pc",
+          "ctor-pc",
           "delivered",
           "unsub",
           "unsub-pc",
@@ -104,12 +107,15 @@ new Vue({
           rawDate: rawDate,
           brand: row["brand"] || "",
           type: row["Campaign Type"] || row["type"] || "",
+
           "unique-opens-pc": Number(
             row["Unique Opens %"] || row["unique-opens-pc"] || 0
           ),
           "unique-clicks-pc": Number(
             row["Unique Clicks %"] || row["unique-clicks-pc"] || 0
           ),
+          "ctor-pc": Number(row["CTOR %"] || row["ctor-pc"] || 0),
+
           delivered:
             Number(
               String(row["deliveried"] || row["Delivered"] || 0).replace(
@@ -141,13 +147,11 @@ new Vue({
     parseDate(dateValue) {
       if (!dateValue) return null;
 
-      // Excel serial number
       if (typeof dateValue === "number") {
         const d = XLSX.SSF.parse_date_code(dateValue);
         if (d) return new Date(d.y, d.m - 1, d.d);
       }
 
-      // Try parsing string (e.g. "1-Jul-25")
       const d = new Date(dateValue);
       if (!isNaN(d)) return d;
 
@@ -178,6 +182,7 @@ new Vue({
         delivered: 0,
         openAvg: 0,
         clickAvg: 0,
+        ctorAvg: 0, // ✅ add CTOR avg
         unsubAvg: 0,
         uniqueSends: 0,
         uniqueOpens: 0,
@@ -192,6 +197,7 @@ new Vue({
         totals.delivered += item.delivered;
         totals.openAvg += item["unique-opens-pc"];
         totals.clickAvg += item["unique-clicks-pc"];
+        totals.ctorAvg += item["ctor-pc"];
         totals.unsubAvg += item["unsub-pc"];
         totals.uniqueSends += item["unique-sends"];
         totals.uniqueOpens += item["unique-opens"];
@@ -202,9 +208,11 @@ new Vue({
         totals.reliableOpens += item["reliable-opens"];
       });
 
-      totals.openAvg /= this.lists.length;
-      totals.clickAvg /= this.lists.length;
-      totals.unsubAvg /= this.lists.length;
+      const count = this.lists.length;
+      totals.openAvg /= count;
+      totals.clickAvg /= count;
+      totals.ctorAvg /= count;
+      totals.unsubAvg /= count;
 
       this.totals = totals;
     },
