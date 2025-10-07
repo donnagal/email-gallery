@@ -3,6 +3,27 @@ new Vue({
   data() {
     return {
       lists: [],
+      sendTypeFilter: "All",
+      sendTypeOptions: ["All"],
+      selectedFilters: [],
+      monthFilter: "All Months",
+      monthOptions: [
+        "All Months",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+      ],
+      typeOptions: [], // <-- Unique type values will populate here
+      selectedTypeFilters: [], // <-- Track selected type filters
       totals: {
         openAvg: 0,
         clickAvg: 0,
@@ -16,13 +37,7 @@ new Vue({
         readUnder8s: 0,
         readUnder2s: 0,
         reliableOpens: 0,
-      },
-      trend: {
-        delivered: "neutral",
-        open: "neutral",
-        click: "neutral",
-        ctor: "neutral",
-        unsub: "neutral",
+        engagementAvg: 0,
       },
       sortKey: "day",
       sortOrder: "asc",
@@ -32,6 +47,49 @@ new Vue({
   computed: {
     filteredAndSorted() {
       let filtered = this.lists;
+
+      // Multi-toggle / Send Type filter
+      if (this.selectedFilters.length > 0) {
+        filtered = filtered.filter((item) =>
+          this.selectedFilters.includes(item.sendType)
+        );
+      } else if (this.sendTypeFilter !== "All") {
+        filtered = filtered.filter(
+          (item) => item.sendType === this.sendTypeFilter
+        );
+      }
+
+      // Type filter buttons
+      if (this.selectedTypeFilters.length > 0) {
+        filtered = filtered.filter((item) =>
+          this.selectedTypeFilters.includes(item.type)
+        );
+      }
+
+      // Month filter (AU FY order, include "All Months")
+      if (this.monthFilter && this.monthFilter !== "All Months") {
+        const monthMap = {
+          Jul: 6,
+          Aug: 7,
+          Sep: 8,
+          Oct: 9,
+          Nov: 10,
+          Dec: 11,
+          Jan: 0,
+          Feb: 1,
+          Mar: 2,
+          Apr: 3,
+          May: 4,
+          Jun: 5,
+        };
+        const selectedMonth = monthMap[this.monthFilter];
+        filtered = filtered.filter((item) => {
+          const d = item.rawDate;
+          return (
+            d instanceof Date && !isNaN(d) && d.getMonth() === selectedMonth
+          );
+        });
+      }
 
       // 🔎 Search filter
       if (this.searchTerm.trim() !== "") {
@@ -48,10 +106,18 @@ new Vue({
         let valA = a[this.sortKey];
         let valB = b[this.sortKey];
 
-        // Use rawDate for sorting
         if (this.sortKey === "day") {
           valA = a.rawDate;
           valB = b.rawDate;
+        }
+
+        // Sort Unique Opens and Unique Clicks by percentage instead of raw numbers
+        if (this.sortKey === "unique-opens") {
+          valA = a["unique-opens-pc"];
+          valB = b["unique-opens-pc"];
+        } else if (this.sortKey === "unique-clicks") {
+          valA = a["unique-clicks-pc"];
+          valB = b["unique-clicks-pc"];
         }
 
         const numericKeys = [
@@ -68,6 +134,7 @@ new Vue({
           "read-under-8s",
           "read-under-2s",
           "reliable-opens",
+          "engagementScore",
         ];
 
         if (numericKeys.includes(this.sortKey)) {
@@ -81,6 +148,7 @@ new Vue({
       });
     },
   },
+
   methods: {
     async fetchExcel() {
       try {
@@ -96,49 +164,64 @@ new Vue({
       const workbook = XLSX.read(data, { type: "array" });
       const sheetName = workbook.SheetNames[0];
       const worksheet = workbook.Sheets[sheetName];
-      let jsonData = XLSX.utils.sheet_to_json(worksheet);
+      const jsonData = XLSX.utils.sheet_to_json(worksheet);
 
       this.lists = jsonData.map((row) => {
-        const rawDate = this.parseDate(row["Send Date"] || row["date"]);
+        const rawDate = this.parseDate(row["date"] || row["Send Date"]);
+        const uniqueSends = Number(
+          (row["unique-sends"] || 0).toString().replace(/,/g, "").trim()
+        );
+        const uniqueOpens = Number(
+          (row["unique-opens"] || 0).toString().replace(/,/g, "").trim()
+        );
+        const uniqueClicks = Number(
+          (row["unique-clicks"] || 0).toString().replace(/,/g, "").trim()
+        );
+        const unsub = Number(
+          (row["unsub"] || 0).toString().replace(/,/g, "").trim()
+        );
+
+        const engagementScore = this.calculateEngagement({
+          uniqueSends,
+          uniqueOpens,
+          uniqueClicks,
+          unsub,
+        });
+        const trafficLight = this.getTrafficLight(engagementScore);
+        const type = (row["type"] || "").trim();
+        const sendType = (row["send-type"] || "").trim();
+
+        // Add type to typeOptions dynamically
+        if (type && !this.typeOptions.includes(type)) {
+          this.typeOptions.push(type);
+        }
+
+        if (sendType && !this.sendTypeOptions.includes(sendType)) {
+          this.sendTypeOptions.push(sendType);
+        }
 
         return {
-          label: row["Campaign Name"] || row["name"] || "",
-          day: this.formatDate(row["Send Date"] || row["date"]),
-          rawDate: rawDate,
+          label: row["name"] || row["Campaign Name"] || "",
+          day: this.formatDate(row["date"] || row["Send Date"]),
+          rawDate,
           brand: row["brand"] || "",
-          type: row["Campaign Type"] || row["type"] || "",
-
-          "unique-opens-pc": Number(
-            row["Unique Opens %"] || row["unique-opens-pc"] || 0
-          ),
-          "unique-clicks-pc": Number(
-            row["Unique Clicks %"] || row["unique-clicks-pc"] || 0
-          ),
-          "ctor-pc": Number(row["CTOR %"] || row["ctor-pc"] || 0),
-
-          delivered:
-            Number(
-              String(row["deliveried"] || row["Delivered"] || 0).replace(
-                /,/g,
-                ""
-              )
-            ) || 0,
-          unsub: Number(String(row["unsub"] || 0).replace(/,/g, "")) || 0,
+          type,
+          sendType,
+          "unique-sends": uniqueSends,
+          "unique-opens": uniqueOpens,
+          "unique-clicks": uniqueClicks,
+          unsub,
+          "unique-opens-pc": Number(row["unique-opens-pc"] || 0),
+          "unique-clicks-pc": Number(row["unique-clicks-pc"] || 0),
+          "ctor-pc": Number(row["ctor-pc"] || 0),
           "unsub-pc": Number(row["unsub-pc"] || 0),
-          "unique-sends": Number(
-            String(row["unique-sends"] || 0).replace(/,/g, "")
-          ),
-          "unique-opens": Number(
-            String(row["unique-opens"] || 0).replace(/,/g, "")
-          ),
-          "unique-clicks": Number(
-            String(row["unique-clicks"] || 0).replace(/,/g, "")
-          ),
           "read-over-8s": Number(row["read-over-8s"] || 0),
           "read-under-8s": Number(row["read-under-8s"] || 0),
           "read-under-2s": Number(row["read-under-2s"] || 0),
           "reliable-opens": Number(row["reliable-opens"] || 0),
           "img-id": row["img-id"] || "",
+          engagementScore,
+          trafficLight,
         };
       });
 
@@ -146,16 +229,12 @@ new Vue({
     },
     parseDate(dateValue) {
       if (!dateValue) return null;
-
       if (typeof dateValue === "number") {
         const d = XLSX.SSF.parse_date_code(dateValue);
         if (d) return new Date(d.y, d.m - 1, d.d);
       }
-
       const d = new Date(dateValue);
-      if (!isNaN(d)) return d;
-
-      return null;
+      return isNaN(d) ? null : d;
     },
     formatDate(dateValue) {
       const d = this.parseDate(dateValue);
@@ -172,6 +251,18 @@ new Vue({
     formatPercentage(value) {
       return value != null ? Number(value).toFixed(2) + "%" : "0.00%";
     },
+    calculateEngagement({ uniqueSends, uniqueOpens, uniqueClicks, unsub }) {
+      if (!uniqueSends || isNaN(uniqueSends)) return 0;
+      const openScore = Math.min(uniqueOpens / uniqueSends, 1) * 100;
+      const clickScore = (uniqueClicks / uniqueSends) * 100;
+      const unsubPenalty = (unsub / uniqueSends) * 100 * 2;
+      return Math.max(openScore + clickScore - unsubPenalty, 0);
+    },
+    getTrafficLight(score) {
+      if (score >= 50) return "bg-green-500";
+      if (score >= 20) return "bg-yellow-500";
+      return "bg-red-500";
+    },
     calculateTotals() {
       if (!this.lists.length) {
         Object.keys(this.totals).forEach((k) => (this.totals[k] = 0));
@@ -182,7 +273,7 @@ new Vue({
         delivered: 0,
         openAvg: 0,
         clickAvg: 0,
-        ctorAvg: 0, // ✅ add CTOR avg
+        ctorAvg: 0,
         unsubAvg: 0,
         uniqueSends: 0,
         uniqueOpens: 0,
@@ -191,21 +282,23 @@ new Vue({
         readUnder8s: 0,
         readUnder2s: 0,
         reliableOpens: 0,
+        engagementAvg: 0,
       };
 
       this.lists.forEach((item) => {
-        totals.delivered += item.delivered;
-        totals.openAvg += item["unique-opens-pc"];
-        totals.clickAvg += item["unique-clicks-pc"];
-        totals.ctorAvg += item["ctor-pc"];
-        totals.unsubAvg += item["unsub-pc"];
-        totals.uniqueSends += item["unique-sends"];
-        totals.uniqueOpens += item["unique-opens"];
-        totals.uniqueClicks += item["unique-clicks"];
-        totals.readOver8s += item["read-over-8s"];
-        totals.readUnder8s += item["read-under-8s"];
-        totals.readUnder2s += item["read-under-2s"];
-        totals.reliableOpens += item["reliable-opens"];
+        totals.delivered += item.delivered || 0;
+        totals.openAvg += item["unique-opens-pc"] || 0;
+        totals.clickAvg += item["unique-clicks-pc"] || 0;
+        totals.ctorAvg += item["ctor-pc"] || 0;
+        totals.unsubAvg += item["unsub-pc"] || 0;
+        totals.uniqueSends += item["unique-sends"] || 0;
+        totals.uniqueOpens += item["unique-opens"] || 0;
+        totals.uniqueClicks += item["unique-clicks"] || 0;
+        totals.readOver8s += item["read-over-8s"] || 0;
+        totals.readUnder8s += item["read-under-8s"] || 0;
+        totals.readUnder2s += item["read-under-2s"] || 0;
+        totals.reliableOpens += item["reliable-opens"] || 0;
+        totals.engagementAvg += item.engagementScore || 0;
       });
 
       const count = this.lists.length;
@@ -213,6 +306,7 @@ new Vue({
       totals.clickAvg /= count;
       totals.ctorAvg /= count;
       totals.unsubAvg /= count;
+      totals.engagementAvg /= count;
 
       this.totals = totals;
     },
@@ -227,6 +321,22 @@ new Vue({
     sortIndicator(key) {
       if (this.sortKey !== key) return "";
       return this.sortOrder === "asc" ? "▲" : "▼";
+    },
+    toggleFilter(option) {
+      const index = this.selectedFilters.indexOf(option);
+      if (index > -1) {
+        this.selectedFilters.splice(index, 1);
+      } else {
+        this.selectedFilters.push(option);
+      }
+    },
+    toggleTypeFilter(type) {
+      const index = this.selectedTypeFilters.indexOf(type);
+      if (index > -1) {
+        this.selectedTypeFilters.splice(index, 1);
+      } else {
+        this.selectedTypeFilters.push(type);
+      }
     },
   },
   mounted() {

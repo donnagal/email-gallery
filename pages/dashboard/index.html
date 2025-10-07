@@ -53,14 +53,6 @@
         <div class="flex-1 flex flex-col">
           <main class="flex-1">
             <div class="px-lg-md md:container mx-auto py-8">
-              <!-- Search input -->
-              <input
-                class="w-full border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
-                type="search"
-                placeholder="Search Campaign Name..."
-                v-model="searchTerm"
-              />
-
               <div class="flex justify-between m-3 gap-4">
                 <a
                   href="../dashboard/last-fy/index.html"
@@ -92,80 +84,215 @@
                 </a>
               </div>
 
-              <!-- Table -->
+              <!-- ### START: Filter ### -->
+              <div class="flex flex-wrap items-center gap-4 my-8">
+                <!-- Month Filter -->
+                <div class="flex items-center mr-4">
+                  <select v-model="monthFilter" id="month" class="rounded">
+                    <!-- Only one "All Months" option -->
+                    <option
+                      v-for="month in monthOptions"
+                      :key="month"
+                      :value="month"
+                    >
+                      {{ month }}
+                    </option>
+                  </select>
+                </div>
+
+                <!-- Type Filter Buttons -->
+                <div class="flex items-center mr-8 bg-gray-100 rounded-lg p-1">
+                  <!-- "All Types" button -->
+                  <button
+                    @click="selectedTypeFilters = []"
+                    :class="[
+        'bg-gray-300 px-3 m-1 py-1 rounded transition',
+        selectedTypeFilters.length === 0
+          ? 'bg-blue-500 text-white'
+          : 'bg-gray-200 text-gray-700 hover:bg-gray-400'
+      ]"
+                  >
+                    All Types
+                  </button>
+
+                  <!-- Dynamic type buttons -->
+                  <button
+                    v-for="type in typeOptions"
+                    :key="type"
+                    @click="toggleTypeFilter(type)"
+                    :class="[
+        'bg-gray-300 px-3 m-1 py-1 rounded transition',
+        selectedTypeFilters.includes(type)
+          ? 'bg-blue-500 text-white'
+          : 'bg-gray-200 text-gray-700 hover:bg-gray-400'
+      ]"
+                  >
+                    {{ type }}
+                  </button>
+                </div>
+
+                <!-- Send Type Tabs -->
+                <div class="flex items-center gap-2 bg-gray-100 rounded-lg p-1">
+                  <button
+                    v-for="type in sendTypeOptions"
+                    :key="type"
+                    @click="sendTypeFilter = type"
+                    :class="[
+        'bg-gray-300 px-3 m-1 py-1 rounded transition',
+        sendTypeFilter === type
+          ? 'bg-blue-500 text-white'
+          : 'bg-gray-200 text-gray-700 hover:bg-gray-400'
+      ]"
+                  >
+                    {{ type }}
+                  </button>
+                </div>
+              </div>
+              <!-- ### END: Filter ### -->
+
+              <!-- Search input -->
+              <input
+                class="w-full border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+                type="search"
+                placeholder="Search Campaign Name..."
+                v-model="searchTerm"
+              />
+
+              <!-- 📊 Table -->
               <table
-                class="t-styles w-full mt-5 bg-white text-sm"
+                class="t-styles w-full mt-1 bg-white text-sm"
                 v-if="filteredAndSorted.length"
               >
                 <thead>
                   <tr>
-                    <th>Preview</th>
-                    <th @click="sortBy('label')" class="cursor-pointer">
+                    <th style="width: 5%">Preview</th>
+                    <th
+                      @click="sortBy('label')"
+                      class="cursor-pointer"
+                      style="width: 30%"
+                    >
                       Campaign Name {{ sortIndicator('label') }}
                     </th>
-                    <th @click="sortBy('day')" class="cursor-pointer">
+                    <th
+                      @click="sortBy('day')"
+                      class="cursor-pointer"
+                      style="width: 7%"
+                    >
                       Send Date {{ sortIndicator('day') }}
                     </th>
-                    <th @click="sortBy('brand')" class="cursor-pointer">
+                    <th
+                      @click="sortBy('brand')"
+                      class="cursor-pointer"
+                      style="width: 7%"
+                    >
                       Brand {{ sortIndicator('brand') }}
                     </th>
-                    <th @click="sortBy('type')" class="cursor-pointer">
+                    <th
+                      @click="sortBy('type')"
+                      class="cursor-pointer"
+                      style="width: 7%"
+                    >
                       Type {{ sortIndicator('type') }}
                     </th>
-                    <th @click="sortBy('unique-sends')" class="cursor-pointer">
+                    <th
+                      @click="sortBy('sendType')"
+                      class="cursor-pointer"
+                      style="width: 7%"
+                    >
+                      Send Type {{ sortIndicator('sendType') }}
+                    </th>
+                    <th
+                      @click="sortBy('unique-sends')"
+                      class="cursor-pointer"
+                      style="width: 7%"
+                    >
                       Unique Sends {{ sortIndicator('unique-sends') }}
                     </th>
-                    <th @click="sortBy('unique-opens')" class="cursor-pointer">
+                    <th
+                      @click="sortBy('unique-opens')"
+                      class="cursor-pointer"
+                      style="width: 7%"
+                    >
                       Unique Opens {{ sortIndicator('unique-opens') }}
                     </th>
-                    <th @click="sortBy('unique-clicks')" class="cursor-pointer">
+                    <th
+                      @click="sortBy('unique-clicks')"
+                      class="cursor-pointer"
+                      style="width: 7%"
+                    >
                       Unique Clicks (CR) {{ sortIndicator('unique-clicks') }}
                     </th>
-                    <th @click="sortBy('ctor-pc')" class="cursor-pointer">
+                    <th
+                      @click="sortBy('ctor-pc')"
+                      class="cursor-pointer"
+                      style="width: 5%"
+                    >
                       CTOR {{ sortIndicator('ctor-pc') }}
                     </th>
-                    <th @click="sortBy('unsub')" class="cursor-pointer">
+                    <th
+                      @click="sortBy('unsub')"
+                      class="cursor-pointer"
+                      style="width: 5%"
+                    >
                       Unsub {{ sortIndicator('unsub') }}
                     </th>
-                    <th @click="sortBy('read-over-8s')" class="cursor-pointer">
-                      Read &gt;8s {{ sortIndicator('read-over-8s') }}
+                    <th
+                      @click="sortBy('engagementScore')"
+                      class="cursor-pointer"
+                      style="width: 5%"
+                    >
+                      Engagement Score {{ sortIndicator('engagementScore') }}
                     </th>
-                    <th @click="sortBy('read-under-8s')" class="cursor-pointer">
-                      Read &lt;8s {{ sortIndicator('read-under-8s') }}
+                    <th
+                      @click="sortBy('read-over-8s')"
+                      class="cursor-pointer"
+                      style="width: 5%"
+                    >
+                      Read 8s+ {{ sortIndicator('read-over-8s') }}
                     </th>
-                    <th @click="sortBy('read-under-2s')" class="cursor-pointer">
-                      Read &lt;2s {{ sortIndicator('read-under-2s') }}
+                    <th
+                      @click="sortBy('read-under-8s')"
+                      class="cursor-pointer"
+                      style="width: 5%"
+                    >
+                      Read -8s {{ sortIndicator('read-under-8s') }}
+                    </th>
+                    <th
+                      @click="sortBy('read-under-2s')"
+                      class="cursor-pointer"
+                      style="width: 5%"
+                    >
+                      Read -2s {{ sortIndicator('read-under-2s') }}
                     </th>
                   </tr>
                 </thead>
+
                 <tbody>
                   <tr v-for="(item, index) in filteredAndSorted" :key="index">
-                    <!-- Preview -->
-                    <td>
+                    <td style="width: 5%">
                       <a
                         :href="'../../pages/gallery/#' + item['img-id']"
                         target="_blank"
                         class="block rounded shadow bg-cover"
                         :style="{
-                          backgroundImage: 'url(../../pages/gallery/images/' + item['img-id'] + '.jpg)',
-                          height: '86px',
-                          width: '86px',
-                          backgroundPosition: 'top'
-                        }"
+            backgroundImage: 'url(../../pages/gallery/images/' + item['img-id'] + '.jpg)',
+            height: '86px',
+            width: '86px',
+            backgroundPosition: 'top'
+          }"
                       >
                         <span class="sr-only">Preview of {{ item.label }}</span>
                       </a>
                     </td>
-
-                    <!-- Text columns -->
-                    <td>{{ item.label }}</td>
-                    <td>{{ item.day }}</td>
-                    <td>{{ item.brand }}</td>
-                    <td>{{ item.type }}</td>
-                    <td>{{ formatNumber(item['unique-sends']) }}</td>
-
-                    <!-- Opens -->
-                    <td>
+                    <td style="width: 30%">{{ item.label }}</td>
+                    <td style="width: 7%">{{ item.day }}</td>
+                    <td style="width: 7%">{{ item.brand }}</td>
+                    <td style="width: 7%">{{ item.type }}</td>
+                    <td style="width: 7%">{{ item.sendType }}</td>
+                    <td style="width: 7%">
+                      {{ formatNumber(item['unique-sends']) }}
+                    </td>
+                    <td style="width: 7%">
                       <p class="text-lg">
                         {{ formatNumber(item['unique-opens']) }}
                       </p>
@@ -173,9 +300,7 @@
                         {{ formatPercentage(item['unique-opens-pc']) }}
                       </p>
                     </td>
-
-                    <!-- Clicks -->
-                    <td>
+                    <td style="width: 7%">
                       <p class="text-lg">
                         {{ formatNumber(item['unique-clicks']) }}
                       </p>
@@ -183,41 +308,71 @@
                         {{ formatPercentage(item['unique-clicks-pc']) }}
                       </p>
                     </td>
-
-                    <!-- CTOR -->
-                    <td>
-                      <p class="text-lg">
-                        {{ formatPercentage(item['ctor-pc']) }}
-                      </p>
+                    <td style="width: 5%">
+                      {{ formatPercentage(item['ctor-pc']) }}
                     </td>
-
-                    <!-- Unsub -->
-                    <td>
+                    <td style="width: 5%">
                       <p class="text-lg">{{ formatNumber(item['unsub']) }}</p>
                       <p class="text-gray-500">
                         {{ formatPercentage(item['unsub-pc']) }}
                       </p>
                     </td>
-
-                    <!-- Remaining columns -->
-                    <td class="">{{ formatNumber(item['read-over-8s']) }}%</td>
-                    <td class="">{{ formatNumber(item['read-under-8s']) }}%</td>
-                    <td class="">{{ formatNumber(item['read-under-2s']) }}%</td>
+                    <td style="width: 5%">
+                      <span
+                        :class="getTrafficLight(item.engagementScore) + ' px-2 py-1 rounded text-white font-semibold'"
+                      >
+                        {{ item.engagementScore.toFixed(1) }}%
+                      </span>
+                    </td>
+                    <td style="width: 5%">
+                      {{ formatNumber(item['read-over-8s']) }}
+                    </td>
+                    <td style="width: 5%">
+                      {{ formatNumber(item['read-under-8s']) }}
+                    </td>
+                    <td style="width: 5%">
+                      {{ formatNumber(item['read-under-2s']) }}
+                    </td>
                   </tr>
                 </tbody>
+
                 <tfoot>
                   <tr>
-                    <td colspan="5" class="text-right font-semibold">
+                    <td
+                      colspan="6"
+                      class="text-right font-semibold"
+                      style="width: 73%"
+                    >
                       Totals / Averages:
                     </td>
-                    <td>{{ formatNumber(totals.uniqueSends) }}</td>
-                    <td>{{ formatPercentage(totals.openAvg) }}</td>
-                    <td>{{ formatPercentage(totals.clickAvg) }}</td>
-                    <td>{{ formatPercentage(totals.ctorAvg) }}</td>
-                    <td>{{ formatPercentage(totals.unsubAvg) }}</td>
-                    <td>{{ formatNumber(totals.readOver8s) }}</td>
-                    <td>{{ formatNumber(totals.readUnder8s) }}</td>
-                    <td>{{ formatNumber(totals.readUnder2s) }}</td>
+                    <td style="width: 7%">
+                      {{ formatNumber(totals.uniqueSends) }}
+                    </td>
+                    <td style="width: 7%">
+                      {{ formatPercentage(totals.openAvg) }}
+                    </td>
+                    <td style="width: 7%">
+                      {{ formatPercentage(totals.clickAvg) }}
+                    </td>
+                    <td style="width: 5%">
+                      {{ formatPercentage(totals.ctorAvg) }}
+                    </td>
+                    <td style="width: 5%">
+                      {{ formatPercentage(totals.unsubAvg) }}
+                    </td>
+                    <td style="width: 5%">
+                      {{ totals.engagementAvg ? totals.engagementAvg.toFixed(1)
+                      + '%' : '0.0%' }}
+                    </td>
+                    <td style="width: 5%">
+                      {{ formatNumber(totals.readOver8s) }}
+                    </td>
+                    <td style="width: 5%">
+                      {{ formatNumber(totals.readUnder8s) }}
+                    </td>
+                    <td style="width: 5%">
+                      {{ formatNumber(totals.readUnder2s) }}
+                    </td>
                   </tr>
                 </tfoot>
               </table>
