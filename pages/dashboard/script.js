@@ -191,7 +191,6 @@ new Vue({
         const type = (row["type"] || "").trim();
         const sendType = (row["send-type"] || "").trim();
 
-        // Add type to typeOptions dynamically
         if (type && !this.typeOptions.includes(type)) {
           this.typeOptions.push(type);
         }
@@ -259,8 +258,8 @@ new Vue({
       return Math.max(openScore + clickScore - unsubPenalty, 0);
     },
     getTrafficLight(score) {
-      if (score >= 50) return "bg-green-500";
-      if (score >= 20) return "bg-yellow-500";
+      if (score >= 80) return "bg-green-500";
+      if (score >= 50) return "bg-yellow-500";
       return "bg-red-500";
     },
     calculateTotals() {
@@ -338,7 +337,28 @@ new Vue({
         this.selectedTypeFilters.push(type);
       }
     },
+
+    showTooltip(event, text) {
+      let tooltip = document.getElementById("tooltip");
+      if (!tooltip) {
+        tooltip = document.createElement("div");
+        tooltip.id = "tooltip";
+        tooltip.className =
+          "fixed z-50 bg-gray-800 text-white text-xs rounded px-2 py-1 opacity-0 pointer-events-none transition-opacity";
+        document.body.appendChild(tooltip);
+      }
+      tooltip.textContent = text;
+      tooltip.style.opacity = 1;
+      tooltip.style.left = event.pageX + 10 + "px";
+      tooltip.style.top = event.pageY + 10 + "px";
+    },
+    hideTooltip() {
+      const tooltip = document.getElementById("tooltip");
+      if (!tooltip) return;
+      tooltip.style.opacity = 0;
+    },
   },
+
   mounted() {
     this.fetchExcel();
   },

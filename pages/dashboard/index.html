@@ -159,6 +159,11 @@
               />
 
               <!-- 📊 Table -->
+              <div
+                id="tooltip"
+                class="fixed z-50 bg-gray-800 text-white text-xs rounded px-2 py-1 opacity-0 pointer-events-none transition-opacity"
+              ></div>
+
               <table
                 class="t-styles w-full mt-1 bg-white text-sm"
                 v-if="filteredAndSorted.length"
@@ -213,21 +218,42 @@
                       class="cursor-pointer"
                       style="width: 7%"
                     >
-                      Unique Opens {{ sortIndicator('unique-opens') }}
+                      Unique Opens
+                      <span
+                        class="tooltip-icon cursor-pointer ml-1"
+                        @mouseenter="showTooltip($event, 'Number of unique recipients who opened the email')"
+                        @mouseleave="hideTooltip"
+                        >ⓘ</span
+                      >
+                      {{ sortIndicator('unique-opens') }}
                     </th>
                     <th
                       @click="sortBy('unique-clicks')"
                       class="cursor-pointer"
                       style="width: 7%"
                     >
-                      Unique Clicks (CR) {{ sortIndicator('unique-clicks') }}
+                      Unique Clicks (CTR)
+                      <span
+                        class="tooltip-icon cursor-pointer ml-1"
+                        @mouseenter="showTooltip($event, 'Number of unique recipients who clicked a link / Click-through rate')"
+                        @mouseleave="hideTooltip"
+                        >ⓘ</span
+                      >
+                      {{ sortIndicator('unique-clicks') }}
                     </th>
                     <th
                       @click="sortBy('ctor-pc')"
                       class="cursor-pointer"
                       style="width: 5%"
                     >
-                      CTOR {{ sortIndicator('ctor-pc') }}
+                      CTOR
+                      <span
+                        class="tooltip-icon cursor-pointer ml-1"
+                        @mouseenter="showTooltip($event, 'Click-to-open rate: clicks ÷ opens')"
+                        @mouseleave="hideTooltip"
+                        >ⓘ</span
+                      >
+                      {{ sortIndicator('ctor-pc') }}
                     </th>
                     <th
                       @click="sortBy('unsub')"
@@ -241,8 +267,21 @@
                       class="cursor-pointer"
                       style="width: 5%"
                     >
-                      Engagement Score {{ sortIndicator('engagementScore') }}
+                      Engagement Score
+                      <span
+                        class="tooltip-icon cursor-pointer ml-1"
+                        @mouseenter="showTooltip($event, `Score %: Open Rate % + Click Rate % − 2 × Unsub Rate %
+    
+[Traffic Light Logic:
+🟢 80+
+🟡 50–79
+🔴 -50]`)"
+                        @mouseleave="hideTooltip"
+                        >ⓘ</span
+                      >
+                      {{ sortIndicator('engagementScore') }}
                     </th>
+
                     <th
                       @click="sortBy('read-over-8s')"
                       class="cursor-pointer"
