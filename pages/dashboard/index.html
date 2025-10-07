@@ -212,7 +212,14 @@
                       style="width: 7%"
                     >
                       Unique Sends {{ sortIndicator('unique-sends') }}
+                      <span
+                        class="tooltip-icon cursor-pointer ml-1"
+                        @mouseenter="showTooltip($event, `AJO Data Note: In low-volume journeys, unique opens may exceed sends due to tracking or timing issues.`)"
+                        @mouseleave="hideTooltip"
+                        >ⓘ</span
+                      >
                     </th>
+
                     <th
                       @click="sortBy('unique-opens')"
                       class="cursor-pointer"
