@@ -239,7 +239,7 @@
                       class="cursor-pointer"
                       style="width: 7%"
                     >
-                      Unique Clicks (CTR)
+                      CTR
                       <span
                         class="tooltip-icon cursor-pointer ml-1"
                         @mouseenter="showTooltip($event, 'Number of unique recipients who clicked a link / Click-through rate')"
@@ -346,7 +346,7 @@
                         {{ formatPercentage(item['unique-opens-pc']) }}
                       </p>
                     </td>
-                    <td style="width: 7%">
+                    <td style="width: 5%">
                       <p class="text-lg">
                         {{ formatNumber(item['unique-clicks']) }}
                       </p>
@@ -355,7 +355,12 @@
                       </p>
                     </td>
                     <td style="width: 5%">
-                      {{ formatPercentage(item['ctor-pc']) }}
+                      <p class="text-lg">
+                        {{ formatNumber(item['unique-clicks']) }}
+                      </p>
+                      <p class="text-gray-500">
+                        {{ formatPercentage(item['ctor-pc']) }}
+                      </p>
                     </td>
                     <td style="width: 5%">
                       <p class="text-lg">{{ formatNumber(item['unsub']) }}</p>
@@ -371,13 +376,13 @@
                       </span>
                     </td>
                     <td style="width: 5%">
-                      {{ formatNumber(item['read-over-8s']) }}
+                      {{ formatNumber(item['read-over-8s']) }}%
                     </td>
                     <td style="width: 5%">
-                      {{ formatNumber(item['read-under-8s']) }}
+                      {{ formatNumber(item['read-under-8s']) }}%
                     </td>
                     <td style="width: 5%">
-                      {{ formatNumber(item['read-under-2s']) }}
+                      {{ formatNumber(item['read-under-2s']) }}%
                     </td>
                   </tr>
                 </tbody>
