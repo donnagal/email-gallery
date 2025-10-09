@@ -269,12 +269,8 @@
                       Score
                       <span
                         class="tooltip-icon cursor-pointer ml-1"
-                        @mouseenter="showTooltip($event, `Engagement Score %: Open Rate % + Click Rate % − 2 × Unsub Rate %
-    
-[Traffic Light Logic:
-🟢 80+
-🟡 50–79
-🔴 -50]`)"
+                        @mouseenter="showTooltip($event, `Engagement Score % = (Opens × 0.5) + (CR(%) × 0.5) − 2 × Unsub
+[🟢 40+ | 🟡 30-40 | 🔴 -30]`)"
                         @mouseleave="hideTooltip"
                         >ⓘ</span
                       >
