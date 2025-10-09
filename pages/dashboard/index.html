@@ -174,44 +174,36 @@
                     <th
                       @click="sortBy('label')"
                       class="cursor-pointer"
-                      style="width: 30%"
+                      style=""
                     >
-                      Campaign Name {{ sortIndicator('label') }}
+                      Name {{ sortIndicator('label') }}
                     </th>
-                    <th
-                      @click="sortBy('day')"
-                      class="cursor-pointer"
-                      style="width: 7%"
-                    >
-                      Send Date {{ sortIndicator('day') }}
+                    <th @click="sortBy('day')" class="cursor-pointer" style="">
+                      Sent {{ sortIndicator('day') }}
                     </th>
                     <th
                       @click="sortBy('brand')"
                       class="cursor-pointer"
-                      style="width: 7%"
+                      style=""
                     >
                       Brand {{ sortIndicator('brand') }}
                     </th>
-                    <th
-                      @click="sortBy('type')"
-                      class="cursor-pointer"
-                      style="width: 7%"
-                    >
+                    <th @click="sortBy('type')" class="cursor-pointer" style="">
                       Type {{ sortIndicator('type') }}
                     </th>
                     <th
                       @click="sortBy('sendType')"
                       class="cursor-pointer"
-                      style="width: 7%"
+                      style=""
                     >
-                      Send Type {{ sortIndicator('sendType') }}
+                      Type {{ sortIndicator('sendType') }}
                     </th>
                     <th
                       @click="sortBy('unique-sends')"
                       class="cursor-pointer"
-                      style="width: 7%"
+                      style=""
                     >
-                      Unique Sends {{ sortIndicator('unique-sends') }}
+                      Vol {{ sortIndicator('unique-sends') }}
                       <span
                         class="tooltip-icon cursor-pointer ml-1"
                         @mouseenter="showTooltip($event, `AJO Data Note: In low-volume journeys, unique opens may exceed sends due to tracking or timing issues.`)"
@@ -223,9 +215,9 @@
                     <th
                       @click="sortBy('unique-opens')"
                       class="cursor-pointer"
-                      style="width: 7%"
+                      style=""
                     >
-                      Unique Opens
+                      Opens
                       <span
                         class="tooltip-icon cursor-pointer ml-1"
                         @mouseenter="showTooltip($event, 'Number of unique recipients who opened the email')"
@@ -237,7 +229,7 @@
                     <th
                       @click="sortBy('unique-clicks')"
                       class="cursor-pointer"
-                      style="width: 7%"
+                      style=""
                     >
                       CTR
                       <span
@@ -274,10 +266,10 @@
                       class="cursor-pointer"
                       style="width: 5%"
                     >
-                      Engagement Score
+                      Score
                       <span
                         class="tooltip-icon cursor-pointer ml-1"
-                        @mouseenter="showTooltip($event, `Score %: Open Rate % + Click Rate % − 2 × Unsub Rate %
+                        @mouseenter="showTooltip($event, `Engagement Score %: Open Rate % + Click Rate % − 2 × Unsub Rate %
     
 [Traffic Light Logic:
 🟢 80+
@@ -294,21 +286,21 @@
                       class="cursor-pointer"
                       style="width: 5%"
                     >
-                      Read 8s+ {{ sortIndicator('read-over-8s') }}
+                      Read: 8s+ {{ sortIndicator('read-over-8s') }}
                     </th>
                     <th
                       @click="sortBy('read-under-8s')"
                       class="cursor-pointer"
                       style="width: 5%"
                     >
-                      Read -8s {{ sortIndicator('read-under-8s') }}
+                      >8s {{ sortIndicator('read-under-8s') }}
                     </th>
                     <th
                       @click="sortBy('read-under-2s')"
                       class="cursor-pointer"
                       style="width: 5%"
                     >
-                      Read -2s {{ sortIndicator('read-under-2s') }}
+                      >2s {{ sortIndicator('read-under-2s') }}
                     </th>
                   </tr>
                 </thead>
@@ -330,15 +322,13 @@
                         <span class="sr-only">Preview of {{ item.label }}</span>
                       </a>
                     </td>
-                    <td style="width: 30%">{{ item.label }}</td>
-                    <td style="width: 7%">{{ item.day }}</td>
-                    <td style="width: 7%">{{ item.brand }}</td>
-                    <td style="width: 7%">{{ item.type }}</td>
-                    <td style="width: 7%">{{ item.sendType }}</td>
-                    <td style="width: 7%">
-                      {{ formatNumber(item['unique-sends']) }}
-                    </td>
-                    <td style="width: 7%">
+                    <td style="">{{ item.label }}</td>
+                    <td style="">{{ item.day }}</td>
+                    <td style="">{{ item.brand }}</td>
+                    <td style="">{{ item.type }}</td>
+                    <td style="">{{ item.sendType }}</td>
+                    <td style="">{{ formatNumber(item['unique-sends']) }}</td>
+                    <td style="">
                       <p class="text-lg">
                         {{ formatNumber(item['unique-opens']) }}
                       </p>
@@ -368,7 +358,7 @@
                         {{ formatPercentage(item['unsub-pc']) }}
                       </p>
                     </td>
-                    <td style="width: 5%">
+                    <td class="text-center" style="width: 5%">
                       <span
                         :class="getTrafficLight(item.engagementScore) + ' px-2 py-1 rounded text-white font-semibold'"
                       >
@@ -382,7 +372,7 @@
                       {{ formatNumber(item['read-under-8s']) }}%
                     </td>
                     <td style="width: 5%">
-                      {{ formatNumber(item['read-under-2s']) }}%
+                      {{ formatNumber(item['read-under-2s']) }}
                     </td>
                   </tr>
                 </tbody>
@@ -396,15 +386,9 @@
                     >
                       Totals / Averages:
                     </td>
-                    <td style="width: 7%">
-                      {{ formatNumber(totals.uniqueSends) }}
-                    </td>
-                    <td style="width: 7%">
-                      {{ formatPercentage(totals.openAvg) }}
-                    </td>
-                    <td style="width: 7%">
-                      {{ formatPercentage(totals.clickAvg) }}
-                    </td>
+                    <td style="">{{ formatNumber(totals.uniqueSends) }}</td>
+                    <td style="">{{ formatPercentage(totals.openAvg) }}</td>
+                    <td style="">{{ formatPercentage(totals.clickAvg) }}</td>
                     <td style="width: 5%">
                       {{ formatPercentage(totals.ctorAvg) }}
                     </td>
