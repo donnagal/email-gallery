@@ -342,6 +342,10 @@
       </div>
     </section>
 
+              
+
+
+
     <!-- Design Tabs -->
     <div class="mb-6">
       <p class="font-semibold mr-2 text-xl pt-20 pb-5 ">Step 2: Design Type</p>
@@ -351,6 +355,14 @@
       <button @click="designType='agency'" 
               :class="designType==='agency' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-800'" 
               class="px-4 py-2 rounded">Agency design supplied</button>
+                  <div class="mt-5 mb-3 flex items-start space-x-2 rounded-md bg-blue-50 p-2 text-xs text-blue-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-shrink-0 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+            </svg>
+            <p>See email template examples <a target="_blank" class="underline" href="https://www.figma.com/proto/PTOkMgkl5BuUSukTaPAW5E/Email-Design-Guide---Media-Super?node-id=3670-8782&p=f&t=V4uBheCKFYwMmIhG-0&scaling=scale-down-width&content-scaling=fixed&page-id=47%3A1150&starting-point-node-id=132%3A10142">Cbus</a>
+              or <a target="_blank" class="underline" href="https://www.figma.com/proto/PTOkMgkl5BuUSukTaPAW5E/Email-Design-Guide---Media-Super?node-id=3670-8782&p=f&t=V4uBheCKFYwMmIhG-0&scaling=scale-down-width&content-scaling=fixed&page-id=47%3A1150&starting-point-node-id=132%3A10142">Media Super</a>
+             </p>
+            </div>
     </div>
 
     <div v-if="designType==='agency'" class="mb-4 p-4 bg-yellow-100 border-l-4 border-yellow-400 rounded">
