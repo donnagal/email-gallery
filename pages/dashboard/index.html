@@ -305,15 +305,15 @@
                   <tr v-for="(item, index) in filteredAndSorted" :key="index">
                     <td style="width: 5%">
                       <a
-                        :href="'../../pages/gallery/#' + item['img-id']"
+                        :href="`../../pages/gallery/images/${item['img-id']}.jpg`"
                         target="_blank"
                         class="block rounded shadow bg-cover"
                         :style="{
-            backgroundImage: 'url(../../pages/gallery/images/' + item['img-id'] + '.jpg)',
-            height: '86px',
-            width: '86px',
-            backgroundPosition: 'top'
-          }"
+    backgroundImage: `url(../../pages/gallery/images/${item['img-id']}.jpg)`,
+    height: '86px',
+    width: '86px',
+    backgroundPosition: 'top'
+  }"
                       >
                         <span class="sr-only">Preview of {{ item.label }}</span>
                       </a>
