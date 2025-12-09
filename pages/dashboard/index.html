@@ -150,6 +150,67 @@
               </div>
               <!-- ### END: Filter ### -->
 
+              <!-- START: Benchmarks -->
+              <div id="summary-boxes" class="flex flex-wrap -mx-2 my-4">
+                <div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+                  <div class="bg-white p-4 rounded shadow text-center">
+                    <div class="text-grey-darker text-sm mb-1">Avg Open %</div>
+                    <div class="text-2xl font-bold text-black mb-1">
+                      {{ formatPercentage(totals.openAvg) }}
+                    </div>
+                    <div class="text-xs text-grey-dark mb-1">
+                      Financial Services Benchmark: 34.70%
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+                  <div class="bg-white p-4 rounded shadow text-center">
+                    <div class="text-grey-darker text-sm mb-1">Avg CR %</div>
+                    <div class="text-2xl font-bold text-black mb-1">
+                      {{ formatPercentage(totals.clickAvg) }}
+                    </div>
+                    <div class="text-xs text-grey-dark mb-1">
+                      Financial Services Benchmark: 5.34%
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+                  <div class="bg-white p-4 rounded shadow text-center">
+                    <div class="text-grey-darker text-sm mb-1">Avg CTOR %</div>
+                    <div class="text-2xl font-bold text-black mb-1">
+                      {{ formatPercentage(totals.ctorAvg) }}
+                    </div>
+                    <div class="text-xs text-grey-dark mb-1">
+                      Financial Services Benchmark: 15.40%
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full sm:w-1/2 lg:w-1/4 px-2 mb-4">
+                  <div class="bg-white p-4 rounded shadow text-center">
+                    <div class="text-grey-darker text-sm mb-1">Avg Unsub %</div>
+                    <div class="text-2xl font-bold text-black mb-1">
+                      {{ formatPercentage(totals.unsubAvg) }}
+                    </div>
+                    <div class="text-xs text-grey-dark mb-1">
+                      Financial Services Benchmark: 0.08%
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full pb-2">
+                  <p class="text-xs text-gray-500 text-center">
+                    Source:
+                    <a
+                      href="https://www.getresponse.com/resources/reports/email-marketing-benchmarks#average-results-by-industry"
+                      target="_blank"
+                      class="text-blue-600 underline"
+                    >
+                      GetResponse Email Marketing Benchmarks
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <!-- END: Benchmarks -->
+
               <!-- Search input -->
               <input
                 class="w-full border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
