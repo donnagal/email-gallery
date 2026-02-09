@@ -1,13 +1,13 @@
 new Vue({
   el: "#app",
   data: {
-    imageCount: 95, // Total number of images
+    imageCount: 97, // Total number of images
   },
   computed: {
     imagesDescending() {
       return Array.from(
         { length: this.imageCount },
-        (_, i) => this.imageCount - i
+        (_, i) => this.imageCount - i,
       );
     },
   },
