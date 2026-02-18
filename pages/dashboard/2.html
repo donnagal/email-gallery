@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Email Report Dashboard</title>
+    <link href="../../images/favion.png" rel="icon" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/v-dashbaord.css" />
+    <link
+      rel="stylesheet"
+      href="https://kit-pro.fontawesome.com/releases/v5.13.1/css/pro.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+    <style>
+      .responsive-iframe {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 ratio, adjust as needed */
+        height: 0;
+        overflow: hidden;
+      }
+
+      .responsive-iframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 84%;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-200">
+    <div id="nav">
+      <header>
+        <div class="bg-black mx-auto text-white px-5 text-center">
+          <div class="flex py-2">
+            <div class="flex-1">
+              <h1 class="font-bold text-2xl">Email Dashboard FY26</h1>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav class="animate-add z-100">
+        <div class="nav-overlay"></div>
+        <button type="button" class="slide-toggle">
+          <div class="menu-wrapper">
+            <div class="hamburger-menu"></div>
+          </div>
+        </button>
+        <div id="menu"></div>
+      </nav>
+    </div>
+
+    <div id="app">
+      <div class="flex bg-gray-200 font-roboto">
+        <div class="flex-1 flex flex-col">
+          <main class="flex-1 mx-20">
+            <div class="responsive-iframe">
+              <iframe
+                frameborder="0"
+                scrolling="no"
+                src="https://cbussuper.sharepoint.com/sites/MarketingTechTeam/_layouts/15/Doc.aspx?sourcedoc={65034aca-c341-4dcd-b8b6-ba7d37d6dff6}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0"
+              ></iframe>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../../js/filter-group.js"></script>
+    <script src="../../../js/global.js"></script>
+    <script src="../../../js/vue.min.js"></script>
+  </body>
+</html>

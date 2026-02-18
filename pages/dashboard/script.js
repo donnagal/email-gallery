@@ -50,17 +50,17 @@ new Vue({
 
       if (this.selectedFilters.length > 0) {
         filtered = filtered.filter((item) =>
-          this.selectedFilters.includes(item.sendType)
+          this.selectedFilters.includes(item.sendType),
         );
       } else if (this.sendTypeFilter !== "All") {
         filtered = filtered.filter(
-          (item) => item.sendType === this.sendTypeFilter
+          (item) => item.sendType === this.sendTypeFilter,
         );
       }
 
       if (this.selectedTypeFilters.length > 0) {
         filtered = filtered.filter((item) =>
-          this.selectedTypeFilters.includes(item.type)
+          this.selectedTypeFilters.includes(item.type),
         );
       }
 
@@ -92,8 +92,8 @@ new Vue({
         const term = this.searchTerm.trim().toLowerCase();
         filtered = filtered.filter((item) =>
           Object.values(item).some(
-            (val) => val != null && val.toString().toLowerCase().includes(term)
-          )
+            (val) => val != null && val.toString().toLowerCase().includes(term),
+          ),
         );
       }
 
@@ -164,16 +164,16 @@ new Vue({
       this.lists = jsonData.map((row) => {
         const rawDate = this.parseDate(row["date"] || row["Send Date"]);
         const uniqueSends = Number(
-          (row["unique-sends"] || 0).toString().replace(/,/g, "").trim()
+          (row["unique-sends"] || 0).toString().replace(/,/g, "").trim(),
         );
         const uniqueOpens = Number(
-          (row["unique-opens"] || 0).toString().replace(/,/g, "").trim()
+          (row["unique-opens"] || 0).toString().replace(/,/g, "").trim(),
         );
         const uniqueClicks = Number(
-          (row["unique-clicks"] || 0).toString().replace(/,/g, "").trim()
+          (row["unique-clicks"] || 0).toString().replace(/,/g, "").trim(),
         );
         const unsub = Number(
-          (row["unsub"] || 0).toString().replace(/,/g, "").trim()
+          (row["unsub"] || 0).toString().replace(/,/g, "").trim(),
         );
 
         // Pull engagement score directly from Excel
