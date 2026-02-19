@@ -69,13 +69,46 @@
     <div id="app">
       <div class="flex bg-gray-200 font-roboto">
         <div class="flex-1 flex flex-col">
-          <main class="flex-1 mx-20">
+          <main class="flex-1 mx-20 mt-10">
+            <!-- Buttons to toggle views -->
+            <button
+              class="bg-gray-300 px-3 m-1 py-1 rounded transition bg-gray-200 text-gray-700 hover:bg-gray-400"
+              onclick="showIframe('table')"
+            >
+              Table
+            </button>
+
+            <button
+              class="bg-gray-300 px-3 m-1 py-1 rounded transition bg-gray-200 text-gray-700 hover:bg-gray-400"
+              onclick="showIframe('dashboard')"
+            >
+              Dashboard
+            </button>
+
             <div class="responsive-iframe">
+              <!-- Dashboard iframe -->
               <iframe
+                id="dashboard"
                 frameborder="0"
                 scrolling="no"
-                src="https://cbussuper.sharepoint.com/sites/MarketingTechTeam/_layouts/15/Doc.aspx?sourcedoc={65034aca-c341-4dcd-b8b6-ba7d37d6dff6}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edaebf=rslc0"
-              ></iframe>
+                width="100%"
+                height="100vh"
+                src="https://cbussuper.sharepoint.com/sites/MarketingTechTeam/_layouts/15/Doc.aspx?sourcedoc={65034aca-c341-4dcd-b8b6-ba7d37d6dff6}&action=embedview&ActiveCell='Dasbaord'!A1&wdHideSheetTabs=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"
+                style="display: none"
+              >
+              </iframe>
+
+              <!-- Table only iframe -->
+              <iframe
+                id="table"
+                frameborder="0"
+                scrolling="no"
+                width="100%"
+                height="100vh"
+                src="https://cbussuper.sharepoint.com/sites/MarketingTechTeam/_layouts/15/Doc.aspx?sourcedoc={65034aca-c341-4dcd-b8b6-ba7d37d6dff6}&action=embedview&ActiveCell='FY-ajo-report'!I17&Item=Table1&wdHideSheetTabs=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"
+                style="display: block"
+              >
+              </iframe>
             </div>
           </main>
         </div>
@@ -87,5 +120,13 @@
     <script src="../../../js/filter-group.js"></script>
     <script src="../../../js/global.js"></script>
     <script src="../../../js/vue.min.js"></script>
+    <!-- Toggle script -->
+    <script>
+      function showIframe(id) {
+        document.getElementById("dashboard").style.display = "none";
+        document.getElementById("table").style.display = "none";
+        document.getElementById(id).style.display = "block";
+      }
+    </script>
   </body>
 </html>
