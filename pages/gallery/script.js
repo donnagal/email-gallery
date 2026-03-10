@@ -1,14 +1,11 @@
 new Vue({
   el: "#app",
   data: {
-    imageCount: 97, // Total number of images
+    imageCount: 50, // Total number of images
   },
   computed: {
-    imagesDescending() {
-      return Array.from(
-        { length: this.imageCount },
-        (_, i) => this.imageCount - i,
-      );
+    imagesAscending() {
+      return Array.from({ length: this.imageCount }, (_, i) => i + 1);
     },
   },
   mounted() {
@@ -20,8 +17,8 @@ new Vue({
       zoom: true,
     });
 
-    // Check URL hash for deep linking, e.g., /gallery#8
-    const hash = window.location.hash.slice(1); // Remove the '#'
+    // Check URL hash for deep linking, e.g., /gallery#3
+    const hash = window.location.hash.slice(1);
     const imageNumber = parseInt(hash, 10);
 
     if (
@@ -29,8 +26,7 @@ new Vue({
       imageNumber >= 1 &&
       imageNumber <= this.imageCount
     ) {
-      // Find index in the descending array
-      const imageIndex = this.imagesDescending.indexOf(imageNumber);
+      const imageIndex = this.imagesAscending.indexOf(imageNumber);
       if (imageIndex !== -1) {
         gallery.openGallery(imageIndex);
       }

@@ -61,18 +61,18 @@
     class="flex flex-wrap"
     id="lightgallery"
   >
-    <!-- Loop through images in descending order -->
+    <!-- Loop through images in Ascending order -->
     <a
-      v-for="n in imagesDescending"
+      v-for="n in imagesAscending"
       :key="n"
-      :href="`images/${n}.jpg`"
+      :href="`images/${n}.png`"
       class="xl:w-1/4 md:w-1/3 w-full p-2"
-      :data-src="`images/${n}.jpg`"
+      :data-src="`images/${n}.png`"
       data-lg-size="1406-1390"
     >
       <div
         class="bg-cover bg-center bg-top hover:opacity-75"
-        :style="`background-image: url('images/${n}.jpg'); height: 500px; width: 271px;`"
+        :style="`background-image: url('images/${n}.png'); height: 500px; width: 271px;`"
       ></div>
     </a>
   </div>
